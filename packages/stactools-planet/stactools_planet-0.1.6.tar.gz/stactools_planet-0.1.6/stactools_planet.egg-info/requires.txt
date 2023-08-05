@@ -1,0 +1,3 @@
+rasterio==1.1.8
+planet==1.4.6
+stactools_core==0.1.6
