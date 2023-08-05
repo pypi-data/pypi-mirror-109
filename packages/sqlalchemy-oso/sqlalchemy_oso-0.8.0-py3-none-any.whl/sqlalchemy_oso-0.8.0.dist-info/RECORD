@@ -1,0 +1,15 @@
+sqlalchemy_oso/__init__.py,sha256=c98Gp3sp3LN1hAqFM_FH-6l6UlH0sHxagSjgXOf5GuE,209
+sqlalchemy_oso/auth.py,sha256=imR4KegOKeepMSwGrxY9NmZahiVl1gvYvbVtkZSNROs,3209
+sqlalchemy_oso/compat.py,sha256=OSGRf0h9RJ-yQFUoiOsJY4Qy-fyI-tAKzQPxR__s_VA,986
+sqlalchemy_oso/flask.py,sha256=wvIIMt9vY5naaDFkA6tgHpMkGqLZWcV5EFkLgHzGbI0,2472
+sqlalchemy_oso/oso.py,sha256=JVyjeUsPafxZwcWDOnlS3FJFpp0io4Iy7r-0gAOg2Yo,2053
+sqlalchemy_oso/partial.py,sha256=jqPuHJp3rNNZE7pK1qM4B0SncSDj43G0o69r97hFXDM,9241
+sqlalchemy_oso/preprocess.py,sha256=gwK_lWXCMLEEFfXkSnZtpytpFbRlUcpFS4Pi9tukiP8,3969
+sqlalchemy_oso/roles.py,sha256=zS3sZr_4GNm6AFB1fm_9amLShDwbtv-2UsrTCONqQg8,39810
+sqlalchemy_oso/roles_old.py,sha256=hd4AvkcUKoF-Ev4B44_zfOPs0nneJLapleFAp2Aa5xM,18883
+sqlalchemy_oso/session.py,sha256=IvKnjxlyzg8MU1ZtO6lEJ4dZfY201A0lcg9wmgEXfAc,17009
+sqlalchemy_oso-0.8.0.dist-info/METADATA,sha256=5QLyd80ByBLaSxFiIAyObSfd4W9SX9QYPleiwY8AbHc,5654
+sqlalchemy_oso-0.8.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sqlalchemy_oso-0.8.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+sqlalchemy_oso-0.8.0.dist-info/top_level.txt,sha256=kS8xiPA_k96mHwOaXC52aQE8oZQ8ikhcHjVHs5cWj4Q,15
+sqlalchemy_oso-0.8.0.dist-info/RECORD,,
