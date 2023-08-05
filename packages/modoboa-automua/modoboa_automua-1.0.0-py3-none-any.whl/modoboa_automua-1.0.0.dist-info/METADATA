@@ -1,0 +1,194 @@
+Metadata-Version: 2.1
+Name: modoboa-automua
+Version: 1.0.0
+Summary: Autoconfigure mail clients from Modoboa
+Home-page: UNKNOWN
+Author: Cliss XXI
+Author-email: contact@cliss21.com
+License: GNU AGPL-3
+Project-URL: Bug Tracker, https://forge.cliss21.org/cliss21/modoboa-automua/issues
+Project-URL: Source Code, https://forge.cliss21.org/cliss21/modoboa-automua
+Keywords: modoboa,automx
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: <4,>=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: defusedxml
+Requires-Dist: modoboa (<2.0,>=1.17)
+Provides-Extra: test
+Requires-Dist: black ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: flake8-black ; extra == 'test'
+Requires-Dist: flake8-isort ; extra == 'test'
+Requires-Dist: flake8 (>=3.5) ; extra == 'test'
+Requires-Dist: isort (>=5.0) ; extra == 'test'
+
+# modoboa-automua
+
+Autoconfigure mail clients from Modoboa.
+
+This extension is based on [automx](https://automx.org) to provide methods for
+automated mailbox configuration from Microsoft's [Autodiscover][1] and Mozilla's
+[Autoconfig][2]. It extends Modoboa to configure the server name to use for each
+domain from its administration interface, and to return the appropriate response
+to the MUA.
+
+## Requirements
+
+- Python 3 (>= 3.7)
+- Modoboa, deployed with the installer or manually
+
+## Installation
+
+1. Activate the virtual environment in which Modoboa is installed.
+2. Install this extension from PyPi:
+   ```shell
+   (env)$ pip install modoboa-automua
+   ```
+3. Add this extension to the installed applications in your instance's settings:
+   ```python
+   MODOBOA_APPS = (
+       "modoboa",
+       # ...
+       # Modoboa extensions here.
+       "modoboa_automua",
+   )
+   ```
+4. Update your database and collect the static files:
+   ```shell
+   (env)$ ./manage.py migrate
+   (env)$ ./manage.py collectstatic
+   ```
+
+Finally, restart the Python process which is running Modoboa.
+
+## Usage
+
+Once this extension is installed, you will need to configure either the server
+name to return for each domain - see [`AUTOMUA_DEFAULT_SERVER_NAME`][3] - or to
+configure each domain from the Modoboa administration - through the *MUA* tab.
+
+Then, you will have to adjust your Web server to serve the `autoconfig.*` and
+`autodiscover.*` domains either by your Modoboa instance or with a new dedicated
+WSGI application - see [`AUTOMUA_SERVE_FRONTEND_ROUTES`][4].
+
+## Configuration
+
+The following settings are available to customize this extension.
+
+### `AUTOMUA_DEFAULT_SERVER_NAME`
+
+The server name to use for all the domains which are configured to use the
+default values. By default, or if it is empty, the autoconfiguration will
+not be available for those domains.
+
+For example:
+
+```python
+AUTOMUA_DEFAULT_SERVER_NAME = "mx.example.org"
+```
+
+### `AUTOMUA_SERVE_FRONTEND_ROUTES`
+
+By default, this is `True` and views for mail clients will be served by the
+Modoboa application.
+
+In production, you would rather like to serve those routes by a dedicated WSGI
+application to preserve the security of the Modoboa application - and prevent
+any changes to [`ALLOWED_HOST`][5]. To proceed, you will have to:
+
+1. Set `AUTOMUA_SERVE_FRONTEND_ROUTES` to `False` in the settings file of your
+   Modoboa instance.
+
+2. Create a new folder - e.g. named `automua` - where the `manage.py` file of
+   your instance is located, with the following files inside:
+
+   - `__init__.py`, an empty file
+   - `settings.py`, which could just contain the following lines:
+     ```python
+     from modoboa_automua.frontend.settings import *  # noqa
+
+     # Define SECRET_KEY, SITE_ID and DATABASES with the same values than
+     # the one in the settings file of your Modoboa instance.
+
+     # Optionaly, set the default server name:
+     #AUTOMUA_DEFAULT_SERVER_NAME = "mx.example.org"
+     ```
+   - `wsgi.py`, with the following content - replace `automua` with the name of
+     your folder if you have chosen a different one:
+     ```python
+     import os
+
+     from django.core.wsgi import get_wsgi_application
+
+     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "automua.settings")
+
+     application = get_wsgi_application()
+     ```
+
+3. Serve a new WSGI application with the newly created `wsgi.py` file as the entry
+   point on all the required domains - e.g. `autoconfig.*` and `autodiscover.*`.
+
+### `AUTOMUA_SERVER_SERVICES`
+
+You can configure the available services of your mail server which will be
+returned to the MUA for all domains. A service is composed by:
+- a type, see [`modoboa_automua.ServiceType`][6]
+- a port number
+- a security, see [`modoboa_automua.ServiceSecurity`][6]
+
+By default, all protocols in both SSL and STARTTLS are returned - SSL ones have
+higher priority though. They are defined in an ordered list by
+[`modoboa_automua.DEFAULT_SERVER_SERVICES`][6].
+
+For example, to expose only protocols in SSL:
+
+```python
+from modoboa_automua import Service, ServiceSecurity, ServiceType
+
+AUTOMUA_SERVER_SERVICES = (
+    Service(ServiceType.POP, 995, ServiceSecurity.SSL),
+    Service(ServiceType.IMAP, 993, ServiceSecurity.SSL),
+    Service(ServiceType.SMTP, 465, ServiceSecurity.SSL),
+)
+```
+
+## Development
+
+To setup a development environment, clone this repository and follow the
+installation steps but replace the installation from PyPi by:
+```shell
+(env)$ pip install -e .[test]
+```
+
+The Python code is formatted and linted thanks to flake8, isort and black. To
+ease the use of this tools, the following commands are available:
+- `make lint`: check the Python code syntax and imports order
+- `make format`: fix the Python code syntax and imports order
+
+## License
+
+This extension is mainly developed by Cliss XXI and licensed under the
+[AGPLv3+](LICENSE). Any contribution is welcome!
+
+[1]: https://docs.microsoft.com/exchange/architecture/client-access/autodiscover?view=exchserver-2019
+[2]: https://developer.mozilla.org/docs/Mozilla/Thunderbird/Autoconfiguration
+[3]: #automua_default_server_name
+[4]: #automua_serve_frontend_routes
+[5]: https://docs.djangoproject.com/en/stable/ref/settings/#allowed-hosts
+[6]: modoboa_automua/__init__.py
+
+
