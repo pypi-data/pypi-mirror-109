@@ -1,0 +1,14 @@
+paropy/__init__.py,sha256=ZRFo0xfWNMTZIpoYaHhTXpYBj2UJ6hUYInZ56FbKpLc,383
+paropy/coreproperties.py,sha256=BcBeUSnr_7tGWcIvkFR-DDB_h1V8H1QKkSOmqB7Y_8Y,1859
+paropy/data_utils.py,sha256=shNlIo_nTpFcdBJ9EOBcDgrst7MdFQXIjcH9DM9deDs,12242
+paropy/plot_utils.py,sha256=aiVLfZA4g9WC3z-MLNgAuDQPDPCk-RLI21dldbbZli4,2490
+paropy/routines.py,sha256=vTehDfxhbqPOvdqIBqsFs3qPvWlqBZlkXl--ZPWU2lM,525
+paropy/scripts/diagnostics.py,sha256=UqP-xZiHFzWL02amLFi4YD4EgDdS8i84P8gDgawjE04,3256
+paropy/scripts/merdional_snapshot.py,sha256=RmXL94x5ktEvE9o30WhfPTHn92VKGlsCKXiSyWH6nrQ,2910
+paropy/scripts/meridional_snapshot.py,sha256=B39rSfeokzxcNiRrpz9mdAp64ysBvEfcY6zpG6oUP7E,4111
+paropy/scripts/surface_snapshot.py,sha256=zycqi-Bw2X2OBFM1tDem3fp6jqdojYtDlvVbtWlNM-A,2472
+paropy-0.0.4.dist-info/LICENSE.md,sha256=wFn36zCwkxuEQzD2foWflHt751K8AnJpMncuTwh_T-M,1054
+paropy-0.0.4.dist-info/METADATA,sha256=fCjvvCv6KcN1irH0gwyKvzm_5ajtTMYS0GUb9oudmjY,2868
+paropy-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+paropy-0.0.4.dist-info/top_level.txt,sha256=wZN6gko79JzrLwgXQ6BFpPM-VSVoyFaJJ2--_xF3TNQ,7
+paropy-0.0.4.dist-info/RECORD,,
