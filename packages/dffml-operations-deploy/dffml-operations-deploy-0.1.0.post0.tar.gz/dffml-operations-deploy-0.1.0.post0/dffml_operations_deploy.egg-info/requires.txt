@@ -1,0 +1,2 @@
+dffml>=0.4.0
+dffml-feature-git>=0.3.0
