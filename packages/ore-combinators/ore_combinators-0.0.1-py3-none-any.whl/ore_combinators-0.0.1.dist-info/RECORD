@@ -1,0 +1,14 @@
+ore/__init__.py,sha256=1Eao9Ud5wAzU7Pl2lkiVEhtSVN0VyWF3BMyQzo2gvrM,290
+ore/combinator.py,sha256=zb_K7TlB47Foy40AhXSYrGJ4yWSzxhHjS_8MPodWdzs,690
+ore/error.py,sha256=wt74aYIwZ9v7lo_5cC1MkMJb0_0fXH-lqv0J0fx_VYw,852
+ore/parser_state.py,sha256=m9ORxp6ZjVJy5pAVjLnoNL78t8hQlCSItlC5FC65Oh0,1133
+ore/result.py,sha256=zJRLhZTFOwC4tqGz2Mq2xl6_hm4nni51RAuxlyO_U9A,569
+ore/run.py,sha256=l97J1OMv04wPxHVOlLnfc735juWAJEucGIbx3lCZdSw,423
+ore/source.py,sha256=eLfkCF0C8ulgdUkm4VUATGIeGMF8i6URFHXlGhaNU0k,438
+ore/source_position.py,sha256=mn-vFmw_ULK8KLxKwd6R57vG4Df75802M83j0sMF1_0,946
+ore/source_span.py,sha256=-YULBPudKTA8FOzaVFa0KeY83fLG2nZOo25nxrNKyC0,607
+ore_combinators-0.0.1.dist-info/LICENSE,sha256=omCmrynk4V8Vs-bJJwAjhg60Er7Xa63LTyVGhS28WxU,1069
+ore_combinators-0.0.1.dist-info/METADATA,sha256=vWoN4i9mCYf1G1pH7-hkRd05tecVRsXbadKbl3rxOIA,2451
+ore_combinators-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ore_combinators-0.0.1.dist-info/top_level.txt,sha256=MUq1nYdDNsNA7JrI9Jz03DJIs8G3Sw0IBOk9zYb1tWs,4
+ore_combinators-0.0.1.dist-info/RECORD,,
