@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: midiplot
+Version: 0.0b0
+Summary: Python MIDI plotting and analysis
+Home-page: https://github.com/carlosholivan/midiplot
+Author: Carlos Hernandez Olivan
+Author-email: carloshero@unizar.es
+License: https://github.com/carlosholivan/midiplot
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: Free for non-commercial use
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Requires-Dist: numpy (==1.18.1)
+Requires-Dist: matplotlib (==3.1.2)
+Requires-Dist: pretty-midi (==0.2.8)
+
+UNKNOWN
+
+
