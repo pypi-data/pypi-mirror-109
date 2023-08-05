@@ -1,0 +1,4 @@
+[plover.machine]
+XTEST keyboard = plover_xtest_input:XTESTKeyboard
+XTEST serial keyboard = plover_xtest_input:XTestSerialKeyboard
+
