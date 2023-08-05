@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fast-gsdmm
+Version: 0.0.1
+Summary: Gibbs Sampling Dirichlet Multinomial Modeling algorithm for short-text clustering
+Home-page: https://github.com/GianniBalistreri/gsdmm
+Author: Gianni Francesco Balistreri
+Author-email: gbalistreri@gmx.de
+License: GNU
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Gibbs Sampling Dirichlet Multinomial Modeling:
+C++ implementation of the Gibbs Sampling Dirichlet Multinomial Modeling algorithm.
+
+
