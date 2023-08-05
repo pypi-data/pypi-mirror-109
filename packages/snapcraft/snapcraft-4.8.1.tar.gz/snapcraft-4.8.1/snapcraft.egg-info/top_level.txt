@@ -1,0 +1,13 @@
+bin
+debian
+docker
+extensions
+keyrings
+patches
+schema
+snap
+snapcraft
+specifications
+tests
+tools
+windows
