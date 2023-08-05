@@ -1,0 +1,176 @@
+Metadata-Version: 2.1
+Name: wagtail-rest-polls
+Version: 0.0.2
+Summary: A simple polls app for wagtail in django
+Home-page: https://github.com/covalentcareers/wagtail-polls
+Author: jkearney126
+Author-email: josh.kearney@covalentcareers.com
+License: MIT License
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django
+
+
+# Wagtail Polls
+
+This is a really simple polls app for Django and Wagtail. It has a REST interface for
+front-end applications (like React) or you can render it in templates.
+
+
+## Installation 
+
+Requirements:
+* Django 3.x
+* Wagtail 2.x
+* Django rest framework 3.x
+
+Start by installing the package
+
+```
+pip install wagtail-polls
+```
+
+Next migrate the models
+```
+python manage.py migrate
+```
+
+Add the polls app to your settings
+
+```
+INSTALLED_APPS = [
+    ...
+    'polls'
+]
+```
+
+Add the urls or endpoints to `urls.py`
+
+```
+from polls import endpoints as polls_endpoints
+
+urlpatterns += path('polls/', include(poll_router))
+
+```
+-- and/or --
+```
+
+from polls import urls as polls_urls
+
+urlpatterns += path('polls/', include(polls_urls)) # adjust the url path to fit needs
+```
+## Creating a Poll
+In wagtail navigate to "Snippets" and select "Polls"
+
+You can then compelete the form and add choices as desired.
+
+#### Viewing results
+Results will be shown in the wagtail admin interface for each poll under the choices
+
+
+  
+## API Reference
+
+#### Get all Polls
+
+```http
+  GET /polls/
+```
+Response
+```
+{
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 1,
+            "question": "Does this work?",
+            "description": "Testing 1 2 3",
+            "image": null,
+            "choices": [
+                {
+                    "id": 2,
+                    "sort_order": null,
+                    "choice": "no",
+                    "poll": 1
+                },
+                {
+                    "id": 1,
+                    "sort_order": null,
+                    "choice": "yes",
+                    "poll": 1
+                }
+            ]
+        }
+    ]
+}
+```
+
+#### Get Poll
+
+```http
+  GET /polls/${id}/
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of Poll to fetch |
+
+Response
+```
+{
+    "id": 1,
+    "question": "Does this work?",
+    "description": "Testing 1 2 3",
+    "image": null,
+    "choices": [
+        {
+            "id": 2,
+            "sort_order": null,
+            "choice": "no",
+            "poll": 1
+        },
+        {
+            "id": 1,
+            "sort_order": null,
+            "choice": "yes",
+            "poll": 1
+        }
+    ]
+}
+```
+
+#### Post Vote
+
+```http
+  POST /polls/vote/
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `poll`      | `int` | **Required**. Id of poll           |
+| `choice`    | `int` | **Required**. Id of choice         |
+| `user`      | `int` | **optional**. Id of user           |
+
+Response - returns a list of results for the poll
+```
+{
+    "results": [
+        {
+            "no": 2
+        },
+        {
+            "yes": 2
+        }
+    ]
+}
+```
+  
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+  
+

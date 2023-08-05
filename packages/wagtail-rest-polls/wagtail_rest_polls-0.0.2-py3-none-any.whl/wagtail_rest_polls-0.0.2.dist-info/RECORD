@@ -1,0 +1,17 @@
+polls/__init__.py,sha256=ZkJ4YFnqff5CwHnqUupPsAVatqD4aozkrh1u-iQrvMc,21
+polls/admin.py,sha256=OAlL13kz0LHYJRwB6ANYKGQh8vNuTCfM0Ekz2vEm4Os,484
+polls/endpoints.py,sha256=m-hoULhFS761TRulXeJOx0tb0ErAkGJuSHFWoNUiKzg,251
+polls/models.py,sha256=nNiQ6kyq8bBJzsFoiH2ZoGLdy2D_fRCn5mG8VxAfK9M,2113
+polls/serializers.py,sha256=Ld6goTm3xtKZYl1B0nJWR9JlAyuMvJc4eroBmWDrE5Y,610
+polls/urls.py,sha256=ba0uEjsbFFX9sv1lGmLXoTA4RWFLU1J10Q9tNqkMdIo,429
+polls/views.py,sha256=pybEmJtNVBFS4p0JC0_Tg3f7X-vK68jyX-M7dJNvflk,2075
+polls/migrations/0001_init.py,sha256=QWm_rUCB6mWIZHT4HE-hGsgYlP9qLIdZvNx9mhxoG8M,2339
+polls/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polls/templates/polls/poll_detail.html,sha256=Ky-7e8s8Ul69QSjHeqLg3jIGgTJWXYzep3QqtpY_amU,603
+polls/templates/polls/poll_list.html,sha256=kyEKHFpY2pIvOvZhDrwhrGrA6B1cZFdc2MnzSySsGos,332
+polls/templates/polls/votes_panel.html,sha256=Y_yx6CrIjtA58EZ1Q1CYaRCDcY2B4txEOOQFUKjebFc,366
+wagtail_rest_polls-0.0.2.dist-info/LICENSE,sha256=APXTyEZ72muHcEj2yE0b1oINs0WBIZAj-InaDcNUNrs,1094
+wagtail_rest_polls-0.0.2.dist-info/METADATA,sha256=YtSS2bp6DZgY5TGOtSPIY6LwFK0_Zw8QDOUnQUqyoro,3301
+wagtail_rest_polls-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wagtail_rest_polls-0.0.2.dist-info/top_level.txt,sha256=nFZT9qJU0JMR4qxKFac47WtiOKmzCgOO6US2EbPCAKU,6
+wagtail_rest_polls-0.0.2.dist-info/RECORD,,
