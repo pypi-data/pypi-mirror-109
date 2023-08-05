@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gwsecm
+Version: 2.2.1
+Summary: GWSE Change Management API code
+Home-page: https://bitbucket.es.ad.adp.com/projects/GWSE/repos/co-automation-api/browse
+Author: Yash Panchal
+Author-email: yash.panchal@adp.com
+License: (c) ADP, LLC
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+UNKNOWN
+
