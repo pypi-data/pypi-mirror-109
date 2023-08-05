@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+magic/__init__.py
+magic/actions.py
+magic/lib.py
+magic/magic.py
+magic/requests.py
+magic/version.py
+pymagico.egg-info/PKG-INFO
+pymagico.egg-info/SOURCES.txt
+pymagico.egg-info/dependency_links.txt
+pymagico.egg-info/top_level.txt
