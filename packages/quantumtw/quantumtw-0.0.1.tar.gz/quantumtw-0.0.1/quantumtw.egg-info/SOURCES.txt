@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+quantumtw.egg-info/PKG-INFO
+quantumtw.egg-info/SOURCES.txt
+quantumtw.egg-info/dependency_links.txt
+quantumtw.egg-info/requires.txt
+quantumtw.egg-info/top_level.txt
