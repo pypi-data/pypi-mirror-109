@@ -1,0 +1,1 @@
+This is a simple calculator library that takes two numbers and either adds, subtracts, multiplies or divides them.

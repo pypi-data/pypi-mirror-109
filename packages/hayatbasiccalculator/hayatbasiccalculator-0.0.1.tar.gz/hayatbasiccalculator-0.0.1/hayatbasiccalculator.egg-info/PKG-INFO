@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: hayatbasiccalculator
+Version: 0.0.1
+Summary: A basic calculator that adds, subtracts, multiplies, and divides two numbers
+Home-page: UNKNOWN
+Author: Hayat Shibeshi
+Author-email: hayat.shibeshi@nuance.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

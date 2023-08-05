@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+hayatbasiccalculator/__init__.py
+hayatbasiccalculator.egg-info/PKG-INFO
+hayatbasiccalculator.egg-info/SOURCES.txt
+hayatbasiccalculator.egg-info/dependency_links.txt
+hayatbasiccalculator.egg-info/top_level.txt
