@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: brfunds
+Version: 0.0.1
+Summary: Package to scrap data from brazilian funds
+Home-page: https://github.com/Phactos/brfunds
+Author: Phactos
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Phactos/brfunds/issues
+Description: Brazilian Fund Scrapper (or brfunds) is a package to recover data from investment funds without the need to download data to your computer. It uses the data available on https://comparadordefundos.com.br/ and can be used to Time Series Analysis of quote price, fund patrimony and number of quote holders. It can also be used for comparing rentability of different funds.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
