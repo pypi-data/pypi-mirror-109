@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+CoinMktCap/__init__.py
+CoinMktCap/core.py
+CoinMktCap.egg-info/PKG-INFO
+CoinMktCap.egg-info/SOURCES.txt
+CoinMktCap.egg-info/dependency_links.txt
+CoinMktCap.egg-info/requires.txt
+CoinMktCap.egg-info/top_level.txt
