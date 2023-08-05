@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: bond-math-test
+Version: 0.1
+Summary: test math package
+Home-page: http://github.com
+Author: J_Bond
+Author-email: J_Bond@example.com
+License: UNKNOWN
+Description: university project math package.
+Keywords: python Math
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
