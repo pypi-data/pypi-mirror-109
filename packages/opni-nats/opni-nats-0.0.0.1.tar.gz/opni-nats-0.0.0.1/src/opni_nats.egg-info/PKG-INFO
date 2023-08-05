@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: opni-nats
+Version: 0.0.0.1
+Summary: A NATS helper used by Rancher Opni
+Home-page: https://github.com/rancher/opni-nats-wrapper
+Author: Rancher Labs
+Author-email: sanjay.nadhavajhala@suse.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/rancher/opni-nats-wrapper/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# opni-nats-wrapper
+
+This repo contains shared code which is used in several opni services.
+

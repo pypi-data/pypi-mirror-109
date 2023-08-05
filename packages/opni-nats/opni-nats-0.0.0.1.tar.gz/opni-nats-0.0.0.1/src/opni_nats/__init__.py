@@ -1,0 +1,1 @@
+from opni_nats.nats_wrapper import NatsWrapper
