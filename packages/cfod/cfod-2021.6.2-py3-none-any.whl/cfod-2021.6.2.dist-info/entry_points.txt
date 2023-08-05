@@ -1,0 +1,3 @@
+[console_scripts]
+msgpack2fil=cfod.routines.msgpack2fil:runner
+
