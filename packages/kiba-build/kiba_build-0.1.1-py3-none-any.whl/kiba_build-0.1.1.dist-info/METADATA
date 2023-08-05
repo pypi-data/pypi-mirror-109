@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: kiba-build
+Version: 0.1.1
+Summary: Kiba Labs' python building and testing utilities
+Home-page: https://github.com/kibalabs/build-py
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ~=3.7
+Requires-Dist: click (==7.1.2)
+Requires-Dist: simple-chalk (==0.1.0)
+Requires-Dist: pylint (==2.6.2)
+Requires-Dist: mypy (==0.812)
+Requires-Dist: twine (==3.4.1)
+Requires-Dist: wheel (==0.36.2)
+
+UNKNOWN
+
+
