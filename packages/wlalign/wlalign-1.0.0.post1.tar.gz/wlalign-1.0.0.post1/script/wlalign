@@ -1,0 +1,129 @@
+#!/usr/bin/env python
+import argparse
+import logging
+
+import numpy as np
+
+import wlalign
+
+HEADER = f'Alignment computed with WL-align version {wlalign.__version__}'
+DESCRIPTION = ('This program uses WL-align to compute an alignment between two '
+               'graphs having the same number of nodes. '
+               'It takes as input their adjacency matrices and it returns a '
+               'matching (a.k.a. alignment) between their nodes.')
+EPILOG = ('CITE: Matteo Frigo, Emilio Cruciani, David Coudert, Rachid '
+          'Deriche, Emanuele Natale, Samuel Deslauriers-Gauthier; Network '
+          'alignment and similarity reveal atlas-based topological differences '
+          'in structural connectomes. Network Neuroscience 2021; doi: '
+          'https://doi.org/10.1162/netn_a_00199 .')
+
+
+def get_parsed_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        prog='wlalign',
+        description=DESCRIPTION,
+        epilog=EPILOG,
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter
+    )
+
+    parser.add_argument(
+        'graph1',
+        type=str,
+        metavar='in_graph1',
+        help='Path to the first graph to be aligned'
+    )
+
+    parser.add_argument(
+        'graph2',
+        type=str,
+        metavar='in_graph2',
+        help='Path to the second graph to be aligned'
+    )
+
+    parser.add_argument(
+        'matching',
+        type=str,
+        metavar='out_matching',
+        help='Path where the matching will be saved. The first element of '
+             'each row is the index of the node in the first graph that is '
+             'aligned with the node in the second graph indexed by the second '
+             'element of the row'
+    )
+
+    parser.add_argument(
+        '--first_aligned',
+        type=str,
+        help='The aligned version of the first input graph will be saved in '
+             'the specified position'
+    )
+
+    parser.add_argument(
+        '--k',
+        type=int,
+        metavar='INT',
+        default=2,
+        help='Width parameter'
+    )
+
+    parser.add_argument(
+        '--l',
+        type=int,
+        metavar='INT',
+        default=2,
+        help='Depth parameter'
+    )
+
+    parser.add_argument(
+        '--force',
+        action='store_true',
+        help="Overwrite existing files"
+    )
+
+    parser.add_argument(
+        '-v', '--verbose',
+        dest='verbose',
+        action='store_true',
+        help='Set verbose output'
+    )
+
+    return parser.parse_args()
+
+
+def main():
+    args = get_parsed_args()
+
+    if args.verbose:
+        logging.getLogger().setLevel(logging.INFO)
+    else:
+        logging.getLogger().setLevel(logging.WARNING)
+
+    if args.force:
+        logging.warning('Overwriting existing files')
+
+    wlalign.utils.check_can_write_file(args.alignment, args.force)
+    if args.first_aligned is not None:
+        wlalign.utils.check_can_write_file(args.first_aligned, args.force)
+
+    g1 = wlalign.load_network(args.graph1)
+    g2 = wlalign.load_network(args.graph2)
+    wlalign.utils.check_is_adj(g1)
+    wlalign.utils.check_is_adj(g2)
+    wlalign.utils.check_compatible_adj(g1, g2)
+
+    logging.info(f'Successfully loaded the two graphs:'
+                 f'\n-{args.graph1}'
+                 f'\n-{args.graph2}.')
+
+    matching = wlalign.wl_align(g1, g2, args.k, args.l)
+
+    logging.info(f'Saving node matching in {args.matching}')
+    np.savetxt(args.matching, matching, header=HEADER)
+
+    if args.first_aligned is not None:
+        logging.info(f'Saving aligned version of first graph in '
+                     f'{args.first_aligned}')
+        np.savetxt(args.first_aligned, wlalign.apply_alignment(g1, matching))
+
+
+if __name__ == '__main__':
+    main()
