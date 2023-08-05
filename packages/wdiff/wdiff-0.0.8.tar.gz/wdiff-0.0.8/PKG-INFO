@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wdiff
+Version: 0.0.8
+Summary: Analyze how difficult a Spanish word will be to spell
+License: GPL
+Author: Mario E. Bermonti Pérez
+Author-email: mbermonti1132@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pandas (>=0.25,<0.26)
