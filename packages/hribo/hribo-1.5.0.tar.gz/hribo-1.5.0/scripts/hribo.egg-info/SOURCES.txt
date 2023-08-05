@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+scripts/hribo.egg-info/PKG-INFO
+scripts/hribo.egg-info/SOURCES.txt
+scripts/hribo.egg-info/dependency_links.txt
+scripts/hribo.egg-info/top_level.txt
