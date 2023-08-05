@@ -1,0 +1,14 @@
+dominions/__init__.py,sha256=3S52N1ldzyRfydY_9TqEvyKNsPJzbSYV1yBALyVyH0w,71
+dominions/__main__.py,sha256=KhPqSEwiJkyfqEEEi3Awq2zrMxzmWay48qwWkbU8yLk,121
+dominions/core.py,sha256=zzyRKvOQci2uv99wKGsbEoMg6LqdER742Eb4bPqsvkY,2971
+dominions/dominions.py,sha256=pJmHonvlIUmMNDb68xbnfMoPu8k5ROxFS5ZkIsYCHKc,1605
+dominions/whoisds.py,sha256=dw-f0vI3hiSE97kMaw-FsTPUtvpHZnEslZqJP_bw1jY,4255
+dominions/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dominions/utils/logger.py,sha256=AlU1mPthDUIFColgH7RH9DdQIPZ4rYrSQuHAuZaD5HE,1464
+dominions/utils/version.py,sha256=hnLS4SoS_ezMpq-9XjrQjFTakrBowUpm4dPVGbvOnBM,79
+dominions-0.0.1.dist-info/LICENSE.md,sha256=t51-lnfx4pUU75CJ_RlbLqTZVqAXKA0iVdXjtIv-sGQ,1072
+dominions-0.0.1.dist-info/METADATA,sha256=ZJMM3hR_tB9uqhrWgnms45d2pTqnx6F2xTo5J0b1NdY,2187
+dominions-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dominions-0.0.1.dist-info/entry_points.txt,sha256=VISagN0WXKVr48mkxnebS_Z-EhGYqzYZifl1OG8OxJA,55
+dominions-0.0.1.dist-info/top_level.txt,sha256=nY1zgPe8E7aCDKf7gsIKxyKi5NzpUrd-U2HcRDpaxUw,10
+dominions-0.0.1.dist-info/RECORD,,
