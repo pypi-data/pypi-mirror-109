@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fast_gsdmm.egg-info/PKG-INFO
+fast_gsdmm.egg-info/SOURCES.txt
+fast_gsdmm.egg-info/dependency_links.txt
+fast_gsdmm.egg-info/not-zip-safe
+fast_gsdmm.egg-info/top_level.txt
+src/main.cpp
