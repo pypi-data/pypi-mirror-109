@@ -1,0 +1,3 @@
+@require(dollar_sign, total)
+@(text = f'TOTAL{dollar_sign:>{23 - len(total)}}{total}')\
+                                                    @text

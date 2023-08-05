@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: cue
+Version: 0.8
+Summary: Accounting system for linux
+Home-page: https://kosciuszko.cloud
+Author: Jonas McCallum
+Author-email: jonasmccallum@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://bitbucket.org/kosciuszko/cue
+Project-URL: Tracker, https://bitbucket.org/kosciuszko/cue/issues
+Description: # cue
+        
+        Accounting system for Linux
+        
+            $ mkdir my_awesome_startup
+            $ cd my_awesome_startup
+            $ cue init
+            $ vi temp__Ledger__settings.yml
+        
+            ... edit settings as desired ...
+        
+            $ cue commit
+            creating ledger for my_awesome_startup
+            $ cue invoice apple
+            $ vi temp__Invoice__apple.inv
+        
+            ... edit invoice as desired ...
+        
+            $ cue commit
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: testing
