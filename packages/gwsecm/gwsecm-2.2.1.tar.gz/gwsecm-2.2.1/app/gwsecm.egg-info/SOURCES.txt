@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+app/gwsecm.egg-info/PKG-INFO
+app/gwsecm.egg-info/SOURCES.txt
+app/gwsecm.egg-info/dependency_links.txt
+app/gwsecm.egg-info/not-zip-safe
+app/gwsecm.egg-info/top_level.txt
