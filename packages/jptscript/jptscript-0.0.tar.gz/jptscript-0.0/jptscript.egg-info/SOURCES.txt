@@ -1,0 +1,7 @@
+README.md
+jptscript
+setup.py
+jptscript.egg-info/PKG-INFO
+jptscript.egg-info/SOURCES.txt
+jptscript.egg-info/dependency_links.txt
+jptscript.egg-info/top_level.txt
