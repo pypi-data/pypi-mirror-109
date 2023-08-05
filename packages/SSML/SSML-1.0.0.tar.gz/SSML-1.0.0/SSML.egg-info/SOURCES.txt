@@ -1,0 +1,9 @@
+README.md
+setup.py
+SSML/Exceptions.py
+SSML/Google.py
+SSML/__init__.py
+SSML.egg-info/PKG-INFO
+SSML.egg-info/SOURCES.txt
+SSML.egg-info/dependency_links.txt
+SSML.egg-info/top_level.txt

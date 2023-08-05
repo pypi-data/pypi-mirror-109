@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: SSML
+Version: 1.0.0
+Summary: This is a description
+Home-page: https://github.com/Shinyhero36/SSML
+Author: Shinyhero36
+License: GNU General Public License v3.0
+Project-URL: Source, https://github.com/Shinyhero36/SSML/
+Project-URL: Tracker, https://github.com/Shinyhero36/SSML/issues
+Description: # Project description
+        SSML is a SSML builder for Google Assistant and Amazon Alexa.
+        
+        ## Installing
+        
+        ```console
+        $ pip install -U ssml
+        ```
+        
+        ## Usage
+        ### For Google Assistant
+        
+        1. Create an object
+        ```python
+        from ssml import Google
+        
+        
+        g = Google()
+        ```
+        
+        2. Add text to the speech
+        ```python
+        g.add_text("Hello World")
+        ```
+        
+        3. Build the SSML speech
+        ```python
+        print(g.speak())
+        ```
+        
+        
+        ### For Amazon Alexa
+        Yet to come...
+        
+        ## Links
+        - Documentation: yet to come !!
+        - [PyPI Releases:](https://pypi.org/project/SSML/)
+        - [Source Code:](https://github.com/Shinyhero36/SSML/issues)
+        - [Issue Tracker:](https://github.com/Shinyhero36/SSML/issues)
+        
+Keywords: ssml python google alexa assistant
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Topic :: Home Automation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
