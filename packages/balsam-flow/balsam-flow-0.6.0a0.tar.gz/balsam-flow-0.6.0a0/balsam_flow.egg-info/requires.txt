@@ -1,0 +1,11 @@
+pyyaml
+multiprocessing-logging
+Click
+inquirer
+pydantic[dotenv]
+python-dateutil
+jinja2
+requests
+psutil
+globus-cli
+pyzmq
