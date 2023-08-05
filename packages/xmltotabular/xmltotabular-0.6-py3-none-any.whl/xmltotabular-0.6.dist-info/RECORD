@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=ze_Qn6JxBmczsbr--kla-UUPkz8NmN-siMQFbNBsLo4,889
+tests/test_single_simple_doc.py,sha256=h3Lozf3wwIaOW5D-VnQSLRq2dkq8rSV59jgBszbvpoA,720
+tests/test_sqlite_output.py,sha256=BkbKE77Muuyu9Spg0OFRjXHfESCY4S2RlfRKs2sCy4M,4853
+xmltotabular/__init__.py,sha256=pVAOQL8bbV7O6I9TfFDa-tLcKv44_w7ZivAvH-khVd8,157
+xmltotabular/sqlite_db.py,sha256=6UjPRjS0JrUt3qs4-3uad-d3FbuHMbHHcBwWW05zs4A,6088
+xmltotabular/utils.py,sha256=48r9Hjq37Drd8rEwACSDKvikpaypBE2whKGYtHORhuY,2991
+xmltotabular/xmlcollectiontotabular.py,sha256=z7kESPVPTexzu7r4a39vmGrj9LBxDWjt-dgfu7zm-og,9633
+xmltotabular/xmldoctotabular.py,sha256=JQYAcMpm17v0230qEVky746fJcDZnG-vmFs5quXlUxY,10271
+xmltotabular-0.6.dist-info/LICENSE,sha256=e5YAeAMTQSlSok2dYy11hs3-FR3GgIDYAvwI1FFf6uk,1068
+xmltotabular-0.6.dist-info/METADATA,sha256=yp5PenzEsSExossAGLQ6telvaFpFc0Bh1THJ-0E_V78,2780
+xmltotabular-0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+xmltotabular-0.6.dist-info/top_level.txt,sha256=lhHQbgMgZ35-H16UiFo6K86dN0qGdR6iPDkm1A8pVT4,19
+xmltotabular-0.6.dist-info/RECORD,,
