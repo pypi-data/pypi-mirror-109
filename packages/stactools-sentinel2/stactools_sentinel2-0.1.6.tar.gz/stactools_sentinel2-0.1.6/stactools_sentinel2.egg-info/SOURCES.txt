@@ -1,0 +1,17 @@
+README.md
+setup.py
+stactools/sentinel2/__init__.py
+stactools/sentinel2/cog.py
+stactools/sentinel2/commands.py
+stactools/sentinel2/constants.py
+stactools/sentinel2/granule_metadata.py
+stactools/sentinel2/product_metadata.py
+stactools/sentinel2/safe_manifest.py
+stactools/sentinel2/stac.py
+stactools/sentinel2/utils.py
+stactools/sentinel2/version.py
+stactools_sentinel2.egg-info/PKG-INFO
+stactools_sentinel2.egg-info/SOURCES.txt
+stactools_sentinel2.egg-info/dependency_links.txt
+stactools_sentinel2.egg-info/requires.txt
+stactools_sentinel2.egg-info/top_level.txt
