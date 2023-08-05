@@ -1,0 +1,14 @@
+<fieldset>
+    {% if self.heading %}
+        <legend>{{ self.heading }}</legend>
+    {% endif %}
+    <div class="{{ self.classname }}">
+    <ul>
+        {% for choice in self.instance.choices.all %}
+            <li>
+                <strong>{{ choice.choice }}</strong>: {{ choice.count_votes }}
+            </li>
+        {% endfor %}
+    </ul>
+    </div>
+</fieldset>
