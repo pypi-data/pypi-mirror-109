@@ -1,0 +1,8 @@
+numpy
+matplotlib
+seaborn
+scipy
+numba
+pillow
+scikit-image
+tqdm
