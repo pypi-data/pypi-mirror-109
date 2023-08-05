@@ -1,0 +1,8 @@
+setup.py
+codeaj/__init__.py
+codeaj/scrap.py
+codeaj.egg-info/PKG-INFO
+codeaj.egg-info/SOURCES.txt
+codeaj.egg-info/dependency_links.txt
+codeaj.egg-info/requires.txt
+codeaj.egg-info/top_level.txt

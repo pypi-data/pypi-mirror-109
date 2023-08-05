@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: codeaj
+Version: 0.0.1
+Summary: scrap all the data from the website and convert it into requried language
+Home-page: UNKNOWN
+Author: ajay pandit
+Author-email: <ajayoneness123@gmail.com>
+License: UNKNOWN
+Description: scrap all the data from the website and convert it into requried language we use bs4 for scrapping data and google_trans_new module 
+Keywords: python,scrap,googe translate
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
