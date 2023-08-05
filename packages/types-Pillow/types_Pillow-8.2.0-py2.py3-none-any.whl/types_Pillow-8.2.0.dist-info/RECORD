@@ -1,0 +1,12 @@
+PIL-stubs/Image.pyi,sha256=BxOIEHsUHNl7nN36OYA76_gdvOVT5Npgvpc3uXcsjvA,8256
+PIL-stubs/ImageDraw.pyi,sha256=tSN-BGkLg0PM1AfLb7HwQH4fNb5DqJkdGms0bFhtIqM,5243
+PIL-stubs/ImageFile.pyi,sha256=a4RDji9pZwZzMo4TPOpXRwl-LdsTnu_-y2SZNb8soMk,195
+PIL-stubs/ImageFont.pyi,sha256=zU7aBsRPWdEkvxsrU4dGt1xinZna_RckCglslF0EIrI,3101
+PIL-stubs/METADATA.toml,sha256=cPd4tTQ0E2kmfJ5i3UCVAZXXgvgshkm3SZI3AbGQ34I,16
+PIL-stubs/__init__.pyi,sha256=Mi0AW8C48D30fFnKs9ynFR_atWoEMgEdeAlC_9tiCf0,200
+PIL-stubs/_imaging.pyi,sha256=O9zu91TN8wY_Dkv0YrgyeAwgiMKffmz6sPixa2-47tM,227
+PIL-stubs/_version.pyi,sha256=Y25n44pyE3vp92MiABKrcK3IWRyQ1JG1rZ4Ufqy2nC0,17
+types_Pillow-8.2.0.dist-info/METADATA,sha256=zmvSCFoTgBCliDy0e9v-18maOwmXREClz-B-IoMfLzo,860
+types_Pillow-8.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+types_Pillow-8.2.0.dist-info/top_level.txt,sha256=c1UsxQ1H3OtxcfM1fth9SjQB-DqI7__5IgbU2rpvoZI,10
+types_Pillow-8.2.0.dist-info/RECORD,,
