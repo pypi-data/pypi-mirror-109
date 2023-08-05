@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/treasurecx/__init__.py
+src/treasurecx/asynchronous.py
+src/treasurecx.egg-info/PKG-INFO
+src/treasurecx.egg-info/SOURCES.txt
+src/treasurecx.egg-info/dependency_links.txt
+src/treasurecx.egg-info/requires.txt
+src/treasurecx.egg-info/top_level.txt
