@@ -1,0 +1,15 @@
+LICENSE
+README.md
+__init__.py
+requirements.txt
+setup.py
+.github/workflows/python-publish.yml
+configlog/__init__.py
+configlog/setlogs.py
+loguru_notification.egg-info/PKG-INFO
+loguru_notification.egg-info/SOURCES.txt
+loguru_notification.egg-info/dependency_links.txt
+loguru_notification.egg-info/requires.txt
+loguru_notification.egg-info/top_level.txt
+tests/__init__.py
+tests/test_setlogs.py
