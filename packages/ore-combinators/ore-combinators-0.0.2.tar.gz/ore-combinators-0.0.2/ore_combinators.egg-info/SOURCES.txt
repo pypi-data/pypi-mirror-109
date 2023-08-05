@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+ore/__init__.py
+ore/combinator.py
+ore/error.py
+ore/parser_state.py
+ore/result.py
+ore/run.py
+ore/source.py
+ore/source_position.py
+ore/source_span.py
+ore_combinators.egg-info/PKG-INFO
+ore_combinators.egg-info/SOURCES.txt
+ore_combinators.egg-info/dependency_links.txt
+ore_combinators.egg-info/top_level.txt
