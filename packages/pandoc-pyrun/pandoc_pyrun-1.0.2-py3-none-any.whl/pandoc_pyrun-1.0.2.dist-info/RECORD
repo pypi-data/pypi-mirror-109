@@ -1,0 +1,8 @@
+pandoc_pyrun/__init__.py,sha256=wsTaZq_zom-GVWpgnr1RW5JlN9HSWO2Ez42JuSp1LAU,283
+pandoc_pyrun/pandoc_pyrun.py,sha256=_dsi4BjLhgDyy_9C-LugVpDcBoOLaJ1PDeeGN1JXnt8,17609
+pandoc_pyrun-1.0.2.dist-info/LICENSE,sha256=lGDENT-jANTXgNgJHyjDjDXDhhW_7XNVGPn8izpqz_w,1356
+pandoc_pyrun-1.0.2.dist-info/METADATA,sha256=KKOf_NXOYnd79r_MF4_dx-WW3hfZKEwPriDxQWiDjoU,6222
+pandoc_pyrun-1.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pandoc_pyrun-1.0.2.dist-info/entry_points.txt,sha256=9gW3kHVM1j3SCt4DeUvHUc6nirGlTHzMRWL3MOq3p6o,65
+pandoc_pyrun-1.0.2.dist-info/top_level.txt,sha256=gr6LVCXpPUdffyTnEkHfgbIbEAHLq86GHgyrIaNDEuY,13
+pandoc_pyrun-1.0.2.dist-info/RECORD,,
