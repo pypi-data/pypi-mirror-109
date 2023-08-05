@@ -1,0 +1,2 @@
+boto3==1.17.40
+stactools_core==0.1.6

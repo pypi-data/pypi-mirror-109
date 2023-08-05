@@ -1,0 +1,14 @@
+README.md
+setup.py
+stactools/threedep/__init__.py
+stactools/threedep/commands.py
+stactools/threedep/constants.py
+stactools/threedep/metadata.py
+stactools/threedep/stac.py
+stactools/threedep/utils.py
+stactools/threedep/version.py
+stactools_threedep.egg-info/PKG-INFO
+stactools_threedep.egg-info/SOURCES.txt
+stactools_threedep.egg-info/dependency_links.txt
+stactools_threedep.egg-info/requires.txt
+stactools_threedep.egg-info/top_level.txt
