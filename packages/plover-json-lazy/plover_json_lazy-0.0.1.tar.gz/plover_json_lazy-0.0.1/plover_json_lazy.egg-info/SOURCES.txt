@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+setup.cfg
+setup.py
+plover_json_lazy/__init__.py
+plover_json_lazy.egg-info/PKG-INFO
+plover_json_lazy.egg-info/SOURCES.txt
+plover_json_lazy.egg-info/dependency_links.txt
+plover_json_lazy.egg-info/entry_points.txt
+plover_json_lazy.egg-info/requires.txt
+plover_json_lazy.egg-info/top_level.txt
+plover_json_lazy.egg-info/zip-safe

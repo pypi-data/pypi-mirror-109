@@ -1,0 +1,4 @@
+[plover.dictionary]
+json = plover_json_lazy:LazyJsonDictionary
+jsonl = plover_json_lazy:LazyJsonDictionary
+

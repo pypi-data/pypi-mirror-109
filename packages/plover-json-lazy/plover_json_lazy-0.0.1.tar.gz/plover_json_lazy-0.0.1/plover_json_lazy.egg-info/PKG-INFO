@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: plover-json-lazy
+Version: 0.0.1
+Summary: Plover dictionary plugin to load JSON dictionaries faster the first time.
+Home-page: https://github.com/user202729/plover_json_lazy
+Author: user202729
+License: GNU General Public License v3 or later (GPLv3+)
+Description: # plover-json-lazy
+        Plover dictionary plugin to load JSON dictionaries faster the first time.
+        
+        **Details**: when Plover starts, it takes about a second (depends on the dictionary size and the
+        processing speed) to build the lookup dictionaries (for fast lookup).
+        
+        If this plugin is installed, `.json` dictionaries will delay the lookup dictionaries construction.
+        However, the first lookup will be delayed by about half a second.
+        
+        If you want to be explicit (or if the plugin doesn't work), use `.jsonl` file extension
+        for the dictionaries instead.
+        
+Keywords: plover plover_plugin
+Platform: UNKNOWN
+Classifier: Environment :: Plugins
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
