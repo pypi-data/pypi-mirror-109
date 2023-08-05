@@ -1,0 +1,6 @@
+cement>=3.0.4
+tastyworks==4
+matplotlib>=3.4.2
+pandas>=1.2.4
+QuantLib>=1.21
+python-dateutil>=2.8.1
