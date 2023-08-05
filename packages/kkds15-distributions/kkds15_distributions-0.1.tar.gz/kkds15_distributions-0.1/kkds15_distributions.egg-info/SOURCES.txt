@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+kkds15_distributions/Binomialdistribution.py
+kkds15_distributions/Gaussiandistribution.py
+kkds15_distributions/Generaldistribution.py
+kkds15_distributions/__init__.py
+kkds15_distributions.egg-info/PKG-INFO
+kkds15_distributions.egg-info/SOURCES.txt
+kkds15_distributions.egg-info/dependency_links.txt
+kkds15_distributions.egg-info/not-zip-safe
+kkds15_distributions.egg-info/top_level.txt
