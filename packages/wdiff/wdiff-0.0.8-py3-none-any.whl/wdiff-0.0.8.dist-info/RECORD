@@ -1,0 +1,9 @@
+wdiff/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+wdiff/__init__.py,sha256=KHENmhmqQbjmJBdPy0KnIWxQp6B8_kpmxOW5PRLso3c,99
+wdiff/analyzer.py,sha256=u9BTZdRYxrnR7OsnggjYYGjg3-PkZdQ0J_zg6Zb9ato,5455
+wdiff/docsprocessor.py,sha256=K_o5q07rDRPmbS8S9GRhQ9OpmJZf0d1_VFDtVilmjhY,288
+wdiff/test-output.xml,sha256=uUCgDAH5HLvH9JDZ56XwN9xNwcrVH4F0K7DCxDNjkcE,226
+wdiff/word.py,sha256=3abDFn2EwI3S2TJQ8GNgOuVXgNh7zY6FQQsqpQrkqYI,13959
+wdiff-0.0.8.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+wdiff-0.0.8.dist-info/METADATA,sha256=uAAqykPdMYwkVqQW3UrRVezMNAPlXBrOK9RDZub7qL4,558
+wdiff-0.0.8.dist-info/RECORD,,
