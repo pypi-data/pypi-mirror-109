@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pandoc_pyrun/__init__.py
+pandoc_pyrun/pandoc_pyrun.py
+pandoc_pyrun.egg-info/PKG-INFO
+pandoc_pyrun.egg-info/SOURCES.txt
+pandoc_pyrun.egg-info/dependency_links.txt
+pandoc_pyrun.egg-info/entry_points.txt
+pandoc_pyrun.egg-info/not-zip-safe
+pandoc_pyrun.egg-info/requires.txt
+pandoc_pyrun.egg-info/top_level.txt

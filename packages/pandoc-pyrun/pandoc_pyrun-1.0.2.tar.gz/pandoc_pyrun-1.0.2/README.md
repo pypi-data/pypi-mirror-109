@@ -1,0 +1,137 @@
+# pandoc_pyrun
+ [![pipeline status](https://gitlab-etu.fil.univ-lille1.fr/pandoc-pyrun/pandoc-pyrun/badges/master/pipeline.svg)](https://gitlab-etu.fil.univ-lille1.fr/pandoc-pyrun/pandoc-pyrun/-/commits/master)
+ [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+
+
+*Pandoc_pyrun* is a [pandoc](https://pandoc.org/) filter used to execute **Python** code embedded in Markdown CodeBlocks.  
+The result of the execution of the Python code is displayed in the
+produced documents, for example in PDF or HTML format. Images produced by the [turtle](https://pythonturtle.org/) and [mathplotlib](https://matplotlib.org/) Python libraries can also be included.  
+Options allow to display the Python code and / or the result of its execution.  
+\
+\
+
+# Usage
+An interactive alive console takes the input code, compiles it and displays it to the specific type given, like PDF or Markdown. It can also manage `turtle` or `mathplotlib` codes by generating the images, saving them in the current directory and adding the markdow line to incorporate them in the final file.
+Code has to be **trusted** ; which means that the code is not verified before any execution, the role of this filter is just to execute the code, not to make sure that it is safe to execute it.  
+To use this filter, you can execute this command template :  
+```bash
+pandoc INPUT_FILE -o OUTPUT_FILE -t OUTPUT_FORMAT  -F pandoc_pyrun
+```  
+
+Example :  
+```bash
+pandoc hello.md -F pandoc_pyrun -t pdf -o hello_converted.pdf
+```
+
+- This can be used to convert into any text pandoc supported format.  
+- The only expected source is **Markdown** language.  
+
+\
+\
+
+# Installation
+*pandoc_pyrun* requires **Python** language.  
+To install the filter, follow the instructions below :  
+1. Install **Pandoc** on your device with [this link](https://pandoc.org/installing.html)
+2. (*Optional*) Install **LaTeX** to transform your markdown into pdf with [this link](https://www.latex-project.org/get/) 
+3. Install **Ghostscript** for *plot* and *turtle* figures with [this link](https://www.ghostscript.com/download/gsdnld.html)  
+    - **NOTE :** *In your **PATH** variable, make sure you have the **bin/** folder of **Ghostscript** added, otherwise it won't work.*  
+4. Update your pip with `python -m pip install --upgrade pip` 
+5. Install this filter with `pip install pandoc-pyrun`  
+
+\
+\
+
+
+# How to use it
+On the top of your document, you'll be able to define global variables for the pandoc_pyrun filter.  
+**NOTE :** the classes' names and values can be written in both ways : lower case and upper case.  
+```
+---
+title: Running your Python CodeBlocks
+author: Thomas D'HULST, Ajwad TAYEBI
+date: March 29, 2021
+pandoc_pyrun_out: OUT
+pandoc_pyrun_mode: MODE
+pandoc_pyrun_type: TYPE
+---
+``` 
+
+Here is a sample of how a `CodeBlock` has to be written ; you can also put values (other than defined above) for any pandoc_pyrun classes in the {}.  
+Instead of `.py` or `.python`, you can also write `.pandocPyrun`.
+```
+    ```{.py[thon] out=OUT type=TYPE scope=SCOPE file=FILE}
+    #Here you enter your code
+    ```
+```  
+
+\
+
+**The list of possible values for the above parameters can be found in [the overview table](docs/reference_manual.md#overview-table) of the reference_manual.**  
+**A complete use of this filter is available in [the tutorial](docs/tutorial.md).**  
+
+\
+
+
+**NB :**  
+  - Only `CodeBlock` can be read with this filter.  
+  - If you don't want to let the filter compile your code, add a `.pyrunPass` between the {} explained below.  
+  - The main goal of its utilisation is to produce, for a code block, its text and/or its execution's result by a Python interpreter.    
+
+\
+\
+
+# Examples
+Let's take the following document content `input.md`.  
+```
+    ```{.python out=NONE}
+    def for_all(lst):
+        return not False in lst
+    ```
+
+    ```{.python out=ALL}
+    for_all([])
+    for_all((True, True, True))
+    for_all((True, False, True))
+    ```
+```
+Here we have forced the out values but the others are set as **[default]** as indicated in the table above.  
+Now just execute `pandoc -o output.md input.md -F pandoc_pyrun` and then you'll get :  
+```
+    ::: {.pyrun}
+    ::: {.in}
+    ``` {.python .pyrunPass}
+    for_all([])
+    for_all((True, True, True))
+    for_all((True, False, True))
+    ```
+    :::
+
+    ::: {.out}
+    ``` {.python .pyrunPass}
+    True
+    True
+    False
+    ```
+    :::
+    :::
+```
+\
+\
+
+
+# Wanna see more ?
+Check the folder `samples/` which contains multiple other examples.  
+
+Use the command `make` to generate all examples.
+
+Use the command `make [filename].pdf` to generate the chosen example in pdf.
+
+Use the command `make [filename]-out.md` to generate the chosen example in markdown.
+
+Use the command `make clean` to clean all generated files.
+\
+\
+
+# Help
+Any trouble with our filter ? File an issue or contact us !  
