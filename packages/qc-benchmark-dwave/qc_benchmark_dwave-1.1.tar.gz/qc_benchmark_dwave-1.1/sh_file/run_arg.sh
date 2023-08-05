@@ -1,0 +1,11 @@
+python3 ../testing_client_argparse.py \
+	-t lvbo-caict \
+	-i 8.140.123.60 \
+	-p 1981 \
+	-pr dwave-leap \
+	-q qpu_2000q \
+	-mq True \
+	-o query_runtime \
+	-c operation_maintenance \
+	-e 50 \
+	-sc hehe.json
