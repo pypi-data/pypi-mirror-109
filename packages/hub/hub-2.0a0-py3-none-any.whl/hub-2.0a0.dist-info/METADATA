@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: hub
+Version: 2.0a0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: activeloop.ai
+Author-email: shashank@activeloop.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: numcodecs (>=0.7.3)
+Requires-Dist: msgpack (>=1.0.2)
+Requires-Dist: Pillow-SIMD (==7.0.0.post3)
+Requires-Dist: boto3
+Requires-Dist: boto3-stubs[essential]
+Requires-Dist: pathos
+
+UNKNOWN
+
+
