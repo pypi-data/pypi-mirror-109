@@ -1,0 +1,10 @@
+@require(taxes, subtotal)
+@if taxes:
+@(
+ex_tax_label = (f"ex {taxes[0]['label']}"
+    if len(taxes) == 1 and
+    taxes[0]['label'] != 'Sales tax'
+    else 'ex tax')
+text = f'Total ({ex_tax_label}){subtotal:>{20 - len(ex_tax_label)}}'
+)\
+                                                    @text

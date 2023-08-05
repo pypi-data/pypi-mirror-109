@@ -1,0 +1,8 @@
+@require(taxes)
+@if any(t['label'] == 'Sales tax' for t in taxes) or not taxes:
+                                    INVOICE                             # 123456
+@elif 'VAT' in taxes:
+                                   VAT INVOICE                          # 123456
+@else:
+                                   TAX INVOICE                          # 123456
+@end

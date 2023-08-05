@@ -1,0 +1,10 @@
+@require(taxes)
+@for tax in taxes:
+@(text = f'{tax["label"]}{tax["amt"]:>{28 - len(tax["label"])}}')\
+                                                    @text
+@end
+@if taxes:
+                                                                      ==========
+@else:
+
+@end

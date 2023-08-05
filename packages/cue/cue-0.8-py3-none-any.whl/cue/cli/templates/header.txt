@@ -1,0 +1,8 @@
+@require(org_name, tagline, registered_number)
+@org_name
+@if tagline:
+@tagline
+@end
+@if registered_number:
+@registered_number
+@end
