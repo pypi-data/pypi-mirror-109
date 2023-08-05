@@ -1,0 +1,2 @@
+class DSOException(Exception):
+    pass
