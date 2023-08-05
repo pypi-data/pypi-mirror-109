@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/analytics_logger_rest/__init__.py
+src/analytics_logger_rest/analytics_logger_rest.py
+src/analytics_logger_rest.egg-info/PKG-INFO
+src/analytics_logger_rest.egg-info/SOURCES.txt
+src/analytics_logger_rest.egg-info/dependency_links.txt
+src/analytics_logger_rest.egg-info/top_level.txt
