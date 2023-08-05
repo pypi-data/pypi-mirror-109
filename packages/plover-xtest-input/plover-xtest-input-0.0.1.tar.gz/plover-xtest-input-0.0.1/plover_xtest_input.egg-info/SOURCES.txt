@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+setup.cfg
+setup.py
+plover_xtest_input/__init__.py
+plover_xtest_input.egg-info/PKG-INFO
+plover_xtest_input.egg-info/SOURCES.txt
+plover_xtest_input.egg-info/dependency_links.txt
+plover_xtest_input.egg-info/entry_points.txt
+plover_xtest_input.egg-info/requires.txt
+plover_xtest_input.egg-info/top_level.txt
+plover_xtest_input.egg-info/zip-safe
