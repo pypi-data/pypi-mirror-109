@@ -1,0 +1,3 @@
+[console_scripts]
+metabodirect = metabodirect.__main__:main
+
