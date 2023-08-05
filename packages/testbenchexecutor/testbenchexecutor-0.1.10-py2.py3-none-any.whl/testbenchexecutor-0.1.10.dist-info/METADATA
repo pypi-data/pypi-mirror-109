@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: testbenchexecutor
+Version: 0.1.10
+Summary: Executes the steps in a Test Bench manifest
+Home-page: UNKNOWN
+Author: MetaMorph Software, Inc
+Author-email: adam.nagel@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: python-dateutil (>=2.5.0)
+Requires-Dist: Jinja2 (>=2.10.0)
+
+UNKNOWN
+
+
