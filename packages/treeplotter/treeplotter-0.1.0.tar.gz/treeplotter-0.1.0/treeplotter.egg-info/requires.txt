@@ -1,0 +1,7 @@
+click
+flake8
+jsonpickle
+matplotlib
+pre-commit
+pytest
+Wand
