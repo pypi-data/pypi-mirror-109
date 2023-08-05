@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+oras/__init__.py
+oras/logger.py
+oras/version.py
+oras.egg-info/PKG-INFO
+oras.egg-info/SOURCES.txt
+oras.egg-info/dependency_links.txt
+oras.egg-info/not-zip-safe
+oras.egg-info/requires.txt
+oras.egg-info/top_level.txt

@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: oras
+Version: 0.0.0
+Summary: OCI Registry as Storage Python client
+Home-page: https://github.com/vsoch/oras-python
+Author: Vanessa Sochat
+Author-email: vsoch@users.noreply.github.com
+Maintainer: Vanessa Sochat
+License: LICENSE
+Description: # ORAS Python
+        
+        ![https://raw.githubusercontent.com/oras-project/oras-www/main/docs/assets/images/oras.png](https://raw.githubusercontent.com/oras-project/oras-www/main/docs/assets/images/oras.png)
+        
+        OCI Registry as Storage enables client libraries to push OCI Artifacts to [OCI Conformant](https://github.com/opencontainers/oci-conformance) registries. This is a Python client for that.
+        
+        **under development**
+         
+        ## Usage
+        
+        You should see [supported registries](https://oras.land/implementors/#docker-distribution), or if you
+        want to deploy a local testing registry, you can do:
+        
+        ```bash
+        $ docker run -it --rm -p 5000:5000 registry 
+        ```
+        
+        ## License
+        
+        This code is licensed under the MIT [LICENSE](LICENSE).
+        
+Keywords: oci,registry,storage
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.3
+Description-Content-Type: text/markdown
+Provides-Extra: all
