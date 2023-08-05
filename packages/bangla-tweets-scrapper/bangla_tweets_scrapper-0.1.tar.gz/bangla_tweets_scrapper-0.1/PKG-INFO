@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: bangla_tweets_scrapper
+Version: 0.1
+Summary: Scrapping bengali data from twitter
+Home-page: https://github.com/sunjid-rahman/bangla_tweets
+Author: Sunjid Rahman
+Author-email: sunjid.cse@gmail.com
+License: MIT
+Download-URL: https://github.com/sunjid-rahman/bangla_tweets/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
