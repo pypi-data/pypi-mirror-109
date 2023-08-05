@@ -1,0 +1,5 @@
+fire==0.3.1
+requests==2.25.1
+pendulum==2.1.2
+confusables==1.2.0
+python-Levenshtein==0.12.2
