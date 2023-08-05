@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+analiz/__init__.py
+analiz.egg-info/PKG-INFO
+analiz.egg-info/SOURCES.txt
+analiz.egg-info/dependency_links.txt
+analiz.egg-info/requires.txt
+analiz.egg-info/top_level.txt
+analiz/dogrusal_regresyon/__init__.py
+analiz/karar_agaci/__init__.py
+analiz/zaman_serileri/islem.py

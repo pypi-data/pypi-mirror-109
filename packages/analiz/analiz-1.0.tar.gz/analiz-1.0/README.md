@@ -1,0 +1,1 @@
+Bu readme.md dosyasıdır.
