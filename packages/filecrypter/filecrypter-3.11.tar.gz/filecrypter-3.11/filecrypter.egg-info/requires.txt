@@ -1,0 +1,5 @@
+pycryptodome
+torpy
+flask
+requests
+urllib3

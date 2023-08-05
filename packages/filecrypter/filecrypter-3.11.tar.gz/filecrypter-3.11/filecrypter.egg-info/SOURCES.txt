@@ -1,0 +1,9 @@
+README.md
+filecrypter.py
+setup.py
+filecrypter.egg-info/PKG-INFO
+filecrypter.egg-info/SOURCES.txt
+filecrypter.egg-info/dependency_links.txt
+filecrypter.egg-info/entry_points.txt
+filecrypter.egg-info/requires.txt
+filecrypter.egg-info/top_level.txt

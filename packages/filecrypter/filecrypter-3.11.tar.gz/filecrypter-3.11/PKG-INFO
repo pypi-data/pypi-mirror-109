@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: filecrypter
+Version: 3.11
+Summary: Script to Help Encrypt and Decrypt File Using RSA Key.
+Home-page: https://github.com/fuadkhan713/filecrypter
+Author: Fuad Khan
+Author-email: fuad.khan713@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://packaging.python.org/tutorials/distributing-packages/
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Source, https://github.com/fuadkhan713/filecrypter
+Project-URL: Tracker, https://github.com/fuadkhan713/filecrypter/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Security :: Cryptography 
+Classifier: Topic :: System :: Networking
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+<pre>
+<b>Install:</b>
+    pip install filecrypter
+
+usage: filecryptor [-h] [--m {enc,dec,gen,send,client}] [--file FILE] [--key KEY] [--keySize {512,1024,2048,4096}] [--link LINK] [--port PORT] [--c C]
+
+Description: Script to Help Encrypt and Decrypt File Using RSA Key.
+
+        python -m filecryptor --m enc --file=test.txt --key=pub.key
+        python -m filecryptor --m dec --file=test.txt.enc --key=private.key
+        python -m filecryptor --m gen --keySize=2048
+
+Send File Via Hidden Network:
+Link Needs to be Start With [https://]
+        python -m filecrypter --m send --file test.txt --link https://[HOST_IP]:443 --c 4
+Create a Client to Receive From a Network:
+        python -m filecryptor --m client --port 443 --file to_file
+
+IMPORTANT NOTES AND BUGS:
+        1. MAIN FILE WILL BE DELETED AFTER ENCRYPTION.
+        2. ENCRYPTED FILE WILL BE DELETED AFTER DECRYPTION.
+        3. MAXIMUM FILE SIZE IS 4GB. THIS LIMIT ALSO DEPENDS ON SYSTEM RAM.
+           MIGHT NOT WORK WITH LESS RAM. DONT WORRY FILE WONT BE DELETED IF FAILED.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --m {enc,dec,gen,send,client}
+                        Mode for operation [enc]/[dec]/[gen]/[send]/[client]
+  --file FILE           File to encrypt/decrypt
+  --key KEY             Key to encrypt/decrypt
+  --keySize {512,1024,2048,4096}
+                        Key size default is 2048 bit
+  --link LINK           Link to send file
+  --port PORT           Port to start the client Default(443)
+  --c C                 Num of tor circuit to create While sending file Default(3)
+
+
+</pre>
+
