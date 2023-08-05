@@ -1,0 +1,10 @@
+wlalign/__init__.py,sha256=KZljY_iYGmhXPuXZynaB7pPR1x1YqrOShFKsL-OhhMo,387
+wlalign/alignment.py,sha256=XPfd3VPa2HGBxx5g8_Ni3-Dc7ZKMq_21TR9-SkOVLcc,6553
+wlalign/similarity.py,sha256=gZsFS-BsQpN7N8sVKy8IF7EChXI7-MlL7sYYGJrdwSs,1109
+wlalign/utils.py,sha256=cl6UPgfQOPr7HIr_J5LX1s1iy7ZjOUANdE3IYyXaeqQ,5208
+wlalign-1.0.0.data/scripts/wlalign,sha256=5rT5mX_It-weNEL9Q8oKmWif_ZcYhQe2W91FDoZ5UYU,3677
+wlalign-1.0.0.dist-info/LICENSE,sha256=YA9AsxO9NxIJtpmbaDpkAn-ne8ZHPr9pQTZRaS8Wx1g,1076
+wlalign-1.0.0.dist-info/METADATA,sha256=INX9A3DublhcoEWvFhEz-uS4KvbOXdYMg0ofZVJipuA,3677
+wlalign-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wlalign-1.0.0.dist-info/top_level.txt,sha256=fmKHwTtMcZ_kg8QvaMB_0DCMt2r3ndGTeJPBHdEu_g4,8
+wlalign-1.0.0.dist-info/RECORD,,
