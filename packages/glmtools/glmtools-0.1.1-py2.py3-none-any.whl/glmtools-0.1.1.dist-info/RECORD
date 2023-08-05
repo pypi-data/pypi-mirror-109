@@ -1,0 +1,15 @@
+glmtools/__init__.py,sha256=iJ4NUiuouxSaj_8rnr4I5VNgHOpIBlgvAo6gsQ0szRI,381
+glmtools/data.py,sha256=JEmMWIXkPRxsRVCqY2NbMi6CEhE7JYRIFb8nDu1HAbA,15459
+glmtools/design.py,sha256=NfRAqrwvewdkYZcJ0LR1dAuWndWO8uMeTZL0AxFsY5I,18190
+glmtools/example.py,sha256=xux2J3HzvgDKh4Duu2Ws11_eg6X4ulzv8wJSj5m2T2M,14886
+glmtools/fit.py,sha256=gUVLovyBJ3378FR76u2_Oyk51BDHNGWi9d445DuH3wg,20397
+glmtools/io.py,sha256=Ij_dLQvfbRqAB0qXt7ihLy1Uh-HHownFwa9z_c3LlJc,1741
+glmtools/permutations.py,sha256=z0faoNRjb0xgNceo5OPoxgwQgXfCJXyNSbU9ouHOQ9k,31735
+glmtools/regressors.py,sha256=yr9jAmSXHK204wd70ZbI1FSBY-N4S5kSnrXwWee3vDU,11265
+glmtools/stats.py,sha256=jl3TqUzZEcTh-xUMGCM_WtYVGU8Lei_FVHJ1GYLylls,5006
+glmtools/util.py,sha256=uM0rhdBYupGs7o699GC_0E--Q80cU5zMhxoO-Dzu59A,16665
+glmtools/viz.py,sha256=qCxCCOoW9hnvbOd88xjImZE4-2xnnsyOZmv_ZfTtc0Q,10878
+glmtools-0.1.1.dist-info/METADATA,sha256=zrXUVcjIKzmhNcHjns0QsHWhnTFkZ4yJUH9YePWzRv0,1192
+glmtools-0.1.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+glmtools-0.1.1.dist-info/top_level.txt,sha256=cgPg39v6Cql1AKqCqZJp1LlDgy41BaJdUIlR55q6HM0,9
+glmtools-0.1.1.dist-info/RECORD,,
