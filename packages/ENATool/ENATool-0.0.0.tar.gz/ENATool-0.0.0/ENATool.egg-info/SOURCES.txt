@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+ENATool/__init__.py
+ENATool/extract_samples_info.py
+ENATool/safe_samples_downloader.py
+ENATool.egg-info/PKG-INFO
+ENATool.egg-info/SOURCES.txt
+ENATool.egg-info/dependency_links.txt
+ENATool.egg-info/requires.txt
+ENATool.egg-info/top_level.txt
