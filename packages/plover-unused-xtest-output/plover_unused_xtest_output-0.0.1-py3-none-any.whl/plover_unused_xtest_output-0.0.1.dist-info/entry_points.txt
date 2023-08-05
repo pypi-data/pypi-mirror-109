@@ -1,0 +1,3 @@
+[plover.output]
+XTEST (unused keycodes only) = plover_unused_xtest_output:KeyboardEmulation
+
