@@ -1,0 +1,9 @@
+mvg/__init__.py,sha256=-cECv_br8fVdHirc4zHWxtphMq-iCilMjMpKOFJ8pAg,69
+mvg/analysis_classes.py,sha256=g62jAGOB924PyMwoCWj-mldXptjhKx0gUdtty-fHhro,18007
+mvg/mvg.py,sha256=WMxqMybpMJXLJdxv6bJh_8roFzyV74K_-0AN2NDXENA,22302
+mvg/plotting.py,sha256=e7VzIasnU6HFsYeSklmKZxs3wSkeUUg2-9J2R91MXSQ,9730
+va_mvg-0.6.0.dist-info/LICENSE,sha256=pmaZ5UFog2le_qtXfYxin5lQXUaSMcY_wbWMY2d4y54,11349
+va_mvg-0.6.0.dist-info/METADATA,sha256=_1M7eSIxyoYwcM7aiIBsL0NxK-711tqzNI17--9_Eb0,4923
+va_mvg-0.6.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+va_mvg-0.6.0.dist-info/top_level.txt,sha256=D0NlO5S-Jv8LNhyMUU6mnY9uDURl50kdos0iLicL3E8,4
+va_mvg-0.6.0.dist-info/RECORD,,
