@@ -1,0 +1,10 @@
+defusedxml
+modoboa<2.0,>=1.17
+
+[test]
+black
+coverage
+flake8-black
+flake8-isort
+flake8>=3.5
+isort>=5.0

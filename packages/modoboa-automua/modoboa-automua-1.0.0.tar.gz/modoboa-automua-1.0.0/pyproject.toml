@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools >=42", "wheel", "setuptools_scm[toml] >=3.4"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[tool.black]
+line-length = 80
+skip-string-normalization = true
+
+[tool.isort]
+profile = 'black'
+line_length = 80
+known_django = 'django'
+known_modoboa = 'modoboa'
+sections = [
+  'FUTURE', 'STDLIB', 'DJANGO', 'MODOBOA', 'THIRDPARTY', 'FIRSTPARTY', 'LOCALFOLDER'
+]
+skip_glob = '**/migrations/*.py'
+
+[tool.coverage.run]
+branch = true
+source = ['modoboa_automua']
+omit = ['modoboa_automua/migrations/*']
+
+[tool.coverage.report]
+exclude_lines = ['# pragma: no cover', 'raise NotImplementedError']
+show_missing = true
