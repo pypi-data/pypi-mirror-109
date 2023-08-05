@@ -1,0 +1,8 @@
+flask_postgresql_wrapper.py,sha256=DpLEHfHIrjkteFtKx2U8rWh15Le5irvA96FXcvvoTMc,10389
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/flask_postgresql_wrapper_test.py,sha256=16CaQu6oLLG9wmaaq_UZXr137-XNVsecEmpDnMSu-Ic,3690
+flask_postgresql_wrapper-1.0.1.dist-info/LICENSE,sha256=TjpFV6Vvsm9qM0bLp67VQKet_Y3BxTu8VxqbaqsGet4,1071
+flask_postgresql_wrapper-1.0.1.dist-info/METADATA,sha256=lvG43auZNzbGBA8UjnmtUnSmsP4nqCcSgFPxmex_ICg,5236
+flask_postgresql_wrapper-1.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+flask_postgresql_wrapper-1.0.1.dist-info/top_level.txt,sha256=VAlevKfhiK-1UXiVdxFyHDyPDn_jqVtevHbiBB32OlM,31
+flask_postgresql_wrapper-1.0.1.dist-info/RECORD,,
