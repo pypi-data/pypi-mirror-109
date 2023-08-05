@@ -1,0 +1,6 @@
+README.md
+setup.py
+phonepiece.egg-info/PKG-INFO
+phonepiece.egg-info/SOURCES.txt
+phonepiece.egg-info/dependency_links.txt
+phonepiece.egg-info/top_level.txt
