@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        guarded=guarded.__main__:cli
+    
