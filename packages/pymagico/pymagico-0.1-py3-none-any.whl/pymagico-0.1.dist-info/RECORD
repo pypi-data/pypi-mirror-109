@@ -1,0 +1,10 @@
+magic/__init__.py,sha256=B5wMCsXF0ukutFSzHtzM1wTJzbQ2MBtuG_6000Vqiuc,119
+magic/actions.py,sha256=2pmi3hieVxtuU0b2MbW2BH2hRe7HxePpWfRdE-2D6IQ,1707
+magic/lib.py,sha256=x_fN7KwfFX-AeaRWJlMqw4nTdPGbKa0UBoz36ZTiqTs,64
+magic/magic.py,sha256=eMslPvLOoqCWQRhN1XatstE2_zI-KtrXiMlrGSUgIdM,25
+magic/requests.py,sha256=wKcFaT72fDQ81a7UnGMRMnkF7BEdPtB4huMr2_bAnU4,1462
+magic/version.py,sha256=jkw-XePV9-Yef6Kd74exT67O_ev7oWpafwmvOwq16Es,1287
+pymagico-0.1.dist-info/METADATA,sha256=4cCLlCOz5rKMXil4hVl42vqFMCXH2tJJpk18GIsJqvg,1032
+pymagico-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pymagico-0.1.dist-info/top_level.txt,sha256=MDDOZCPmPBiPXW10LHC6RzAJaGX08WaDj_oOOo7sQRc,6
+pymagico-0.1.dist-info/RECORD,,
