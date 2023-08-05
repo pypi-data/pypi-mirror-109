@@ -1,0 +1,15 @@
+cws/__init__.py,sha256=P00Jd62T5bVMFQRhMIX4v91i2YcR0wHjMSJp7mnSPLw,2085
+cws/__main__.py,sha256=BY2Uu9zzP54BIW3Z_6EwQ2EKd55H4UHZXqKe--fuAaA,95
+cws/config.py,sha256=uUUuZEx5OU1W4pdSUqIkFkrIHwB2MtO_NEUmDoCJd-k,2130
+cws/cws.py,sha256=KY6DxITAOcbwxKoarLjY2zUYkBPbT5zizSfQtEP5miw,1072
+cws/searchresponse.py,sha256=7t6hNxhn0qA37aLwBH81EgOFhgLpFsG1sjuH9kQWHzo,736
+cws/searchresult.py,sha256=o6r4WCz-hhMh9PfxX525NI9rNDwBDBOIzx8a4Ds0Z5k,638
+cws/provider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cws/provider/google.py,sha256=QSdJjd3jhpSq845KWFf3z76MRjag8CoeGUZvtFYqtdg,1055
+cws/provider/searchprovider.py,sha256=k6EvHmhNjzorYpB0XjHt2ganHFJnm0x8y_v_RR1Ales,1261
+cws/provider/youtube.py,sha256=UgBq2GVeLZMvmVHFzFggeN_AlObG0KnankzaQdnf0qY,1520
+cws_clisearch-0.1.1.dist-info/METADATA,sha256=94BtibWI_r5Hl0jwTaCWiAt5dHq5H4q4QJ2ekZ_5YQQ,3341
+cws_clisearch-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cws_clisearch-0.1.1.dist-info/entry_points.txt,sha256=4vSnU2a04gy8r0JZp9gu5rBfP2_VP8x6-CGSySkx3FA,34
+cws_clisearch-0.1.1.dist-info/top_level.txt,sha256=ND17duWcv5y51bLUkX16uJuAnM2V6CT97uWDffs0ccY,4
+cws_clisearch-0.1.1.dist-info/RECORD,,
