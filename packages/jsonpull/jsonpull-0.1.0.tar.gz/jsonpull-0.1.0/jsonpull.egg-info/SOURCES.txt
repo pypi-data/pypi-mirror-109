@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+jsonpull/JsonPrint.py
+jsonpull/__init__.py
+jsonpull.egg-info/PKG-INFO
+jsonpull.egg-info/SOURCES.txt
+jsonpull.egg-info/dependency_links.txt
+jsonpull.egg-info/top_level.txt
