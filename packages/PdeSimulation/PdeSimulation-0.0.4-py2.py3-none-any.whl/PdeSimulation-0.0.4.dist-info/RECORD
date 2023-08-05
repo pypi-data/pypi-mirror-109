@@ -1,0 +1,14 @@
+PdeSimulation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PdeSimulation/burgers.py,sha256=Jaa_RfUGm_ONLqX73vnPqethbL0_uD9BZIxw6T_JwRE,2090
+PdeSimulation/heat_equation.py,sha256=NHZ6Ckbj06nse9Bc0xG4yX4r7GMl7iBYBJF0rRcQ660,7489
+PdeSimulation/transport_equation.py,sha256=Jnh5wlVQOO8vgGUWYxB1zNPcc03HBGSZPazEAxQI1CE,3265
+PdeSimulation/wave_equation.py,sha256=V8jFNY4yb_DNG7jnQk7fYbex07_VD62Z0OfvmmjCodU,6943
+pde_simulation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pde_simulation/burgers.py,sha256=flCrtUIqDQr15UOKFQYY9V5m03nsOZP5lFvQ2o4t1AM,2091
+pde_simulation/heat_equation.py,sha256=ZDdJBf6MaMUiJBPsH3FVdkDfDgXiK6yNhRMDh23v4Ps,7494
+pde_simulation/transport_equation.py,sha256=wnR3wZ-zAaAMRLEUvlwlzlewGYMUAiVGXGp1jvIU12o,3438
+pde_simulation/wave_equation.py,sha256=iWRZdzUhiDILfyRW7KEr1nGLOB7hVNZ452EhMxQHVxo,6947
+PdeSimulation-0.0.4.dist-info/METADATA,sha256=LTZi7EhWpXbG6EhOunFMGtiIEzZ_qzHb_O_TQKWl1jE,481
+PdeSimulation-0.0.4.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+PdeSimulation-0.0.4.dist-info/top_level.txt,sha256=L4QOt5ZzbNS5eSExx7aBb8A1H9z1uSeWUSeukW2-3ew,14
+PdeSimulation-0.0.4.dist-info/RECORD,,
