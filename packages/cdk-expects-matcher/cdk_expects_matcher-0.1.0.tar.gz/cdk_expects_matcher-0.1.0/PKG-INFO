@@ -1,0 +1,71 @@
+Metadata-Version: 1.2
+Name: cdk_expects_matcher
+Version: 0.1.0
+Summary: Python package to provide a unit testing framework for AWS CDK in python
+Home-page: https://github.com/elgamala/cdk_expects_matcher
+Author: Ahmed Elgamal
+Author-email: eng.ahmed.srour@gmail.com
+License: MIT license
+Description: ===================
+        cdk_expects_matcher
+        ===================
+        
+        
+        .. image:: https://img.shields.io/pypi/v/cdk_expects_matcher.svg
+                :target: https://pypi.python.org/pypi/cdk_expects_matcher
+        
+        .. image:: https://img.shields.io/travis/elgamala/cdk_expects_matcher.svg
+                :target: https://travis-ci.com/elgamala/cdk_expects_matcher
+        
+        .. image:: https://readthedocs.org/projects/cdk-expects-matcher/badge/?version=latest
+                :target: https://cdk-expects-matcher.readthedocs.io/en/latest/?version=latest
+                :alt: Documentation Status
+        
+        
+        .. image:: https://pyup.io/repos/github/elgamala/cdk_expects_matcher/shield.svg
+             :target: https://pyup.io/repos/github/elgamala/cdk_expects_matcher/
+             :alt: Updates
+        
+        
+        
+        Python package to provide a unit testing framework for AWS CDK in python
+        
+        
+        * Free software: MIT license
+        * Documentation: https://cdk-expects-matcher.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2021-06-09)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: cdk_expects_matcher
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
