@@ -1,0 +1,16 @@
+README.md
+setup.py
+stactools/landsat/__init__.py
+stactools/landsat/ang_metadata.py
+stactools/landsat/assets.py
+stactools/landsat/commands.py
+stactools/landsat/constants.py
+stactools/landsat/mtl_metadata.py
+stactools/landsat/stac.py
+stactools/landsat/utils.py
+stactools/landsat/version.py
+stactools_landsat.egg-info/PKG-INFO
+stactools_landsat.egg-info/SOURCES.txt
+stactools_landsat.egg-info/dependency_links.txt
+stactools_landsat.egg-info/requires.txt
+stactools_landsat.egg-info/top_level.txt
