@@ -1,0 +1,6 @@
+toml
+
+[test]
+pytest==6.2.0
+pytest-cov==2.12.1
+waves==0.2.5

@@ -1,0 +1,4 @@
+[console_scripts]
+dev-extras-require-hook = hooks.dev_extras_required:main
+wavelint-hook = hooks.wavelint:main
+
