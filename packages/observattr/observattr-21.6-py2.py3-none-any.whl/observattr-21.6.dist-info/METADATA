@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: observattr
+Version: 21.6
+Summary: Observable class attributes in pure python
+Home-page: https://github.com/mbckstl/observattr
+Author: Marnix Bockstael
+Author-email: mbockstael@protonmail.com
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# ObservAttr: Observable Attributes
+
+
+## Usage
+
