@@ -1,0 +1,8 @@
+Changelog
+=========
+
+1.0 - (2021-06-09)
+-----------------------
+
+* Initial release: RestAPI endpoint GET, PATCH, ControlPanel
+  [avoinea - refs #134513]
