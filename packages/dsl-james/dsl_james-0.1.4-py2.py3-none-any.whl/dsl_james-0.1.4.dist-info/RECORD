@@ -1,0 +1,15 @@
+james/__init__.py,sha256=hKT326SfeCxm57JzJ8T0hM5Dvm-86fXucDot6_H6OqE,136
+james/azure.py,sha256=hLfLrGKNUBshnMCsPEbXLhrtxj87j6TncYUy0xlYmmg,2792
+james/cli.py,sha256=O6hUMWCqto-Ed_gF_YpEWnGCmQ3yxwksNmCCASssUVE,11208
+james/config.py,sha256=Q1RPPZYjQNNkD3wW9QT41ZQyVmHOlG6OootsI0v5CAk,14877
+james/james.py,sha256=mqP2gphVa8-S2SU2V1SGcmU_B3-cBKZNr2cJM23fsvk,9255
+james/platform.py,sha256=1piLKxFG3Up6irEkkAfVDzpKBmohky93i2HLdAt86y4,4315
+james/review.py,sha256=e8jafgI9xRtfCtRUnQI0ioHk7sMaMHPpsHLbffCEg3I,8171
+james/utils.py,sha256=CCeA1wwRYZ0ZTGrt-UYJAtOcPC5eLy3hwdkC2tQk10g,4136
+dsl_james-0.1.4.dist-info/AUTHORS.rst,sha256=JlVFdio_dSxl5R8TRVyzcwmfWL310hZppVu1IDQ_lA4,181
+dsl_james-0.1.4.dist-info/LICENSE.txt,sha256=ukEi8E0PKq1dQGTXHUflg3rppLymwAhr7il9x-0nPgg,1062
+dsl_james-0.1.4.dist-info/METADATA,sha256=LWy_s_DMSXq-Jq-Z9T9SJj7epz9qCxFVC8jyRDfx7bU,3227
+dsl_james-0.1.4.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+dsl_james-0.1.4.dist-info/entry_points.txt,sha256=PT9vs0Jt5YKrQXOC94fT4ESy-jjFeDhpNslqYf-zwIs,42
+dsl_james-0.1.4.dist-info/top_level.txt,sha256=2bt5qcfbNPTk1w7yv4GVY6DDux6DF4Pn1M4jW4fiAig,6
+dsl_james-0.1.4.dist-info/RECORD,,
