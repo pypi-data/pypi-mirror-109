@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+setup.cfg
+setup.py
+plover_unused_xtest_output/__init__.py
+plover_unused_xtest_output.egg-info/PKG-INFO
+plover_unused_xtest_output.egg-info/SOURCES.txt
+plover_unused_xtest_output.egg-info/dependency_links.txt
+plover_unused_xtest_output.egg-info/entry_points.txt
+plover_unused_xtest_output.egg-info/requires.txt
+plover_unused_xtest_output.egg-info/top_level.txt
+plover_unused_xtest_output.egg-info/zip-safe
