@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ctimeit/__init__.py
+ctimeit/ctimeit.py
+ctimeit.egg-info/PKG-INFO
+ctimeit.egg-info/SOURCES.txt
+ctimeit.egg-info/dependency_links.txt
+ctimeit.egg-info/top_level.txt
