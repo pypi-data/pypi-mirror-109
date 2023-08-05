@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hcmioptim
+Version: 0.0.1
+Summary: A collection of useful heuristic based optimization algorithms.
+Home-page: UNKNOWN
+License: GNU GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# HCMI OPTIM
+This package contains a flexible implementation of simulated annealing. There are plans to add similar code for genetic algorithms. It's possible that particle swarm optimization may also be added in the future.
+
