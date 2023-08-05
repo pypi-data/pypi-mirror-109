@@ -1,0 +1,4 @@
+[console_scripts]
+eukcc = eukcc.__main__:main
+shared_markers = eukcc.find_markerset:main
+
