@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: graphene-pydantic-updated
+Version: 0.1.0
+Summary: 
+Author: Jeremy Berman
+Author-email: jerber@sas.upenn.edu
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: graphene (>=3.0b5)
+Requires-Dist: pydantic (>=1.8.1,<2.0.0)
