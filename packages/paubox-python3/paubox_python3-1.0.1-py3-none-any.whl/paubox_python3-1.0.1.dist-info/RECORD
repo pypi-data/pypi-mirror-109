@@ -1,0 +1,13 @@
+.DS_Store,sha256=CSqwBJ7kIKxfDikrLd3EwnqRpXctzdTFtxz02eTdUg4,6148
+paubox/__init__.py,sha256=IJ0fB_hoy8OKE0Zqgwb0i_sDpPj9BGrqF2C0WK9puVg,211
+paubox/paubox.py,sha256=rJrPuGqQB3xQ39bsohtUd-0ZJjibCAhreVZWGAkxcIw,3014
+paubox/helpers/__init__.py,sha256=48qI9O0tSgscT-udWppatyFJ9UKXSCXw7EDUF4RAfyk,118
+paubox/helpers/errors.py,sha256=83-tS4pwq2uWvaMrlmU1TK2Sc0eR0bV0nKwA-FwOmeg,200
+paubox/helpers/mail.py,sha256=W__sJvhETjNrogPT7Th4iWrA04PwSZKD5lAH17qisXM,4962
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_paubox.py,sha256=dEDI-wy3clIY-73eamMBO-C3CDH4QN8RfKXUEbrXOJQ,6424
+paubox_python3-1.0.1.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+paubox_python3-1.0.1.dist-info/METADATA,sha256=HZ4I2Oleox8rjrrP7M8e3C3SYk_79rz94gSQzCaoE4k,12269
+paubox_python3-1.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+paubox_python3-1.0.1.dist-info/top_level.txt,sha256=kgeK77qtSbCYgqpW2luwGpDZGZ3Oayy9FuD_FffHTtQ,13
+paubox_python3-1.0.1.dist-info/RECORD,,
