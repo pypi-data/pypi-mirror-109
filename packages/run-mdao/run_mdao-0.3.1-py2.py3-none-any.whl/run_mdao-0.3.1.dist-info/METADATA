@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: run-mdao
+Version: 0.3.1
+Summary: Runs a mdao_config.json with OpenMDAO
+Home-page: UNKNOWN
+Author: MetaMorph Software, Inc
+Author-email: ksmyth@metamorphsoftware.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: openmdao (<2,>=1.7)
+Requires-Dist: testbenchexecutor
+
+UNKNOWN
+
+
