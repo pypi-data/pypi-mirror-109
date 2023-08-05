@@ -1,0 +1,9 @@
+LICENCE
+setup.cfg
+setup.py
+json_array_file/__init__.py
+json_array_file.egg-info/PKG-INFO
+json_array_file.egg-info/SOURCES.txt
+json_array_file.egg-info/dependency_links.txt
+json_array_file.egg-info/not-zip-safe
+json_array_file.egg-info/top_level.txt
