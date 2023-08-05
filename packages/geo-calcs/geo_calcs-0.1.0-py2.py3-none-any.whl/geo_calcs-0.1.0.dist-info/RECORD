@@ -1,0 +1,12 @@
+geo_calcs/__init__.py,sha256=M-IHTfB4EZFS6-k2dGZsltN_v_KTSn-chJo01WvRUSM,136
+geo_calcs/geo_calcs.py,sha256=vR5AaF0iel21LvsdcqwheoBz0SIj9K9I_Ub8M8oA98Y,20
+geo_calcs/geo_chem/__init__.py,sha256=M-IHTfB4EZFS6-k2dGZsltN_v_KTSn-chJo01WvRUSM,136
+geo_calcs/geo_chem/geo_chem.py,sha256=vR5AaF0iel21LvsdcqwheoBz0SIj9K9I_Ub8M8oA98Y,20
+geo_calcs/geo_chron/__init__.py,sha256=M-IHTfB4EZFS6-k2dGZsltN_v_KTSn-chJo01WvRUSM,136
+geo_calcs/geo_chron/geo_chron.py,sha256=b-sKBMYHuxe9gF51bk0zE70Zv6rSMPU66NhtTlAtWPQ,8863
+geo_calcs-0.1.0.dist-info/AUTHORS.rst,sha256=vlBCqRiVAiJWLl7k3whK-WT-wdavIIY9zSSOpLPWBbM,173
+geo_calcs-0.1.0.dist-info/LICENSE,sha256=Gpmjzfnxun5Yne3oQ9SRjOoHIwHBIcfsMESmM4lv3tc,1093
+geo_calcs-0.1.0.dist-info/METADATA,sha256=fGTZkLzmEWYdipJNp14WUSUz9HhVgL4gBa6SDl37cH0,1773
+geo_calcs-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+geo_calcs-0.1.0.dist-info/top_level.txt,sha256=kdciIXYB15h0i_mAfdYZPTD9SQmkec5n3xYJTkZObw0,10
+geo_calcs-0.1.0.dist-info/RECORD,,
