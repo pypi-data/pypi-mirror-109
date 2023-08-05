@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: stactools-cgls-lc100
+Version: 0.1.6
+Summary: Subpackage for working with Copernicus Global Land Cover Layers data in stactools, a command line tool and Python library for working with STAC.
+Home-page: https://github.com/stac-utils/stactools.git
+Author: stac-utils
+Author-email: stac@radiant.earth
+License: Apache Software License 2.0
+Keywords: stactools,psytac,CGLS_LC100,imagery,landcover,land cover,catalog,STAC,Copernicus
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: stactools-core (==0.1.6)
+
+# stactools_cgls_lc100
+
+A subpackage of stactools for working with Copernicus Global Land Cover Layers data.
+
