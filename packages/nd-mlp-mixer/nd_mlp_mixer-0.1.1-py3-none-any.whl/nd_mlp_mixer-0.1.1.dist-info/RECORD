@@ -1,0 +1,13 @@
+nd_mlp_mixer/__init__.py,sha256=_bLwl29-NyyZTaFen-4ReWRcfWafFH2-rLOQlEL46CA,180
+nd_mlp_mixer/dense_on_axis.py,sha256=uz-mCw7eqGgP5NUn3SWHVCynV8qJMD3jgH365lTkh08,2352
+nd_mlp_mixer/layers.py,sha256=J9wZUMT0pPhhnLa1gFfpEojSsjKRp3TjBHWzRyWcOJ4,640
+nd_mlp_mixer/mlp.py,sha256=ZGiAfhyC5BJSY_4hzOjCCr49pePaWWLNNxuJ_HFSLDQ,1160
+nd_mlp_mixer/mlp_mixer.py,sha256=Fjm49e-h8AduBXwkPGOnXO0gduHOOVfK6yWAghYIy0Y,1894
+nd_mlp_mixer/nd_mixer.py,sha256=20muzkztk4_RWkKNYPvYtoeGbk8EUuyWU0qBQfjTzho,3393
+nd_mlp_mixer/scalar_gate.py,sha256=V7586vO3vDVvmyQ9CaF_YDMkNeJWSKvyIAaTs6k0vtw,236
+nd_mlp_mixer/version.py,sha256=I4WU5JcKZjfggPiNIoGDFxUDB05Ym1xFhbC3J_MjilA,18
+nd_mlp_mixer-0.1.1.dist-info/LICENSE,sha256=IXse471QdaBdhV-IFfZmCCQuKkJodtW2KYeHMNGAmA8,11419
+nd_mlp_mixer-0.1.1.dist-info/METADATA,sha256=twrEdyP24mMPiy8ACK2Da0dMU-9P8ET-4c04mQtd4hM,2863
+nd_mlp_mixer-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nd_mlp_mixer-0.1.1.dist-info/top_level.txt,sha256=LOlqK3rC3xBdR4ZKYzE_DdGf8JEY4ETE8d9gpLowtWM,13
+nd_mlp_mixer-0.1.1.dist-info/RECORD,,
