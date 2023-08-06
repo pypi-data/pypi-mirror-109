@@ -1,0 +1,10 @@
+kobert_transformers/__init__.py,sha256=sXePyUvv9rZJVyYd2efr45Sd1jiFfb7EYOaXurKA0ZY,295
+kobert_transformers/load_model.py,sha256=nzax5Avdj8RZXzvdbV7-zCKaIv5jtL_bS-8LfmeVFwo,733
+kobert_transformers/tokenization_kobert.py,sha256=P3VOKOMcJHbRY5OEu014LWjpE9k-1TAePv7iHvM-k68,10896
+kobert_transformers/utils.py,sha256=yYkoGuFKkGq5yjjlHt4gV_bO96rYKdumDQ1_fAFgjiE,134
+kobert_transformers/version.txt,sha256=02ERkoGxsWSIKTLqLVEI7E4Ec1wyvEWmeJu0MIXwUfo,8
+kobert_transformers-0.5.1rc1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+kobert_transformers-0.5.1rc1.dist-info/METADATA,sha256=FB8B4rbzcqA8oJrtaVFUrk8JrSMKeAizRAhM04NoLm4,7311
+kobert_transformers-0.5.1rc1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kobert_transformers-0.5.1rc1.dist-info/top_level.txt,sha256=5Dh435wal2TnaVVZ2PSaI24AXVbrxk_RScXPeKDtUWE,20
+kobert_transformers-0.5.1rc1.dist-info/RECORD,,
