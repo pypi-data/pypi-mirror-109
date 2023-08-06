@@ -1,0 +1,3 @@
+
+[requests_adapter_injector.adapter]
+injector-test:// = requests_adapter_injector.test_adapter:TestAdapter

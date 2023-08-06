@@ -1,0 +1,5 @@
+importhook<2,>=1.0.8
+requests<3,>=2.23.0
+
+[:python_version < "3.8"]
+importlib_metadata
