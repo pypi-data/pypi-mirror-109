@@ -1,0 +1,29 @@
+Changelog
+=========
+
+1.4 - (2021-06-16)
+---------------------------
+* Cleanup: Remove junk files
+  [iulianpetchesi]
+
+1.3 - (2021-06-14)
+---------------------------
+* Change: Hardocde 'en' language in collective.taxonomy patch
+  [iulianpetchesi - refs #131802]
+
+1.2 - (2021-06-14)
+---------------------------
+* Bug fix: Added collective.taxonomy patch in order to avoid situations where
+  the request doesn't exist
+  [iulianpetchesi - refs #131802]
+
+1.1 - (2021-06-10)
+---------------------------
+* Bug fix: Fix RestAPI PATCH for Python 2
+  [avoinea - refs #134513]
+
+1.0 - (2021-06-09)
+-----------------------
+
+* Initial release: RestAPI endpoint GET, PATCH, ControlPanel
+  [avoinea - refs #134513]
