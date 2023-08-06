@@ -1,0 +1,11 @@
+cubicweb_editorjs/__init__.py,sha256=2VTMfM0NdvTuSb6kleSLXvRlcE0pmd16uJv0NDxVFME,3936
+cubicweb_editorjs/__pkginfo__.py,sha256=asHPl9fXhaHKozDW2KDQ2k4BWqWT0-vVNx88wdGj9io,650
+cubicweb_editorjs/data/cubes.editorjs.js,sha256=wigsbbL_FLD_2uIQLY3aiRgxpCR98M1cK7yHDoGXE-8,2027
+cubicweb_editorjs/i18n/en.po,sha256=EGZckSBeIJYkvhpjL4dCLHF8-iJCJ6nD0oHu7LmyIW4,248
+cubicweb_editorjs/i18n/es.po,sha256=EGZckSBeIJYkvhpjL4dCLHF8-iJCJ6nD0oHu7LmyIW4,248
+cubicweb_editorjs/i18n/fr.po,sha256=EGZckSBeIJYkvhpjL4dCLHF8-iJCJ6nD0oHu7LmyIW4,248
+cubicweb_editorjs-0.1.0.dist-info/METADATA,sha256=X733HJW7WiE17VuEY8uFINWsi2-K5YT-AUyWTQQGO5E,529
+cubicweb_editorjs-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cubicweb_editorjs-0.1.0.dist-info/entry_points.txt,sha256=OVRJqT00B1FVIRRiopoS04kTPbvvoYtTqGEC7ttylSs,47
+cubicweb_editorjs-0.1.0.dist-info/top_level.txt,sha256=zj7FTbotH_4WN5KAOFYmY38A-3loHaWFzcz8ud0wZnk,18
+cubicweb_editorjs-0.1.0.dist-info/RECORD,,
