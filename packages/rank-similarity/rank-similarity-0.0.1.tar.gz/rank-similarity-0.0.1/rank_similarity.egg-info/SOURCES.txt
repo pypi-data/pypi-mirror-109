@@ -1,0 +1,17 @@
+README.md
+requirements.txt
+setup.py
+rank_similarity.egg-info/PKG-INFO
+rank_similarity.egg-info/SOURCES.txt
+rank_similarity.egg-info/dependency_links.txt
+rank_similarity.egg-info/requires.txt
+rank_similarity.egg-info/top_level.txt
+rank_similarity.egg-info/zip-safe
+ranksim/__init__.py
+ranksim/_base.py
+ranksim/_classes.py
+ranksim/_filters.py
+ranksim/_version.py
+ranksim/tests/__init__.py
+ranksim/tests/test_common.py
+ranksim/tests/test_ranksim.py
