@@ -1,0 +1,8 @@
+sphinx_disqus/__init__.py,sha256=fCsxKc_0gC7xWlIJZz-Sccj867qEnhxgu-DHmOnlw1s,97
+sphinx_disqus/_static/disqus.js,sha256=mQmLpCR_BOnwgIOPB6nlUtXARYWbPbto0qrmqfeBD2k,802
+sphinx_disqus/disqus.py,sha256=tSpbjXQcoTPu7oST0760jp0iuiASEDWklT2gaHRN5go,4830
+sphinx_disqus-1.2.0.dist-info/LICENSE,sha256=BZ-jpQKmUxrCuv012UX4_GXUHJtL2LOfyvLTS4iYH2Y,1318
+sphinx_disqus-1.2.0.dist-info/COPYING,sha256=BZ-jpQKmUxrCuv012UX4_GXUHJtL2LOfyvLTS4iYH2Y,1318
+sphinx_disqus-1.2.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+sphinx_disqus-1.2.0.dist-info/METADATA,sha256=dpPZj80EmjX_J-W1PtZOnFaOvGgeRfRGEq6YWpDw1gs,3206
+sphinx_disqus-1.2.0.dist-info/RECORD,,
