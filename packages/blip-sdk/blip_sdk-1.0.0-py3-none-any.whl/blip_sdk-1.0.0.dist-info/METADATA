@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: blip-sdk
+Version: 1.0.0
+Summary: BLiP SDK Python
+Home-page: https://github.com/chr0m1ng/blip-sdk-python
+Author: Gabriel Santos <gabrielr@take.net>, Luis Araújo <luisc@take.net>
+Author-email: gabrielr@take.net
+License: apache-2.0
+Keywords: lime,blip,chatbot,sdk
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: lime-python
+Requires-Dist: lime-transport-websocket
+
+# Blip SDK Python
+
+> Simple BLiP SDK for Python
+
+**This is a work in progress**
+
+
