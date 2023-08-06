@@ -1,0 +1,11 @@
+piptegrator/__config__.py,sha256=Rg0lEuP4-yrssv_cAX9tqSLJ7io_2BNaw4kLBfFrZIM,694
+piptegrator/__init__.py,sha256=i8h-wPsXLhVMaba2wNXPtdzsSQ5g4-TvTQUz-A2YBdU,20
+piptegrator/common.py,sha256=tDYL-J6n7M9zdAica8lvY5nOVoYJHuEo2-hHy3zyOps,4643
+piptegrator/helper.py,sha256=jvHNxryo3ggDKsujJEKXKnKMCuCUymtGPy-eNaD4CLs,9619
+piptegrator/piptegrator.py,sha256=xAtL4NI-9wjB8UVWU9lV7jWYaaUbiVxJH7JcPjBC43I,1347
+piptegrator/vcs_tool.py,sha256=Kf_FCTeKfgVltBu27jYjVbYgXvjlxVT38FHWlXWPKjk,18029
+piptegrator-1.3.0rc2.dist-info/METADATA,sha256=0Sshn-hAlImvDd1KBBWrPZjW4ke2gWpbB5TzG3ee4SA,2672
+piptegrator-1.3.0rc2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+piptegrator-1.3.0rc2.dist-info/entry_points.txt,sha256=2iLdexxmTOoPNA3mAPQsQqYU98A2k8GDnc36E1DWly8,62
+piptegrator-1.3.0rc2.dist-info/top_level.txt,sha256=2mJwFNqYSyBkpTuc1J5GHr00Q9vUHQB3GijXDRcbPZI,12
+piptegrator-1.3.0rc2.dist-info/RECORD,,
