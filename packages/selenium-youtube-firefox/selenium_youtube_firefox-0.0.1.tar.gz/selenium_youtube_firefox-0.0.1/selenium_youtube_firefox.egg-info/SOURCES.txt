@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+selenium_youtube_firefox/__init__.py
+selenium_youtube_firefox/youtube.py
+selenium_youtube_firefox.egg-info/PKG-INFO
+selenium_youtube_firefox.egg-info/SOURCES.txt
+selenium_youtube_firefox.egg-info/dependency_links.txt
+selenium_youtube_firefox.egg-info/requires.txt
+selenium_youtube_firefox.egg-info/top_level.txt
