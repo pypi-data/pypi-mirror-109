@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: stkcam
+Version: 0.0.2
+Summary: simple tinkerboard camera module
+Home-page: https://github.com/harryliou/stkcam
+Author: Harry Liou
+Author-email: harry_liou@asus.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/harryliou/stkcam/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# Python module for simple ASUS tinkerboard camera
+
+## Overview
+This repository documentation for simple asus tinkerboard camera control. Test create python module and upload python pypi. May with a lots of bug :)
+
+## Test Environment
+
+* device: [ASUS Tinkerboard](https://www.asus.com/us/Networking-IoT-Servers/AIoT-Industrial-Solution/All-series/Tinker-Board/)
+* image: v2.2.2
+* camera: OV5647 (Raspiberry Camera V1, 5MP)
+  * IMX219 (Raspiberry Camera V2, 8MP), another tinkerboard supported camera is not tested
+* python version: 3.5
+
+## Usage
+* preview
+```console
+$ from stkcam import TKCam, CamType
+$ cam = TKCam(CamType.OV5647)
+$ cam.preview()
+```
+* take a picture
+```console
+$ from stkcam import TKCam, CamType
+$ cam = TKCam(CamType.OV5647)
+$ cam.take_image('/home/linaro/Desktop\image.jpg') # image path
+```
+
