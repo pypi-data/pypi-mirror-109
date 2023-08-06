@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: dlmml
+Version: 0.0.3
+Summary: Converts IR to Code. Heart of Auto-DL
+Home-page: https://github.com/Auto-DL/DLMML
+Author: Auto-DL
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<p align="center"><img width=30% src="static/adl_dlmml.png"></p>
+
+<center>
+
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+[![GitHub issues](https://img.shields.io/github/issues-raw/Auto-DL/DLMML?color=red)](https://github.com/Auto-DL/DLMML/issues?q=is%3Aopen+is%3Aissue)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Auto-DL/DLMML)](https://github.com/Auto-DL/DLMML/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/Auto-DL/DLMML)](https://github.com/Auto-DL/DLMML/pulls?q=is%3Aopen+is%3Apr)
+[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/Auto-DL/DLMML?color=green)](https://github.com/Auto-DL/DLMML/pulls?q=is%3Apr+is%3Aclosed)
+[![Slack](https://img.shields.io/badge/Join%20Our%20Community-Slack-blue)](https://join.slack.com/t/autodl/shared_invite/zt-qagxiwub-ywRM_oBvvF~F7YNtlBqy_Q)
+
+</center>
+
+# DLMML
+
+The intermediary representation of the generated model.
+
+## How to run
+
+#### Install form PyPI (recommended):
+
+```sh
+pip install dlmml 
+```
+*Yep, that's it :)*
+
+#### Steps to build package locally: 
+
+1. ```sh
+    # clone the repo
+    git clone https://github.com/Auto-DL/DLMML.git
+    ```
+
+2. *Activate your environment* (not compulsory but highly recommended)
+
+3. `python -m build`
+
+4. `pip install dist\dlmml-*.tar.gz`
+
+5. [Extra Step] Check using pytest by either running `pytest` or `python setup.py pytest`
+
+#### What is the notebooks folder about:
+
+- Testing and Prototyping is what we do there 
+- Run the `jupyter-notebook` command
+- Using the GUI, navigate and run the notebooks
+- [This](https://github.com/Auto-DL/DLMML/blob/master/notebooks/Code%20Generator%20PlayBook.ipynb) can be a good starting point
+
+
+## Where to go next?
+
+#### To know more about the project and initiative, please visit our [website](https://auto-dl.github.io/)
+
+#### Curious to know about our front-end or backend development? [Here](https://github.com/Auto-DL/Generator), Have a look :)
+
+## Note
+- To know more about the technicalities of the project, read the our [developer guidelines](https://github.com/Auto-DL/DLMML/blob/master/docs/devguide.md).
+- For more detailed instructions to run the DLMML part. Read our [User guidelines](https://github.com/Auto-DL/DLMML/blob/master/docs/userguide.md) 
+
+## Contributing
+Please take a look at our [contributing](https://github.com/Auto-DL/DLMML/blob/master/docs/contributing.md) guidelines if you're interested in helping!
+
+#### Features to add
+- Add model generation code for pytorch
+
+- Check if generated code is correct (current thought is to call model.compile and return errors if any)
+
+- Add different model evaluation parameters
+
+- Test for backward compatibility of libraries versions
+
+- Benchmarking parameters
+
+- Visualization and data preprocessing steps to be added
+
+
