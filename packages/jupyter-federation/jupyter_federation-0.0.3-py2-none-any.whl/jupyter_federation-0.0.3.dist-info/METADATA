@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: jupyter-federation
+Version: 0.0.3
+Summary: Jupyter Federation
+Home-page: https://github.com/datalayer/jupyter-federation
+License: MIT
+Project-URL: Documentation, https://jupyter-federation.readthedocs.io
+Keywords: datalayer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+Requires-Dist: typing
+Provides-Extra: code_style
+Requires-Dist: flake8 (<3.8.0,>=3.7.0) ; extra == 'code_style'
+Requires-Dist: black ; extra == 'code_style'
+Requires-Dist: pre-commit (==1.17.0) ; extra == 'code_style'
+Provides-Extra: rtd
+Requires-Dist: myst-parser ; extra == 'rtd'
+Requires-Dist: pyyaml ; extra == 'rtd'
+Requires-Dist: sphinx ; extra == 'rtd'
+Requires-Dist: sphinxcontrib-bibtex ; extra == 'rtd'
+Requires-Dist: ipython ; extra == 'rtd'
+Requires-Dist: sphinx-book-theme ; extra == 'rtd'
+Requires-Dist: sphinx-tabs ; extra == 'rtd'
+Provides-Extra: sphinx
+Provides-Extra: testing
+Requires-Dist: coverage ; extra == 'testing'
+Requires-Dist: pytest (<4,>=3.6) ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: pytest-regressions ; extra == 'testing'
+Requires-Dist: beautifulsoup4 ; extra == 'testing'
+
+[![Datalayer](https://raw.githubusercontent.com/datalayer/datalayer/main/res/logo/datalayer-25.svg?sanitize=true)](https://datalayer.io)
+
+# Jupyter Federation
+
+> Jupyter Federation
+
+
