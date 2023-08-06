@@ -1,0 +1,12 @@
+maingopy/_maingopy.cpython-39-darwin.so,sha256=0d_Bm4knFcsCuqz0QIsVk4dm0MXzZdgXIrQPYX-nPaU,13738308
+maingopy/__init__.py,sha256=8uGwYdhkvh9ghbTiu0rpraqMMh7-KLfASsYKXgFKGqY,665
+maingopy/melonpy.cpython-39-darwin.so,sha256=0vCizjSMI_VOJJlfzeKZdzxhUU1QyEaNInp-4h_S9NU,706176
+maingopy/.dylibs/libgfortran.5.dylib,sha256=TPPzJQhWW0kMQ6-o-lSRSk_fr23I84fxYUiW_cwVt60,2810084
+maingopy/.dylibs/libquadmath.0.dylib,sha256=sau40knvOdFpJW7lDGEGSeDcvzxqEgt8QRZG0VT2hZ8,288440
+maingopy/.dylibs/libgcc_s.1.dylib,sha256=stllmplWFfkmxGf0BzBLvseOKTabsbEsXyP-Z4I6sHE,139704
+maingopy-0.5.0.dist-info/RECORD,,
+maingopy-0.5.0.dist-info/LICENSE,sha256=b4uHgxpsztaC_2UTWM9lHYbkMO60xha5hPK_bNK7DyE,91040
+maingopy-0.5.0.dist-info/AUTHORS,sha256=qDHJneWM1cTQIHYCpStjlsZiQsN7cSAXoHPqppwVKMI,1092
+maingopy-0.5.0.dist-info/WHEEL,sha256=kgjZmMZ4TrJPieaGskOv7Eipm5GDObgWy9w0C0esbOY,104
+maingopy-0.5.0.dist-info/top_level.txt,sha256=alt1N1RINhZO7dBpd8wE3tgYCSDB-KTPVxZ-msAcJgY,9
+maingopy-0.5.0.dist-info/METADATA,sha256=kjiqphTEUQGEiHjvlO8AyI--ixUAidGwu3C1HCt2bDE,3394
