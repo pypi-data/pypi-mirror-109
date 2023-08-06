@@ -1,0 +1,9 @@
+ccrdg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ccrdg/accel_gyro_data.py,sha256=7hFuenhisZhr9D_XmKkB6tKRhQTQnMl2V0QQ7zzCMI4,4086
+ccrdg/battery_data.py,sha256=Km4-o7OnS17SOgbC1m17ZFAE9Vb2GNbgANkLkMgrAro,4110
+ccrdg/location_data.py,sha256=dvl_sx6wI5xOdFenr2j76s4tzlktNlvr_FtsbnDZ6TQ,7849
+ccrdg-1.0.1.dist-info/METADATA,sha256=DWZiwr3xdofQA9FDDP_hWiesgMsYMJViC9MtCaikbV8,2096
+ccrdg-1.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+ccrdg-1.0.1.dist-info/entry_points.txt,sha256=qnauPJ50yiPTSy_DEoWe0r6kTzCfAt98JE7V767qljc,36
+ccrdg-1.0.1.dist-info/top_level.txt,sha256=k32IuBWzWf6HFgXf24gNc3AfyXUaa40w65JXz1cn6gQ,6
+ccrdg-1.0.1.dist-info/RECORD,,
