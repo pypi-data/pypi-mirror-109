@@ -1,0 +1,10 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/tometrics/__init__.py
+src/tometrics/main.py
+src/tometrics.egg-info/PKG-INFO
+src/tometrics.egg-info/SOURCES.txt
+src/tometrics.egg-info/dependency_links.txt
+src/tometrics.egg-info/requires.txt
+src/tometrics.egg-info/top_level.txt
