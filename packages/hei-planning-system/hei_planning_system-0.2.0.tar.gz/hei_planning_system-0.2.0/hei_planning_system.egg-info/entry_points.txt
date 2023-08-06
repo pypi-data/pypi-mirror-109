@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        plansys=planning_system.cli:ps
+    
