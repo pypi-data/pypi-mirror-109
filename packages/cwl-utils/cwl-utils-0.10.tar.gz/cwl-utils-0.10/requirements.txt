@@ -1,0 +1,4 @@
+requests
+schema-salad >= 7, < 8
+typing_extensions
+cwltool
