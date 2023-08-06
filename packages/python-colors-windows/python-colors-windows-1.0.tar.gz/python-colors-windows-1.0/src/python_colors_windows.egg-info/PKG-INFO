@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: python-colors-windows
+Version: 1.0
+Summary: Python-Colors-Windows is used for Beautify Your Output With Just calling a function
+Home-page: https://github.com/pmk456/python-colors-windows
+Author: Patan Musthakheem
+Author-email: patanmusthakheem786@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pmk456/python-colors-windows/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python-Colors-Windows
+## Installation
+```
+pip install python-colors-windows
+```
+## Note
+```
+Since Windows Doesn't support Displaying string directly
+with color!
+I have came with a simple solution.
+changing The Whole Terminal color, using commands.
+Ex:
+color a [ Which Changes The Color To Light Green ]
+```
+## Usage
+```
+For Ex: Using Blue Color
+from WinColors import Colors
+colors = Colors()
+colors.blue();print("Your Text")
+```
+## All Available Colors
+```
+LI = Light
+RESET
+BLUE
+GREEN
+AQUA
+RED
+PURPLE
+YELLOW
+WHITE
+GRAY
+LI_BLUE
+LI_GREEN
+LI_AQUA
+LI_RED
+LI_PURPLE
+LI_YELLOW
+BR_WHITE
+
+```
+
+

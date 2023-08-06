@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/WinColors/__init__.py
+src/python_colors_windows.egg-info/PKG-INFO
+src/python_colors_windows.egg-info/SOURCES.txt
+src/python_colors_windows.egg-info/dependency_links.txt
+src/python_colors_windows.egg-info/top_level.txt
