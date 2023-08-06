@@ -1,0 +1,3 @@
+[console_scripts]
+Demo_video = Bubblesk.Demo_video:main
+

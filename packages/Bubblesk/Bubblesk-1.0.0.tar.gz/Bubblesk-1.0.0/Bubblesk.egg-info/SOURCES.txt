@@ -1,0 +1,16 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+read.txt
+requirement.txt
+setup.py
+Bubblesk/Demo_video.py
+Bubblesk/NNDemo.py
+Bubblesk/__init__.py
+Bubblesk/nnAPI.py
+Bubblesk.egg-info/PKG-INFO
+Bubblesk.egg-info/SOURCES.txt
+Bubblesk.egg-info/dependency_links.txt
+Bubblesk.egg-info/entry_points.txt
+Bubblesk.egg-info/top_level.txt
