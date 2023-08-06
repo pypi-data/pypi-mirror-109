@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: open_1688
+Version: 0.0.1
+Summary: 1688 api 
+Home-page: https://github.com/l3n641/open_1688
+Author: l3n641
+Author-email: hh250@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### 基于open.1688.com的sdk,做成合适自己的包
+
