@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+SpinFal.egg-info/PKG-INFO
+SpinFal.egg-info/SOURCES.txt
+SpinFal.egg-info/dependency_links.txt
+SpinFal.egg-info/top_level.txt
