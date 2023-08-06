@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tikkie-api
+Version: 1.1.0
+Summary: Tikkie API client
+Home-page: https://github.com/new10com/python-tikkie-api
+Author: New10
+Author-email: pypi-admin@new10.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+License-File: LICENSE
+
+# tikkie-api
+Python Tikkie API
+
+
