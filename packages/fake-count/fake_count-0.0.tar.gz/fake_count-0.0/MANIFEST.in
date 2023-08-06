@@ -1,0 +1,5 @@
+include LICENSE
+include README.rst
+recursive-include fake_count *
+recursive-include fake_count/templatetags *
+recursive-include fake_count/templates *
