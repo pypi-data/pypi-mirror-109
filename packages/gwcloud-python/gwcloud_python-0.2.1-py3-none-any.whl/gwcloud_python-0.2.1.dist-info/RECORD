@@ -1,0 +1,13 @@
+gwcloud_python/__init__.py,sha256=AI_4JusgfPXhnzUTO1Z0x-OB9Apd3XF7Q-p_0nyZROM,220
+gwcloud_python/bilby_job.py,sha256=5-QdT6J9C3HyIgt5Fjom-mZC_V4xiys0Lem_qGsvmlE,7788
+gwcloud_python/gwcloud.py,sha256=HkzP0CSjlC4X6yheEFdyyGmchP533Q0TuQOqyXPOtok,8835
+gwcloud_python/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gwcloud_python/tests/test_gwcloud_python.py,sha256=yjrSZgdl7yZ11Gm6YsSS_WjC_JcnCbh3Bq7c3EHMOyU,2890
+gwcloud_python/utils/__init__.py,sha256=tWRgAhfNIqLgYdQiLfFq6PyjR5QNS0Ypg69Ohr4DEgI,101
+gwcloud_python/utils/identifiers.py,sha256=wAiwSKvZNL1qqzeCr0sNAnk-GUScvQ0ETjdMnAzTF7E,4353
+gwcloud_python/utils/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gwcloud_python/utils/tests/test_identifiers.py,sha256=gqZm_wRJGl3IwgXYomJ_jxUw3oz-1y_Hnz_Yi0Z6YjI,2745
+gwcloud_python/utils/utils.py,sha256=Bmx2cb9uqzyvRmlEtO5rs9qVTt1kW2lil-awCITMOGk,1352
+gwcloud_python-0.2.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+gwcloud_python-0.2.1.dist-info/METADATA,sha256=BZberX1RWxzaD02Z1LNHyu07aATshXnd1-6Z8wlYIas,843
+gwcloud_python-0.2.1.dist-info/RECORD,,
