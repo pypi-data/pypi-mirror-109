@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+ovo.egg-info/PKG-INFO
+ovo.egg-info/SOURCES.txt
+ovo.egg-info/dependency_links.txt
+ovo.egg-info/top_level.txt
