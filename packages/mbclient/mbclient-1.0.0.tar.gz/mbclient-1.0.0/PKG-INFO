@@ -1,0 +1,33 @@
+Metadata-Version: 1.2
+Name: mbclient
+Version: 1.0.0
+Summary: A client for the Moessbauer experiment of the KIT-Physics Laboratory course
+Home-page: https://github.com/phylex/mbclient
+Author: Alexander Becker
+Author-email: galax.becker@live.de
+License: GPL v3
+Description: # mbclient
+        Client software and on the fly visualisation tools for the moessbauer effect.
+        
+        ## The client software
+        The client software is a command line tool capable of connecting to the Red-Pitaya running the [MBFilter](https://github.com/phylex/MBFilter)
+        program in server mode, providing the server on the Red-Pitaya with all the neccesary information to configure itself properly and to store the data
+        received from the Red-Pitaya in a `.csv` file for Analysis by the student and also Visualise the data as a pulse-height spektrum and a 2d spektrum of
+        pulse height vs. Digital Function Generator Address. The Visualisation is updated continuously and can be exited without interfering with the data
+        taking procedures.
+        
+        The client program
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Education :: Computer Aided Instruction (CAI)
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.8
