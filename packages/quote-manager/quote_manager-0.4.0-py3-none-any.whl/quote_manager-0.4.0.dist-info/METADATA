@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: quote-manager
+Version: 0.4.0
+Summary: Helper nlp library for handling non ascii quotes.
+License: Proprietary
+Author: Sam Havens
+Author-email: sam.havens@writer.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: diff-match-patch (>=20181111,<20181112)
+Description-Content-Type: text/markdown
+
+# library.quote.manager
+
+Helper nlp library for handling non ascii quotes.
+
+## Usage
+
+```python3
+
+from quote_manager import Quotes
+
+sentence = “That’s an ‘magic’ shoe.”
+
+quotes_sentence = Quotes(sentence)
+
+quotes_sentence.simplified
+>> "That's an 'magic' shoe.'
+
+# do stuff here...
+transformed_sentence = transform(quotes_sentence.simplified)
+# ex. grammar correction: "That's a 'magic' shoe.'
+
+quotes_sentence.requote_modified_string(transformed_sentence)
+>> “That’s a ‘magic’ shoe.”
+```
