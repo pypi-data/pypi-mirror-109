@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cl_pig_flow
+Version: 0.0.1
+Summary: A complete simple neural network framework
+Home-page: UNKNOWN
+Author: Minquan-FL-PIG
+Author-email: minchiuan@zju.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# CL-Pig-Flow
+
+A very simple but powerful and complete neural network framework!!
+
+It's so excellent!!!
+
