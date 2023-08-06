@@ -1,0 +1,12 @@
+numpy==1.19
+scipy
+matplotlib
+pandas
+tensorflow>=2.5
+pyscf
+ase
+
+[full]
+sphinx
+sphinx-rtd-theme
+pytest
