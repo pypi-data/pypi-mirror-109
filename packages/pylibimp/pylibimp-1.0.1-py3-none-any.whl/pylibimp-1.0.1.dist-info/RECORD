@@ -1,0 +1,13 @@
+pylibimp/__init__.py,sha256=QFL0rReqX82r2RwgHCjyTFquzm3MYdOHMbBeKWKIePQ,238
+pylibimp/__meta__.py,sha256=cqhTC3NVKw_NIHbyvQXZ_KZ9-PWfl6nRem4ZNgKfpng,189
+pylibimp/import_hook.py,sha256=rMGcEdPOd2Wj3_7baEIfoON8auEfSqnbCcSMzwA3QTI,6637
+pylibimp/system.py,sha256=Am0cnQR983QCEudX2hh8GWVnZ50xb0DeAi1dhW28AwE,4059
+pylibimp/__pycache__/__init__.cpython-38.pyc,sha256=gP8IpE01XXT7Tsc4l-7dcB-80Yurgiz6HAJbuki3zmo,453
+pylibimp/__pycache__/__meta__.cpython-38.pyc,sha256=48EP5KN3oPApuKLssVjYzT_HEsrR2S23989d1gX9s34,340
+pylibimp/__pycache__/import_hook.cpython-38.pyc,sha256=mo1XerhzuAPj7WxNhyRni3F9TUm3WGJ4V1l8j3Woiv8,6220
+pylibimp/__pycache__/system.cpython-38.pyc,sha256=BJMNag-O5CfVuWKjgNb8IXUE3WOB7G6-b1yWp97AoqA,3142
+pylibimp-1.0.1.dist-info/LICENSE,sha256=IqUUqXZEWkeHlpFhKpQhrl0hDdk2DNxuBTW0BfxhatM,1090
+pylibimp-1.0.1.dist-info/METADATA,sha256=I1t-LnClq6E8nL6YaSTT2w5YP1ap6Q1329qLFeNJqbg,1216
+pylibimp-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pylibimp-1.0.1.dist-info/top_level.txt,sha256=zOj6Rpnrx3CO7rRfjHN7XkfyHTC8MwBeniShfvhxLGA,9
+pylibimp-1.0.1.dist-info/RECORD,,
