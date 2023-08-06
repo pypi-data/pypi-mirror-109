@@ -1,0 +1,12 @@
+miditeach/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+miditeach/miditeach.py,sha256=AXokFWcfURasY63twYr523_pRsEC8maNEUwdeQ5QkKw,333
+miditeach/read_stats.py,sha256=ppqa-9szloXUxLS6mt0KKE93936vKayP5FLfS3srWA8,269
+miditeach/views/GameView.py,sha256=19W13vYXvukVEfNacdOWIsD2TafAVdMUu6a2qJRmbxY,8493
+miditeach/views/PauseView.py,sha256=Tka45OWu3nQWdX2t0Z4yiJa_YxY4ED_w53fGPmhNGVI,1043
+miditeach/views/WelcomeScreen.py,sha256=ECHiVJlC8DYvzWtAIvCHHEKQ4xZJtHe1xj62WwvkGZ0,2180
+miditeach/views/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+miditeach-0.3.dist-info/METADATA,sha256=X5V757ZDHFWx7XcQ9CfwI4CXyuOeHfUqN6IphQ6SMgM,289
+miditeach-0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+miditeach-0.3.dist-info/entry_points.txt,sha256=-mTKfEOmfwX1X69neMdz1r6zVjYeodOXRDjLfxsfFy0,56
+miditeach-0.3.dist-info/top_level.txt,sha256=_0JSB6Jaujj9bs6b5lOR9-o179DdOHZSahq6X3jGl9o,10
+miditeach-0.3.dist-info/RECORD,,
