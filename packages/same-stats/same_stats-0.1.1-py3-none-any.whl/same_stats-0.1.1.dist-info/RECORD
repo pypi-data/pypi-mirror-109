@@ -1,0 +1,11 @@
+same_stats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+same_stats/__main__.py,sha256=HRRu-_MsXSmkhi82oY5oHKZrADXyavHgR8WjmCTLr-k,803
+same_stats/same_stats.py,sha256=6WmQ3IHVM_k9ckoEK1VZq7XxFqqZnTmoT1y81gxHwMw,17567
+same_stats/seed_datasets/Datasaurus_data.csv,sha256=a7PvB0tdzujKvv_lf3mtWt8pjXytC0lu89Ql9PYIYJc,2201
+same_stats/seed_datasets/angled_blob.csv,sha256=UGyNwHm8io2AQHYdAJhFDopIMLebOQj2GcJ56lNRUDw,41277
+same_stats/seed_datasets/less_angled_blob.csv,sha256=9k-NXOR4oIkV2nayZuNmXIX_CYEolxiEMCMGtnEhzr0,7196
+same_stats/seed_datasets/random_cloud.csv,sha256=7qN78Za1zV9zaPRfiDdE_0dRH0x_j_sUg0jYybiHs7w,4552
+same_stats/seed_datasets/slanted_less.csv,sha256=0zoNDL31jeGWjQ6a8KFALmM3sMUD9h-UuNOiq-BaEVM,7449
+same_stats-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+same_stats-0.1.1.dist-info/METADATA,sha256=mOXJeuW06kbZqR57gysrB3rz0gjTxqY07s5-fczQ_Ek,2128
+same_stats-0.1.1.dist-info/RECORD,,
