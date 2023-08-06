@@ -1,0 +1,3 @@
+[console_scripts]
+actl = actl.__main__:main
+
