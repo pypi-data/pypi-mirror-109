@@ -1,0 +1,16 @@
+image_uploader_widget/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_uploader_widget/admin.py,sha256=9PJO5sHOyvsT1jkajdJL_cP46lfAmnqfTgRB6z86yL4,549
+image_uploader_widget/widgets.py,sha256=1CV6GPPewbB6563PQ4DPRUbrPqb5nB0RQMAkylli7HE,1081
+image_uploader_widget/__pycache__/__init__.cpython-38.pyc,sha256=8jcZIDFah6dMQIKQiE-Xp4WoPx5mbHbn4pbOwz1YiRY,184
+image_uploader_widget/__pycache__/admin.cpython-38.pyc,sha256=ufOJfMEcPtK1KpCYT-O0pwO12FjujdNzYn6uIdqNu3o,1096
+image_uploader_widget/__pycache__/widgets.cpython-38.pyc,sha256=Bv_HnQeR6ZjU3H9DKH7UbX4R0JAzSMgxmdJVaj62ZTk,1453
+image_uploader_widget/static/admin/js/image_uploader_inline.js,sha256=aDX_kSchCQjprh_JkdO5HZuIXShU2Ne1X9itaExO7Rw,9728
+image_uploader_widget/static/widgets/image_uploader_widget.css,sha256=HRo3lvQKic7RSRggKq7iYGTpPsNHnA0l0DMd3T502zQ,3207
+image_uploader_widget/static/widgets/image_uploader_widget.js,sha256=RKDKNqqzBgQr-dG94s3p-q1uh0J1iFMMt8Jx_tGhhlc,3304
+image_uploader_widget/templates/admin/edit_inline/image_uploader.html,sha256=0SP_jviJUbRhqu7PhcpcvI3jllfC9Zz5sc7mmWXjRVw,3011
+image_uploader_widget/templates/widgets/image_uploader_widget.html,sha256=LbkshhNmLwY649dq9Acja7UeCNQY3MPpkGHuQSgb4rQ,445
+django_image_uploader_widget-0.0.3.dist-info/LICENSE,sha256=RXjODmrEs_6HDfREUp9vZ-hyDDEZq9ls55Pf-R9VNeQ,1081
+django_image_uploader_widget-0.0.3.dist-info/METADATA,sha256=_3u7ZfGV9wEpj0_uWgzWwfDiT76KQYhOacvpY5jrhwg,4684
+django_image_uploader_widget-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_image_uploader_widget-0.0.3.dist-info/top_level.txt,sha256=pBtHlfC5dXT3zFfEmsuK5wNS8a22Xa44VJIgtCY64NU,22
+django_image_uploader_widget-0.0.3.dist-info/RECORD,,
