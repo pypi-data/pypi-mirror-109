@@ -1,0 +1,13 @@
+setup.py
+LedxBotPackage/__init__.py
+LedxBotPackage/bot.py
+LedxBotPackage/client.py
+LedxBotPackage/defaults.py
+LedxBotPackage/deviceauths.py
+LedxBotPackage/sync.py
+LedxBotPackage/web.py
+ledxbot.egg-info/PKG-INFO
+ledxbot.egg-info/SOURCES.txt
+ledxbot.egg-info/dependency_links.txt
+ledxbot.egg-info/requires.txt
+ledxbot.egg-info/top_level.txt
