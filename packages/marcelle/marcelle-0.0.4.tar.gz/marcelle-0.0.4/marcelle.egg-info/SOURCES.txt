@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+marcelle/__init__.py
+marcelle/data_store.py
+marcelle/keras_callback.py
+marcelle/remote.py
+marcelle/uploader.py
+marcelle/utils.py
+marcelle/writer.py
+marcelle.egg-info/PKG-INFO
+marcelle.egg-info/SOURCES.txt
+marcelle.egg-info/dependency_links.txt
+marcelle.egg-info/requires.txt
+marcelle.egg-info/top_level.txt

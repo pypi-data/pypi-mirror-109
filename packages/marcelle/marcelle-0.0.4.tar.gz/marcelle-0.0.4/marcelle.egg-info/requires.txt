@@ -1,0 +1,7 @@
+filetype
+requests
+tensorflow
+tensorflowjs
+keras2onnx
+numpy
+tqdm
