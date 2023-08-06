@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "yaststool"
+version = "0.1.0"
+description = "A tool to assume AWS Roles and set environment variables accordingly"
+authors = ["William Trépanier <wtrepanier@coveo.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.0.1"
+boto3 = "^1.17.96"
+dacite = "^1.6.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.6b0"
+mypy = "^0.902"
+
+[tool.poetry.scripts]
+yaststool = 'yaststool.main:cli'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
