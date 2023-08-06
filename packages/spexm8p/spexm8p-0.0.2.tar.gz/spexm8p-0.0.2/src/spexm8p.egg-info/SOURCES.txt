@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/spexm8p/__init__.py
+src/spexm8p/builder.py
+src/spexm8p/chex.py
+src/spexm8p/parser.py
+src/spexm8p/spex.py
+src/spexm8p/token.py
+src/spexm8p.egg-info/PKG-INFO
+src/spexm8p.egg-info/SOURCES.txt
+src/spexm8p.egg-info/dependency_links.txt
+src/spexm8p.egg-info/top_level.txt
