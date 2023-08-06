@@ -1,0 +1,17 @@
+neutrino/torch.cpython-38-x86_64-linux-gnu.so,sha256=qAjckfDc2dotPIXPJZG_zfvOtRukWLBNtAd51QBqaZ4,81936
+neutrino/framework/torch_nn.cpython-38-x86_64-linux-gnu.so,sha256=0875VYcSxsYXt_Ts3WbFQCqBImCRw4qFGczkE5GtAQA,2055464
+neutrino/framework/torch_extension.cpython-38-x86_64-linux-gnu.so,sha256=KsGHVudTnIryofBixpY08q91Hic3yUlywjOOUh6uEA0,967888
+neutrino/framework/torch_surgeon.cpython-38-x86_64-linux-gnu.so,sha256=EiyTMuHdB273-6ImJpdWInK5sxx0Jd8s3l4AKDXbE3k,1027608
+neutrino/framework/torch_graph.cpython-38-x86_64-linux-gnu.so,sha256=3RnlG6srl-ny79ZnE8mGj1zqBeMLCwuoS6rn3J-KpWo,1081088
+neutrino/framework/torch_framework.cpython-38-x86_64-linux-gnu.so,sha256=wwjLN9_StUkerZoXaKuuMyQmLsPM8n2hKiKtfftp-Q4,1100696
+neutrino/framework/torch_distributed.cpython-38-x86_64-linux-gnu.so,sha256=VGI0OXa6VXsk5OQYr-EF7zlPgdek_kyHizYGSJFjP0s,1267664
+neutrino/framework/torch_data_loader.cpython-38-x86_64-linux-gnu.so,sha256=lRmBSDHE9VCMZp8vd4ZshKuPjLSW8MEVzip7VYfbIIk,446328
+neutrino/framework/torch_model.cpython-38-x86_64-linux-gnu.so,sha256=qVeCBChctuhDexkO4fuA-hZD0_W8ywpn4ZoxcEJNx2I,1996024
+thirdparty/torch_surgery/structured.cpython-38-x86_64-linux-gnu.so,sha256=tCftEsDrm1nVp_drA3uoo_05JWHuRWY_7qYFqTYJ9qI,1500568
+thirdparty/torch_surgery/dependency.cpython-38-x86_64-linux-gnu.so,sha256=mKFCTm9UviuPrdLs-LcMlf1WfZg6yhdVQpu6lVWnMkA,4044096
+thirdparty/torch_surgery/__init__.cpython-38-x86_64-linux-gnu.so,sha256=_0JhzpIDQzjVrfebBuHpFwJb-8TRczhDLPUtenPRTJc,65272
+neutrino_torch-1.0.4.dist-info/top_level.txt,sha256=zxg20sPcfsAvAu-md3CwdhRUP_os93t8p3JTrwHV61Y,37
+neutrino_torch-1.0.4.dist-info/RECORD,,
+neutrino_torch-1.0.4.dist-info/METADATA,sha256=I7Tug8hG-VYIxsWl_M2pdNd2HBdThf7hK7_LRhfrnlA,4398
+neutrino_torch-1.0.4.dist-info/LICENSE,sha256=ZR4NODueVwmPkLfmBJ7rxJeQ8_XM4TqTnmrns899Ihs,464
+neutrino_torch-1.0.4.dist-info/WHEEL,sha256=Dh4w5P6PPWbqyqoE6MHlzbFQwZXlM-voWJDf2WUsS2g,108
