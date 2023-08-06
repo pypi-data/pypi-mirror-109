@@ -1,0 +1,17 @@
+ome_zarr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ome_zarr/cli.py,sha256=gukB4tpaoronAFojKmbDsovs4VU9OFXoJV69M3IpuRk,5532
+ome_zarr/conversions.py,sha256=d6ttJ10hXe54SC7lIsYMm0U45SIHwuujcI4CDycaM0w,958
+ome_zarr/csv.py,sha256=fprIS2-K546v2wiRratonAsT17ij6gF7rQyqTzuhI_g,5360
+ome_zarr/data.py,sha256=2HKzrfOZlPTH9UepG70KMJbyou9tiDuphc6OUi_pVCg,4825
+ome_zarr/io.py,sha256=f-qbTfNsKNpBF9nnryvC2iiT9uCLesvABaCmkc6hOL8,6193
+ome_zarr/reader.py,sha256=6-SMgIJVMI0xHWmue1C7kcu7UomAokSa07SJv6hc1KY,23043
+ome_zarr/scale.py,sha256=YaiynVBtbG-i4a4DI-1SaQ-O0-NTBervUDZziaZt9MQ,7023
+ome_zarr/types.py,sha256=u9eWZBSKelVBPXLtYESsCnhY2HznDFIDGXLi4ZfVaCI,302
+ome_zarr/utils.py,sha256=zaiwg7XBfaK39cXctAw1r9XZNiZ5bfPhfjglPz-vH7c,3903
+ome_zarr/writer.py,sha256=FUH9JsLgshAO-8cWKzlTZtMFk5aQPdOZZSpqSALagsE,2445
+ome_zarr-0.0.20.dist-info/LICENSE,sha256=qZdVZGmr6MBlG47s1lcCE8N4KGxu5BVK_3bt5R9l5zg,1374
+ome_zarr-0.0.20.dist-info/METADATA,sha256=2mhT0mNUA5pYFfMCfiRyf3jRp_DHuHIiYoLCatNh1H0,5246
+ome_zarr-0.0.20.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ome_zarr-0.0.20.dist-info/entry_points.txt,sha256=ojnXDtzQh95gnlYa0c3Pt4dXYHYBv21rPKjOI6ctzAM,48
+ome_zarr-0.0.20.dist-info/top_level.txt,sha256=RmSZxHH6eivcj0Q_8iX54fARozK-BABLCE1kcdfH8uo,9
+ome_zarr-0.0.20.dist-info/RECORD,,
