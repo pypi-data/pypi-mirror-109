@@ -1,0 +1,13 @@
+OpenMiChroM/ChromDynamics.py,sha256=mTwvIjC2akAdDH2RsyHbJjn9SeaYCnw5BFqOBfk8pog,75850
+OpenMiChroM/CndbTools.py,sha256=PurkDHS-ln1n_ex_IsCAMSNAmyP0oVIvwEsj5Alt7y8,11520
+OpenMiChroM/Optimization.py,sha256=GAsJ9-_YMzzIcHG-k-Ay59BsP4PVY_H-ATm1oQN8TDo,22777
+OpenMiChroM/__init__.py,sha256=OUsPfCrVY4fc2IVWX8yMEe0DL1zruIDY2EYZ1tmmrBY,154
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tests.py,sha256=gKJjtebW-VRZuWdmoF1kVYCY2bzarU5qR3QdXYcs1o8,2676
+OpenMiChroM-0.0.2.dist-info/LICENSE,sha256=3XkDRXOoBesBg_LC12A9y6qRgtvkhV-CeZlYz7V31vE,1132
+OpenMiChroM-0.0.2.dist-info/METADATA,sha256=eoA4VnpshEru1dl16qn4zEWF-VBjSSu3u-4ubIpZIMA,2180
+OpenMiChroM-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+OpenMiChroM-0.0.2.dist-info/entry_points.txt,sha256=9WIP6_2yDPnu1-XKVplpg1j_OBN9QV6zyhym1yeVaFQ,51
+OpenMiChroM-0.0.2.dist-info/top_level.txt,sha256=ZDInOzMI2RAoki3_qVAJSkpAHok17FknjNJiVviiPU8,18
+OpenMiChroM-0.0.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+OpenMiChroM-0.0.2.dist-info/RECORD,,
