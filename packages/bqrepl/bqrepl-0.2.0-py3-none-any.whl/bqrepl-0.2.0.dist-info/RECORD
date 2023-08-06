@@ -1,0 +1,11 @@
+bqrepl/__main__.py,sha256=I5u4kYSpsWGOapjrcjM3syLIjaffuHt7RyOJi18_xzg,60
+bqrepl/completer.py,sha256=T7ZFA8I70OJn66svV1TK4CNaXxt2RqZX-yYg-GBILo8,7064
+bqrepl/config.py,sha256=UMzhOm-ks3HsV3K8uqM24jx_Qon64aFBTaTqxG4LLyE,1545
+bqrepl/lexer.py,sha256=OmBxDJiaCxTHzurT_iFdtZJA1pArQoXo4euIR8bzkpI,77
+bqrepl/main.py,sha256=-8jKGZj4qQqYXAt6GgULXAztRD-O1VaOQal-KJX1LWo,21713
+bqrepl-0.2.0.dist-info/LICENSE,sha256=LYl4GrPjOvcc3uyKevxajOjM7O_Gl7PbgcoCePRLz2c,1072
+bqrepl-0.2.0.dist-info/METADATA,sha256=aT5CKeJveLutk9av-uvbB0HN8QJIc5AT1eyaiZheZ0k,4638
+bqrepl-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bqrepl-0.2.0.dist-info/entry_points.txt,sha256=hym67SUFesV93MvDi-8oJ45n47uRdjm_tmhiz6aIIrA,62
+bqrepl-0.2.0.dist-info/top_level.txt,sha256=LKgAJ_ReEp-vU2lT0IPw-uqlfQIfrNy259taYyPi8SY,7
+bqrepl-0.2.0.dist-info/RECORD,,
