@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/bashmocker/__init__.py
+src/bashmocker/bashmocker.py
+src/bashmocker.egg-info/PKG-INFO
+src/bashmocker.egg-info/SOURCES.txt
+src/bashmocker.egg-info/dependency_links.txt
+src/bashmocker.egg-info/top_level.txt
+test/test_bashmocker.py
