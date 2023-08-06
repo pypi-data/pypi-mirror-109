@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: inxaimlflow
+Version: 0.0.2
+Summary: A library for integration mlflow with inxai library
+Home-page: https://gitlab.com/geist-stud/mlflow-inxai-plugin
+Author: Aleksander Profic, Dariusz Tomczyszyn
+Author-email: aleprofic@gmail.com, dariusztomczyszyn@gmail.com
+License: MIT
+Download-URL: https://gitlab.com/geist-stud/mlflow-inxai-plugin.git
+Description: UNKNOWN
+Keywords: inxai,xai,mlflow
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
