@@ -1,0 +1,10 @@
+activereader/__init__.py,sha256=4J39-ADc1gJ6zYKalUjZEA6c2Pz6GQt33g9RbcPQnGo,95
+activereader/base.py,sha256=3ttMM0t9H92VE3kkNXGn_DCLEVx5Jlbk_gG31X0c4qQ,12769
+activereader/gpx.py,sha256=e2pZ5SASeChYNaS8Fn5lusYH1dkoR2pfCa3V2I2bRvc,3818
+activereader/tcx.py,sha256=XCO6-TdNaai6hSDd-uvXQAq8VXlHPbYFaZekWHkCl9M,8921
+activereader/util.py,sha256=TRfBeWUUGbWawuCOPqjKtCa0C3-nYlK0fCpvJg2UoZw,1237
+activereader-0.0.1.dist-info/LICENSE,sha256=mLjGoRCcnuUCgQxwYfJbt9wofbjmXNGUeWBcmLZUGDs,1071
+activereader-0.0.1.dist-info/METADATA,sha256=bDhXUwRnh0Ot8hg9vU0bvXmo7i_gd7fbPolEkghHiuI,5179
+activereader-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+activereader-0.0.1.dist-info/top_level.txt,sha256=jFDu05DXNlwisl8DQdhMBJHMvDZvMXDk1kSHtXoT38c,13
+activereader-0.0.1.dist-info/RECORD,,
