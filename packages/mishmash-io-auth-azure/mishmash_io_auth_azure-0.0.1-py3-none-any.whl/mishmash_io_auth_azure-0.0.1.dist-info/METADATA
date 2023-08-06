@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: mishmash-io-auth-azure
+Version: 0.0.1
+Summary: mishmash io auth azure plugin
+Home-page: https://mishmash.io
+Author: mishmash.io
+Author-email: info@mishmash.io
+License: Apache License v2.0
+Project-URL: Bug Tracker, https://github.com/mishmash-io/mishmash-io-auth-plugins/issues
+Project-URL: Documentation, https://mishmash.io
+Project-URL: Source Code, https://github.com/mishmash-io/mishmash-io-auth-plugins/tree/main/python/mishmash-io-auth-azure
+Keywords: database,artificial intelligence,development
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Database
+Classifier: Topic :: Utilities
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: msrestazure
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+# Mishmash io authentication azure plugin
+Mishmash io authentication azure plugin allows you to authenticate to Mishmash io server hosted on Azure cloud.
+
+# Prerequisites
+Python 3.6 or greater
+
+# Installation
+
+Install using pip:
+
+``` pip install mishmash-io-auth-azure```
+
+To upgrade the package to its latest version:
+
+``` pip install mishmash-io-auth-azure --upgrade ```
+
+
+# Configuration
+Mishmash io authentication azure plugin needs some configuration variables.
+
+## AZURE_TENANT_ID 
+
+## AZURE_CLIENT_ID 
+
+## AZURE_CLIENT_SECRET 
+
+## AZURE_RESOURCE_URL
+
+## AZURE_CONFIG_FILE_PATH
+
