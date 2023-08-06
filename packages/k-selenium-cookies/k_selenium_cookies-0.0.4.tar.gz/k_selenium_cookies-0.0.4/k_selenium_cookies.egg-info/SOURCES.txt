@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+k_selenium_cookies/__init__.py
+k_selenium_cookies/cookies.py
+k_selenium_cookies.egg-info/PKG-INFO
+k_selenium_cookies.egg-info/SOURCES.txt
+k_selenium_cookies.egg-info/dependency_links.txt
+k_selenium_cookies.egg-info/requires.txt
+k_selenium_cookies.egg-info/top_level.txt
+k_selenium_cookies/models/__init__.py
+k_selenium_cookies/models/cookie.py
