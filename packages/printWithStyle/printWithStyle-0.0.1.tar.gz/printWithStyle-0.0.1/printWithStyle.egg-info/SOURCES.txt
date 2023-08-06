@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+printWithStyle/__init__.py
+printWithStyle/print.py
+printWithStyle.egg-info/PKG-INFO
+printWithStyle.egg-info/SOURCES.txt
+printWithStyle.egg-info/dependency_links.txt
+printWithStyle.egg-info/top_level.txt
