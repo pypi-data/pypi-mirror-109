@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/prometheus_vcgencmd/__init__.py
+src/prometheus_vcgencmd/__main__.py
+src/prometheus_vcgencmd/prometheus_vcgencmd.py
+src/prometheus_vcgencmd.egg-info/PKG-INFO
+src/prometheus_vcgencmd.egg-info/SOURCES.txt
+src/prometheus_vcgencmd.egg-info/dependency_links.txt
+src/prometheus_vcgencmd.egg-info/entry_points.txt
+src/prometheus_vcgencmd.egg-info/top_level.txt
