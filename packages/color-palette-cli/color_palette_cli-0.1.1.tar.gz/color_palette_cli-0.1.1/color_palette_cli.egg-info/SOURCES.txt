@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+bin/cli_color
+color_palette_cli/__init__.py
+color_palette_cli/color_palette_cli.py
+color_palette_cli.egg-info/PKG-INFO
+color_palette_cli.egg-info/SOURCES.txt
+color_palette_cli.egg-info/dependency_links.txt
+color_palette_cli.egg-info/requires.txt
+color_palette_cli.egg-info/top_level.txt

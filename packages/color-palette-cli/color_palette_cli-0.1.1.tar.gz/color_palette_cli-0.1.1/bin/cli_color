@@ -1,0 +1,3 @@
+from cli_color_palette.cli_color_palette import ColorPaletteCLI
+
+ColorPaletteCLI.print_color_palette(*ColorPaletteCLI.load_parameters())
