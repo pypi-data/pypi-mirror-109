@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+py_minesweeper.egg-info/PKG-INFO
+py_minesweeper.egg-info/SOURCES.txt
+py_minesweeper.egg-info/dependency_links.txt
+py_minesweeper.egg-info/top_level.txt
+pyminesweeper/__init__.py
+pyminesweeper/libminesweeper.dll
+pyminesweeper/libminesweeper.so
+pyminesweeper/minesweeper.py

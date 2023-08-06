@@ -1,0 +1,2 @@
+recursive-include pyminesweeper *.so
+recursive-include pyminesweeper *.dll
