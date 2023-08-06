@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: yabtool
+Version: 0.9.0.2
+Summary: Module to perform scheduled backups for FB/PG databases with support for backups uploading into S3 (with rotation) and support of integration with Healchecks.io
+Home-page: https://github.com/JFF-Bohdan/yabtool
+Author: Bohdan Danishevsky
+Author-email: dbn@aminis.com.ua
+License: MIT
+Keywords: flexible backup tool,configurable multipurpose backup tool,backup tool
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: loguru
+Requires-Dist: terminaltables (>=3.1.0)
+Requires-Dist: tqdm (>=4.31.1)
+Requires-Dist: jinja2schema (>=0.1.4)
+Requires-Dist: PyYAML (>=5.1.2)
+Requires-Dist: boto3 (>=1.9.228)
+Requires-Dist: requests (>=2.25.1)
+
+Please read https://github.com/JFF-Bohdan/yabtool/blob/master/README.md for information
+
