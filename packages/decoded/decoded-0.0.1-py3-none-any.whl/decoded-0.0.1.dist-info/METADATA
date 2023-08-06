@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: decoded
+Version: 0.0.1
+Summary: A library for rapidly building explanations of Machine-Learning models.
+Home-page: https://github.com/ZaliaFlow/decode-py
+Author: Zalia Labs
+Author-email: josh@zaliaflow.io
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ZaliaFlow/decode-py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A library for rapidly building explanations of Machine-Learning models.
+
