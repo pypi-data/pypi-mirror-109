@@ -1,0 +1,9 @@
+performance_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+performance_logger/logger.py,sha256=sDR2RNKglFewOIbliZgZmj5IBxqVBmmxQrqzONY_hGg,812
+performance_logger/main.py,sha256=ZA2-HnGjM81mp2eX0Q_U0_JpiwUtnElSYFkxdFwuSzQ,861
+performance_logger/test.py,sha256=TJWTs7-CNXHpg2ScIHpHx8B0pFcnPqbqFrgoN0Jeb74,776
+performance_logger-1.0.1.dist-info/LICENSE,sha256=_IETGtnfT0rz52fNhJ2D91V5JrkECByeD9sHUqgC8Zg,1170
+performance_logger-1.0.1.dist-info/METADATA,sha256=Q3sIQgzQMogH5rmYr9wGiFy6viBqGFE5I2-71gM2_fE,1250
+performance_logger-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+performance_logger-1.0.1.dist-info/top_level.txt,sha256=gE_wBr0OcxYaIWLs-CFTqYQFpoVFnGZyQjY060lRdYI,19
+performance_logger-1.0.1.dist-info/RECORD,,
