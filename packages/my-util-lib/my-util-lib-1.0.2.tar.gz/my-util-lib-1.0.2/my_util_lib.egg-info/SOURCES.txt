@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+my_util_lib.egg-info/PKG-INFO
+my_util_lib.egg-info/SOURCES.txt
+my_util_lib.egg-info/dependency_links.txt
+my_util_lib.egg-info/requires.txt
+my_util_lib.egg-info/top_level.txt
+src/__init__.py
+src/utils.py
