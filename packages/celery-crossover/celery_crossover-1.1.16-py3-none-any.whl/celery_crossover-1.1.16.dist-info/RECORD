@@ -1,0 +1,9 @@
+crossover/__init__.py,sha256=bGaFGJnhfEL_xwUFFNkiNdPgnt9fawyBqtbo7IDYsDU,6304
+crossover/xrequests.py,sha256=dVm7Ev01Xs8AGi65RJQPKJrrgiXC3XWon4mbCz8L5cE,354
+examples/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+examples/database.py,sha256=aPfdDvtfDiWLoLPzKzY5IgcSpsHMGBzD-EVr7nGNfv4,676
+celery_crossover-1.1.16.dist-info/LICENSE.txt,sha256=ySc9aXSdAleQhtcU46sOaoDMY4234EcugjVX3GBn0D8,1229
+celery_crossover-1.1.16.dist-info/METADATA,sha256=GiA8FelmNH-MqGcnTiidOZaeRsJwlpV76ajvGvO78uE,6222
+celery_crossover-1.1.16.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+celery_crossover-1.1.16.dist-info/top_level.txt,sha256=64AMl7nYJsnhb-vXLDSFCoJu3zcuBtRi3xSuJGXD2mY,19
+celery_crossover-1.1.16.dist-info/RECORD,,
