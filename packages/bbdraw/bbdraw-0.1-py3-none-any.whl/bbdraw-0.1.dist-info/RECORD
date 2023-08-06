@@ -1,0 +1,10 @@
+bbdraw/__init__.py,sha256=HHuUwulsHWUn3M_KtyQ46ye0_JMRjzjCRY5QNNinGkQ,103
+bbdraw/bbdraw.py,sha256=b9p3Sq9Fnue4USHSwyhNYK2JTzmo3mhcSXcYKe6dc_c,2351
+bbdraw/color.py,sha256=8nxi6nTmSHLmlZN81xBxHQ493TXGiDa1FOznQ-ghkd0,517
+bbdraw/polygon.py,sha256=YDfEesl-p0d5SLOvKTxoSeU7dGnaFceWGLtTMbW1dNs,2457
+bbdraw/text.py,sha256=f9EKeS0A6oNmjnLW4iR23Xfmq3AUSrc9xgfoVv1iMr4,1105
+bbdraw-0.1.dist-info/LICENSE,sha256=49HB9dgiWMhcuFYGK0BjsDWRTz-xCWy9TO4aTruy_lM,1063
+bbdraw-0.1.dist-info/METADATA,sha256=vUeKEfWIfgsDxSbOQqk_j5eUrZNxHrhNa-EE1-GlWYs,2088
+bbdraw-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bbdraw-0.1.dist-info/top_level.txt,sha256=jRnsGF4qC8JPhRHr7PGrCeo_UInoe2PZH0JDPTKJW9Y,7
+bbdraw-0.1.dist-info/RECORD,,
