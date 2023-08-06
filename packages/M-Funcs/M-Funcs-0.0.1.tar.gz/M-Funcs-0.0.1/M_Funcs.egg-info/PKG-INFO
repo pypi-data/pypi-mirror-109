@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: M-Funcs
+Version: 0.0.1
+Summary: Library of basic functions.
+Home-page: UNKNOWN
+Author: Muhammad Muzammil Alam
+Author-email: muzammil.alam231@gmail.com
+License: MIT
+Description: It is a basic library
+        
+        
+        CHANGE LOG
+        ==========
+        
+        0.0.1 (17/06/2021)
+        ------------------
+        
+        - First release
+Keywords: BaFunc
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
