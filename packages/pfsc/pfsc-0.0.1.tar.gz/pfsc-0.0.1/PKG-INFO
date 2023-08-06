@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pfsc
+Version: 0.0.1
+Summary: Utilities for Proofscape
+Home-page: UNKNOWN
+Author: Steve Kieffer
+Author-email: sk314159@runbox.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Utilities for Proofscape.
+
+

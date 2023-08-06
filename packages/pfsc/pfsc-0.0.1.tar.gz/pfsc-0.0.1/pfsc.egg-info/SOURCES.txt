@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pfsc/__init__.py
+pfsc.egg-info/PKG-INFO
+pfsc.egg-info/SOURCES.txt
+pfsc.egg-info/dependency_links.txt
+pfsc.egg-info/top_level.txt
