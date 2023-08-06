@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: primer-automate-client
+Version: 0.0.1
+Summary: A client for interacting with Automate
+Home-page: UNKNOWN
+Author: Connor Jennings
+Author-email: connor.jennings@primer.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: appnope (==0.1.2)
+Requires-Dist: backcall (==0.2.0)
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: decorator (==5.0.9)
+Requires-Dist: idna (==2.10)
+Requires-Dist: ipykernel (==5.5.5)
+Requires-Dist: ipython (==7.16.1)
+Requires-Dist: ipython-genutils (==0.2.0)
+Requires-Dist: jedi (==0.18.0)
+Requires-Dist: jupyter-client (==6.1.12)
+Requires-Dist: jupyter-core (==4.7.1)
+Requires-Dist: log-symbols (==0.0.14)
+Requires-Dist: parso (==0.8.2)
+Requires-Dist: pexpect (==4.8.0)
+Requires-Dist: pickleshare (==0.7.5)
+Requires-Dist: prompt-toolkit (==3.0.18)
+Requires-Dist: ptyprocess (==0.7.0)
+Requires-Dist: Pygments (==2.9.0)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pyzmq (==22.1.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: spinners (==0.0.24)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: tornado (==6.1)
+Requires-Dist: traitlets (==4.3.3)
+Requires-Dist: urllib3 (==1.26.5)
+Requires-Dist: wcwidth (==0.2.5)
+Requires-Dist: yaspin (==2.0.0)
+
+UNKNOWN
+
+
