@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+fzf_dirhistory.egg-info/PKG-INFO
+fzf_dirhistory.egg-info/SOURCES.txt
+fzf_dirhistory.egg-info/dependency_links.txt
+fzf_dirhistory.egg-info/top_level.txt
+fzfdirhist/__init__.py
+fzfdirhist/__main__.py
+fzfdirhist/fzfdirhist.py
