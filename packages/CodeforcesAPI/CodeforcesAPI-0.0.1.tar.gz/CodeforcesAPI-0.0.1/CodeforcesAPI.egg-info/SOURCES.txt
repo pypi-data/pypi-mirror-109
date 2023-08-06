@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+CodeforcesAPI/APIRequest.py
+CodeforcesAPI/Blogs.py
+CodeforcesAPI/Codeforces.py
+CodeforcesAPI/Contests.py
+CodeforcesAPI/Exceptions.py
+CodeforcesAPI/Users.py
+CodeforcesAPI/__init__.py
+CodeforcesAPI/version.py
+CodeforcesAPI.egg-info/PKG-INFO
+CodeforcesAPI.egg-info/SOURCES.txt
+CodeforcesAPI.egg-info/dependency_links.txt
+CodeforcesAPI.egg-info/requires.txt
+CodeforcesAPI.egg-info/top_level.txt

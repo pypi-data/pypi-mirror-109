@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: CodeforcesAPI
+Version: 0.0.1
+Summary: A simple and powerful CodeforcesAPI Library for python
+Home-page: https://github.com/hsuan1117/CodeforcesAPI
+Author: Hsuan
+Author-email: ryanchang1117@gmail.com
+License: MIT
+Description: 
+        # CodeforcesAPI
+        A simple and powerful CodeforcesAPI Library for python
+        
+        ## Installation
+        ```shell
+        pip install CodeforcesAPI
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
