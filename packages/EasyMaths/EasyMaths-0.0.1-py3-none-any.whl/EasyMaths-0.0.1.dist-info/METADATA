@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: EasyMaths
+Version: 0.0.1
+Summary: To make Maths Easier in Python.
+Home-page: UNKNOWN
+Author: The Vast (Youtuber)
+Author-email: ggrakesh3355@gmail.com
+License: UNKNOWN
+Keywords: python,video,stream,video stream,camera stream,sockets
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+This package is made only for pure beginners.
+
+
