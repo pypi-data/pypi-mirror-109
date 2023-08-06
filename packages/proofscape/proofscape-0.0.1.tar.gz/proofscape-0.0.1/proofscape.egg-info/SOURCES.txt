@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+proofscape/__init__.py
+proofscape.egg-info/PKG-INFO
+proofscape.egg-info/SOURCES.txt
+proofscape.egg-info/dependency_links.txt
+proofscape.egg-info/top_level.txt
