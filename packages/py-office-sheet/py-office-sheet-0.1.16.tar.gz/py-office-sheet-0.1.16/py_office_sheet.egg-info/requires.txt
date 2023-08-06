@@ -1,0 +1,6 @@
+PySide2
+install_freedesktop
+joblib
+matplotlib
+numpy
+pandas
