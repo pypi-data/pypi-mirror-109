@@ -1,0 +1,8 @@
+setup.py
+ChatbotVerse/__init__.py
+ChatbotVerse/chatbotVerse.py
+ChatbotVerse.egg-info/PKG-INFO
+ChatbotVerse.egg-info/SOURCES.txt
+ChatbotVerse.egg-info/dependency_links.txt
+ChatbotVerse.egg-info/requires.txt
+ChatbotVerse.egg-info/top_level.txt
