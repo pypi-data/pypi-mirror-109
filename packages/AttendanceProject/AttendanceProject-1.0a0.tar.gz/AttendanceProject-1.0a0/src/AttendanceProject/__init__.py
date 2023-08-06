@@ -1,0 +1,3 @@
+import AttendanceProjectMain
+
+AttendanceProjectMain.fun()
