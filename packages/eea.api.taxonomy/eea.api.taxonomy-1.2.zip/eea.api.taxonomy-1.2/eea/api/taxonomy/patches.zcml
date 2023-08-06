@@ -1,0 +1,23 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:monkey="http://namespaces.plone.org/monkey"
+           i18n_domain="eea">
+
+	<include package="collective.monkeypatcher" />
+
+    <monkey:patch
+        description="Patch Taxonomy class caller"
+        class="collective.taxonomy.utility.Taxonomy"
+        original="__call__"
+        replacement=".patches.taxonomy_call"
+        preserveOriginal="true"
+        />
+
+    <monkey:patch
+        description="Patch collective.taxonomy translate function"
+        class="collective.taxonomy.utility.Taxonomy"
+        original="translate"
+        replacement=".patches.taxonomy_translate"
+        preserveOriginal="true"
+        />
+
+</configure>
