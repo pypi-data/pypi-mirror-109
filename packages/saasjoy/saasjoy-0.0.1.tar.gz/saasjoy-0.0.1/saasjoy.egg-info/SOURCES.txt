@@ -1,0 +1,6 @@
+setup.py
+saasjoy.egg-info/PKG-INFO
+saasjoy.egg-info/SOURCES.txt
+saasjoy.egg-info/dependency_links.txt
+saasjoy.egg-info/entry_points.txt
+saasjoy.egg-info/top_level.txt
