@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: saruca_uuv
+Version: 0.1.6
+Summary: Autonomous and manual control methods for UUVs
+Home-page: https://github.com/SARUCA-YazilimEkibi/saruca_uuv
+Author: SEMIH SAHIN
+Author-email: esemihsahin@hotmail.com
+License: MIT
+Keywords: UUV,AUV,UNDERWATER
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# saruca-uuv
+##### Autonomous and manual control methods for UUVs
+#
+#
+#
+
+## Features
+
+- Provides control methods for unmanned underwater vehicles. (with 6 thrusters)
+- Detects rectangles and circles in images from video or camera.
+- Uses ROS and its packages.
+- It uses OpenCV methods.
+- Contains the genuine/seminal YOLO model.
+
+It was prepared to process control/navigation/guidance algorithms for the SARUCA Unmanned Underwater Systems Team. (Created by [Semih SAHIN][df1])
+
+#### Download
+```sh
+pip install saruca-uuv
+```
+
+#### Simple Identifications
+```sh
+speed = 15 # meter
+accel = 0.6 # m^2/s
+directory = "forward" # forward/backward/right/left
+angle = 6.8 # 0.0 ~ 90.0
+poolSize = [(25, 50, 2), (12.5, 25, 2)] # olympic pool / semi-olympic pool
+x = 221 # x-axis
+y = 128 # y-axis
+otherVar = ["circle", 24] # obj-type / weight
+```
+- - -
+
+#### Commands, Classes and Methods
+- **EntityLayer** : In this class, a preliminary definition of the properties of the objects detected by image processing will be made and data related to the vehicle's condition will be obtained.
+- **VehicleComprehendLayer** : While our created object will keep the attributes of the target, it will also hold the attributes of our vehicle according to the target. Attributes related to the current state of the vehicle are analyzed in this class.
+- **ControlLayer** : This class is a class that holds the vehicle's and target's data through other layers. Now, in the light of this data, the vehicle will make autonomous decisions and guide itself according to the type of target (submarine model, circles on the ground, doors, balls to be dropped).
+- **imageProcessing()** : Performs image processing using the model trained with artificial intelligence methods. It starts detecting as soon as the "1" parameter is sent into the method. ```imageProcessing(1)```
+- **variables()** : It is a method that helps to adjust the positions of the objects to be detected by the vehicle. Sample usage: ```variables((0, 0), ["circle", 37], 0, "", (x, y))```
+- **localization()** : The main task of the positioning method is to determine the position of the vehicle relative to the pool. Before running the scanning algorithm, it will detect where it is in the pool and position it in one of the corners of the pool. ```localization(assignment())``` or ```localization([0, 0], "circle", 40, [8, "", 8], (2, 3))```
+- ```state()``` : It is the task of this method to calculate and assign the speed, acceleration, direction and angle parameters of the vehicle. The speed, acceleration, direction and angle of the vehicle will be determined in the light of the data from the sensors and by subjecting them to various calculations. The detected data will be assigned as attributes of the object.
+- - ```vehicleState = VehicleComprehendLayer(speed, accel, directory, angle, poolSize)```
+- - ```state(vehicleState)```
+
+there is still more to come...
+
+## License
+MIT
+
+> Copyright (c) 2021 Semih SAHIN
+
+> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+   [df1]: <https://github.com/cengsemihsahin>
+   
+
