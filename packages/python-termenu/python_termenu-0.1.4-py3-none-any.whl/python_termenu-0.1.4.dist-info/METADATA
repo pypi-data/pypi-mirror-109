@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: python-termenu
+Version: 0.1.4
+Summary: Simple terminal-based menus in Python
+Home-page: https://github.com/ii-Python/termenu
+Author: iiPython
+Author-email: ben@iipython.cf
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/ii-Python/termenu/issues
+Project-URL: Source, https://github.com/ii-Python/termenu/
+Keywords: menu terminal cli console keystroke ascii
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: iikp
+Requires-Dist: colorama
+Requires-Dist: rich
+
+# Termenu
+## Easy-to-use, python-based menus in Python.
+---
+
+Termenu is a project designed to create menus within terminals.
+
+Currently, it only has one type of menu, but many more will be implemented soon.
+
+### Pre-install deps
+Before you install Termenu, you require the following:
+  - Python 3.6 or above (3.8.2+ recommended, https://python.org)
+  - Git (`sudo apt install git`, or https://git-scm.org)
+  - Wheel (optional, `python3 -m pip install -U wheel`)
+
+### Installation
+Install via **PyPi** (*recommended*):
+  - Install: `python3 -m pip install -U termenu`
+
+Install via source:
+  - Clone the repository: `git clone https://github.com/ii-Python/Termenu`
+  - Move into the directory: `cd Termenu`
+  - Run the setup script: `python3 setup.py install`
+
+### Getting started
+Please see the `examples` directory.
+
+
+©2021, iiPython | Last update: Apr. 17, 2021
+
+
