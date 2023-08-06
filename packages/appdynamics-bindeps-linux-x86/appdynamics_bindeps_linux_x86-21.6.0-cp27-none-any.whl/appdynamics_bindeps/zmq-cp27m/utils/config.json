@@ -1,0 +1,13 @@
+{
+  "skip_check_zmq": true, 
+  "bundle_msvcp": null, 
+  "allow_legacy_libzmq": true, 
+  "build_ext": {}, 
+  "libzmq_extension": true, 
+  "no_libzmq_extension": true, 
+  "zmq_prefix": "/python-agent/bindeps/deps/libzmq/binaries/release", 
+  "bdist_egg": {}, 
+  "use_static_zmq": "True", 
+  "zmq_draft_api": false, 
+  "have_sys_un_h": true
+}
