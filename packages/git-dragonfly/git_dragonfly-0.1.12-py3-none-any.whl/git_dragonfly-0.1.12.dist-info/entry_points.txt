@@ -1,0 +1,3 @@
+[console_scripts]
+dragonfly = dragonfly.main:main
+
