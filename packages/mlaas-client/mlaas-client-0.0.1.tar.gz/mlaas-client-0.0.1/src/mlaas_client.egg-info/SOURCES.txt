@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mlaas_client.egg-info/PKG-INFO
+src/mlaas_client.egg-info/SOURCES.txt
+src/mlaas_client.egg-info/dependency_links.txt
+src/mlaas_client.egg-info/top_level.txt
+src/pkg/__init__.py
