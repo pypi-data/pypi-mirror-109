@@ -1,0 +1,13 @@
+numpy
+sklearn
+scikit-learn
+zerorpc
+requests
+websocket-client
+pandas
+python-binance
+tulipy
+alpaca-trade-api
+pytest
+bokeh
+pytest-mock
