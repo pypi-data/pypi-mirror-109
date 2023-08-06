@@ -1,0 +1,43 @@
+import click
+import sys
+import requests
+
+from functools import update_wrapper
+
+from requests.exceptions import HTTPError
+from slai_cli.create import commands as create
+from slai_cli.model import commands as model
+from slai_cli.profile import commands as profile
+from slai_cli.decorators import requires_slai_credentials
+from slai_cli.errors import handle_error
+
+
+def with_profile(f):
+    @click.pass_context
+    def run(ctx, *args, **kwargs):
+        _f = requires_slai_credentials(f, **kwargs)
+        return ctx.invoke(_f, *args, **kwargs)
+
+    return update_wrapper(run, f)
+
+
+@click.group()
+@click.option("--profile", required=False, default="default", help="Profile to use")
+@with_profile
+def entry_point(profile):
+    pass
+
+
+def main():
+    entry_point.add_command(create.create)
+    entry_point.add_command(model.model)
+    entry_point.add_command(profile.profile)
+
+    try:
+        entry_point()
+    except HTTPError:
+        handle_error(error_msg="unknown_http_error")
+
+
+if __name__ == "__main__":
+    sys.exit(main())
