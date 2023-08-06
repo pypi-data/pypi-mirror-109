@@ -1,0 +1,65 @@
+Metadata-Version: 1.1
+Name: pyepisodate
+Version: 0.0.2
+Summary: A python wrapper for the EpisoDate API
+Home-page: https://github.com/guiszk/pyepisodate
+Author: guiszk
+Author-email: guiszk@protonmail.com
+License: BSD
+Download-URL: https://github.com/guiszk/pyepisodate/dist/pyepisodate-0.0.1.tar.gz
+Description: pyepisodate
+        ===========
+        
+        A python wrapper for the `EpisoDate
+        API <https://www.episodate.com/api>`__
+        
+        Install
+        -------
+        
+        ``pip install pyepisodate``
+        
+        Usage
+        -----
+        
+        Create an object
+        ~~~~~~~~~~~~~~~~
+        
+        .. code:: python
+        
+           import pyepisodate
+           episodate = pyepisodate.episodate()
+        
+        Methods
+        ~~~~~~~
+        
+        .. code:: python
+        
+           episodate.popular() #returns an array of 20 most popular shows
+           episodate.search('toh') # returns an array of shows
+           show = episodate.show('the-owl-house') # creates a show object
+        
+        Display show info
+        ~~~~~~~~~~~~~~~~~
+        
+        .. code:: python
+        
+           show.name # The Owl House 
+           show.description # The Owl House follows Luz...
+           show.start_date # 2020-01-10
+           show.country # US
+           show.status # Running
+           show.runtime # 30
+           show.network # Disney Channel
+           show.genres # ['Comedy', 'Children', 'Fantasy']
+           show.rating # 9.9032
+           show.countdown # dict with next episode
+           show.episodes # list with all episodes
+        
+Keywords: api,episodate,python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
