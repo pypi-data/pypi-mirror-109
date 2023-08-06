@@ -1,0 +1,9 @@
+monkey/__init__.py,sha256=oZ9fvH9Rg-hMbVPk45jhS7NyB7lLkY7OH025Em0ylIM,84
+monkey/crawler/__init__.py,sha256=oZ9fvH9Rg-hMbVPk45jhS7NyB7lLkY7OH025Em0ylIM,84
+monkey/crawler/crawlers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monkey/crawler/crawlers/odbc_crawler.py,sha256=R8NHmEFPJA_E_e2zQXFy9kEQToSMmCe_5zfEPnpAPjM,2099
+monkey.crawler.pyodbc-0.0.1.dev1.dist-info/LICENSE.txt,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+monkey.crawler.pyodbc-0.0.1.dev1.dist-info/METADATA,sha256=Kf39hp8O8vhMaHi0aVDkZGYafM4iHxm8pEF8P7ucH54,841
+monkey.crawler.pyodbc-0.0.1.dev1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+monkey.crawler.pyodbc-0.0.1.dev1.dist-info/top_level.txt,sha256=Wm5IEF_qdczMxmoDgxjzmMQnYUldc4eG3IptQxeaoWo,7
+monkey.crawler.pyodbc-0.0.1.dev1.dist-info/RECORD,,
