@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+plaid_python_adapter/__init__.py
+plaid_python_adapter/exceptions.py
+plaid_python_adapter/plaid_adapter.py
+plaid_python_adapter.egg-info/PKG-INFO
+plaid_python_adapter.egg-info/SOURCES.txt
+plaid_python_adapter.egg-info/dependency_links.txt
+plaid_python_adapter.egg-info/requires.txt
+plaid_python_adapter.egg-info/top_level.txt
