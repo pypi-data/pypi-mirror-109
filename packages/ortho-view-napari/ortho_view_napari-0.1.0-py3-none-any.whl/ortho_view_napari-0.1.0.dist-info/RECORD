@@ -1,0 +1,11 @@
+ortho_view_napari/__init__.py,sha256=83O_g_JijTHYUFwrSRm1nmYGALEROFgg2mm_kW406I0,174
+ortho_view_napari/_dock_widget.py,sha256=WF50RGeBS9HBXxQ3BVVgSy8s5dnY49qrSsvsz-YQY1Q,5915
+ortho_view_napari/_version.py,sha256=xwUxqNB1me5mfO6PXPXd-gWwNTAl_-Idf0ktsITBEpU,142
+ortho_view_napari/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ortho_view_napari/_tests/test_dock_widget.py,sha256=B3_ENHKVn26JuzSIKp3CIdmAeG-Npy1IYtBkTGH3v9A,717
+ortho_view_napari-0.1.0.dist-info/LICENSE,sha256=jE9USc9t_E4ou82Ss7dLwKTcXCOAwV0l388DsZv2_5A,1493
+ortho_view_napari-0.1.0.dist-info/METADATA,sha256=lBRL007lahCsQ_eHb7mXeExN3ch8qsfJCNvaxoX3Glg,3757
+ortho_view_napari-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ortho_view_napari-0.1.0.dist-info/entry_points.txt,sha256=UqhjshtxDAPAxMApRSmA0klHb132gtjfRg9aK4mIMxM,55
+ortho_view_napari-0.1.0.dist-info/top_level.txt,sha256=gH7bqdtQwkMpsjS0bFXwL2SLkUS17jHB-Eh5tpw6b_w,18
+ortho_view_napari-0.1.0.dist-info/RECORD,,
