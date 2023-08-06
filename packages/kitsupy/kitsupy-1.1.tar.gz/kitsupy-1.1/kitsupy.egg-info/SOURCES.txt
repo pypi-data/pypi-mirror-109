@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+kitsupy/__init__.py
+kitsupy/kitsupy.py
+kitsupy.egg-info/PKG-INFO
+kitsupy.egg-info/SOURCES.txt
+kitsupy.egg-info/dependency_links.txt
+kitsupy.egg-info/requires.txt
+kitsupy.egg-info/top_level.txt
