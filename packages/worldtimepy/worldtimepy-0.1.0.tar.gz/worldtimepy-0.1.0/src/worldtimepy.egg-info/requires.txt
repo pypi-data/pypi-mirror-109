@@ -1,0 +1,3 @@
+countryinfo
+requests
+unidecode
