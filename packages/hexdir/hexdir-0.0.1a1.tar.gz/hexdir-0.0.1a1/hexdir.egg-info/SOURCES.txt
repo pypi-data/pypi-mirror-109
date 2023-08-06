@@ -1,0 +1,9 @@
+LICENSE
+setup.cfg
+setup.py
+hexdir/__init__.py
+hexdir/base.py
+hexdir.egg-info/PKG-INFO
+hexdir.egg-info/SOURCES.txt
+hexdir.egg-info/dependency_links.txt
+hexdir.egg-info/top_level.txt
