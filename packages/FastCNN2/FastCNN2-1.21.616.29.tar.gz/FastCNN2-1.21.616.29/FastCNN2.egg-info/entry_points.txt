@@ -1,0 +1,3 @@
+[console_scripts]
+gongda = FastCNN.entry.gongda:mainsfcnn = FastCNN.entry.server:main
+
