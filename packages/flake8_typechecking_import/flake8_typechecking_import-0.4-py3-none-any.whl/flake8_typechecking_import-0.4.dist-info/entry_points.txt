@@ -1,0 +1,3 @@
+[flake8.extension]
+TCI=flake8_typechecking_import:Plugin
+
