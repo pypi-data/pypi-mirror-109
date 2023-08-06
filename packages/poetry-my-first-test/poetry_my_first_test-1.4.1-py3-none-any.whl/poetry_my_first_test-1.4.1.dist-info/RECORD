@@ -1,0 +1,8 @@
+poetry_my_first_test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_my_first_test/cli.py,sha256=GAGL0-h0yLv1ylZ0w--sXYu9LvMiT8mE7mWgNHKQbTA,118
+poetry_my_first_test/views/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_my_first_test/views/main.py,sha256=aKQEkIWYapCMdGEB9JBsFUQJPuJEiFS8BpR4D5hWdCE,270
+poetry_my_first_test-1.4.1.dist-info/entry_points.txt,sha256=AXgU7zCj5G_fGaI2tVeCFLHSMN1bOoHUrlkRTzD-HjU,55
+poetry_my_first_test-1.4.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+poetry_my_first_test-1.4.1.dist-info/METADATA,sha256=DQEZulFcvvcUEL-J6UqCOYeZwYEVaJepDCrCpOOMRMU,380
+poetry_my_first_test-1.4.1.dist-info/RECORD,,
