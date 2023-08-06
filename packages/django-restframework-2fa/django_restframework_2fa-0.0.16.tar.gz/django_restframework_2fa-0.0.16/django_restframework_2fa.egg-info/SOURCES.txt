@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+manage.py
+setup.py
+django_restframework_2fa/__init__.py
+django_restframework_2fa/apps.py
+django_restframework_2fa/serializers.py
+django_restframework_2fa/services.py
+django_restframework_2fa/urls.py
+django_restframework_2fa/views.py
+django_restframework_2fa.egg-info/PKG-INFO
+django_restframework_2fa.egg-info/SOURCES.txt
+django_restframework_2fa.egg-info/dependency_links.txt
+django_restframework_2fa.egg-info/not-zip-safe
+django_restframework_2fa.egg-info/requires.txt
+django_restframework_2fa.egg-info/top_level.txt
