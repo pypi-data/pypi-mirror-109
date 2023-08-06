@@ -1,0 +1,45 @@
+from distutils.core import setup
+setup(
+    name = 'InfoPaths',
+    packages = ['InfoPaths'],
+    version = '0.1',
+    license='MIT',
+    description = 'Straight-forward causality analysis for continuous-valued data. We use the Kraskov-Stoegbauer-Grassberger (KSG) mutual information estimator for transfer entropy and conditional transfer entropy estimation, and the technique proposed by Duan et al. to distinguish direct and spurious causality.',
+    author = 'Benjamin Ahlbrecht',
+    author_email = 'BenjaminAhlbrecht@gmail.com',
+    url = 'https://github.com/benjamin-ahlbrecht/InfoPaths',
+    download_url = 'https://github.com/benjamin-ahlbrecht/InfoPaths/archive/refs/tags/v0.1-alpha.tar.gz',
+    keywords = [
+        'Information Theory',
+        'Transfer Entropy',
+        'Mutual Information',
+        'Statistical Inference',
+        'Conditional Transfer Entropy',
+        'Conditional Mutual Information',
+        'Nearest Neighbors',
+        'Direct Causality',
+        'Kraskov, Stoegbauer, Grassberger',
+        'Network Analysis',
+        'Time Series Analysis',
+        'Granger Causality'
+    ],
+    install_requires=[
+        'numpy',
+        'sklearn',
+        'scipy'
+    ],
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Science/Research',
+        'Topic :: Scientific/Engineering :: Bio-Informatics',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3.0',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+    ],
+)
