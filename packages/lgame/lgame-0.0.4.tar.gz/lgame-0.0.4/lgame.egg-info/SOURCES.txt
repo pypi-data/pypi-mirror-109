@@ -1,0 +1,7 @@
+setup.py
+lgame/__init__.py
+lgame/lgame.py
+lgame.egg-info/PKG-INFO
+lgame.egg-info/SOURCES.txt
+lgame.egg-info/dependency_links.txt
+lgame.egg-info/top_level.txt
