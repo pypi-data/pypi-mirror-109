@@ -1,0 +1,6 @@
+setup.py
+lesscode.egg-info/PKG-INFO
+lesscode.egg-info/SOURCES.txt
+lesscode.egg-info/dependency_links.txt
+lesscode.egg-info/entry_points.txt
+lesscode.egg-info/top_level.txt
