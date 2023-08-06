@@ -1,0 +1,2 @@
+TLS_VERSIONING = "1.0.27"
+TLS_DATE = "13 June 2021"
