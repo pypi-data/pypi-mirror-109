@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: euros
+Version: 0.0.2
+Summary: Converts float or integer input into litteral french (for €). Convertit un montant en chiffres en montant en lettres (exprimé en euros)
+Home-page: https://github.com/ThbtSprt/euros
+Author: ThbtSprt
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ThbtSprt/euros/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# euros
+
+Simple script python destiné à convertir des chiffres en lettres, pour désigner un montant en euros en français littéral respectant les règles orthographiques.
+
+Installation :
+
+`python3 -m pip install euros`
+
+Exemples d'utilisation :
+
+`>>> from euros import fr`
+
+`>>> fr.conv(10) # Output : "dix euros"`
+
+`>>> fr.conv(120.99) # Output : "cent vint euros et quatre-vingt-dix-neuf centimes"`
+
+
+
