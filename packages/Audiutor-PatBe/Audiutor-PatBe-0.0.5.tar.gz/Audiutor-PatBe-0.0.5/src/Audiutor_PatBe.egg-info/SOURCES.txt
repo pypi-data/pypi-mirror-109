@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/Audiutor_PatBe.egg-info/PKG-INFO
+src/Audiutor_PatBe.egg-info/SOURCES.txt
+src/Audiutor_PatBe.egg-info/dependency_links.txt
+src/Audiutor_PatBe.egg-info/requires.txt
+src/Audiutor_PatBe.egg-info/top_level.txt
