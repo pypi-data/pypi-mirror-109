@@ -1,0 +1,10 @@
+rpkimancer_aspa/__init__.py,sha256=PwE-G8BbnP0iX_QUHiYEEv6Y61qC79h7OU5OgAP3Udw,643
+rpkimancer_aspa/conjure.py,sha256=3QLSljdR57CKSGnaS3c7GF3AGPLtT7RVDfBlQNfUzs0,2713
+rpkimancer_aspa/sigobj.py,sha256=d5QoNgNV8wga9p6ntor3uy9SndARF_Qhk6bLrsYyO2Y,2248
+rpkimancer_aspa/asn1/RPKI-ASPA-2020.asn,sha256=2VlQmWFUefOMSIVENrAk4nXJwnmDySImxeInqdthkjg,1061
+rpkimancer_aspa/asn1/__init__.py,sha256=L8dIYWN046XujrNmpQxaiUJyiHUYLztUV3txGEvO9Vg,642
+rpkimancer_aspa-0.5.0rc1.dist-info/METADATA,sha256=dwfKDcEJn4rUpqvROvYEABQDuV3mpvA6c8S1clR_-gY,2397
+rpkimancer_aspa-0.5.0rc1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rpkimancer_aspa-0.5.0rc1.dist-info/entry_points.txt,sha256=JRob9nl4yQpUNapkQSt5HCXJbUCGozJsWvMSpnJZhXA,197
+rpkimancer_aspa-0.5.0rc1.dist-info/top_level.txt,sha256=NfQZhfpoguoLxd1Pn2dHpj1JHx_wwdFxcW4lsjjv_x0,16
+rpkimancer_aspa-0.5.0rc1.dist-info/RECORD,,
