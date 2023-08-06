@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "hello_public_lib"
+version = "0.0.2"
+description = "Awesome library"
+authors = ["Very Good Security <dev@verygoodsecurity.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+vgs-style = "^0.2.4"
+pytest = "^6.2.4"
+
+[tool.vgs-style]
+application_import_names = "hello_public_lib"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
