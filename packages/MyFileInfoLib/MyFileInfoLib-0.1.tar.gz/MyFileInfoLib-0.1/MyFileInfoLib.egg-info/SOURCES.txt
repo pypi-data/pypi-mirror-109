@@ -1,0 +1,9 @@
+README.md
+Setup.py
+setup.py
+MyFileInfoLib/MyFileInfoLibClass.py
+MyFileInfoLib/__init__.py
+MyFileInfoLib.egg-info/PKG-INFO
+MyFileInfoLib.egg-info/SOURCES.txt
+MyFileInfoLib.egg-info/dependency_links.txt
+MyFileInfoLib.egg-info/top_level.txt
