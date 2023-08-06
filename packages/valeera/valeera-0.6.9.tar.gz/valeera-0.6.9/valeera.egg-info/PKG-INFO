@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: valeera
+Version: 0.6.9
+Summary: Validator for district42 schema
+Home-page: https://github.com/nikitanovosibirsk/valeera
+Author: Nikita Tsvetkov
+Author-email: nikitanovosibirsk@yandex.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
