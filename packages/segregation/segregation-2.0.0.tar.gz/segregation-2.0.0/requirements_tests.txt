@@ -1,0 +1,12 @@
+nose
+nose-progressive
+nose-exclude
+coverage
+coveralls
+matplotlib
+pandas
+ipywidgets
+pandana
+urbanaccess
+descartes
+quilt3
