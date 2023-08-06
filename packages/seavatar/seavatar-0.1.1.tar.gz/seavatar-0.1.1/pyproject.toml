@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "seavatar"
+author = "Victor Prince"
+author-email = "v1kk1x@protonmail.com"
+home-page = "https://github.com/victorprince/Seavatar"
+description-file = "README.md"
+
