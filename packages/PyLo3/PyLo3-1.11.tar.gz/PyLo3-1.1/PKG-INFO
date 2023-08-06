@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: PyLo3
+Version: 1.1
+Summary: creatore di alberi filogenetici
+Home-page: https://github.com/deusssss/PyLo3
+Author: Lorenzo D'Eusebio
+Author-email: deusebiolorenzo@gmail.com
+License: cc0-1.0
+Download-URL: https://github.com/deusssss/PyLo3/archive/refs/tags/1.1.tar.gz
+Description: UNKNOWN
+Keywords: biopython,philogenetic analysis,web application,python server,university project,bioinformatics
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python
