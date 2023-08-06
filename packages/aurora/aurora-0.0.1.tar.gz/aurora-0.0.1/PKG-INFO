@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: aurora
+Version: 0.0.1
+Summary: Processing Codes for Magnetotelluric Data
+Home-page: https://github.com/simpeg/aurora
+Author: Karl Kappler
+Author-email: karl.kappler@berkeley.edu
+License: MIT license
+Description: # aurora
+        software for processing natural source electromagnetic data 
+        
+Keywords: aurora
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5

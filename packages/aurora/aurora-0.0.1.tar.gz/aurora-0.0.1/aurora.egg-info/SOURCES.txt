@@ -1,0 +1,14 @@
+README.md
+setup.py
+aurora/__init__.py
+aurora.egg-info/PKG-INFO
+aurora.egg-info/SOURCES.txt
+aurora.egg-info/dependency_links.txt
+aurora.egg-info/not-zip-safe
+aurora.egg-info/requires.txt
+aurora.egg-info/top_level.txt
+aurora/signal/__init__.py
+aurora/signal/apodization_window.py
+aurora/signal/time_axis_helpers.py
+aurora/signal/window_helpers.py
+aurora/signal/windowing_scheme.py
