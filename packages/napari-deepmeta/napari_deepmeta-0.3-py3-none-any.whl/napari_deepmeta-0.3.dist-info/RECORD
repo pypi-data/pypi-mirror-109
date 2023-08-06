@@ -1,0 +1,12 @@
+deepmeta/__init__.py,sha256=YqzWutCN5DbhfeIjqsakPwIjWLQBfsMn-XKjDrtpyLg,170
+deepmeta/_dock_widget.py,sha256=2QsAvsyhqmg4s2bXVcB6Q_PucQYysOPUJyYz9aZ-DDw,8194
+deepmeta/_version.py,sha256=6zor-BCpmDAy7nEOyPit3ZZh7lLgTO1lbSWTcT89wh8,137
+deepmeta/deepmeta_functions.py,sha256=LiB0ar68jrPfC5G3vMMMx5yUsxyv_crGWqpF8OjB59M,10222
+deepmeta/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepmeta/_tests/test_dock_widget.py,sha256=ABhaJaQAHynntEW0lRUF_gM6wQPGFgjLaOEcNzKJTMw,3173
+napari_deepmeta-0.3.dist-info/LICENSE,sha256=29xto5Z9b2EWl8vKJajPfaiUS_5N0IrXa0Behonna5c,1081
+napari_deepmeta-0.3.dist-info/METADATA,sha256=z4K3WohnUlVHPWii5x64IfzGtKtJKq_mbHDMP-sRI6g,5096
+napari_deepmeta-0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+napari_deepmeta-0.3.dist-info/entry_points.txt,sha256=dumgUu8YqTKarqaV3kQEuuekJrSpSl7KzppEUwAlVhk,44
+napari_deepmeta-0.3.dist-info/top_level.txt,sha256=waVWvu0uHswguCEBEyWW5CCuSTuYQN8BWmLw7sxOTEY,9
+napari_deepmeta-0.3.dist-info/RECORD,,
