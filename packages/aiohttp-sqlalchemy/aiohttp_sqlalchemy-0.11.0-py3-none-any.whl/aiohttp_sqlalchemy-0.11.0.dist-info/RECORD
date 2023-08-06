@@ -1,0 +1,11 @@
+aiohttp_sqlalchemy/__init__.py,sha256=WWXPTjtRC2uuj-wrgVM1HY619vdSEAEfE9AYlE3cDrM,1508
+aiohttp_sqlalchemy/constants.py,sha256=vcgsp6M8DDu4_DVje7AdCg9lyxMcBcskStUbduak4j0,24
+aiohttp_sqlalchemy/decorators.py,sha256=TXKMb-km9joNoI3ddQLtNuzAsyRQr96HTq6GocdHGOY,1184
+aiohttp_sqlalchemy/exceptions.py,sha256=wFzFSzr9pFbiyvRtE2NybZun4cGAHYXWNM2LurvKeQY,621
+aiohttp_sqlalchemy/middlewares.py,sha256=c7H9vNRJuX-6AaSLVaswuOZTDFu6Znx7Gvk4ziMLAHc,824
+aiohttp_sqlalchemy/utils.py,sha256=gxgTKbQ4vNOZCAY5Cr944iFBI5LcH9xvR4f71donifQ,298
+aiohttp_sqlalchemy/views.py,sha256=AzJh-k8kRs6denHxIoBzkv4wWkHWIPYA9480j8R3zCg,1292
+aiohttp_sqlalchemy-0.11.0.dist-info/LICENSE,sha256=M0p2jAiV-6gwayZW5buzc0gQezD5vyKBGTR9SEuDbVk,1535
+aiohttp_sqlalchemy-0.11.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+aiohttp_sqlalchemy-0.11.0.dist-info/METADATA,sha256=30G0wB6zf1h4lnsZtWXGLVfSRCZefkVb3fxnbVEt96Q,3770
+aiohttp_sqlalchemy-0.11.0.dist-info/RECORD,,
