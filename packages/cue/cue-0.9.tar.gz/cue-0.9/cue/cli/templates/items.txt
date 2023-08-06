@@ -1,0 +1,21 @@
+@require(ex_tax_label, items)
+--------------------------------------------------------------------------------
+@if ex_tax_label:
+SKU         Description                   Unit price      Qty     Price (@ex_tax_label)
+@else:
+SKU         Description                     Unit price      Qty            Price
+@end
+--------------------------------------------------------------------------------
+@if items:
+    @for item in items:
+@(
+desc_width, tot_width = (30, 17) if ex_tax_label else (32, 15)
+text = f"{item['code']:<12}{item['desc']:<{desc_width}}{item['unit']:<16}{item['qty']:<5}{item['total']:>{tot_width}}"
+)\
+@text
+    @end
+@else:
+
+@end
+--------------------------------------------------------------------------------
+
