@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+miditeach/__init__.py
+miditeach/miditeach.py
+miditeach/read_stats.py
+miditeach.egg-info/PKG-INFO
+miditeach.egg-info/SOURCES.txt
+miditeach.egg-info/dependency_links.txt
+miditeach.egg-info/entry_points.txt
+miditeach.egg-info/not-zip-safe
+miditeach.egg-info/requires.txt
+miditeach.egg-info/top_level.txt
+miditeach/views/GameView.py
+miditeach/views/PauseView.py
+miditeach/views/WelcomeScreen.py
+miditeach/views/__init__.py
