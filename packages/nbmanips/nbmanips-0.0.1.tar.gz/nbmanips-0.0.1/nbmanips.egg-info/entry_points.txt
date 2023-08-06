@@ -1,0 +1,3 @@
+[console_scripts]
+nbmanips = nbmanips.__main__:main
+
