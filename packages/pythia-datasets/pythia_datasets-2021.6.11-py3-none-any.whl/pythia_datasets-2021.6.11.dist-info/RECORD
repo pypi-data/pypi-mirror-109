@@ -1,0 +1,8 @@
+pythia_datasets/__init__.py,sha256=MHuJvkuRtt5YgldxF8ls9RVQHZn1rZK9BBy7zPz8FKU,375
+pythia_datasets/datasets.py,sha256=AoncVGkolUiilbrjGZ3AmJx7CRubALvA5unAeFo4axE,935
+pythia_datasets/registry.txt,sha256=QlnM4LcHXWfYW669GTC_Nqg1wNDCj11PFjd-gYGNa5I,253
+pythia_datasets-2021.6.11.dist-info/LICENSE,sha256=LVkQ6uWDED7EskV19iIzd7ASZrP4KEWd3c8JPZEU_5I,11352
+pythia_datasets-2021.6.11.dist-info/METADATA,sha256=IXrn2XAmt8mNFvEuOkDtI-P9JbXKk_Nz1P5y6QwqI_k,5202
+pythia_datasets-2021.6.11.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pythia_datasets-2021.6.11.dist-info/top_level.txt,sha256=yEn0emMMK9LXKLDQ_LR8Q-1UlF9Xq_fSLBd_Oj_zDJE,16
+pythia_datasets-2021.6.11.dist-info/RECORD,,
