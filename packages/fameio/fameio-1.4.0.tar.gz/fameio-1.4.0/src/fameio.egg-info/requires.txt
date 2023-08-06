@@ -1,0 +1,7 @@
+pandas
+protobuf
+fameprotobuf>=1.1.4
+pyyaml
+
+[test]
+pytest
