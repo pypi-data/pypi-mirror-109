@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+jedis.py
+setup.cfg
+setup.py
+jedis.egg-info/PKG-INFO
+jedis.egg-info/SOURCES.txt
+jedis.egg-info/dependency_links.txt
+jedis.egg-info/requires.txt
+jedis.egg-info/top_level.txt
