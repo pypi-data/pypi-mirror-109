@@ -1,0 +1,2 @@
+district42<1.0
+exrex==0.10.5
