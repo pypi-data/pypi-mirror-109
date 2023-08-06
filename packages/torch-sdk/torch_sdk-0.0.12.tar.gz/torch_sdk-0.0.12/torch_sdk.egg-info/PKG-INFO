@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: torch-sdk
+Version: 0.0.12
+Summary: Accel-data Torch SDK.
+Home-page: UNKNOWN
+Author: acceldata
+Author-email: support@acceldata.io
+License: Apache Software License
+Description: Acceldata Torch is a complete solution to observe the quality of the data present in your data lake and warehouse.
+        Using Torch, you can ensure that high-quality data backs your business decisions.
+        Torch provides you with tools to measure the quality of data in a data catalog and to never miss significant data sources.
+        All users including analysts, data scientists, and developers, can rely on Torch to observe the data flowing
+        in the warehouse or data lake and can rest assured that there is no loss of data.
+        
+        Version Log
+        ==========
+        
+        0.0.1 (14/06/2021)
+        -------------------
+        - Torch python sdk
+        - Support for flow APIs and catalog APIs of the torch
+        
+Keywords: acceldata-torch
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
