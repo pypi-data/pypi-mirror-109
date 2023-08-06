@@ -1,0 +1,31 @@
+version: "0.1"
+
+image: docker.8x8.com:5000/8x8/hyperloop/centos7/python
+
+buildInfo:
+  buildName: knox-cronjob
+
+stages:
+  verify:
+    syntax:
+      - helm template k8s/charts/knox-certbot-cronjob > /dev/null
+
+  security:
+    branch: ^none
+
+  publish:
+    artifact:
+      helm:
+        - push k8s/charts/knox-certbot-cronjob
+
+  cd:
+    enabled: false
+
+notifications:
+  email: lance.johnson@8x8.com
+  vo:
+    channel: "raven-test"
+
+
+
+
