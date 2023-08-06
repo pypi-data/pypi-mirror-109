@@ -1,0 +1,9 @@
+README.md
+setup.py
+op/__init__.py
+op/logger.py
+opu.egg-info/PKG-INFO
+opu.egg-info/SOURCES.txt
+opu.egg-info/dependency_links.txt
+opu.egg-info/not-zip-safe
+opu.egg-info/top_level.txt
