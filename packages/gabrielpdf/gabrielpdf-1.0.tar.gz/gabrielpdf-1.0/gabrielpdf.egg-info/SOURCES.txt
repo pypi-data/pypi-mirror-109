@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+gabrielpdf/__init__.py
+gabrielpdf/pdf2image.py
+gabrielpdf/pdf2text.py
+gabrielpdf.egg-info/PKG-INFO
+gabrielpdf.egg-info/SOURCES.txt
+gabrielpdf.egg-info/dependency_links.txt
+gabrielpdf.egg-info/top_level.txt
