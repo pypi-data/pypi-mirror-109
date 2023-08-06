@@ -1,0 +1,16 @@
+luciferml/supervised/__init__.py,sha256=tHdczDiCPe0zXjqGt4Z1IHWHtiU_GgMHaYGHudpt2Gg,89
+luciferml/supervised/classification.py,sha256=8iaaJrNpxzEJp9GQ7KN4VuATQnDVr788KYaa4cwK1v8,11937
+luciferml/supervised/utils/classificationPredictor.py,sha256=MhQmWdj228T-kTtKxyrPKYhx7zwXmaHAc-u-ysAgpTI,5729
+luciferml/supervised/utils/classification_params.py,sha256=7g6QEh4TJSsHJAfJ5BzlxTk1JO9ucupNLc1NXIM8N8g,5343
+luciferml/supervised/utils/confusionMatrix.py,sha256=Xmz68AznJLfnFGylaEZKJT6wsZdQ84wLh2-U7rl9efg,865
+luciferml/supervised/utils/dimensionalityReduction.py,sha256=XqYTkYKpEexu7VbsM41t1S5-91C-8WTtMr0V8nZ986g,1755
+luciferml/supervised/utils/encoder.py,sha256=STc4DZ8mHncoh3eCiQSUU_XONeEvOEsCjDlhQaeknq8,1572
+luciferml/supervised/utils/hyperTune.py,sha256=N2JkweseC9bg6HTdQAXUJV6_wUqfTiJ3UNlRTQ5zK0M,1304
+luciferml/supervised/utils/kfold.py,sha256=WdJt_KQos2QmwApZ7T9AYAzps-3IWuAtd1XvE4Y6bKQ,1411
+luciferml/supervised/utils/preprocess.py,sha256=CZaVABSSHiASFC4vGRpVaxeEUXLqbcw8oc5B6cI3gL8,1242
+luciferml/supervised/utils/sparseCheck.py,sha256=HA0QMmx9IAUg7BpMnVx4HNyAs791U1L2o_uUy4EVBK4,999
+lucifer_ml-0.0.10.dist-info/LICENSE,sha256=AUrpkQxyzNluGQE_sDYH5X0R84SA-M2TZwow19Yy58E,1088
+lucifer_ml-0.0.10.dist-info/METADATA,sha256=unJHOru0DK2tXkEwgd2RvbHeXy-_4KTGQaM6TSwOteA,502
+lucifer_ml-0.0.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lucifer_ml-0.0.10.dist-info/top_level.txt,sha256=mjcBOcGesF-xtlFz5hDpnDDmQ5z14-8Cebi02QkfVQ0,10
+lucifer_ml-0.0.10.dist-info/RECORD,,
