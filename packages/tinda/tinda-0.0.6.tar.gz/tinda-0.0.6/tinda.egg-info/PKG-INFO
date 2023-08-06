@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: tinda
+Version: 0.0.6
+Summary: Generic but useful python functions
+Home-page: UNKNOWN
+Author: (Hank Singh)
+Author-email: <hanksingh07@gmail.com>
+License: UNKNOWN
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+tinda
+.  
+.
+.
+#
+Buggy Sub-Alpha stage.
+.
+.
+.
+
+# Usage:
+from tinda import *
+.# doing that will enable you to use all functions as they come.
+bot()
+.# bot lists all the available functions and speaks a few generic things.
+
+.from tinda import linkDownloader
+.linkDownloader('link')
+.# or a function can be imported seperately
+
+
+Developed by Hank Singh (c)
+© 2021 SINGHINDUSTRIES.
+
+
+
