@@ -1,0 +1,8 @@
+pyyaml
+pyjson
+boto
+boto3
+click
+click-params
+stdiomask
+requests
