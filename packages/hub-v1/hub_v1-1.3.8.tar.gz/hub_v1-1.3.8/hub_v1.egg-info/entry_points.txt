@@ -1,0 +1,6 @@
+[console_scripts]
+activeloop_v1 = hub_v1.cli.command:cli
+activeloop_v1-dev = hub_v1.cli.dev:cli
+activeloop_v1-local = hub_v1.cli.local:cli
+hub_v1 = hub_v1.cli.command:cli
+
