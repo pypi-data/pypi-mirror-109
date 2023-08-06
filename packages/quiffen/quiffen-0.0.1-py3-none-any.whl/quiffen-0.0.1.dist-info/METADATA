@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: quiffen
+Version: 0.0.1
+Summary: Quiffen
+Home-page: UNKNOWN
+Author: Isaac Harris-Holt
+Author-email: isaac@harris-holt.com
+License: UNKNOWN
+Keywords: python,qif
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+A Python package for parsing Quicken Interchange Format (QIF) files.
+
+
