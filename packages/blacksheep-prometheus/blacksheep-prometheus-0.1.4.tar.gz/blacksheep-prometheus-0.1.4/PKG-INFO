@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: blacksheep-prometheus
+Version: 0.1.4
+Summary: Prometheus integration for blacksheep
+Home-page: https://github.com/Cdayz/blacksheep-prometheus
+License: MIT
+Keywords: blacksheep,prometheus,metrics
+Author: Nikita Tomchik
+Author-email: cdayz@yandex.ru
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: blacksheep (>=1.0.7)
+Requires-Dist: prometheus-client (>=0.11.0)
+Project-URL: Repository, https://github.com/Cdayz/blacksheep-prometheus
+Description-Content-Type: text/markdown
+
+# Blacksheep Prometheus
+
+[![Build Status](https://github.com/Cdayz/blacksheep-prometheus/workflows/Continuous%20Integration/badge.svg)](https://github.com/Cdayz/blacksheep-prometheus/actions)
+[![codecov](https://codecov.io/gh/Cdayz/blacksheep-prometheus/branch/master/graph/badge.svg?token=YJTGKBTQSE)](https://codecov.io/gh/Cdayz/blacksheep-prometheus)
+[![Package Version](https://img.shields.io/pypi/v/blacksheep-prometheus?logo=PyPI&logoColor=white)](https://pypi.org/project/starlette-prometheus/)
+[![PyPI Version](https://img.shields.io/pypi/pyversions/blacksheep-prometheus?logo=Python&logoColor=white)](https://pypi.org/project/starlette-prometheus/)
+
+## Introduction
+
+Prometheus integration for Blacksheep.
+
+## Requirements
+
+* Python 3.6+
+* Blacksheep 1.0.7+
+
+## Installation
+
+```console
+$ pip install blacksheep-prometheus
+```
+
+## Usage
+
+A complete example that exposes prometheus metrics endpoint under `/metrics/` path.
+
+```python
+from blacksheep.server import Application
+from blacksheep_prometheus import PrometheusMiddleware, metrics
+
+app = Application()
+
+app.middlewares.append(PrometheusMiddleware())
+app.router.add_get('/metrics/', metrics)
+```
+
+## Contributing
+
+This project is absolutely open to contributions so if you have a nice idea, create an issue to let the community 
+discuss it.
+
