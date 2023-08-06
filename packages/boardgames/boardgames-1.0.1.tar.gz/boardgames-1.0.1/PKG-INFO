@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: boardgames
+Version: 1.0.1
+Summary: Board game utility functions
+License: Apache-2.0
+Author: bijij
+Author-email: josh@josh-is.gay
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
