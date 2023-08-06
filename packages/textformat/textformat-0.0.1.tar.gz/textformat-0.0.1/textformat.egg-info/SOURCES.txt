@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+textformat/__init__.py
+textformat/core.py
+textformat.egg-info/PKG-INFO
+textformat.egg-info/SOURCES.txt
+textformat.egg-info/dependency_links.txt
+textformat.egg-info/requires.txt
+textformat.egg-info/top_level.txt
