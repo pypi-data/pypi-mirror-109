@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+script/wlalign
+test/test_alignment.py
+test/test_init.py
+test/test_similarity.py
+test/test_utils.py
+wlalign/__init__.py
+wlalign/alignment.py
+wlalign/similarity.py
+wlalign/utils.py
+wlalign.egg-info/PKG-INFO
+wlalign.egg-info/SOURCES.txt
+wlalign.egg-info/dependency_links.txt
+wlalign.egg-info/requires.txt
+wlalign.egg-info/top_level.txt
