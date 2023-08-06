@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+mycroft_ptt_client/__init__.py
+mycroft_ptt_client/__main__.py
+mycroft_ptt_client.egg-info/PKG-INFO
+mycroft_ptt_client.egg-info/SOURCES.txt
+mycroft_ptt_client.egg-info/dependency_links.txt
+mycroft_ptt_client.egg-info/entry_points.txt
+mycroft_ptt_client.egg-info/requires.txt
+mycroft_ptt_client.egg-info/top_level.txt
