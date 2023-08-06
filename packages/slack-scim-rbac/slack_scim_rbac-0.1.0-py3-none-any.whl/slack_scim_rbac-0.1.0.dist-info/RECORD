@@ -1,0 +1,6 @@
+slack_scim_rbac/__init__.py,sha256=Oj4ZtT_9f5Vv_41EC0fcBHfqJw8NgMVUwyHGP7gTy6A,43
+slack_scim_rbac/middleware.py,sha256=q-zPw8Huc2APhx_4_QwmTvQ2snqeLwcytqYqxWoVhAM,3108
+slack_scim_rbac-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+slack_scim_rbac-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+slack_scim_rbac-0.1.0.dist-info/METADATA,sha256=8JbNQz-UbYHGZ44kt3zL9J9kvrHvClqmiyw5Tv3tOks,4638
+slack_scim_rbac-0.1.0.dist-info/RECORD,,
