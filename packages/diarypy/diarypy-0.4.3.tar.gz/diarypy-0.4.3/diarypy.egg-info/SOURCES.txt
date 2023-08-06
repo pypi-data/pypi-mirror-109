@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+diarypy/__init__.py
+diarypy/diary.py
+diarypy/utils.py
+diarypy/version.py
+diarypy.egg-info/PKG-INFO
+diarypy.egg-info/SOURCES.txt
+diarypy.egg-info/dependency_links.txt
+diarypy.egg-info/top_level.txt
+diarypy/tests/__init__.py
+diarypy/tests/test_diary.py
