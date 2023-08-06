@@ -1,0 +1,9 @@
+deetly/__init__.py,sha256=EiNfc3MoUe9FiZGDpegVcd4PSPke-npGrZIZASAetdw,504
+deetly/datapackage.py,sha256=eoBCjXZa62H4bcy65STOn_epnIpyX9soE2IQDWCM5wI,23412
+deetly/error.py,sha256=9O5thV0elJw4I483K9DZ4JW8Rnh6RO6fpjmOYekADpE,375
+deetly/utils.py,sha256=bqJe_iST22vTytomto5dqLLVnF88ZSCmQiuqavuw-xA,7331
+deetly/validator.py,sha256=BlT1hOmKKR1xKzTaqzEMt5PJIUn0FOIiXvS4-6ekPKo,2635
+deetly-0.0.24.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deetly-0.0.24.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+deetly-0.0.24.dist-info/METADATA,sha256=_BIlYlVME-N1wzgbMiaajtCwOXmXngB6rpSbecx9_oY,663
+deetly-0.0.24.dist-info/RECORD,,
