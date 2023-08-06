@@ -1,0 +1,122 @@
+# Overview
+   `xmlrepr` module is used to have a nice representations for objects in xml format.
+   so, instead of having representation like this `<__main__.Foo object at 0x00000001>`,
+   you can simply try this `<Foo />`. This package also could be used for complex representations:
+```
+<Program name="main">
+    <VarDecl name="x" type="INTEGER" />
+    <VarDecl name="y" type="REAL" />
+    <ProcDecl name="calc">
+        <Param name="num" type="INTEGER" />
+        <Block>
+            <Assign left="y">
+                <BinOp type="DIV">
+                    <Var name="num" />
+                    2
+                </BinOp>
+            </Assign>
+        </Block>
+    </ProcDecl>
+    <Block>
+    
+    </Block>
+</Program>
+```
+
+## installing
+   there are two other basic releases:
+ - [0.0.6](https://pypi.org/project/xmlrepr/0.0.6/)
+ - [0.0.7](https://pypi.org/project/xmlrepr/0.0.7/)
+
+## simple introduction
+
+| function | parameters | documentation | status |
+| -------- | ---------- | ------------- | ------ |
+| ~~repr~~ | arg1, level=None, props=None, children=None | see `repr` at [0.0.7](https://pypi.org/project/xmlrepr/0.0.7/) | **Deprecated** |
+| xmlrepr | name, props:dict=None, children:list=None | recursively builds xml representations | **Recommended** |
+
+### xmlrepr(name, props=None, children=None)
+
+##### name
+ - The name of the xml tag. string value. e.g. _<Egg />_
+
+##### props
+ - Dictionary represents properties of the tag. _e.g. <Egg color="white" />_
+ - if `bool(props)` gives False _(it's None by default)_, no property will get displayed. _e.g. <Egg />_
+ - Keys and values of props could be string or any object.
+ - if value in props is boolean value _(True or False)_, will just display the key if True and omit them if False. _e.g. <Egg cooked />_
+ - if the key and value strings has `'\n'` in them, will got replaced by `r'\n'`. _(this is a current fix to a bug)_
+
+##### children
+ - A list of objects that are ready to be represented in xml format.
+
+#### Usage
+ - In `__str__` or `__repr__`, just make call to this function and return the result. _(no need for `__xml__` and its 'level' parameter)_
+
+#### Why is it Recommended ? _(And why is repr deprecated ?)_
+1. xmlrepr module is intended to as **much simple** as it could be. Having `__xml__` method and 'level' parameter wasn't a good thing.
+   Using `__repr__` and `__str__` instead of `__xml__`. Depending on recursion istead of 'level' parameter. making it easier for developers.
+
+2. xmlrepr function came to **replace** repr with **less code** and dependencies. for example stop using `globals()['__builtins__']['repr']` thing.
+
+3. xmlrepr function is **developer friendly**.
+
+4. xmlrepr has **fixed bugs** that are still in repr function.
+
+# Examples
+
+Let's see some examples to understand the module easily.
+
+```python
+from xmlrepr import xmlrepr
+
+input = xmlrepr('input', dict(name='text', type='text', value='welcome', required=True))
+span = xmlrepr('span')
+p = xmlrepr('p', 0, [span])
+a = xmlrepr('a', dict(href='\n'), [p])
+
+print(xmlrepr('form', None, [input, a, "some text \nand lines"]))
+```
+### Output:
+```
+<form>
+    <input name="text" type="text" value="welcome" required />
+    <a href="\n">
+        <p>
+            <span />
+        </p>
+    </a>
+    some text 
+    and lines
+</form>
+```
+Play around the code above to make sure you understand it.
+
+# Source Code
+Here is how `xmlrepr` function is implemented.
+
+```python
+def xmlrepr(name, props=None, children=None):
+    props = ' '+' '.join(
+        '%s="%s"' %(
+            key.replace('\n', r'\n'),
+            value.replace('\n', r'\n')
+        ) if value != True else key
+        for key, value in props.items()
+        if value != False
+    ) if props else ''
+    if children:
+        # regular tag -> recursion
+        return "<{name}{props}>\n{indent}{inners}\n</{name}>".format(
+            name=name,
+            props=props,
+            indent= ' '*4,
+            inners= '\n'.join(
+                str(child)
+                for child in children
+            ).replace('\n', '\n    ')
+        )
+    else:
+        # self-closing tag -> stop recursion
+        return "<%s%s />" %(name, props)
+```
