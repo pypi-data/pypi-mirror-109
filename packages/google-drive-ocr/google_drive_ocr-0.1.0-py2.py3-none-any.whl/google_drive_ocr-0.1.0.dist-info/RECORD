@@ -1,0 +1,12 @@
+google_drive_ocr/__init__.py,sha256=o4Qb_lbEChtv3waGysnnrfvHIV3EbQNsKEHnTfZbkrI,159
+google_drive_ocr/application.py,sha256=jPnFwpMlMffmW3v3_i6iUWG92RUWArnHxc0zL4LFMhE,9963
+google_drive_ocr/cli.py,sha256=PNwp4HNyZ4OIvXtytMphWjCyvDx12KIVNd9YyK6wAUA,5844
+google_drive_ocr/errors.py,sha256=C2pWtiBN7q41XmBF-N2pfpzlrmUQvb9QpoglKCa02UQ,4244
+google_drive_ocr/utils.py,sha256=bU5CqEFwjL8hRKcpguaE9wFQ5Nja-spHsecdudSbXaA,1461
+google_drive_ocr-0.1.0.dist-info/AUTHORS.rst,sha256=oPn2na2vtwDDxf9ue6OF-iGY7SgGg0rx89WZ4W9ubBM,172
+google_drive_ocr-0.1.0.dist-info/LICENSE,sha256=1jkcuVEnIs6b0OOkWcOPzja-d_E8Qcge0GehdDN7nH0,1562
+google_drive_ocr-0.1.0.dist-info/METADATA,sha256=-VzwpnZ5cl4r26MosJnOE-hncitgS78X08m8QEP7TvA,3631
+google_drive_ocr-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+google_drive_ocr-0.1.0.dist-info/entry_points.txt,sha256=yPllROiVT_TIgPVCxa7EMRPN7oZCD1r9rzQ9flaYynY,58
+google_drive_ocr-0.1.0.dist-info/top_level.txt,sha256=1uNEf6e2p8dwQs_a-25jR-vafmAoDTjD518rCjU1hQM,17
+google_drive_ocr-0.1.0.dist-info/RECORD,,
