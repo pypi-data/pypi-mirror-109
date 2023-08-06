@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: log-kbots
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: https://github.com/kbots-dga-kroton/log_kbots
+Author: Bruno Nascimento
+Author-email: bruno_freddy@hotmail.com
+License: MIT
+Project-URL: Código fonte, https://github.com/kbots-dga-kroton/log_kbots
+Project-URL: Download, https://github.com/kbots-dga-kroton/log_kbots/archive/main.zip
+Keywords: log_kbots,kbots,kroton
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Internationalization
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# log_kbots
+
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat-square)](https://www.python.org/)
+
+
+
+A biblioteca fornece uma funÃ§Ã£o que aceita dados de robÃ´s como entrada, os valida e cria um arquivo json pronto para upload.
+
+
+
+#### Argumentos de entrada esperados:
+
+- PATH_LOG (str): Caminho para a diretÃ³rio com logs json a processar
+- robot_name (str): CÃ³digo do robÃ´ (ex: DGA-100)
+- schedule_value (str): Agendamento do robÃ´ em formato padrÃ£o cron
+- start_date (datetime): Datahora do inÃ­cio do processamento do dado
+- status (str): Status final do processamento do dado
+- error_value (str, optional): Mensagem de erro quando existente. Padrao Ã© None.
+- detail_value (str, optional): InformaÃ§Ãµes adicionais ao dado quando necessÃ¡rio. Padrao Ã© None.
+
+
+
+#### Feito:
+- Cria arquivo json no formato correto
+- Confere se o status do processamento estÃ¡ entre os esperados 
+
+
+#### A fazer:
+- Conferir acesso a pasta de logs
+- Validar formato do nome do robÃ´
+
+
