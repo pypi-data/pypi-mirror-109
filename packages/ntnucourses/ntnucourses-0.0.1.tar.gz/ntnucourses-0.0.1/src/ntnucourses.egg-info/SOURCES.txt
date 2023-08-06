@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ntnucourses.egg-info/PKG-INFO
+src/ntnucourses.egg-info/SOURCES.txt
+src/ntnucourses.egg-info/dependency_links.txt
+src/ntnucourses.egg-info/top_level.txt
