@@ -1,0 +1,7 @@
+README.md
+setup.py
+gitdatalab/__version__.py
+gitdatalab.egg-info/PKG-INFO
+gitdatalab.egg-info/SOURCES.txt
+gitdatalab.egg-info/dependency_links.txt
+gitdatalab.egg-info/top_level.txt
