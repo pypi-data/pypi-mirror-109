@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pantry-cloud/__init__.py
+pantry-cloud/pantry_cloud.py
+pantry_cloud.egg-info/PKG-INFO
+pantry_cloud.egg-info/SOURCES.txt
+pantry_cloud.egg-info/dependency_links.txt
+pantry_cloud.egg-info/requires.txt
+pantry_cloud.egg-info/top_level.txt
