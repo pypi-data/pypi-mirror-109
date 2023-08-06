@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+kproxy/__init__.py
+kproxy/proxy.py
+kproxy.egg-info/PKG-INFO
+kproxy.egg-info/SOURCES.txt
+kproxy.egg-info/dependency_links.txt
+kproxy.egg-info/requires.txt
+kproxy.egg-info/top_level.txt
