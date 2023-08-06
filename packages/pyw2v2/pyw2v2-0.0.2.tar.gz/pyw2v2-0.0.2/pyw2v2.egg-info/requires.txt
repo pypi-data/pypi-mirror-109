@@ -1,0 +1,8 @@
+torch
+torchaudio
+librosa
+transformers
+datasets
+easydict
+PyYAML
+jiwer
