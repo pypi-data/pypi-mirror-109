@@ -1,0 +1,18 @@
+- hosts: localhost
+  tasks:
+  - name: command without checks
+    command: echo blah
+    args:
+      chdir: X
+
+  - name: shell without checks
+    shell: echo blah
+    args:
+      chdir: X
+
+  - name: shell without checks
+    shell: echo blah
+    args:
+      chdir: X
+    async: 600
+    poll: 30
