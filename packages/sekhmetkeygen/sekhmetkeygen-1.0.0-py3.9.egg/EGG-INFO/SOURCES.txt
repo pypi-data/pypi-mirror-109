@@ -1,0 +1,6 @@
+sekhmet-keygen/setup.py
+sekhmetkeygen.egg-info/PKG-INFO
+sekhmetkeygen.egg-info/SOURCES.txt
+sekhmetkeygen.egg-info/dependency_links.txt
+sekhmetkeygen.egg-info/requires.txt
+sekhmetkeygen.egg-info/top_level.txt
