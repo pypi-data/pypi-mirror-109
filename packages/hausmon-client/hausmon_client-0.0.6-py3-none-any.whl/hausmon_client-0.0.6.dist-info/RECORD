@@ -1,0 +1,9 @@
+hausmon_client/__init__.py,sha256=Xvego6TgNhcN383e1OEqUmgr_kTDaPeMyC2DMqTvERc,24
+hausmon_client/client.py,sha256=GkEcoxSnlCCkcgUatWl0W-xfVMq7QoJMfDZnMVfrzWY,3112
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/client_tests.py,sha256=LE87IwE7SmeA43edT0bC7wEL8stOce0H-9b1w1Bk97k,2684
+hausmon_client-0.0.6.dist-info/LICENSE,sha256=8h4cAvWbem31p6kngRKWnyS-2LkyGj0pIISKFT7UlJ8,1064
+hausmon_client-0.0.6.dist-info/METADATA,sha256=A-HG3eXB5QhDNdcPQ9kQv8DM4NVYdUBsoytjL1F4SHo,1635
+hausmon_client-0.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+hausmon_client-0.0.6.dist-info/top_level.txt,sha256=LrgCHc8o9JCqxLfuDm7ZoTsmvPPARs-upp5GqCN_pwA,15
+hausmon_client-0.0.6.dist-info/RECORD,,
