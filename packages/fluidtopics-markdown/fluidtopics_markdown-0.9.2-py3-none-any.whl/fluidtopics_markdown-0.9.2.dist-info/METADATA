@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: fluidtopics-markdown
+Version: 0.9.2
+Summary: A Markdown to FluidTopics command line tool
+License: LGPL-3.0-or-later
+Keywords: FT,fluidtopics,CMS,Markdown
+Author: Antidot Opensource
+Author-email: opensource@antidot.net
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Documentation
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: click (>=7,<8)
+Requires-Dist: click-log (>=0.3,<0.4)
+Requires-Dist: fluidtopics (>=1.0.3,<2.0.0)
+Requires-Dist: importlib-metadata (>=3,<4)
+Requires-Dist: lxml (>=4.5.1,<5.0.0)
+Requires-Dist: python-slugify (>=4.0.0,<5.0.0)
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Project-URL: Documentation, https://doc.antidot.net/r/Technical-Notes/Markdown-to-Fluid-Topics-md2ft
+Description-Content-Type: text/markdown
+
+# Markdown to Fluitopics command line tool
+
+The idea of this tool is to be able to collect documentation written
+as markdown files in a various places in a project and push it to
+a [Fluitopics](https://www.fluidtopics.com/) portal.
+
+The tool uses the FTML upload capability:
+
+- https://doc.antidot.net/r/Upload-FTML-Content-to-Fluid-Topics/Configure-FTML-Content
+
+## Features
+
+- Collect any markdown file (.md) contained in a project
+- Be able to select public vs internal content from [metadata contained
+  in the markdown files](https://stackoverflow.com/questions/44215896/markdown-metadata-format).
+- Build the FT TOC (ftmap) from metadata contained in the markdown files
+
+## Documentation
+
+You can find some explanations on how md2ft works [here](https://doc.antidot.net/r/Technical-Notes/Markdown-to-Fluid-Topics-md2ft).
+
