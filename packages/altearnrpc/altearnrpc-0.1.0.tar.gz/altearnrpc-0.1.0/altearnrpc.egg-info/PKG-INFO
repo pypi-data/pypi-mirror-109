@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: altearnrpc
+Version: 0.1.0
+Summary: Un client Discord RPC pour Altearn
+Home-page: https://gitlab.com/Aeris1One/altearn-discord-rpc
+Author: Aeris One
+Author-email: aeris@e.email
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# Altearn RPC
+
