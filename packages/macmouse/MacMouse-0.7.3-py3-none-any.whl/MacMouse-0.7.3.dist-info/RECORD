@@ -1,0 +1,14 @@
+mouse/__init__.py,sha256=0F0D4n6OPVWuBLZqH76loAzjJHm2VvbNsImpU5lGlbM,9802
+mouse/__main__.py,sha256=Rir1qIanuA6OUsVIywo71MgF1PrVCdZ77F1FPOu4JA0,625
+mouse/_darwinmouse.py,sha256=_uXALBUn9MwlGa5qPm_tUyuWpl5_Fbi7QXiRyBMGW98,8337
+mouse/_generic.py,sha256=STzfL7AUAkcAq6XUyxpQiOYnBnQ1TZjWL1cSFSZ61_o,2132
+mouse/_mouse_event.py,sha256=zRQGO6M6nbA-jvhI0yz4HzvQNcScF48PZ9iRegcTVjQ,422
+mouse/_mouse_tests.py,sha256=gNa_NW5sRIsbLMG35ZfXal3eHS2mEpEPhysJRDq0gQA,10000
+mouse/_nixcommon.py,sha256=5DtZIY1KBrD5mazyNl8aCNU2eNjg4CMWXX4nFx0og8A,5691
+mouse/_nixmouse.py,sha256=3htKn9XkUApFqp3rGCT-ZQIqJFf4iGqoxxoO9MY2x4k,3576
+mouse/_winmouse.py,sha256=8WY1ixoaiKGoJHB9n3Ohs9m-CVNOVoBBjsTl4XNkpMA,6432
+MacMouse-0.7.3.dist-info/LICENSE.txt,sha256=K_FKUlVV0FqAHC0sKJAVBPt2q-58LX6_tM_HUI198Pc,1077
+MacMouse-0.7.3.dist-info/METADATA,sha256=oZV8bi9ct3moBX7lZp_pRnjCrgJ9p-n06i1t_j26mg8,12079
+MacMouse-0.7.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+MacMouse-0.7.3.dist-info/top_level.txt,sha256=FiA9sXRt9_B8X6je4BlPesL9EakrmGZ0fDKPK09Ql6U,6
+MacMouse-0.7.3.dist-info/RECORD,,
