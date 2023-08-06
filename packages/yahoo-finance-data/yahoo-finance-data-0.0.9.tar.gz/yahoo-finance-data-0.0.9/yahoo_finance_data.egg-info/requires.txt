@@ -1,0 +1,5 @@
+requests
+certifi
+urllib3
+beautifulsoup4
+datetime
