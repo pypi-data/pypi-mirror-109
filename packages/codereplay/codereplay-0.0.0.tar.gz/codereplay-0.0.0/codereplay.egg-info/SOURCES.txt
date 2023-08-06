@@ -1,0 +1,6 @@
+setup.py
+codereplay/__init__.py
+codereplay.egg-info/PKG-INFO
+codereplay.egg-info/SOURCES.txt
+codereplay.egg-info/dependency_links.txt
+codereplay.egg-info/top_level.txt
