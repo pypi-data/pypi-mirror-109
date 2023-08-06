@@ -1,0 +1,3 @@
+[console_scripts]
+instaview=src.instaview.cli:cli
+
