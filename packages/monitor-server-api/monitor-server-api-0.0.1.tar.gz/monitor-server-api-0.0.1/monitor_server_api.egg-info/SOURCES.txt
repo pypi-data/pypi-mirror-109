@@ -1,0 +1,5 @@
+setup.py
+monitor_server_api.egg-info/PKG-INFO
+monitor_server_api.egg-info/SOURCES.txt
+monitor_server_api.egg-info/dependency_links.txt
+monitor_server_api.egg-info/top_level.txt
