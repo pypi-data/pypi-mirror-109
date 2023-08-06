@@ -1,0 +1,8 @@
+odoo/addons/auto_set_everybody_calendar/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/auto_set_everybody_calendar/__manifest__.py,sha256=9kBOU_wt2bwHyBqVjVbsAC1rVwwnVYh76NdvZxbbdEg,628
+odoo/addons/auto_set_everybody_calendar/static/src/js/auto_set_everybody_calendar_script.js,sha256=WPOujFBOosSFf_oyKJE0WJ9WXReuN944P90sxbRR7SU,1111
+odoo/addons/auto_set_everybody_calendar/views/assets.xml,sha256=WdaB5KGKK38gW0cSKfyLHcnrkj36zDUFDgDkv-QyXWA,404
+odoo12_addon_auto_set_everybody_calendar-12.0.1.0.2.dist-info/METADATA,sha256=UE3GU0mJX0EiOXnEvQLBQbBQmenkG7ltLbWXx1zl1Os,486
+odoo12_addon_auto_set_everybody_calendar-12.0.1.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+odoo12_addon_auto_set_everybody_calendar-12.0.1.0.2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_auto_set_everybody_calendar-12.0.1.0.2.dist-info/RECORD,,

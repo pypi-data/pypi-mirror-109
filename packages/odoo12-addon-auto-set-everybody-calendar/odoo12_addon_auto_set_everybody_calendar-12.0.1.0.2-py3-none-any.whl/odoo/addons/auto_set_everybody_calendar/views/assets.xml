@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <template id="assets_backend" name="auto_set_everybody_calendar_assets" inherit_id="web.assets_backend">
+      <xpath expr="//script[last()]" position="after">
+        <script type="text/javascript" src="auto_set_everybody_calendar/static/src/js/auto_set_everybody_calendar_script.js"></script>
+      </xpath>
+    </template>
+  </data>
+</odoo>
+
