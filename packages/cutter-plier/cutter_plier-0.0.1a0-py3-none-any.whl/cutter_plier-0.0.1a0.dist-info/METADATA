@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cutter-plier
+Version: 0.0.1a0
+Summary: Bournix team utils for django
+Home-page: UNKNOWN
+Author: Mahdi Zarrintareh
+Author-email: mza2rintareh@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+# bournix-on-chain
+Bournix team utils for django
+
+
