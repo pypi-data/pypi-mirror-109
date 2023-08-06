@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: yuanni
+Version: 0.0.0
+Summary: nlp tools
+Home-page: https://github.com/beidongjiedeguang/yuanni
+Author: kunyuan
+Author-email: beidongjiedeguang@gmail.com
+License: MIT
+Keywords: Natural Language Processing,Mathematics,Machine Learning,Neural Networks
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering 
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pyprobar
+
+
+# Yuan
+
+Natural language processing toolbox
+
+---
+
+## Document
+TODO
+
+## Installation
+```bash
+pip install yuanni
+```
+
+## Synopsis
+TODO
+
+## Usage
+TODO
+
+
+
