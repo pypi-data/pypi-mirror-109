@@ -1,0 +1,6 @@
+[console_scripts]
+ansible-specdoc = ansible_specdoc.cli:main
+
+[distutils.commands]
+clean = setupext_janitor.janitor:CleanCommand
+
