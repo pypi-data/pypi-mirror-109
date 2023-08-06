@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: notelink
+Version: 0.0.1
+Summary: Management your favorite link using CLI.
+Home-page: https://github.com/agung96tm/notelink
+Author: Agung Yuliyanto
+Author-email: agung.96tm@gmail.com
+License: UNKNOWN
+Project-URL: Source Code, https://github.com/agung96tm/notelink
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENCE
+Requires-Dist: click (==8.0.1)
+Requires-Dist: inquirer (==2.7.0)
+Requires-Dist: configobj (==5.0.6)
+Requires-Dist: Sphinx (==4.0.2)
+Requires-Dist: sphinx-rtd-theme (==0.5.2)
+
+Management your favorite link using CLI.
+
