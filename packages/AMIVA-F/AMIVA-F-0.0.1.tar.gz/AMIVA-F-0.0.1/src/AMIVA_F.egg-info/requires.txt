@@ -1,0 +1,4 @@
+biopython
+freesasa
+javabridge
+python-weka-wrapper3

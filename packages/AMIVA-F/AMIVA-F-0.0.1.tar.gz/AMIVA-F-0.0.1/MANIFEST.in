@@ -1,0 +1,6 @@
+include src/AMIVA-F-test/FLNc_structures_pdb/*.pdb
+include src/AMIVA-F-test/WEKA_associated_files/*
+include src/AMIVA-F-test/FLNc_mutant_structures_pdb/
+include src/AMIVA-F-test/FLNc_mutant_structures_pdb/*.txt
+include src/AMIVA-F-test/Posttranslational_modifications_and_binding_partners/
+include src/AMIVA-F-test/Posttranslational_modifications_and_binding_partners/*.txt

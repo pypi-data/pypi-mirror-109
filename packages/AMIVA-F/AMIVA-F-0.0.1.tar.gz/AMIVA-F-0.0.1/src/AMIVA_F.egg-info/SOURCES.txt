@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/AMIVA-F/AMIVA-F.py
+src/AMIVA-F/__init__.py
+src/AMIVA_F.egg-info/PKG-INFO
+src/AMIVA_F.egg-info/SOURCES.txt
+src/AMIVA_F.egg-info/dependency_links.txt
+src/AMIVA_F.egg-info/requires.txt
+src/AMIVA_F.egg-info/top_level.txt
