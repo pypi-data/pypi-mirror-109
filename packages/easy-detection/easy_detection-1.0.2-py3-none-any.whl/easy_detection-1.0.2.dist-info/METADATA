@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: easy-detection
+Version: 1.0.2
+Summary: face detection with out AI framework
+Home-page: https://github.com/Samonsix
+Author: samonsix
+Author-email: samonsix@163.com
+License: UNKNOWN
+Keywords: face detection,centerface
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: opencv-python (>=4.1.1.26)
+Requires-Dist: numpy (>=1.19.0)
+Requires-Dist: scikit-image (>=0.17.2)
+Requires-Dist: tensorrt (==6.0.1.5)
+Requires-Dist: torch2trt-unofficial (==0.0.3)
+Requires-Dist: onnx (==1.7.0)
+
+UNKNOWN
+
