@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+CopyFilesHind/__init__.py
+CopyFilesHind.egg-info/PKG-INFO
+CopyFilesHind.egg-info/SOURCES.txt
+CopyFilesHind.egg-info/dependency_links.txt
+CopyFilesHind.egg-info/top_level.txt
