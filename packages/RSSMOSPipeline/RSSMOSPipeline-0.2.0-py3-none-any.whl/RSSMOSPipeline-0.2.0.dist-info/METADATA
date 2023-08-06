@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: RSSMOSPipeline
+Version: 0.2.0
+Summary: Pipeline for reducing both longslit and multi-object spectroscopic data from the Robert Stobie Spectrograph on SALT.
+Home-page: https://github.com/mattyowl/RSSMOSPipeline
+Author: Matt Hilton
+Author-email: hiltonm@ukzn.ac.za
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: astropy (>=3.2)
+Requires-Dist: matplotlib (>=2.0)
+Requires-Dist: numpy (>=1.10)
+Requires-Dist: scipy (>=1.0)
+
+Pipeline for reducing both longslit and multi-object spectroscopy from the Robert Stobie Spectrograph on SALT.
+
+
