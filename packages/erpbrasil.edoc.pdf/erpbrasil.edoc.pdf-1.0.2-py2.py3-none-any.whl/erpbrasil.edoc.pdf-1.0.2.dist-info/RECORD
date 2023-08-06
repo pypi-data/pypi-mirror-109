@@ -1,0 +1,16 @@
+erpbrasil.edoc.pdf-1.0.2-py3.9-nspkg.pth,sha256=FTo_TSX9m5lgm30U6BQgyGAVXpxCH1H7EbWAZPWiPOc,1740
+erpbrasil/edoc/pdf/__init__.py,sha256=TEZJX9NUZZIIQaxRyTqUcdsjAH0SCJj7_NyQK7tzxBk,425
+erpbrasil/edoc/pdf/__main__.py,sha256=lvj27aytjotc3qrriBJ23wt3HH6wGm7w5ZlsVQYOK1A,383
+erpbrasil/edoc/pdf/base.py,sha256=sMCtsF9Vwz_lt89S3_QlbHxG0uuvJOsdJNQQhkVM3N8,4364
+erpbrasil/edoc/pdf/cli.py,sha256=D9CLtBjR9KheqTkyBYt5uvGfE7WKoKG8-IbQmHqO-5g,765
+erpbrasil/edoc/pdf/danfe.odt,sha256=y2Sx5UbiCtfSTZQCM04sW-y38rRkH5pv5OVvnliQlT4,34664
+erpbrasil/edoc/pdf/danfe_formata.py,sha256=-lhhNlbtiKjGrAy7EsoMsSVj4vQPwEBIsbnaqe88iuw,14131
+erpbrasil/edoc/pdf/nfe.py,sha256=SrR9rKXcFBvWUO_ZHWvSanikAnA6VdppBJG_-NFGWzQ,2600
+erpbrasil.edoc.pdf-1.0.2.dist-info/AUTHORS.rst,sha256=PeREFbnmI5oMkvZY86FysefuBevdThV2gAGZW9sFxfE,51
+erpbrasil.edoc.pdf-1.0.2.dist-info/LICENSE,sha256=GCfW8X9vAaHIoK3tC4eWouoX57jrfW8K_cUgBggv5Ug,1092
+erpbrasil.edoc.pdf-1.0.2.dist-info/METADATA,sha256=BJKUrGvTHBi2zD8s20OJfLinhcLsdH9ToHLI6BgLxSY,2213
+erpbrasil.edoc.pdf-1.0.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+erpbrasil.edoc.pdf-1.0.2.dist-info/entry_points.txt,sha256=0KFdE1akiwxKKfaS1LaD4ZWYdOmU20b1Cu87m00zyTU,68
+erpbrasil.edoc.pdf-1.0.2.dist-info/namespace_packages.txt,sha256=1XY9reYjpGVkBpTFhlDwiFVmTlQYVWBRW_H5Zy13hS8,25
+erpbrasil.edoc.pdf-1.0.2.dist-info/top_level.txt,sha256=cGgW5e5CodoFnz3Kk_AOTJvySHE_MSLx_rh0FHJBncA,10
+erpbrasil.edoc.pdf-1.0.2.dist-info/RECORD,,
