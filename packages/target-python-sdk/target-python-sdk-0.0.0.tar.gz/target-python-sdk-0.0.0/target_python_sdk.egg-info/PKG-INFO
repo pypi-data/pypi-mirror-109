@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: target-python-sdk
+Version: 0.0.0
+Summary: Adobe Target Python SDK
+Home-page: https://github.com/adobe/target-python-sdk
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=2.7,>=3.6
