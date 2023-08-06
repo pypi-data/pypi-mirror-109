@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: mudbrick
+Version: 0.0.2
+Summary: Mudbrick Builds a flask application factory boilerplate.
+Home-page: https://github.com/owen-eternal/flask-bucket
+Author: Owen O. Phakade
+Author-email: olwethuphakade89@gmail.com
+License: BSD
+Description: # mudbrick
+        
+        A Flask extension that automatically builds a boilerplate template for your web application backend by
+        using a simple cli command. It builds a modular architecture that's manageable and easily deployable. 
+        Don't worry about configuring and structuring your application factory pattern from scratch. mudbrick
+        does that for you.
+        
+        ## Installation
+        
+        Run the following command to install:
+        
+        ```bash
+        
+        $ python pip install mudbrick
+        
+        ```
+        ## Usage
+        
+        Run the following command inside your terminal. 
+        
+        ```bash
+        
+        $ mudbrick --build <project_name>
+        
+        ```
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
