@@ -1,0 +1,13 @@
+numpy>=1.16
+matplotlib>=3.3.2
+mesaPlot>=1.1.0
+tqdm
+astropy>=4.0
+imageio_ffmpeg>=0.2.0
+ipywidgets
+
+[docs]
+sphinx
+
+[test]
+pytest
