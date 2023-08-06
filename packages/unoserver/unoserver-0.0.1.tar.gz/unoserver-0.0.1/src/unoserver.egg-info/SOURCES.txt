@@ -1,0 +1,17 @@
+.pre-commit-config.yaml
+CHANGES.md
+CONTRIBUTORS.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/unoserver/converter.py
+src/unoserver/server.py
+src/unoserver.egg-info/PKG-INFO
+src/unoserver.egg-info/SOURCES.txt
+src/unoserver.egg-info/dependency_links.txt
+src/unoserver.egg-info/entry_points.txt
+src/unoserver.egg-info/not-zip-safe
+src/unoserver.egg-info/requires.txt
+src/unoserver.egg-info/top_level.txt
