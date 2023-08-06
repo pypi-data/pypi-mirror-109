@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: pubeasy
+Version: 4
+Summary: A set of facilities for publication-ready figures
+Home-page: UNKNOWN
+Author: Giuseppe Romano
+Author-email: romanog@mit.edu
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
