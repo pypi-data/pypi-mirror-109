@@ -1,0 +1,17 @@
+AUTHORS.rst
+CONTRIBUTING.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+dag/__init__.py
+dag/exceptions.py
+dag/models.py
+django_dagmodel.egg-info/PKG-INFO
+django_dagmodel.egg-info/SOURCES.txt
+django_dagmodel.egg-info/dependency_links.txt
+django_dagmodel.egg-info/not-zip-safe
+django_dagmodel.egg-info/top_level.txt
+tests/__init__.py
