@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: Inbreeding
+Version: 0.1.1.3.post6
+Summary: This packages serves as an implementation of the pedigree based inbreeding calculation as proposed by I. Aguilar and I. Misztal in 2008.
+Home-page: UNKNOWN
+Author: Thomas Rahimi
+Author-email: thomas.rahimi@agrar.uni-kassel.de
+License: BSD
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=0.24)
+Requires-Dist: numpy (>=1.14)
+Requires-Dist: MultiProcessDivision (>=1.0)
+
+#Inbreeding
+
+This package has a long evolution, just like the core topic, it describes, which is animal breeding and evolution. Within this package's scope are essentially three classes, which are required to run an estimation of individual inbreeding according to the description issued by I. Aguilar and I. Misztal in 2008 for an improved recursive inbreeding calculation.  
+If you are interested in the paper, giving the evidence for this calculation, you may have a look at the following link, where you can safely download the respective paper: [*Technical Note*: Recursive Algorithm for Inbreeding Coefficients Assuming Nonzero Inbreeding of Unknown Parents](https://www.sciencedirect.com/science/article/pii/S0022030208712955/pdfft?md5=eba69746bba6be29eab87cbd6b52669e&pid=1-s2.0-S0022030208712955-main.pdf
+). In case you find any implementation errors, feel free to report them by either raising a feature request in my [GitLab](https://gitlab.com/hollyclergyman/PhD/) or forking the entire branch, which can also be found under the mentioned address.  
+Unlike the reference implementation given in the paper, this implementation aims at providing a modern implementation in a state of the art programming language, for which Python3 has been chosen. To avoid performance issues, when running the code at scale, various measures have been taken:
+
+- using of pandas and NumPy for data organization and indexing  
+
+- massive parallelization using the multiprocessing library
+
+- replacement of classical Python3 loops with lambda functions, which are run in pandas apply schemes
+
+In the following, there will be some brief explanation on the classes contained in the package with referrers to the respective paper parts.
+
+##Data organization and interface
+All classes in this package have been tested with datasets from the German breeding value estimation program for Red dairy cattle. Even though the datasets were originally labelled in German, they were relabelled to English using the following naming scheme:
+
+- Ear tag &rarr; the respective animal, which is actually the index and therefore **not** part of the columns, unlike the following values
+
+- Year of Birth &rarr; the respective animal's year of birth, 0 if initially unknown
+
+- Sex &rarr; the respective animal's sex, which is important in the following calculation
+
+- Ear tag sire &rarr; sire's ear tag, 0 if unknown
+
+- Year of birth sire &rarr; sire's year of birth, 0 if initially unknown
+
+- Ear tag dam &rarr; dam's ear tag, 0 if unknown
+
+- Year of birth dam &rarr; dam's year of birth, 0 if initially unknown
+
+The names **must** be used in the pandas.DataFrame() objects passed to the classes, as they are given above. Naming in pandas requires to treat the names like strings, so they must be passed with parentheses. Furthermore, it is important to note, that the pandas.DataFrame() objects are organized in a row-wise scheme, with each animal being denoted in a row. Traits are denoted in columns, as stated above.
+
+##MissingYOB.py
+According to Auguilar and Misztal, 2008 on page 1670, animals where the year of birth (YOB) is unknown can have their year of birth calculated as follows:  
+Oldest progeny with known year of birth serves as the reference. From this progeny's year of birth, 3 is subtracted for the respective animal's year of birth.  
+Since the year of birth is quite important in follow-up steps regarding medium inbreeding in the population over time, the year of birth is updated not only in the respective animal section, but in all progeny sections.
+
+##RelationAnimals.py
+This class serves the purpose to include only those animals in the following inbreeding calculation, which are in line of descent for animals with phenotypic data. The relevant class to create this dataset can be found in the package AnimalRelations.
+
+##Inbreeding.py
+This class is a little more complex than the previous classes, which already starts with the fact that the main function requires convergence to conclude, thus requiring multiple runs. Therefore, the main function *inbreedingCalculation()* includes an eternal loop, which is only skipped, once the criterion of convergence, which is the same as by Lutaaya et al. (1999) in the paper "Inbreeding in populations with incomplete pedigrees", is reached. The criterion of convergence is set to $1e^-6$.  
+The core part of this class is executed in a multiprocessing Pool scheme and caught in a list, which is consecutively concatenated to a pandas.Series() object. To allow mean operations based on sire's or dam's year of birth, retrieved inbreeding values are assigned to the general pandas.DataFrame() object, creating an additional column called *Inbreeding*.  
+As already stated, a core rationale behind the rewrite of the implementation was the performance improvement due to omitting of loops. To serve this purpose, an interfacing function is required, which in this class is provided by the *applyInbreeding()* function. Due to its nature of being called from a multiprocessing loop, it can not be set class private, although it is not supposed to be called from outside this class.  
+In the original implementation, given in the paper by I. Aguilar and I. Misztal, animals were not identified using identification patterns, such as ear tags. Animal identification relied on the animal's index position in the Fortran90 array used in the implementation. Since the current implementation uses a more sophisticated mean of data transmission, namely pandas.DataFrame() objects, other means of animal identification are employed. For this purpose, animal ear tags are used and the index values are only calculated from the position of the respective ear tag value in the pandas.DataFrame() index. Therefore, all following functions require the ear tag values, even if they might use the index position as well.
+
+###__inbreedCoeff()
+This function is the initial calculation function in the process of inbreeding calculation. It mainly consists of a single condition, which takes into account, whether for the respective animal, dam **or** sire are missing. In this case, the yearly average in the sire's or dam's year of birth is taken as the inbreeding coefficient. Otherwise, the *__cffa()* function is called.
+
+##__cffa()
+This function is the core function for inbreeding calculation and unfortunately for its understanding, it is highly recursive. This also has the effect that most of the calls to this function might have their origin in the function itself. Processing takes the following conditions, which partially cause the function to be called with changing parameter combinations:
+
+1. If either animal1 (sire) or animal2 (dam) have an index value smaller or equal to 0 assigned, the function is returns twice the minimum average inbreeding for the respective year of birth for sire and dam.
+
+2. If animal1 and animal2 are equal, which often occurs if both animals are missing or if the function is called recursively, the inbreeding is calculated as 1 + inbreeding of known animal
+
+3. If animal1 (sire) is younger than animal2 (dam), in this case, the function is called again with the following parameters:
+
+    - The sire is set to the index number of animal2's (dam) sire
+
+    - The dam is set to the index number of animal2's (dam) dam
+
+4. This is the default, which is the case taken if all other conditions evaluate to False. In this case, the function is called again with the following parameters:
+
+    - The sire is set to the index number of animal1's (sire) sire
+
+    - The dam is set to the index number of animal1's (dam) dam
+
