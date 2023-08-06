@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: ecmind_blue_client_workflow
+Version: 0.0.3
+Summary: Helper modules for the `ecmind_blue_client` to ease the work with workflows, models and organisations.
+Home-page: https://gitlab.ecmind.ch/open/ecmind_blue_client_workflow
+Author: Roland Koller, Ulrich Wohlfeil
+Author-email: info@ecmind.ch
+License: UNKNOWN
+Description: # ECMind blue client: Workflow
+        
+        Helper modules for the `ecmind_blue_client` to ease the work with workflows, models and organisations. See discussion here: https://hub.ecmind.ch/t/119
+        
+        ## Installation
+        
+        `pip install ecmind_blue_client_workflow`
+        
+        
+        ## Usage
+        
+        ```python
+        from ecmind_blue_client.tcp_client import TcpClient as Client
+        from ecmind_blue_client_workflow import workflow
+        
+        client = Client(hostname='localhost', port=4000, appname='test', username='root', password='optimal')
+        print(workflow.get_organisations(client, only_active=True))
+        ```
+        
+        ### Monitoring
+        
+        #### Check for failed workflows
+        
+        Check all active workflow models for suspended processes.
+        
+        ```python
+        from ecmind_blue_client.tcp_client import TcpClient as Client
+        from ecmind_blue_client_workflow import workflow
+        
+        client = Client(hostname='localhost', port=4000, appname='test', username='root', password='optimal')
+        
+        orgs = workflow.get_organisations(client, only_active=True)
+        for org_id in orgs:
+            workflows = workflow.admin_get_workflow_list(client, org_id)
+            for workflow_id in workflows:
+                processes = workflow.admin_get_process_list(client, org_id, workflow_id=workflow_id)
+                for process_id in processes:
+                    process = processes[process_id]
+                    if process['state'] == workflow.State.SUSPENDED or process['state'] == workflow.State.SYSSUSPENDED:
+                        print(f'Process with id {process_id} and name {process["name"]} is suspended')
+        ```
+        
+        #### Running processes statistics
+        
+        List all aktive workflow models with the count of running processes. 
+        
+        ```python
+        from ecmind_blue_client.tcp_client import TcpClient as Client
+        from ecmind_blue_client_workflow import workflow
+        
+        client = Client(hostname='localhost', port=4000, appname='test', username='root', password='optimal')
+        
+        orgs = workflow.get_organisations(client, only_active=True)
+        for org_id in orgs:
+            workflows = workflow.admin_get_workflow_list(client, org_id)
+            for workflow_id in workflows:
+                wf = workflows[workflow_id]
+                print(f'Workflow {wf["name"]} has {wf["process_count"]} running processes')
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
