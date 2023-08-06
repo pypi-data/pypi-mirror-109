@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: qutil
+Version: 1.0a2
+Summary: Query utils for structured databases
+Home-page: https://github.com/julian4u0/qutil
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/julian4u0/qutil/issues
+Project-URL: Source, https://github.com/julian4u0/qutil
+Description: # qutil
+        
+        qutil is a simple library to test and execute SQL scripts from python
+        
+        ## Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install qutil.
+        
+        ```bash
+        pip install qutil
+        ```
+        
+        # Local Build
+        
+        ### Compile
+        ```bash
+        #file build on /build 
+        python setup.py sdist 
+        
+        #.tar.gz build on /dist
+        python setup.py sdist bdist_wheel
+        ```
+        
+        ### Install
+        ```bash
+        pip install dist/qutil-[version].tar.gz 
+        ```
+        <!-- 
+        ### Upload (Dev) 
+        ```bash
+        twine upload dist/*
+        ```
+         -->
+        
+        
+Keywords: sql,mysql,utils,util,helper
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

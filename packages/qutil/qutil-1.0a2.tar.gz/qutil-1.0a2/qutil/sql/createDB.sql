@@ -1,0 +1,2 @@
+CREATE DATABASE dbName;
+USE dbName
