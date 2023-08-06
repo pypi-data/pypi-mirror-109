@@ -1,0 +1,9 @@
+flask_casbin/__init__.py,sha256=o5TgDr6N6Coht-Z1op3MCgjSSiQ_Za7PCN1CngVYczQ,274
+flask_casbin/adapter.py,sha256=7BHe0iMxusz3zA_AgHk0Mr1K_48pWt5uOQrjMY7n9KE,555
+flask_casbin/config.py,sha256=Hgbd9DfeeO_9uV_WFVFemPnwkpVFh5PKxqZWDl5bJPY,95
+flask_casbin/manager.py,sha256=OTVmP8myZIilFmKSjeQG3c_idStLTKGQm83uHpvFQ9I,1216
+flask_casbin/utils.py,sha256=9qEBfqtW4soESRiS8CRK64cRQ5uumkP249W4fHIJX9k,622
+flask_casbin-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+flask_casbin-0.3.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+flask_casbin-0.3.0.dist-info/METADATA,sha256=56XxhaCql0gCn6BhgO7zCicsWHDSwZ3Vz8nzInO8aJs,2436
+flask_casbin-0.3.0.dist-info/RECORD,,
