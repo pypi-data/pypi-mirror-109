@@ -1,0 +1,15 @@
+novactf/__init__.py,sha256=fWeLBx_SCEz-RS59t5xjXmIAYz5W364Y_ZCL_lVtw1c,3632
+novactf/bibtex.py,sha256=pckImd54HiLmww8o5xyDB2rvepaZ2Vr2Be5WruOQWaQ,3319
+novactf/constants.py,sha256=Iyz1eF_bIIZ7UIYYd_xUL4bHVZ_STT9D8W4xa-DKyWA,1251
+novactf/protocols.conf,sha256=uva9MgJbr6Rg8trUKW8p5kZSYUCgxyXvVdM1O3ala7U,978
+novactf/protocols/__init__.py,sha256=ea_9zPRSAPApqqQjMbUOYI-MC6MWM0UFJymrMNEoTos,1272
+novactf/protocols/protocol_tomoDefocus.py,sha256=wwRGnLc3HeMAqz3wbomfBhHESv40eK_OXH_TqtGlXVg,12922
+novactf/protocols/protocol_tomoReconstruction.py,sha256=iu7u14FjAHjW_DKi2kqvRuH_G9LuuYjY4n32mytpZ3c,16223
+novactf/tests/__init__.py,sha256=-F5BlUyTBwyuFL7SvFqu8nX4GjOR0QDsEVNZneaA-MY,1304
+novactf/tests/test_protocols_novactf.py,sha256=-wLDMWBBlyEM2EOe7vs4ef7qhRfjEldMmbPxG9G-chU,9666
+scipion_em_novactf-3.0.3.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+scipion_em_novactf-3.0.3.dist-info/METADATA,sha256=3a-3-E6pzVX49nUMpK2W_sZTnBstfSlL-56RNxOG9E8,774
+scipion_em_novactf-3.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+scipion_em_novactf-3.0.3.dist-info/entry_points.txt,sha256=nijhF1XkbaYWAlMn9fq47mWxrT_W0epJhHuT7nPw9Ng,39
+scipion_em_novactf-3.0.3.dist-info/top_level.txt,sha256=KHI1HM5yDV4W8lU83YOwUUJGstS2T6cRC263vR_tBlc,8
+scipion_em_novactf-3.0.3.dist-info/RECORD,,
