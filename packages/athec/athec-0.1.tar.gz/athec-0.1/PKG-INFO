@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: athec
+Version: 0.1
+Summary: Computational aesthetic analysis of visual media in social science research
+Home-page: https://github.com/yilangpeng/Athec
+Author: Yilang Peng
+Author-email: yilang.peng@uga.edu
+License: MIT
+Download-URL: https://github.com/yilangpeng/Athec/archive/refs/tags/0.1.tar.gz
+Description: UNKNOWN
+Keywords: computer vision,computational aesthetics,image
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
