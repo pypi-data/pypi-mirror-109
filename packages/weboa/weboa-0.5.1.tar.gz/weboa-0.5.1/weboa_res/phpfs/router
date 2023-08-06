@@ -1,0 +1,15 @@
+<?php
+$uris=explode("/", $_SERVER['REQUEST_URI']);
+$router_url = [];
+for($i = 1; $i <= $MAXDEEP_ROUTING; $i++)
+    array_push($router_url, (isset($uris[$i]) and $uris[$i]) ? $uris[$i] : false);
+$main_page=$router_url[0];
+
+if($main_page) {
+    $available_pages=[];
+    $current_page = (in_array($main_page, $available_pages)) ? $main_page : "main";
+}
+else
+    $current_page = "main";
+
+?>
