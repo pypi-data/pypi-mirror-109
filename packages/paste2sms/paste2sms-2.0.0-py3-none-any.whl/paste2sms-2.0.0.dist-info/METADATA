@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: paste2sms
+Version: 2.0.0
+Summary: Sent clipboard content as a SMS.
+Home-page: http://framagit.org/spalax/paste2sms
+Author: Louis Paternault
+Author-email: spalax+python@gresille.org
+License: GPLv3 or any later version
+Project-URL: Documentation, http://paste2sms.readthedocs.io
+Project-URL: Source, https://framagit.org/spalax/paste2sms
+Project-URL: Tracker, https://framagit.org/spalax/paste2sms/issues
+Keywords: clipboard sms
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Communications :: Telephony
+Requires-Python: <4,>=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: toto2titi
+
+paste2sms 📲 Send clipboard content as a SMS
+============================================
+
+**This project is now included in `toto2titi <https://pypi.org/project/toto2titi/>`_. It can be safely uninstalled once `toto2titi` has been installed.**
+
+`paste2sms` is a small tool which send the content of your clipboard as a SMS: do you want to share that cool link you just found (on your computer) to your friend? Copy it, and run `paste2sms` to send it as a SMS.
+
+.. image:: https://framagit.org/spalax/paste2sms/raw/master/doc/_static/screencast.gif
+
+
