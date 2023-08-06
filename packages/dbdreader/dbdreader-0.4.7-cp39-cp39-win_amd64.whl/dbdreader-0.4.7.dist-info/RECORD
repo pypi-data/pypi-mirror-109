@@ -1,0 +1,12 @@
+_dbdreader.cp39-win_amd64.pyd,sha256=DuMDxkAHDIfOajiTTNgr5T-hFO0txadSMlem5ggJZbI,16384
+dbdreader/__init__.py,sha256=7P1P199Tdh0I2oMwSUOPWgh7Ku6lBrr7q4ixH-6jSPY,76
+dbdreader/dbdreader.py,sha256=OpwdLjkS8gazyrHUsnCICa3X-nDd9Np8lUA0CgVo3BU,59429
+dbdreader-0.4.7.data/scripts/cac_gen.py,sha256=YAqnvRTO-ZrJIqZ0pSikmjUJAGgmbEQeS3mhYHIIy9o,2521
+dbdreader-0.4.7.data/scripts/dbdrename.py,sha256=6X-U53s0x6tqzu5hSPOUkb0RsetRit2qEjR90jsEJUA,4301
+dbdreader-0.4.7.dist-info/COPYING,sha256=GUBOGEz0XsmRtU4ebwX4R62PE_7ipR86LZqWDI98sms,18349
+dbdreader-0.4.7.dist-info/LICENSE,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+dbdreader-0.4.7.dist-info/METADATA,sha256=r5LxykrHiibmdJe72PpBoMk7PvbbMbQu5r3VldKpn5c,4059
+dbdreader-0.4.7.dist-info/WHEEL,sha256=jr7ubY0Lkz_yXH9FfFe9PTtLhGOsf62dZkNvTYrJINE,100
+dbdreader-0.4.7.dist-info/entry_points.txt,sha256=mUNMmpYTR3SQX28bXHIajDqBXHktexsbcq1_r41xrys,36
+dbdreader-0.4.7.dist-info/top_level.txt,sha256=HetMbDUdd-IXUrr21gTJKvo3FfUHTuPcJEJi_gi4Bgg,21
+dbdreader-0.4.7.dist-info/RECORD,,
