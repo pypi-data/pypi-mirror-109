@@ -1,0 +1,5 @@
+numpy
+librosa
+torch==1.4.0
+matplotlib
+soundfile
