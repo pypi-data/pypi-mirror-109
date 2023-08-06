@@ -1,0 +1,12 @@
+thecampy/__init__.py,sha256=5VlBPPYez2wgS0swM75Ssn75KZXwTrT_i-Cv0lPEH4c,388
+thecampy/client.py,sha256=MyUz02CJN598zj_KVARGQLbioxSxoOPKStPVUmXRLiM,8639
+thecampy/exceptions.py,sha256=xkLbWHZ5F-KRjH8CO7ud3vLQF9rlRtVoYqiPXUenQTM,170
+thecampy/image_utils.py,sha256=r_TnhbO1W6zMFzJDXdUr4WmLnbdiZLfVpVgAmHdoJLo,7799
+thecampy/images.py,sha256=Jz9b9jr3KKLlE14pWeq-Nm85q-f_myLsQ9Gbfec2raU,3127
+thecampy/models.py,sha256=F3nrpPxqiog19I4aW3YyYaf4sqa4cNee0Xxz6aafFQs,3041
+thecampy/utils.py,sha256=jVqG80tSQ6CPHP_uvWPGye1C2ndnTprgm4Cns95RYbQ,329
+thecampy-2.1.0.dist-info/LICENSE,sha256=PuKWytzoBdPD8zOcsgI9jI7fuqxyOrEVX7h4Gq6-rv0,1066
+thecampy-2.1.0.dist-info/METADATA,sha256=EnZqAqLoFHPj8RdGFMEQYDz6bSsDRF-d9QQbLZoOp_g,2150
+thecampy-2.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+thecampy-2.1.0.dist-info/top_level.txt,sha256=dOrpjevb9APZFJ05aamIun5MeoXXlOpw3IOqvNQ9Zbc,9
+thecampy-2.1.0.dist-info/RECORD,,
