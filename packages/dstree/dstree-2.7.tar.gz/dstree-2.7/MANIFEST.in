@@ -1,0 +1,3 @@
+include dstree/woz_train_en.json
+include dstree/feature_dataset_example.pkl
+include dstree/train_data.csv
