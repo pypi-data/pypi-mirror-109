@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+rss_reader_p_y/__init__.py
+rss_reader_p_y/display_method.py
+rss_reader_p_y/exceptions.py
+rss_reader_p_y/main_functions.py
+rss_reader_p_y/rss_reader.py
+rss_reader_p_y/validation_functions.py
+rss_reader_p_y.egg-info/PKG-INFO
+rss_reader_p_y.egg-info/SOURCES.txt
+rss_reader_p_y.egg-info/dependency_links.txt
+rss_reader_p_y.egg-info/entry_points.txt
+rss_reader_p_y.egg-info/requires.txt
+rss_reader_p_y.egg-info/top_level.txt
