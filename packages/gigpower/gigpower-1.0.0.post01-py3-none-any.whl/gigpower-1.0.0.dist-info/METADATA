@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: gigpower
+Version: 1.0.0
+Summary: Python libraries for solving powerflow
+Home-page: https://github.com/lbl-eta/gigpower
+Author: @elaguerta
+Author-email: ellaguerta@lbl.gov
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/lbl-eta/gigpower/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>='1.19.1')
+Requires-Dist: OpenDSSDirect.py (>='0.5.0')
+Requires-Dist: pandas (>='1.2.3')
+
+# gigpower
+
+`gigpower` solves power flow for radial and meshed networks. It supports
+solving power flow with both Newton-Raphson and Forward Backward Sweep algorithms,
+written completely in Python.
+
+
