@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: ordered-argparse
+Version: 1.0.9
+Summary: Modified version of argparse which remembers the order of CLI arguments
+Home-page: https://github.com/Nagidal/ordered_argparse
+Author: Sven Siegmund
+Author-email: sven.siegmund@gmail.com
+License: UNKNOWN
+Description: # ordered_argparse
+        
+        Version of Python's standard library's `argparse` which also remembers the order of command line arguments.
+        
+        ## Installation
+        
+        Install with `pip install ordered_argparse`.
+        
+        ## Usage
+        
+        Create an instance of `ArgumentParser` as usual. Use `namespace=ordered_argparse.OrderedNamespace()`. Access arguments in declaration order by calling parser's `.ordered()` method.
+        
+        ```python
+        import ordered_argparse
+        
+        parser = ordered_argparse.ArgumentParser()
+        parser.add_argument("--foo", action="store_true", help="foo")
+        parser.add_argument("--bar", action="store_true", help="bar")
+        
+        # Use OrderedNamespace when parsing CLI arguments
+        args = parser.parse_args(["--foo", "--bar"], namespace=ordered_argparse.OrderedNamespace())
+        
+        # Access ordered arguments by calling .ordered()
+        for arg in args.ordered():
+            print(f"{arg}")
+        ```
+        
+        ## Compatibility with argcomplete
+        
+        ordered_argparse only works with `argcomplete` as long as you don't use subparsers. If you use subparsers, you need `ordered_argcomplete`.
+        
+        
+Keywords: cli argument parsing
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
