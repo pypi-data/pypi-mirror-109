@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: apievaluator
+Version: 0.0.3
+Summary: Validate an API specification and run tests
+Home-page: https://gitlab.com/fmajestic/api-evaluator
+Author: Filip Majetić
+Author-email: filip.majetic@fer.hr
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: rest,api,testing,automated
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
