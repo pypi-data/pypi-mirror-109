@@ -1,0 +1,10 @@
+itk/IOFDFPython.py,sha256=0QsyCwDtg2S5CCw6VqI-pL2LQDqKwu_CMR2VLAYzo4Y,2400
+itk/_IOFDFPython.pyd,sha256=36KWwH1Lr4AJwQEW7BesNADspUpPBksESrw5OsismrE,256000
+itk/itkFDFImageIOPython.py,sha256=PyMiEyvlaSbHgoaV4ZYOWJ9qjWVjfZYsMpPTEHgy5aU,6912
+itk/Configuration/IOFDFConfig.py,sha256=ws8ePK1-6b8d6-aVe4dwKeWRn8pkqydHtOtfvGCiGgg,206
+itk/Configuration/IOFDF_snake_case.py,sha256=9vod4cFmYt5kmtm1e6v9EGK_ZPA-PDivTkxICPlGqzM,27
+itk_iofdf-1.0.2.dist-info/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+itk_iofdf-1.0.2.dist-info/METADATA,sha256=uZfFRks2rE3Ct7gyWh-fV2DV2asiPE_uiM_cB8Y6Ey0,1334
+itk_iofdf-1.0.2.dist-info/WHEEL,sha256=_FlFXbhdaFmz4SNyhakwa69Dsykp8qXdsLYWDQ2VOj0,94
+itk_iofdf-1.0.2.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_iofdf-1.0.2.dist-info/RECORD,,
