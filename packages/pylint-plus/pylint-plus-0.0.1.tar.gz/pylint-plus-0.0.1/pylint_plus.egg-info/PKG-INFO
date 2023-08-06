@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pylint-plus
+Version: 0.0.1
+Summary: Pylint extension with good practices and code smell detection
+Home-page: https://github.com/leandroltavares/pylint-plus
+Author: Leandro Luciani Tavares
+Author-email: leandro.ltavares@gmail.com
+License: MIT
+Description: # pylint-plus
+        Pylint plugin with good practices extensions
+        
+Keywords: pylint linting code smells extensions
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
