@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+argparse_manpage_birdtools.egg-info/PKG-INFO
+argparse_manpage_birdtools.egg-info/SOURCES.txt
+argparse_manpage_birdtools.egg-info/dependency_links.txt
+argparse_manpage_birdtools.egg-info/top_level.txt
+build_manpages/__init__.py
+build_manpages/build_manpage.py
+build_manpages/build_manpages.py
+build_manpages/manpage.py
