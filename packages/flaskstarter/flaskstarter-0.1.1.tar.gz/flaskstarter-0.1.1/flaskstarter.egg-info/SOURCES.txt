@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flaskstarter/__init__.py
+flaskstarter/flaskstart_cli.py
+flaskstarter.egg-info/PKG-INFO
+flaskstarter.egg-info/SOURCES.txt
+flaskstarter.egg-info/dependency_links.txt
+flaskstarter.egg-info/requires.txt
+flaskstarter.egg-info/top_level.txt
