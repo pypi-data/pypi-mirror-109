@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: BasicEmail
+Version: 0.1
+Summary: Wrapping the Main methods, in a class, from the python package smtplib to send a simple email.
+Home-page: https://github.com/John-Piper
+Author: John Piper
+Author-email: UNKNOWN
+License: MIT
+Download-URL: https://github.com/John-Piper/BasicEmail/releases/tag/v0.1-alpha
+Description: UNKNOWN
+Keywords: email,basic,smtplib
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
