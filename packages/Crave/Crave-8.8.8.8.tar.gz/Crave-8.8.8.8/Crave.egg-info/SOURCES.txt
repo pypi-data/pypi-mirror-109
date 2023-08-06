@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+Crave.egg-info/PKG-INFO
+Crave.egg-info/SOURCES.txt
+Crave.egg-info/dependency_links.txt
+Crave.egg-info/top_level.txt
