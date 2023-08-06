@@ -1,0 +1,15 @@
+eQmaster/__init__.py,sha256=5CwGm8a1FbPzSdI7vogUF9eg9BcZsvveZyzc1zgaG0c,532
+eQmaster/eQmaster.py,sha256=Li4djuPentojYYF0BkiRqVAROTGwLtBDjShWGjbW-8s,10135
+eQmaster/info.py,sha256=Uh5WujXGzZvAoepC7j4Y_MguuH1GXy7zhHnfA7IURII,968
+eQmaster/schema.py,sha256=YlSg3ysXFqK6FrSIQm5yAI1MRZKoUdMKRQBQHAb8mdg,2006
+eQmaster/features/__init__.py,sha256=AvkbsWwKjvUGr_-pIhjHKRl2Oj09XsdwNkTFGcTgaXc,298
+eQmaster/features/bolinger_band.py,sha256=9tGkuSmwXfi3NJ2t0SdLpFQ6bCLzuit-gz25EU7J1yE,676
+eQmaster/features/historical_volatility.py,sha256=g1SVtgwthTJu9PlvofeSZEScbZkZhkVgvJD6EmD2fLk,683
+eQmaster/features/market_beta.py,sha256=6sU4KGW0HXHeASis7wy-hNqmwRjKdK4oQO8ltMXoJPM,2273
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_eqmaster.py,sha256=Z4anmI74Ucocvafp0RJ7e5u3Si29y-s1No7yt6Mgbv8,6268
+eQmaster-0.0.66.dist-info/LICENSE,sha256=iskR3M47l09RRXzm6_Wv90ZMTD863VxKAx9qOBIH2TU,1633
+eQmaster-0.0.66.dist-info/METADATA,sha256=cl73b9SktnFMYZO2DvN6nsMiYMgXA_jA2rC6wBAFVCg,1291
+eQmaster-0.0.66.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+eQmaster-0.0.66.dist-info/top_level.txt,sha256=mFPT7V5zYOW7SJjd3V4HrU9kSDDHz07jxQQcHPXfffs,15
+eQmaster-0.0.66.dist-info/RECORD,,
