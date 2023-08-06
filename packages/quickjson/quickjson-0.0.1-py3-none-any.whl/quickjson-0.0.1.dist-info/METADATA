@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: quickjson
+Version: 0.0.1
+Summary: This package helps handling json files more efficiently and quickly
+Home-page: https://github.com/Kunal767/jsonhelper
+Author: Macstock Tech
+Author-email: kunalgupta8122@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Kunal767/jsonhelper/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Quick Json
+
+This Package will help you deal with json files more quickly and efficiently.
+
