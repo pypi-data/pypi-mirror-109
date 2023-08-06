@@ -1,0 +1,9 @@
+README.md
+setup.py
+datasette_placekey/__init__.py
+datasette_placekey.egg-info/PKG-INFO
+datasette_placekey.egg-info/SOURCES.txt
+datasette_placekey.egg-info/dependency_links.txt
+datasette_placekey.egg-info/entry_points.txt
+datasette_placekey.egg-info/requires.txt
+datasette_placekey.egg-info/top_level.txt

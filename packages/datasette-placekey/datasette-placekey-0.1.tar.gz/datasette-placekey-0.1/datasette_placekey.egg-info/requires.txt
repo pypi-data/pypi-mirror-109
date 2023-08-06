@@ -1,0 +1,6 @@
+datasette
+placekey
+
+[test]
+pytest
+pytest-asyncio
