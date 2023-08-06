@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+recursive-include Face_rec/face_detection_model *.prototxt
+recursive-include Face_rec/caffemodel *.caffemodel
+recursive-include Face_rec/pickle *.pickle
+recursive-include Face_rec/h5 *.h5
