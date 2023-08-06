@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: OpenMiChroM
+Version: 0.0.3
+Summary: Open-Michrom lib for chromosome simulations
+Home-page: https://ndb.rice.edu/Open-MiChroM
+Author: Antonio Bento de Oliveira Junior,Vinicius de Godoi Contessoto
+Author-email: antonio.oliveira@rice.edu,contessoto@rice.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Natural Language :: English
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: six
+Requires-Dist: h5py
+Requires-Dist: pandas
+
+UNKNOWN
+
+
