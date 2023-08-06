@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: nonebot-adapter-gocq
+Version: 0.1.2
+Summary: go-cqhttp adapter for nonebot2
+Home-page: https://github.com/Jigsaw111/nonebot-adapter-gocq
+License: MIT
+Keywords: bot,qq,qqbot,coolq,cqhttp,go-cqhttp
+Author: Jigsaw
+Author-email: j1g5aw@foxmail.com
+Requires-Python: >=3.7.3,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Robot Framework
+Classifier: Framework :: Robot Framework :: Library
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: httpx (>=0.17.0,<0.18.0)
+Requires-Dist: nonebot2 (==2.0.0-alpha.13)
+Project-URL: Documentation, https://v2.nonebot.dev/
+Project-URL: Repository, https://github.com/Jigsaw111/nonebot-adapter-gocq
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <a href="https://v2.nonebot.dev/"><img src="https://raw.githubusercontent.com/nonebot/nonebot2/master/docs/.vuepress/public/logo.png" width="200" height="200" alt="nonebot"></a>
+</p>
+
+<div align="center">
+
+# NoneBot Adapter GOCQ
+
+_✨ go-cqhttp 协议适配 ✨_
+
+在原 CQHTTP Adapter 的基础上进行了修改以便于更好地适配 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp)
+
+</div>
+
+## Guide
+
+[使用指南](./docs/manual.md)
+
+## Feature
+
+- [x] 兼容 go-cqhttp 与 Onebot 标准不同的 API、Event、CQCode
+- [x] Request 事件的 approve、adject 方法不再需要 bot 参数
+
+## Bug
+
+- [x] 由于 at 的 CQ 码增加了 name 字段导致群里被 at 的 bot 上报的 to_me 字段恒为 false
+- [x] 私聊消息遇到错误，没有字段 temp_source
+
