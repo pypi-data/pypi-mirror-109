@@ -1,0 +1,8 @@
+os2mo_fastapi_utils/__init__.py,sha256=TH_3pgcIQqxP_rLLJTphpWyWS9G373mf_DogJgA_xQc,75
+os2mo_fastapi_utils/pydantic_types.py,sha256=6dusCzbw7cC8DCjYJQk-9qVddML0QRE0SAckx_RK6t0,2363
+os2mo_fastapi_utils/tracing.py,sha256=vcatdIYwDUQrAwBSW7zRFe3UsTj4Y-Xi4IppKY_LPEs,4452
+os2mo_fastapi_utils-0.0.3.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+os2mo_fastapi_utils-0.0.3.dist-info/METADATA,sha256=fZDHG0SFDl1N0BUksrcylAKh8Smq-G-L219iCLyrfT4,1835
+os2mo_fastapi_utils-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+os2mo_fastapi_utils-0.0.3.dist-info/top_level.txt,sha256=wNn27N5gm9AjLJ4QL5zAZybVcDq7s51GpfRpedmGjOo,20
+os2mo_fastapi_utils-0.0.3.dist-info/RECORD,,
