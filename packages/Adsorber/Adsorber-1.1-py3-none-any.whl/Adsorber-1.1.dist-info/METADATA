@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: Adsorber
+Version: 1.1
+Summary: This program is designed to adsorb molecules to the surface of a cluster in all various ways..
+Home-page: https://blogs.otago.ac.nz/annagarden/
+Author: Geoffrey R. Weal and Dr. Anna L. Garden
+Author-email: anna.garden@otago.ac.nz
+License: GNU AFFERO GENERAL PUBLIC LICENSE
+Download-URL: https://github.com/GardenGroupUO/Adsorber/archive/v1.1.tar.gz
+Keywords: Adsorber,ase,university-of-otago,atomic-simulation-environment,otago-university
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: ase (>=3.19.0)
+
+# The Adsorber Program
+
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Adsorber)](https://docs.python.org/3/)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/GardenGroupUO/Adsorber)](https://github.com/GardenGroupUO/Adsorber)
+[![PyPI](https://img.shields.io/pypi/v/Adsorber)](https://pypi.org/project/Adsorber/)
+[![Conda](https://img.shields.io/conda/v/gardengroupuo/adsorber)](https://anaconda.org/GardenGroupUO/adsorber)
+[![Documentation](https://img.shields.io/badge/Docs-click%20here-brightgreen)](https://adsorber.readthedocs.io/en/latest/)
+[![Licence](https://img.shields.io/github/license/GardenGroupUO/Adsorber)](https://www.gnu.org/licenses/agpl-3.0.en.html)
+[![LGTM Grade](https://img.shields.io/lgtm/grade/python/github/GardenGroupUO/Adsorber)](https://lgtm.com/projects/g/GardenGroupUO/Adsorber/context:python)
+
+CURRENTLY UNDER RECONSTRUCTION: SOME FEATURES MAY NOT CURRENTLY BE WORKING
+
+Authors: Geoffrey R. Weal and Dr. Anna L. Garden (University of Otago, Dunedin, New Zealand)
+
+Group page: https://blogs.otago.ac.nz/annagarden/
+
+## What is Adsorber
+
+Adsorber is designed to adsorb molecules in various way to a cluster or surface. 
+
+## Installation
+
+It is recommended to read the installation page before using the Adsorber program. 
+
+[adsorber.readthedocs.io/en/latest/Installation.html](https://adsorber.readthedocs.io/en/latest/Installation.html)
+
+Note that you can install Adsorber through ``pip3`` and ``conda``. 
+
+## Output files that are created by Adsorber
+
+Adsorber will adsorb atoms and molecules on various binding sites across your cluster or surface model. An example of an COOH molecules adsorbed to a vertex site on a Cu<sub>78</sub> cluster is shown below
+
+<p align="center">
+	<img src="https://github.com/GardenGroupUO/Adsorber/blob/main/Documentation/source/Images/COOH_site_1_rotation_0.png">
+</p>
+
+## Where can I find the documentation for Adsorber
+
+All the information about this program is found online at [adsorber.readthedocs.io/en/latest/](https://adsorber.readthedocs.io/en/latest/). Click the button below to also see the documentation: 
+
+[![Documentation](https://img.shields.io/badge/Docs-click%20here-brightgreen)](https://adsorber.readthedocs.io/en/latest/)
+
+## About
+
+<div align="center">
+
+| Python | [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Adsorber)](https://docs.python.org/3/) | 
+|:----------------------:|:-------------------------------------------------------------:|
+| Repositories | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/GardenGroupUO/Adsorber)](https://github.com/GardenGroupUO/Adsorber) [![PyPI](https://img.shields.io/pypi/v/Adsorber)](https://pypi.org/project/Adsorber/) [![Conda](https://img.shields.io/conda/v/gardengroupuo/adsorber)](https://anaconda.org/GardenGroupUO/adsorber) |
+| Documentation | [![Documentation](https://img.shields.io/badge/Docs-click%20here-brightgreen)](https://adsorber.readthedocs.io/en/latest/) | 
+| Tests | [![LGTM Grade](https://img.shields.io/lgtm/grade/python/github/GardenGroupUO/Adsorber)](https://lgtm.com/projects/g/GardenGroupUO/Adsorber/context:python)
+| License | [![Licence](https://img.shields.io/github/license/GardenGroupUO/Adsorber)](https://www.gnu.org/licenses/agpl-3.0.en.html) |
+| Authors | Geoffrey R. Weal, Dr. Anna L. Garden |
+| Group Website | https://blogs.otago.ac.nz/annagarden/ |
+
+</div>
+
+
