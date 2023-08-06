@@ -1,0 +1,9 @@
+timecorr/__init__.py,sha256=aOiDMFLXyAb68UE5Vj4njOaljUDeOX7il5Emi6yWj0g,614
+timecorr/helpers.py,sha256=MZABmueNEBDtIKtycQ2P2bEapgmbDfPJs3CP1GILuSY,49733
+timecorr/simulate.py,sha256=a9lx5VIDoj-hN9g4yW0hUfEcMh2fhLakqRMDBS3gHeg,3903
+timecorr/timecorr.py,sha256=0qFOJyIkQcINVDmj8dTf8Wr9uWaWhISDNiWU4DHdNQI,6702
+timecorr-0.1.6.dist-info/LICENSE,sha256=MU8YVuebha7TF_RiQ8ZjU6JfMGo_q5q3VkU7htJTMG0,1118
+timecorr-0.1.6.dist-info/METADATA,sha256=_gThQQJ0LlFkQanQNK437pvD11ZozjzjqKbNLMnUR58,737
+timecorr-0.1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+timecorr-0.1.6.dist-info/top_level.txt,sha256=Q2hKh_Tivqv8mGrojtLhvMYSDwcxBItHpOGWMYyGJIo,9
+timecorr-0.1.6.dist-info/RECORD,,
