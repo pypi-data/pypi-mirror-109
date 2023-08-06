@@ -1,0 +1,13 @@
+hepsylex/Constants.py,sha256=loH3n70xdMxU-6v3zNsc2VRFrtjdwA9U-61HoDeNf7A,1090
+hepsylex/Lexicons.py,sha256=IXoYLCdUNPsclffA4gkCqOGhEookqYnFygJEsaAruUo,320737
+hepsylex/LexiconsAPI.py,sha256=2KjIDSNMHYBlOh5S4ujo3uUrFQSqk6QFsQxEzvh4-iU,3566
+hepsylex/__init__.py,sha256=-VAi2zRy4OW6ZJjvLKmjdmKep7eCo6zQ7hc8gR5YRPI,70
+hepsylex/Resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hepsylex/Resources/For documentation purposes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hepsylex/Resources/For documentation purposes/Topic Modeling 2020/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hepsylex/Resources/For documentation purposes/Topic Modeling 2020/from_topics_to_lexicons.py,sha256=h_I6vHhfeXKjLeOZEAQqwyaym-S1uqWenUrym8dZIQI,1794
+hepsylex-1.0.4.dist-info/LICENSE,sha256=W_3d1wqB3KPVI4U8O_985eXbtuFCRBQrYpxD581cR5Y,11707
+hepsylex-1.0.4.dist-info/METADATA,sha256=Ck7AHfo7960p4JzRGWUeveY_78BAW0v7Cy6ezLb3Qtw,5669
+hepsylex-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hepsylex-1.0.4.dist-info/top_level.txt,sha256=AKkxmuEP79rjTDySYQUyEn_tRjh6AnB987RBrf64J5U,9
+hepsylex-1.0.4.dist-info/RECORD,,
