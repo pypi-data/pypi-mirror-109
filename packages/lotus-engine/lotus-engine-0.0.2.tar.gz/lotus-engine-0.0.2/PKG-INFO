@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: lotus-engine
+Version: 0.0.2
+Summary: A android reverse tool
+Home-page: http://github.com/vforkliu/lotus
+Author: forkliu
+Author-email: vforkliu@gmail.com
+License: UNKNOWN
+Description: # Lotus - Android 逆向分析工具
+        ## Features
+        - Android 模拟执行
+        
+        ## ChangeLog
+        - Version 0.0.2
+          - 测试上传pypi配置
+        - Version 0.0.1
+          - Create project
+        
+        ## References
+Keywords: android,unicorn,emulator
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
