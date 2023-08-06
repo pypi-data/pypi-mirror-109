@@ -1,0 +1,12 @@
+cython>=0.29.23
+hdbscan>=0.8.27
+xgboost>=1.4.2
+seaborn>=0.11.1
+scipy>=1.6.2
+mock>=4.0.3
+dill>=0.3.3
+scikit-learn>=0.24.2
+statsmodels>=0.12.2
+matplotlib>=3.3.4
+numpy>=1.20.2
+pandas>=1.2.4
