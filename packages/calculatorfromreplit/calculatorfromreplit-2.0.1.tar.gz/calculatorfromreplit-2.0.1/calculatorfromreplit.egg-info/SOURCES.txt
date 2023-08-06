@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+calculatorfromreplit.egg-info/PKG-INFO
+calculatorfromreplit.egg-info/SOURCES.txt
+calculatorfromreplit.egg-info/dependency_links.txt
+calculatorfromreplit.egg-info/top_level.txt
+jbc/_init_.py
+joshbasiccalculator.egg-info/SOURCES.txt
+joshbasiccalculator.egg-info/dependency_links.txt
+joshbasiccalculator.egg-info/top_level.txt
