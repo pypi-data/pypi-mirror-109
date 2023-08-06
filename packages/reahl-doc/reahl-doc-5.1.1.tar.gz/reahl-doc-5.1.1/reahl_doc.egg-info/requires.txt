@@ -1,0 +1,13 @@
+reahl-web<5.2,>=5.1
+reahl-component<5.2,>=5.1
+reahl-sqlalchemysupport<5.2,>=5.1
+reahl-web-declarative<5.2,>=5.1
+reahl-domain<5.2,>=5.1
+reahl-domainui<5.2,>=5.1
+reahl-commands<5.2,>=5.1
+reahl-dev<5.2,>=5.1
+pytest>=3.0
+setuptools>=32.3.1
+
+[pillow]
+Pillow<7.1.999,>=2.5
