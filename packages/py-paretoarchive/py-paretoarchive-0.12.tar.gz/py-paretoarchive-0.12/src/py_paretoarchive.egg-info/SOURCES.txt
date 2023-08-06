@@ -1,0 +1,14 @@
+LICENSE
+README.md
+paretoarchive_gen.cpp
+paretoarchive_gen.pyx
+pyproject.toml
+setup.py
+src/Makefile
+src/nullptr_emulation.h
+src/paretoarchive.h
+src/test.cpp
+src/py_paretoarchive.egg-info/PKG-INFO
+src/py_paretoarchive.egg-info/SOURCES.txt
+src/py_paretoarchive.egg-info/dependency_links.txt
+src/py_paretoarchive.egg-info/top_level.txt
