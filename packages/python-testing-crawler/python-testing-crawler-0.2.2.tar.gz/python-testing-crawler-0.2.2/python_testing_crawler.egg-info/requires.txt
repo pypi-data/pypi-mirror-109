@@ -1,0 +1,5 @@
+bs4
+soupsieve
+
+[:python_version < "3.7"]
+dataclasses
