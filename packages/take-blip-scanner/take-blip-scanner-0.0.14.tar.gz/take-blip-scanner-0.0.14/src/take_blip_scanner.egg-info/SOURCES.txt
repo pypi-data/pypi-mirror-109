@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/scanner/__init__.py
+src/scanner/lexycal/__init__.py
+src/scanner/lexycal/lexycal_2.py
+src/scanner/lexycal/lexycal_3.py
+src/scanner/lexycal/lexycal_scanner_PTBR_2.py
+src/scanner/lexycal/lexycal_scanner_PTBR_3.py
+src/scanner/lexycal/token.py
+src/scanner/lexycal/token_type.py
+src/take_blip_scanner.egg-info/PKG-INFO
+src/take_blip_scanner.egg-info/SOURCES.txt
+src/take_blip_scanner.egg-info/dependency_links.txt
+src/take_blip_scanner.egg-info/top_level.txt
