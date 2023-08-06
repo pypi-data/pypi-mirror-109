@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+Africa.egg-info/PKG-INFO
+Africa.egg-info/SOURCES.txt
+Africa.egg-info/dependency_links.txt
+Africa.egg-info/top_level.txt
