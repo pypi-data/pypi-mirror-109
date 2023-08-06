@@ -1,0 +1,580 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>References &mdash; GeoNDT Python library &#34;0.1.0&#34; documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Authors" href="authors.html" />
+    <link rel="prev" title="Usage examples" href="usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> GeoNDT Python library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                "0.1.0"
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage examples</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">References</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#one-phase-dynamic">one_phase_dynamic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#one-phase-dispersion">one_phase_dispersion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#two-phase-dynamic">two_phase_dynamic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#two-phase-dispersion">two_phase_dispersion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#three-phase-dynamic">three_phase_dynamic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#three-phase-dispersion">three_phase_dispersion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#functions-inside-dynamic-modules">functions inside dynamic modules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GeoNDT Python library</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>References</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/reference.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<p>Considering the computational efficiency and user-friendly environment, the GeoNDT software is developed using a dual layer/hybrid Python and Fortran environment
+to benefit from the strengths of the two languages, as follows: a) Fortran is a compiled language; it is closer to the material architecture it is executed on;
+it benefits from established mathematical libraries and thus compensates for the lower computational performance of interpreted languages such as Python under
+CPU intensive tasks; b)  Python is a user-friendly language; it has a wide support online; it has a rich set of high-quality scientific computational libraries
+and frameworks; and it offers improved code reusability, faster and cost-effective development. The detailed discription of the functions in GeoNDT can be found
+in following reference:</p>
+<div class="section" id="one-phase-dynamic">
+<h2>one_phase_dynamic<a class="headerlink" href="#one-phase-dynamic" title="Permalink to this headline">¶</a></h2>
+<p>one_phase_dynamic function is used to study the wave propagation and dynamic response in one-phase material. The inputs of this function
+is listed as follows:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">parameter tmin:</th><td class="field-body">A mandatory (floating) parameter that defines the minimum time (s)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter tmax:</th><td class="field-body">A mandatory (floating) parameter that defines the maximum time (s)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter tlin:</th><td class="field-body">A mandatory (integer) parameter that defines the number of points within the maximum and minimum time</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter E:</th><td class="field-body">A mandatory (floating) list that defines the Young’s modulus (Pa) for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter mu:</th><td class="field-body">A mandatory (floating) list that defines the Poisson’s ratio for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter rho:</th><td class="field-body">A mandatory (floating) list that defines the density (kg/m^3) for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter H:</th><td class="field-body">A mandatory (floating) list that defines the thickness (m) for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter r:</th><td class="field-body">A mandatory (floating) parameter that defines the radius (m) of the location of interest</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter rmax:</th><td class="field-body">A mandatory (floating) parameter that defines the maximum radius (m) of the domain</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter node:</th><td class="field-body">A mandatory (integer) parameter that spesfies the ID of the output node (for instance, the ‘node’ for surface vertical displacement is 2)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter loc:</th><td class="field-body">An optioanl (integer) parameter that defines the ID of the input load (for instance, the ‘loc’ for surface vertical load is 2)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter st:</th><td class="field-body">An optional (integer) parameter (either 0 or 1) that defined the output type, where 0 represnts displacement and 1 represents stress output</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">parameter m_num:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">An optional (integer) parameter that defines the number of modes in the Fourier-Bessel series</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">parameter lap_num:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">An optional (integer) parameter that defines the number of iteration in the inverse Laplace transform</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter a1:</th><td class="field-body">An optional (integer) parameter that defines (m) the radius on the contact area between external load and domain</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">parameter ncore:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">An optional (integer) parameter that defines the number of cores (-1 is used in default to use all available cores)</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="one-phase-dispersion">
+<h2>one_phase_dispersion<a class="headerlink" href="#one-phase-dispersion" title="Permalink to this headline">¶</a></h2>
+<p>one_phase_dynamic function is used to perform dispersion analysis of one-phase material
+with the last layer as infinite half space.  The inputs of this function
+is listed as follows:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">parameter f1:</th><td class="field-body">A mandatory (floating) parameter that defines the lower bound of frequency (Hz)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter f2:</th><td class="field-body">A mandatory (floating) parameter that defines the upper bound frequency (Hz)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter flin:</th><td class="field-body">A mandatory (integer) parameter that defines the number of points within the lower and upper bound of frequency</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter E:</th><td class="field-body">A mandatory (floating) list that defines the Young’s modulus (Pa) for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter mu:</th><td class="field-body">A mandatory (floating) list that defines the Poisson’s ratio for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter rho:</th><td class="field-body">A mandatory (floating) list that defines the density (kg/m^3) for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter H:</th><td class="field-body">A mandatory (floating) list that defines the thickness (m) for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">parameter ncore:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">An optional (integer) parameter that defines the number of cores (-1 is used in default to use all available cores)</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="two-phase-dynamic">
+<h2>two_phase_dynamic<a class="headerlink" href="#two-phase-dynamic" title="Permalink to this headline">¶</a></h2>
+<p>Object for wave propagation modeling of two-phase material in finite and infinite space.  The inputs of this function
+is listed as follows:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">parameter tmin:</th><td class="field-body">A mandatory (floating) parameter that defines the minimum time (s)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter tmax:</th><td class="field-body">A mandatory (floating) parameter that defines the maximum time (s)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter tlin:</th><td class="field-body">A mandatory (integer) parameter that defines the number of points within the maximum and mimumun time</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter E:</th><td class="field-body">A mandatory (floating) list that defines the Young’s modulus (Pa) of bulk soil for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter mu:</th><td class="field-body">A mandatory (floating) list that defines the Poisson’s ratio of bulk soil for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter rho:</th><td class="field-body">A mandatory (floating) list that defines the density (kg/m^3) of bulk soil for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter H:</th><td class="field-body">A mandatory (floating) list that defines the thickness (m) for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter kh:</th><td class="field-body">A mandatory (floating) list that defines the permeability coefcient (m^2) of bulk soil for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">parameter porosity:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">A mandatory (floating) list that defines the porosity of bulk soil for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter r:</th><td class="field-body">A mandatory (floating) parameter that defines the radius (m) of the location of interest</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter rmax:</th><td class="field-body">A mandatory (floating) parameter that defines the maximum radius (m) of the domain</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter node:</th><td class="field-body">A mandatory (integer) parameter that spesfies the ID of the output node (for instance, the ‘node’ for surface vertical displacement is 2)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter loc:</th><td class="field-body">An optioanl (integer) parameter that defines the ID of the input load (for instance, the ‘loc’ for surface vertical load is 2)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter st:</th><td class="field-body">An optional (integer) parameter (either 0 or 1) that defined the output type, where 0 represnts displacement and 1 represents stress output</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter vis:</th><td class="field-body">An optional (floating) parameter that defines the viscosity (Pa-s) of water</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter kf:</th><td class="field-body">An optional (floating) parameter that defines the bulk modulus (Pa) of the fluid</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">parameter m_num:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">An optional (integer) parameter that defines the number of modes in the Fourier-Bessel series</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">parameter lap_num:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">An optional (integer) parameter that defines the number of iteration in the inverse Laplace transform</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter a1:</th><td class="field-body">An optional (integer) parameter that defines the radius (m) of the contact area between external load and domain</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="two-phase-dispersion">
+<h2>two_phase_dispersion<a class="headerlink" href="#two-phase-dispersion" title="Permalink to this headline">¶</a></h2>
+<p>Object for one-phase material in infinite space dispersion modeling.  The inputs of this function
+is listed as follows:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">parameter f1:</th><td class="field-body">A mandatory (floating) parameter that defines the lower bound of frequency (Hz)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter f2:</th><td class="field-body">A mandatory (floating) parameter that defines the upper bound frequency (Hz)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter flin:</th><td class="field-body">A mandatory (integer) parameter that defines the number of points within the lower and upper bpund of frequency</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter E:</th><td class="field-body">A mandatory (floating) list that defines the Young’s modulus (Pa) of bulk soil for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter mu:</th><td class="field-body">A mandatory (floating) list that defines the Poisson’s ratio of bulk soil for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter rho:</th><td class="field-body">A mandatory (floating) list that defines the density (kg/m^3) of bulk soil for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter H:</th><td class="field-body">A mandatory (floating) list that defines the thickness (m) for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter kh:</th><td class="field-body">A mandatory (floating) list that defines the permeability coefcient (m^2) of bulk soil for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">parameter porosity:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">A mandatory (floating) list that defines the porosity of bulk soil for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter vis:</th><td class="field-body">An optional (floating) parameter that defines the viscosity (Pa-s) of water</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter kf:</th><td class="field-body">An optional (floating) parameter that defines the bulk modulus (Pa) of the fluid</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">parameter ncore:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">An optional (integer) parameter that defines the number of cores (-1 is used in default to use all available cores)</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="three-phase-dynamic">
+<h2>three_phase_dynamic<a class="headerlink" href="#three-phase-dynamic" title="Permalink to this headline">¶</a></h2>
+<p>Object for wave propagation modeling of three-phase material in finite and infinite space.  The inputs of this function
+is listed as follows:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">parameter tmin:</th><td class="field-body">A mandatory (floating) parameter that defines the minimum time (s)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter tmax:</th><td class="field-body">A mandatory (floating) parameter that defines the maximum time (s)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter tlin:</th><td class="field-body">A mandatory (integer) parameter that defines the number of points within the maximum and mimumun time</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter kks:</th><td class="field-body">A mandatory (floating) list that defines the bulk modulus of soild skeleton (Pa) for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter muus:</th><td class="field-body">A mandatory (floating) list that defines the shear modulus  of soild skeleton (Pa) for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter rho:</th><td class="field-body">A mandatory (floating) list that defines the density of soild skeleton (kg/m^3) for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter phiw:</th><td class="field-body">A mandatory (floating) list that defines the volumetric water content for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter phii:</th><td class="field-body">A mandatory (floating) list that defines the volumetric ice content for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter H:</th><td class="field-body">A mandatory (floating) list that defines the thickness (m) for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter r:</th><td class="field-body">A mandatory (floating) parameter that defines the radius of the location of interest</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter rmax:</th><td class="field-body">A mandatory (floating) parameter that defines the maximum radius of the domain</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter node:</th><td class="field-body">A mandatory (integer) parameter that spesfies the ID of the output node (for surface vertical displacement, it is 2)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter loc:</th><td class="field-body">A mandatory (integer) parameter that defines the ID of the input load</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter st:</th><td class="field-body">A mandatory (integer) parameter (either 0 or 1) that defined the output type where 0 represnts displacement and 1 represents stress</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter KKi:</th><td class="field-body">An optional (floating) parameter that defines the bulk modulus of ice (Pa)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter muui:</th><td class="field-body">An optional (floating) parameter that defines the shear modulus of ice (Pa)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter Kww:</th><td class="field-body">An optional (floating) parameter that defines the bulk modulus of water (Pa)</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">parameter kappas:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">An optional (floating) parameter related to the peameability of solid skeleton</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">parameter kappai:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">An optional (floating) parameter  to the peameability of ice</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter b013:</th><td class="field-body">An optional (floating) parameter that defines friction coefficient between the solid skeletal frame and ice matrix</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">parameter m_num:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">A optional (integer) parameter that defines the number of modes</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">parameter lap_num:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">A optional (integer) parameter that defines the number of iteration in the inverse Laplace transform</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter a1:</th><td class="field-body">A optional (integer) parameter that defines the radius (m) of the contact area between external load and domain</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">parameter ncore:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">A optional (integer) parameter that defines the number of cores (-1 is used in default to use all available cores)</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="three-phase-dispersion">
+<h2>three_phase_dispersion<a class="headerlink" href="#three-phase-dispersion" title="Permalink to this headline">¶</a></h2>
+<p>Object for one-phase material in infinite space dispersion modeling. The inputs of this function
+is listed as follows:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">parameter f1:</th><td class="field-body">A mandatory (floating) parameter that defines the lower bound of frequency (Hz)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter f2:</th><td class="field-body">A mandatory (floating) parameter that defines the upper bound frequency (Hz)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter flin:</th><td class="field-body">A mandatory (integer) parameter that defines the number of points within the lower and upper bpund of frequency</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter kks:</th><td class="field-body">A mandatory (floating) list that defines the bulk modulus of soild skeleton (Pa) for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter muus:</th><td class="field-body">A mandatory (floating) list that defines the shear modulus  of soild skeleton (Pa) for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter rho:</th><td class="field-body">A mandatory (floating) list that defines the density of soild skeleton (kg/m^3) for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter phiw:</th><td class="field-body">A mandatory (floating) list that defines the volumetric water content for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter phii:</th><td class="field-body">A mandatory (floating) list that defines the volumetric ice content for all layers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter H:</th><td class="field-body">A mandatory (floating) list that defines the thickness (m) for all layers</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter KKi:</th><td class="field-body">An optional (floating) parameter that defines the bulk modulus of ice (Pa)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter muui:</th><td class="field-body">An optional (floating) parameter that defines the shear modulus of ice (Pa)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parameter Kww:</th><td class="field-body">An optional (floating) parameter that defines the bulk modulus of water (Pa)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">parameter kappas:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">An optional (floating) parameter related to the peameability of solid skeleton</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">parameter kappai:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">An optional (floating) parameter  to the peameability of ice</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameter b013:</th><td class="field-body">An optional (floating) parameter that defines friction coefficient between the solid skeletal frame and ice matrix</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">parameter ncore:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">An optional (integer) parameter that defines the number of cores (-1 is used in default to use all available cores)</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="functions-inside-dynamic-modules">
+<h2>functions inside dynamic modules<a class="headerlink" href="#functions-inside-dynamic-modules" title="Permalink to this headline">¶</a></h2>
+<p>model_f deefine the dynamic model for finite domain. For instance:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">model_f</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Define one-phase model for finite domain&#39;&#39;&#39;</span>
+    <span class="n">km</span> <span class="o">=</span> <span class="n">jn_zeros</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">m_num</span><span class="p">)</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">rmax</span>
+    <span class="n">fm</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">m_num</span><span class="p">,</span><span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> <span class="c1"># point load</span>
+    <span class="n">fn</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">external_load</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="n">yt</span> <span class="o">=</span>  <span class="n">PoroSEM</span><span class="o">.</span><span class="n">one_phase_finite</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">complex</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">E</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">mu</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">rho</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">H</span><span class="p">,</span> <span class="n">km</span><span class="p">,</span> <span class="n">fm</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">r</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">complex</span><span class="p">(</span><span class="n">fn</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">node</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">loc</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">st</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">m_num</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">E</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">yt</span>
+</pre></div>
+</div>
+<p>model_i deefine the dynamic model for infinite domain. For instance:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">model_i</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Define one-phase model for infinite domain&#39;&#39;&#39;</span>
+    <span class="n">km</span> <span class="o">=</span> <span class="n">jn_zeros</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">m_num</span><span class="p">)</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">rmax</span>
+    <span class="n">fm</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">m_num</span><span class="p">,</span><span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> <span class="c1"># point load</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">m_num</span><span class="p">):</span>
+        <span class="n">fm</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">a1</span><span class="o">*</span><span class="n">jv</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">km</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">a1</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">rmax</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">km</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">jv</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">rmax</span><span class="o">*</span><span class="n">km</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#*(m_num + 1-i)/(m_num+1)*1.05*1.02</span>
+    <span class="n">fn</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">external_load2</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="n">yt</span> <span class="o">=</span>  <span class="n">PoroSEM</span><span class="o">.</span><span class="n">one_phase_infinite</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">complex</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">E</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">mu</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">rho</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">H</span><span class="p">,</span> <span class="n">km</span><span class="p">,</span> <span class="n">fm</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">r</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">complex</span><span class="p">(</span><span class="n">fn</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">node</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">loc</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">st</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">m_num</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">E</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">yt</span>
+</pre></div>
+</div>
+<p>In above function, the external load is required to be defined in the Lapalce domain.  For example,
+the 10 kHz load in the BE test can be defined as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">external_load</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Define external load in the Lapalce domain (for BE example)&#39;&#39;&#39;</span>
+    <span class="n">fn1</span> <span class="o">=</span> <span class="o">-</span><span class="mi">20</span><span class="o">*</span><span class="mf">10.0</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">complex</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2000</span><span class="p">)))</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="p">(</span><span class="mi">400</span><span class="o">*</span><span class="mf">10.0</span><span class="o">**</span><span class="mi">6</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">complex</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">fn2</span> <span class="o">=</span> <span class="mi">20</span><span class="o">*</span><span class="mf">10.0</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">complex</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2500</span><span class="p">)))</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="p">(</span><span class="mi">400</span><span class="o">*</span><span class="mf">10.0</span><span class="o">**</span><span class="mi">6</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">complex</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">fn</span> <span class="o">=</span> <span class="n">fn1</span> <span class="o">+</span> <span class="n">fn2</span>
+    <span class="k">return</span> <span class="n">fn</span>
+</pre></div>
+</div>
+<p>To run the dynamic response in the finite domain, users should use ‘run_f’ function, defined as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_f</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Run the model using the  Parallel computing for finite domain&#39;&#39;&#39;</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tmin</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tmax</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tlin</span><span class="p">)</span>
+    <span class="n">yt</span> <span class="o">=</span> <span class="n">Parallel</span><span class="p">(</span><span class="n">n_jobs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">ncore</span><span class="p">)(</span><span class="n">delayed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">inv_f</span><span class="p">)(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)))</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">yt</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To run the dynamic response in the infinite domain, users should use ‘run_i’ function, defined as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_i</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Run the model using the  Parallel computing for infinite domain&#39;&#39;&#39;</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tmin</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tmax</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tlin</span><span class="p">)</span>
+    <span class="n">yt</span> <span class="o">=</span> <span class="n">Parallel</span><span class="p">(</span><span class="n">n_jobs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">ncore</span><span class="p">)(</span><span class="n">delayed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">inv_i</span><span class="p">)(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)))</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">yt</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For dispersion analysis, users can call ‘run’ function directly, defined as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Run the model using the Parallel computing for infinite domain&#39;&#39;&#39;</span>
+    <span class="n">omega</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">f1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">f2</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">flin</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="mi">2</span>
+    <span class="n">yt</span> <span class="o">=</span> <span class="n">Parallel</span><span class="p">(</span><span class="n">n_jobs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">ncore</span><span class="p">)(</span><span class="n">delayed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">final</span><span class="p">)(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">omega</span><span class="p">)))</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">yt</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="authors.html" class="btn btn-neutral float-right" title="Authors" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="usage.html" class="btn btn-neutral float-left" title="Usage examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Hongwei Liu, Pooneh Maghoul, Guillaume Mantelet, Ahmed Shalaby.
+      <span class="lastupdated">
+        Last updated on Jun 11, 2021.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
