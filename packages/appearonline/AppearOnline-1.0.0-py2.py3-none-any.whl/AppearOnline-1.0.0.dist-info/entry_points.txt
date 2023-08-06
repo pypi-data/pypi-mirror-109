@@ -1,0 +1,3 @@
+[console_scripts]
+appearonline = appear_online.__main__:main
+
