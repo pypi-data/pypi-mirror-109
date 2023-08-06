@@ -1,0 +1,13 @@
+lvmtan/.coverage,sha256=eGODB17Xb1nB8EDuxri1mmdlnpBeJtolFbT-e4AQPrc,75
+lvmtan/BasdaCluPythonServiceWorker.py,sha256=JMgPqpWdzDoexgAR-tWqSuPam7z1Oc47orw1IhtPcDg,4671
+lvmtan/BasdaMoccaCluPythonServiceWorker.py,sha256=qJVspV88IB4MfXwaa2h9ci7BVfUDqvYFE6IJFhJem3Q,6436
+lvmtan/BasdaMoccaTrajCluPythonServiceWorker.py,sha256=xW5ZgFkw-rmg5flLem4GqQO1gRQVjoAwwPCkrtn25JI,2550
+lvmtan/BasdaMoccaWheelCluPythonServiceWorker.py,sha256=wh0B6apOuKIfwS9GKWux1nusCVK7t2mJmt-EyFamYM8,990
+lvmtan/BasdaMoccaXCluPythonServiceWorker.py,sha256=Jpe8jvVa4uBPxE_U97GjvtqMe6VAIrHMo4jE2txYM4A,2263
+lvmtan/__init__.py,sha256=pI3IWAY8R7A7SfAKd6Kdc8glZdYW7-fxGQdJ2ERr0iw,805
+lvmtan/exceptions.py,sha256=7HFR0AxkzafOAoU_z9nQkolJXB_K50rKYB5V-FuduJ8,1818
+sdss_lvmtan-0.0.2.dist-info/entry_points.txt,sha256=qvYkZcpyEcAfVxQUKaKWO_hsuhFORW_yc2cQsJ4dtLQ,47
+sdss_lvmtan-0.0.2.dist-info/LICENSE.md,sha256=_7dAUQQ5Ph_x1hcFXhi9aHBcqq9H11zco12eO4B3Cyg,1504
+sdss_lvmtan-0.0.2.dist-info/WHEEL,sha256=f90FVrXAALeD9gWBlT71WrIo89_-KqvqhRPHPiWnXqk,103
+sdss_lvmtan-0.0.2.dist-info/METADATA,sha256=MkGFy3TyvO4UCsxPvdjsjTK0jr2DPpolw8164VcaZYY,1441
+sdss_lvmtan-0.0.2.dist-info/RECORD,,
