@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+kofipdf/__init__.py
+kofipdf/pdf2image.py
+kofipdf/pdf2text.py
+kofipdf.egg-info/PKG-INFO
+kofipdf.egg-info/SOURCES.txt
+kofipdf.egg-info/dependency_links.txt
+kofipdf.egg-info/top_level.txt
