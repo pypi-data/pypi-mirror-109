@@ -1,0 +1,10 @@
+README.md
+setup.py
+simpleSQLBuilder/QueryBuilder.py
+simpleSQLBuilder/__init__.py
+simpleSQLBuilder.egg-info/PKG-INFO
+simpleSQLBuilder.egg-info/SOURCES.txt
+simpleSQLBuilder.egg-info/dependency_links.txt
+simpleSQLBuilder.egg-info/top_level.txt
+tests/__init__.py
+tests/test_builder.py
