@@ -1,0 +1,6 @@
+setup.py
+saasless.egg-info/PKG-INFO
+saasless.egg-info/SOURCES.txt
+saasless.egg-info/dependency_links.txt
+saasless.egg-info/entry_points.txt
+saasless.egg-info/top_level.txt

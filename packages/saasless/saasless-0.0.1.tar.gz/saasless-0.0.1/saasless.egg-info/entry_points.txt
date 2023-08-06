@@ -1,0 +1,3 @@
+[console_scripts]
+saasless = saasless:cli
+
