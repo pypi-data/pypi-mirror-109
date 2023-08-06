@@ -1,0 +1,158 @@
+#!/usr/bin/env python3
+
+
+from os import system, _exit,name
+import subprocess
+import sys
+from os import listdir, path,remove
+from os.path import isfile, join, basename, normpath, relpath, dirname, abspath, isdir,splitext,exists
+import pathlib
+from glob import glob
+from tqdm import tqdm
+from yaspin import yaspin
+
+
+menu = """
+ 
+    FFenmass
+    CLI Utility to encode and recreate directories with ffmpeg.
+                
+
+"""
+
+
+
+
+
+# Check if the Directory exists, if not make it
+def checkmake_dir(directory: str):
+    return pathlib.Path(directory).mkdir(parents=True, exist_ok=True)
+
+# Return All file objects from a directory tree
+def get_all_media_files_in_dir(inpath: str):
+    filesonly = []
+    for item in tqdm(list(glob(inpath + '/**/*', recursive=True))):
+        if isfile(item):
+            filesonly.append(item)
+
+    return sorted(filesonly)
+
+
+
+# Change the full input path root path to match the output root path
+def outfile_path(fullfilepath: str,inpath:str, outpath: str):
+    fullout = fullfilepath.replace(inpath,outpath)
+    checkmake_dir(dirname(fullout))
+    return splitext(fullout)[0]
+
+
+
+# Check if a string is a directory
+def dir_path(string):
+    if isdir(string):
+        return string
+    else:
+        return False
+
+
+if __name__ == '__main__':
+    system('cls' if name == 'nt' else 'clear')
+    print(menu)
+    args = ['ffmpeg','-hide_banner' ,'-y']+sys.argv[1:]
+
+
+    #Checking if input exists
+    try:
+        inpath = args[args.index('-i') + 1]
+    except ValueError:
+            print('ERROR : Could not catch -i argument')
+            try:
+                sys.exit(0)
+            except SystemExit:
+                _exit(0)
+
+    #Checking if input/output is valid directory, if output is not create it.
+    outpath = args[len(args)-1:][0]
+    if dir_path(inpath):
+            pass
+    else:
+        print('Input is not a valid directory!')
+        try:
+            sys.exit(0)
+        except SystemExit:
+            _exit(0)
+    if dir_path(outpath):
+            pass
+    else:
+        print(f'\nCreating {outpath}, because it does not exist.')
+        checkmake_dir(outpath)
+        try:
+            sys.exit(0)
+        except SystemExit:
+            _exit(0)
+
+        #Checking if extension is provided
+    try:
+        extension = args[args.index('-f') + 1]
+    except ValueError:
+        print('ERROR : Could not catch -f argument')
+        try:
+            sys.exit(0)
+        except SystemExit:
+            _exit(0)
+
+    print(f'Input Directory : \"{inpath}\"')
+    print(f'Output Directory : \"{outpath}\"')
+    print(f'Container : \"{extension}\"')
+    print('\n')
+    #Getting all paths and files
+    print(f'Grabbing files...\n')
+    inputfiles = get_all_media_files_in_dir(inpath=inpath)
+    if inputfiles is None:
+        print('ERROR : No Files in Directory')
+        try:
+            sys.exit(0)
+        except SystemExit:
+            _exit(0)
+
+    print(f'\nFile collection complete, {len(inputfiles)} file(s) will be processed.\n\n\n')
+    
+    
+    print("---Processing---\n")
+    #Main Program Loop
+    for file in inputfiles:
+        try:
+            args[args.index('-i') + 1] = file
+
+            args[-1] = outfile_path(fullfilepath=file,inpath=inpath ,outpath=outpath)
+
+
+            #Checking if file already exists on the output directory
+            if not exists(args[-1]):
+                with yaspin(text="") as sp:
+                    sp.color, sp.text = 'yellow',basename(file)
+                    subprocess.call(args,stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
+                    sp.write(f"✔ Completed : {basename(file)}")
+                    
+            # Else print out file exists and skips
+            else:
+                print(f"✗ Skipped : \"{basename(file)}\" Already Exists")
+
+        # On interrupt, delete last encoded file to keep output directory free of unfinished files.
+        except KeyboardInterrupt:
+            print('Keyboard Exception, cleaning up.')
+            if exists(outfile_path(fullfilepath=file,inpath=inpath ,outpath=outpath)):
+                remove(outfile_path(fullfilepath=file,inpath=inpath ,outpath=outpath))
+            print(f'Goodbye.')
+            try:
+                
+                sys.exit(0)
+            except SystemExit:
+                _exit(0)
+
+        
+            
+    
+
+    
+
