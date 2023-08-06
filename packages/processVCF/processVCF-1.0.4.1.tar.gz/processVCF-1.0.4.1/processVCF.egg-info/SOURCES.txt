@@ -1,0 +1,8 @@
+README.md
+setup.py
+processVCF/VCF.py
+processVCF/__init__.py
+processVCF.egg-info/PKG-INFO
+processVCF.egg-info/SOURCES.txt
+processVCF.egg-info/dependency_links.txt
+processVCF.egg-info/top_level.txt
