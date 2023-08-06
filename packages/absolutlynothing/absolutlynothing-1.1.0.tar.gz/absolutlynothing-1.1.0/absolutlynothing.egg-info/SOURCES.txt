@@ -1,0 +1,6 @@
+setup.py
+absolutlynothing/__init__.py
+absolutlynothing.egg-info/PKG-INFO
+absolutlynothing.egg-info/SOURCES.txt
+absolutlynothing.egg-info/dependency_links.txt
+absolutlynothing.egg-info/top_level.txt
