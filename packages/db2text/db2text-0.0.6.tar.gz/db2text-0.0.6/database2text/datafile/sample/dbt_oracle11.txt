@@ -1,0 +1,16 @@
+#sample for oracle 11
+#oracle11的样例文件
+#号开头的行为注释，并不需要处理
+#冒号开头的行表示一段内容的开始，直到另外一个冒号或者是文件尾
+#执行时扫描配置文件，把每一段的内容
+:connect
+#connect段设置数据库类型以及连接所需要的数据，不同数据库需要的数据并不相同
+driver=oracle11
+loginname=loginname
+password=password
+dbserver=host address or ip or tnsname
+:readdata
+:export
+#export段设置导出数据库里的相应内容为文本文件
+datadir=/tmp
+:end
