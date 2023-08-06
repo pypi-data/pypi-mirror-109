@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: testfoopublish
+Version: 0.0.4
+Project-URL: Documentation, https://github.com/unknown/testfoopublish#readme
+Project-URL: Issues, https://github.com/unknown/testfoopublish/issues
+Project-URL: Source, https://github.com/unknown/testfoopublish
+Author: U.N. Owen
+Author-email: void@some.where
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+
+# testfoopublish
+
+[![PyPI - Version](https://img.shields.io/pypi/v/testfoopublish.svg)](https://pypi.org/project/testfoopublish)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/testfoopublish.svg)](https://pypi.org/project/testfoopublish)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install testfoopublish
+```
+
+## License
+
+`testfoopublish` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
