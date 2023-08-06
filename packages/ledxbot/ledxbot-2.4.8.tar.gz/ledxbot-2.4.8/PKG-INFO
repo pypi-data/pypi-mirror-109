@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ledxbot
+Version: 2.4.8
+Summary: a advanced bot for fortnite
+Home-page: UNKNOWN
+Author: Led (HarryD)
+Author-email: <ledxbotofficial@outlook.com>
+License: UNKNOWN
+Keywords: python,sanic,BenBotAsync,FortniteAPIAsync
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+You want your Short Description to be 2 to 3 sentences and the rest of your content in the Long Description. Not only does the Short Description help you with SEO but it also used for marketplaces such as Google Products, TheFind, Amazon, etc.  Please do not stick HTML code in the Short Description as it might cause the product not to be sent to these marketplaces.
+
