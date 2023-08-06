@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+BlaguesApi/Constants.py
+BlaguesApi/Jokes.py
+BlaguesApi/JokesAround.py
+BlaguesApi/__init__.py
+BlaguesApi.egg-info/PKG-INFO
+BlaguesApi.egg-info/SOURCES.txt
+BlaguesApi.egg-info/dependency_links.txt
+BlaguesApi.egg-info/requires.txt
+BlaguesApi.egg-info/top_level.txt
