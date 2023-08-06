@@ -1,0 +1,14 @@
+shippedbrain/__init__.py,sha256=pGGWBJsyQ0Wv2_tb_2tDygG5bo-xiSMNxirzrpDKzTc,114
+shippedbrain/cli.py,sha256=CfxlyEQkCLi4C_kk117yY6Hfli09_UJ_XwP_L_3_4Sw,1544
+shippedbrain/shippedbrain.py,sha256=sE1XQ42ODUqSy6A3xIUcMjRHFDck1PBnjYLpGl0ka4o,16170
+tests/__init__.py,sha256=5m90Vn86z1KL9soikhQngBRk6PIwTdkne96Mn5Wd9nY,295
+tests/conftest.py,sha256=qoYPJ7zrEX1tJjcc0NCylMVPbSUt-3W2ShySCBP9m4w,743
+tests/test_shipped_brain.py,sha256=ml1I76B5jb6w538Ij4U583UiDnEg-hVh2babT9pd57o,9505
+tests/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/resources/train.py,sha256=MHckIBu_gw_0VfXTIsbPUge9Yd4QjNf60-DjXVpqSVI,6467
+shippedbrain-0.0.4.dist-info/LICENSE,sha256=1fdHkjLNuZ19lO9YrfB1vZmHKOxrdm3eLMBNrR1qtUs,11342
+shippedbrain-0.0.4.dist-info/METADATA,sha256=0xrwrxeKWl-JqK8AYgm7b5vkFCYlBmwkGUOCXfIf08w,15055
+shippedbrain-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+shippedbrain-0.0.4.dist-info/entry_points.txt,sha256=LavGx6X24VX9xFh1LgyxiKoIPTMol7Cegu6if8Oyx54,55
+shippedbrain-0.0.4.dist-info/top_level.txt,sha256=VTc7i8CMnAs0kFoyEzSAIddMQoUOegJsJb_sbQlPxVc,19
+shippedbrain-0.0.4.dist-info/RECORD,,
