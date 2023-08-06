@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Face_rec/FaceClass.py
+Face_rec/__init__.py
+Face_rec.egg-info/PKG-INFO
+Face_rec.egg-info/SOURCES.txt
+Face_rec.egg-info/dependency_links.txt
+Face_rec.egg-info/requires.txt
+Face_rec.egg-info/top_level.txt
+Face_rec/face_detection_model/deploy.prototxt
+Face_rec/pickle/holly_50_classes_lableencoder.pickle
+face_rec/caffemodel/res10_300x300_ssd_iter_140000.caffemodel
+face_rec/h5/holly_MobileNet_3(50_class).h5
