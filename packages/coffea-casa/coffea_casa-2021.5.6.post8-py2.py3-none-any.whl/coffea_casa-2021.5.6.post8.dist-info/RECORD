@@ -1,0 +1,11 @@
+coffea_casa/__init__.py,sha256=kW7laapUDe7sg0nDS1v9IzbNXboM0JUZ61I9adSs8GI,380
+coffea_casa/_version.py,sha256=gTP9wIlP_b6iZhkbdfpREptulPniBdpt1Y_I6bUFixA,507
+coffea_casa/coffea_casa.py,sha256=NOOYXwTlaPqET_eoBKSgX3_5QabwFKhH1KciZ8k70Nw,7938
+coffea_casa/config.py,sha256=man3Bcg1_cIOWdMWP-kioGqCshJDnusJOpOAOnQiIeQ,344
+coffea_casa/jobqueue-coffea-casa.yaml,sha256=QWitvySVTSpO7ifMOasSV98UQny2tnBXzQ68XHK1BOg,1028
+coffea_casa-2021.5.6.post8.dist-info/LICENSE,sha256=74ZzcFqAmzQouZgnZ-2-Z2yP0zR6gzPv3EKIEQKTbyk,1507
+coffea_casa-2021.5.6.post8.dist-info/METADATA,sha256=Km-G5cB7y_Xi-I41Bcg8UfsArGElhcnLvRYZeIe7l6o,7155
+coffea_casa-2021.5.6.post8.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+coffea_casa-2021.5.6.post8.dist-info/dependency_links.txt,sha256=tne4n9MMZVRBbpd4doEI-64PewMtKv9kBnd5cXH4cP8,83
+coffea_casa-2021.5.6.post8.dist-info/top_level.txt,sha256=5wkPUIMK-HB_mT6g20qGgDzeh7znU6lSHuKH_xtD3DU,12
+coffea_casa-2021.5.6.post8.dist-info/RECORD,,
