@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: yaml-doc-fix
+Version: 1
+Summary: Auto fixer for yamllint 'document-start' warning
+Home-page: https://github.com/rennym19/ansible-yamldocfix
+Author: Dani Hodovic / Renny Montero
+Author-email: rennym19@gmail.com
+License: MIT
+Download-URL: https://github.com/rennym19/ansible-yamldocfix/archive/v_1.tar.gz
+Description: UNKNOWN
+Keywords: ANSIBLE,FIX,YAML,LINT,DOCUMENT,START,WARNING
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9

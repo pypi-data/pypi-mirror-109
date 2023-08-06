@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+yaml_doc_fix/__init__.py
+yaml_doc_fix/script.py
+yaml_doc_fix.egg-info/PKG-INFO
+yaml_doc_fix.egg-info/SOURCES.txt
+yaml_doc_fix.egg-info/dependency_links.txt
+yaml_doc_fix.egg-info/entry_points.txt
+yaml_doc_fix.egg-info/top_level.txt

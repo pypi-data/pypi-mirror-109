@@ -1,0 +1,3 @@
+[console_scripts]
+yaml-doc-fix = yaml_doc_fix.script:run
+
