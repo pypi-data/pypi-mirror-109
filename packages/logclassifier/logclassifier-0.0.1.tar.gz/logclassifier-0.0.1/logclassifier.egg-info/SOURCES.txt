@@ -1,0 +1,9 @@
+README.md
+setup.py
+logclassifier/__init__.py
+logclassifier/logclassifier.py
+logclassifier.egg-info/PKG-INFO
+logclassifier.egg-info/SOURCES.txt
+logclassifier.egg-info/dependency_links.txt
+logclassifier.egg-info/requires.txt
+logclassifier.egg-info/top_level.txt
