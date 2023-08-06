@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+python-charts/__init__.py
+python-charts/main.py
+python_charts.egg-info/PKG-INFO
+python_charts.egg-info/SOURCES.txt
+python_charts.egg-info/dependency_links.txt
+python_charts.egg-info/requires.txt
+python_charts.egg-info/top_level.txt
