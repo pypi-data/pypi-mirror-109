@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ctdataset
+Version: 1.0.0
+Summary: ctdataset
+Home-page: https://github.com/JeanMaximilienCadic/ctdataset
+Author: Jean Maximilien Cadic
+Author-email: support@cadic.jp
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Requires-Dist: torch (==1.8.1)
+Requires-Dist: tqdm
+Requires-Dist: gnutools-python
+Requires-Dist: nmesh
+Requires-Dist: numpy
+
+UNKNOWN
+
+
