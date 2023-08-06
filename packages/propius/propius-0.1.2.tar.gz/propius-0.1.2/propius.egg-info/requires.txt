@@ -1,0 +1,13 @@
+setuptools
+numpy
+pandas
+scikit-learn
+fsspec
+s3fs
+tdqm
+mkdocs
+mkdocs-gitbook
+pygments
+mkdocs-rtd-dropdown
+mkdocs-material
+mkdocstrings
