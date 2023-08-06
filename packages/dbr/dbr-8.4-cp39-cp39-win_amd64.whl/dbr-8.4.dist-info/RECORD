@@ -1,0 +1,13 @@
+dbr-8.4.data/purelib/dbr/DynamicPdfx64.dll,sha256=TjeV8votk76UmJMciTLAwSysi5VQn1w3Pab1uhh77AY,4385216
+dbr-8.4.data/purelib/dbr/DynamsoftBarcodeReaderx64.dll,sha256=RMhobHF6Qwf8NlKoLwiJqW8y3qr6B3Wfv7k8Hq007q4,12970408
+dbr-8.4.data/purelib/dbr/DynamsoftLicClientx64.dll,sha256=wXxldCHrr4OYzlyxz30hmUqtCnvTNjvrmrX-5H5n2rk,984000
+dbr-8.4.data/purelib/dbr/DynamsoftLicenseTrackingClientx64.dll,sha256=_6pENLounqrrfkUk5eUuw0tGFTtzaF7WuLPEnRu9_Og,2493848
+dbr-8.4.data/purelib/dbr/__init__.py,sha256=1cASWQO883QNqPHPHuE5NbxLTKE5tmVqUIt4O-JBgjI,50
+dbr-8.4.data/purelib/dbr/dbr.cp39-win_amd64.pyd,sha256=Ph67c9_UuayUUpyuAZcXzHWhWpEdxiqTSqa3Q2y2fWA,70656
+dbr-8.4.data/purelib/dbr/dbr_python.py,sha256=wdXldd_lRGKvNlUDZAWXxz-wdiwMkjYUiT3CO5A9Xng,117343
+dbr-8.4.data/purelib/dbr/vcomp110.dll,sha256=MNvBOMEuypzQchwiCP2MZXCQrDmxy30g8aoZk1zdlG0,138208
+dbr-8.4.dist-info/LICENSE.txt,sha256=e1_qPW579kp1zNdplCWXK9e-zC7ylZebZXc3AiqNwTs,74
+dbr-8.4.dist-info/METADATA,sha256=gOxuwN_YTYGEdhaHd4D3QeyXs2vrmtdG43Z4HAzKEDE,5144
+dbr-8.4.dist-info/WHEEL,sha256=jr7ubY0Lkz_yXH9FfFe9PTtLhGOsf62dZkNvTYrJINE,100
+dbr-8.4.dist-info/top_level.txt,sha256=RtnRuv17zC0FTWgII9msEV_uFpxjilu6Jag3kKXZZ-Q,4
+dbr-8.4.dist-info/RECORD,,
