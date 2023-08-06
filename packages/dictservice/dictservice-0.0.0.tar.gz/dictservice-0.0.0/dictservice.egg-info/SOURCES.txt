@@ -1,0 +1,6 @@
+setup.py
+dictservice/__init__.py
+dictservice.egg-info/PKG-INFO
+dictservice.egg-info/SOURCES.txt
+dictservice.egg-info/dependency_links.txt
+dictservice.egg-info/top_level.txt
