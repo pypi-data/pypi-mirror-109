@@ -1,0 +1,3 @@
+[napari.plugin]
+OtherView = ortho_view_napari
+
