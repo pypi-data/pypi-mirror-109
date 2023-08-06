@@ -1,0 +1,2 @@
+include allskycam/*.txt
+include allskycam/img/*.*
