@@ -1,0 +1,15 @@
+frolic/__init__.py,sha256=DxvGwovllKY2hwyZ0jYR8VcY70s3i3DWmxmVretlz4Q,143
+frolic/console_printer.py,sha256=KIwwPBPAw0zyGgcE4C3r70Y5-HFc0PRsxj7pIHF3_-g,2833
+frolic/game.py,sha256=d4YZr-5HmQpleH03HKZbRFamsuPPrpmgsF72VrNMpqI,5615
+frolic/game_object.py,sha256=HrP81gC_Y_FaHLffQnapiSUowNSSkhYH8xNVH5QmN-M,1313
+frolic/input_controller.py,sha256=SQwtrYeqcW3H71G71DJd2QJIuA1ulcjIrgFSyO-7hXs,888
+frolic/matrix.py,sha256=FmDparjoGpv41diMpcPkPXgBG6Nr7fOOxikGqlLlb00,8373
+frolic/matrix_border.py,sha256=_-d0_WaxoAub7oynp_D4tEtqTF5rXgHf29l1PQFfo4g,1981
+frolic/screen.py,sha256=EPkr7wNXlB2gdtVXr77tWJI9mg9ePZS_D5gzIidF9ds,2317
+frolic/utils.py,sha256=IiZxrG03iiHzt0wdBBcODF5yFeEBxB-gu8gYxdxsNfc,2599
+frolic/vector2.py,sha256=SZ0C0GA7dwwu5EXTsVheUzP_sqweYi5PSsTxsqZ2BAQ,1211
+frolic_engine-1.0.1.dist-info/LICENSE,sha256=BDZQyLXbs4ipSDunmnzNhiv5mDdUzJcJ-qlG5bzd5rs,1078
+frolic_engine-1.0.1.dist-info/METADATA,sha256=tYJfolGj30HpQFXmXHpBNl-LJf-mrIDT-Aee9jKNsR4,7664
+frolic_engine-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+frolic_engine-1.0.1.dist-info/top_level.txt,sha256=ZpkVoR2KXFIqGBJ01xFSjbfAmRYH1pU__eQnN7F47CU,7
+frolic_engine-1.0.1.dist-info/RECORD,,
