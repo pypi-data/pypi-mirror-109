@@ -1,0 +1,7 @@
+setup.py
+EasyMaths.egg-info/PKG-INFO
+EasyMaths.egg-info/SOURCES.txt
+EasyMaths.egg-info/dependency_links.txt
+EasyMaths.egg-info/top_level.txt
+base folder/EasyMaths.py
+base folder/__init__.py
