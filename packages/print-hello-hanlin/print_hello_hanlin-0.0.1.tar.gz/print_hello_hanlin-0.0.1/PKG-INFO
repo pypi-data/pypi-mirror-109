@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: print_hello_hanlin
+Version: 0.0.1
+Summary: A custom print libary
+Home-page: https://github.com/HarryChen1995/print_hello.git
+Author: hanlin chen
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# print_hello
+- This is simple python package to demonstrate how to upload package to PyPl
+## file structure 
+```
+print_hello/
+|-- LICENSE.txt
+|-- README.md
+|-- print_hello_hanlin
+|   |-- __init__.py
+|   |-- __pycache__
+|   |   |-- __init__.cpython-36.pyc
+|   |   `-- print_hello.cpython-36.pyc
+|   `-- print_hello.py
+`-- setup.py
+```
+## build package
+```bash
+$: python3 setup.py  sdist bdist_wheel
+ 
+```
+## upload package to pypi.org
+```bash
+$: python3  -m twine upload  dist/*
+ 
+```
+
+
