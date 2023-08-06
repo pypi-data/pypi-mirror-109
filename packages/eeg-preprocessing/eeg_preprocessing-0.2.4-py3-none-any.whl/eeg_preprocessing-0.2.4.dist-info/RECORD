@@ -1,0 +1,15 @@
+eeg_preprocessing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eeg_preprocessing/preprocessing.py,sha256=InRfqnx_7us6mgj8xroWN1cd0IVzzXp97MuwcRdT3nE,4740
+eeg_preprocessing/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eeg_preprocessing/tests/test_preprocessing.py,sha256=jUF39sBtoIlpZbMviV-sN8NOBRDmz7EhCWk4vKnz4Es,2112
+eeg_preprocessing/tests/test_utils_epochs.py,sha256=kBUOXhJkpWlOYyucCEBD5jV_vAonEyMdBGfDITBLWAs,2825
+eeg_preprocessing/tests/test_utils_raw.py,sha256=Z15oiTZcJR9VEBWKWPlWBM1rwzhuKpKPFVA6BUTPOz8,1439
+eeg_preprocessing/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eeg_preprocessing/utils/config.py,sha256=q3ZRpfIyATPqWkCe_WFlPeUK3SIPfHowbgy6J-kP8Xs,177
+eeg_preprocessing/utils/epochs.py,sha256=O5y1qCSvfQ9xTI_TEklWjkZcKRmtq2zBHgqwkxdFDMo,3081
+eeg_preprocessing/utils/raw.py,sha256=XamY3zugqsMhltrpwxRFajce5hq_AlUNe8S-bRh3oC0,3488
+eeg_preprocessing-0.2.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+eeg_preprocessing-0.2.4.dist-info/METADATA,sha256=yFAP-7k0CQyoT-kW6FsyvbVM1vKHZgpWCh99t8ovKu8,10834
+eeg_preprocessing-0.2.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+eeg_preprocessing-0.2.4.dist-info/top_level.txt,sha256=4tyGrvuRzzmJFby-uMyKUCkJe4XOtTfOn6e6HOndz5k,18
+eeg_preprocessing-0.2.4.dist-info/RECORD,,
