@@ -1,0 +1,18 @@
+numpy
+scikit-image
+pandas
+matplotlib
+datafed
+opencv-python
+h5py
+seaborn
+tqdm
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
+sys
