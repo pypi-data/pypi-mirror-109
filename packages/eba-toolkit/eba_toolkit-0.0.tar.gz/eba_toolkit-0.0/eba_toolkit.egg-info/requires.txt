@@ -1,0 +1,17 @@
+pandas
+scipy
+matplotlib
+seaborn
+numba
+pytest
+tdt
+mne
+ipywidgets
+cachey
+cached_property
+dask[complete]
+ipympl
+sphinx-rtd-theme
+h5py
+xlrd
+openpyxl
