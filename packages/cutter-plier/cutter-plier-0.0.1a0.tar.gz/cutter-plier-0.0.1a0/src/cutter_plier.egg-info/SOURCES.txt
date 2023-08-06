@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/cutter_plier/__init__.py
+src/cutter_plier.egg-info/PKG-INFO
+src/cutter_plier.egg-info/SOURCES.txt
+src/cutter_plier.egg-info/dependency_links.txt
+src/cutter_plier.egg-info/top_level.txt
+src/cutter_plier/core/__init__.py
+src/cutter_plier/core/serializer.py
