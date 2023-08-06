@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+animality/__init__.py
+animality/__main__.py
+animality/animality.py
+animality_py.egg-info/PKG-INFO
+animality_py.egg-info/SOURCES.txt
+animality_py.egg-info/dependency_links.txt
+animality_py.egg-info/requires.txt
+animality_py.egg-info/top_level.txt
