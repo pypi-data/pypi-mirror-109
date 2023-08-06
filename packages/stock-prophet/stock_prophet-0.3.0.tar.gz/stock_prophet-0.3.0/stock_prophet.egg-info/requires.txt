@@ -1,0 +1,2 @@
+prophet==1.0.1
+yfinance==0.1.59
