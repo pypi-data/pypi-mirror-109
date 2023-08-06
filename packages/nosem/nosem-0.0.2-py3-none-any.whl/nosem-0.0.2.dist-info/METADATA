@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: nosem
+Version: 0.0.2
+Summary: Python binding to meson build system
+Home-page: https://github.com/Garcia6l20/nosem
+Author: Sylvain Garcia
+Author-email: garcia.6l20@gmail.com
+License: MIT
+Keywords: nosem,meson,build system,cmake
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: meson ; python_version >= "0.58"
+
+# *Nosem* build system
+
+*Nosem* is tiny overlay to *Meson*.
+
+While you call meson to interpret you *meson.build* file,
+with nosem you directly invoke your *build.py*.
+
+This inverted process removes many limitations from meson
+and you are free to use any python library directly.
+
+The whole scripting part of meson is bypassed
+
+### Meson
+
+meson.build:
+```meson
+project('myproj', 'cpp')
+executable('example', 'main.cpp')
+```
+
+```
+meson build
+cd build && ninja
+```
+
+### Nosem
+
+nosem.build.py:
+```python
+from nosem import project, executable
+
+project('myproj', 'cpp')
+executable('example', 'main.cpp')
+```
+
+```
+nosem build
+cd build && ninja
+```
+
+## API
+
+The API is exactly the same as meson available [here](https://mesonbuild.com/Reference-manual.html).
+It defers only in the syntax, *nosem.build.py* files are pure python.
+
+## How it works
+
+The *meson.build* script interpretation is bypassed, simply replaced by a python module loading.
+
+
