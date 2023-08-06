@@ -1,0 +1,9 @@
+pgvector/django/__init__.py,sha256=uafJ2tAm5BG6vdpidYhkc5oPx4TmV8pMgFm-RSAzsWs,2122
+pgvector/psycopg2/__init__.py,sha256=w_uHyKJzHMI79IyKYwFv6CK_k1RI1X6sWiML55Wo4b4,881
+pgvector/sqlalchemy/__init__.py,sha256=8IqmO9Cf0-FQjlq5ZCWu5RYrEXLUuCt13zNZlnyl-h8,948
+pgvector/utils/__init__.py,sha256=vvqIoz5MURk5CgvX-IBcQrrnu210AT1LiWnMnrAmUiU,816
+pgvector-0.1.2.dist-info/LICENSE.txt,sha256=UaRDMz4nnSri7v-KTEvtmEI1OgX8j2SJWf4aB0INNYo,1078
+pgvector-0.1.2.dist-info/METADATA,sha256=WRkOpLWop0ir1rEduwuv533ObkTOm4Bt3FRh4CL8fWk,280
+pgvector-0.1.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pgvector-0.1.2.dist-info/top_level.txt,sha256=xGGaXFRcSRHEhn0HS1FN_UjCWr1G-WSPgxx4a0NJc0M,9
+pgvector-0.1.2.dist-info/RECORD,,
