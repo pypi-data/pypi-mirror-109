@@ -1,0 +1,14 @@
+ezomero/__init__.py,sha256=eo_5PZoYiMomBeAztcSLYumgt7x1z1_DeSnM6dgszuE,1916
+ezomero/_ezomero.py,sha256=FEW15LV5QLisEj_zneNDac4Jm7jBV0FhYpkbV8NL5NI,52284
+ezomero/rois.py,sha256=LVM7tpTCfbhzVxrnDcTCk3ks0jGH5ACGNWhUEE6bRrI,7919
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=cjzCXpzDEO_hcbCT7bepD1uCndMiYjRNubuP7yqR32U,16899
+tests/test_connect.py,sha256=BNvX3Saxi5bDOopZo7wlQofsiwacMlej8TgA2tlk83g,2739
+tests/test_ezomero.py,sha256=LFzfPMTraYm-41F800pt0CiImAGrwzKxUY8Le09Ry08,23655
+tests/test_rois.py,sha256=HnvlyHLfSLN7AJ6p84NfbHEUDraRMGapp4EUufW2Gm8,780
+tests/test_users_group.py,sha256=8pKtVp9fGdflrIKxKqpSEugxpgGnWgEi87OTdzxegR4,295
+ezomero-0.2.0.dist-info/LICENSE,sha256=UhAOo2LkKbLc0h11ikwbbkbohDAiktGCfFF7njYiwaA,1079
+ezomero-0.2.0.dist-info/METADATA,sha256=BJ2IEiRVu1DidiQFsQ4AbyIg6wzEOT5L985e6IY9ZNE,1352
+ezomero-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ezomero-0.2.0.dist-info/top_level.txt,sha256=MI_SWDk26L_FZZIfBZRPQJgobhZlozVFcRhan2UYTqg,14
+ezomero-0.2.0.dist-info/RECORD,,
