@@ -1,0 +1,7 @@
+setup.py
+test/__init__.py
+zzzPyPiTest2.egg-info/PKG-INFO
+zzzPyPiTest2.egg-info/SOURCES.txt
+zzzPyPiTest2.egg-info/dependency_links.txt
+zzzPyPiTest2.egg-info/entry_points.txt
+zzzPyPiTest2.egg-info/top_level.txt

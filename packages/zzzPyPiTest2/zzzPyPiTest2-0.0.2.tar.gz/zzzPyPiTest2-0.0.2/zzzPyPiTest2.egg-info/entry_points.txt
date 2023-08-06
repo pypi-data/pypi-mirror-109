@@ -1,0 +1,4 @@
+[console_scripts]
+helloTest = test:hello
+version = test:version
+
