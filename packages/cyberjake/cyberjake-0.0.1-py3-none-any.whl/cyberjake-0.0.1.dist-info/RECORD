@@ -1,0 +1,9 @@
+cyberjake/__init__.py,sha256=7SVvGIYBm8ULemllWtczy_BR3H2HN35uiWfGPkDCv04,264
+cyberjake/database.py,sha256=EO2_NxYm4zGgOh3XBU59nYa7VcICaxyMpKWOC7-okHI,1749
+cyberjake/discord_common.py,sha256=e2u_RJEqY5MJk-Vo36FgSuZ6GW-Pts9KYVsogRTbrjA,2133
+cyberjake/make_logger.py,sha256=xhjj9lM9jtg9NASLnKtqm4hO_5Tegn4KVjaxqDnEltk,942
+cyberjake-0.0.1.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+cyberjake-0.0.1.dist-info/METADATA,sha256=VPdz2r8oqhzMsAwDb63Ri1QBqGVsmgIbdGVYy_7ZHj0,1871
+cyberjake-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cyberjake-0.0.1.dist-info/top_level.txt,sha256=qqN7u4ji24O84CjC8f8-pWLUiHtW8zOA6r4eEW0-MKc,10
+cyberjake-0.0.1.dist-info/RECORD,,
