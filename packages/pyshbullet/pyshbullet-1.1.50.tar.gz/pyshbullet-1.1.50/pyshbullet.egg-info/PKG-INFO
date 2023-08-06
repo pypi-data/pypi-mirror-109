@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pyshbullet
+Version: 1.1.50
+Summary: Python API wrapper for the pushbullet API
+Home-page: https://github.com/98129182/pyshbullet
+Author: 98129182
+Author-email: the98129182@gmail.com
+License: UNKNOWN
+Description: # Pyshbullet v1.1.50
+        #### Pyshbullet is a async-based API wrapper for the Pushbullet API service.
+        #### Example usage:
+        ```python
+        import pyshbullet
+        import asyncio
+        import os
+        client = pyshbullet.APIClient(TOKEN)
+        async def main():
+          userobj = await client.get_current_user()
+          print(userobj.created)
+          pushesobj = await client.get_push_history(limit=2)
+          print([message.sent.strftime('%m-%d-%Y') for message in pushesobj])
+          chats = await client.list_chats()
+          print([chat.created.strftime('%m-%d-%Y') for chat in chats])
+          print([chat.chatting_with.name for chat in chats if chat.chatting_with != None])
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(main())
+        @client.event
+        async def on_message(message):
+          print(f"Message sent: {message.sent.strftime('%m-%d-%Y')}")
+          print(f'Message content: {message.content}')
+          print(f'Message type: {message.type}')
+          print(f'Message image url: {message.image_url}')
+          print(f'Message file url: {message.file_url}')
+          print(f'Message author: {message.author.name}')
+          print(f'Message author email: {message.author.email}')
+        @client.event
+        async def on_run():
+          print('Started running.')
+        client.run()
+        ```
+        #### Replace TOKEN with your Pushbullet API token.
+        #### The code above gets the user associated with the API token, and will listen to the websocket. Once a new message is sent, it prints out the data of the message.
+        #### Documentation will be added in the future.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
