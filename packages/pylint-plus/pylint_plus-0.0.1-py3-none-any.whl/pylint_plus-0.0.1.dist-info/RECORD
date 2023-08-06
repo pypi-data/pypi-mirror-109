@@ -1,0 +1,8 @@
+pylint_plus/__init__.py,sha256=gySuCJ9PlxNjYPqVV7Fu1sSogsJGuMb8tjBZmwKfjT4,554
+pylint_plus/magic_constant_checker.py,sha256=dUbmdhNn1IA77Esc0d18-eMGEHbUvqv6yyE9nMY-uOA,3573
+pylint_plus/return_method_checker.py,sha256=tQ_PHqaLY8V5Ci3YOVh3uxXPhoxfsDxuOOEE6wTBUY8,1493
+pylint_plus-0.0.1.dist-info/LICENSE,sha256=KNsMqZTPLSx57sNQnfB4KgJb1nRxLx2KR3iZ3Hb3JOw,1080
+pylint_plus-0.0.1.dist-info/METADATA,sha256=jnf2tUpQlDBe3_uhbydwsllqP3zXfyUbHDtrP7i7k_U,969
+pylint_plus-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pylint_plus-0.0.1.dist-info/top_level.txt,sha256=63gYOuHM83ADdQ6Gk17FqFrDzv7E82xJvuN-hHM89gI,12
+pylint_plus-0.0.1.dist-info/RECORD,,
