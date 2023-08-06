@@ -1,0 +1,12 @@
+todus/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+todus/__main__.py,sha256=vBQ82334kX06ImDbFlPFgiBRiLIinwNk3z8Khs6hd74,31
+todus/client.py,sha256=JN2lhkezumEWRB_OVZVp5xSz9pvmp82rBR71sIFgRgs,6017
+todus/errors.py,sha256=q66BylhKBOH-M9LlAz4LPPl0DBwRC3ZwWk-ATagQp5M,87
+todus/main.py,sha256=uhZbuT6pOv6-wFD75IoB6Ssrx0VeWmGNpvAY4vyPBy0,6211
+todus/s3.py,sha256=cdzL3uOOyowuxxjZPsEZAOCX7-eiT6LQc-w9DiGU_XA,3595
+todus/util.py,sha256=k_Cv_pfHNmYJorz6-vhuTox6ep5CehaXUmRi_FM3whU,1209
+todus-0.1.0.dist-info/LICENSE,sha256=-rPda9qyJvHAhjCx3ZF-Efy07F4eAg4sFvg6ChOGPoU,16726
+todus-0.1.0.dist-info/METADATA,sha256=QBlprKxjlUJxayfX2i2KM9c39t8l8HiMRvP73eAm6Eo,1508
+todus-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+todus-0.1.0.dist-info/top_level.txt,sha256=cJ9-4OqiHw_renuo0PEnokFT63f4DS7K7QCpp4THngE,6
+todus-0.1.0.dist-info/RECORD,,
