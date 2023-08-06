@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: tr0nz0d
+Version: 0.0.9
+Summary: Ferramentas e métodos úteis
+Home-page: https://github.com/TR0NZ0D
+Author: Gabriel Menezes de Antonio
+Author-email: TR0NZ0D@protonmail.com
+License: MIT
+Description: # TR0NZ0D Lib
+        
+        ***
+        
+        ## What is?
+        
+        TR0NZ0D Lib is a library created in python to facilitate the use of some tools. The project is still under development, improvements and new features will be added. The main language of the project is portuguese, translations will be added in the future.
+        
+        ## Documentation
+        
+        > [PT-BR](https://tr0nz0d.github.io/pages/projetos/projeto/libs/docs/lib-index.html)
+        
+        ***
+        
+        > EN-US [Coming Soon]
+        
+        
+        # Change Log
+        
+        ***
+        
+        > [PT-BR](https://tr0nz0d.github.io/pages/projetos/projeto/libs/docs/pages/changelog.html)
+        
+        ***
+        
+        > EN-US [Coming Soon]
+Keywords: tronzod
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
