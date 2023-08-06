@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "boardgames"
+version = "1.0.0"
+description = "Board game utility functions"
+authors = ["bijij <josh@josh-is.gay>"]
+license = "Apache-2.0"
+packages = [
+    { include = "boardgames" },
+    { include = "boardgames/py.typed" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+black = "^21.0b1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 119
+target-version = ["py38"]
+
+[tool.pyright]
+include = ["boardgames/**"]
+reportMissingImports = false
