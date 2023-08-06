@@ -1,0 +1,11 @@
+# @package _global_
+
+algorithm:
+  n_epochs: 1
+  eval_repeats: 1
+  epoch_length: 2
+  n_rollout_steps: 20
+
+runner:
+  normalization_samples: 1
+  concurrency: 2
