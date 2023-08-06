@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+SpatialHeterogeneityAnalysis.egg-info/PKG-INFO
+SpatialHeterogeneityAnalysis.egg-info/SOURCES.txt
+SpatialHeterogeneityAnalysis.egg-info/dependency_links.txt
+SpatialHeterogeneityAnalysis.egg-info/top_level.txt

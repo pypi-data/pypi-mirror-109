@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: SpatialHeterogeneityAnalysis
+Version: 1.0.0
+Summary: SHA: a Toolkit for Spatial Heterogeneity Analysis of Spatially Resolved Transcriptomes
+Home-page: https://github.com/Devin-jun/SHA-SpatialHeterogeneityAnalysis
+Author: Devin Jun
+Author-email: 1402795334@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SHA-SpatialHeterogeneityAnalysis
+SHA，A toolkit for genomics spatial heterogeneity analysis which is designed for a variety of spatial transcriptomics techniques such as **seqFISH+**, **MERFISH**, **osmFISH**,**10X Visium**.
+
+SHA provides a series of spatial heterogeneity mining methods, including **spatial heterogeneity genes calculation**, **cell type and tissue area spatial entropy calculation**, **gene expression regulation network based on geographically weighted regression**, **spatial accessibility analysis**.
+
+We analyzed different datasets from three domains: ***neurobiology, tumor biology, and developmental biology*** based on SHA computational frameworks.
+
