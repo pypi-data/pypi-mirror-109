@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+setup.py
+mixed_effect/src/mixed_effect.py
+mixed_effect/src/mixed_effect.egg-info/PKG-INFO
+mixed_effect/src/mixed_effect.egg-info/SOURCES.txt
+mixed_effect/src/mixed_effect.egg-info/dependency_links.txt
+mixed_effect/src/mixed_effect.egg-info/top_level.txt

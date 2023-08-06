@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mixed_effect
+Version: 0.0.1
+Summary: Mixed effects analysis
+Home-page: UNKNOWN
+Author: Vinoth Loganathan
+Author-email: <vinothloganathan@outlook.com>
+License: UNKNOWN
+Keywords: python,KPI,month,mom,yoy,wow,mix effects
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A package that helps in understanding the changes in the metrics over the period/between the groups using mixed effect analysis
+
