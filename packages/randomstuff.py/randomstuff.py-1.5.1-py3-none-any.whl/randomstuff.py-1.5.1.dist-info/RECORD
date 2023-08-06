@@ -1,0 +1,14 @@
+randomstuff/__init__.py,sha256=JzF3Sh2NiX2YOB9D3_0bX8zfG0kVb8CD2ztxvsZ9UhQ,720
+randomstuff/_helper.py,sha256=lNraiWw8V5hV0bCUq54LKd_wfjWEOHaSaFckih5gePU,1357
+randomstuff/client.py,sha256=JxoNe_vEMyNPOmVTpjXl_mv-6geOMlqXRmv186SMMNU,14949
+randomstuff/constants.py,sha256=i7bAglaxQ278XfbDgRr56AEd01ozX5jjy3U9tW-BtlM,502
+randomstuff/errors.py,sha256=GhQBa1bOcOK6TdwOExNExO6H8OKYUyik0WXzDcI1sSU,1862
+randomstuff/flags.py,sha256=Xv9I3vMjkoeI8A-wHxJKZNiwoUpyslJ6tkpv7_vpJU0,741
+randomstuff/joke.py,sha256=xtqFrfMPZPbM98t1HeusGLGz-xsIvE7aTVhsDJ_jWIw,961
+randomstuff/objects.py,sha256=2Lcw2riI53X9V7QOMgisYxo-xNEffCsSV9nKMMAu3nc,4451
+randomstuff/utils.py,sha256=ajoM4Q2qnle1v98XGjIfH2_6haCJvfLxaa2whhWgd-o,2151
+randomstuff.py-1.5.1.dist-info/LICENSE,sha256=YLQkUzjA6SCj-q6HbiY5VkSja-C2Sty7YHOJzvbSLYU,1089
+randomstuff.py-1.5.1.dist-info/METADATA,sha256=R7Hu5Qs-Qa5F_mgbfr6mq78eaClDj79pVFXrCDp9h3Y,3989
+randomstuff.py-1.5.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+randomstuff.py-1.5.1.dist-info/top_level.txt,sha256=VqaHws1QlqbiUak-xCORlY07Y7Bt9FAO7EoZ0EPOWXc,12
+randomstuff.py-1.5.1.dist-info/RECORD,,
