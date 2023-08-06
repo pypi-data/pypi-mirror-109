@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "fancy_dick"
+version = "0.1.1"
+description = "Leverage the sets filling tool!"
+authors = ["Ruslan Nikitin <basilstansfield@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/regnerischerbuerger/testnet_001"
+repository = "https://github.com/regnerischerbuerger/testnet_001"
+keywords = ["set"]
+classifiers = [
+    "Environment :: Console",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
