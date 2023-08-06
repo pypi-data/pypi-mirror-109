@@ -1,0 +1,8 @@
+shein_django_jaeger_middleware/__init__.py,sha256=11UX4dp3vPRX__pOdMpmpnxI2NdTG_Su0__Zn3865As,702
+shein_django_jaeger_middleware/middleware.py,sha256=QRWarKsuHoggdd8f5-kss6RM1bMe1tJKgZSZm0Mz2oI,1552
+shein_django_jaeger_middleware/requests.py,sha256=tbue0BxkAYutFpQSDkddujWX8BuLjfT5wbvU--nh9Xk,2578
+shein_django_jaeger_middleware-0.2.7.dist-info/LICENSE,sha256=sD24DV_33ZiF5pyGgoCvnD-NB-sLKvYgm2Z0vulmTZA,1061
+shein_django_jaeger_middleware-0.2.7.dist-info/METADATA,sha256=gtmYd83MXrZw-NZdSPFONpjXkltB5SOf17Rn3DodzN8,1496
+shein_django_jaeger_middleware-0.2.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+shein_django_jaeger_middleware-0.2.7.dist-info/top_level.txt,sha256=JbZLf-v_ZVY_GAKeFUu9wxw6tGJJRYW5maof8AC75sI,31
+shein_django_jaeger_middleware-0.2.7.dist-info/RECORD,,
