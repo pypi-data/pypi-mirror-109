@@ -1,0 +1,46 @@
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "flake8_typechecking_import"
+author = "Adrian Room"
+author-email = "ingolemo@gmail.com"
+home-page = "https://github.com/ingolemo/flake8-typechecking_import"
+description-file = "readme.rst"
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+requires-python = ">3.6"
+requires = ['flake8', 'dataclasses;python_version=="3.6"']
+
+[tool.flit.metadata.requires-extra]
+test = ['pytest', 'pytest-sugar', 'pytest-coverage', 'coverage[toml]', 'types-dataclasses']
+dev = ['black', 'mypy', 'tox']
+
+[tool.flit.entrypoints."flake8.extension"]
+TCI = "flake8_typechecking_import:Plugin"
+
+[tool.pytest.ini_options]
+addopts = "--cov"
+
+[tool.coverage.run]
+branch = true
+source=["flake8_typechecking_import"]
+
+[tool.coverage.report]
+fail_under=95
+show_missing=true
+skip_covered=true
+
+[tool.mypy]
+strict = true
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py{36,37,38,39},pypy3
+isolated_build = True
+
+[testenv]
+deps= .[test]
+commands = pytest
+"""
