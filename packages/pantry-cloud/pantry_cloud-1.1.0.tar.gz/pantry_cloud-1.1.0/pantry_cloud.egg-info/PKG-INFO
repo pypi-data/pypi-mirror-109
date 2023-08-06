@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pantry-cloud
+Version: 1.1.0
+Summary: A Python package implimenting getpantry.cloud usage.
+Home-page: https://github.com/sarvesh4396/pantry-cloud
+Author: Sarvesh Kumar Dwivedi
+License: MIT
+Download-URL: https://github.com/sarvesh4396/pantry-cloud/archive/refs/tags/V1.1.tar.gz
+Description: # pantry-cloud
+        A Python package for your JSON files to store on cloud. [https://getpantry.cloud/]
+        
+Keywords: pantry_cloud,JSON,API,CLOUD STORAGE
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Communications :: File Sharing
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
