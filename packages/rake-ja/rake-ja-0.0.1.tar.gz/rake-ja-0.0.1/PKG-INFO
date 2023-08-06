@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: rake-ja
+Version: 0.0.1
+Summary: A Japanese Keyword Extraction Library
+Home-page: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+A Japanese Keyword Extraction Library based on rake/nltk
+
