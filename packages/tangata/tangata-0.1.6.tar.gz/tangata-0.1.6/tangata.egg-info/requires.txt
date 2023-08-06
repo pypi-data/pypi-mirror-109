@@ -1,0 +1,7 @@
+flask
+Flask-SocketIO
+PyYAML
+PyDriller
+python-dateutil
+simple-websocket
+whoosh
