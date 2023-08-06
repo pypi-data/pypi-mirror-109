@@ -1,0 +1,8 @@
+README.md
+setup.py
+stark-rest-apiresponse/__init__.py
+stark-rest-apiresponse/stark-rest-apiresponse.py
+stark_rest_apiresponse.egg-info/PKG-INFO
+stark_rest_apiresponse.egg-info/SOURCES.txt
+stark_rest_apiresponse.egg-info/dependency_links.txt
+stark_rest_apiresponse.egg-info/top_level.txt
