@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+sendinblue_templates.egg-info/PKG-INFO
+sendinblue_templates.egg-info/SOURCES.txt
+sendinblue_templates.egg-info/dependency_links.txt
+sendinblue_templates.egg-info/entry_points.txt
+sendinblue_templates.egg-info/requires.txt
+sendinblue_templates.egg-info/top_level.txt
