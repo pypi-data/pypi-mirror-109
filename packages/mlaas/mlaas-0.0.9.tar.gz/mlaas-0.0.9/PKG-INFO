@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mlaas
+Version: 0.0.9
+Summary: ML as a service toolkit
+Home-page: UNKNOWN
+Author: dvirginz@gmail.com
+Author-email: <dvirginz@gmail.com>
+License: UNKNOWN
+Keywords: python,ML
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+ML as a service toolkit
+
