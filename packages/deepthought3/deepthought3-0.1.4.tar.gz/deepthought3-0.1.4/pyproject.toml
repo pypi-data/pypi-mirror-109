@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "deepthought3"
+version = "0.1.4"
+description = "a deep learning library for decoding brain activity"
+authors = ["chanhakim <chanhakim17@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+mne = "^0.23.0"
+matplotlib = "^3.4.2"
+scikit-learn = "^0.24.2"
+black = "^21.5b2"
+librosa = "^0.8.1"
+six = "^1.16.0"
+samplerate = "^0.1.0"
+watchdog = "^2.1.2"
+openpyxl = "^3.0.7"
+xlrd = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
