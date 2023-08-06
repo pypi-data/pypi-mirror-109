@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gym-plannable
+Version: 0.1
+Summary: Provides an OpenAI-Gym-like interface for environments that support planning and for multi-agent environments.
+Home-page: UNKNOWN
+Author: Michal Gregor
+License: BSD 3-Clause License
+Description: # Gym Plannable
+        
+        Provides an OpenAI-Gym-like interface for environments that support planning and for multi-agent environments.
+        
+Keywords: gym,planning,game playing,search,multi-player,multi-agent
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: javascript_players
+Provides-Extra: flappy
