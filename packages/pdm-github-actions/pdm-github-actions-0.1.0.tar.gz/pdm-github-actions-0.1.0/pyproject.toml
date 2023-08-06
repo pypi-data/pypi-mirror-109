@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pdm-github-actions"
+version = "0.1.0"
+description = "A GitHub Actions demo focused on python"
+authors = ["JnyJny <erik.oshaughnessy@gmail.com>"]
+license = "CC0 1.0 Universal"
+packages = [ { include = "bogus" } ]
+
+[tool.poetry.scripts]
+bogus="bogus.main:cli"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.25.1"
+typer = "^0.3.2"
+fastapi = {version = "^0.65.2", extras = ["webapi"]}
+uvicorn = {version = "^0.14.0", extras = ["webapi"]}
+
+[tool.poetry.dev-dependencies]
+black = "^21.6b0"
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
