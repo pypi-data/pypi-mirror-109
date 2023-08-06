@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+src/notelink/__init__.py
+src/notelink/configs.py
+src/notelink/main.py
+src/notelink.egg-info/PKG-INFO
+src/notelink.egg-info/SOURCES.txt
+src/notelink.egg-info/dependency_links.txt
+src/notelink.egg-info/entry_points.txt
+src/notelink.egg-info/requires.txt
+src/notelink.egg-info/top_level.txt
+src/notelink/core/__init__.py
+src/notelink/core/helpers.py
+src/notelink/promps/__init__.py
+src/notelink/promps/list.py
+src/notelink/promps/search.py
