@@ -1,0 +1,3 @@
+[console_scripts]
+moleview = moleview.src.moleview:main
+
