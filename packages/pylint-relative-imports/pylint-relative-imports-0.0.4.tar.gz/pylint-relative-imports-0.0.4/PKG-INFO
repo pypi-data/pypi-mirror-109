@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pylint-relative-imports
+Version: 0.0.4
+Summary: Pylint plugin which adds linter error for relative imports from the root of the project
+Home-page: https://github.com/kubikvid/pylint-relative-imports
+Author: Andrey Chernykh
+Author-email: moonquiz@ya.ru
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+UNKNOWN
+
