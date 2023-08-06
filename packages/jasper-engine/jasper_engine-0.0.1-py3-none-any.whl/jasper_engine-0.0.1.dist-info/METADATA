@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: jasper-engine
+Version: 0.0.1
+Summary: A android reverse tool
+Home-page: http://github.com/vforkliu/jasper
+Author: forkliu
+Author-email: vforkliu@gmail.com
+License: UNKNOWN
+Keywords: android,unicorn,emulator
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# Jasper - A Android/iOS Reverse Tool
+## Features
+- Simulation execution for Android
+
+## References
+- [AndroidNativeEmu](https://github.com/AeonLucid/AndroidNativeEmu.git)
+- [ExAndroidNativeEmu](https://github.com/maiyao1988/ExAndroidNativeEmu.git)
+
