@@ -1,0 +1,17 @@
+warc2zim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+warc2zim/main.py,sha256=RK8LGwCSyOFWWYzbONkQdNZj5NTZM_w_0yemGBZy2_U,25470
+warc2zim/locale/fr/LC_MESSAGES/messages.mo,sha256=cVGvFfyiinvdVcz6YQQGnCSr6N5BBnsuwfuArNgLKVU,1458
+warc2zim/templates/404.html,sha256=wl9keTDkGmzlirR5POerVfRP7DHMpjJBIhCD7kn2cuE,1160
+warc2zim/templates/index.html,sha256=5_9PH0RXoxoFPlZCuS6m8EnI17KDP7Iqi89ECZ-ioTI,874
+warc2zim/templates/load.js,sha256=jMBsDUABII5ty0JqvR72nvVuCd_mwFtqAWjPuXwIsT4,2305
+warc2zim/templates/sw.js,sha256=UYNJ3l4ymaGrOuh5tv9fKpBnu7GpfGS7cP5jrOJVqLc,929153
+warc2zim/templates/sw_check.html,sha256=oGsE35oGQ8hQ_1GQVwwXTDP0rwf9Ejux19GpYPsXX0Q,811
+warc2zim/templates/topFrame.html,sha256=yYGc00AaoT6JCZmohp9igfxY3scv6lZfRjF3OKHbh1Q,2419
+warc2zim-1.3.6.data/data/VERSION,sha256=9OquB8ct0AMCikWD7pPlFG5PsuW6gFZtPnnXPt057jY,6
+warc2zim-1.3.6.data/data/requirements.txt,sha256=hzUQkxIAwyTpYUcTHpPqPZNf2t9usXuOX1LBU9_-Gtw,184
+warc2zim-1.3.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+warc2zim-1.3.6.dist-info/METADATA,sha256=XJK1F55FeH2wfVev5n0VgW5w71uQnC3OVro_PoLAbqg,4743
+warc2zim-1.3.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+warc2zim-1.3.6.dist-info/entry_points.txt,sha256=P49eQPqB9k2nMM-GpKUVOg8Phq4T23L2177cHPRdoKc,73
+warc2zim-1.3.6.dist-info/top_level.txt,sha256=mcjwpq-kqpo5WQwmAovW16TZmL4JXe7d20TMMJRaf9I,9
+warc2zim-1.3.6.dist-info/RECORD,,
