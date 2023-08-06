@@ -1,0 +1,6 @@
+setup.py
+flaskjoy.egg-info/PKG-INFO
+flaskjoy.egg-info/SOURCES.txt
+flaskjoy.egg-info/dependency_links.txt
+flaskjoy.egg-info/entry_points.txt
+flaskjoy.egg-info/top_level.txt
