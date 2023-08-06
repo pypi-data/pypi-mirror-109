@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: boggle_solver
+Version: 0.20
+Summary: A package for auto-generating the possible combinations of a boggle grid.
+Home-page: https://github.com/euanacampbell/boggle_solver
+Author: Euan Campbell
+Author-email: dev@euan.app
+License: MIT
+Download-URL: https://github.com/euanacampbell/boggle_solver/archive/refs/heads/master.tar.gz
+Description: [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE) [![boggle_test Actions Status](https://github.com/euanacampbell/boggle_solver/workflows/boggle_test/badge.svg)](https://github.com/euanacampbell/boggle_solver/actions)
+        
+        A recursive method for finding all words in a given square grid.
+        
+        ## Installation
+        
+        ```bash
+        pip3 install boggle-solver
+        ```
+        
+        ## Import
+        
+        ```python
+        from boggle_solver import *
+        ```
+        
+        ## Usage
+        Create a 2-dimensional array and pass this into the package.
+        
+        ```python
+        from boggle_solver import *
+        
+        grid = [
+                ['M','A','P'],
+                ['E','T','E'],
+                ['D','E','N'],
+               ]
+        
+        boggle=Grid(grid)
+        ```
+        
+        To confirm this worked, the below function can be used.
+        
+        ```python
+        boggle.print_grid()
+        
+        ['M', 'A', 'P']
+        ['E', 'T', 'E']
+        ['D', 'E', 'N']
+        ```
+        
+        Now search for all words. This will take ~20 seconds for a 3x3 grid.
+        
+        ```python
+        words = boggle.find_all_words()
+        
+        print(words[:10])
+        
+        ['MEAT', 'MET', 'METED', 'MEET', 'MAT', 'MATE', 'MATED', 'MAP', 'EDEN', 'EAT']
+        ```
+        
+Keywords: boggle,puzzle,recursive
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
