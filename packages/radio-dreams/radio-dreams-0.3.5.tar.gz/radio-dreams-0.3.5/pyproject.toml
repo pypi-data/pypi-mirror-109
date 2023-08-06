@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "radio-dreams"
+version = "0.3.5"
+license = "MIT"
+readme = "README.rst"
+description = "Imagined Interferometers"
+keywords = ["radio", "interferometer", "simulator"]
+homepage = "https://github.com/amanchokshi/radio-dreams"
+repository = "https://github.com/amanchokshi/radio-dreams"
+documentation = "https://radio-dreams.readthedocs.io"
+authors = ["Aman Chokshi <achokshi@student.unimelb.edu.au>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.10"
+numpy = "^1.20.3"
+scipy = "^1.6.3"
+skyfield = "^1.39"
+numba = "^0.53.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+coverage = {extras = ["toml"], version = "^5.5"}
+pytest-cov = "^2.12.1"
+black = "^21.6b0"
+flake8 = "^3.9.2"
+flake8-black = "^0.2.1"
+Sphinx = "^4.0.2"
+codecov = "^2.1.11"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 90
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
