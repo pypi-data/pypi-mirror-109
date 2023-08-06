@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+color_palette_at.egg-info/PKG-INFO
+color_palette_at.egg-info/SOURCES.txt
+color_palette_at.egg-info/dependency_links.txt
+color_palette_at.egg-info/requires.txt
+color_palette_at.egg-info/top_level.txt
