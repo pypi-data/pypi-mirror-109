@@ -1,0 +1,10 @@
+README.md
+README.rst
+setup.cfg
+setup.py
+karen.egg-info/PKG-INFO
+karen.egg-info/SOURCES.txt
+karen.egg-info/dependency_links.txt
+karen.egg-info/not-zip-safe
+karen.egg-info/requires.txt
+karen.egg-info/top_level.txt
