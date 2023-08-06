@@ -1,0 +1,9 @@
+gamgee/__init__.py,sha256=Sf1Mu_tIo80JH8C1pASbY5zvYnSUy47-TZrBIQr-lKQ,2976
+gamgee/args.py,sha256=OW0G2E1PSc57fAwqdFwUFt0yeyOSQ1n8iBeKgRIPeKs,850
+gamgee/auth.py,sha256=ygt-r4UH2WiSc91-jhwlxn1YKkwnUaSXDCAvQ0F6Hb4,2215
+gamgee/errors.py,sha256=uib-2O8G0XOpP7BxN3IIuRF2cPWWGfMWcS7iW306XUQ,879
+gamgee-0.0.4.dist-info/LICENSE,sha256=mjeRyhQkU8nQHjbkCP_atzkWpgnX6L7iBCJAfCzEPYY,1068
+gamgee-0.0.4.dist-info/METADATA,sha256=QwluSaNLzlEbLbxtc5otAgDg4ZwYr4pgmDBJw2qEG1I,1532
+gamgee-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gamgee-0.0.4.dist-info/top_level.txt,sha256=vijdsLZSzLctkZbj5A3DV2Y6HnxU7h8Wxlxds6XiNuY,7
+gamgee-0.0.4.dist-info/RECORD,,
