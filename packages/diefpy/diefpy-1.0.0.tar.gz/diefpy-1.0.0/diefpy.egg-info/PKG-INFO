@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: diefpy
+Version: 1.0.0
+Summary: Python package for computing diefficiency metrics dief@t and dief@k.
+Home-page: https://github.com/SDM-TIB/diefpy
+Author: Philipp D. Rohde, Nikoleta Themeliotou
+Author-email: philipp.rohde@tib.eu
+License: MIT
+Download-URL: https://github.com/SDM-TIB/diefpy/archive/refs/tags/v1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: metrics benchmarking efficiency diefficiency-metrics dief python
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Matplotlib
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: System :: Benchmark
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
