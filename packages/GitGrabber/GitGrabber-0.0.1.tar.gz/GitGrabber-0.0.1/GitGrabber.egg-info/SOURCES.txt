@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+GitData/__init__.py
+GitData/core.py
+GitGrabber.egg-info/PKG-INFO
+GitGrabber.egg-info/SOURCES.txt
+GitGrabber.egg-info/dependency_links.txt
+GitGrabber.egg-info/top_level.txt
+GitGrabber.egg-info/zip-safe
