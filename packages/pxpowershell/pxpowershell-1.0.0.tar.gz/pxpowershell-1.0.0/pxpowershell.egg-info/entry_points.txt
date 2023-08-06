@@ -1,0 +1,3 @@
+[console_scripts]
+dir2iso = pxpowershell.example_dir2iso:main
+
