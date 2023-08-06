@@ -1,0 +1,11 @@
+borgapi/__init__.py,sha256=djERfEQ24Ray3amPnnW4kad1OLKVqe5hLWnBxyTI_vM,111
+borgapi/borgapi.py,sha256=CxyhiSIAam7TGFdkEU39HPdqT4KnEwdUwcarhwMVjgU,35902
+borgapi/options.py,sha256=Qg-5hUgjELpjGhM7Xe7WBMzWKLVyoAH-W027H9ZdZMI,12104
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_borgapi.py,sha256=zA7rLcBJE_MSRmA0lZFOXl2q0-r3wquFknJbNQ4gasI,19898
+test/test_options.py,sha256=uhn7--U8yOczl__muVsh45nJqFvBPxxdDZdieowPBUc,2268
+borgapi-0.4.0.dist-info/LICENSE,sha256=g7PjdvkUMJa85GMb6zUCyW8aX_yk5Ym1x7if5W5ULPI,1050
+borgapi-0.4.0.dist-info/METADATA,sha256=g5ONmM2xl-fCtfSfpVG9ouRSVRugRShY6bGvoBaAoOI,7753
+borgapi-0.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+borgapi-0.4.0.dist-info/top_level.txt,sha256=23Hbpr8OhmPV1WMBvLmZOwEC-3buY84J7ZckxsN7Id4,13
+borgapi-0.4.0.dist-info/RECORD,,
