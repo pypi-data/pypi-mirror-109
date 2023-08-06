@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/weather_forecaster.egg-info/PKG-INFO
+src/weather_forecaster.egg-info/SOURCES.txt
+src/weather_forecaster.egg-info/dependency_links.txt
+src/weather_forecaster.egg-info/top_level.txt

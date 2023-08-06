@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: weather-forecaster
+Version: 0.0.1
+Summary: Python based simple weather forecaster.
+Home-page: UNKNOWN
+Author: Vighnesh
+License: UNKNOWN
+Description: ###Installation
+        ```pip install weather-forcaster```
+        ###Usage
+        ###Input
+        ```
+        import weather-forecaster as wf
+        wf.forecast("india","delhi")
+        ```
+        ###Output
+        ```
+        Scraping Weather Data
+        ---------------------
+        Temperature: 39 °C
+        Climate: Haze
+        Location: New Delhi / Safdarjung
+        Current Time: 10 Jun 2021, 17:20:18
+        Latest Report: 10 Jun 2021, 14:30
+        Visibility: 4 km
+        Pressure: 995 mbar
+        Humidity: 46%
+        Dew Point: 25 °C
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
