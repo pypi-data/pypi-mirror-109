@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pycamera/__init__.py
+pycamera/camera.py
+pycamera/frame.py
+pycamera.egg-info/PKG-INFO
+pycamera.egg-info/SOURCES.txt
+pycamera.egg-info/dependency_links.txt
+pycamera.egg-info/not-zip-safe
+pycamera.egg-info/requires.txt
+pycamera.egg-info/top_level.txt
