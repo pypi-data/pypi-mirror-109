@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+pyandy/__init__.py
+pyandy/module_print.py
+pyandy.egg-info/PKG-INFO
+pyandy.egg-info/SOURCES.txt
+pyandy.egg-info/dependency_links.txt
+pyandy.egg-info/top_level.txt
