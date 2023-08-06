@@ -1,0 +1,8 @@
+
+        [ckan.plugins]
+        search_tweaks=ckanext.search_tweaks.plugin:SearchTweaksPlugin
+        search_tweaks_relevance=ckanext.search_tweaks.plugin:SearchTweaksRelevancePlugin
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
+    
