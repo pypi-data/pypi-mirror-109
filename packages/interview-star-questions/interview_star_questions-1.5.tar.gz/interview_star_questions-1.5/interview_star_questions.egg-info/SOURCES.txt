@@ -1,0 +1,8 @@
+README.md
+README.rst
+setup.py
+interview_star_questions.egg-info/PKG-INFO
+interview_star_questions.egg-info/SOURCES.txt
+interview_star_questions.egg-info/dependency_links.txt
+interview_star_questions.egg-info/entry_points.txt
+interview_star_questions.egg-info/top_level.txt
