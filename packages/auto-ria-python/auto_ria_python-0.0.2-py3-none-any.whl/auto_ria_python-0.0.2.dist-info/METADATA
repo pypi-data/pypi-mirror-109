@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: auto-ria-python
+Version: 0.0.2
+Summary: AutoRIA API Python wrapper
+Home-page: https://github.com/DSAdv/auto-ria-python
+Author: David Ikkes
+Author-email: d.ikkes2010@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# auto-ria-python
+AutoRIA API Python Client
+
+
