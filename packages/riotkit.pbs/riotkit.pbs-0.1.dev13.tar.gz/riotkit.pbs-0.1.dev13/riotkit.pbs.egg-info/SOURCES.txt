@@ -1,0 +1,16 @@
+.gitignore
+MANIFEST.in
+Makefile
+Pipfile
+Pipfile.lock
+README.md
+requirements.txt
+setup.py
+.github/workflows/test-and-release.yaml
+riotkit.pbs.egg-info/PKG-INFO
+riotkit.pbs.egg-info/SOURCES.txt
+riotkit.pbs.egg-info/dependency_links.txt
+riotkit.pbs.egg-info/requires.txt
+riotkit.pbs.egg-info/top_level.txt
+riotkit/pbs/__init__.py
+riotkit/pbs/setup.py
