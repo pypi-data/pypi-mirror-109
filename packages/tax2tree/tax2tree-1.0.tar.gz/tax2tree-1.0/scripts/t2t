@@ -1,0 +1,188 @@
+#!/usr/bin/env python
+
+from skbio import TreeNode
+import click
+
+import t2t
+import t2t.nlevel as nl
+import t2t.util as ut
+import t2t.remap as rmap
+import t2t.consistency as con
+import t2t.cli as t2tcli
+
+
+def print_version(ctx, param, value):
+    if not value or ctx.resilient_parsing:
+        return
+    click.echo('Version %s' % t2t.__version__)
+    ctx.exit()
+
+CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
+
+
+@click.group(context_settings=CONTEXT_SETTINGS)
+@click.option('--version', is_flag=True, callback=print_version,
+              expose_value=False, is_eager=True)
+@click.pass_context
+def cli(ctx):
+    pass
+
+
+@cli.command()
+@click.option('--consensus-map', '-m', required=True,
+              help='Input consensus map', type=click.File('U'))
+@click.option('--output', '-o', required=True, help='Output basename')
+@click.option('--tree', '-t', required=True, help='Input tree',
+              type=click.File('U'))
+@click.option('--no-suffix', '-n',
+              help="Don't append suffixes (e.g. _1, _2) to polyphyletic " +
+                   "groups",
+              is_flag=True, default=False)
+@click.option('--suffix-char', '-s',
+              help="Use a different char (instead of underscore) for " +
+                   "polyphyletic group suffixes",
+              required=False, default="_", type=str)
+
+def decorate(tree, consensus_map, output, no_suffix, suffix_char):
+    """Decorate a taxonomy onto a tree"""
+    append_rank = False
+
+    # get desired ranks from first line of consensus map
+    seed_con = consensus_map.readline().strip().split('\t')[1]
+    nl.determine_rank_order(seed_con)
+    consensus_map.seek(0)
+
+    tipname_map = nl.load_consensus_map(consensus_map, append_rank)
+    tree_ = nl.load_tree(tree, tipname_map)
+    counts = nl.collect_names_at_ranks_counts(tree_)
+
+    nl.decorate_ntips(tree_)
+    nl.decorate_name_relative_freqs(tree_, counts, 2)
+    nl.set_ranksafe(tree_)
+    nl.pick_names(tree_)
+    scores = nl.name_node_score_fold(tree_)
+
+    nl.set_preliminary_name_and_rank(tree_)
+
+    contree, contree_lookup = nl.make_consensus_tree(tipname_map.values())
+    nl.backfill_names_gap(tree_, contree_lookup)
+    nl.commonname_promotion(tree_)
+
+    if not no_suffix:
+        nl.make_names_unique(tree_, suffix_glue_char=suffix_char)
+
+    constrings = nl.pull_consensus_strings(tree_)
+
+    f = open(output + '-consensus-strings', 'w')
+    f.write('\n'.join(constrings))
+    f.close()
+
+    nl.save_bootstraps(tree_)
+    tree_.write(output)
+
+    f = open(output + '-fmeasures', 'w')
+    f.write('#taxon\tscore\n')
+    for rank in scores:
+        for name, score in sorted(scores[rank])[::-1]:
+            f.write("%s\t%f\n" % (name, score))
+    f.close()
+
+@cli.command()
+@click.option('--tree', '-t', required=True, help='Input tree',
+              type=click.File('U'))
+@click.option('--tips', '-n', required=True, help='Tip names',
+              type=click.File('U'))
+@click.option('--output', '-o', required=True, help='Result',
+              type=click.File('w'))
+def reroot(tree, tips, output):
+    """Reroot a tree"""
+    tipnames = set([l.strip() for l in tips])
+    tree_ = TreeNode.read(tree)
+    rerooted = ut.reroot(tree_, tipnames)
+    output.write(str(rerooted))
+
+
+@cli.command()
+@click.option('--otus', '-i', required=True,
+              help='Input OTU map', type=click.File('U'))
+@click.option('--consensus-map', '-m', required=True,
+              help='Input consensus map', type=click.File('U'))
+@click.option('--output', '-o', required=True, help='Result',
+              type=click.File('w'))
+def remap(otus, consensus_map, output):
+    """Remap the taxonomy to diff reps"""
+    tmp = [l.strip().split('\t') for l in consensus_map]
+    mapping = {k: v.split('; ') for k, v in tmp}
+    otu_map = rmap.parse_otu_map(otus)
+    result = rmap.remap_taxonomy(otu_map, mapping)
+
+    for k, v in result.iteritems():
+        output.write("%s\t%s\n" % (k, '; '.join(v)))
+
+
+@cli.command()
+@click.option('--tree', '-t', required=True, help='Input tree',
+              type=click.File('U'))
+@click.option('--output', '-o', required=True, help='Result',
+              type=click.File('w'))
+def fetch(tree, output):
+    """Fetch the taxonomy off the tree"""
+    result, error = t2tcli.fetch(tree)
+    if error:
+        click.echo('\n'.join(result))
+    else:
+        output.write('\n'.join(result))
+
+@cli.command()
+@click.option('--taxonomy', '-t', required=True, help='Input tree',
+              type=click.File('U'))
+@click.option('--limit', '-l', required=False, help='Limit output',
+              default=10, type=int)
+@click.option('--flat-errors/--no-flat-errors', default=True)
+@click.option('--hierarchy-errors/--no-hierarchy-errors', default=True)
+def validate(taxonomy, limit, flat_errors, hierarchy_errors):
+    """Validate a taxonomy"""
+    lines = taxonomy.readlines()
+    result, err = t2t.cli.validate(lines, limit, flat_errors, hierarchy_errors)
+
+    click.echo('\n'.join(result))
+    click.echo('Validation complete.')
+
+@cli.command()
+@click.option('--consensus-map', '-m', required=True,
+              help='Input consensus map', type=click.File('U'))
+@click.option('--output-file', '-o', required=True, help='Output file')
+@click.option('--tree', '-t', required=True, help='Input tree',
+              type=click.File('U'))
+@click.option('--rooted/--unrooted', default=True, help='Treat tree as rooted or unrooted')
+@click.option('--verbose', is_flag=True, default=False, help='Provide detailed output')
+def consistency(tree, consensus_map, output_file, rooted, verbose):
+    """Consistency of a tree relative to taxonomy"""
+    if verbose:
+        click.echo('Determining taxonomic consistency of: ')
+        click.echo('  tree = ' + tree.name)
+        click.echo('  consensus-map = ' + consensus_map.name)
+        click.echo('  rooted = ' + str(rooted))
+        click.echo('')
+
+    # dynamically determine taxonomic ranks
+    seed_con = consensus_map.readline().strip().split('\t')[1]
+    nl.determine_rank_order(seed_con)
+
+    tipname_map = nl.load_consensus_map(consensus_map, append_rank=False)
+    tree = nl.load_tree(tree, tipname_map)
+
+    counts = nl.collect_names_at_ranks_counts(tree)
+    nl.decorate_ntips_rank(tree)
+    nl.decorate_name_counts(tree)
+
+    # determine taxonomic consistency of tree
+    c = con.Consistency(counts, len(nl.RANK_ORDER))
+    consistency_index = c.calculate(tree, rooted)
+    c.write(output_file, consistency_index)
+    if verbose:
+        click.echo('Consistency written to: ' + output_file)
+
+
+if __name__ == '__main__':
+    cli()
