@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: rkd.core
+Version: 0.0.0
+Summary: Task executor, handy for DevOps and not only - balance between Makefile and Gradle.
+Home-page: https://riotkit.org
+Author: RiotKit non-profit organization
+Author-email: riotkit@riseup.net
+License: Apache-2
+Description: UNKNOWN
+Keywords: setup,distutils
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
