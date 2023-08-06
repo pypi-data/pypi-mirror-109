@@ -1,0 +1,3 @@
+[console_scripts]
+dartiq=dartiq.cli:main
+
