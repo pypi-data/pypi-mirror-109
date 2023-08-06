@@ -1,0 +1,3 @@
+[console_scripts]
+xdrone = cmdline.xdrone:main
+
