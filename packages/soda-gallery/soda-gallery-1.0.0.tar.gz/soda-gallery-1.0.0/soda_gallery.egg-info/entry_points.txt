@@ -1,0 +1,3 @@
+[console_scripts]
+soda = soda.soda:main
+
