@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: LogicPy
+Version: 0.0.1
+Summary: Implementation of logic circuits using python
+Home-page: https://github.com/Sunillad08/Digital_Logic
+Author: Sunil Lad & Parth Khanolkar
+Author-email: ladsunil08@gmail.com
+License: MIT
+Keywords: Logic circuit,pylogic
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+# Digital Logic Functions
+
+**Project implements basic to advance logic functions like gates , flip flops and many more circuits...**
+
+## Contributors:
+> [Sunil Lad](https://github.com/Sunillad08)
+
+> [Parth Khanolkar](https://github.com/ParthKhanolkar)
+
+
+# Circuits and logics to be implemented
+
+### First release : 
+
+- [Bases Conversion](conversion.py) 
+    - Binary to Decimal
+    - Binary to Hexadecimal
+    - Binary to Octal
+    - Decimal to Hexadecimal
+    - Decimal to Octal
+    - Decimal to Binary
+    - Octal to Hexadecimal
+    - Octal to Decimal
+    - Octal to Binary
+    - Hexadecimal to Octal
+    - Hexadecimal to Decimal
+    - Hexadecimal to Binary
+    - Binary to BCD 
+    - Binary to gray
+    - BCD to Binary
+    - BCD to gray
+    - Gray to Binary
+    - Gray to BCD
+
+- [Logic Gates](gates.py)
+    - AND gate
+    - OR gate
+    - NOT gate
+    - NAND gate
+    - NOR gate
+    - XOR gate
+    - XNOR gate
+
+- [Flip flops](flipflops.py) 
+    - Nand Latch
+    - Nor Latch
+    - SR flip flop
+    - D flip flop
+    - JK flip flop
+    - JK master slave flip flop
+    - T flip flop
+
+- [Combinational Logic Circuits](combination_logic.py)
+    - Multiplexer
+    - Demultiplexer
+    - Encoder
+    - Decoder
+
+- [Display terminals](display_terminals.py)
+    - Seven segment display
+
+- [Arithmetic Circuits](arithematic_circuit.py)
+    - Half adder
+    - Full adder
+    - Half subtractor
+    - Full subtractor
+    - Comparator
+
+- [Counter](counters.py)
+  - Ring counter
+  - Jonhson counter
+  - Ripple counter 
+
+- [Shift Registers](shift_registers.py)
+  - SISO
+  - SIPO
+  - PIPO
+  - PISO
+

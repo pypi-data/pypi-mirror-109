@@ -1,0 +1,15 @@
+LogicPy/__init__.py,sha256=QlPSMlu65VhTlwLLds_oTQ6Ug-fVO2RxdRuOKrML15o,415
+LogicPy/arithematic_circuit.py,sha256=KzxZhrkYxGl5xsc2WTctFE2Uyxf6aJQYAA86ysb3Cec,3527
+LogicPy/combination_logic.py,sha256=3xUFFdLh6n6KPE9ggrHesVUAe29XTQSzhPunB6Xb2DE,9325
+LogicPy/conversion.py,sha256=OZjuhrz5GYnvJGS5AqzsSt9b6V4tZtqJey39z9X1NIU,7535
+LogicPy/counters.py,sha256=4kiNWP4ANaolR5Xk7lB8DXEvfMQ_9g0xBnG0MsolRgo,4259
+LogicPy/display_terminals.py,sha256=MsT2KRLpu8keAQay2Lvwm5dYeJl-KyGJJrXuMGuz0l8,4696
+LogicPy/flipflops.py,sha256=Wu6SmMNGzl0yQfKfAxkhJ4zMlJGrinjOUZWv_AwwsoQ,4017
+LogicPy/gates.py,sha256=oS41t17KqkbRb_JEQmy9W0fe4qoPRC6cuC5gSZq7Lt4,1290
+LogicPy/main_functions.py,sha256=jyLHgw1K0NbBYBB2LmXK3UmIAOorjfUpkjcGvF9vNao,510
+LogicPy/shift_registers.py,sha256=PRi3hcxplE2ykGAwDckBW9Q8QLN-LLyLUIDMjcVI7g0,5720
+LogicPy-0.0.1.dist-info/LICENSE.txt,sha256=4o_RR5jkxFO2cMok283sNMC7bC4tHJfhtJbS9ZLTOZM,1075
+LogicPy-0.0.1.dist-info/METADATA,sha256=cJZz5Gvev3WvmCfZXvcutWpaauhEP0L6FHdWxVCaF8M,2143
+LogicPy-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+LogicPy-0.0.1.dist-info/top_level.txt,sha256=fkt_-J-vAHaRvh3DCnCxR9XZ19E3vaDro6VJnJp2WN8,8
+LogicPy-0.0.1.dist-info/RECORD,,
