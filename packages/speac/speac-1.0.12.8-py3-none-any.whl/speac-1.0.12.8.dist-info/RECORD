@@ -1,0 +1,15 @@
+speac/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+speac/chopin_33_3.py,sha256=88GmgzCCAOcau-MaUkbQo0jiseTTtudShDUF7Ep3VBU,19206
+speac/chopin_63_2.py,sha256=xPwi2d1rhM0n__cIHyNl8r_iOX54tgfJ9wIk4ho6RFQ,17720
+speac/chopin_67_4.py,sha256=wlk_o6W0Ms-jjigULNBfEQDuZmTTP1MgB16oNt4c5Tg,35146
+speac/new_form.py,sha256=fFgsg0Z6IvrzRieF0Ukj9gtpAp_T9HUUpEFdWLpNRdM,15040
+speac/pattern_match.py,sha256=CxjQMQto3lmBuCFy6Y3tPVeNBDmZOTcImJMjthZ9IAA,3921
+speac/speac.py,sha256=E5vBwyEb4f2_RWTWyiYhSoj_lPiux9xUF7_UwXtzXC4,25862
+speac/speac_analysis.py,sha256=BAGBDzS1EwAipqXPiPHgHHtQyXfpSj995kqG_IFN7TQ,5370
+speac/speac_settings.py,sha256=f2rDjcEhyaALhAuJSviH1t38YkTHtM8gS--25pm9O0Q,850
+speac/top_level.py,sha256=MOhlWdMPP8GNib0hAce1pPvccvwN_251ADMj9n5YY30,6170
+speac-1.0.12.8.dist-info/LICENSE.txt,sha256=7QsIyiP_bd3iUL05jBVBUSfKwTPdpD62k1rDy9ADOKY,15
+speac-1.0.12.8.dist-info/METADATA,sha256=uyuV73XT4ZoNEzC_E3ViqVDQvjUPJc9xsKymDqlMauY,836
+speac-1.0.12.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+speac-1.0.12.8.dist-info/top_level.txt,sha256=KgTGS_04Tfy4zFjpbuy_Gk97trt8YhzfBMvl--auk7M,6
+speac-1.0.12.8.dist-info/RECORD,,
