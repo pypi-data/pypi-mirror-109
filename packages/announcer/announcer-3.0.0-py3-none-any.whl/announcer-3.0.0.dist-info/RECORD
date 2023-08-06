@@ -1,0 +1,8 @@
+announcer/__init__.py,sha256=bmfjBe-ofi7Sfmc8TzhUXzlBU5GLvI0IOWtgmCjDkDw,9655
+announcer/changelogrenderer.py,sha256=VjQSMQx50eJ-1xqlYa4ACUv6rlcuOSmFo3jyxxN8DTg,6847
+announcer/teamschangelogrenderer.py,sha256=9_KH-sxbVQOVAPxUaGjvXPvb9zTrb1avf7ld1k96cbM,2792
+announcer-3.0.0.dist-info/entry_points.txt,sha256=Q8qh_ZvG-qTRDA5OTZvwOIafpuA9ShhGtVvVTQYNguk,52
+announcer-3.0.0.dist-info/LICENSE.md,sha256=Ms_5DKmonk7Zofk7HJKbUVXtdZBkcuxVMXpqy8vLd6A,1089
+announcer-3.0.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+announcer-3.0.0.dist-info/METADATA,sha256=fcWnvc1fe9l9y0fzrM0C5TvGtqcGeRwozaKEbw47fgg,3274
+announcer-3.0.0.dist-info/RECORD,,
