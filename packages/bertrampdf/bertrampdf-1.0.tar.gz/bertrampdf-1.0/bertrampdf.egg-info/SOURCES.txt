@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bertrampdf/__init__.py
+bertrampdf/pdfimg.py
+bertrampdf/pdftext.py
+bertrampdf.egg-info/PKG-INFO
+bertrampdf.egg-info/SOURCES.txt
+bertrampdf.egg-info/dependency_links.txt
+bertrampdf.egg-info/top_level.txt
