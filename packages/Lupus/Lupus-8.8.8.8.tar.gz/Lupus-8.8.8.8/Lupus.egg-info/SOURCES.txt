@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+Lupus.egg-info/PKG-INFO
+Lupus.egg-info/SOURCES.txt
+Lupus.egg-info/dependency_links.txt
+Lupus.egg-info/top_level.txt
