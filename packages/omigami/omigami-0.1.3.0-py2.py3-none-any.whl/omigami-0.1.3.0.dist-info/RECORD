@@ -1,0 +1,10 @@
+omigami/__init__.py,sha256=9rYe_gPIgcAou_LWzSqIOaomOi7Yoa0mRKqPIDkaZbg,358
+omigami/_version.py,sha256=RBLHyZOj06DhUrF0tVcW-DCo4-Ou8ERY3NICfjGTML0,499
+omigami/config.py,sha256=VL2Dg6wSKvDAcFA8EMBBZZYqBHdapQ2pHq-zWy__Cuw,68
+omigami/spec2vec.py,sha256=DcCr1HmjLEkQPTwx03UsHv_XFnnpcHicEPjTOJJdIcM,7933
+omigami-0.1.3.0.dist-info/LICENSE,sha256=iMPQ66bTmXeKwFYMtMQeJx9Xund3OGWcZxIqZF-A5jE,1076
+omigami-0.1.3.0.dist-info/METADATA,sha256=OrCDffQaILdmTnhaxwWH_sqQULvkqTI_W3W9IV_xZUI,938
+omigami-0.1.3.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+omigami-0.1.3.0.dist-info/entry_points.txt,sha256=z-Mr0Hx1LqSzUVUTlbbkUvSrUCg4lyX1gF9Mc8c25X8,46
+omigami-0.1.3.0.dist-info/top_level.txt,sha256=taaiQXChcuFFMHllVw9j8pFq2QMjKvfFYn8931ierXI,8
+omigami-0.1.3.0.dist-info/RECORD,,
