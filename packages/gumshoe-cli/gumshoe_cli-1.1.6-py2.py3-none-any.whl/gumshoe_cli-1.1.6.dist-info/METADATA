@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: gumshoe-cli
+Version: 1.1.6
+Summary: Your habit tracking command line tool.
+Home-page: https://github.com/philipcsaplar/gumshoe-cli/tree/master/gumshoe
+Author: Philip Csaplar
+Author-email: philip@osit.co.za
+License: MIT
+Keywords: habits goals track tracking quantified self
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Dist: click
+Requires-Dist: terminaltables
+
+Your habit tracking command line tool.
+
+
