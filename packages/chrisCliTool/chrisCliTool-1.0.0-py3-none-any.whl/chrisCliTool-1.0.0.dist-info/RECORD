@@ -1,0 +1,11 @@
+cli_tool/__init__.py,sha256=V6GQs8PxgKXmnjVQ2pjU392mazKJT96mrzDenxTzkls,21
+cli_tool/asyncioTest.py,sha256=hX0tzI_BfDJY21xUgfhZe-PviT2y_YatPtSisfQ7FJA,232
+cli_tool/click_demo.py,sha256=hg97daKamMA6OGy2BK2MnZG00L6aQOpupxFBSH-hUuc,4010
+cli_tool/importtest.py,sha256=0dFkjS-9vD6mga-56xe0W102jXD1w3JKvu-dQcOn6fE,11
+cli_tool/test.py,sha256=OK3rV2aQTToAqWo4P6LbEXhP6jamkBTRrFb9xNzBPsA,183
+chrisCliTool-1.0.0.dist-info/LICENSE,sha256=vR2z3eUszyli3pNE5DdS2gRzEwCRuQTwhfjfPkGTXpk,1091
+chrisCliTool-1.0.0.dist-info/METADATA,sha256=LLFiK1_OWTOLTSN4QgUgl6KS2DUEZJwbQqg_ac7Rjq8,688
+chrisCliTool-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+chrisCliTool-1.0.0.dist-info/entry_points.txt,sha256=QqmbEVmOj5lLLIRyxoFlfsguwPMcj3-jXqRXmKOY1Z8,60
+chrisCliTool-1.0.0.dist-info/top_level.txt,sha256=5hMf5IdKp-wi_uPl5raqLmeI69rSqm74-0rZ5f-Tjzo,9
+chrisCliTool-1.0.0.dist-info/RECORD,,
