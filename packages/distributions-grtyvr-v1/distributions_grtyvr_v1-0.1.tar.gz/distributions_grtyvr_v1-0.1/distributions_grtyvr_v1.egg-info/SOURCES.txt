@@ -1,0 +1,11 @@
+README.md
+setup.py
+distributions_grtyvr_v1/Binomialdistribution.py
+distributions_grtyvr_v1/Gaussiandistribution.py
+distributions_grtyvr_v1/Generaldistribution.py
+distributions_grtyvr_v1/__init__.py
+distributions_grtyvr_v1.egg-info/PKG-INFO
+distributions_grtyvr_v1.egg-info/SOURCES.txt
+distributions_grtyvr_v1.egg-info/dependency_links.txt
+distributions_grtyvr_v1.egg-info/not-zip-safe
+distributions_grtyvr_v1.egg-info/top_level.txt
