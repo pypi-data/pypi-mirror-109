@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/scoping/__init__.py
+src/scoping.egg-info/PKG-INFO
+src/scoping.egg-info/SOURCES.txt
+src/scoping.egg-info/dependency_links.txt
+src/scoping.egg-info/top_level.txt
