@@ -1,0 +1,4 @@
+numpy
+polliwog==1.0.0b13
+scipy
+vg<2.0,>=1.7.0
