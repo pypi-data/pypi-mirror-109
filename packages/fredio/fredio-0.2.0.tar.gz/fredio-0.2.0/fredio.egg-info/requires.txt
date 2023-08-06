@@ -1,0 +1,5 @@
+aiohttp<4.0,>=3.0
+jsonpath-rw
+pandas
+yarl<2.0,>=1.0
+typing_extensions
