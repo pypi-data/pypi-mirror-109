@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nease
+Version: 0.0.2
+Summary: NEASE: A network-based approach for the enrichment of alternative splicing events
+Home-page: https://github.com/louadi/NEASE
+Author: Zakaria Louadi
+Author-email: Zakaria.louadi@tum.de
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pandas (>=1.2.1)
+Requires-Dist: numpy (>=1.20.2)
+Requires-Dist: networkx (>=2.5)
+Requires-Dist: plotly (>=4.14.3)
+Requires-Dist: scipy (>=1.6.2)
+Requires-Dist: statsmodels (>=0.12.2)
+Requires-Dist: gseapy (>=0.10.4)
+Requires-Dist: matplotlib (>=3.4.1)
+
+# NEASE
+NEASE: A network-based approach for the enrichment of alternative splicing events
+
+
