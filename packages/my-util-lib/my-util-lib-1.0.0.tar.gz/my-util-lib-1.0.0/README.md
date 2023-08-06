@@ -1,0 +1,13 @@
+<h3>Memo</h3>
+**Run unit tests before packaging library**
+
+python setup.py pytest
+
+**Packaging library**
+
+!! Make sure my_util_library.egg-info folder is removed.
+python setup.py sdist
+
+**Check the content in the library package**
+
+tar --list -f dist/my-util-library-1.0.0.tar.gz
