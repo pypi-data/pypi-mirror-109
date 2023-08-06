@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ecashaddress
+Version: 0.0.1
+Summary: Python library for converting cashaddr
+Home-page: https://github.com/PiRK/ecashaddress/
+License: UNKNOWN
+Keywords: ecash,bcha,bitcoincash,bch,address,cashaddress,legacy,convert
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
+
+UNKNOWN
+
