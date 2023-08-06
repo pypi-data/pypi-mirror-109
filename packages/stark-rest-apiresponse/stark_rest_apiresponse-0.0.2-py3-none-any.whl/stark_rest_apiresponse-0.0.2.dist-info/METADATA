@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: stark-rest-apiresponse
+Version: 0.0.2
+Summary: Easy way to get the standard rest api response
+Home-page: UNKNOWN
+Author: Stark Digital Media Services Pvt. Ltd.
+Author-email: starkengg81@gmail.com
+License: UNKNOWN
+Keywords: stark,rest-api,rest-api-response,stark-rest-apiresponse
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# stark-rest-apiresponse
+Standard way to get the REST api response.
+
+## Install
+  ```
+  pip install stark-rest-apiresponse
+  ```
+
+## Usage
+1. Import stark-rest-apiresponse
+  ```
+  from stark-rest-apiresponse.stark-rest-apiresponse import ApiResponse
+  ```
+
+2. To get the response
+  ```
+  ApiResponse.response_created(self)
+  ApiResponse.response_ok(self)
+  ApiResponse.response_internal_server_error(self)
+  ApiResponse.response_bad_request(self)
+  ApiResponse.response_unauthenticate(self)
+  ApiResponse.response_unauthorized(self)
+  ApiResponse.response_not_found(self)
+  ApiResponse.response_not_acceptable(self)
+  ApiResponse.response_not_acceptable(self)
+  ```
+
+3. If you to change the default message:
+  ```
+  ApiResponse.response_created(self, message='User created successfully.')
+  ```
+
+3. Pass the data to response
+  ```
+  data = {
+  	"id": 1,
+  	"name": "test"
+  }
+  ApiResponse.response_created(self, data=data, paginator=pagination_obj)
+  ``` 
+
