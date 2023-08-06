@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: humap
+Version: 0.0.1
+Summary: Hierarchical Uniform Manifold Approximation and Projection
+Home-page: https://github.com/wilsonjr/humap
+Author: Wilson E. Marcílio-Jr
+Author-email: wilson_jr@outlook.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
