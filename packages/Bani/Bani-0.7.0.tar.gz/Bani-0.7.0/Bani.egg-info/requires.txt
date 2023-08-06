@@ -1,0 +1,9 @@
+sentence_transformers==0.3.8
+nltk==3.5
+abbreviations==0.2.5
+pandas
+numpy
+regex
+nlpaug
+spacy
+tqdm
