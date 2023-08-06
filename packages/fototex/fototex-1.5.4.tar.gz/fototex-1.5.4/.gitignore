@@ -1,0 +1,9 @@
+/tutorial/pan_image_test_method=block_wsize=11_rgb.tif
+/tutorial/pan_image_test_method=block_wsize=11_sector=0_N_rgb.tif
+/tutorial/pan_image_test_method=block_wsize=11_sector=45_NE_rgb.tif
+/tutorial/pan_image_test_method=block_wsize=11_sector=90_E_rgb.tif
+/tutorial/pan_image_test_method=block_wsize=11_sector=135_SE_rgb.tif
+/tutorial/pan_image_test_method=block_wsize=11_sector=180_S_rgb.tif
+/tutorial/pan_image_test_method=block_wsize=11_sector=225_SW_rgb.tif
+/tutorial/pan_image_test_method=block_wsize=11_sector=270_W_rgb.tif
+/tutorial/pan_image_test_method=block_wsize=11_sector=315_NW_rgb.tif
