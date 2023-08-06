@@ -1,0 +1,8 @@
+boardgames/__init__.py,sha256=MeApeyTE07HLEWGzfal6q03nfYy63tXHJuQyBWHskQo,187
+boardgames/_board.py,sha256=5SZsR_q1sdDffoc4lNGoDE-nhNTPjk_ZwUAY2qi---Q,1610
+boardgames/_cell.py,sha256=SUNOU7yz9GoK3vyje4hi9Cd04aFWXcYplB4RyY4o-QA,325
+boardgames/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boardgames-1.0.1.dist-info/LICENSE,sha256=g-jt8FnVsLhQR7UlGcbLPukfFDhOamNPRtrQu4w6Jr0,11311
+boardgames-1.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+boardgames-1.0.1.dist-info/METADATA,sha256=WYkbLnlQPQR-JOTWja3U8FyFj4RxEpK6aErSnjsH-nM,346
+boardgames-1.0.1.dist-info/RECORD,,
