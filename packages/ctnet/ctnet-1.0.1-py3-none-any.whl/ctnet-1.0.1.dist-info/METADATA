@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ctnet
+Version: 1.0.1
+Summary: ctnet
+Home-page: https://github.com/JeanMaximilienCadic/ctnet
+Author: Jean Maximilien Cadic
+Author-email: support@cadic.jp
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: six
+Requires-Dist: nmesh
+Requires-Dist: absl-py
+Requires-Dist: torchvision
+Requires-Dist: torch
+Requires-Dist: torchsummary
+Requires-Dist: tqdm
+Requires-Dist: sklearn
+Requires-Dist: ctdataset
+
+ctnet
+
+
