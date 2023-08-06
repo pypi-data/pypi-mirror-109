@@ -1,0 +1,62 @@
+# dominions
+
+A Python package to check a domain against confusables, levenshtein distance, and more using a single interface.
+
+## Installing
+
+In order to use this python pacakge you must first install it using:
+
+```python
+python3.6 setup.py install
+```
+
+## Using Package
+
+You can use the Python package by importing it into your script:
+
+```python
+from dominions import Dominions
+
+dominions = Dominions()
+dominions.domain = 'giphy.com'
+print(dominions.contained_in())
+print(dominions.confusables())
+print(dominions.levenshtein())
+print(dominions.all())
+dominions.domain = ['giphy.com', 'swimlane.com', 'paypal.com']
+print(dominions.contained_in())
+print(dominions.confusables())
+print(dominions.levenshtein())
+print(dominions.all())
+```
+
+## Using Command Line Utility
+
+`dominions` comes with a command line utility that you can use.
+
+```bash
+dominions --domain 'giphy.com' all
+```
+
+## Built With
+
+* [carcass](https://github.com/MSAdministrator/carcass) - Python packaging template
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. 
+
+## Authors
+
+* Nick Tausek - *Initial work*
+* Josh Rickard - Package - [MSAdministrator](https://github.com/MSAdministrator)
+
+See also the list of [contributors](https://github.com/MSAdministrator/dominions/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
