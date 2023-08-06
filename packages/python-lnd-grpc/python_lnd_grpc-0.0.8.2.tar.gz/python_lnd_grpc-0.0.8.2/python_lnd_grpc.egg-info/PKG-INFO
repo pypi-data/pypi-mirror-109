@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: python-lnd-grpc
+Version: 0.0.8.2
+Summary: grpc client for lnd python version 3.6+
+Home-page: https://github.com/lightningriders/lnd_grpc
+Author: Tony Sanak
+Author-email: tony@lwqd.money
+License: MIT
+Description: file: README.md
+Keywords: python grpc lnd lightning bitcoin async lightning-network rpc
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
