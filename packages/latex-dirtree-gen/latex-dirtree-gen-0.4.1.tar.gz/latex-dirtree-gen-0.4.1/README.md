@@ -1,0 +1,112 @@
+# latex-dirtree-gen
+
+LaTeX `dirtree` generator, inspired by the Perl version [latex-dirtree-generator](https://github.com/d-koppenhagen/latex-dirtree-generator) by [Danny Koppenhagen](https://github.com/d-koppenhagen).
+
+In order to use output of this program in your LaTeX document, make sure you've included the [`dirtree` package](http://tug.ctan.org/macros/generic/dirtree/dirtree.pdf):
+
+```latex
+\usepackage{dirtree}
+```
+
+
+## Usage
+
+```
+usage: latex-dirtree-gen [args] directory
+
+positional arguments:
+  directory            project root
+
+optional arguments:
+  -h, --help           show this help message and exit
+  -v, --version        show program's version number and exit
+  -H/--include-hidden  show files and directories starting with "."
+                       (default: False)
+  -i/--ignore IGNORE   comma separated list of directories and files to be ignored
+                       (default: )
+  -d/--depth DEPTH     how many directories should the program descend
+                       (default: 5)
+  --color              in stdout, draw directories in red (with no effect on generated LaTeX code)
+                       (default: False)
+  --dots               draw "\dots" inside folders at depth limit
+                       (default: False)
+```
+
+
+## Examples
+
+Let's assume the following file structure:
+
+```
+. (project root)
++- .git
+|  '- (git files and directories)
++- pdf
+|  '- cover.pdf
++- text
+|  +- 01-introduction.tex
+|  +- 02-content.tex
+|  +- 03-literature.tex
+|  '- 99-other.tex
++- .gitignore
++- main.pdf
++- main.tex
+'- README.md
+```
+
+With default settings, the program will output:
+
+```
+$ latex-dirtree-gen .
+\dirtree{%
+ .1 .
+ .2 pdf.
+ .3 cover.pdf.
+ .2 text.
+ .3 01-introduction.tex.
+ .3 02-content.tex.
+ .3 03-literature.tex.
+ .3 99-other.tex.
+ .2 main.tex.
+ .2 main.pdf.
+ .2 README.md.
+}
+```
+
+Following command will display shallow list with the depth of one. Directories at depth limit will have `\dots` inside them. The argument `--color` has no effect on the LaTeX output and only draws directories in red in the stdout, for easier orientation in the output (and cannot be shown here because of markdown limitations).
+
+```
+$ latex-dirtree-gen -d 1 --dots --color .
+\dirtree{%
+ .1 .
+ .2 pdf.
+ .3 \dots.
+ .2 text.
+ .3 \dots.
+ .2 main.tex.
+ .2 main.pdf.
+ .2 README.md.
+}
+```
+
+You can show the `.git` directory and `.gitignore` file, but hide the `pdf` directory:
+
+```
+$ latex-dirtree-gen -H --ignore pdf -d 1 .
+\dirtree{%
+ .1 .
+ .2 .git.
+ .3 \dots.
+ .2 text.
+ .3 \dots.
+ .2 .gitignore.
+ .2 main.tex.
+ .2 main.pdf.
+ .2 README.md.
+}
+```
+
+
+## Contributing
+
+If you find an error or have an improvement idea, [file an issue](https://gitlab.com/matyashorky/latex-dirtree-gen/-/issues)!
