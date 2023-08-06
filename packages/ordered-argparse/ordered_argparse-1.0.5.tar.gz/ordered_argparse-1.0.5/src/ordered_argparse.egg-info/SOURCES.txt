@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/ordered_argparse.egg-info/PKG-INFO
+src/ordered_argparse.egg-info/SOURCES.txt
+src/ordered_argparse.egg-info/dependency_links.txt
+src/ordered_argparse.egg-info/entry_points.txt
+src/ordered_argparse.egg-info/top_level.txt
