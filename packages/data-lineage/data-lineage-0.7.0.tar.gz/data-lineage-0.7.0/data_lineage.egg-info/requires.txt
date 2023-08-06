@@ -1,0 +1,8 @@
+pglast
+inflection
+networkx
+click
+pyyaml
+dbcat>=0.5.0
+gunicorn
+flask~=1.1
