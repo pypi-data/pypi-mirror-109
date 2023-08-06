@@ -1,0 +1,10 @@
+fundalytica_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fundalytica_utils/data.py,sha256=HdwkGngcJD8J9-BigB9EcimehS4YQc-MDlMvJizGVUY,1561
+fundalytica_utils/mailer.py,sha256=82bNVfPc6RGQ2i57aIDbDSCRbfbTntVnJQRn9enIJ-o,1640
+fundalytica_utils/stock.py,sha256=jZPi_Mmez3-UO12sptgOUeHWnyBfIPjK-s16KmsleJY,1662
+fundalytica_utils/utils.py,sha256=acIn3rpocPPEOk6MYrLbI-hjdUMfnLNvWKlhleqDPLo,2154
+fundalytica_utils-0.0.5.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+fundalytica_utils-0.0.5.dist-info/METADATA,sha256=DKkEXdEYjy7d_u016JvwAGdEliS229Gn0l1dMq-Rb9U,490
+fundalytica_utils-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fundalytica_utils-0.0.5.dist-info/top_level.txt,sha256=SepOBAJRC-EYD5Fmp377aclS0SOo0V8sq1OWUNnXAx0,18
+fundalytica_utils-0.0.5.dist-info/RECORD,,
