@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+crosscheck-widget.json
+setup.cfg
+setup.py
+crosscheck/__init__.py
+crosscheck/_version.py
+crosscheck/crosscheck_plugin.py
+crosscheck/static/extension.js
+crosscheck/static/index.js
+crosscheck/static/index.js.map
+crosscheck_widget.egg-info/PKG-INFO
+crosscheck_widget.egg-info/SOURCES.txt
+crosscheck_widget.egg-info/dependency_links.txt
+crosscheck_widget.egg-info/not-zip-safe
+crosscheck_widget.egg-info/requires.txt
+crosscheck_widget.egg-info/top_level.txt
