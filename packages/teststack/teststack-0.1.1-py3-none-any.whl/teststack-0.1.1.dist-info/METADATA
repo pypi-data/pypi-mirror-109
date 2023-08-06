@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: teststack
+Version: 0.1.1
+Summary: Manage the infrastructure for running tests against
+Home-page: https://github.com/gtmanfred/teststack
+Author: Daniel Wallace
+Author-email: daniel@gtmanfred.com
+License: APACHE-2.0
+Project-URL: repository, https://github.com/gtmanfred/teststack
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: docker
+Requires-Dist: six
+Requires-Dist: click
+Requires-Dist: toml
+Requires-Dist: jinja2
+Requires-Dist: GitPython
+Requires-Dist: backports.entry-points-selectable
+Provides-Extra: dev
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: syntax
+Requires-Dist: black ; extra == 'syntax'
+Provides-Extra: tests
+Requires-Dist: coverage[toml] (>=5.4) ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: codecov ; extra == 'tests'
+Requires-Dist: pytest-pdb ; extra == 'tests'
+
+UNKNOWN
+
