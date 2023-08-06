@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+Snpr.egg-info/PKG-INFO
+Snpr.egg-info/SOURCES.txt
+Snpr.egg-info/dependency_links.txt
+Snpr.egg-info/top_level.txt
