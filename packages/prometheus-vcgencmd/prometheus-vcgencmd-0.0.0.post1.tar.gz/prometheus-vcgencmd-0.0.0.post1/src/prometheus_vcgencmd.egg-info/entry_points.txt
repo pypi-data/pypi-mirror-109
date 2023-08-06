@@ -1,0 +1,3 @@
+[console_scripts]
+prometheus-vcgencmd = prometheus_vcgencmd.prometheus_vcgencmd:main
+
