@@ -1,0 +1,10 @@
+setup.py
+pyupload_probability_exer/Binomialdistribution.py
+pyupload_probability_exer/Gaussiandistribution.py
+pyupload_probability_exer/Generaldistribution.py
+pyupload_probability_exer/__init__.py
+pyupload_probability_exer.egg-info/PKG-INFO
+pyupload_probability_exer.egg-info/SOURCES.txt
+pyupload_probability_exer.egg-info/dependency_links.txt
+pyupload_probability_exer.egg-info/not-zip-safe
+pyupload_probability_exer.egg-info/top_level.txt
