@@ -1,0 +1,9 @@
+rutyva/__init__.py,sha256=wloCDChRcs2lH6z55V_IqF7iG_YhyI48U1FKvP-WS-U,82
+rutyva/base_model.py,sha256=-RYnlzuoro2stYgbbKjJK5v1yPAFsYYm-um46PQiyiI,2086
+rutyva/from_dict_generator.py,sha256=S794IH_daj53XeHzmPnVW5ZUXjv5RZhUiab6SvLjdZ0,2462
+rutyva/validation.py,sha256=y7jaQKjMnO4DZ-5LXzijNbapaUwgvkqhQaM3tFamo6o,3003
+rutyva-0.0.6.dist-info/LICENSE,sha256=fu-M4D9e-r5gbCBDadoKdKzdNVk1ZcBxKmbfvEPkNEA,1077
+rutyva-0.0.6.dist-info/METADATA,sha256=b-WVDvLTi1RVxaRN9GUu-h0JDw1p9Zvt-AD0OQIpm7k,947
+rutyva-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rutyva-0.0.6.dist-info/top_level.txt,sha256=XJRjuZ_03WmPVY7OtLpMBoiCXOSfHlqrQhFbfjW_BCU,7
+rutyva-0.0.6.dist-info/RECORD,,
