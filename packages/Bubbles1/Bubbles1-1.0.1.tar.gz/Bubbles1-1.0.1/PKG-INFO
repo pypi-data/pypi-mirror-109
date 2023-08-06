@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: Bubbles1
+Version: 1.0.1
+Summary: Kinetiq_Library
+Home-page: UNKNOWN
+Author: Sujata
+Author-email: UNKNOWN
+License: MIT
+Description: Bubbles_library
+        
+        Change Log
+        
+        ==========
+        
+        
+        
+        1.0.1 (02/06/2021)
+        
+        -------------------
+        
+        - First Release
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
