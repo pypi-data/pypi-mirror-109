@@ -1,0 +1,16 @@
+imow_webapi-0.5.0-py3.9-nspkg.pth,sha256=Vm3oQadZxlXkg1JZJiGqe0He5TW2yiEl9bl71dm128Q,529
+imow/api/__init__.py,sha256=nvV3ORa7KqGT-n3VphHapKXihIGGgpuDh-wpaiXpov8,16530
+imow/common/__init__.py,sha256=ekSQ4YBr0bT86j5BplDSgH-SoHHF3gZP_xShRG6Z6Dk,9
+imow/common/actions.py,sha256=RpHQmIBr5GIdJKKSKsyu5rBN5IbEDDBqVQgWoui7nds,151
+imow/common/consts.py,sha256=tucWLzkeWP1Gv5AklzKFot4sg0ERZVkC1GEhGiUcU7I,93
+imow/common/exceptions.py,sha256=5cV1IUGrH3GHx9m-g4Ry-bwlsJozds-ZmnBzsdwfHVc,188
+imow/common/messages.py,sha256=PVRsjODmxF2gAql-6ncaCtI65yoPah1KT6WoEBEZq1I,42370
+imow/common/mowerstate.py,sha256=X3crKkK3Qx_5sOTJobzYYJsSBeUSPiuS9igSRGjCoew,5078
+imow/common/package_descriptions.py,sha256=Tr6yOMn7QTy-GFclhHD3n3TVYz491wmynN-sVIqcKII,82
+imow_webapi-0.5.0.dist-info/LICENSE,sha256=si0gKKTupBgTBcpJj-fdhd72a2YG7RdS4BcV800JuSc,1101
+imow_webapi-0.5.0.dist-info/METADATA,sha256=T1lzTOZ36-T13wqhjxBwXaBnD-_-ZGVz0U-9vAhi4Nk,7969
+imow_webapi-0.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+imow_webapi-0.5.0.dist-info/entry_points.txt,sha256=U-e5b5khvAab-WjvizEW4Vb62KAnqZhr9KeQbyB8RHk,45
+imow_webapi-0.5.0.dist-info/namespace_packages.txt,sha256=umRZ81ZzEVv2UgWCkiDHKtr1wEqAiAr2u_Ko1GfDJho,5
+imow_webapi-0.5.0.dist-info/top_level.txt,sha256=umRZ81ZzEVv2UgWCkiDHKtr1wEqAiAr2u_Ko1GfDJho,5
+imow_webapi-0.5.0.dist-info/RECORD,,
