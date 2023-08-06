@@ -1,0 +1,11 @@
+eksi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eksi/__main__.py,sha256=8LD_PIRuvGlPYk2kyTsjZ0CoNqmLlwHKsPaVRtqGsPo,509
+eksi/color.py,sha256=A2WyBLd5vXbXnlk0n9pnUPmeLUebPwS1BKVCqlEbR8o,331
+eksi/eksi.py,sha256=TBGtdUUIjE6u0oozSVtANlg2XCtQ14urqlRkiI7TRv4,4468
+eksi/version.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+eksi-0.1.2.dist-info/LICENSE,sha256=QveLS9gToRgD6Q01F96_T7YLaGKxg_S3d_7HRAh3YDQ,1075
+eksi-0.1.2.dist-info/METADATA,sha256=NcUvvtNehzH1_NcrnZaa0_FlEuxlRTNi4OrCFcGD2lU,1284
+eksi-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+eksi-0.1.2.dist-info/entry_points.txt,sha256=fvI_CDI2YTwuCzehLfI56bqyyZfEhNM6FSiNuKhpKP8,45
+eksi-0.1.2.dist-info/top_level.txt,sha256=lRI28lKSk60CWQYlOl2r57z4rHcrjvtuP1nzE_rYojw,5
+eksi-0.1.2.dist-info/RECORD,,
