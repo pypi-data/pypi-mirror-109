@@ -1,0 +1,7 @@
+tests/__init__.py,sha256=8l5fetHGI7mL6HE3rgyzxTrlioD0lm4f00ke2256te0,35
+tests/fancywallet_get_price_test.py,sha256=jsjAuq608czL8rX-FtAR5okzltOmKmaxxfPr5VL-Krw,864
+fancywallet-0.0.0.dist-info/METADATA,sha256=J0vzNQiifTslUX3w8UKvRh1mo9AYKZ9edUYwSZvNo2M,224
+fancywallet-0.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fancywallet-0.0.0.dist-info/entry_points.txt,sha256=Qi-c86gylP9GedmLFg_XJldqoqBCNW7wWvLdX5Vj6h4,67
+fancywallet-0.0.0.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+fancywallet-0.0.0.dist-info/RECORD,,
