@@ -1,0 +1,7 @@
+README.md
+setup.py
+quiffen/__init__.py
+quiffen.egg-info/PKG-INFO
+quiffen.egg-info/SOURCES.txt
+quiffen.egg-info/dependency_links.txt
+quiffen.egg-info/top_level.txt
