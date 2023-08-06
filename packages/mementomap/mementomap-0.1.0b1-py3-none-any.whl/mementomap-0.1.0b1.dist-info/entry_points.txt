@@ -1,0 +1,3 @@
+[console_scripts]
+mementomap = mementomap.__main__:main
+
