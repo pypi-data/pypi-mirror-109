@@ -1,0 +1,15 @@
+allskycam/__init__.py,sha256=s3J7iBLDiHCuyY6cz7hqDsk6CK0HOdJxAphi5TeCJwo,77
+allskycam/__main__.py,sha256=H-EzlHr-K5QIiMwbx19YOCdA809yFFL7TAYBJ-kRwBQ,3074
+allskycam/allskycamdelete.py,sha256=KGSOMn8XMVCPUznY6Vb3b_g3vwsUIfHn099Ei2mYu64,727
+allskycam/config.txt,sha256=5FkvMxYC-CHSlaHSXfnGEY70B4UE-K85wURRbX3OV8s,1956
+allskycam/fileManager.py,sha256=CPYRt6f_H19wxGzOdao-hqUrS_staL0Ap2LgKNzmcAY,2318
+allskycam/imageHeader.py,sha256=bUvveef-b10-CzNIYhCA869rnI2ftT-4D7qlVWb_SRg,12302
+allskycam/suncalc2.py,sha256=0VpIfCdF6-t-5FRpc_TPzF97SE9z0eKnOeyZR2jQps0,6885
+allskycam/test.py,sha256=K1IInSwWNpmoej58nN32OpUeWJNSLpGag0hcBhCr6fs,2263
+allskycam/timelapse.py,sha256=e5L_Jxg5SeD5ODXd2VhNUuqsG46-G0Imw05OTxftbKg,4172
+allskycam/watchDog.py,sha256=kMQE7AthG_yYOxr21mbVpD72FBBf50G5y9xgpDKdYbA,1310
+frank_AllSkyCamPi-1.26.0.dist-info/METADATA,sha256=EPLypolr9q3mdQ8xgk6xRzwWJzPZDIu2lp5RhpfjuzA,461
+frank_AllSkyCamPi-1.26.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+frank_AllSkyCamPi-1.26.0.dist-info/entry_points.txt,sha256=EZ2VL-1pW8F9-jdQ0RAxl0fgkox64r7DnuCj3d6WGDg,55
+frank_AllSkyCamPi-1.26.0.dist-info/top_level.txt,sha256=xLiXv8BjLKuZU2E9QRlgqon5xGLSpFvupAqkj1CfHPM,10
+frank_AllSkyCamPi-1.26.0.dist-info/RECORD,,
