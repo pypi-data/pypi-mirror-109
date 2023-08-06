@@ -1,0 +1,7 @@
+README.md
+setup.py
+deftimer/deftimer.egg-info/PKG-INFO
+deftimer/deftimer.egg-info/SOURCES.txt
+deftimer/deftimer.egg-info/dependency_links.txt
+deftimer/deftimer.egg-info/requires.txt
+deftimer/deftimer.egg-info/top_level.txt
