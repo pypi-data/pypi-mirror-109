@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: wrs
+Version: 0.1
+Summary: Split string without eliminating delimeter
+Home-page: UNKNOWN
+Author: Rao Hamza
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+
+This is a function package split string string into list without removing delimeter from string, can accept more than one delimeter at once in format:  'Delimeter1 | Delimeter2 | Delimeter3 | ...' 
+
+
