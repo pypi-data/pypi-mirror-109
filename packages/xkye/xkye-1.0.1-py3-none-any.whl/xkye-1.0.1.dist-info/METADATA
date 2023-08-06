@@ -1,0 +1,142 @@
+Metadata-Version: 2.1
+Name: xkye
+Version: 1.0.1
+Summary: Official Python Standard Library for Xkye Language
+Home-page: https://github.com/RahmanAnsari/
+Author: Rahman Ansari
+Author-email: iamrahmanansari@gmail.com
+License: MIT License        
+        Copyright (c) 2021 Rahman Ansari        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Requires-Dist: antlr4-python3-runtime
+Requires-Dist: multipledispatch
+
+.. _Pypi Readme File:
+
+====================
+Xkye Python Library
+====================
+
+Introducing `Xkye-Python <https://github.com/RahmanAnsari/xkye_python>`_ standard library to provide objective query builder for `xkye <https://github.com/RahmanAnsari/xkye-lang>`_ language. You can easily query the entities from the xkye file using this library. It provides a more convenient and idiomatic way to write and manipulate queries.
+
+|
+
+Installation
+=============
+Install library with pypi:
+
+.. code-block:: bash
+
+  $ pip3 install xkye
+
+|
+
+Usage
+======
+
+.. code-block:: bash
+  
+  from xkye import IO as io
+
+  #initiate the xkye with io
+  x = io(filename.xky)
+
+  #read the contents of the file
+  x.read()
+
+  #get the output of any of the entity from teh xky file
+  #to get the value of the entity
+  x.get("entityname")
+
+  #to get the value of the entity in the given clutch
+  x.get("entityname","clutchname")
+
+  #to get the value of the entity in the given cluth's span
+  x.get("entityname","clutchname", clutchspan)
+
+  #to get the span count of the given cluster
+  x.getSpan("clustername")
+
+|
+
+Examples
+=========
+
+Please use the `examples <https://github.com/RahmanAnsari/xkye_python/tree/main/examples>`_ directory to see some complex examples using xkye-pyhton library. For details about xkye syntax and format, use the offical `Xkye-lang <https://github.com/RahmanAnsari/xkye-lang>`_ documentation.
+
+|
+
+Documentation
+==============
+
+Documentation is available at `<xkye-python.readthedocs.io>`_ .
+
+|
+
+Version matrix
+===============
+
+.. list-table::
+   :header-rows: 1
+
+   * - Xkye version
+     - Xkye-Python Library version
+   * - >= 1.0.0
+     - >= 1.0.0
+
+|
+
+Upcoming features on or before v2.0.0
+========================================
+* Ability to get the span limit of the given cluster (Completed)
+* Ability to add entity, clutch and subclutch
+
+|
+
+Contribution Guide
+====================
+
+Want to hack on Xkye-Python? Awesome! We have `Contribution-Guide <https://github.com/RahmanAnsari/xkye_python/blob/main/CONTRIBUTING.md>`_ on our official repo. If you are not familiar with making a pull request using GitHub and/or git, please read `this guide <https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests>`_ . If you're looking for ways to contribute, please look at our `issue tracker <https://github.com/RahmanAnsari/xkye_python/issues>`_ .
+
+|
+
+License
+=========
+Xkye-python is open-source standard python library for xkye language that is released under the MIT License. For details on the license, see the `LICENSE <https://github.com/RahmanAnsari/xkye_python/blob/main/LICENSE>`_ file.
+
+|
+
+If you like this library, help me to develop it by buying a cup of coffee
+
+|buy me a coffee|
+
+.. |buy me a coffee| image:: https://cdn.buymeacoffee.com/buttons/default-orange.png 
+   :target: https://www.buymeacoffee.com/rahmanansari
+   :width: 174
+   :alt: Buy Me A Coffee Badge
+   :height: 41
+
