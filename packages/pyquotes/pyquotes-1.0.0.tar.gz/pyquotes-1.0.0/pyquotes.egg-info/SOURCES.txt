@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pyquotes/__init__.py
+pyquotes/cli.py
+pyquotes/quotes.py
+pyquotes/settings.py
+pyquotes/transform.py
+pyquotes.egg-info/PKG-INFO
+pyquotes.egg-info/SOURCES.txt
+pyquotes.egg-info/dependency_links.txt
+pyquotes.egg-info/entry_points.txt
+pyquotes.egg-info/not-zip-safe
+pyquotes.egg-info/requires.txt
+pyquotes.egg-info/top_level.txt

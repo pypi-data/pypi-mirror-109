@@ -1,0 +1,3 @@
+[console_scripts]
+pyquotes = pyquotes.cli:main
+

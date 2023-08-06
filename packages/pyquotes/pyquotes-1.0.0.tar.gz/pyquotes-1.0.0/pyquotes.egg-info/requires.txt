@@ -1,0 +1,19 @@
+click
+parso
+
+[:python_version < "3.7"]
+dataclasses
+
+[dev]
+black
+flake8
+flake8-quotes
+isort
+pytest
+pytest-cov
+toml
+twine
+wheel
+
+[toml]
+toml
