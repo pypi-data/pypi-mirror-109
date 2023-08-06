@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: nchu-sdk
+Version: 0.2.0
+Summary: SDK for accessing NCHU Portal System
+Home-page: https://github.com/tomy0000000/NCHU-SDK
+Author: Tomy Hsieh
+Author-email: tomy0000000@gmail.com
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: requests >=2.24.0
+Requires-Dist: beautifulsoup4 >=4.9.3
+Requires-Dist: pandas >=1.1.2
+
+# NCHU SDK
+
+🧰🧑🏻‍🎓 SDK for accessing NCHU Portal System
+
+## Install
+
+```shell
+pip install git+https://github.com/tomy0000000/NCHU-SDK
+```
+
+## Usage
+
+| Feature                     | Demo Colab links                                             |
+| --------------------------- | ------------------------------------------------------------ |
+| Auto questionnaires filling | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tomy0000000/NCHU-SDK/blob/main/Fill%20Questionnaire.ipynb) |
+
+
