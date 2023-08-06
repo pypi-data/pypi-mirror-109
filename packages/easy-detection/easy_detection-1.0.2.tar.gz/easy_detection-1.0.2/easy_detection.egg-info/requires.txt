@@ -1,0 +1,6 @@
+opencv-python>=4.1.1.26
+numpy>=1.19.0
+scikit-image>=0.17.2
+tensorrt==6.0.1.5
+torch2trt-unofficial==0.0.3
+onnx==1.7.0
