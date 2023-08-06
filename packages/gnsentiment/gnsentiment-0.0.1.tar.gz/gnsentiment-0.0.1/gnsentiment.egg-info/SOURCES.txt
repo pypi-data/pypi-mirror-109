@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+gnsentiment/__init__.py
+gnsentiment/core.py
+gnsentiment.egg-info/PKG-INFO
+gnsentiment.egg-info/SOURCES.txt
+gnsentiment.egg-info/dependency_links.txt
+gnsentiment.egg-info/requires.txt
+gnsentiment.egg-info/top_level.txt
