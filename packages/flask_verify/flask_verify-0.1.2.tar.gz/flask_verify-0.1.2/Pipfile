@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+pytest-flask = "*"
+flake8 = "*"
+mypy = "*"
+pylint = "*"
+autopep8 = "*"
+xenon = "*"
+coverage = "*"
+sphinx = "*"
+sphinx-rtd-theme = "*"
+sphinx-book-theme = "*"
+flit = "*"
+
+[packages]
+flask = "*"
+flit = "*"
+
+[requires]
+python_version = "3.9"
