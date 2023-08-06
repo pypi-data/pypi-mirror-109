@@ -1,0 +1,4 @@
+requests
+texttable
+tqdm
+icecream
