@@ -1,0 +1,3 @@
+[console_scripts]
+flask-datadog = flask_datadog.scripts.cmd_line:main
+
