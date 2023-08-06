@@ -1,0 +1,3 @@
+[console_scripts]
+langscikw = langscikw.cli:main
+
