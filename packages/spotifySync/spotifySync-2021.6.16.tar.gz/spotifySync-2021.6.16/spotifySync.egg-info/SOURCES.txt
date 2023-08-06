@@ -1,0 +1,9 @@
+README.md
+setup.py
+spotifySync/__init__.py
+spotifySync.egg-info/PKG-INFO
+spotifySync.egg-info/SOURCES.txt
+spotifySync.egg-info/dependency_links.txt
+spotifySync.egg-info/entry_points.txt
+spotifySync.egg-info/requires.txt
+spotifySync.egg-info/top_level.txt
