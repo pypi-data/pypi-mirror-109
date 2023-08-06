@@ -1,0 +1,1 @@
+from Face_rec.FaceClass import FaceIndentity
