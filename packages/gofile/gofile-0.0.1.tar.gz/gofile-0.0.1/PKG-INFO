@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: gofile
+Version: 0.0.1
+Summary: A Python wrapper for the GoFile API
+Home-page: https://github.com/Codec04/gofile/
+Author: Codec04
+License: MIT
+Project-URL: Bugs, https://github.com/Codec04/gofile/issues/
+Project-URL: Documentation, https://github.com/Codec04/gofile/wiki/
+Project-URL: Source code, https://github.com/Codec04/gofile/
+Description: # gofile
+        
+        ## Info
+        
+        A Python wrapper for the GoFile API.
+        
+        **Currently in beta, expect bugs!**
+        
+        ## Installation
+        
+            $ python3 -m pip install gofile
+        
+        ## Usage
+        
+        See [documentation](https://github.com/Codec04/gofile/wiki/) for usage examples.
+        
+        ## Links
+        
+        [PyPI](https://pypi.org/project/gofile/)
+        
+        [GoFile](https://gofile.io/)
+        
+        [Documentation](https://github.com/Codec04/gofile/wiki/)
+        
+        [Bugs](https://github.com/Codec04/gofile/issues/)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
