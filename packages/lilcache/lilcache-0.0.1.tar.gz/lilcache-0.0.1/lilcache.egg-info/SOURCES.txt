@@ -1,0 +1,13 @@
+CONTRIBUTING.md
+DESIGN.md
+MANIFEST.in
+README.md
+setup.py
+lilcache/__init__.py
+lilcache/cache.py
+lilcache/util.py
+lilcache.egg-info/PKG-INFO
+lilcache.egg-info/SOURCES.txt
+lilcache.egg-info/dependency_links.txt
+lilcache.egg-info/requires.txt
+lilcache.egg-info/top_level.txt
