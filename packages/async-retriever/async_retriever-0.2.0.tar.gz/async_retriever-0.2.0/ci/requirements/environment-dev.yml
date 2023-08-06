@@ -1,0 +1,36 @@
+name: async_retriever-dev
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python>=3.8
+  - setuptools
+
+  # async_retriever
+  - aiodns
+  - aiohttp
+  - aiohttp-client-cache
+  - aiosqlite
+  - brotlipy
+  - cchardet
+  - cytoolz
+  - nest-asyncio
+  - orjson
+
+  # dev deps
+  - codespell
+  - coverage
+  - nox
+  - pre-commit
+  - psutil
+  - pytest
+  - pytest-clarity
+  - pytest-sugar
+  - pytest-xdist
+  - setuptools-scm
+  - toml
+  - ward
+
+  - pip
+  - pip:
+    - git+https://github.com/cheginit/async_retriever.git
