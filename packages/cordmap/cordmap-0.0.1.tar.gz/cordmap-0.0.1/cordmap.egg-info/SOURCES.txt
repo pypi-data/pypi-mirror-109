@@ -1,0 +1,8 @@
+README.md
+setup.py
+cordmap.egg-info/PKG-INFO
+cordmap.egg-info/SOURCES.txt
+cordmap.egg-info/dependency_links.txt
+cordmap.egg-info/not-zip-safe
+cordmap.egg-info/requires.txt
+cordmap.egg-info/top_level.txt

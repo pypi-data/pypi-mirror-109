@@ -1,0 +1,16 @@
+numpy
+scikit-image
+imio
+itk-elastix
+napari
+pandas
+imlib
+
+[dev]
+black
+pytest-cov
+pytest
+coverage
+bump2version
+pre-commit
+flake8
