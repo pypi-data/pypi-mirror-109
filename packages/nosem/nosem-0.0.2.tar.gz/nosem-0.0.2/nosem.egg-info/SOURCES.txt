@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+nosem/__init__.py
+nosem/interpreter.py
+nosem/main.py
+nosem.egg-info/PKG-INFO
+nosem.egg-info/SOURCES.txt
+nosem.egg-info/dependency_links.txt
+nosem.egg-info/entry_points.txt
+nosem.egg-info/requires.txt
+nosem.egg-info/top_level.txt

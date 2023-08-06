@@ -1,0 +1,4 @@
+requests
+
+[:python_version >= "0.58"]
+meson

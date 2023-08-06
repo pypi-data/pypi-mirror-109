@@ -1,0 +1,3 @@
+[console_scripts]
+nosem = nosem.main:main
+
