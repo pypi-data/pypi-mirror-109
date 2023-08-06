@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: textcortex
+Version: 1.0
+Summary: Generate product descriptions, blogs, ads and more using GPT architecture with a single request to TextCortex API a.k.a Hemingwai
+Home-page: https://textcortex.com/documentation/api
+Author: TextCortex AI
+Author-email: dev@textcortex.com
+License: LICENSE.txt
+Keywords: TextCortex AI,gpt-2,gpt-3,gptNEO,generate text,natural language generation,NLP,hemingwai,transformer,generate copy text using AI
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: requests
+
+Signup at textcortex.com to get your API key and start generating text content with a single API call, leveraging TextCortex's GPT architecture.
+
