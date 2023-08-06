@@ -1,0 +1,12 @@
+Werkzeug
+Flask
+python-dateutil
+m-caching
+m-singleton
+python-jose==3.2.0
+PyCrypto==2.6.1
+pycryptodome==3.4.7
+numpy
+requests
+pymongo==3.11.4
+redis==3.5.3
