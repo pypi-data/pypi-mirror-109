@@ -1,0 +1,14 @@
+.gitignore
+.mergify.yml
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+tox.ini
+.github/workflows/ci.yaml
+fastcounter/__init__.py
+fastcounter/test_counter.py
+fastcounter.egg-info/PKG-INFO
+fastcounter.egg-info/SOURCES.txt
+fastcounter.egg-info/dependency_links.txt
+fastcounter.egg-info/top_level.txt
