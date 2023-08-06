@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+src/Inbreeding.egg-info/PKG-INFO
+src/Inbreeding.egg-info/SOURCES.txt
+src/Inbreeding.egg-info/dependency_links.txt
+src/Inbreeding.egg-info/requires.txt
+src/Inbreeding.egg-info/top_level.txt
+src/inbreeding/Inbreeding.py
+src/inbreeding/MissingYOB.py
+src/inbreeding/RelationAnimals.py
+src/inbreeding/__init__.py
