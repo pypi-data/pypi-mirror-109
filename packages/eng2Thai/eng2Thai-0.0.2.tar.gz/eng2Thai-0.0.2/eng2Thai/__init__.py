@@ -1,0 +1,1 @@
+from eng2Thai.eng2Thai import decode, run
