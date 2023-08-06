@@ -1,0 +1,9 @@
+numpy
+pandas
+tqdm
+pymongo
+sacred
+seaborn
+matplotlib
+tables
+pick
