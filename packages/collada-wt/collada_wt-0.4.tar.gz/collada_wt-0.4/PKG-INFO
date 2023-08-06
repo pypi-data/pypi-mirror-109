@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: collada_wt
+Version: 0.4
+Summary: This library allows you to easily create a 3D collada wind turbine for use in Google Earth Pro
+Home-page: https://github.com/charlie9578/wind-turbine-kml
+Author: Charlie Plumley
+Author-email: charlie.plumley@gmail.com
+License: BSD License
+Download-URL: https://github.com/charlie9578/wind-turbine-kml/archive/refs/tags/v0.4-alpha.tar.gz
+Description: UNKNOWN
+Keywords: wind turbine,collada,google earth,kml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
