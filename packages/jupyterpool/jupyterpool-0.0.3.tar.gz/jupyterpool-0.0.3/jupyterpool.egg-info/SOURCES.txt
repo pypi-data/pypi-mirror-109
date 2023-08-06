@@ -1,0 +1,11 @@
+README.md
+setup.py
+jupyterpool/__init__.py
+jupyterpool/main.py
+jupyterpool/version.py
+jupyterpool.egg-info/PKG-INFO
+jupyterpool.egg-info/SOURCES.txt
+jupyterpool.egg-info/dependency_links.txt
+jupyterpool.egg-info/requires.txt
+jupyterpool.egg-info/top_level.txt
+jupyterpool.egg-info/zip-safe
