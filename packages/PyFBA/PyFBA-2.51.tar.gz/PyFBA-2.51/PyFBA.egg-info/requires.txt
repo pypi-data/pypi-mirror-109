@@ -1,0 +1,6 @@
+lxml
+python-libsbml
+beautifulsoup4
+
+[:python_version < "3.7"]
+importlib_resources
