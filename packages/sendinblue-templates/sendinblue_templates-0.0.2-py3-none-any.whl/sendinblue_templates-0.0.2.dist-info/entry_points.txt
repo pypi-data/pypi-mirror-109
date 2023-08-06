@@ -1,0 +1,3 @@
+[console_scripts]
+sendinblue-templates = sendinblue_templates:main
+
