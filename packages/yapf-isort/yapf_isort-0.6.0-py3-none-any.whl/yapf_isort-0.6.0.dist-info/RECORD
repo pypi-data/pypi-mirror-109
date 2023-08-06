@@ -1,0 +1,11 @@
+yapf_isort/generics.py,sha256=YyvRnm-tsue0yjRJjStm8xtBkTAP2xHDpzTJ2ZSqI18,499
+yapf_isort/__init__.py,sha256=FvtKKSo92Y2L4ZodRIFO8DahPgwddGHKq0Tn_FHV08E,3917
+yapf_isort/quotes.py,sha256=eIE3vqXiCOwd5LiyRgoDJ_KLvo_glQMy_V2xVTc7jdk,547
+yapf_isort/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yapf_isort/__main__.py,sha256=qfgVCHnCCZsyPczQ9JKoQJs5d0oGOubDgO9S8bjR5KA,1474
+yapf_isort-0.6.0.dist-info/METADATA,sha256=UiLwAjbJ71UumpqiWnYpcxjURlntaPpsXriQgAD5dxA,6126
+yapf_isort-0.6.0.dist-info/top_level.txt,sha256=DS7ZdxHXl-daE_xTO4HJLfciLp-Rqmq0NpkICeV3WTQ,11
+yapf_isort-0.6.0.dist-info/WHEEL,sha256=J4g0fMEBBzCd0BGbq8H7I2N_v8Zh2siTRq423ayqvw0,84
+yapf_isort-0.6.0.dist-info/LICENSE,sha256=du7kw-oC9MPkmdCnmoeXt-OjMdFc7Dgiu3W9SVXWves,10898
+yapf_isort-0.6.0.dist-info/entry_points.txt,sha256=yCdt-mXZn0LddYk_y3dEPeyYgQRZQHFQrc6MM1jK5zI,94
+yapf_isort-0.6.0.dist-info/RECORD,,
