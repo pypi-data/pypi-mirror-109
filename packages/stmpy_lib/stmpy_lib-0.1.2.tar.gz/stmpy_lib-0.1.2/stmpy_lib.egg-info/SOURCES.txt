@@ -1,0 +1,14 @@
+README.md
+setup.py
+stmpy_lib/__init__.py
+stmpy_lib/client.py
+stmpy_lib/datastructures.py
+stmpy_lib/serialize.py
+stmpy_lib/sign.py
+stmpy_lib/simple.py
+stmpy_lib.egg-info/PKG-INFO
+stmpy_lib.egg-info/SOURCES.txt
+stmpy_lib.egg-info/dependency_links.txt
+stmpy_lib.egg-info/requires.txt
+stmpy_lib.egg-info/top_level.txt
+stmpy_lib.egg-info/zip-safe
