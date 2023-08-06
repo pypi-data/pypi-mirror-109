@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: f-path-tree
+Version: 0.0.1
+Summary: Python module for building a tree structure of a file pathFile path tree
+Home-page: https://github.com/vadim-tarasov/f-path-tree
+Author: VadimTarasov132
+Author-email: tarasov.2120@mail.ru
+License: UNKNOWN
+Download-URL: https://github.com/vadim-tarasov/f-path-tree/archive/refs/heads/master.zip
+Description: Python module for building a tree structure of a file path
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9

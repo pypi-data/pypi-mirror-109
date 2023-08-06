@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+f_path_tree/__init__.py
+f_path_tree/libtree.py
+f_path_tree/test_tree.py
+f_path_tree.egg-info/PKG-INFO
+f_path_tree.egg-info/SOURCES.txt
+f_path_tree.egg-info/dependency_links.txt
+f_path_tree.egg-info/top_level.txt
