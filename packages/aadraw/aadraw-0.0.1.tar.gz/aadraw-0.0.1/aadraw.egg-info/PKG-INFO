@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aadraw
+Version: 0.0.1
+Summary: Python API for https://github.com/HuangPatrick16777216/aadraw
+Home-page: https://github.com/HuangPatrick16777216/aadraw
+Author: Patrick Huang
+Author-email: huangpatrick16777216@gmail.com
+License: UNKNOWN
+Description: # AA Draw
+        
+        Antialiased graphic drawing library for Python pygame.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
