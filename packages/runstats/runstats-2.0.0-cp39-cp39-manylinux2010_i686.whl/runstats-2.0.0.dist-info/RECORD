@@ -1,0 +1,9 @@
+runstats/__init__.py,sha256=Q_TxhjVJ-BC-MDVk4RP4ut50Ds97pZLkxHJlWciHZvU,472
+runstats/_core.py,sha256=tEWAiCLgdad0ZHk1qJMpjev88DJSuAen_tuBQYvHFYE,16223
+runstats/_core.cpython-39-i386-linux-gnu.so,sha256=fVjePXWugma9L-VIccubXqC0OXi2Rg_j9y8qfF1vJ94,1032596
+runstats/core.py,sha256=tEWAiCLgdad0ZHk1qJMpjev88DJSuAen_tuBQYvHFYE,16223
+runstats-2.0.0.dist-info/RECORD,,
+runstats-2.0.0.dist-info/METADATA,sha256=hbYVvndhc_cnwqzOObyFTlvzzgh_LeLbVHG7WVDUAFg,11876
+runstats-2.0.0.dist-info/top_level.txt,sha256=XlbOiIriFU1IHQjSps6CrnnHWDNqa-PTFmymrMrTTxc,9
+runstats-2.0.0.dist-info/WHEEL,sha256=erlUWf4gntrkM-m18kyr2NqTnRsGERF3sjzoDbYLimU,109
+runstats-2.0.0.dist-info/LICENSE,sha256=rVnUL1EtJRxRqlNURNkcumzSl7eDbfgLI4Nv9e1m-5g,559
