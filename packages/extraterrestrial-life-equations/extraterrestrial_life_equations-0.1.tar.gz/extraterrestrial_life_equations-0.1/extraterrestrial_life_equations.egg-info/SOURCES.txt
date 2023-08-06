@@ -1,0 +1,8 @@
+setup.py
+extraterrestrial_life_equations/SaraSeagarEquation.py
+extraterrestrial_life_equations/__init__.py
+extraterrestrial_life_equations.egg-info/PKG-INFO
+extraterrestrial_life_equations.egg-info/SOURCES.txt
+extraterrestrial_life_equations.egg-info/dependency_links.txt
+extraterrestrial_life_equations.egg-info/not-zip-safe
+extraterrestrial_life_equations.egg-info/top_level.txt
