@@ -1,0 +1,8 @@
+graft tests
+global-exclude *~ *.py[cod]
+
+graft doc
+global-exclude *~ _minted-tmp/* tmp*
+
+graft examples
+global-exclude *~ __pycache__/*
