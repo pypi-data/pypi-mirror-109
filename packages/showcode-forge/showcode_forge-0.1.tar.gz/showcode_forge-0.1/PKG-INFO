@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: showcode_forge
+Version: 0.1
+Summary: Tools for generating code from custom ShowCode Forge questions
+Home-page: UNKNOWN
+Author: Titusz Ban
+Author-email: tituszban@gmail.com
+License: mit
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+
+UNKNOWN
+
