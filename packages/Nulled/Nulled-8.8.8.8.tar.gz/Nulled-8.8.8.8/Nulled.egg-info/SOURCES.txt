@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+Nulled.egg-info/PKG-INFO
+Nulled.egg-info/SOURCES.txt
+Nulled.egg-info/dependency_links.txt
+Nulled.egg-info/top_level.txt
