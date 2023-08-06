@@ -1,0 +1,2 @@
+_autosat_tseytin
+autosat
