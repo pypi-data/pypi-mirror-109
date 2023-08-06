@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+DangerouslyFunny.egg-info/PKG-INFO
+DangerouslyFunny.egg-info/SOURCES.txt
+DangerouslyFunny.egg-info/dependency_links.txt
+DangerouslyFunny.egg-info/top_level.txt
