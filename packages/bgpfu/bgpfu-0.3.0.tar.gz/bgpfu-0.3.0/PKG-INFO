@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: bgpfu
+Version: 0.3.0
+Summary: BGP toolkit
+Home-page: https://github.com/bgpfu/bgpfu/
+License: Apache-2.0
+Author: Matt Griswold
+Author-email: grizz@20c.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: Jinja2 (>=2.11.3,<3.0.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: gevent (>=21.1.2,<22.0.0)
+Requires-Dist: munge (>=1.1.0,<2.0.0)
+Requires-Dist: py-radix (>=0.10.0,<0.11.0)
+Project-URL: Repository, https://github.com/bgpfu/bgpfu/
+Description-Content-Type: text/markdown
+
+
+[![PyPI](https://img.shields.io/pypi/v/bgpfu.svg?maxAge=60)](https://pypi.python.org/pypi/bgpfu)
+[![PyPI](https://img.shields.io/pypi/pyversions/bgpfu.svg?maxAge=600)](https://pypi.python.org/pypi/bgpfu)
+[![Tests](https://github.com/bgpfu/bgpfu/workflows/tests/badge.svg)](https://github.com/bgpfu/bgpfu)
+[![Codecov](https://img.shields.io/codecov/c/github/bgpfu/bgpfu/master.svg?maxAge=60)](https://codecov.io/github/bgpfu/bgpfu)
+
+
+# BGP FU
+
+![BGPFU](/../gh-pages/images/BGP-FU-Logo-RGB-resized.png?raw=true)
+
+BGP FU is a toolbelt to assist with the automatic creation of safe prefix-filters.
+
+BGP FU can ingest data from various sources such as IRRs/RPKI/other, transpose those
+according to your policy preferences, and generate partial router configurations.
+
+The jinja2 templating language is used to describe vendor specific output.
+
+## Contact
+
+Join us on `irc.terahertz.net` in `#BGPFU`
+
