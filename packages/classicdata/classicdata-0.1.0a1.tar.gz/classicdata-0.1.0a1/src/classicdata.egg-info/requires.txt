@@ -1,0 +1,15 @@
+loguru
+scikit-learn
+numpy
+appdirs
+
+[dev]
+check-manifest
+black
+pylint
+
+[test]
+coverage
+pytest
+black
+pylint
