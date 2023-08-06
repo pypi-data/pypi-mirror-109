@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mon-test
+Version: 0.0.2
+Summary: test_ajout_pip
+Home-page: https://github.com/NewtonExpertise/test_pip.git
+Author: Scyther
+Author-email: leroy_mathieu@live.fr
+License: GPL V3
+Keywords: test packages
+Platform: UNKNOWN
+Classifier: Topic :: Education
+License-File: LICENCE
+
+C'est un test.
+

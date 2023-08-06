@@ -1,0 +1,9 @@
+LICENCE
+README.txt
+setup.py
+mon_test/__init__.py
+mon_test/mon_test_script.py
+mon_test.egg-info/PKG-INFO
+mon_test.egg-info/SOURCES.txt
+mon_test.egg-info/dependency_links.txt
+mon_test.egg-info/top_level.txt
