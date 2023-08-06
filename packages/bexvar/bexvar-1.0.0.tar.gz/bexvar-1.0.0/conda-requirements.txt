@@ -1,0 +1,8 @@
+numpy
+scipy
+ultranest
+astropy
+tqdm
+joblib
+matplotlib
+corner
