@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+scr/SecretF/__init__.py
+scr/SecretF/main.py
+scr/SecretF.egg-info/PKG-INFO
+scr/SecretF.egg-info/SOURCES.txt
+scr/SecretF.egg-info/dependency_links.txt
+scr/SecretF.egg-info/top_level.txt
