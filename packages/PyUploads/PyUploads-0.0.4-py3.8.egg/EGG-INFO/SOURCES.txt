@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyUploads/Exceptions.py
+PyUploads/__init__.py
+PyUploads.egg-info/PKG-INFO
+PyUploads.egg-info/SOURCES.txt
+PyUploads.egg-info/dependency_links.txt
+PyUploads.egg-info/requires.txt
+PyUploads.egg-info/top_level.txt
