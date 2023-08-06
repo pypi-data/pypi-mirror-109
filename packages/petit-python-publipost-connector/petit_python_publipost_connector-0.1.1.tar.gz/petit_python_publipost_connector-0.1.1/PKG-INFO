@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: petit_python_publipost_connector
+Version: 0.1.1
+Summary: Connect your templates to the petit_publipost gateway
+Home-page: https://github.com/Plawn/petit_python_publipost_connector
+Author: Plawn
+Author-email: plawn.yay@gmail.com
+License: apache-2.0
+Description: # Python publipost Connector
+        
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
