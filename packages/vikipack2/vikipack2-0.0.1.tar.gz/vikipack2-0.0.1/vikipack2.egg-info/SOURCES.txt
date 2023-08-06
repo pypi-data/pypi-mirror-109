@@ -1,0 +1,8 @@
+setup.py
+vikipack2/__init__.py
+vikipack2/add.py
+vikipack2/subtract.py
+vikipack2.egg-info/PKG-INFO
+vikipack2.egg-info/SOURCES.txt
+vikipack2.egg-info/dependency_links.txt
+vikipack2.egg-info/top_level.txt
