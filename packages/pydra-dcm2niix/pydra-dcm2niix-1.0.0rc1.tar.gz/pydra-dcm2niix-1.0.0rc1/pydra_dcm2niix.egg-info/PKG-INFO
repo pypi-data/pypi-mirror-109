@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pydra-dcm2niix
+Version: 1.0.0rc1
+Summary: Provides a task interface for the popular dcm2niix DICOM to NIfTI converter
+Home-page: UNKNOWN
+Author: Thomas G. Close
+Author-email: tom.g.close@gmail.com
+License: Apache License, 2.0
+Description: # Pydra-Dcm2Niix
+        
+        A Pydra task for the dcm2niix DICOM to NIfTI converter tool
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; variant=CommonMark
+Provides-Extra: doc
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: tests
+Provides-Extra: dev
+Provides-Extra: all
+Provides-Extra: subpackage
