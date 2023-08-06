@@ -1,0 +1,3 @@
+[pyworkflow.plugin]
+xmipp2 = xmipp2
+

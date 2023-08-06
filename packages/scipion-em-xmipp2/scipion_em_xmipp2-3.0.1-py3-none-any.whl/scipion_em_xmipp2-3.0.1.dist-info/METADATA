@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: scipion-em-xmipp2
+Version: 3.0.1
+Summary: xmipp2 ready to use in scipion.
+Home-page: https://github.com/I2PC/scipion-em-xmipp2.git
+Author: I2PC
+Author-email: scipion@cnb.csic.es
+License: UNKNOWN
+Keywords: scipion cryoem imageprocessing scipion-3.0
+Platform: UNKNOWN
+Requires-Dist: scipion-em-tomo
+
+=============
+Xmipp2 plugin
+=============
+
+This plugin allows to use xmipp2 within the Scipion framework.
+
+=====
+Setup
+=====
+
+- **Install this plugin:**
+
+.. code-block::
+
+    scipion installp -p scipion-em-xmipp2
+
+OR
+
+  - through the plugin manager GUI by launching Scipion and following **Configuration** >> **Plugins**
+
+Alternatively, in devel mode:
+
+.. code-block::
+
+    scipion installp -p local/path/to/scipion-em-xmipp2 --devel
+
+
+
