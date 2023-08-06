@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ajaxlogin/__init__.py
+src/ajaxlogin/common.py
+src/ajaxlogin/controllers.py
+src/ajaxlogin/settings.py
+src/ajaxlogin/tools.py
+src/ajaxlogin.egg-info/PKG-INFO
+src/ajaxlogin.egg-info/SOURCES.txt
+src/ajaxlogin.egg-info/dependency_links.txt
+src/ajaxlogin.egg-info/requires.txt
+src/ajaxlogin.egg-info/top_level.txt
