@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: google-cloud-functions-utils
+Version: 0.3.6
+Summary: GCF utility package
+Home-page: https://github.com/devkomarek/google-cloud-functions
+Author: Lukasz Szymszon
+Author-email: devkomarek@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/devkomarek/google-cloud-functions/releases/tag/0.3.6
+Description: Some utils for google cloud functions
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
