@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+Dangerous.egg-info/PKG-INFO
+Dangerous.egg-info/SOURCES.txt
+Dangerous.egg-info/dependency_links.txt
+Dangerous.egg-info/top_level.txt
