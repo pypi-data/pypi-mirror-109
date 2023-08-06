@@ -1,0 +1,11 @@
+q2_dbbact/__init__.py,sha256=bI_B5XYGiwtJzjV9D2QY62FjsECiocLJTE83uQUjAoo,81
+q2_dbbact/methods.py,sha256=1KDnhPUkV40WnF1tt3n6ZVNMwUM2kMOouymenkWFQ0o,17907
+q2_dbbact/plugin_setup.py,sha256=U8dJnaSjOU7iyT37ZytW20j_XRYMwOCxkL0jNiCZzDs,20815
+q2_dbbact/utils.py,sha256=Y7tIPEkYR3DgFSHe7m0BXyShPTGK-fBde0SqRFXeZZA,15762
+q2_dbbact/visualizations.py,sha256=6R1NP4f_t9lQL5VP5SjXtPGyLFjakbHH-zRzo9GtZy0,7762
+q2_dbbact-1.1.0.dist-info/LICENSE,sha256=pQzZCLw-eXQYoLq_zMLRXDErvbW2S95v5WcupzDq6d8,1063
+q2_dbbact-1.1.0.dist-info/METADATA,sha256=pEdWXY-Rf7zb2Qhwm5TZEmcgAqUyVeCY-OAqXlm7j90,6414
+q2_dbbact-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+q2_dbbact-1.1.0.dist-info/entry_points.txt,sha256=OJC-IpVe_Vgxua1gHHOb0zNDzpgJsVM_X4DEUFb7HXM,60
+q2_dbbact-1.1.0.dist-info/top_level.txt,sha256=_qnQe3QJJbvzEpL1MC4FWtQKA0_q8arQkszSXbAE3EE,10
+q2_dbbact-1.1.0.dist-info/RECORD,,
