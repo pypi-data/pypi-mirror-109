@@ -1,0 +1,17 @@
+mosek/__init__.py,sha256=aKcklufCj5MjH3ugT8mOpfipJcbYZHfpaF6Bh0wlMPs,547955
+mosek/_msk.cp36-win32.pyd,sha256=qxhD0-zPz7Hn_gOS09IEXrHlOB0G0MKp8bgqZfJRz1c,228208
+mosek/_msk.cp37-win32.pyd,sha256=9QXWrZ0J-rVRgXAVqVOQeqcSA3QRvptY6fbDMITpYXk,228208
+mosek/_mskpreload.py,sha256=L5eoo2vWGo2bNvAHNmNY2lcOU5GD4Q4Yu1PetqMGyTg,162
+mosek/cilkrts20.dll,sha256=Fgip24SJu6Nb6bm1Eeg0is59H8JdX_4i_tmsta3bAWc,267480
+mosek/mosek9_2.dll,sha256=11yxFlv9UwJp0Dk2z6B3z4k5mE9Op6thlFKjI4_HM6I,13773168
+mosek/mosekorigin.py,sha256=Lul0lONHlJ7P2xRz_KK1c8CHS03o7dX2jQEWCYBKnx0,79
+mosek/fusion/Utils.py,sha256=znsPQuECtje_MONgiNnZ9ddQSW3AtXEKcnan_Fb-sfM,350
+mosek/fusion/__init__.py,sha256=ozB4dsscxjZVHxTZZENKW9b0sCMqhBdPrXMQ2nM4Zqk,11598
+mosek/fusion/impl/__init__.py,sha256=Bp0h3vVx8BM-V4aUX56cSgFdv3kjWevQ4BQstzfEHEA,34
+mosek/fusion/impl/_implementation.py,sha256=0KV81Y5a_EXJkbxKVeRku6I1E30sD-oOR9C6mn5Et5E,2309804
+mosek/fusion/impl/fragments.cp36-win32.pyd,sha256=TjfL4gmgAncnrwA39H0Q2kU-K8QaWQnLDl-Rl_Xi0RQ,1004400
+mosek/fusion/impl/fragments.cp37-win32.pyd,sha256=A0qhxccQ0FuYyekmJPGqprgwhIQJn99_TiniXM7N6Fc,1004400
+Mosek-9.2.47.dist-info/METADATA,sha256=P1DalTPU4bJ0odTkbC5XWeqwDH0W_cQzWJm45aZVYEk,777
+Mosek-9.2.47.dist-info/WHEEL,sha256=MIcnjHs8vB2T7t3biMROEABHsna_miSfN1s4sPkohUM,97
+Mosek-9.2.47.dist-info/top_level.txt,sha256=H-jE29OEVOzLw9G-O6O5ruUbXFREbXsj350F1Xa4Pc8,6
+Mosek-9.2.47.dist-info/RECORD,,
