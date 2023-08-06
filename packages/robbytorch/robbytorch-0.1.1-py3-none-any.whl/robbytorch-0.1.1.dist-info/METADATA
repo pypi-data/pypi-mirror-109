@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: robbytorch
+Version: 0.1.1
+Summary: Cool package for robust AI
+Home-page: https://gitlab.com/piotr.wygocki/image_transfer_learning_tools/
+Author: MIM Solutions
+Author-email: maciej.satkiewicz@mim-solutions.pl
+License: MIT
+Project-URL: Bug Reports, https://gitlab.com/piotr.wygocki/image_transfer_learning_tools/-/issues
+Keywords: pytorch,neural networks,robust learning,transfer learning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: scikit-image
+Requires-Dist: livelossplot
+Requires-Dist: mypy
+Requires-Dist: mlflow
+Requires-Dist: robustness
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
