@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: AttentionOdorify
+Version: 3.0.1
+Summary: Attention based BiLSTM model for Olfactory Analysis
+Home-page: UNKNOWN
+Author: Harshit Singh Chhabra
+Author-email: harshit20009@iiitd.ac.in
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: sklearn
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-plot
+Requires-Dist: captum
+Requires-Dist: rdkit-pypi
+
+This package contains code to train an attention based deep learning model to predict activation status for given ligands and receptors. 
+
+## Detailed description of functions:
+
+#### split_data: 
+This function takes a pandas dataframe as input and provides preprocessed model ready data. The function parameters include *val_ratio* to split the data into train and validation, a *test* flag which will enable the *test_ratio* to split the data into train, validation and test. This function also performs the oversampling of minority class (class with less samples) in the training data to avoid bias in the training process. Please note that the **ligands** column should be named **SMILES**, **sequences** column should be named **Final_Sequence** and **activation status** column should be named **Activation_Status**.
+
+- Basic code required for split_ratio function -
+
+        X_smile_onehot_train, X_seq_onehot_train, Y_train, X_smile_onehot_val, X_seq_onehot_val, Y_val = split_data(dataframe)
+
+- Provide a validation split ratio explicitally - 
+
+        X_smile_onehot_train, X_seq_onehot_train, Y_train, X_smile_onehot_val, X_seq_onehot_val, Y_val, X_smile_onehot_test, X_seq_onehot_test, Y_test = split_data(dataframe, val_ratio=0.2)
+
+- Perform test and validation splitting with given ratio - 
+
+        X_smile_onehot_train, X_seq_onehot_train, Y_train, X_smile_onehot_val, X_seq_onehot_val, Y_val, X_smile_onehot_test, X_seq_onehot_test, Y_test = split_data(dataframe, val_ratio=0.2, test=True, test_ratio=0.1)
+
+#### train:
+This function will train a model based on training and validation data. You can modify the model parameters of LSTM along with basic hyperparameters like learning rate, dropout, batch size and number of training epochs (these parameters are not necessary and the code runs with default values as well). We use Adam optimier for training the entire model. This function also saves the loss plot for your trained model in the current directory. Custom filename can be provided to the saved plot by parameter *filename*.
+
+- Basic code required for train function -
+
+        model = train(X_smile_onehot_train, X_seq_onehot_train, Y_train, X_smile_onehot_val, X_seq_onehot_val)
+                
+- Updating hyperparameters like learning rate, dropout, batch size and epochs
+
+        model = train(X_smile_onehot_train, X_seq_onehot_train, Y_train, X_smile_onehot_val, X_seq_onehot_val,  learning_rate=0.0002, dropout=0.5, batch_size=16, epochs=50, filename = "train_val_loss")
+
+- Update the model architecture by changing number of recurrent layers, hidden states (update carefully to avoid memory overflow)
+
+        model = train(X_smile_onehot_train, X_seq_onehot_train, Y_train, X_smile_onehot_val, X_seq_onehot_val,  smile_h = 100, smile_l = 1, seq_h = 100, seq_l = 1)
+                
+#### test: 
+This function is used to find standard metrics like accuracy, precision, recall, auc, kappa etc. on any data for a trained model. This function also makes a ROC curve and saves it the current directory. Custom filename can be provided to the saved plot by parameter *filename*.
+
+- The below code snippet generates a ROC curve for the model
+
+        test(model, X_smile_onehot_test, X_seq_onehot_test, Y_test, filename = "test")
+
+- The below snippet generates a classwise ROC curve
+
+        test(model, X_smile_onehot_test, X_seq_onehot_test, Y_test, "test", flag=1)
+
+#### grid_search:
+This method helps to find optimal model hyperparameters by training a group of models and deciding the best model based on highest validation accuracy after same number of epochs. Please be careful while using this function to avoid exhuasting CUDA memory of your system. 
+
+- Basic code required for grid_search function with default options
+
+        grid_search(X_smile_onehot_train, X_seq_onehot_train, Y_train, X_smile_onehot_val, X_seq_onehot_val, Y_val)
+
+- Try various combinations of learning_rate, batch_size and dropouts
+
+        grid_search(X_smile_onehot_train, X_seq_onehot_train, Y_train, X_smile_onehot_val, X_seq_onehot_val, Y_val, , batch_size = [16, 32], learning_rate = [1e-4, 1.2e-4], dropout= [0.2, 0.7], epochs = 10)                
+
+
+#### generate_result_matrix: 
+This method gives the prediction and probability matrix for given sequences and ligands.
+
+    pred_matrix, prob_matrix = generate_result_matrix(model, smiles, seqs)
+
+#### interpretebility:
+This method saves the plots for ligands and receptors interpretebility along with molecular structure interpretebilty in the provided path. It takes a trained model with save path along with a single smile and sequence to find interpretebility.
+
+    interpretebilty(model, user_smile, user_seq, path = "./")
+
+
+
+
