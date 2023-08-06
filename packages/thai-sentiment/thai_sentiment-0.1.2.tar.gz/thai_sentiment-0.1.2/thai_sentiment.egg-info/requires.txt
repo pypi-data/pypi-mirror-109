@@ -1,0 +1,4 @@
+pythainlp
+sklearn
+pickle
+scipy

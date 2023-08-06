@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: thai_sentiment
+Version: 0.1.2
+Summary: The naive sentiment classification function based on NBSVM trained on wisesight_sentiment
+Home-page: https://github.com/cstorm125/thai_sentiment
+Author: cstorm125
+Author-email: cebril@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/cstorm125/thai_sentiment/archive/refs/tags/v0.1.2.tar.gz
+Description: UNKNOWN
+Keywords: sentiment analysis,thai,nlp
+Platform: UNKNOWN
