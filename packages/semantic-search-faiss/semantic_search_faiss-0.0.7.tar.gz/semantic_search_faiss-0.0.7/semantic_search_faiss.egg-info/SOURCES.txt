@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+semantic_search_faiss.egg-info/PKG-INFO
+semantic_search_faiss.egg-info/SOURCES.txt
+semantic_search_faiss.egg-info/dependency_links.txt
+semantic_search_faiss.egg-info/requires.txt
+semantic_search_faiss.egg-info/top_level.txt
+semanticsearch/__init__.py
+semanticsearch/config.py
+semanticsearch/pretrained.py
+semanticsearch/search.py
+semanticsearch/utils.py
