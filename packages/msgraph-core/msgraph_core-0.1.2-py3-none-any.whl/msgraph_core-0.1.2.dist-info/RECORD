@@ -1,0 +1,15 @@
+msgraph/__init__.py,sha256=h9OebHDTLi9enHIA1nw1S5TXB2coHCopCVvJvepZyW4,448
+msgraph/core/__init__.py,sha256=xZtZvCBAYF5I5z31GfpXR9btioqmoxw2kRwFYIVa3ZU,357
+msgraph/core/_client_factory.py,sha256=jPD8HX3x33SiqmasqIRlMzZIv551S9Zi6N-rTzT1M0Y,4314
+msgraph/core/_constants.py,sha256=NsfvS7nmSaK7KDPEtyTe5WFvMghrOe5IZnuZ-Shnov8,373
+msgraph/core/_enums.py,sha256=HhdhEnL9Vu-3sxWE_wdYcHQFmYWpgeJYPTUxB5XHfiI,967
+msgraph/core/_graph_client.py,sha256=X9hdW-JrNJsNzjeAxgM21XyFM2aWf8Boi0elFBYP8-Q,6741
+msgraph/core/middleware/__init__.py,sha256=RpmFAsIap_SsWW_3ZZQEznwsa2f5-Mk0Yx1wUozmHhg,155
+msgraph/core/middleware/abc_token_credential.py,sha256=EWVYYJh_AMELU--s_7YmBZfFKGS3JArB4DEildynL1k,305
+msgraph/core/middleware/authorization.py,sha256=BWaBepNRYbEe7sFrOCEn1g11gYAMBZwYMeIAjzQJyBk,1443
+msgraph/core/middleware/middleware.py,sha256=VrCZff78F83KopQO2usPqPvnNYPUc-T6HgZQRLyC0oI,1859
+msgraph/core/middleware/request_context.py,sha256=thkbTSObsNfXEbNMH0DNvPQNiaJjMDQx6zSrTzMfs4Y,716
+msgraph_core-0.1.2.dist-info/LICENSE,sha256=csnydknSU6nwAZSI5dhM7npVmm5r0LNNBBy0uWuwmEE,1093
+msgraph_core-0.1.2.dist-info/WHEEL,sha256=o-Q2E8s7BKkCJ1EC2uQdaymZVVu2aUt1e8uTTFpzHVs,81
+msgraph_core-0.1.2.dist-info/METADATA,sha256=1BrgHs5AFcPWCnfc123776jYbb37Vr_l4j0dQ9Xmq70,3268
+msgraph_core-0.1.2.dist-info/RECORD,,
