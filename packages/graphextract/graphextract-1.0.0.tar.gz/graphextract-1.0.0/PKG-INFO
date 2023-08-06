@@ -1,0 +1,34 @@
+Metadata-Version: 1.0
+Name: graphextract
+Version: 1.0.0
+Summary: Extract graph from image
+Home-page: https://github.com/revesansparole/graphextract
+Author: revesansparole
+Author-email: revesansparole@gmail.com
+License: cecill-c
+Description: ========================
+        graphextract
+        ========================
+        
+        .. {# pkglts, doc
+        
+        .. image:: https://readthedocs.org/projects/graphextract/badge/?version=latest
+            :alt: Documentation status
+            :target: https://graphextract.readthedocs.io/en/latest/?badge=latest
+        
+        .. #}
+        
+        Extract graph from image
+        
+        
+        
+        =======
+        History
+        =======
+        
+        creation (2021-06-02)
+        ------------------------
+        
+        * First release on PyPI.
+        
+Platform: UNKNOWN
