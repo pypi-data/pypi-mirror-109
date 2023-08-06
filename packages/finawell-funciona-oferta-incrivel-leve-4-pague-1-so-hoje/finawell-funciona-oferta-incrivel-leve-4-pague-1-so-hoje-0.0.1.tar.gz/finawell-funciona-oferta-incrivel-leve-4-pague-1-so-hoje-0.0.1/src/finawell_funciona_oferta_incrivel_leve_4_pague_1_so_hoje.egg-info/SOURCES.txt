@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/finawell_funciona_oferta_incrivel_leve_4_pague_1_so_hoje/__init__.py
+src/finawell_funciona_oferta_incrivel_leve_4_pague_1_so_hoje.egg-info/PKG-INFO
+src/finawell_funciona_oferta_incrivel_leve_4_pague_1_so_hoje.egg-info/SOURCES.txt
+src/finawell_funciona_oferta_incrivel_leve_4_pague_1_so_hoje.egg-info/dependency_links.txt
+src/finawell_funciona_oferta_incrivel_leve_4_pague_1_so_hoje.egg-info/top_level.txt
