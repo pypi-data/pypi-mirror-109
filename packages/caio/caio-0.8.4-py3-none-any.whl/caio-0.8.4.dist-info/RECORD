@@ -1,0 +1,16 @@
+caio/__init__.py,sha256=XqiPMiEi8yGf8w407H0LAYFzqO4shr_bn1M0sK-U3dM,2691
+caio/abstract.py,sha256=7t0AvOhQf3dxVfzH5ACPfetBqvml17LEK2NEUqgllHw,1862
+caio/asyncio_base.py,sha256=dQ3q6FctHCk-O0fveEzLWZjTfJNl3r9DuvQ_WJoh1j4,3811
+caio/linux_aio.pyi,sha256=r3DE_t6NlhAU4Gqa8ZtKQXCwUxRH1ErqfyNek2pfveA,267
+caio/linux_aio_asyncio.py,sha256=MYEEFS8urM6glNuFTn_9DxcCc9uEQjIoZmzly4qRTgI,782
+caio/py.typed,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+caio/python_aio.py,sha256=hXFy3TGyGu1x-PRWC56qKojzV45UP39NfVRtWcZEe1U,7142
+caio/python_aio_asyncio.py,sha256=PnGXnroz67cvZWpHy2uiNaMB1hA_c2RYPv_yvBbF5w4,264
+caio/thread_aio.pyi,sha256=u1KU0B8Cy09mNr4qnEDFFaLIga8kRi340FRl2l61FcY,280
+caio/thread_aio_asyncio.py,sha256=fUwZHEndeVTQ-btjjyjjMnVUiqBeALsTA97Ii23FjdY,231
+caio/version.py,sha256=OoFkNTPg1z59XMaKCAXnX44CdeCKB7UUhc5Q3c1KuxU,517
+caio-0.8.4.dist-info/LICENSE,sha256=4DukHX-rIHAHaf5BGLq1DYAMt0-ZA1OgXS9f_xwig2M,11558
+caio-0.8.4.dist-info/METADATA,sha256=gC9ZukYKPIapT0ew_jqa5YIdzVHTweLuTAqTg2gPGdE,3330
+caio-0.8.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+caio-0.8.4.dist-info/top_level.txt,sha256=RWYgQKb4lvhETlW-rtNa4ZLU0gSsBMN05gSNZk7zzIc,5
+caio-0.8.4.dist-info/RECORD,,
