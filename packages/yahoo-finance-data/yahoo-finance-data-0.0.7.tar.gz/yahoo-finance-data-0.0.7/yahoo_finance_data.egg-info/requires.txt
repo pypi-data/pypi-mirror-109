@@ -1,0 +1,5 @@
+beautifulsoup4
+certifi
+datetime
+selenium
+urllib3
