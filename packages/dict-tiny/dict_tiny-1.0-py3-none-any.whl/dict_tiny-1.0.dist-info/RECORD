@@ -1,0 +1,14 @@
+dict_tiny/__init__.py,sha256=rClS32ngkbjW8fdRTKY4pANyvmomF6NuvnMYlJOtwzQ,19
+dict_tiny/main.py,sha256=_cBl989YMEaPaNNnjm6mMv8uUP3wQtBgV80cCpC_1p4,3488
+dict_tiny/setting.py,sha256=yhI6yfujQsm9NHWb2FzpdTFhZm88W5V-lPsoLv2ewAM,918
+dict_tiny/util.py,sha256=MhyMOeg_wCOwhFKzpN5eixVXIKe9oTi2jyX5dWt5UDQ,1560
+dict_tiny/version.py,sha256=fTJWYFd8M4VPemwXnK-e5AzFErOHopWUV21_jFUg10k,203
+dict_tiny/sources/__init__.py,sha256=b2dmOkoeOSdRpxs8Hkh0wQgcROyWgIt958k1cdMYgo4,45
+dict_tiny/sources/googleTrans.py,sha256=nwJ9qPMuueKbDQOh37mK9IRSQ6exAalBLMwnBa82oPE,993
+dict_tiny/sources/youdao.py,sha256=7scRwnutlG9RXka4awggAieGa7FmGdZXXAsBF5ld4Dw,12760
+dict_tiny-1.0.dist-info/LICENSE,sha256=RRcHBWzyqmfcZDFaPP4_P5_AOTvuqIHvahaHKRY-VVc,1065
+dict_tiny-1.0.dist-info/METADATA,sha256=X08kKAH2Ums156VQnCCLeJFYDsu7IoGHyYyBA32TkPg,5549
+dict_tiny-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dict_tiny-1.0.dist-info/entry_points.txt,sha256=65xDayosyr_Goofy2DKEsDpdpPYWY5SfSzdOunrE7Bk,56
+dict_tiny-1.0.dist-info/top_level.txt,sha256=ZUQv7_FuHGKvojBun9fD3ISETYIrpXfQXIR_cDFWu5U,10
+dict_tiny-1.0.dist-info/RECORD,,
