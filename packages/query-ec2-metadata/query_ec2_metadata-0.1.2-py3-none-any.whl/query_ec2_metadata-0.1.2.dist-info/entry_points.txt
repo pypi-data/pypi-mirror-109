@@ -1,0 +1,4 @@
+[console_scripts]
+ec2-metadata=query_ec2_metadata:main
+instance-identity=query_ec2_metadata:main
+
