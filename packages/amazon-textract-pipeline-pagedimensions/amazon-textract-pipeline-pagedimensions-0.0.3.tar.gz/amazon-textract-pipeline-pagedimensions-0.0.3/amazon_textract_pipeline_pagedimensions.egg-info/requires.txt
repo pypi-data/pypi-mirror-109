@@ -1,0 +1,4 @@
+boto3
+botocore
+Pillow==8.2.0
+PyPDF2==1.26.0
