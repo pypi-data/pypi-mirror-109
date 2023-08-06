@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pytnix
+Version: 2021.6.13
+Summary: A portable Unix commands bundle
+Home-page: https://github.com/HubTou/pytnix/
+Author: Hubert Tournier
+Author-email: nobody@nowhere.invalid
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/HubTou/pytnix/issues
+Keywords: pnu-project
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Environment :: Console
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: System
+Classifier: Topic :: Utilities
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# pytnix
+pytnix, as in **pyt**hon u**NIX**, is an add-on to [The PNU Project](https://github.com/HubTou/PNU), bundling its [UNIX](https://en.wikipedia.org/wiki/Unix) commands rewrites with other [Python](https://www.python.org/) software made by third parties.
+
+## Objectives:
+* Having some handy portable Unix tools, for example for Windows (though there are [plenty of other solutions](https://github.com/HubTou/PNU/wiki/Wilderness-Survival-Guide) for that).
+
+## Status:
+* You can install what's available from [our package](https://pypi.org/project/pytnix/) with the following console command:
+```Shell
+pip install pytnix
+```
+
+## Commands bundled:
+* [The PNU Project](https://github.com/HubTou/PNU)
+* [pyfiglet](https://github.com/pwaller/pyfiglet) - a [FIGlet](http://www.figlet.org/) port
+
+
+

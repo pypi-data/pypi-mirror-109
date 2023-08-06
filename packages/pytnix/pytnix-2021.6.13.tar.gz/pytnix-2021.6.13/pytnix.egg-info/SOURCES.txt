@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+pytnix.egg-info/PKG-INFO
+pytnix.egg-info/SOURCES.txt
+pytnix.egg-info/dependency_links.txt
+pytnix.egg-info/entry_points.txt
+pytnix.egg-info/requires.txt
+pytnix.egg-info/top_level.txt
