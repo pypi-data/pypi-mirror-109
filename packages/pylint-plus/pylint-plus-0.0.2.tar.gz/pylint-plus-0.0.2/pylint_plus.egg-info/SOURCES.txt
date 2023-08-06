@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pylint_plus/__init__.py
+pylint_plus/function_order_checker.py
+pylint_plus/magic_constant_checker.py
+pylint_plus/return_method_checker.py
+pylint_plus.egg-info/PKG-INFO
+pylint_plus.egg-info/SOURCES.txt
+pylint_plus.egg-info/dependency_links.txt
+pylint_plus.egg-info/requires.txt
+pylint_plus.egg-info/top_level.txt
