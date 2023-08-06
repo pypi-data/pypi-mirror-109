@@ -1,0 +1,16 @@
+CHANGELOG.md,sha256=GgGG_pKn0AfWENMN83c78jDMwFZ8aAfdO1XkvXAlhDI,2464
+README.md,sha256=Xw2xKbt7s-M2npskmrkOOPFXj7Jd08zzd5lARXm7e7M,3982
+promgen_k8s/__init__.py,sha256=eWDuOAD8azrV87rICbwS0AwTKKiclnyBL52e1H2MwVM,526
+promgen_k8s/cadvisor_job.py,sha256=hGTatZACatlhe3ILssXJY060H5FmXprR0Y7zxSjQhuM,3621
+promgen_k8s/cluster.py,sha256=swm4f_JSItzcmnrgmXxl-G1Na-jeYD7-XRkPec9pKbE,1389
+promgen_k8s/generator.py,sha256=3GHJ6t3HjirjvWvuq-DUcJ0uFSawStL6W2Oga9cUu5E,1325
+promgen_k8s/ingresses_job.py,sha256=1hdPuLceOtNpB2LzWJTdVyc2bjyzuZXuSNwJOGQibmk,3287
+promgen_k8s/nodes_job.py,sha256=4ZS5Hyh7PaITADQo_KjLwtPYiHRwJAQdCUVRvP3q6Kk,2927
+promgen_k8s/pods_job.py,sha256=rRClj7B73DEoW63amJ2YNGiJOXJDYmdKFaeD3hh0Nwk,6412
+promgen_k8s/prom_dsl.py,sha256=9Nr2vP00RkXnbTwZRadNravL2QgTdAVAUtFECpRkuRs,1623
+promgen_k8s/service_endpoints_job.py,sha256=IObtK5GX1zv0a2OlVCodc0ESjzU3KL-y5WYoWOdhxGo,3946
+promgen_k8s/services_job.py,sha256=FqFqZNqP101VhiOgZGLwgbr2V6KBpJaNjT-n5ugJXvM,3312
+promgen_k8s-0.3.0.dist-info/LICENSE,sha256=9MHXujLvW89c8D4u7-xYJeuv7fUPozCjZwCknGBcHvQ,10758
+promgen_k8s-0.3.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+promgen_k8s-0.3.0.dist-info/METADATA,sha256=reqGAzfhkB5CljUvXUApHcHDmn6TvU2A9EajJio89z4,596
+promgen_k8s-0.3.0.dist-info/RECORD,,
