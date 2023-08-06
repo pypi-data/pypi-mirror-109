@@ -1,0 +1,3 @@
+[console_scripts]
+telethon-bot=telethon_bot.bot:main
+

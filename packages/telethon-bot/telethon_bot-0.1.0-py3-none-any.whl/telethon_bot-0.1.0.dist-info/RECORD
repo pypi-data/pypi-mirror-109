@@ -1,0 +1,11 @@
+telethon_bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telethon_bot/bot.py,sha256=jdulPhMkJtuZ7bFLOBsmKLcDXpuenW779nTSRPMX4oE,1228
+telethon_bot/conf.py,sha256=g-7GO7YwykPNY8uNOv7hLM4zondinnGUMsJuew2M3RY,1118
+telethon_bot/handlers/__init__.py,sha256=Q9q0exs5Y2VomVjCMaloXFJQxh6R7znAC0AqRqFjExg,321
+telethon_bot/handlers/basics.py,sha256=F6dyBlEdlWnre9AMVqrhGey5IgEh8Ym7OhKtlboKEDc,655
+telethon_bot/types.py,sha256=3mBvndLZh5l--WTWeW-I8h45ke23Qt1KCVOielFdqt8,148
+telethon_bot/utils.py,sha256=AUQDLN1ZzUyysISqpYuAKm1-TtgwssmHwpYeKa7FvZM,887
+telethon_bot-0.1.0.dist-info/entry_points.txt,sha256=xtWEcWCPCVxpvaSSvxUVPXVmqBS16dWGS0AWATkyKUQ,54
+telethon_bot-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+telethon_bot-0.1.0.dist-info/METADATA,sha256=SNJvvnWKEVf8z-scKatC_A7zpAY0Kec1ukrmps6aOVs,445
+telethon_bot-0.1.0.dist-info/RECORD,,
