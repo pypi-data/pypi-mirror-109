@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: AppTrack
+Version: 1.0
+Summary: apptrack is a strong application track tool on distributed system 
+Home-page: UNKNOWN
+Author: wukan
+Author-email: kan.wu@genetalks.com
+License: Mulan
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
