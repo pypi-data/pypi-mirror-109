@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: coolors
+Version: 0.1.0
+Summary: generates 5 random colors by scraping coolors.co
+Author: Arjun Gandhi
+Author-email: account@arjugandhi.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyppeteer (>=0.2.5,<0.3.0)
+Description-Content-Type: text/markdown
+
+A simple package to gen a color scheme by scraping coolors.co
+
+to use import coolor function and run
+
