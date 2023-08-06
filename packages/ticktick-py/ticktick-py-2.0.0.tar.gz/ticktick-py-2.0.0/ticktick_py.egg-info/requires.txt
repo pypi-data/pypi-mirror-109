@@ -1,0 +1,6 @@
+requests
+pytz
+regex
+
+[tests]
+pytest
