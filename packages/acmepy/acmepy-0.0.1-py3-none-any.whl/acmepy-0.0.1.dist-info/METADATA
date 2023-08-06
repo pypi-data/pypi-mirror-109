@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: acmepy
+Version: 0.0.1
+Summary: Acme client to generate SSL Certificates for the websites
+Home-page: https://github.com/khadkakrishna/acmepy/
+Author: Krishna Khadka
+Author-email: krishnakhadka2802@gmail.com
+License: Apache 2.0
+Download-URL: https://github.com/khadkakrishna/acmepy/archive/v_01.tar.gz
+Keywords: acme,letsencrypt,sslwebsite,acmeclient
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: acme
+
+# acmepy
+a simple acme client to generate certificates for Secure https DNS
+
+
