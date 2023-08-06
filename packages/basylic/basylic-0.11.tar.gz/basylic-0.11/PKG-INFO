@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: basylic
+Version: 0.11
+Summary: Python interface to Basylic's API
+Home-page: https://github.com/basylic-team/basylic-python-client
+Author: Petar Todorov
+Author-email: ptodorov@etaonis.com
+License: MIT
+Download-URL: https://github.com/basylic-team/basylic-python-client/tarball/0.11
+Keywords: insurance,anti-fraud,basylic
+Platform: UNKNOWN
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+UNKNOWN
+
