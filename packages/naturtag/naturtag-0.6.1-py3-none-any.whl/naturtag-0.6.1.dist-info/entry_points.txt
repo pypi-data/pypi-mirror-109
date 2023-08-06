@@ -1,0 +1,4 @@
+[console_scripts]
+naturtag=naturtag.cli:main
+nt=naturtag.cli:main
+
