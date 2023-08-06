@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: my-util-lib
+Version: 1.0.4
+Summary: My util library in Python
+Home-page: http://localhost
+Author: Me
+Author-email: me@test.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.19)
+
+My util library in Python (long description)
+
