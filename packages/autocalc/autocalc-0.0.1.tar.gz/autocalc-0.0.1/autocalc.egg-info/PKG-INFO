@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: autocalc
+Version: 0.0.1
+Summary: A framework to keep track of dependencies in non-linear workflows
+Home-page: UNKNOWN
+Author: Andras Gefferth
+Author-email: andras.gefferth@gmail.com
+License: MIT
+Platform: UNKNOWN
+Provides-Extra: test
+Provides-Extra: doc_build
+License-File: LICENSE
+
+dg
+=================================
+
+Documentation for dg
+
+A framework to keep track of dependencies in non-linear workflows
+
+Execute
+
+.. code::
+
+    make html
+
+in the docs directory. Your html documentation will be in docs/build/html/index.html
+
