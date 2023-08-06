@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+setup.cfg
+quantum_circuit_slicer.egg-info/PKG-INFO
+quantum_circuit_slicer.egg-info/SOURCES.txt
+quantum_circuit_slicer.egg-info/dependency_links.txt
+quantum_circuit_slicer.egg-info/top_level.txt
