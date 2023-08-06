@@ -1,0 +1,11 @@
+syncgit/__init__.py,sha256=Lu7mj8DBBG9hkCBmabOa_gYoq8H5p4wHXagnBGB0evA,43
+syncgit/_config.py,sha256=ZQ-FxSoKdlRlbMhU7-f0sh8KVLDc6wlhif06l7JttrQ,223
+syncgit/_gitcmd.py,sha256=4CMJWRxVLbO-Zyua-JOS3kMouK6tgHh5yMBG6FIFv6g,1804
+syncgit/_repo.py,sha256=RUDdQk4qIyGwtAr-5o7SqtyA5HCG9WSNtHN8e3m72iU,5180
+syncgit/_threadloop.py,sha256=gTilrrTJIQ6bSTJ_Zw5WJL86irZ5c8iiaCPG5dCmJEc,869
+syncgit/_threadsafe_dict.py,sha256=QJqtzhXVuxoUHrhVHNmBXIJitNO8cDddJr0Pf3uUeoc,673
+syncgit-0.1.4.dist-info/LICENSE,sha256=cVHuTwalkZNI9UrKAqT4YtKmIZ383c_O1_NPrf7ub9g,1072
+syncgit-0.1.4.dist-info/METADATA,sha256=pf4GkufixUK7u7uo99JMLMIDO8_vRBZ7TzUfeU4qxac,1992
+syncgit-0.1.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+syncgit-0.1.4.dist-info/top_level.txt,sha256=EYcbGf1-bKiVfreUnA_VtdEdETF444tMcz-iMRXq8sU,8
+syncgit-0.1.4.dist-info/RECORD,,
