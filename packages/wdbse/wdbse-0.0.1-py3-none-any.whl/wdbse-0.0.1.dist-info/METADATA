@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wdbse
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: PunchyArchy
+Author-email: ksmdrmvscthny@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: wsqluse
+
+WDBSE (Watchman Data Base Settings Exporter) - фреймворк, предназначенный для импорта настроек GCore из wdb непосредственно
+в сам GCore.
+
