@@ -1,0 +1,13 @@
+pydantic
+
+[dev]
+black
+flake8
+bump2version
+pytest
+
+[pyyaml]
+pyyaml
+
+[ruamel]
+ruamel.yaml>=0.15
