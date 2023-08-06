@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fitfile
+Version: 1.0.0
+Summary: Decode FIT format files.
+Home-page: https://github.com/tcgoetz/Fit
+Author: Tom Goetz
+License: UNKNOWN
+Description: =======
+        fitfile
+        =======
+        
+        Fit file parser.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.0
+Description-Content-Type: text/x-rst
