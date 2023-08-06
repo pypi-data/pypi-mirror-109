@@ -1,0 +1,2 @@
+loguru
+kafka-python
