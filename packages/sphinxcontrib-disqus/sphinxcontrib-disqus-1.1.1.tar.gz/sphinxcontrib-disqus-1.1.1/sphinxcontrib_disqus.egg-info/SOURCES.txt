@@ -1,0 +1,10 @@
+README.rst
+setup.py
+sphinxcontrib/__init__.py
+sphinxcontrib/disqus.py
+sphinxcontrib_disqus.egg-info/PKG-INFO
+sphinxcontrib_disqus.egg-info/SOURCES.txt
+sphinxcontrib_disqus.egg-info/dependency_links.txt
+sphinxcontrib_disqus.egg-info/not-zip-safe
+sphinxcontrib_disqus.egg-info/requires.txt
+sphinxcontrib_disqus.egg-info/top_level.txt

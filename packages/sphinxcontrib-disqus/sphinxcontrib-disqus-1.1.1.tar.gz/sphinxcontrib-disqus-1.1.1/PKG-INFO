@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: sphinxcontrib-disqus
+Version: 1.1.1
+Summary: Sphinx extension that embeds Disqus comments in documents.
+Home-page: https://pypi.org/project/sphinxcontrib-disqus/
+Author: @Robpol86
+Author-email: robpol86@gmail.com
+License: MIT
+Description: ====================
+        sphinxcontrib-disqus
+        ====================
+        
+        .. warning:: PROJECT HAS BEEN RENAMED TO: sphinx-disqus
+        
+Keywords: sphinx disqus
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
