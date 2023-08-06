@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+mudata/__init__.py
+mudata.egg-info/PKG-INFO
+mudata.egg-info/SOURCES.txt
+mudata.egg-info/dependency_links.txt
+mudata.egg-info/top_level.txt
