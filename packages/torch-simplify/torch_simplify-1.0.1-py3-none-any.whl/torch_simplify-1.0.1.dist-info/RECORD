@@ -1,0 +1,10 @@
+simplify/__init__.py,sha256=Kov9ULJWWjV45_NHBBIs_VWBg5z5Jy9HQcG1mRc2378,552
+simplify/fuse.py,sha256=CHoWzrpDZE7h1JtiLKMmnPMm6sXkucIdJGjd-780tdg,4486
+simplify/layers.py,sha256=zOR9FA9LxdB2lUu22ForBT32_1qbzw-cEsgxB3eQsUs,929
+simplify/propagate.py,sha256=9JS3cwOfCB6zpHre4Z_y3GjA45kco7OPA6skqvbOuiY,4130
+simplify/remove.py,sha256=Vs8HnwN-bqWnVJjsRB9FBIBwgehMngY2zrMF9Btgrqg,3913
+torch_simplify-1.0.1.dist-info/LICENSE,sha256=Cbk7Ki2YmrYcN-51rLBqvcqwIBB3RmQ2Ak5EDUxudmQ,1516
+torch_simplify-1.0.1.dist-info/METADATA,sha256=umd7Nz1m-0u4-gvmwGmc4awQNBxoJ7p258sLv5OrA_U,7616
+torch_simplify-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+torch_simplify-1.0.1.dist-info/top_level.txt,sha256=AQpqyrQBPtmxn16bdDStepPOtedyZo0wYcTwgm6WU1c,9
+torch_simplify-1.0.1.dist-info/RECORD,,
