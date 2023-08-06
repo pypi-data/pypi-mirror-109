@@ -1,0 +1,73 @@
+dist: focal
+language: python
+
+matrix:
+    include:
+        - python: '2.7'
+          dist: bionic
+          env:
+
+        - python: '3.6'
+          env:
+            - COVERAGE="true"
+            - DILL="true"
+
+        - python: '3.7'
+          env:
+
+        - python: '3.8'
+          env:
+
+        - python: '3.9'
+          env:
+
+        - python: '3.10-dev'
+          env:
+            - PYVERSION="3.10"
+
+        - python: 'nightly'
+          env:
+            - PYVERSION="3.10"
+
+        - python: 'pypy'
+          dist: xenial
+          env:
+            - PYPY_VERSION="2.7"
+
+        - python: 'pypy3'
+          env:
+            - PYPY_VERSION="3.6"
+
+    allow_failures:
+        - python: '2.7'
+        - python: 'pypy'
+        - python: '3.10-dev'
+        - python: 'nightly'
+        - python: 'pypy3'
+    fast_finish: true
+
+cache:
+    pip: true
+
+before_install:
+    - set -e  # fail on any error
+    - if [[ $COVERAGE == "true" ]]; then pip install coverage; fi
+    - if [[ $DILL == "true" ]]; then pip install dill; fi
+
+install:
+    - python setup.py build && python setup.py install
+
+script:
+    - if [[ $PYVERSION != "3.10" ]]; then PYVERSION=$TRAVIS_PYTHON_VERSION ; fi
+    - if [[ $PYVERSION == "pypy" ]]; then PYVERSION=py$PYPY_VERSION ; fi
+    - if [[ $PYVERSION == "pypy3" ]]; then PYVERSION=py$PYPY_VERSION ; fi
+    - cd py$PYVERSION
+    - cp ../.coveragerc .coveragerc
+    - for test in multiprocess/tests/__init__.py; do echo $test ; if [[ $COVERAGE == "true" ]]; then coverage run -a $test > /dev/null; else python $test > /dev/null; fi ; done
+    - for test in multiprocess/tests/*.py; do if [[ $test != *"__"* && $test != *"mp_"* ]]; then echo $test ; if [[ $COVERAGE == "true" ]]; then coverage run -a $test > /dev/null; else python $test > /dev/null; fi ; fi; done
+    - if [[ $COVERAGE == "true" ]]; then cat .coverage; else echo ''; fi
+    - if [[ $COVERAGE == "true" ]]; then mv .coverage ../.coverage; else echo ''; fi
+    - cd ..
+
+after_success:
+    - if [[ $COVERAGE == "true" ]]; then bash <(curl -s https://codecov.io/bash); else echo ''; fi
