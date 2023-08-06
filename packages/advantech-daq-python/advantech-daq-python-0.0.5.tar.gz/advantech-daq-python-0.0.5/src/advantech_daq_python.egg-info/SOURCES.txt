@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+src/NavigatorPython.py
+src/NavigatorTest.pyd
+src/advantech_daq_python.egg-info/PKG-INFO
+src/advantech_daq_python.egg-info/SOURCES.txt
+src/advantech_daq_python.egg-info/dependency_links.txt
+src/advantech_daq_python.egg-info/top_level.txt
