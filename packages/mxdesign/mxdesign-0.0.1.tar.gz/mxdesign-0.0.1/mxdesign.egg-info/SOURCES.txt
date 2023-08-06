@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+mxdesign/__init__.py
+mxdesign.egg-info/PKG-INFO
+mxdesign.egg-info/SOURCES.txt
+mxdesign.egg-info/dependency_links.txt
+mxdesign.egg-info/top_level.txt
