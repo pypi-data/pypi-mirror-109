@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/covidseverity/__init__.py
+src/defend_covid_severity.egg-info/PKG-INFO
+src/defend_covid_severity.egg-info/SOURCES.txt
+src/defend_covid_severity.egg-info/dependency_links.txt
+src/defend_covid_severity.egg-info/requires.txt
+src/defend_covid_severity.egg-info/top_level.txt
