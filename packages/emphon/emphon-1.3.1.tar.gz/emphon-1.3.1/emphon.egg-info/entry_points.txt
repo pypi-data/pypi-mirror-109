@@ -1,0 +1,3 @@
+[console_scripts]
+emphon = emphon.__main__:main
+

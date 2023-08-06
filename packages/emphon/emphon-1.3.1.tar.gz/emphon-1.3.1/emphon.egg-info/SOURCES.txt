@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+emphon/__init__.py
+emphon/__main__.py
+emphon/emphon.py
+emphon/ipa_key.json
+emphon/transcriber.py
+emphon/version.py
+emphon.egg-info/PKG-INFO
+emphon.egg-info/SOURCES.txt
+emphon.egg-info/dependency_links.txt
+emphon.egg-info/entry_points.txt
+emphon.egg-info/requires.txt
+emphon.egg-info/top_level.txt
