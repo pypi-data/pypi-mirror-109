@@ -1,0 +1,3 @@
+[console_scripts]
+bridgewalk = bridgewalk.run_gui:main
+
