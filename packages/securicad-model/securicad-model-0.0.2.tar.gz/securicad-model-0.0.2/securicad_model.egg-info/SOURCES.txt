@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+NOTICE
+README.md
+dev-requirements.txt
+pyproject.toml
+setup.cfg
+securicad/model/__init__.py
+securicad/model/model.py
+securicad/model/py.typed
+securicad_model.egg-info/PKG-INFO
+securicad_model.egg-info/SOURCES.txt
+securicad_model.egg-info/dependency_links.txt
+securicad_model.egg-info/not-zip-safe
+securicad_model.egg-info/requires.txt
+securicad_model.egg-info/top_level.txt
