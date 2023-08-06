@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/stuffr/__init__.py
+src/stuffr/stuffr.py
+src/stuffr.egg-info/PKG-INFO
+src/stuffr.egg-info/SOURCES.txt
+src/stuffr.egg-info/dependency_links.txt
+src/stuffr.egg-info/requires.txt
+src/stuffr.egg-info/top_level.txt

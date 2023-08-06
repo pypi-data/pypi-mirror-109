@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: stuffr
+Version: 1.0.0
+Summary: Stuff from R implemented in Python
+Home-page: UNKNOWN
+Author: Juha Vierinen, Vetle Hofsøy-Woie
+Author-email: juha-pekka.vierinen@uit.no
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Stuff from R
+
+The most hated Python module ever written. These are routines I made when I started using Python. As I had previously used R as an interpreted language, the module became "stuffr", meaning stuff from R. Unfortunately most of my code has a dependency to this module. 
+
+You can install it using:
+> pip install -i https://test.pypi.org/simple/ stuffr
+
+
