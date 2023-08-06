@@ -1,0 +1,8 @@
+click
+cssutils
+flake8
+jsonpickle
+jinja2
+pre-commit
+pytest
+Wand
