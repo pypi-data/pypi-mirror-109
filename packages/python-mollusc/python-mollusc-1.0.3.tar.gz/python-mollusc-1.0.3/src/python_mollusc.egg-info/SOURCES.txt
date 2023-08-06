@@ -1,0 +1,12 @@
+CHANGES.rst
+MANIFEST.in
+README.rst
+ez_setup.py
+setup.cfg
+setup.py
+src/clamd/__init__.py
+src/python_mollusc.egg-info/PKG-INFO
+src/python_mollusc.egg-info/SOURCES.txt
+src/python_mollusc.egg-info/dependency_links.txt
+src/python_mollusc.egg-info/top_level.txt
+src/python_mollusc.egg-info/zip-safe
