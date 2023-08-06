@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: sendinblue-templates
+Version: 0.0.1
+Summary: Sendinblue Template Downloader/Uploader
+Home-page: https://github.com/tofran/sendinblue-template-manager
+Author: tofran
+Author-email: me@tofran.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/tofran/sendinblue-template-manager/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Sendinblue Template Downloader/Uploader
+
+Download and upload Sendinblue template's html content for ease of editing and versioning.
+Env var `SENDINBLUE_API_KEY` required (v3).
+
+Files are placed in `./templates` and named following the format:
+ `<numeric-template-id>. <template name (escaped)>.html`
+ ex: `1. Sample template title.html`
+
+Usage:
+ - `./sendinblue-template.py download`
+   Downloads the first 1000 templates from the Sendinblue account. Overriding existing files.
+
+ - `./sendinblue-template.py upload`
+   Updates all matching templates html content in Sendinblue.
+
