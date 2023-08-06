@@ -1,0 +1,6 @@
+setup.py
+stackless.egg-info/PKG-INFO
+stackless.egg-info/SOURCES.txt
+stackless.egg-info/dependency_links.txt
+stackless.egg-info/entry_points.txt
+stackless.egg-info/top_level.txt
