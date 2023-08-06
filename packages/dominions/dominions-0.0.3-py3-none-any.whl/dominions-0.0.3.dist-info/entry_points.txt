@@ -1,0 +1,3 @@
+[console_scripts]
+dominions = dominions.__main__:main
+
