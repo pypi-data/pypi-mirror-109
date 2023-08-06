@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: dumda
+Version: 1.11
+Summary: generate highly customizable dummy data for data science testing
+Home-page: https://github.com/oliverbdot/dumda
+Author: Oliver B.
+Author-email: oliverbcontact@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: data science python
+Platform: UNKNOWN
