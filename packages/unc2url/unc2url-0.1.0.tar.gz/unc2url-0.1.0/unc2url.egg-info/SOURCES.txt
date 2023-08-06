@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+tests/__init__.py
+tests/test_unc2url.py
+unc2url/__init__.py
+unc2url/unc2url.py
+unc2url.egg-info/PKG-INFO
+unc2url.egg-info/SOURCES.txt
+unc2url.egg-info/dependency_links.txt
+unc2url.egg-info/entry_points.txt
+unc2url.egg-info/top_level.txt
