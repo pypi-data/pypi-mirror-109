@@ -1,0 +1,4 @@
+[console_scripts]
+test=scripts.poetry:run_test
+version=scripts.poetry:run_version
+
