@@ -1,0 +1,17 @@
+fabric_mgmt_cli/__init__.py,sha256=aJT-Zim9KdfRt8u_MP5d6eK_UeQejYyiZfqdEMFdavw,22
+fabric_mgmt_cli/managecli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fabric_mgmt_cli/managecli/command.py,sha256=fWMCKTuEJl7Hf1CzcvA1vRUhks2dcALTHtVj-CSi61A,2002
+fabric_mgmt_cli/managecli/config_processor.py,sha256=gTXS5cNOTlRBe-rQJplm5BrCTVCB7Ya0N7KQCCAnzx8,9562
+fabric_mgmt_cli/managecli/configuration.py,sha256=HSi-niJ253YRYH1xpfqrRnVkGz_pCakEg2NT5Yq-5dw,6508
+fabric_mgmt_cli/managecli/kafka_processor.py,sha256=kYiAUqG79VHUNXDv7slEW-KPSROpynAWEBg39RALwM4,9789
+fabric_mgmt_cli/managecli/manage_command.py,sha256=ODsokLIQkXIqlqleeeWmiQRftXTx4MkW9xDTt0-k0Cg,16223
+fabric_mgmt_cli/managecli/managecli.py,sha256=nHIs_vNkoSBcCmMt4J77yKnHN3P4UXl2OgERLSPXU8M,12915
+fabric_mgmt_cli/managecli/show_command.py,sha256=HklJmd8D4b-s1OwBkkx9GZykfR_CCErysRhXuPLKvxo,9767
+fabric_mgmt_cli/managecli/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fabric_mgmt_cli/managecli/test/test_managecli.py,sha256=1W3T8e7zZt7gltcUvXaeezb8lfBNVpbrAjobCy1F8fU,8401
+fabric_mgmt_cli-1.0b10.dist-info/LICENSE,sha256=P277nPZLx1noU9HCnuBfDUHkpC36xq5G9SK9FKcQUqY,1071
+fabric_mgmt_cli-1.0b10.dist-info/METADATA,sha256=RjZ2_BuidpV5gKw_Ve-58CNxNluMJ1GAPF6RKLa_Qmo,7449
+fabric_mgmt_cli-1.0b10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fabric_mgmt_cli-1.0b10.dist-info/entry_points.txt,sha256=JIHnswxsNXCnybkcYqNVNihG-5J7AhwNx9oWVbDddhY,93
+fabric_mgmt_cli-1.0b10.dist-info/top_level.txt,sha256=PPh4gsYPYFt3xBawDVxOJduMwLszj8V8DrQqdYaWEJc,16
+fabric_mgmt_cli-1.0b10.dist-info/RECORD,,
