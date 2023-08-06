@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+brunodb/__init__.py
+brunodb/cars_example.py
+brunodb/database.py
+brunodb/perf_test.py
+brunodb/sqlite_utils.py
+brunodb/table.py
+brunodb.egg-info/PKG-INFO
+brunodb.egg-info/SOURCES.txt
+brunodb.egg-info/dependency_links.txt
+brunodb.egg-info/requires.txt
+brunodb.egg-info/top_level.txt
+example_data/cars.csv
+test/test_cars.py
