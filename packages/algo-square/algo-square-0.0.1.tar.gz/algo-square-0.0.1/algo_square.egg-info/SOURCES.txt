@@ -1,0 +1,5 @@
+setup.py
+algo_square.egg-info/PKG-INFO
+algo_square.egg-info/SOURCES.txt
+algo_square.egg-info/dependency_links.txt
+algo_square.egg-info/top_level.txt
