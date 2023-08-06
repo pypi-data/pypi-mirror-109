@@ -1,0 +1,4 @@
+pandas
+ftfy
+itertools
+requests
