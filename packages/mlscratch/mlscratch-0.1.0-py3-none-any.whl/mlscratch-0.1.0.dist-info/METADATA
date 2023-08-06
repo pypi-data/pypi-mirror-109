@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: mlscratch
+Version: 0.1.0
+Summary: Machine learning from scratch
+Home-page: https://github.com/lukenew2/mlscratch
+Author: Luke Newman
+Author-email: lukeanewman2@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/lukenew2/mlscratch
+Keywords: data science,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+
+# Machine Learning From Scratch 
+
+## About
+
+Practical implementations of common machine learning algorithms with test
+cases coded from scratch in a similar style as Scikit-learn using 
+Object-Oriented Programming.
+
+This project is meant to increase our understanding of machine learning
+algorithms and what is  'underneath the hood'. It is not meant for use
+in actual data science work.  
+
+## Installation
+To use the classes and functions for testing purposes create a virtual
+environment and pip install the project.  
+```
+    $ pip install mlscratch==0.0.1
+```
+To download all source code in a local repository from Github create a virtual
+environment and run the following commands in your terminal.
+
+```
+    $ git clone https://github.com/lukenew2/mlscratch
+    $ cd mlscratch
+    $ python setup.py install
+```
+
+## Learning Algorithms
+### Supervised
+- [Elastic Net](mlscratch/supervised/regression.py)
+- [Lasso Regression](mlscratch/supervised/regression.py)
+- [Linear Regression](mlscratch/supervised/regression.py)
+- [Logistic Regression](mlscratch/supervised/logistic.py)
+- [Polynomial Regression](mlscratch/utils/preprocessing.py)
+- [Ridge Regression](mlscratch/supervised/regression.py)
+- [Softmax Regression](mlscratch/supervised/logistic.py)
+
+## Write-Ups
+- [ML From Scratch: Linear, Polynomial, and Regularized Regression Models](https://towardsdatascience.com/ml-from-scratch-linear-polynomial-and-regularized-regression-models-725672336076)
+
+
+
