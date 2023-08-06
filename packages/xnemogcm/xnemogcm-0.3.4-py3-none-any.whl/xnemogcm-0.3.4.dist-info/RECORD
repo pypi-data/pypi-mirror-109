@@ -1,0 +1,13 @@
+xnemogcm/__init__.py,sha256=m-W4WVAM9F2DTN2TnvZnC1euTaTDizqPssPbog4X5T8,228
+xnemogcm/arakawa_points.py,sha256=OsAURlMNQSJXH4-v37qh3kXrO4iAbcky4lorwCh7w6I,1238
+xnemogcm/domcfg.py,sha256=K_MYuNHvCDyRApKyAi1m5zVHPwl7sxoEvnAu8cqH2LE,6224
+xnemogcm/merge.py,sha256=D32JQu5XrFVJdny1LlPOEdVICNiTiolv86sTPOApIWg,4473
+xnemogcm/metrics.py,sha256=g6k4uTFHmhSJLrAbMaspHqX4Q8roApAGbVJh5THqtQY,3711
+xnemogcm/namelist.py,sha256=0QJJ3xzClyEEDzLOMmdgUm7bn6lykD2D2-wvDyLYFH8,1132
+xnemogcm/nemo.py,sha256=FQSJPOWElTERK7YjnvgV-DgmcnyK9b7AoZw4N-GfNWE,4094
+xnemogcm/tools.py,sha256=PE8PnFR1lnx0NEeto6J99uPKu_ndiH8JgxhveXnqWyE,3304
+xnemogcm-0.3.4.dist-info/LICENSE,sha256=5Ju-OgO-rRAdg7AWq8QlrIxyGnWI_A9fpTFJtex-B58,1071
+xnemogcm-0.3.4.dist-info/METADATA,sha256=oROPouqXJ7XQKme6kzY7muLBH-7gVECVpijdtOXBQoQ,2492
+xnemogcm-0.3.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+xnemogcm-0.3.4.dist-info/top_level.txt,sha256=RuxoLDPsvEiskhsXYOBFBrh7GrYJHotQhIIZICJYDqI,9
+xnemogcm-0.3.4.dist-info/RECORD,,
