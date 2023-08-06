@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Code/DoubleLL.egg-info/PKG-INFO
+Code/DoubleLL.egg-info/SOURCES.txt
+Code/DoubleLL.egg-info/dependency_links.txt
+Code/DoubleLL.egg-info/top_level.txt
