@@ -1,0 +1,13 @@
+jointly/__init__.py,sha256=IKSerEe2kfq4l3RHekQVMfiday5ob5ReXRgGNKOBrnw,125
+jointly/abstract_extractor.py,sha256=U33_raG1G4MJ4I698usuu_qCkIl53EeZJLqtILGJelk,1322
+jointly/helpers.py,sha256=FCYC2wqe_MXI3VRtyGD7pLRIpr9EzBqPEoD40XwzSAE,3338
+jointly/log.py,sha256=Xn9eFddFV_elA6c_TO_SxnPn_C3HymblfJVH9aFQVws,180
+jointly/segment_selector.py,sha256=3XFYzlzozGvNcKjoImjh8rg_tUqhlJVsemds3uKWYk0,1555
+jointly/shake_extractor.py,sha256=QoeSAks434143br3ZK27jt_iFI5_KA0M8REZsCCfpQc,6803
+jointly/synchronization_errors.py,sha256=05Da-MxmzX8rNwAZZX1k-mrOgYYYhnRrqsaTRkG2ykU,197
+jointly/synchronizer.py,sha256=tg2ApCrbJuc55tPdqFbtc0vyU6LswaMxsx4SZVFAwJU,14738
+jointly-0.2.0.dist-info/LICENSE,sha256=xrrAAvRlFqKbWt7pu0XHdAWwyIpZJkT9x4g4dYbdwTY,1069
+jointly-0.2.0.dist-info/METADATA,sha256=bg3GPYzo_5Lv8q5hXn2_XMUY83NE9_KeH-WX7unFLUQ,4850
+jointly-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jointly-0.2.0.dist-info/top_level.txt,sha256=fZli4_erEM6RzUD1W8j94pCid0DIbAR187kmI8FoUrk,8
+jointly-0.2.0.dist-info/RECORD,,
