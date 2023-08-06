@@ -1,0 +1,9 @@
+calc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calc/geometry.py,sha256=CVZtWKgfvZlA0hhWiAmctN8q7_3-gEQ7HknBQqVaAG8,125
+calc/operation.py,sha256=_uRpd0t27nR9Mx21jn8d4i-5moPXQHT2BQgHxt3ppWQ,66
+calcpkgyk-0.0.1.dist-info/DESCRIPTION.rst,sha256=tJXrGUKK95TPZxHsyrZAffAWmzCsFjUEkGjAIoJJIeY,7
+calcpkgyk-0.0.1.dist-info/METADATA,sha256=ZDnUx3TUTaIGmlTEd61orC7t_dZEIf4R3MjLRot_Dlc,409
+calcpkgyk-0.0.1.dist-info/RECORD,,
+calcpkgyk-0.0.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+calcpkgyk-0.0.1.dist-info/metadata.json,sha256=lpaCk_csy-ekriYd8LQie0QLH8sXJof65U8T6VcZ1wo,529
+calcpkgyk-0.0.1.dist-info/top_level.txt,sha256=puEYL34td3TXIHetfS1fmb0aPiwTYHyuOkuktVBURfY,5
