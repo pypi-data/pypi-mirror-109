@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static-files/static/css/main.89a750f0.chunk.css",
+    "main.js": "/static-files/static/js/main.bee530d4.chunk.js",
+    "runtime~main.js": "/static-files/static/js/runtime~main.991fcab5.js",
+    "static/css/2.614aab5d.chunk.css": "/static-files/static/css/2.614aab5d.chunk.css",
+    "static/js/2.ea80d5f7.chunk.js": "/static-files/static/js/2.ea80d5f7.chunk.js",
+    "index.html": "/static-files/index.html",
+    "precache-manifest.97be54cefd5fa0a5a64839ef0a4bd218.js": "/static-files/precache-manifest.97be54cefd5fa0a5a64839ef0a4bd218.js",
+    "service-worker.js": "/static-files/service-worker.js",
+    "static/media/Header.less": "/static-files/static/media/logo-white.e564e259.png",
+    "static/media/no_data.svg": "/static-files/static/media/no_data.d9bc6f29.svg",
+    "static/media/tensorflow-2.svg": "/static-files/static/media/tensorflow-2.7b44de7b.svg"
+  }
+}
