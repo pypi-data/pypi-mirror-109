@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pyannotators-duckling
+Version: 0.1.0.dev0
+Summary: Annotator based on Facebook's Duckling
+Home-page: https://github.com/oterrier/pyannotators_duckling/
+Author: Olivier Terrier
+Author-email: olivier.terrier@kairntech.com
