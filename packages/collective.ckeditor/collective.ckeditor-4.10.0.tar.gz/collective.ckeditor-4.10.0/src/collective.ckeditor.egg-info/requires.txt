@@ -1,0 +1,11 @@
+collective.plonefinder
+collective.quickupload
+demjson
+plone.api
+plone.app.uuid
+setuptools
+zope.i18nmessageid
+
+[test]
+plone.app.robotframework[debug]
+plone.app.testing
