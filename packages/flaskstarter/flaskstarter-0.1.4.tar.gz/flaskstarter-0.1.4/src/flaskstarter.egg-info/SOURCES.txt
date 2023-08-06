@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/flaskstarter/__init__.py
+src/flaskstarter/flaskstart_cli.py
+src/flaskstarter.egg-info/PKG-INFO
+src/flaskstarter.egg-info/SOURCES.txt
+src/flaskstarter.egg-info/dependency_links.txt
+src/flaskstarter.egg-info/entry_points.txt
+src/flaskstarter.egg-info/requires.txt
+src/flaskstarter.egg-info/top_level.txt
