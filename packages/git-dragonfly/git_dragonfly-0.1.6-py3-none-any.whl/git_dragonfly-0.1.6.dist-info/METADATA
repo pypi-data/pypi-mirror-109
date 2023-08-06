@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: git-dragonfly
+Version: 0.1.6
+Summary: Bug analysis on Git repositories
+Home-page: https://mlaizure.github.io/dragonfly/
+Author: Finn Aspenson, Corbin Vandeventer, Maddi Laizure
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: gitpython
+Requires-Dist: matplotlib
+
+UNKNOWN
+
