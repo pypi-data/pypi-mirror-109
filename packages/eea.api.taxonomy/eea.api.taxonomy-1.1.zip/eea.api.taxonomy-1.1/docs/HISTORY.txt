@@ -1,0 +1,14 @@
+Changelog
+=========
+
+1.1 - (2021-06-10)
+---------------------------
+
+* Bug fix: Fix RestAPI PATCH for Python 2
+  [avoinea - refs #134513]
+
+1.0 - (2021-06-09)
+-----------------------
+
+* Initial release: RestAPI endpoint GET, PATCH, ControlPanel
+  [avoinea - refs #134513]
