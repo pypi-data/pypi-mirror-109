@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+kesshashcrackin.egg-info/PKG-INFO
+kesshashcrackin.egg-info/SOURCES.txt
+kesshashcrackin.egg-info/dependency_links.txt
+kesshashcrackin.egg-info/top_level.txt
