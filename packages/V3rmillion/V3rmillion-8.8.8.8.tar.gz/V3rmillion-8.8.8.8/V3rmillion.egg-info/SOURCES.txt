@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+V3rmillion.egg-info/PKG-INFO
+V3rmillion.egg-info/SOURCES.txt
+V3rmillion.egg-info/dependency_links.txt
+V3rmillion.egg-info/top_level.txt
