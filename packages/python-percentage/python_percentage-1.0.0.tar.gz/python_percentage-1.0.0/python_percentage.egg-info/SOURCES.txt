@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+python_percentage/__init__.py
+python_percentage.egg-info/PKG-INFO
+python_percentage.egg-info/SOURCES.txt
+python_percentage.egg-info/dependency_links.txt
+python_percentage.egg-info/top_level.txt
