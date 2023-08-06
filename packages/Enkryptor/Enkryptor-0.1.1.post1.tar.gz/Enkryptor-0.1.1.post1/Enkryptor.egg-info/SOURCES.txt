@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+Enkryptor.egg-info/PKG-INFO
+Enkryptor.egg-info/SOURCES.txt
+Enkryptor.egg-info/dependency_links.txt
+Enkryptor.egg-info/requires.txt
+Enkryptor.egg-info/top_level.txt
+enkryptor/__init__.py
+enkryptor/enkryptor.py
