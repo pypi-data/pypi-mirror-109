@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: metadataproxy
+Version: 2.2.0
+Summary: A proxy for AWS's metadata service that gives out scoped IAM credentials from STS
+Home-page: https://github.com/lyft/metadataproxy
+Author: Ryan Lane
+Author-email: rlane@lyft.com
+License: apache2
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
