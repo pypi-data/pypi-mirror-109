@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ninja-authentication
+Version: 0.32
+Summary: A package with builtin authentication apis and Base Emails
+Home-page: https://github.com/EnzoCp/ninja-auth
+Author: Enzo Pascucci
+Author-email: enzocpascucci@pascuccidevelopments.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django :: 3.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+
+Link : https://github.com/EnzoCp/ninja-auth/tree/master/django_ninja_authentication
+

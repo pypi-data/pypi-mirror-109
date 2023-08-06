@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ninja_authentication.egg-info/PKG-INFO
+ninja_authentication.egg-info/SOURCES.txt
+ninja_authentication.egg-info/dependency_links.txt
+ninja_authentication.egg-info/not-zip-safe
+ninja_authentication.egg-info/top_level.txt
