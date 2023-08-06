@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pink-accents
+Version: 0.0.1
+Summary: Accent system based on string pattern matching
+Home-page: https://github.com/Fogapod/pink-accents
+Author: Fogapod
+Author-email: fogaprod@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Topic :: Text Processing
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pink-accents
+
+Accent system based on string pattern matching.
+
