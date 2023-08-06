@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_database_prefix/__init__.py
+django_database_prefix/models.py
+django_database_prefix.egg-info/PKG-INFO
+django_database_prefix.egg-info/SOURCES.txt
+django_database_prefix.egg-info/dependency_links.txt
+django_database_prefix.egg-info/top_level.txt
