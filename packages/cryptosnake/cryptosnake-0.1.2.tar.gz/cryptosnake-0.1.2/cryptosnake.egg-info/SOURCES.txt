@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cryptosnake/__init__.py
+cryptosnake/snake.py
+cryptosnake.egg-info/PKG-INFO
+cryptosnake.egg-info/SOURCES.txt
+cryptosnake.egg-info/dependency_links.txt
+cryptosnake.egg-info/requires.txt
+cryptosnake.egg-info/top_level.txt
