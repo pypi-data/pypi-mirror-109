@@ -1,0 +1,3 @@
+[console_scripts]
+run_plugin = pymemri.plugin.pluginbase:run_plugin
+
