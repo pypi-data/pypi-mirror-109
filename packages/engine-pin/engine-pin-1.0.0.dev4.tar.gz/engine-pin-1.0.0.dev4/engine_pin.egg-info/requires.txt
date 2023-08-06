@@ -1,0 +1,6 @@
+Jinja2>=2.11.2
+MarkupSafe>=1.1.1
+redis>=3.5.3
+pytest>=6.1.2
+PyMySQL>=0.10.1
+DBUtils>=2.0
