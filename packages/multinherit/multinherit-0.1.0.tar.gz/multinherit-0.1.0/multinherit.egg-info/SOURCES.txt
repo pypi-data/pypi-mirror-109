@@ -1,0 +1,9 @@
+README.md
+setup.py
+multinherit/__init__.py
+multinherit/multinherit.py
+multinherit/multinherit_example.py
+multinherit.egg-info/PKG-INFO
+multinherit.egg-info/SOURCES.txt
+multinherit.egg-info/dependency_links.txt
+multinherit.egg-info/top_level.txt
