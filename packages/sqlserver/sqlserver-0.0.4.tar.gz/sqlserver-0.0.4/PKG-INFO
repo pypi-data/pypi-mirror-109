@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: sqlserver
+Version: 0.0.4
+Summary: python program to convert data dictionaries to replace fields in word document
+Home-page: UNKNOWN
+Author: Ashlin Darius Govindasamy
+Author-email: adgrules@hotmail.com
+License: MIT
+Description: adg sql server class
+        
+        Change Log
+        ========== 
+        0.0.3 (2021/06/10)
+        ------------------
+        1. Fixed bugs
+        2. Added Stored Procedure Function
+Keywords: msword
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
