@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: sdss-lvmtan
+Version: 0.0.1
+Summary: Lvm Tan Clu Wrapper
+Home-page: UNKNOWN
+Author: Florian Briegel
+Author-email: briegel@mpia.de
+License: BSD-3-Clause
+Project-URL: Documentation, https://github.com/sdss/lvmtan
+Project-URL: Source, https://github.com/sdss/lvmtan
+Description: # lvmtan
+        
+        ![Versions](https://img.shields.io/badge/python->3.7-blue)
+        [![Documentation Status](https://readthedocs.org/projects/sdss-lvmtan/badge/?version=latest)](https://sdss-lvmtan.readthedocs.io/en/latest/?badge=latest)
+        [![Travis (.org)](https://img.shields.io/travis/sdss/lvmtan)](https://travis-ci.org/sdss/lvmtan)
+        [![codecov](https://codecov.io/gh/sdss/lvmtan/branch/main/graph/badge.svg)](https://codecov.io/gh/sdss/lvmtan)
+        
+        Lvm Tan Clu Wrapper
+        
+Keywords: astronomy,software
+Platform: all
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6, <4
+Provides-Extra: develop
