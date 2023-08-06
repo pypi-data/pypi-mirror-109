@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hydrotools.-restclient
+Version: 3.0.0
+Summary: General REST api client with built in request caching and retries.
+Home-page: https://www.github.com/NOAA-OWP/hydrotools
+Author: Austin Raney
+Author-email: arthur.raney@noaa.gov
+License: USDOC
+Platform: UNKNOWN
+Provides-Extra: develop
+
+UNKNOWN
+
