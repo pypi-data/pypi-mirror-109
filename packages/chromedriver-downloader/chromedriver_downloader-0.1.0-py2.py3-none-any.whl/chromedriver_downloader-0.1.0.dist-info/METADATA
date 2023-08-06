@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: chromedriver-downloader
+Version: 0.1.0
+Summary: Downloader for chromedriver
+Home-page: https://github.com/marcoslima/chromedriver_downloader
+Author: Marcos Lima
+Author-email: marcos.j.s.lima@gmail.com
+License: Apache Software License 2.0
+Keywords: chromedriver_downloader
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: Portuguese
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: wget (==3.2)
+
+UNKNOWN
+
