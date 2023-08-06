@@ -1,0 +1,1 @@
+from pyminesweeper.minesweeper import * 
