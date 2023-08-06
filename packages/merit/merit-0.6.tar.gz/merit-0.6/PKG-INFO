@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: merit
+Version: 0.6
+Summary: A Python SDK for the Merit API.
+Home-page: https://github.com/tayrobin/merit
+Author: Taylor Robinson
+Author-email: taylor.howard.robinson@gmail.com
+License: MIT
+Download-URL: https://github.com/tayrobin/merit/archive/refs/tags/0.6.tar.gz
+Description: [![Documentation Status](https://readthedocs.org/projects/merit/badge/?version=latest)](https://merit.readthedocs.io/en/latest/?badge=latest)
+        
+        ![merit](https://user-images.githubusercontent.com/12666781/121791357-d93eaf00-cb9d-11eb-81e9-b070acd3948e.png)
+        # Python SDK
+        A Python SDK for the [Merit](https://www.merits.com) API to make python-based app development easier.
+        
+        ## API Documentation
+        https://developer.merits.com/
+        
+Keywords: Merit,API,SDK,Digital Credentials
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
