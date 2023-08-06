@@ -1,0 +1,8 @@
+README.md
+ccloud.py
+setup.py
+py_ccloud.egg-info/PKG-INFO
+py_ccloud.egg-info/SOURCES.txt
+py_ccloud.egg-info/dependency_links.txt
+py_ccloud.egg-info/requires.txt
+py_ccloud.egg-info/top_level.txt
