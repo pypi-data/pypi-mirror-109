@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ml-commons-pekalam
+Version: 0.0.1.dev1
+Summary: Tensorflow utilities and custom implementations used in my projects.
+Home-page: UNKNOWN
+Author: Marek Pękala
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Build Status](https://dev.azure.com/marekbf3/nnlab/_apis/build/status/pekalam.ml_commons?branchName=master)](https://dev.azure.com/marekbf3/nnlab/_build/latest?definitionId=11&branchName=master)
+ml_commons
+
+
