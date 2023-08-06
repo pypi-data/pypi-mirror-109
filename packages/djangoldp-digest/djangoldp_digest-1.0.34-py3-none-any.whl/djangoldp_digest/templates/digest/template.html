@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+  @font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('https://cdn.rawgit.com/digitalbluemoon/ozery-fonts/d25945df/fonts/brandongrotesque-medium-webfont.eot');
+    src: url('https://cdn.rawgit.com/digitalbluemoon/ozery-fonts/d25945df/fonts/brandongrotesque-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.rawgit.com/digitalbluemoon/ozery-fonts/d25945df/fonts/brandongrotesque-medium-webfont.woff2') format('woff2'),
+         url('https://cdn.rawgit.com/digitalbluemoon/ozery-fonts/d25945df/fonts/brandongrotesque-medium-webfont.woff') format('woff'),
+         url('https://cdn.rawgit.com/digitalbluemoon/ozery-fonts/d25945df/fonts/brandongrotesque-medium-webfont.ttf') format('truetype'),
+         url('https://cdn.rawgit.com/digitalbluemoon/ozery-fonts/d25945df/fonts/brandongrotesque-medium-webfont.svg#brandon_grotesquemedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+</style>
+<body style="font-family: 'Brandon Grotesque';">
+  <div
+    style="min-width:320px;max-width:600px;word-wrap:break-word;word-break:break-word;margin:0 auto;background-color:#ffffff">
+    <p style="text-align:center"><a href="{{ settings.INSTANCE_DEFAULT_CLIENT }}"><img src="https://cdn.startinblox.com/logos/Republique_ESS_logo_VF.jpg"
+        alt="La République de l'ESS" style='max-height: 150px;' /></a></p>
+    <p>{{ user.name }},</p>
+    <p>Il y a du nouveau sur vos centres d'intérêts, voici votre semaine sur <a href="{{ settings.INSTANCE_DEFAULT_CLIENT }}" style='color:#1EA5B3'>La République de l'ESS</a></p>
+    <p>
+      {% autoescape off %}{{ content }}{% endautoescape %}
+    </p>
+    <hr />
+    <p style="text-align:center">
+      <a href="{{ settings.INSTANCE_DEFAULT_CLIENT }}" style='color:#1EA5B3'>Accéder à la plateforme</a> - <a
+        href="https://ess-france.org" style='color:#1EA5B3'>ess-france.org</a>
+    </p>
+    <p style="text-align:center">Pour ne plus recevoir cet e-mail, rendez-vous sur votre profil et décochez la case "Je
+      souhaite recevoir les notifications par mail".</p>
+  </div>
+</body>
+
+</html>
