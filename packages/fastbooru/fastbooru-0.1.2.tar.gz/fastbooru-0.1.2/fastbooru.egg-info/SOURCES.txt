@@ -1,0 +1,11 @@
+README.md
+setup.py
+fastbooru/__init__.py
+fastbooru/meta.py
+fastbooru/runner.py
+fastbooru.egg-info/PKG-INFO
+fastbooru.egg-info/SOURCES.txt
+fastbooru.egg-info/dependency_links.txt
+fastbooru.egg-info/entry_points.txt
+fastbooru.egg-info/requires.txt
+fastbooru.egg-info/top_level.txt
