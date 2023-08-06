@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: eje
+Version: 0.1.4
+Summary: UNKNOWN
+Home-page: https://github.com/cganterh/eje
+Author: Cristóbal Ganter
+Author-email: cganterh@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: cysystemd
+Requires-Dist: tornado
+
+UNKNOWN
+
+
