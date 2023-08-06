@@ -1,0 +1,13 @@
+google-cloud-storage
+hybridcontents
+jupyter_server
+nbformat
+notebook
+tornado
+traitlets
+
+[test]
+pytest
+pytest-cov
+pylint
+unittest
