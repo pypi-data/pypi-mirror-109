@@ -1,0 +1,11 @@
+README.md
+setup.py
+sort_methods/__init__.py
+sort_methods/help_func.py
+sort_methods/sorter.py
+sort_methods.egg-info/PKG-INFO
+sort_methods.egg-info/SOURCES.txt
+sort_methods.egg-info/dependency_links.txt
+sort_methods.egg-info/top_level.txt
+tests/__init__.py
+tests/test_sorter.py
