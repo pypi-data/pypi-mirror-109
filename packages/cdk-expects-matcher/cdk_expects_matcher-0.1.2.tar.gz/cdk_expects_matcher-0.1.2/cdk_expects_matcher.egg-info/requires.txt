@@ -1,0 +1,3 @@
+expects
+aws-cdk.core>=1.108.0
+aws-cdk.aws_s3>=1.108.0
