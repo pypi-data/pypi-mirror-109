@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+MarkovTextGeneration/MarkovTextGeneration.py
+MarkovTextGeneration/__init__.py
+MarkovTextGeneration.egg-info/PKG-INFO
+MarkovTextGeneration.egg-info/SOURCES.txt
+MarkovTextGeneration.egg-info/dependency_links.txt
+MarkovTextGeneration.egg-info/requires.txt
+MarkovTextGeneration.egg-info/top_level.txt
