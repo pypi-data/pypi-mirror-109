@@ -1,0 +1,15 @@
+README.md
+setup.py
+src/ShapeCal.py
+src/ShapeCal.egg-info/PKG-INFO
+src/ShapeCal.egg-info/SOURCES.txt
+src/ShapeCal.egg-info/dependency_links.txt
+src/ShapeCal.egg-info/entry_points.txt
+src/ShapeCal.egg-info/requires.txt
+src/ShapeCal.egg-info/top_level.txt
+src/shapeCal.egg-info/PKG-INFO
+src/shapeCal.egg-info/SOURCES.txt
+src/shapeCal.egg-info/dependency_links.txt
+src/shapeCal.egg-info/entry_points.txt
+src/shapeCal.egg-info/requires.txt
+src/shapeCal.egg-info/top_level.txt
