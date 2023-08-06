@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+lr_analayzer.egg-info/PKG-INFO
+lr_analayzer.egg-info/SOURCES.txt
+lr_analayzer.egg-info/dependency_links.txt
+lr_analayzer.egg-info/requires.txt
+lr_analayzer.egg-info/top_level.txt
