@@ -1,0 +1,12 @@
+emphon/__init__.py,sha256=pUfIAtzXfOXuRX-DeiBw9nqVzyQmVsmWbO4Nn6FUS7o,95
+emphon/__main__.py,sha256=BoRSvU2BU_TxFwcYztaNYRf8Cx0faRUv8eklaH5W-ZY,4998
+emphon/emphon.py,sha256=lyKy_qTNPwA5fFIbn9tgAv4WJPMlQ1u0ms0snhAnl_k,2451
+emphon/ipa_key.json,sha256=G84Aez_YujHyjSyFTM5ngabdcHOFQaUOxry0gBK3WXY,1184
+emphon/transcriber.py,sha256=CcWxvj63RePhNCEjoE70o3iRgpaJFBk_oCz3i5sj5cY,13289
+emphon/version.py,sha256=A1BZfdIjY0GbkJiP2guEaqVvFkbYiTLXShxt6wN-XB4,46
+emphon-1.3.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+emphon-1.3.1.dist-info/METADATA,sha256=DjDug1TSfnNP15HWv-HB_XIKCVhxkqNWYu0DndDP3tE,2662
+emphon-1.3.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+emphon-1.3.1.dist-info/entry_points.txt,sha256=YxHP73o-t_y5Hd2RRTde97ULj0PeiuBaa6rzV97eOyw,49
+emphon-1.3.1.dist-info/top_level.txt,sha256=ILQjHP05i3OinfDez3HvPaS9pSDKE4KP-vzxqhQdCuQ,7
+emphon-1.3.1.dist-info/RECORD,,
