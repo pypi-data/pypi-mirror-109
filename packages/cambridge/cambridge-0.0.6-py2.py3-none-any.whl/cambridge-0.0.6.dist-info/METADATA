@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cambridge
+Version: 0.0.6
+Summary: This is the terminal version of cambridge dictionary from https://dictionary.cambridge.org.
+Home-page: https://github.com/KateWang2016/cambridge
+Keywords: dictionary, cambridge, python scraping
+Author: Kate Wang
+Author-email: kate.wang2018@gmail.com
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: rich
+Requires-Dist: flit ; extra == "publish"
+Provides-Extra: publish
+
+cambridge
+Terminal Version of Cambridge Dictionary from https://dictionary.cambridge.org
+
