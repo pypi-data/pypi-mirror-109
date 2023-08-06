@@ -1,0 +1,16 @@
+tmuxp/__about__.py,sha256=c1CH4uzsdHpJ3D2NSUo5mJmijaGIhBFbUMMOIPTp7-g,434
+tmuxp/__init__.py,sha256=9IyU9We7mmCAw7Hy7VVHf3zwcY4h4Vl6VHWiNHPMRDA,341
+tmuxp/_compat.py,sha256=dHrvAjtCuaLxWhjZuHllZvAwbdFCV9H3KJ-LzG2HYiM,562
+tmuxp/cli.py,sha256=AlFdl8RPEpcishwOc2QYvWO-mJSZ7OiAgdD6btX_peA,39708
+tmuxp/config.py,sha256=hViK-KBkVea_oeQQDR4RzC50ST3Wqt-wkZ7Joivv2VI,16717
+tmuxp/exc.py,sha256=hiI_qjA5OzJN4PJ8NWVsDlnhObjlcz8l7XdXoyi7owI,1347
+tmuxp/log.py,sha256=qw_q1JZdtIoupdMwkpmDHlzTFE4cfhX4dLqjOl4cTL4,3937
+tmuxp/plugin.py,sha256=FYd5HKFQjaWDhW13n_PBaDx1Rsx5iR9wxav6hkotDvw,7241
+tmuxp/shell.py,sha256=0n-btOx2hqaj5HvpLjRr_SlaJJq8xoghXVsE_9-IfGE,6874
+tmuxp/util.py,sha256=5i5evaUQMAaz7QChDHsJ8E6DHTh-0uxCChQH5O9R98I,4224
+tmuxp/workspacebuilder.py,sha256=QHmhVrP3JnNlOjHO801l8SOkZeZj8dHRqlbwNwIjXrk,14331
+tmuxp-1.8.1.dist-info/entry_points.txt,sha256=XLJ9GH8Jlr93sysxLnqQwYxsuwe_unFLfXrF0EzQZ18,39
+tmuxp-1.8.1.dist-info/LICENSE,sha256=FCkeREauPSqq_A89GVYXFAma5YvcOU_r3GGFHEn9GfM,1076
+tmuxp-1.8.1.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+tmuxp-1.8.1.dist-info/METADATA,sha256=l5SFpA7o81bg6Itx6FDmRF6Lx_RNkdksKUCK5Cv2If0,9903
+tmuxp-1.8.1.dist-info/RECORD,,
