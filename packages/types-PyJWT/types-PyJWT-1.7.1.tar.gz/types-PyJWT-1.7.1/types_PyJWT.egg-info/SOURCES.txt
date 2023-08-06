@@ -1,0 +1,13 @@
+setup.py
+jwt-stubs/METADATA.toml
+jwt-stubs/__init__.pyi
+jwt-stubs/algorithms.pyi
+jwt-stubs/contrib/__init__.pyi
+jwt-stubs/contrib/algorithms/__init__.pyi
+jwt-stubs/contrib/algorithms/py_ecdsa.pyi
+jwt-stubs/contrib/algorithms/pycrypto.pyi
+types_PyJWT.egg-info/PKG-INFO
+types_PyJWT.egg-info/SOURCES.txt
+types_PyJWT.egg-info/dependency_links.txt
+types_PyJWT.egg-info/requires.txt
+types_PyJWT.egg-info/top_level.txt
