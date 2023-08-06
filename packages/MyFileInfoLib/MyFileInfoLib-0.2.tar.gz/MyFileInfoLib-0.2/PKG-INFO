@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: MyFileInfoLib
+Version: 0.2
+Summary: This library gets some information about a couple of files.
+Home-page: https://github.com/alina-filippova/MyFileInfoLib.git
+Author: Alina Filippova
+Author-email: alia.filippova.2002k@mail.ru
+License: UNKNOWN
+Description: # MyFileInfoLib
+        This class finds the oldest and earliest created, the biggest and the smallest file from your entered files.
+        It has got some methods:
+        GetTheOldestFileName   - it chooses the oldest file
+        GetTheNewestFileName - it chooses the newest file
+        GetTheBiggestFileName  - it chooses the biggest file
+        GetTheSmallestFileName - it chooses the smallest file
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
