@@ -1,0 +1,8 @@
+README.md
+setup.py
+social-score/__init__.py
+socialscore.egg-info/PKG-INFO
+socialscore.egg-info/SOURCES.txt
+socialscore.egg-info/dependency_links.txt
+socialscore.egg-info/requires.txt
+socialscore.egg-info/top_level.txt
