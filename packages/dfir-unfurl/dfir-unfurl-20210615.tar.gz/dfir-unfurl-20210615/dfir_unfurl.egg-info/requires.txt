@@ -1,0 +1,11 @@
+blackboxprotobuf==1.0.1
+flask
+flask_cors
+maclookup
+networkx
+protobuf==3.10.0
+publicsuffix2
+pycountry
+Requests
+torf
+ulid-py
