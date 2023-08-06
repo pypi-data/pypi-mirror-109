@@ -1,0 +1,15 @@
+bird2board/__init__.py,sha256=CLVSwstAPhOlmCXXngEvzmvj62IuY5vxf3dNnGWR8OA,54
+bird2board/app.py,sha256=SezYCO8ZTA1PFtwDWiQbhG0yjutGkuI7MfhwHV7Qph4,1353
+bird2board/bird.py,sha256=p6J99bTI_sN9wQyjIoDMV-3oNC3lDlK6tMF21RtDw8w,1359
+bird2board/bird2board.py,sha256=YHe1Gj9rxdAbjstI6EJfs2ZSajnR7dU_QaGAz5TVisg,1600
+bird2board/board.py,sha256=7MfzepZm5BSCQSxuR4CUJGIvG4R6lyzQjsK0s66mnYk,2645
+bird2board/test_app.py,sha256=pV-4TbAChWYJkCHKeDYTHtopDbKe4AYliVZUxN2X9ng,1816
+bird2board/test_bird2board.py,sha256=1gpagHFTaO01JS8www4P_N57NTcq09Ve96g1hVoZpkc,4097
+bird2board/test_pinboard.py,sha256=_T3yEeEJ7P9vE9Chh7NGKdgQk7rGnumKmQvMfvSYISA,3977
+bird2board/test_twitterparse.py,sha256=X7dRU0OtYShu-aIoPDvRb6WMSJJAa-bDkuCN8TpeNu4,3285
+bird2board-0.1.2.dist-info/LICENSE,sha256=gQEwdqWXXtTDY2BfZ5czXzrm0v7zuqrlISi0HWGOuD8,1067
+bird2board-0.1.2.dist-info/METADATA,sha256=JxyRyDphgZmJivTg1SqKLCDKdhgWJa_bR2BAL2doj90,2979
+bird2board-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bird2board-0.1.2.dist-info/entry_points.txt,sha256=QEuKqBuFSVcbqaCjqmsqNb77kQpH-Mty3LWFzXDheR8,55
+bird2board-0.1.2.dist-info/top_level.txt,sha256=KI07xm0zZU3wicx9k2STk0fp9_UDmvWTh5azIBWmpxI,11
+bird2board-0.1.2.dist-info/RECORD,,
