@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: reddstagram
+Version: 0.0.1
+Summary: Automated Reddit to Instagram
+Home-page: UNKNOWN
+Author: FOGT Solutions
+Author-email: <contact@fogt-solutions.com>
+License: UNKNOWN
+Description: A package for automated Reddit subforum scraping and uploading to Instagram.
+Keywords: python,reddit,instagram
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
