@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: apache-age-python
+Version: 0.0.1
+Summary: Python driver for Apache AGE
+Home-page: https://github.com/rhizome-ai/apache-age-python
+Author: Ikchan Kwon
+Author-email: rhizome.ai@gmail.com
+License: Apache2.0
+Download-URL: https://github.com/rhizome-ai/apache-age-python/releases/tag/v0.0.1
+Keywords: Graph Database,Apache AGE,PostgreSQL
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: psycopg2
+Requires-Dist: antlr4-python3-runtime
+
+# apache-age-python
+Python driver for Apache AGE, graph extention for PostgreSQL.
+
+
+### Install
+This driver runs on [psycopg2](https://www.psycopg.org/) and [antlr4-python3](https://pypi.org/project/antlr4-python3-runtime/)
+```
+sudo apt-get update
+sudo apt-get install python3-dev libpq-dev
+pip install --no-binary :all: psycopg2
+pip install antlr4-python3-runtime
+
+pip install apache-age-python
+```
+
+### Check AGE loaded on your PostgreSQL
+Connect to your containerized Postgres instance and then run the following commands:
+```
+CREATE EXTENSION age;
+LOAD 'age';
+SET search_path = ag_catalog, "$user", public;
+```
+
+
+### Usage
+Go to [Jupyter Notebook](https://github.com/rhizome-ai/apache-age-python/blob/main/samples/apache-age-note.ipynb) in Samples.
+
+
+
