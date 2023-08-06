@@ -1,0 +1,3 @@
+[console_scripts]
+UIMonkey2077 = UIMonkey2077.__main__:main
+
