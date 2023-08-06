@@ -1,0 +1,9 @@
+keboola/component/__init__.py,sha256=ZYR6ZhEWWLOR2mowpveAvc7DXndNBFTz7Yoktou9-Gs,109
+keboola/component/base.py,sha256=QZiTjO5TOf9V3Jq3DeqTHkgol5AkwI7l9NYhZ1zI-zs,3408
+keboola/component/dao.py,sha256=Az2lR6dfbhkh6VUbCYXDq5dNG9l98AW1x_mYcs_T34s,39441
+keboola/component/interface.py,sha256=LwtX7BmnUg7VAkHXDXQsn2OHcjzsuwq-QpfAI5OfI5M,44341
+keboola.component-1.2.0.dist-info/LICENSE,sha256=Lt6yiHgG1g8VUUMV4KMyBx_X0xSR6mwVePIj54GWWKs,1064
+keboola.component-1.2.0.dist-info/METADATA,sha256=glPtSJiTqxESUInl29XWh030IkILju9nMrimjJ2mvL8,19467
+keboola.component-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+keboola.component-1.2.0.dist-info/top_level.txt,sha256=1TnbEAlaLTkaGvBq953CKE610TCyDVi7GUtCRyPm1cU,8
+keboola.component-1.2.0.dist-info/RECORD,,
