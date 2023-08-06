@@ -1,0 +1,8 @@
+click
+erpbrasil.base
+genshi
+reportlab>=3.5
+lxml
+py3o.template
+sh
+python-dateutil
