@@ -1,0 +1,10 @@
+getgist/__init__.py,sha256=FwIfnxBhiju_Ncws4H8YDsaW6y1PPoBMv9Y1S0XT6xQ,1693
+getgist/__main__.py,sha256=T9-IWhAHErFNl7nlW0Ry9eVZwFCakE005WiosD8Bn_Y,6308
+getgist/github.py,sha256=dLbfnr5KprYbwyDZsxREcp1shm1bMQeXLCI6cfZd0Ls,12189
+getgist/local.py,sha256=K1E84mOR56qv84bfz6fyUQncyIVOFxnmqJw_CA6ugAM,2630
+getgist/request.py,sha256=7pL7TzRlv70zRs-tqg20FGZVgfT8anVX8uiVBLsOjAU,1237
+getgist-0.2.2.dist-info/entry_points.txt,sha256=pM-Al0t9sKoVVjYE5WsMpmHYfbyazBJ2Dhy2oT-awNg,196
+getgist-0.2.2.dist-info/LICENSE,sha256=aJMUODAyn9R898TWNn86ciK35BUYrzJGcQUUWwnLSKQ,1059
+getgist-0.2.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+getgist-0.2.2.dist-info/METADATA,sha256=kXh8DfAmgPoGknr95qFe7VIewgAwAV3XhVwwOlZL_c8,6102
+getgist-0.2.2.dist-info/RECORD,,
