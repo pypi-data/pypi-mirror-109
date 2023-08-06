@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: autosat
+Version: 0.0.0
+Summary: A library for creating SAT instances
+Home-page: https://github.com/petersn/autosat
+Author: Peter Schmidt-Nielsen
+Author-email: schmidtnielsenpeter@gmail.com
+License: CC0
+Project-URL: Bug Tracker, https://github.com/petersn/autosat/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Library for making SAT instances
+
