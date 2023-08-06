@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pycharm-remote-debugger
+Version: 0.0.3
+Summary: Easily debug your remote project
+Home-page: https://github.com/eliorerz/pycharm-remote-debugger
+Author: Elior Erez
+Author-email: elior123@gmail.com
+License: MIT
+Description: # pycharm_remote_debugger
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Debuggers 
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
