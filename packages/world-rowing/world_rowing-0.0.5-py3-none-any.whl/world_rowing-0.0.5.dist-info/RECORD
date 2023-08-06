@@ -1,0 +1,15 @@
+world_rowing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+world_rowing/__main__.py,sha256=2jBGwWPwil5JaeQobVuvI-jKMW2BB5iwUGoBikNDYGs,62
+world_rowing/api.py,sha256=tHogLEA8fEnrBuxGL4YZg-Qvx0hQevoFVAkqWGDWuTo,13528
+world_rowing/cli.py,sha256=USdPFuCxq841cKsHQ2VbdJ3U9h4_L0mXmqW8JipidmQ,9045
+world_rowing/dashboard.py,sha256=-SaJFOQ_g2x8mPqYt2E8ujB7_ZHe6qhOiofoyCjo3no,22324
+world_rowing/livetracker.py,sha256=1lEE0zlTlZzy3rTLduXrqZLip6O1BQKDJJMm6P9YziI,22044
+world_rowing/predict.py,sha256=eUrXtIwKH9hy4YLSFjNEkr4CaueY-D7V3_354kFVIuY,13153
+world_rowing/races.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+world_rowing/utils.py,sha256=AJYqhyyyFhBTMeCsSXLSsC4XY-z1TD0d9pcu2euBwiY,9323
+world_rowing-0.0.5.dist-info/LICENSE,sha256=bIww_8h6QnY5FRabG6AWTneBtmnm0V29phwWAM7a2FI,1079
+world_rowing-0.0.5.dist-info/METADATA,sha256=8-g3fQnnrUYrTTidYc5CbCrVGeCI_pkQhAnpAvtG6w4,550
+world_rowing-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+world_rowing-0.0.5.dist-info/entry_points.txt,sha256=-wbuC3dsR6WGWtIrVzRSsMfHj8YkNUcZJKRozZSqPRE,55
+world_rowing-0.0.5.dist-info/top_level.txt,sha256=nsHWNqUj58H8l0h6FmyHtBsrJLTzRU9Qh2JwvqYxtuc,13
+world_rowing-0.0.5.dist-info/RECORD,,
