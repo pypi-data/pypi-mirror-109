@@ -1,0 +1,17 @@
+sqllex/__init__.py,sha256=OuUFKu5fDFKuuAPo_b4LR0D9JumXojmeqzazIUutfJY,1642
+sqllex/classes/__init__.py,sha256=4Bn5lVXZkY5g3O7YSCIvrtqI3sYI1PGn66WFI8UTTow,89
+sqllex/classes/sqlite3x/__init__.py,sha256=uuBcT7O7reKC6QisyV5Y6BEPFhOZllh2RdYHRCv_5HM,98
+sqllex/classes/sqlite3x/sqlite3x.py,sha256=QrhyzEcfhs04oK0FuEVFvLgDwWhg0MtE4l_PQ7G3rXw,67149
+sqllex/constants/__init__.py,sha256=bKXfykM6ddDUc1HgXsvPKBTiLyxFvkW6n6tBjZ8WPfs,35
+sqllex/constants/sql.py,sha256=QrUBFFk_PD9SXsFtZKRrfZ4fTFZbP8tMrlJyTj9KTW0,2129
+sqllex/debug/__init__.py,sha256=EQ0JuaJJQwep7u1gKESO2UswnhGOR9adF-orjxK7GZw,170
+sqllex/debug/logger.py,sha256=-buSLdrfsOUruHS3GN9tINj607N7EDdjkbOvTgCYXNY,897
+sqllex/exceptions/__init__.py,sha256=XBZwp_DTJqqKgcVIkJHJj93phiDrQFVGeAtrCLNpzOg,46
+sqllex/exceptions/sqlExceptions.py,sha256=zNKwYPbdux2Gf9kKbJfZZ8WsXaUctfR0Gr4vVJBzM78,211
+sqllex/types/__init__.py,sha256=vI74A8dEZyIgmW7SFcV-nMBuTDVLdOxEOHCE-Gnq024,33
+sqllex/types/types.py,sha256=YYl67kYwXYX4oH1_iI1DewNyiQ5MkAPL2QuznkmrS1c,3720
+sqllex-0.1.9.10.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+sqllex-0.1.9.10.dist-info/METADATA,sha256=r17vUZRzPCD1tjOKuBbXfoRGtugxrrHtN8cMiGNIljw,10500
+sqllex-0.1.9.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sqllex-0.1.9.10.dist-info/top_level.txt,sha256=8Qzht1UY_zd2-_Yh4J98y4Ff97JzyMzPjdMd4ROoclU,7
+sqllex-0.1.9.10.dist-info/RECORD,,
