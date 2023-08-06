@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: blahblah
+Version: 0.6.9
+Summary: Fake data generator for district42 schema
+Home-page: https://github.com/nikitanovosibirsk/blahblah
+Author: Nikita Tsvetkov
+Author-email: nikitanovosibirsk@yandex.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: district42 (<1.0)
+Requires-Dist: exrex (==0.10.5)
+
+UNKNOWN
+
+

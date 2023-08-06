@@ -1,0 +1,14 @@
+blahblah/__init__.py,sha256=Ih6fu3Pvu6DsaeCDUMKKB_OMHCWtI0dS7OqKQZNhEmg,291
+blahblah/errors.py,sha256=K8HNmOZ_xq15e9ZKpFhJbGx10OqLkEZJ7JOu5X8KaSo,71
+blahblah/faker.py,sha256=VotUfEoAX9j9KOPyM5vEmaQUO7e7xtu6p4JxNuP36sc,10171
+blahblah/substitutor.py,sha256=TbuqqYs-Kz96AA92IQmLaGVFFGV2JZ4rtO1CoAd0h2Q,5212
+tests/__init__.py,sha256=kmRSbZ1hmCdUEw6b2RdRSNK3TEzYoD8i-vCoq47xFKM,147
+tests/substitution_testcase.py,sha256=-tolJZ_BS1K8fop3LYuKX12SrrC5GV_uOPv16_cYITA,1151
+tests/test_faker.py,sha256=jx0ShiaXzdZ8T_VOrK7cvoTVzdWKE1ggWH-n6K2CUZg,15697
+tests/test_nullable_substitution.py,sha256=KS3ucj3xlRh-oqmkMHIdsNJ0famviU6Zoepy9w1-vz4,4672
+tests/test_substitution.py,sha256=y2jxxpjlNbk73hkUlFc_1oQHDxvgPkFnoMWW_iauUBk,8852
+blahblah-0.6.9.dist-info/LICENSE,sha256=iahgh4M-1D6PZ4Njj_4O0AYTfnrO3i2NUX16qKg6qnw,1083
+blahblah-0.6.9.dist-info/METADATA,sha256=pIzzz3Vwt2ef2okqE-YZ93gQYchYRSajyjEKDikDSas,357
+blahblah-0.6.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+blahblah-0.6.9.dist-info/top_level.txt,sha256=-1Jo5cbyfjXg5yQoTRPkrzH6TyBNiO56XnEK2VX2PH4,15
+blahblah-0.6.9.dist-info/RECORD,,
