@@ -1,0 +1,8 @@
+tqdm==4.32.2
+requests==2.22.0
+pyyaml==5.4.1
+m2r==0.2.1
+
+[test]
+pytest>=6.2.4
+pycodestyle>=2.7.0
