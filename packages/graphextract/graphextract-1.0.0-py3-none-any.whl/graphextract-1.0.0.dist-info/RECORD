@@ -1,0 +1,10 @@
+graphextract/__init__.py,sha256=jdWvcBiXD9E8j4xSgkvkoeQrcdscNpV3egiOOMSUyk0,208
+graphextract/svg_extractor.py,sha256=3l84JfSgXMUoHMd-RQ2BtctWz6q-MCu70Wr_ZWkcqog,3169
+graphextract/transfo.py,sha256=KEsQ2yGN7HJZpL4CwaIIxzEgDpGkaDMEkNQolXfzuuc,1425
+graphextract/version.py,sha256=GNw7l5GxQiZGdWtVry57XNiuWnn5rg_Cybr5cQrwTO4,367
+graphextract-1.0.0.dist-info/AUTHORS.rst,sha256=AE5jyf58K428MkphZX2DvQN_6bMfLxQUqG7tRazSIXo,307
+graphextract-1.0.0.dist-info/LICENSE,sha256=3ErBVLbBrbm3U1oT4bII1aZ18TK5rSUXFthxKRI4Ho0,22406
+graphextract-1.0.0.dist-info/METADATA,sha256=UCnjLT5a2FevZy-lHKq9gQctJYzqdh63X7N_8hdZusg,709
+graphextract-1.0.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+graphextract-1.0.0.dist-info/top_level.txt,sha256=T-I9vvmRkyA51YcUxEVQnjOwvAL1fPBGWcObIA8US0E,13
+graphextract-1.0.0.dist-info/RECORD,,
