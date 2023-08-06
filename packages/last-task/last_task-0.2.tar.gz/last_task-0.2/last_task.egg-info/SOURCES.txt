@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+last_task/__init__.py
+last_task/get_data.py
+last_task/preproc.py
+last_task/rawdata_new.csv
+last_task/test_data.py
+last_task/train_predict.py
+last_task.egg-info/PKG-INFO
+last_task.egg-info/SOURCES.txt
+last_task.egg-info/dependency_links.txt
+last_task.egg-info/not-zip-safe
+last_task.egg-info/requires.txt
+last_task.egg-info/top_level.txt
