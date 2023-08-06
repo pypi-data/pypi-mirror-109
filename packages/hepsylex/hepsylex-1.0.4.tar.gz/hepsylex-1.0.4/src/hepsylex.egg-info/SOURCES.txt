@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/hepsylex/Constants.py
+src/hepsylex/Lexicons.py
+src/hepsylex/LexiconsAPI.py
+src/hepsylex/__init__.py
+src/hepsylex.egg-info/PKG-INFO
+src/hepsylex.egg-info/SOURCES.txt
+src/hepsylex.egg-info/dependency_links.txt
+src/hepsylex.egg-info/top_level.txt
+src/hepsylex/Resources/__init__.py
+src/hepsylex/Resources/For documentation purposes/__init__.py
+src/hepsylex/Resources/For documentation purposes/Topic Modeling 2020/__init__.py
+src/hepsylex/Resources/For documentation purposes/Topic Modeling 2020/from_topics_to_lexicons.py
