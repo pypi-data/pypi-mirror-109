@@ -1,0 +1,11 @@
+LedxBotPackage/__init__.py,sha256=7CuNKPvh0XWMHXkR7Ah6LJviaBR8GcSP963Tks4CACE,1548
+LedxBotPackage/bot.py,sha256=JTHPxOf5D-Cd6z_sG99bw-61URDO2GycWU5d8g9Tt7o,9205
+LedxBotPackage/client.py,sha256=NMA_TLR-V0Ruc8kcXP8xvU5teOOf-xyDVEIREPDQbhg,4281
+LedxBotPackage/defaults.py,sha256=8dKKVwcauk_F7efNLpAm-RnMN8SJBT2pbIEQGtSr1r4,2279
+LedxBotPackage/deviceauths.py,sha256=FEfbQ6Ovf4VNXBkhUgbJy2T8Ur8RpUP4V15mw6yGZ5E,2754
+LedxBotPackage/sync.py,sha256=_-PT-JtTghKWl8DIf98ofs_KiIzxgmQt23Yiu3cOovw,2262
+LedxBotPackage/web.py,sha256=KK1fviMZaUdltF24-T3afoP6CmXImrWtC6JrmmtU38k,5682
+ledxbot-1.1.20.dist-info/METADATA,sha256=IuNP_jMey4DhExj8G0l5La39UZzjg_wd5geydSmHbQ4,1124
+ledxbot-1.1.20.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ledxbot-1.1.20.dist-info/top_level.txt,sha256=6QRxdgDSadniUsUXKSLOXclVTRFF00cZNo1opJG0YgU,15
+ledxbot-1.1.20.dist-info/RECORD,,
