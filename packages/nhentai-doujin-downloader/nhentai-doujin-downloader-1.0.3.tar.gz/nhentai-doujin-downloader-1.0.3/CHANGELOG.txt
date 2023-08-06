@@ -1,0 +1,10 @@
+Change Log
+==========
+
+1.0.1 (16/06/2021)
+-------------------
+- Initial release. Hope you like it!
+
+1.0.3 (16/06/2021)
+-------------------
+- Got rid of unneccessary comments that would fill up your terminal screen.
