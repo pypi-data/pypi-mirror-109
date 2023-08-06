@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pyannotators-spacyner
+Version: 0.4.0
+Summary: Annotator based on Facebook SpacyNER
+Home-page: https://github.com/oterrier/pyannotators_spacyner/
+Author: Olivier Terrier
+Author-email: olivier.terrier@kairntech.com
