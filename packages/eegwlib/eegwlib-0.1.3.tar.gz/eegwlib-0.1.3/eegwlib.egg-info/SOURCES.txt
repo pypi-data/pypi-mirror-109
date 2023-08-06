@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+eegwlib/__init__.py
+eegwlib/artifact_detection.py
+eegwlib/average.py
+eegwlib/filter.py
+eegwlib/segment.py
+eegwlib.egg-info/PKG-INFO
+eegwlib.egg-info/SOURCES.txt
+eegwlib.egg-info/dependency_links.txt
+eegwlib.egg-info/top_level.txt
