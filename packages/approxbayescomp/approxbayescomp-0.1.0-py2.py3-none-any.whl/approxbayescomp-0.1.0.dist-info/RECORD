@@ -1,0 +1,11 @@
+approxbayescomp/__init__.py,sha256=UpC38tZFO771Kdwb-QMOBGCCtKh8I1xqXR59n7w-fUU,412
+approxbayescomp/plot.py,sha256=qBy0a2b63MfbfseCV0dRIwyeCFQTGyxZD0JgilPkH1w,3731
+approxbayescomp/prior.py,sha256=aRyarQPxuAgyHR4VPdYmKn-rR6WChJVdSzHI4XDJ-6g,5041
+approxbayescomp/simulate.py,sha256=s18twKLyiZtzvejPtUqgcQIliacPJxaKE0_EMBllUfA,13297
+approxbayescomp/smc.py,sha256=tlScEIUzQKdQaSifysPO64zURNi83bmlpj41EOXqsgk,18214
+approxbayescomp/wasserstein.py,sha256=xdB65zBRCrsskm0B4ppWh-3IXTtBGL--2p47UWAmDaw,2296
+approxbayescomp/weighted.py,sha256=8tgFyPnxmClm2qPZZ67Jh7av-1NqXOBF5U8Xkp0FX8s,7349
+approxbayescomp-0.1.0.dist-info/METADATA,sha256=Krz08dfF9B-MBe4X5pFkzDS_f8frhzQUH3OccvTn0kU,3201
+approxbayescomp-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+approxbayescomp-0.1.0.dist-info/top_level.txt,sha256=wqys4aMN505HgSNiA3du8FwRXrOQlTkLEMF-jDnv3Js,16
+approxbayescomp-0.1.0.dist-info/RECORD,,
