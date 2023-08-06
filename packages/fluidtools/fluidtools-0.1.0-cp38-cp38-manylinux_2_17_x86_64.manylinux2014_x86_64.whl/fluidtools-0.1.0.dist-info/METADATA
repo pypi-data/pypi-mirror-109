@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fluidtools
+Version: 0.1.0
+Summary: Utilities to work with sounfonts
+Home-page: https://github.com/gesellkammer/fluidtools
+Author: Eduardo Moguillansky
+Author-email: eduardo.moguillansky@gmail.com
+Maintainer: Eduardo Moguillansky
+Maintainer-email: eduardo.moguillansky@gmail.com
+License: LGPL
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: cython
+
+Utilities to work with soundfonts using fluidsynth
+
