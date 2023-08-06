@@ -1,0 +1,11 @@
+dumda/__init__.py,sha256=50BFYeXbqZW2LI95Cq942VICvbF_Eh1ScABU9UftPQ0,65
+dumda/baby-names.csv,sha256=EllSP6duXBgVGkx2ErhUsiYF0HEnxZYSaUDilBuhXTw,7447879
+dumda/cities.py,sha256=WCfd7Wh4sKTmP9_uc2pz_2y5TEwo1mXsiQA5t-5zJA4,2079
+dumda/names.py,sha256=799eVCWfFaDGl0Zh9IBJ6IDshpdBlR2CFzeeBwPpx2I,2026
+dumda/phones.py,sha256=3_T4IHKPWeSPIn1XBMhfHy_Z0fWUcPKAn9q21-7chGQ,297
+dumda/world_cities.csv,sha256=J_iSmBHOnSNfpU0yLIjqXt3dBalkK8-MID3NcR3dGC4,895586
+dumda-1.16.dist-info/LICENCE,sha256=w58IZwqQbDfb-GO_aKuQk3ff5ZEzmliRsnBVGOBEyWA,1084
+dumda-1.16.dist-info/METADATA,sha256=eXcTrOP_T8NvqPwj1xJuZ6xdB8XagTP4fRXM06OMSuU,298
+dumda-1.16.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dumda-1.16.dist-info/top_level.txt,sha256=G6xcGVsukrNFS5SQVhaMfzIdx4-9cLHTZKQjEUoIBgk,6
+dumda-1.16.dist-info/RECORD,,
