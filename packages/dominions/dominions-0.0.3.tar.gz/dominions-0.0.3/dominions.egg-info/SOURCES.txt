@@ -1,0 +1,16 @@
+README.md
+setup.py
+dominions/__init__.py
+dominions/__main__.py
+dominions/core.py
+dominions/dominions.py
+dominions/whoisds.py
+dominions.egg-info/PKG-INFO
+dominions.egg-info/SOURCES.txt
+dominions.egg-info/dependency_links.txt
+dominions.egg-info/entry_points.txt
+dominions.egg-info/requires.txt
+dominions.egg-info/top_level.txt
+dominions/utils/__init__.py
+dominions/utils/logger.py
+dominions/utils/version.py
