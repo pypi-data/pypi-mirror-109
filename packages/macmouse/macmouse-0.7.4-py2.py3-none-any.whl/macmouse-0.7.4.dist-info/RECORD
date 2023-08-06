@@ -1,0 +1,14 @@
+macmouse/__init__.py,sha256=TSyU2qyIJM9jQEotO6-hO_vV3CZ2kjeEyuF2YJBJSG0,7599
+macmouse/__main__.py,sha256=Yy_zYoUDR68jdjHvV96E2tCI8BeQOtXgXz-mJuQnpc4,637
+macmouse/_darwinmouse.py,sha256=_uXALBUn9MwlGa5qPm_tUyuWpl5_Fbi7QXiRyBMGW98,8337
+macmouse/_generic.py,sha256=STzfL7AUAkcAq6XUyxpQiOYnBnQ1TZjWL1cSFSZ61_o,2132
+macmouse/_mouse_event.py,sha256=zRQGO6M6nbA-jvhI0yz4HzvQNcScF48PZ9iRegcTVjQ,422
+macmouse/_mouse_tests.py,sha256=gNa_NW5sRIsbLMG35ZfXal3eHS2mEpEPhysJRDq0gQA,10000
+macmouse/_nixcommon.py,sha256=5DtZIY1KBrD5mazyNl8aCNU2eNjg4CMWXX4nFx0og8A,5691
+macmouse/_nixmouse.py,sha256=3htKn9XkUApFqp3rGCT-ZQIqJFf4iGqoxxoO9MY2x4k,3576
+macmouse/_winmouse.py,sha256=8WY1ixoaiKGoJHB9n3Ohs9m-CVNOVoBBjsTl4XNkpMA,6432
+macmouse-0.7.4.dist-info/LICENSE.txt,sha256=K_FKUlVV0FqAHC0sKJAVBPt2q-58LX6_tM_HUI198Pc,1077
+macmouse-0.7.4.dist-info/METADATA,sha256=OKsuNU8kBxLwsD4tIYtq8Y_-j0Vu-mcn5Y5DNcygppE,12079
+macmouse-0.7.4.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+macmouse-0.7.4.dist-info/top_level.txt,sha256=0YgG1yIjnkX8jWMYp4J2HVs0-wS2gDrav_qEvIwmYNo,9
+macmouse-0.7.4.dist-info/RECORD,,
