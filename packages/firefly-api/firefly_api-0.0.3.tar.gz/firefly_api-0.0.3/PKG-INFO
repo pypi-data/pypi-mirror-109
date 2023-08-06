@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: firefly_api
+Version: 0.0.3
+Summary: The python API for Firefly, a browser-based particle viewer.
+Home-page: https://github.com/agurvich/firefly_api
+Author: Alex Gurvich
+Author-email: agurvich@u.northwestern.edu
+License: UNKNOWN
+Description: # firefly_api
+        The python API for Firefly
+        
+        This repository contains the _official_ Python frontend for the (soon-to-be) world famous browser-based particle visualization platform [Firefly](github.com/ageller/Firefly). 
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

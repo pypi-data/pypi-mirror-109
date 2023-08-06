@@ -1,0 +1,14 @@
+README.md
+setup.py
+firefly_api/FIREreader.py
+firefly_api/__init__.py
+firefly_api/errors.py
+firefly_api/json_utils.py
+firefly_api/options.py
+firefly_api/particlegroup.py
+firefly_api/reader.py
+firefly_api/tween.py
+firefly_api.egg-info/PKG-INFO
+firefly_api.egg-info/SOURCES.txt
+firefly_api.egg-info/dependency_links.txt
+firefly_api.egg-info/top_level.txt
