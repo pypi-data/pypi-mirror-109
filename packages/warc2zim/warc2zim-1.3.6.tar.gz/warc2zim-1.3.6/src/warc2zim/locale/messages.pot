@@ -1,0 +1,51 @@
+# Translations template for warc2zim.
+# Copyright (C) 2021 Kiwix
+# This file is distributed under the same license as the warc2zim project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: warc2zim 1.3.3\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-01-11 17:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: src/warc2zim/templates/404.html:41
+msgid "Sorry, the url ${currUrl} is not found on this server"
+msgstr ""
+
+#: src/warc2zim/templates/load.js:8
+msgid "This page must be loaded via an HTTPS URL to support service workers."
+msgstr ""
+
+#: src/warc2zim/templates/load.js:9
+msgid "Try Loading HTTPS URL?"
+msgstr ""
+
+#: src/warc2zim/templates/load.js:12
+msgid "Error"
+msgstr ""
+
+#: src/warc2zim/templates/load.js:13
+msgid ""
+"The requested URL can not be loaded because service workers are not "
+"supported here."
+msgstr ""
+
+#: src/warc2zim/templates/load.js:14
+msgid "If you use Firefox in Private Mode, try regular mode instead."
+msgstr ""
+
+#: src/warc2zim/templates/load.js:15
+msgid ""
+"If you use Kiwix-Serve locally, replace the IP in your browser address "
+"bar with <code>localhost</code>."
+msgstr ""
+
