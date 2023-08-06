@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "arboristo"
+version = "0.1.1"
+description = "A light-weight package to lazily traverse a deeply nested dictionary"
+authors = ["Alan Haynes <alan@nre.dev>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/AlanAutomated/arboristo"
+repository = "https://github.com/AlanAutomated/arboristo"
+documentation = "https://github.com/AlanAutomated/arboristo"
+keywords = ["dictionary", "deep", "lazy", "nested"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+black = "^21"
+pytest = "^5.2"
+pytest-cov = "^2.12"
+tox = "^3.23"
+coverage = "^5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
