@@ -1,0 +1,7 @@
+-------------------------- MeLOn Release Notes ---------------------------------
+Online available: https://git.rwth-aachen.de/avt.svt/public/MeLOn/
+--------------------------------------------------------------------------------
+
+
+Release version 0.0.1 (May 26th, 2020):
+    - Initial release including Neural Networks and Gaussian Processe models

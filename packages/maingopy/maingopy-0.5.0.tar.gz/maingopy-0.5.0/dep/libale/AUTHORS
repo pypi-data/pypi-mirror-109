@@ -1,0 +1,19 @@
+Main authors:
+
+- Hatim Djelassi                    (AVT.SVT, RWTH Aachen University)
+  Alexander Mitsos, project leader  (AVT.SVT, RWTH Aachen University)
+
+Contributors:
+
+- Marco Langiu                      (IEK-10, Forschungszentrum Jülich)
+    Prototype development
+
+- Yannik Hein                       (AVT.SVT, RWTH Aachen University)
+    Feature and syntax extensions
+
+- Daniel Jungen                     (AVT.SVT, RWTH Aachen University)
+    Specialized function nodes, bug reports
+
+- Dominik Bongartz                  (AVT.SVT, RWTH Aachen University)
+  Jaromil Najman                    (AVT.SVT, RWTH Aachen University)
+    Testing, bug reports
