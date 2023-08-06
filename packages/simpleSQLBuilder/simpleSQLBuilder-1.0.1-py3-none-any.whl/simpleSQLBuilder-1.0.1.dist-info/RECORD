@@ -1,0 +1,8 @@
+simpleSQLBuilder/QueryBuilder.py,sha256=pxKwZ3w5HPXdcbscXeTrt5yz9RgLumPklAGRJHvbmQ4,1020
+simpleSQLBuilder/__init__.py,sha256=bMIenWosteoeUs51RbaWVZetIuzRhWymuyy-n0rfK0I,21
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_builder.py,sha256=8WpUfHoGQ6Sx-9jx7fpgJ853o2osWw3DkVI0o42B2qE,905
+simpleSQLBuilder-1.0.1.dist-info/METADATA,sha256=Y92zgvopHZOUTJaRZr4oMWHt21S2d-kWTdSOYmADWWA,693
+simpleSQLBuilder-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+simpleSQLBuilder-1.0.1.dist-info/top_level.txt,sha256=0qWAYFV-iIxtPmoO3_Y_dYboKULYSW7VcTD-WL61lAk,23
+simpleSQLBuilder-1.0.1.dist-info/RECORD,,
