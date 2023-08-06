@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+diffcalculus/__differentiate__.py
+diffcalculus/__init__.py
+diffcalculus/errors.py
+diffcalculus/functions.py
+diffcalculus.egg-info/PKG-INFO
+diffcalculus.egg-info/SOURCES.txt
+diffcalculus.egg-info/dependency_links.txt
+diffcalculus.egg-info/top_level.txt
