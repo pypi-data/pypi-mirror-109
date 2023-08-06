@@ -1,0 +1,11 @@
+bitbucket_code_insight_reporter/__init__.py,sha256=0kkGBTaoDM-_jqWwTXx4JVn6hD48GqFjbmaRESkyfgs,610
+bitbucket_code_insight_reporter/__main__.py,sha256=yeOxsiQnWj3hOlaHJNPWgY66dHTXXMX-xi1NytxVvwY,641
+bitbucket_code_insight_reporter/bitbucket.py,sha256=3dy3K2bYd1HNmH76e22gbetKdJA19qTfGvbEMAKqFbs,2394
+bitbucket_code_insight_reporter/cli.py,sha256=uUdTN7YRqndU9jQ-zqdcgQie-1R2-tghjrQ_5_88o3o,5338
+bitbucket_code_insight_reporter/generator.py,sha256=1aR_Ni-veVvtgXbeHP4M6tUIARi6qXDu4Hcuj0hcfsA,2333
+bitbucket_code_insight_reporter-0.0.4.dist-info/METADATA,sha256=kxgvA1y6VW9-MIMdBlAOyqzK7m-gp3HjbnoRXRaqhJY,5194
+bitbucket_code_insight_reporter-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bitbucket_code_insight_reporter-0.0.4.dist-info/entry_points.txt,sha256=U-xTWwlDwJMZL1nIFHlCfOY0Zu-WFXmtHnp5bT1xvWY,163
+bitbucket_code_insight_reporter-0.0.4.dist-info/top_level.txt,sha256=mAGAsJUhlYu8AYdHE7phpnC-pSBTy_RVycarWGh2ZfM,32
+bitbucket_code_insight_reporter-0.0.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+bitbucket_code_insight_reporter-0.0.4.dist-info/RECORD,,
