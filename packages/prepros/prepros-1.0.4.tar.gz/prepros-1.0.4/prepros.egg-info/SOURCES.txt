@@ -1,0 +1,12 @@
+setup.py
+prepros/__init__.py
+prepros/dataAugmentation.py
+prepros/edgeDetection.py
+prepros/imageFilter.py
+prepros/imageTransform.py
+prepros/pros.py
+prepros.egg-info/PKG-INFO
+prepros.egg-info/SOURCES.txt
+prepros.egg-info/dependency_links.txt
+prepros.egg-info/not-zip-safe
+prepros.egg-info/top_level.txt
