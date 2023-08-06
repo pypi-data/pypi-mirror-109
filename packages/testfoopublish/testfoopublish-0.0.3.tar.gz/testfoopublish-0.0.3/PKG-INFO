@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: testfoopublish
+Version: 0.0.3
+Project-URL: Documentation, https://github.com/unknown/testfoopublish#readme
+Project-URL: Issues, https://github.com/unknown/testfoopublish/issues
+Project-URL: Source, https://github.com/unknown/testfoopublish
+Author: U.N. Owen
+Author-email: void@some.where
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
