@@ -1,0 +1,13 @@
+ansible-lint>=5.1.0a0
+molecule>=3.2.0
+
+[:sys_platform == "linux"]
+selinux
+
+[:sys_platform == "linux2"]
+selinux
+
+[docs]
+simplejson
+Sphinx
+sphinx_ansible_theme>=0.2.2
