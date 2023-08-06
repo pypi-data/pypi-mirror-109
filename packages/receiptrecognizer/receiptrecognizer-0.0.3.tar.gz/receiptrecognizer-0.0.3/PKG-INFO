@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: receiptrecognizer
+Version: 0.0.3
+Summary: Receipt Recognition Package
+Home-page: https://github.com/kemalaraz/Receipt_Recognizer
+Author: karaz
+Author-email: kemalaraz91@gmail.com
+License: UNKNOWN
+Description: # Receipt_Recognizer
+        A library for detecting restaurant name, date and overall bill from a given receipt.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <3.8
+Description-Content-Type: text/markdown
