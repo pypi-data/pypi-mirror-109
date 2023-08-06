@@ -1,0 +1,6 @@
+setup.py
+wrs/__init__.py
+wrs.egg-info/PKG-INFO
+wrs.egg-info/SOURCES.txt
+wrs.egg-info/dependency_links.txt
+wrs.egg-info/top_level.txt
