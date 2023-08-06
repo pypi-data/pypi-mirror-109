@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: candy-bar
+Version: 1.2.1
+Summary: A simple progress bar with the ILoveCandy style
+Home-page: https://github.com/MacDumi/CandyBar
+Author: Dumitru Duca
+Author-email: me@dumitruduca.com
+License: UNKNOWN
+Download-URL: https://github.com/MacDumi/CandyBar/archive/refs/tags/1.2.1.tar.gz
+Keywords: Progress Bar,ILoveCandy,Pacman
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+
+UNKNOWN
+

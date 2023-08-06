@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+candy_bar.egg-info/PKG-INFO
+candy_bar.egg-info/SOURCES.txt
+candy_bar.egg-info/dependency_links.txt
+candy_bar.egg-info/not-zip-safe
+candy_bar.egg-info/requires.txt
+candy_bar.egg-info/top_level.txt
+src/candybar.cpp
+src/candybar.h
+src/pysetup.cpp
