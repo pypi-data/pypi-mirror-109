@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: lucifer-ml
+Version: 0.0.9.post3
+Summary: Automated ML by d4rk-lucif3r
+Home-page: https://github.com/d4rk-lucif3r/LuciferML
+Author: Arsh Anwar
+Author-email: lucifer78908@gmail.com
+License: MIT
+Description: # LuciferML a Semi-Automated Machine Learning Library by d4rk-lucif3r
+        
+        ## About
+        
+        The LuciferML is a Semi-Automated Machine Learning Python Library that works with tabular data. It is designed to save time while doing data analysis. It will help you right from data preprocessing to Data Prediction.
+        
+        ### The LuciferML will help you with:
+        
+        1. Preprocessing Data:
+            - Emcoding
+            - Splitting
+            - Scaling
+            - Dimensionality Reduction
+            - Resampling
+        2. Trying many different machine learning models with hyperparameter tuning,
+        
+        ## Installation
+            
+            pip install lucifer-ml
+        
+        
+        ## Available Modelling Techniques: 
+        
+        1) Classification 
+            
+            Available Predictors for Classification
+            
+                - lr - Logisitic Regression
+                - svm - SupportVector Machine
+                - knn - K-Nearest Neighbours
+                - dt - Decision Trees
+                - nb - GaussianNaive bayes
+                - rfc- Random Forest Classifier
+                - xgb- XGBoost Classifier
+                - ann - Artificial Neural Network
+        
+            Example:
+            
+                from luciferml.supervised import classification as cls
+                dataset = pd.read_csv('Social_Network_Ads.csv')
+                X = dataset.iloc[:, :-1]
+                y = dataset.iloc[:, -1]
+                cls.Classification(predictor = 'lr').predict(X, y)
+        
+            More About [Classification](https://github.com/d4rk-lucif3r/LuciferML/blob/master/LuciferML/supervised/Classification_README.md)
+        
+            
+        ## Note - As of v0.0.5 it LuciferML supports only Classification.
+        ## More To be Added Soon
+        
+Keywords: luciferML,AutoML,Python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
