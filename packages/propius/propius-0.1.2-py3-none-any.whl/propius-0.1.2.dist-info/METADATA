@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: propius
+Version: 0.1.2
+Summary: Extracts similar items over a big data using correlation between items over sparse data structures
+Home-page: https://github.com/dafevara/propius
+Author: Daniel Valencia
+Author-email: dafevara@gmail.com
+License: apache-2.0
+Download-URL: https://github.com/dafevara/propius/archive/refs/tags/0.1.1.tar.gz
+Keywords: python,machine-learning,big-data,bigdata,sparse,recommender-system,knn,sparse-matrices
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Other Environment
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Microsoft :: MS-DOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: SunOS/Solaris
+Classifier: Operating System :: Unix
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
+Requires-Dist: setuptools
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: fsspec
+Requires-Dist: s3fs
+Requires-Dist: tdqm
+Requires-Dist: mkdocs
+Requires-Dist: mkdocs-gitbook
+Requires-Dist: pygments
+Requires-Dist: mkdocs-rtd-dropdown
+Requires-Dist: mkdocs-material
+Requires-Dist: mkdocstrings
+
+# Propius
+
+Propius is latin for *closer*. Propius is a simple tool to uncover similar items in a dataset. In terms of distance, similar items tend to be closer, that's why _propius_ in latin.
+
+Its main feature is to allow for extracting similar items over a big data volume by using correlation between items over sparse data structures which use less space and memory.
+
+# System Design
+
+## Requirements
+
+
+1. The system should find similar items to a particular item in a dataset
+2. The system should provide a dataset format to use for training similarity algorithm
+
+## Performance Estimation
+...
+
+## System Interface
+
+1. API
+	- Allow to query similar items based on a specific item
+	- Allow to query all resources available
+	- Allow to train similarity model for a resource
+
+2. Web Front End
+	- Using system backend api, system show list all resources
+	- Using system backend api, system show create and delete resources
+
+## Components
+
+...
+
+
