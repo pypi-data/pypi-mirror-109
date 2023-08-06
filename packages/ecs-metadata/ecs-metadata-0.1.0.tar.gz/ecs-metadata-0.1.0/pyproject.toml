@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ecs-metadata"
+version = "0.1.0"
+description = "Get the meta data of the current ECS container, or empty variables if outside of ECS."
+authors = ["Paris Kasidiaris <paris@kasidiaris.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.6b0"
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
