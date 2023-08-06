@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: prometheus-vcgencmd
+Version: 0.0.0.post1
+Summary: prometheus-vcgencmd
+Home-page: https://gitlab.com/krink/prometheus-vcgencmd
+Author: Karl Rink
+Author-email: karl@rink.us
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/krink/prometheus-vcgencmd/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# prometheus-vcgencmd
+
+---    
+
+### pip install  
+```
+pip install prometheus-vcgencmd
+```
+```
+prometheus-vcgencmd
+``` 
+https://pypi.org/project/prometheus-vcgencmd    
+
+
+
+
+
+
