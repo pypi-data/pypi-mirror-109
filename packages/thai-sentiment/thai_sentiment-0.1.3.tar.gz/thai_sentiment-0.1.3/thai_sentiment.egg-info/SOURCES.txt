@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+requirements.txt
+setup.cfg
+setup.py
+thai_sentiment/__init__.py
+thai_sentiment/architecture.py
+thai_sentiment.egg-info/PKG-INFO
+thai_sentiment.egg-info/SOURCES.txt
+thai_sentiment.egg-info/dependency_links.txt
+thai_sentiment.egg-info/requires.txt
+thai_sentiment.egg-info/top_level.txt
+thai_sentiment/pretrained/nbsvm_c3_l2_dual.pkl
+thai_sentiment/pretrained/tfidf_wisesight_sentiment.pkl
