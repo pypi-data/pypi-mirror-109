@@ -1,0 +1,10 @@
+cambridge/__init__.py,sha256=8G5WzWdfuCRrsetHhc3tcNb3LTpHm92verW1mIeLLNY,153
+cambridge/cambridge.py,sha256=5yRzpvo3GkYt1GWopKFfAxAN85kqJD3_K5-PtFtO-W0,16257
+cambridge/console.py,sha256=kBqG_9TSXmDRHAvSUSPR1izApqpKrtVZLNSIGTZPzlw,228
+cambridge/log.py,sha256=WabgGK1aTJIigAEjh30K7hNQxg_6kecCcXF_s43kFEc,534
+cambridge/utils.py,sha256=vJp7r1rxXguR7_pwKXAgV8Nmv5mPr6LLuugPevmnZKY,1057
+cambridge-0.0.7.dist-info/entry_points.txt,sha256=qjaxe4hIwzH6_ZsLCfiJw1WnbZ8ttOJ3mT4ZTh5rfYc,54
+cambridge-0.0.7.dist-info/LICENSE,sha256=ljOS4DjXvqEo5VzGfdaRwgRZPbNScGBmfwyC8PChvmQ,32422
+cambridge-0.0.7.dist-info/WHEEL,sha256=iTBNkFIR26Wnx2cg5455J1IIBEskRg4YJC9DJwgu-js,99
+cambridge-0.0.7.dist-info/METADATA,sha256=7fCE3Wn8UEuCrbTmV95I1lLo9C7NyY9SFX2zcFg_fMU,2421
+cambridge-0.0.7.dist-info/RECORD,,
