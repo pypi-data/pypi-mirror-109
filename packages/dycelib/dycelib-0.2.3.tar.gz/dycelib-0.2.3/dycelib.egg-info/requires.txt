@@ -1,0 +1,11 @@
+typing_extensions
+
+[dev]
+mike
+mkdocs<1.2
+mkdocs-exclude
+mkdocs-material
+mkdocstrings
+pre-commit
+tox
+twine
