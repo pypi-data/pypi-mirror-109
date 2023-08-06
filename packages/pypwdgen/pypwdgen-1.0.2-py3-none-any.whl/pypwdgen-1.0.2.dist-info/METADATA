@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: pypwdgen
+Version: 1.0.2
+Summary: Complex password generator
+Home-page: https://github.com/polluxtroy3758/pypwdgen
+Author: polluxtroy3758
+Author-email: 2147396+polluxtroy3758@users.noreply.github.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/polluxtroy3758/pypwdgen/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pypwdgen
+
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/polluxtroy3758/pypwdgen/Build%20Python%20Package?style=flat-square)
+![PyPI](https://img.shields.io/pypi/v/pypwdgen?style=flat-square)
+
+Complex pasword generator
+
+## Prerequisites
+Python 3.6 minimum is required to use the `secrets` module (which is recomended instead of the `random` module to manipulate sensitive data).
+
+## Installation
+`TODO:` release a pypi package
+
+    pip install pypwdgen
+
+## Using the cli
+    python3 -m pypwdgen 
+
+### Optional arguments
+    -l, --length:
+        Length of the password (default: 9)
+    -n, --number:
+        Number of passwords to generate (default: 1)
+    -c, --complexity:
+        Minimum number of character classes to use
+
+### Exemple
+    # generates 20 passwords of 10 characters
+    python3 -m pypwdgen -l 10 -n 20
+
