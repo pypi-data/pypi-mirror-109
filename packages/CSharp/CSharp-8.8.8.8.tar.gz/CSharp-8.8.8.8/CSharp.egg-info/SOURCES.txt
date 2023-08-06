@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+CSharp.egg-info/PKG-INFO
+CSharp.egg-info/SOURCES.txt
+CSharp.egg-info/dependency_links.txt
+CSharp.egg-info/top_level.txt
