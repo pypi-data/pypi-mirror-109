@@ -1,0 +1,9 @@
+README.md
+setup.py
+hawkesbook/__init__.py
+hawkesbook/hawkes.py
+hawkesbook.egg-info/PKG-INFO
+hawkesbook.egg-info/SOURCES.txt
+hawkesbook.egg-info/dependency_links.txt
+hawkesbook.egg-info/requires.txt
+hawkesbook.egg-info/top_level.txt
