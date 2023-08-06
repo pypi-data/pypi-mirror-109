@@ -1,0 +1,3 @@
+[console_scripts]
+pantry = pantry_cloud.cli:main
+
