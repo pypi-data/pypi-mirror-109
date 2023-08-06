@@ -1,0 +1,9 @@
+numpy>=1.14.3
+monty
+scipy
+
+[amber]
+parmed
+
+[ase]
+ase
