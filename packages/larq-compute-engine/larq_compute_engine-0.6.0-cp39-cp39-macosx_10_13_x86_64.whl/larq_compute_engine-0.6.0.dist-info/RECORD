@@ -1,0 +1,16 @@
+larq_compute_engine-0.6.0.data/purelib/larq_compute_engine/__init__.py,sha256=ZJc9RiEZr11GP8lXBNY1bf4WKz2-sBfb82NOLOCdFZ0,500
+larq_compute_engine-0.6.0.data/purelib/larq_compute_engine/mlir/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+larq_compute_engine-0.6.0.data/purelib/larq_compute_engine/mlir/_tf_tfl_flatbuffer.so,sha256=ByBoASupRs9aXbgcTH3O1UnOXZkfPkGxtZ84uFh3nFM,150711008
+larq_compute_engine-0.6.0.data/purelib/larq_compute_engine/mlir/python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+larq_compute_engine-0.6.0.data/purelib/larq_compute_engine/mlir/python/converter.py,sha256=7azq5oMNbxSO6Ta84FoWIwHKokxB38XRRExV05xEdFs,12050
+larq_compute_engine-0.6.0.data/purelib/larq_compute_engine/mlir/python/tflite_schema.py,sha256=IMebPljb5-kfRFKDRphNyuYxyNAWSNAZIGk4kHT77Kc,392519
+larq_compute_engine-0.6.0.data/purelib/larq_compute_engine/mlir/python/util.py,sha256=OPPPt2F8YTHvl6wMHoBj7ig7Ze0srUokjgFh_wwczX8,8784
+larq_compute_engine-0.6.0.data/purelib/larq_compute_engine/tflite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+larq_compute_engine-0.6.0.data/purelib/larq_compute_engine/tflite/python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+larq_compute_engine-0.6.0.data/purelib/larq_compute_engine/tflite/python/interpreter.py,sha256=AWOkcNynnXpBJTzbOah1WKJ-yRBpgUzeXN7lS0bfmQs,3853
+larq_compute_engine-0.6.0.data/purelib/larq_compute_engine/tflite/python/interpreter_wrapper_lite.so,sha256=FupfcDhn5jbKBA56hdsU7Q2wIHrPRNeVDI5vRCkaaQk,2735632
+larq_compute_engine-0.6.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+larq_compute_engine-0.6.0.dist-info/METADATA,sha256=L3_SGE4VME0GpICs1ToXK-B1qkphA4bID1XW9g6kjWk,10551
+larq_compute_engine-0.6.0.dist-info/WHEEL,sha256=IZp1PpqNCUgan4TsxSeyvQRpf4CnZvr_T5i5dNtqcnU,110
+larq_compute_engine-0.6.0.dist-info/top_level.txt,sha256=InE06LtZpTtDpzQ5h7FWAiWN87wtJ0dpGq_FzjLVLyU,20
+larq_compute_engine-0.6.0.dist-info/RECORD,,
