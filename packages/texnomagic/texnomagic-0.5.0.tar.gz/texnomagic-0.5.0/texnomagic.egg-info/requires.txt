@@ -1,0 +1,3 @@
+jsonrpcserver
+scikit-learn
+parsimonious
