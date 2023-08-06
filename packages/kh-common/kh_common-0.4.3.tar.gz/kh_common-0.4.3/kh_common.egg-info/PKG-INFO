@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: kh-common
+Version: 0.4.3
+Summary: common libraries for kheina.com
+Home-page: https://github.com/kheina-com/kh-common
+Author: kheina
+License: UNKNOWN
+Description: ## installation
+        pip install -e git+https://github.com/kheina-com/kh-common.git#egg=kh_common
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: scoring
