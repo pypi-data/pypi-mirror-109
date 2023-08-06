@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: ossfs
+Version: 0.1
+Summary: fsspec filesystem for OSS
+Home-page: UNKNOWN
+Author: Yanxiang Gao
+Author-email: gao@iterive.ai
+License: Apache-2.0 License
+Download-URL: https://github.com/iterative/ossfs
+Description: # ossfs
+        fsspec filesystem for Alibaba Cloud (Aliyun) Object Storage System (OSS)
+        
+Keywords: oss,fsspec
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
