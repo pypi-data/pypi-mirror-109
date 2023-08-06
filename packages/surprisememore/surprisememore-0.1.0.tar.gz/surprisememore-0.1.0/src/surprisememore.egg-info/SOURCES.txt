@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/surprisememore/Directed_Graph_Class.py
+src/surprisememore/Undirected_Graph_Class.py
+src/surprisememore/__init__.py
+src/surprisememore/auxiliary_function.py
+src/surprisememore/comdet_functions.py
+src/surprisememore/cp_functions.py
+src/surprisememore/solver.py
+src/surprisememore.egg-info/PKG-INFO
+src/surprisememore.egg-info/SOURCES.txt
+src/surprisememore.egg-info/dependency_links.txt
+src/surprisememore.egg-info/requires.txt
+src/surprisememore.egg-info/top_level.txt
