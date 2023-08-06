@@ -1,0 +1,8 @@
+numpy
+pyzmq
+zeromq-pyre
+
+[dev]
+pytest
+bump2version
+black
