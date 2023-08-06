@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dcad-parser-hydrospanner
+Version: 0.1.0
+Summary: Parse and model Dallas Central Appriasal District data
+Home-page: http://github.com/hydrospanner/dcad_parser
+Author: John Tucker
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: flask-sqlacodegen
+Requires-Dist: cerberus
+
+README.rst
+

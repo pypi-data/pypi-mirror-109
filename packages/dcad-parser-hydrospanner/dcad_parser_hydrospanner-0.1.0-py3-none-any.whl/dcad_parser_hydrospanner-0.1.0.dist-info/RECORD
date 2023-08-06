@@ -1,0 +1,17 @@
+dcad_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dcad_parser/fields.py,sha256=-bQMj2mG3qy29pRVGB5nzzU9Va2-w9zMrcRvgKhMbig,3726
+dcad_parser/generate_sqlalchemy.py,sha256=avUE83cLTthy1_j5y1U_jgDt0f6F9c2hOKN1ySeJjdE,2546
+dcad_parser/parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dcad_parser/parser/metadata_parser.py,sha256=YXCUNjITay0ujbqoQ6zhuXc1UacYpwKSHdHkiN8AmPc,2216
+dcad_parser/parser/table_parser.py,sha256=kL2yYqvNAjq-_dLGmRakG6m_0PYm_v5pPqy4ghqmxDg,1729
+dcad_parser/parser/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dcad_parser/parser/tests/test_metadata_parser.py,sha256=3gUSO3qP8VJtLsNfSoYY0XhKW5YNI-5u3SER873YvWM,1661
+dcad_parser/parser/tests/test_table_parser.py,sha256=DaB2d4CS7gZOfXqtiwz9yLXy8X1SfeVSVL-9TAG17M4,2288
+dcad_parser/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dcad_parser/tests/test_fields.py,sha256=SXxTB3ddVFdLjpAQKDhPNkFfeIWAjBEl3unxMM5ll2U,1154
+dcad_parser_hydrospanner-0.1.0.dist-info/LICENSE,sha256=UaEd3vvSotq8LvyQeYCXG0SCDC9_lJ8WcVlJ1UuGs2E,1068
+dcad_parser_hydrospanner-0.1.0.dist-info/METADATA,sha256=ADo4Q2GfL2hErNLIqtmVstEQFXHE1XVSct3qAGGO6II,772
+dcad_parser_hydrospanner-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dcad_parser_hydrospanner-0.1.0.dist-info/entry_points.txt,sha256=TuYw0Gzleb6VSrXqLIdFY7qZJPOjzcn7_bevDEapzbo,78
+dcad_parser_hydrospanner-0.1.0.dist-info/top_level.txt,sha256=w5ox8_VGF1P-INrLBLW_rFw-x6rYsKG4fYOVZujTEs8,12
+dcad_parser_hydrospanner-0.1.0.dist-info/RECORD,,
