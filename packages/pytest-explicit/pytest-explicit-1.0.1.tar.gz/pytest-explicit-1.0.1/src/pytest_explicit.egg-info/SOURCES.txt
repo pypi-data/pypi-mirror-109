@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/pytest_explicit/__init__.py
+src/pytest_explicit/py.typed
+src/pytest_explicit.egg-info/PKG-INFO
+src/pytest_explicit.egg-info/SOURCES.txt
+src/pytest_explicit.egg-info/dependency_links.txt
+src/pytest_explicit.egg-info/entry_points.txt
+src/pytest_explicit.egg-info/requires.txt
+src/pytest_explicit.egg-info/top_level.txt

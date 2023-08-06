@@ -1,0 +1,3 @@
+[pytest11]
+pytest_explicit = pytest_explicit
+
