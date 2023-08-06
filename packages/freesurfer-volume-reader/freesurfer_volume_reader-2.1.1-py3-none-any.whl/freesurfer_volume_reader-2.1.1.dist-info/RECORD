@@ -1,0 +1,10 @@
+freesurfer_volume_reader/__init__.py,sha256=YhLv7u52WeIYnpkXjrHz_LqD-joUKTtbiSF43DCtPME,2458
+freesurfer_volume_reader/__main__.py,sha256=xXkaj-89TwWjRmjhvDO8yztC0GaPSGxKyiVHg8sBsN0,3328
+freesurfer_volume_reader/ashs.py,sha256=v_3V8aKGntWp7tGctu__OQSNuKzN0WUV2QGONPLbTeY,3924
+freesurfer_volume_reader/freesurfer.py,sha256=hcSvKuPO7-FrcyWgPZ4SkyK2KqVQ6wETti8pgv9njrI,2912
+freesurfer_volume_reader/version.py,sha256=flgqOD1eYRnFuZsx9cheCWyT-lez2ashtBeGKpxqe-0,110
+freesurfer_volume_reader-2.1.1.dist-info/METADATA,sha256=5cWRMEOUKs6QYYfKashyavtDU0X-ul1lovgSH3jIZq0,4389
+freesurfer_volume_reader-2.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+freesurfer_volume_reader-2.1.1.dist-info/entry_points.txt,sha256=M_z1ozu_cK-BTv0F8KHZzMU732JmwG9mEe0Mu8lHKG4,85
+freesurfer_volume_reader-2.1.1.dist-info/top_level.txt,sha256=cviv5pq6nZTWGoe0b33yUSw18LWFtV2LvNA7y4GdR4k,25
+freesurfer_volume_reader-2.1.1.dist-info/RECORD,,
