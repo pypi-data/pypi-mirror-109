@@ -1,0 +1,14 @@
+kerala_math/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+kerala_math/jyatable/__init__.py,sha256=H-P5luBsW01bSWIWpNBnymEYhAbYMt4wcRN7RFIPifw,1532
+kerala_math/jyatable/aryabhata.py,sha256=ZQwixltQxKAL5j40L-nfbglq3_s3-ofBOWM-mGR7XVg,1050
+kerala_math/jyatable/laghuvivrti.py,sha256=zRevLfDtNXQWuVj3-G1kxvxaB-qBguN0Shv3xhZ1R3I,945
+kerala_math/jyatable/madhava.py,sha256=pzb_sXRqfoZdaNCvPqv8QUHY2bWad9lUy1TquF7Aqe8,4274
+kerala_math/jyatable/tantrasangraha.py,sha256=i1obswtzJCr7F9zfXxntZCuAsjAq7VtgD_fPwtTu2xM,921
+kerala_math/series/__init__.py,sha256=_G5V3N1I7RQYO_YCAAocqmkErapuc4-XV0dmG9dl9N0,140
+kerala_math/series/circumference.py,sha256=HhXe2BRXvxzKwehmj1LXooropC65nQ-HIaYzR35f4ZA,6079
+kerala_math/series/jya.py,sha256=wCw3gKqoW6_vIu2-mxkIGiBoXswvxy1I41sTVy-ro7g,2044
+kerala_math-0.0.1.dist-info/LICENSE,sha256=vOscNkGwNGq2mm2BlLQFhW6PEfNEdGJ2OFJP0jaakBM,1077
+kerala_math-0.0.1.dist-info/METADATA,sha256=sQzXdLfFPatqfplzeVylntOHUZFsZ-X_G-oKEGj80ug,661
+kerala_math-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kerala_math-0.0.1.dist-info/top_level.txt,sha256=JBQXnxIyTd5MnmxleL-ys33heUlFVL0aaaJ5SvgbpAU,12
+kerala_math-0.0.1.dist-info/RECORD,,
