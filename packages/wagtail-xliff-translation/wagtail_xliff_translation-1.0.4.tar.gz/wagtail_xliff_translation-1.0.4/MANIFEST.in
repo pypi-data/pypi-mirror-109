@@ -1,0 +1,8 @@
+include *.py
+include *.rst
+include *.txt
+include *.yml
+include wagtail_xliff_translation/templates/xliff/admin *.html
+recursive-include docs *.md
+global-exclude __pycache__
+global-exclude *.py[co]
