@@ -1,0 +1,8 @@
+setup.py
+helloPypi/__init__.py
+helloPypi/hello.py
+zts_helloPypi.egg-info/PKG-INFO
+zts_helloPypi.egg-info/SOURCES.txt
+zts_helloPypi.egg-info/dependency_links.txt
+zts_helloPypi.egg-info/requires.txt
+zts_helloPypi.egg-info/top_level.txt
