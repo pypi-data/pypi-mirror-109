@@ -1,0 +1,5 @@
+[console_scripts]
+devops-cli = cli_tool.click_aws:process
+devops-cli-demo = cli_tool.click_demo:process
+test = cli_tool.click_test:process
+

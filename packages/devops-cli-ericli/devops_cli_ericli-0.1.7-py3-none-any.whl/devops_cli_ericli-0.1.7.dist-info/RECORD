@@ -1,0 +1,9 @@
+cli_tool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli_tool/click_aws.py,sha256=WBY4-EX7boZsxRj4pL2SbF7YZMkEfCoWIAIHav5f69U,1973
+cli_tool/click_demo.py,sha256=qWZ4xapO-15jgRiaHgU_20LPd0de3xPADfhc1FDIftI,2225
+cli_tool/click_test.py,sha256=rR7vNQ5IFY06cxPeNm9saevxuisnxFkDLtEE3Kzp_kU,179
+devops_cli_ericli-0.1.7.dist-info/METADATA,sha256=ZkFQyRqzuKH_5fhmT45W4aLNrh5eFUz6TH_GUDmcmbg,2270
+devops_cli_ericli-0.1.7.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+devops_cli_ericli-0.1.7.dist-info/entry_points.txt,sha256=dCRjGoLw5XRxTxSx9P_ULbEnhRG8ars4iSLGPiC1Oko,140
+devops_cli_ericli-0.1.7.dist-info/top_level.txt,sha256=5hMf5IdKp-wi_uPl5raqLmeI69rSqm74-0rZ5f-Tjzo,9
+devops_cli_ericli-0.1.7.dist-info/RECORD,,
