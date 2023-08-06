@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: compasscli
+Version: 0.1.3
+Summary: Official CLI for Zype.
+Author: Rajdeep Malakar
+Author-email: Rajdeep@tgeeks.cf
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ZypeSDK (>=1.6,<2.0)
+Requires-Dist: rich (>=10.3.0,<11.0.0)
+Description-Content-Type: text/x-rst
+
+.. Zype Documentation
+
+=======================
+Compass CLI for Python3
+=======================
+
+.. code-block:: shell
+
+   pip install CompassCLI
+
+You can see complete ZypeLang Documentation at `ZypeLang Docs <https://zype-lang.cf>`_ .
+
+For detailed article please visit **zUbuntu** `here <https://zubuntu.zype.cf>`_ .
+
+Installation
+************
+
+Windows
+-------
+
+.. code-block:: shell
+
+    pip install CompassCLI
+
+Linux / macOS
+-------------
+
+.. code-block:: shell
+
+    python3 -m pip install CompassCLI
+
+If you had any problem please mail us at `TGMail <mailto:Zype@tgeeks.cf>`_ .
