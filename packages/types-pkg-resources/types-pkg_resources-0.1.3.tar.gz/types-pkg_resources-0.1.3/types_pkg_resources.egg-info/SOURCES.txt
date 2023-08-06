@@ -1,0 +1,8 @@
+setup.py
+pkg_resources-stubs/METADATA.toml
+pkg_resources-stubs/__init__.pyi
+pkg_resources-stubs/py31compat.pyi
+types_pkg_resources.egg-info/PKG-INFO
+types_pkg_resources.egg-info/SOURCES.txt
+types_pkg_resources.egg-info/dependency_links.txt
+types_pkg_resources.egg-info/top_level.txt
