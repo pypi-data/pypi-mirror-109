@@ -1,0 +1,11 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+reescritor/__init__.py
+reescritor/reescritor.py
+reescritor.egg-info/PKG-INFO
+reescritor.egg-info/SOURCES.txt
+reescritor.egg-info/dependency_links.txt
+reescritor.egg-info/requires.txt
+reescritor.egg-info/top_level.txt
