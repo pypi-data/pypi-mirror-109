@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pylsd2
+Version: 0.0.2
+Summary: pylsd2 is the python bindings for LSD - Line Segment Detector
+Home-page: https://github.com/anyongjin/pylsd2
+Author: Gefu Tang, anyongjin
+Author-email: anyongjin163@163.com
+License: BSD
+Keywords: LSD
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
