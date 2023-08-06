@@ -1,0 +1,3 @@
+[console_scripts]
+my-cmd=poetry_my_first_test.cli:cli
+
