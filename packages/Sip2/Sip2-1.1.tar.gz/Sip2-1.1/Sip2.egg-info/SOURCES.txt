@@ -1,0 +1,13 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Sip2/__init__.py
+Sip2/message_lookup.py
+Sip2/sip2.py
+Sip2/wrapper.py
+Sip2.egg-info/PKG-INFO
+Sip2.egg-info/SOURCES.txt
+Sip2.egg-info/dependency_links.txt
+Sip2.egg-info/top_level.txt
