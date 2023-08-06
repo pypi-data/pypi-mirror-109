@@ -1,0 +1,10 @@
+covid19pyclient/__init__.py,sha256=EnxMKnFoUqse9cxGaqUj5cbnuRsqgMwFWbzoRgVNKsw,382
+covid19pyclient/__main__.py,sha256=RYskBIQXxOUVhvV7ie0RUDy7t4HYjYMAeDUuG8L7M9o,10541
+covid19pyclient/endpoints.py,sha256=ToHqCH-1ivCzIQLT6dujEuCktQLQJxPkNrhGjUHYUn0,1508
+covid19pyclient/exceptions.py,sha256=U_I5a2sV0x64mvtX17o5Jf-35D09eSLf16LyPrvMkTM,968
+covid19pyclient/valid_parameters.py,sha256=P0MAP0aUHHZEPSbA6AgIrfrQm8VAl24otWMoLjJA41A,12896
+covid19pyclient-1.0.0.dist-info/LICENSE,sha256=ZjZQGCtZhFA8dV4V6q1IBWsMB4EwHjLoXzFx1SUmZMk,1071
+covid19pyclient-1.0.0.dist-info/METADATA,sha256=8VxZqtB4IgFxVjbSxbcrBHm5nKnNHp7e03phbdkCc10,3121
+covid19pyclient-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+covid19pyclient-1.0.0.dist-info/top_level.txt,sha256=KbeWnvwdCqvrI1lQZ4V3QtfWOlaKvYTh80RbFO8UCLc,16
+covid19pyclient-1.0.0.dist-info/RECORD,,
