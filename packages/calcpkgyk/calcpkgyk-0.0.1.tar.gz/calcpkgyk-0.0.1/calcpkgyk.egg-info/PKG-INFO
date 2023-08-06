@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: calcpkgyk
+Version: 0.0.1
+Summary: A small example package
+Home-page: UNKNOWN
+Author: Youngkuk
+Author-email: kyk9174844@snu.ac.kr
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Description: CALC
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

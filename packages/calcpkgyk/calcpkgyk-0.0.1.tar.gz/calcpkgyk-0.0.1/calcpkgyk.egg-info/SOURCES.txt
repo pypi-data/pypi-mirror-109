@@ -1,0 +1,9 @@
+README.md
+setup.py
+calc/__init__.py
+calc/geometry.py
+calc/operation.py
+calcpkgyk.egg-info/PKG-INFO
+calcpkgyk.egg-info/SOURCES.txt
+calcpkgyk.egg-info/dependency_links.txt
+calcpkgyk.egg-info/top_level.txt
