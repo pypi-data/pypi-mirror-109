@@ -1,0 +1,8 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "@epi2melabs/jupyterlab-slash-copy-path",
+  "description": "@epi2melabs/jupyterlab-slash-copy-path settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}
