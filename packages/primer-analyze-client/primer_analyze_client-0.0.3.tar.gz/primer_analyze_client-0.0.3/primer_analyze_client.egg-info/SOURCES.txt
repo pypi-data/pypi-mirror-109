@@ -1,0 +1,11 @@
+MANIFEST.in
+requirements.txt
+setup.py
+primer_analyze_client/__init__.py
+primer_analyze_client/__version__.py
+primer_analyze_client/analyze_client.py
+primer_analyze_client.egg-info/PKG-INFO
+primer_analyze_client.egg-info/SOURCES.txt
+primer_analyze_client.egg-info/dependency_links.txt
+primer_analyze_client.egg-info/requires.txt
+primer_analyze_client.egg-info/top_level.txt
