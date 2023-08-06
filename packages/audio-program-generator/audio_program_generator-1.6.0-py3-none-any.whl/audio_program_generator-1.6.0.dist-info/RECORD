@@ -1,0 +1,11 @@
+audio_program_generator/.DS_Store,sha256=E3QDya167ZntXA3mr0titSsMiKFAriLNYNRPpfDaHvc,6148
+audio_program_generator/__init__.py,sha256=bYN93DTWr8alkTnO3wj31CU5gqTshxIcsbXUcJcUAc8,22
+audio_program_generator/apg.py,sha256=zvdXODTKbMmAtlMkCtGKHHtEDtSF68xSn9Yv00hirIk,6815
+audio_program_generator/tmp/birds.wav,sha256=inT3V7fmMNm-tWI6IayiqSztdWSimJhFcU5gO0Ge1jE,8408108
+audio_program_generator/tmp/sample.mp3,sha256=m3MCiAR2hLar_M37hMmF6fMuBVuoIS7fcOPizCCrwN0,179322
+audio_program_generator/tmp/sample.txt,sha256=ylOn41pp60dTx-V8P7w9lJumcojUe0KNfalCTVpWqBM,18
+audio_program_generator-1.6.0.dist-info/entry_points.txt,sha256=WF-zULUT0kC5qOs8AZfCKjTVrwbJeY9eNbqo8_gqe1U,56
+audio_program_generator-1.6.0.dist-info/LICENSE,sha256=TfaJd2aXaOezT743SvyAXYg15ezXVm-Ovz8XIKIkaJ4,1068
+audio_program_generator-1.6.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+audio_program_generator-1.6.0.dist-info/METADATA,sha256=DQfo6RrcRICLAC80uOz8O2oepD7eNjTqyMmR7cAAn8E,3538
+audio_program_generator-1.6.0.dist-info/RECORD,,
