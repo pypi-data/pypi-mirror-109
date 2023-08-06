@@ -1,0 +1,10 @@
+numpy
+matplotlib
+tqdm
+pandas
+seaborn
+scikit-image
+livelossplot
+mypy
+mlflow
+dill
