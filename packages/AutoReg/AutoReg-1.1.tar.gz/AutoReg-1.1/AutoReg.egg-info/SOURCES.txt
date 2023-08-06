@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+AutoReg/__init__.py
+AutoReg/autoreg.py
+AutoReg.egg-info/PKG-INFO
+AutoReg.egg-info/SOURCES.txt
+AutoReg.egg-info/dependency_links.txt
+AutoReg.egg-info/top_level.txt
