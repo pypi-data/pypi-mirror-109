@@ -1,0 +1,5 @@
+pyttsx3
+speechrecognition
+wikipedia
+youtube-search-python
+pafy
