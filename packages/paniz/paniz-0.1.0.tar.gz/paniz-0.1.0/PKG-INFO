@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: paniz
+Version: 0.1.0
+Summary: Python package that eases the pain of concatenating Pandas categoricals!
+Home-page: https://github.com/paradise1260/paniz
+License: MIT
+Author: Paniz Fazlali
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pandas (>=1.2.4,<2.0.0)
+Project-URL: Documentation, https://paniz.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/paradise1260/paniz
+Description-Content-Type: text/markdown
+
+# paniz 
+
+[![Python](https://img.shields.io/badge/python-3.8-blue)]()
+[![codecov](https://codecov.io/gh/paradise1260/paniz/branch/main/graph/badge.svg)](https://codecov.io/gh/paradise1260/paniz)
+[![Documentation Status](https://readthedocs.org/projects/paniz/badge/?version=latest)](https://paniz.readthedocs.io/en/latest/?badge=latest)
+
+
+## Installation
+
+```bash
+$ pip install -i https://test.pypi.org/simple/ paniz
+```
+
+## Features
+
+- TODO
+
+## Dependencies
+
+- TODO
+
+## Usage
+
+- TODO
+
+## Documentation
+
+The official documentation is hosted on Read the Docs: https://paniz.readthedocs.io/en/latest/
+
+## Contributors
+
+We welcome and recognize all contributions. You can see a list of current contributors in the [contributors tab](https://github.com/paradise1260/paniz/graphs/contributors).
+
+### Credits
+
+This package was created with Cookiecutter and the UBC-MDS/cookiecutter-ubc-mds project template, modified from the [pyOpenSci/cookiecutter-pyopensci](https://github.com/pyOpenSci/cookiecutter-pyopensci) project template and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage).
+

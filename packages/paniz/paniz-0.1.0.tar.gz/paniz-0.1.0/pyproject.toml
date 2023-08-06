@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "paniz"
+version = "0.1.0"
+description = "Python package that eases the pain of concatenating Pandas categoricals!"
+authors = ["Paniz Fazlali"]
+license = "MIT"
+readme = "README.md"
+documentation = "https://paniz.readthedocs.io/en/latest/"
+homepage = "https://github.com/paradise1260/paniz"
+repository = "https://github.com/paradise1260/paniz"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.2.4"
+
+[tool.poetry.dev-dependencies]
+Sphinx = "^4.0.2"
+nbsphinx = "^0.8.6"
+ipykernel = "^5.5.5"
+sphinx-autoapi = "^1.8.1"
+sphinx-rtd-theme = "^0.5.2"
+sphinxcontrib-napoleon = "^0.7"
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
