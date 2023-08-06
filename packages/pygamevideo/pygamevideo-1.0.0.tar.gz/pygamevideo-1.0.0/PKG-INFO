@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: pygamevideo
+Version: 1.0.0
+Summary: Video player for Pygame
+Home-page: https://github.com/kadir014/pygamevideo
+Author: Kadir Aksoy
+Author-email: kursatkadir014@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://github.com/kadir014/pygamevideo/README.md#Reference
+Description: UNKNOWN
+Keywords: python pygame video mp4 media
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
