@@ -1,0 +1,58 @@
+#!/bin/bash
+
+function mcp {
+    loop_counter=0
+    while true
+    do
+        sl=${RANDOM}
+        let "sl %= 25"
+	vcp -v $1 $2 && break || sleep ${sl} && loop_counter=$((loop_counter+1)) && [ "$loop_counter" -lt "1000" ] || return 
+    done
+}
+
+function gt { $(echo  ${1} ${2} | awk ' { if ( $1 > $2 ) { print("true") } else { print("false") }}' ); }
+
+# cadc-get-cert --cert cadcproxy.pem || exit
+basedir=$1 && shift
+vos_uri=$1 && shift
+pointing=$1 &&shift
+
+filter="HSC-R2"
+exptype="MASKED"
+stack_rerun="sns_weighted"
+diff_rerun="diff"
+
+chip=$1 && shift
+ccd=$(echo ${chip} | awk ' { printf("%03d",$1) } ' )
+
+angle=$1 && shift
+rate=$1 && shift
+angle_step=1
+rate_step=1
+
+nstacks=$1 && shift
+
+# pull the DIFF tar ball for this CCD from DIFFS/pointing directory on VOSpace.
+mcp "${vos_uri}/DIFFS/${pointing}/MASKED-${ccd}.tar" ./  && tar xvf MASKED-${ccd}.tar 
+
+storage=${vos_uri}/STACKS_V3/${pointing}/${ccd}
+vmkdir -p ${storage}
+
+daomop-sns ${basedir} \
+	   --rerun ${diff_rerun}:${stack_rerun} \
+           --exptype ${exptype} \
+	   --rate-min ${rate} \
+	   --rate-max ${rate} \
+	   --rate-step ${rate_step} \
+	   --angle-min ${angle} \
+	   --angle-max ${angle} \
+	   --angle-step ${angle_step} \
+	   --pointing ${pointing} \
+	   --n-sub-stacks ${nstacks} \
+	   --ccd ${chip} \
+	   --mask \
+	   --section-size 600 \
+   	   --clip 16 \
+           --log-level INFO  || exit
+
+mcp "${basedir}/rerun/${stack_rerun}/${exptype}/${pointing}/${filter}/STACK*.fits.fz" ${storage}/ 
