@@ -1,0 +1,13 @@
+CHANGELOG.md,sha256=XbEBzOauh-I3k5UsBcM0IawYzvuhp6Ymhwi3eN0euuM,1372
+aws_data_tools/__init__.py,sha256=gqyXlcIN_BtUI9Sj5wYocm1MVhJMaIGF1HIaFGAbmnE,2137
+aws_data_tools/builders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_data_tools/builders/organizations.py,sha256=vwkavwRIi_aCs2cr-1zVXgp811nb_sGd9Ev1cgpoLAM,21302
+aws_data_tools/cli/__init__.py,sha256=9yxKbTJKGqZqQMcpejbt-qt0Sw_Vk-3bemcdVYlgztU,3585
+aws_data_tools/models/__init__.py,sha256=Ydguvr6OwtE9DBaC7HqMgFGZP9lcG7m1wI8rbFYyMbU,467
+aws_data_tools/models/organizations/__init__.py,sha256=EKmPRr_m9YqljBFyLS2jsgXtL8aIKLUD-y63KyqzUd8,5125
+aws_data_tools/utils.py,sha256=0HyO1EBwB4wHjicJR5L_QaD8-VWNcCjvrMIYJgrxRXQ,549
+aws_data_tools-0.1.0a4.dist-info/entry_points.txt,sha256=d7VHUtJUHsW6eDtxe59RTrkhRCryQLLKJp5sR2YBYXg,50
+aws_data_tools-0.1.0a4.dist-info/LICENSE,sha256=hFjstkHGxNQaysQNSNYF98AptY-5D7qssTbt4LvL1fI,1067
+aws_data_tools-0.1.0a4.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+aws_data_tools-0.1.0a4.dist-info/METADATA,sha256=K5lmDJ3xRAsqp9Dngf_C6tl79gUNFJh7HUdbIQ2_W-4,11624
+aws_data_tools-0.1.0a4.dist-info/RECORD,,
