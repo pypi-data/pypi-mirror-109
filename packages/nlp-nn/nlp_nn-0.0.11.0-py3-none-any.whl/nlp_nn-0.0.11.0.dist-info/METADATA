@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: nlp-nn
+Version: 0.0.11.0
+Summary: NLP NN Framework
+Home-page: https://gitee.com/fubo_linux/nlp_nn
+Author: fubo
+Author-email: fb_linux@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: rouge
+Requires-Dist: seqeval
+Requires-Dist: sklearn
+Requires-Dist: torch (>=1.6)
+Requires-Dist: fastapi (>=0.55.1)
+Requires-Dist: pydantic (>=1.5.1)
+Requires-Dist: tensorboard (>=2.2.1)
+Requires-Dist: transformers (==4.5.1)
+Requires-Dist: jieba (>=0.39)
+Requires-Dist: uvicorn (>=0.13.4)
+Requires-Dist: fastapi (>=0.63.0)
+Requires-Dist: typing
+
+NLP NN Framework
+
+
