@@ -1,0 +1,15 @@
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/scraper.py,sha256=KFIgErLZaoYW1mLRs6sWfZq9lPygOi62QJh-ujcASJ8,2119
+roboparse/__init__.py,sha256=5k_UVXPBmA6vhcA0aG9J98r4e7gg2uqKkui2RbhPVRo,95
+roboparse/filters.py,sha256=ogJ1PXvHXvL-1cGaviFtOWJFYePT0UNPvkgHijy8X8s,661
+roboparse/parser.py,sha256=mfRmVaOKT2iqOyiITH96dN9sdwiIRGoxTahfJa-b2jM,1596
+roboparse/routers.py,sha256=8g8MQNUrEvoK_7O8RC73eGxFTncW1j93rqSA5xbpHv4,2094
+roboparse/schemas.py,sha256=7v1he1cwVBuykf3IK0YfTF8LORc8YWTYTEzoHU4B2y4,450
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=-xNJWEdp3GAkwetBcn0MBmLOtau7dGBpWHep9Ay_E9Y,1355
+tests/test_parser.py,sha256=AfRncrVt-EC4J9uW5Fp86IdieF3sInIGuFg7aw5uNmY,429
+roboparse-0.0.2.dist-info/LICENSE,sha256=dKtWahZGxUmnKGlRQAxlTl_RcivkWarXKrCKIunKzws,1067
+roboparse-0.0.2.dist-info/METADATA,sha256=cLQ2VT5hcIOZilRw98Ko5rLZqi94OpkPdt7cZFY-umM,4117
+roboparse-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+roboparse-0.0.2.dist-info/top_level.txt,sha256=Q6hWT2UQD6esjxrA5r0yXsjvK3ZLQYqO9Pl7eAkxOwY,24
+roboparse-0.0.2.dist-info/RECORD,,
