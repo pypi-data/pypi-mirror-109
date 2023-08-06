@@ -1,0 +1,10 @@
+mlaas/__init__.py,sha256=mKQHTYKnqGTRm55YhX8Z77Jclxv_cgLTyt8ApVnJf-I,283
+mlaas/pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/__init__.py,sha256=6ZkqPTYds8_TrBweTFsEcXSyV56ruf2Ou-xdT1PoqE0,275
+src/pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlaas-0.0.4.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlaas-0.0.4.dist-info/METADATA,sha256=O3AnPvaSQD96bQcx5ArpE_Tzr-WlZKUqQpL6UG99dWc,358
+mlaas-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mlaas-0.0.4.dist-info/top_level.txt,sha256=LmLIAHmhO7JWkyBOuSgspb6-5YhlGIZHwJPJk1QBfPo,6
+mlaas-0.0.4.dist-info/RECORD,,
