@@ -1,0 +1,7 @@
+README.md
+setup.py
+ipackage/iplocation.py
+ipackage.egg-info/PKG-INFO
+ipackage.egg-info/SOURCES.txt
+ipackage.egg-info/dependency_links.txt
+ipackage.egg-info/top_level.txt
