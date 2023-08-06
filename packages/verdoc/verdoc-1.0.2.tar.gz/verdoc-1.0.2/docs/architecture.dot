@@ -1,0 +1,52 @@
+digraph verdoc_invocation {
+  rankdir=TB
+  label="verdoc --build-opt env=foo vA.B.C vX.Y.Z"
+  labeljust=l
+  compound=true
+  ranksep=0.75
+  subgraph cluster_verdoc {
+    label="verdoc"
+    subgraph cluster_builder {
+      label="ToxBuilder(env=\"foo\")"
+      builder_class [shape=plaintext label="tox -e foo"]
+    }
+    subgraph cluster_context {
+      label="GitBuildContext"
+      context_class [shape=plaintext label="git clone -b vA.B.C . $(mktemp -d)"]
+    }
+    subgraph cluster_manager {
+      label="BuildManager"
+      subgraph cluster_build {
+        label="build(['vA.B.C', 'vX.Y.Z'])"
+        subgraph cluster_pool {
+          label="multiprocessing.Pool()"
+          subgraph cluster_target {
+            label="build_target('vA.B.C')"
+            style=filled
+            spec [label="BuildSpec()"]
+            subgraph cluster_protocol {
+              label="build_protocol()"
+              subgraph cluster_build_context {
+                label="build_context()"
+                job [label="BuildJob()"]
+              }
+              subgraph cluster_build_builder {
+                label="builder()"
+                log [label="build.log"]
+              }
+              job -> log [lhead=cluster_build_builder]
+            }
+            spec -> job [lhead=cluster_build_context]
+          }
+          subgraph cluster_target_next {
+            label="build_target('vX.Y.Z')"
+            style=filled
+            dots [shape=plaintext label="..."]
+          }
+        }
+      }
+      context_class -> job [ltail=cluster_context lhead=cluster_build_context dir=none]
+      builder_class -> log [ltail=cluster_builder lhead=cluster_build_builder dir=none]
+    }
+  }
+}
