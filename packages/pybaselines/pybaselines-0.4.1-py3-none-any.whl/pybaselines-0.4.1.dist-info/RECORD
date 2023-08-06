@@ -1,0 +1,15 @@
+pybaselines/__init__.py,sha256=spVNAazTIAAOp54G28jNFwtUObCKaVH9KOWbFIB0Vak,2284
+pybaselines/_algorithm_setup.py,sha256=ntRJSFfhbfti_cx-D96qZKDquQAGMF0rXuoJLjExLqY,20552
+pybaselines/misc.py,sha256=FJhQryX5av_-86rMbvVGrfVljaaoh7puczEIJGciMQY,1683
+pybaselines/morphological.py,sha256=DG-XkAv6gPzCwF8eBX41hCcqL3Lz2iWb-DvjocWNCn8,26775
+pybaselines/optimizers.py,sha256=9RujYDhrZdrdp-BO1BKY0CoPi24byhwXLtzojHBvBjQ,19452
+pybaselines/polynomial.py,sha256=Ou8_HhLjCWDATAVmlhuz9A-FUC6c-1E-d6K0yroLFtQ,44865
+pybaselines/utils.py,sha256=njgQgwSZt8UVFYQ16n9qJFP0kEUnaVnLHRcJbjf59fw,9040
+pybaselines/whittaker.py,sha256=YjE8SEh4xZPrkHeGK37GTTw586S9e_nHrCx2l4IfSi0,27816
+pybaselines/window.py,sha256=V_NQiJQDzQhHpZZ4B-8VJl2hl6hNgFdNSB_wbGlnLlw,18276
+pybaselines-0.4.1.dist-info/LICENSE.txt,sha256=N4W6uUrhKmuG-A0W194-LibdBrbNAEpVHtzxAgCIezs,1547
+pybaselines-0.4.1.dist-info/LICENSES_bundled.txt,sha256=Y0ezuxWOLq5b6ZpLuuBz7HaGNMLvWdKJYXKwwQFFPL4,3468
+pybaselines-0.4.1.dist-info/METADATA,sha256=XR1xXqh8paIr3950sqii24xcJGI0EyuEDYOiwq9g4aA,8847
+pybaselines-0.4.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pybaselines-0.4.1.dist-info/top_level.txt,sha256=xQ1ELLFlPN2oLLFejtcxzT_V0BQsBN2uo2E0k46sHrc,12
+pybaselines-0.4.1.dist-info/RECORD,,
