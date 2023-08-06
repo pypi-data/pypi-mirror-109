@@ -1,0 +1,10 @@
+README.rst
+setup.py
+pylibimp/__init__.py
+pylibimp/__meta__.py
+pylibimp/import_hook.py
+pylibimp/system.py
+pylibimp.egg-info/PKG-INFO
+pylibimp.egg-info/SOURCES.txt
+pylibimp.egg-info/dependency_links.txt
+pylibimp.egg-info/top_level.txt
