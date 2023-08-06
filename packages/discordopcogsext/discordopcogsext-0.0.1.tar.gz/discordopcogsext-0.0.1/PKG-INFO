@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: discordopcogsext
+Version: 0.0.1
+Summary: A discord.py bot helper
+Home-page: UNKNOWN
+Author: palmtrww
+Author-email: palmbestna@gmail.com
+License: MIT
+Description: # discord-ext-helpers
+        A discord.py package that makes making discord.py bot easier with auto created stuff!
+        
+        
+        Change Log
+        ================================
+        
+        0.0.1 (11/6/2021)
+        --------------------------------
+        - First Release
+Keywords: discord.py
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
