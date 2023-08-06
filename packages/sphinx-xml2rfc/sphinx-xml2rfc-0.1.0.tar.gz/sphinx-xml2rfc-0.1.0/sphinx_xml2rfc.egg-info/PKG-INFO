@@ -1,0 +1,157 @@
+Metadata-Version: 2.1
+Name: sphinx-xml2rfc
+Version: 0.1.0
+Summary: A sphinx extension for documenting IETF Internet-Draft versions
+Home-page: https://github.com/benmaddison/sphinx-xml2rfc
+Author: Ben Maddison
+Author-email: benm@workonline.africa
+License: MIT
+Project-URL: Documentation, https://benmaddison.github.io/sphinx-xml2rfc
+Project-URL: Bug Tracker, https://github.com/benmaddison/sphinx-xml2rfc/issues
+Keywords: ietf,xml2rfc
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sphinx-xml2rfc
+
+A `sphinx` extension providing features to document work-in-progress
+Internet-Drafts using `git` history.
+
+![PyPI](https://img.shields.io/pypi/v/sphinx-xml2rfc)
+[![CI/CD](https://github.com/benmaddison/sphinx-xml2rfc/actions/workflows/cicd.yml/badge.svg)](https://github.com/benmaddison/sphinx-xml2rfc/actions/workflows/cicd.yml)
+[![codecov](https://codecov.io/gh/benmaddison/sphinx-xml2rfc/branch/master/graph/badge.svg?token=YclUBHw70S)](https://codecov.io/gh/benmaddison/sphinx-xml2rfc)
+[![Updates](https://pyup.io/repos/github/benmaddison/sphinx-xml2rfc/shield.svg)](https://pyup.io/repos/github/benmaddison/sphinx-xml2rfc/)
+
+## Overview
+
+The extension contains two primary components:
+
+### Versioned document generation
+
+Hooks `sphinx-build` initialisation, and searches the local `git` repository
+for `refs`, and uses `xml2rfc` to build each version of the named drafts.
+
+These are written to the `sphinx` source directory tree for use during the
+build phase.
+
+### `sphinx` language domain
+
+The `xml2rfc` domain provides directives for rendering Internet-Draft texts
+and for displaying changes between versions.
+
+Documentation sources containing the appropriate directives can optionally be
+auto-generated, after the fashion of `sphinx-apidoc`
+
+## Installation
+
+``` sh
+python -m pip install sphinx-xml2rfc
+```
+
+## Usage
+
+To use, add `sphinx_xml2rfc` to `extensions` in `conf.py`:
+
+``` python
+extensions = [
+    ...,
+    sphinx_xml2rfc,
+    ...
+]
+```
+
+The following configuration options are available:
+
+-   `xml2rfc_drafts`
+
+    Iterable of draft names for which to auto-generate text versions from xml
+    sources using `xml2rfc`.
+
+    Each name should match the name of the XML source file (without the `.xml`
+    extension) in the root of the repository tree.
+
+    default: `[]`
+
+-   `xml2rfc_sources`
+
+    Iterable of file names required by `xml2rfc` to process the documents in
+    `xml2rfc_drafts`.
+
+    default: `[]`
+
+-   `xml2rfc_remotes`
+
+    Iterable of git remote names to consider when searching for branch `refs`.
+
+    Local `heads` will be considered first, after which each remote will be
+    searched in order. Only the first branch `ref` with a given name will be
+    used.
+
+    default: `["origin"]`
+
+-   `xml2rfc_autogen_docs`
+
+    Enable the automatic generation of `sphinx` source documents.
+
+    default: `True`
+
+-   `xml2rfc_autogen_branch_re`
+
+    Regex pattern for selection of branch names to generate document versions
+    for.
+
+    default: `r"^main|master$"`
+
+-   `xml2rfc_autogen_tag_re`
+
+    Regex pattern for selection of tag names to generate document versions for.
+
+    default: `r"^.+$"`
+
+-   `xml2rfc_output`
+
+    Directory name in which to output files. Relative to `sphinx` `confdir`.
+
+    default: `"_xml2rfc"`
+
+MIT License
+
+Copyright (c) 2021 Ben Maddison
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
