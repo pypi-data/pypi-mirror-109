@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+term_printer/__init__.py
+term_printer.egg-info/PKG-INFO
+term_printer.egg-info/SOURCES.txt
+term_printer.egg-info/dependency_links.txt
+term_printer.egg-info/not-zip-safe
+term_printer.egg-info/top_level.txt
+term_printer/consts/__init__.py
+term_printer/consts/color.py
+term_printer/consts/format.py
+term_printer/objects/__init__.py
+term_printer/objects/std_text.py
+tests/__init__.py
+tests/test_print.py
