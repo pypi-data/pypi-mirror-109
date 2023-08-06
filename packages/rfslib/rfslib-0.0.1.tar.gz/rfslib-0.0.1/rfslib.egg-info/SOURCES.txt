@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+rfslib.egg-info/PKG-INFO
+rfslib.egg-info/SOURCES.txt
+rfslib.egg-info/dependency_links.txt
+rfslib.egg-info/top_level.txt
