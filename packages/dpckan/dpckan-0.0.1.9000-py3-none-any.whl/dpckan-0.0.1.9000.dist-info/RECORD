@@ -1,0 +1,15 @@
+dpckan/__init__.py,sha256=v6hrzsd9dTMKem4cSDGzN27cbNAHcXqfTbhl2YOvZvo,31
+dpckan/cli.py,sha256=JHECS1mZPvZcCpxSpjaeqJ7BOX1ylLXsKObOOHckOek,954
+dpckan/functions.py,sha256=LCBEn0o8eP5Oap45IC1uyA4Dp_EW38KMN1Tev0MUhZo,1944
+dpkgckanmg/__init__.py,sha256=yeIIVCsf2iKtyqD4x1rccpTBTTCQkFo-C3UBnnVaqPI,183
+dpkgckanmg/createResource.py,sha256=2r0dU6bP0wOJrdc9KOTiLqprLUyyF3XafVZ7YOSA-hk,2642
+dpkgckanmg/functions.py,sha256=EziYIRhRP7Q72S8xtjFbRD2M1upFmbuu6tmtrwOjsT8,23842
+dpkgckanmg/publish.py,sha256=ZJCyFo9Zw8XHdAWpjDEyqdCzElaeUhIErALIj6D5Oik,3064
+dpkgckanmg/updateDataSet.py,sha256=zAISuaQbQnVJxKm9omMAhgevWCnXDAYy9bQzTVNp3GI,3365
+dpkgckanmg/updateResource.py,sha256=_m-M_RiqAFKXtoGFjA9TrdSaU-dIsEOvWYtWo4uxKmk,2039
+dpckan-0.0.1.9000.dist-info/LICENCE.txt,sha256=rQSGBVpbuqMgc_gtGaPdTxUQM5iApqmn0qtjn-4PhWo,1095
+dpckan-0.0.1.9000.dist-info/METADATA,sha256=fF2s6a99sJpVXdrezReQjv-P9Dy_5_R4Bv0-WfXsY9o,6768
+dpckan-0.0.1.9000.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dpckan-0.0.1.9000.dist-info/entry_points.txt,sha256=s3WZofQ7k7-9ttVpI33_sS7VzZx6j7RzpDqNOYx6ocM,67
+dpckan-0.0.1.9000.dist-info/top_level.txt,sha256=zR6K2reKmnZLTF9NqtMMtJ6k_Y0IM1eLkn_xmn_pnDM,18
+dpckan-0.0.1.9000.dist-info/RECORD,,
