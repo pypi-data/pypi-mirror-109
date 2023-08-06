@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: QtPyNetwork
+Version: 0.5.1
+Summary: Abstraction layer for Python Qt networks.
+Home-page: UNKNOWN
+Author: Wojciech Wentland
+Author-email: wojciech.wentland@int.pl
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.5
+
+QtPyNetwork is a small abstraction layer for sending and receiving messages using TCP sockets.
+
+There are two servers available:
+
+- QBalancedServer:
+- QThreadedServer
+
+The first one has constant amount of threads.
+When new client connects, server checks which worker has the least amount of active sockets and passes socket
+descriptor to this thread. QThreadedServer creates new thread for each connected device.
+
+QThreadedClient is socket client, that keeps socket in separate thread.
+
+Features
+
+- every message write and read call is executed inside thread
+- signals for each event - connected, disconnected, error, etc.
+
+
