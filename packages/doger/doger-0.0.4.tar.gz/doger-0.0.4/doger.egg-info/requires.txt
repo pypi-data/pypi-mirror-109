@@ -1,0 +1,8 @@
+just
+loguru
+environs
+joblib
+psutil
+twine
+fastcache
+glob2
