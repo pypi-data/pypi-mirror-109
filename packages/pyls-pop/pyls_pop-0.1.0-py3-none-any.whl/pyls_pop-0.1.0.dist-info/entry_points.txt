@@ -1,0 +1,3 @@
+[pylsp]
+pyls_pop = pyls_pop.scripts
+
