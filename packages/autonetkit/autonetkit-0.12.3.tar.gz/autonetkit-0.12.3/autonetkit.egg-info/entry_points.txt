@@ -1,0 +1,4 @@
+[console_scripts]
+autonetkit = autonetkit.console:main
+autonetkit_webserver = autonetkit.webserver.webserver:main
+
