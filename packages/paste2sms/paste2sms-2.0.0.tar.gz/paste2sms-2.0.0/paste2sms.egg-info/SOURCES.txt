@@ -1,0 +1,16 @@
+.gitignore
+.pre-commit-config.yaml
+.pylintrc
+AUTHORS
+CHANGELOG.md
+LICENSE
+README.rst
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+paste2sms.egg-info/PKG-INFO
+paste2sms.egg-info/SOURCES.txt
+paste2sms.egg-info/dependency_links.txt
+paste2sms.egg-info/requires.txt
+paste2sms.egg-info/top_level.txt
