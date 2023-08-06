@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+autogradeCS.egg-info/PKG-INFO
+autogradeCS.egg-info/SOURCES.txt
+autogradeCS.egg-info/dependency_links.txt
+autogradeCS.egg-info/top_level.txt
+mle_gist/__init__.py
+mle_gist/check_your_code.py
+mle_gist/course_management.py
+mle_gist/course_management_master.py
+mle_gist/course_management_testing.py
