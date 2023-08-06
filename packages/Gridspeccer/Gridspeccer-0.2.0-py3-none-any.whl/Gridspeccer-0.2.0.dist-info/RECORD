@@ -1,0 +1,14 @@
+gridspeccer/__init__.py,sha256=m9Mf_SkDcq7a0hIoBy86Qvbrsh8k4EkpKXI_Bb1qzpA,63
+gridspeccer/aux.py,sha256=OxfjQTeFy261hga2S8DViBHchFb59p9CIJPANKh94VI,28032
+gridspeccer/cli.py,sha256=ZSAzpbaZF0m-Y47V4zlcgeRQaHT6pQI60Tebr3EIu4s,3583
+gridspeccer/core.py,sha256=02v74Omukn3t_eepXvc94z6zXMQuBuutwiW3npPPBfE,8410
+gridspeccer/defaults/matplotlibrc,sha256=qMl3xAN9EaTnkljORJhoDE4AGyY2fc6PEL4YC62ndiE,1063
+gridspeccer/defaults/tex_matplotlibrc,sha256=KT5LQlYmFuVKm2nEIDsxrAr1EKo8HZZOIw4IjuPLaRM,1150
+Gridspeccer-0.2.0.dist-info/AUTHORS.md,sha256=4BXWI74rCZRG01adi2I2mP6DwRJkcI77T0pkNchFlNk,209
+Gridspeccer-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+Gridspeccer-0.2.0.dist-info/METADATA,sha256=o83U6FXfIMtF5g0BVDEZ1TSc3Mo3RArw7JBpcXglgF8,391
+Gridspeccer-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Gridspeccer-0.2.0.dist-info/entry_points.txt,sha256=ZqjxW-N3o6GVC8IYONnkB_xamZuBHZVPBMQUcK_-k7E,54
+Gridspeccer-0.2.0.dist-info/top_level.txt,sha256=co2HoDW5mW9terGRbEN-Wk2W4fQMInFeLwW_vbEJKVQ,12
+Gridspeccer-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+Gridspeccer-0.2.0.dist-info/RECORD,,
