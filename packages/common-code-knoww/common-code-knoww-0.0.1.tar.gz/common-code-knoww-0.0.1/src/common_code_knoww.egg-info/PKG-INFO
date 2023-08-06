@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: common-code-knoww
+Version: 0.0.1
+Summary: Knoww app common code
+Home-page: https://github.com/knoww
+Author: Vikas Goyal
+Author-email: vikasgoyal.info@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/knoww/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Common code dependencies Package
+
+
