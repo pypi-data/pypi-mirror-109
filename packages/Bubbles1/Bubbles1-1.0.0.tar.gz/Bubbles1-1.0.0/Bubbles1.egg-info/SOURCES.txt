@@ -1,0 +1,16 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+read.txt
+requirement.txt
+setup.py
+Bubbles1/Demo_video.py
+Bubbles1/NNDemo.py
+Bubbles1/__init__.py
+Bubbles1/nnAPI.py
+Bubbles1.egg-info/PKG-INFO
+Bubbles1.egg-info/SOURCES.txt
+Bubbles1.egg-info/dependency_links.txt
+Bubbles1.egg-info/entry_points.txt
+Bubbles1.egg-info/top_level.txt
