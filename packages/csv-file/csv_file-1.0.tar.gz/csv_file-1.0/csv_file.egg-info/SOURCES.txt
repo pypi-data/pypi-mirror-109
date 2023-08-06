@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+csv_file.egg-info/PKG-INFO
+csv_file.egg-info/SOURCES.txt
+csv_file.egg-info/dependency_links.txt
+csv_file.egg-info/top_level.txt
+csv_project/__init__.py
