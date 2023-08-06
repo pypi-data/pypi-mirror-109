@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: take-blip-scanner
+Version: 0.0.14
+Summary: Take Blip Scanner
+Home-page: UNKNOWN
+Author: Data & Analytics Research Team
+Author-email: analytics.dar@take.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Introduction 
+Take Blip Scanner - Finite State Machine implentation for Text Scanner
+
+# Getting Started
+- Use suggested conda env inside 'conda_env' folder
+    - Create: conda env create --file conda_env\take_scanner.yml
+    - Update: conda env update --file conda_env\take_scanner.yml
+- Run 'python -m build' in terminal to create a local distribution
+    - Will create 'dist' folder with lattest version of TakeBlipScanner
+- Install it
+    - pip install dist\take-blip-scanner-X.Y.Z.tar.gz
+- run benchmark with 'python benchmark\benchmark_lex.py benchmark\benchmark.txt 10 0'
+    - 'benchmark\benchmark.txt' is the bench file
+    - '10' - is the number of runs to generate statistics
+    - '0' - is the benchtype: 0 - full bench, 1 - just the Scanner Lexycal, 2 - just the SentenceTokenizer
+- if outputs looks liks bellow, everyting is ok
+    > START: Benchmark 
+
+    > Lexycal_2 >> With 3 runs, takes 1.295s * 0.147; Median: 1.212 
+
+    > Lexycal_3 >> With 3 runs, takes 1.224s * 0.029; Median: 1.235 
+
+    > SentenceTokenizer >> With 3 runs, takes 1.811s * 0.010; Median: 1.812 
+
+    > 00:00:13 
+
+    > END: Benchmark 
+
+# Build and Test
+- **BUILD** - run 'python -m build'
+- **TEST** - Two steps:
+    - install local package ´pip install dist\take-blip-scanner-X.Y.Z.tar.gz´
+    - run 'pytest'
+
+# Contribute
+TODO: Explain how other users and developers can contribute to make your code better. 
+
+

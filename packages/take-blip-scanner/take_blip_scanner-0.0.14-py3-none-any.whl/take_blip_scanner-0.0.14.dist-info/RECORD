@@ -1,0 +1,13 @@
+scanner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scanner/lexycal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scanner/lexycal/lexycal_2.py,sha256=T9b14DG1q9PYB18dU-d4dvswcRgv6Zk0bQKFJTvfRIQ,1892
+scanner/lexycal/lexycal_3.py,sha256=QlEUjtB9CGd3xE5xDq91RdmxrPKlogm5l2WUJxaWQAU,1412
+scanner/lexycal/lexycal_scanner_PTBR_2.py,sha256=-tjK2KPhhd-QVSYn5DsgXRCSjLam7aUHdeX97augAeQ,15874
+scanner/lexycal/lexycal_scanner_PTBR_3.py,sha256=l7HcpEw1fdCzd7t96b1rbRKKHc-PjoI_1Kg9SyqYy_o,13952
+scanner/lexycal/token.py,sha256=qJhc3lSH9uTQUGhgxph4jW7GY3ksS4y8hNufMoDaObw,363
+scanner/lexycal/token_type.py,sha256=mkIFUeoCagXHbS8MoxbgNYDZSn_13lq53IgyPJP3xOM,389
+take_blip_scanner-0.0.14.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+take_blip_scanner-0.0.14.dist-info/METADATA,sha256=zPY3UGTeK7JWxVq2fg2CHA_w5WuNQe7FpPmFefKjEvg,1834
+take_blip_scanner-0.0.14.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+take_blip_scanner-0.0.14.dist-info/top_level.txt,sha256=uVdh7ZIJC9rjZQex7pba18nBuRRxFhjkFu4vHPiWTcw,8
+take_blip_scanner-0.0.14.dist-info/RECORD,,
