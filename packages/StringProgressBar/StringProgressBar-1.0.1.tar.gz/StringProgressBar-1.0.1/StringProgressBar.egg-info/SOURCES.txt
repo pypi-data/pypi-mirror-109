@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+StringProgressBar/__init__.py
+StringProgressBar.egg-info/PKG-INFO
+StringProgressBar.egg-info/SOURCES.txt
+StringProgressBar.egg-info/dependency_links.txt
+StringProgressBar.egg-info/top_level.txt
