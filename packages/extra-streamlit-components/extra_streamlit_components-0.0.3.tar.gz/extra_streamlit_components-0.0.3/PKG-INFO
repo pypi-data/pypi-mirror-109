@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: extra_streamlit_components
+Version: 0.0.3
+Summary: An all-in-one place, to find complex or just not available components by default on streamlit.
+Home-page: https://github.com/Mohamed-512/Extra-Streamlit-Components
+Author: Mohamed Abdou
+Author-email: matex512@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Python,Streamlit,React
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/plain

@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+BouncingImage/__init__.py
+TabBar/__init__.py
+extra_streamlit_components.egg-info/PKG-INFO
+extra_streamlit_components.egg-info/SOURCES.txt
+extra_streamlit_components.egg-info/dependency_links.txt
+extra_streamlit_components.egg-info/requires.txt
+extra_streamlit_components.egg-info/top_level.txt
