@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ifcopenshell-hypeifc
+Version: 0.6.2
+Summary: ifcopenshell
+Home-page: https://github.com/IfcOpenShell/IfcOpenShell
+Author: ifcopenshell authors
+Author-email: author@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/IfcOpenShell/IfcOpenShell/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ifcopenshell
+
+http://ifcopenshell.org/
+
+### Version
+```
+0.6.0, Python 3.8, 64bit Linux
+```
+
+### Original File
+```
+https://s3.amazonaws.com/ifcopenshell-builds/ifcopenshell-python-38-v0.6.0-517b819-linux64.zip
+```
+
+
