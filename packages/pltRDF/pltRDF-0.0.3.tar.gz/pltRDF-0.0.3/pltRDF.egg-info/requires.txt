@@ -1,0 +1,4 @@
+gsd
+freud-analysis
+scikit-build
+matplotlib
