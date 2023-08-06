@@ -1,0 +1,14 @@
+crosscheck/__init__.py,sha256=CoRMzT2-emojUrDs7loDyJjEvtLLGKM1CRQIpjG541c,280
+crosscheck/_version.py,sha256=nZ27WLDG7iROxfHgBuVMdtfmxqkYw-ILLi_ci49Phpk,281
+crosscheck/crosscheck_plugin.py,sha256=VzN8mX7hRx_1YilWqww3ELuMawWEWKLNEFSSVESTJQg,5616
+crosscheck/static/extension.js,sha256=wc6Hl284G204di1Z1XObK1vl7Z8TunXxMeY00LPirso,3357
+crosscheck/static/index.js,sha256=pg6VUb0A-W34krA5FwwaAbHHT2gaJfutkpIFNdjMfvo,3395740
+crosscheck/static/index.js.map,sha256=5Dcttbipx1KBUGnLO-HKV1s5ZidUq8Dcr_C_mJdK2-Q,4119475
+crosscheck_widget-0.1.0a0.data/data/etc/jupyter/nbconfig/notebook.d/crosscheck-widget.json,sha256=kUEM_n5YvLI-hbIcZTPpEdnKObXC1aKXtYZWkffCjt0,71
+crosscheck_widget-0.1.0a0.data/data/share/jupyter/nbextensions/crosscheck-widget/extension.js,sha256=wc6Hl284G204di1Z1XObK1vl7Z8TunXxMeY00LPirso,3357
+crosscheck_widget-0.1.0a0.data/data/share/jupyter/nbextensions/crosscheck-widget/index.js,sha256=pg6VUb0A-W34krA5FwwaAbHHT2gaJfutkpIFNdjMfvo,3395740
+crosscheck_widget-0.1.0a0.data/data/share/jupyter/nbextensions/crosscheck-widget/index.js.map,sha256=5Dcttbipx1KBUGnLO-HKV1s5ZidUq8Dcr_C_mJdK2-Q,4119475
+crosscheck_widget-0.1.0a0.dist-info/METADATA,sha256=r3gPTtQN-Qp4WsAaL5AraELKpw8yvLXXgWjvrXpeKB4,857
+crosscheck_widget-0.1.0a0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+crosscheck_widget-0.1.0a0.dist-info/top_level.txt,sha256=EG_7t16FnSXyoWKWMVnzBmqBDiEybDvHVEHQ7HuFgN8,11
+crosscheck_widget-0.1.0a0.dist-info/RECORD,,
