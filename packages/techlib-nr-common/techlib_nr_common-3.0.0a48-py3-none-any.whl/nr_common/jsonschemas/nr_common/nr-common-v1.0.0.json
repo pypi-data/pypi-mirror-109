@@ -1,0 +1,54 @@
+{
+    "allOf": [
+        {
+            "$ref": "../nr_common_metadata/nr-common-metadata-v1.0.0.json"
+        },
+        {
+            "id": "https://nusl.cz/schemas/nr-common-v1.0.0.json",
+            "properties": {
+              "rulesExceptions": {
+                "description": "pole pro ukládání chyb při zpracování jednotlivých polí",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "path": {
+                      "type": "string"
+                    },
+                    "element": {
+                      "type": "string"
+                    },
+                    "phase": {
+                      "type": "string"
+                    },
+                    "exception": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "_administration": {
+                "type": "object",
+                "properties": {
+                  "state": {
+                    "type": "string"
+                  },
+                  "primaryCommunity": {
+                    "type": "string"
+                  },
+                  "communities": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "owned_by": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+        }
+    ]
+}
