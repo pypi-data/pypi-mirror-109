@@ -1,0 +1,10 @@
+README.rst
+manual_requirements.txt
+requirements.txt
+setup.py
+numpy_tools/__init__.py
+numpy_tools.egg-info/PKG-INFO
+numpy_tools.egg-info/SOURCES.txt
+numpy_tools.egg-info/dependency_links.txt
+numpy_tools.egg-info/requires.txt
+numpy_tools.egg-info/top_level.txt
