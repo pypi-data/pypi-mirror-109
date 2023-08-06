@@ -1,0 +1,14 @@
+ranksim/__init__.py,sha256=IEsQlHjLudDCuxGU059BUUir73RZdL5qqeU73gaE6sY,335
+ranksim/_base.py,sha256=vG5sYo7OBqz-JV84bWch_sbP8npI9MEOJs7iM7-RvFE,18907
+ranksim/_classes.py,sha256=Yh_LlG3Rp69ItYdjIeUGD_O9guEGfoWNFDLNxitQ4EU,27647
+ranksim/_filters.py,sha256=M4iGhxvXmZQLfzzQzlNL4zDSXX2E9tMo81H0_4T4klw,8417
+ranksim/_version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+ranksim/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ranksim/tests/test_common.py,sha256=-qtBgevkbEqhPbX6EmMU7oixoAltUoHGggc2I7nEvww,435
+ranksim/tests/test_ranksim.py,sha256=MIKq_yWFUEsdzazDbavPfzwq9kIlx8eYc1KYtX3fDa8,2708
+rank_similarity-0.0.1.dist-info/LICENSE,sha256=nw6v1H4ZX20LhXXIp0uCLdCSFJxjtkHq4GFjQyCpeaA,1525
+rank_similarity-0.0.1.dist-info/METADATA,sha256=B2X-NpcyewzEa4I3wrF131WKnXRY81N9-IlravVGlJ0,2686
+rank_similarity-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rank_similarity-0.0.1.dist-info/top_level.txt,sha256=seZi4HH3lPEBeKqo481Mit-OADzBgYxxbZwtwExSKpM,8
+rank_similarity-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+rank_similarity-0.0.1.dist-info/RECORD,,
