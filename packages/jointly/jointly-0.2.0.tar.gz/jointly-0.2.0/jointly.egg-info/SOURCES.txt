@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+jointly/__init__.py
+jointly/abstract_extractor.py
+jointly/helpers.py
+jointly/log.py
+jointly/segment_selector.py
+jointly/shake_extractor.py
+jointly/synchronization_errors.py
+jointly/synchronizer.py
+jointly.egg-info/PKG-INFO
+jointly.egg-info/SOURCES.txt
+jointly.egg-info/dependency_links.txt
+jointly.egg-info/requires.txt
+jointly.egg-info/top_level.txt
