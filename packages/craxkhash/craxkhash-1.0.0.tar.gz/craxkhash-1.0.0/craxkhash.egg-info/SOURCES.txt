@@ -1,0 +1,7 @@
+README.md
+craxkhash.py
+setup.py
+craxkhash.egg-info/PKG-INFO
+craxkhash.egg-info/SOURCES.txt
+craxkhash.egg-info/dependency_links.txt
+craxkhash.egg-info/top_level.txt
