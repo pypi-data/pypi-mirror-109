@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: flaskstarter
+Version: 0.1.3
+Summary: A Flask project start-up CLI to create a modular ready projects.
+Home-page: https://github.com/felipebastos/flaskstart
+Author: Felipe Bastos Nunes
+Author-email: felipe.bastosn@gmail.com
+License: apache-2.0
+Download-URL: https://github.com/felipebastos/flaskstart/archive/refs/tags/v0.1.2.tar.gz
+Description: # flaskstarter
+        A Flask project start-up CLI to create a modular ready projects.
+        
+        To install flaskstarter use the usual:
+        
+        `pip install flaskstarter`
+        
+        To see its help:
+        
+        `flaskstarter --help`
+        
+        To start a project:
+        
+        `flaskstarter -n project_name`
+        
+        After it you'll be prompted about some famous extensions to add to the project requirements.txt.
+        
+        ## What the project does for you
+        
+        It creates project tree, a functional virtualenv on .venv, the init and routes files with a helloworld example and a shell/batch scripts to run the project with the virtual enviroment created.
+        
+        ## What the project does not do for you
+        
+        As you may want to add some more requirements, flaskstarter wont install the requirements, so you need to run `pip install -r requirements.txt` before any use of the project created.
+Keywords: flask,cli,project
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
