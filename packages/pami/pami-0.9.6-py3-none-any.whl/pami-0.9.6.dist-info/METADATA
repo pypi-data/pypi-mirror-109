@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pami
+Version: 0.9.6
+Summary: Pattern mining
+Home-page: https://github.com/udayRage/PAMI.git
+Author: Rage Uday Kiran
+Author-email: uday.rage@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# PAMI_public
+
+This software is provided under GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+
+For more information on license visit: https://www.gnu.org/licenses/quick-guide-gplv3.html
+
+
