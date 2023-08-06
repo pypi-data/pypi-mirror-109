@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: advantech-daq-python
+Version: 0.0.4
+Summary: Simple DI DO function to interface with USB-5830
+Home-page: UNKNOWN
+Author: tanvubc
+License: mit
+Description: # advantech_daq_python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
