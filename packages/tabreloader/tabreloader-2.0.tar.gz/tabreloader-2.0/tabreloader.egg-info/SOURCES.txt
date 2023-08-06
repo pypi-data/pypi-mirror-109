@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tabreloader.py
+tabreloader.egg-info/PKG-INFO
+tabreloader.egg-info/SOURCES.txt
+tabreloader.egg-info/dependency_links.txt
+tabreloader.egg-info/requires.txt
+tabreloader.egg-info/top_level.txt
