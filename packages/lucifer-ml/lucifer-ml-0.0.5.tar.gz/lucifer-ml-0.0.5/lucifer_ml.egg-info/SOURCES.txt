@@ -1,0 +1,10 @@
+README.md
+setup.py
+lucifer_ml.egg-info/PKG-INFO
+lucifer_ml.egg-info/SOURCES.txt
+lucifer_ml.egg-info/dependency_links.txt
+lucifer_ml.egg-info/requires.txt
+lucifer_ml.egg-info/top_level.txt
+luciferml/__init--.py
+luciferml/supervised/__init__.py
+luciferml/supervised/classification.py
