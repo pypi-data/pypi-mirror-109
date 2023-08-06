@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sanic-routes
+Version: 1.0.14
+Summary: API Route Schema for Sanic.
+Home-page: UNKNOWN
+Author: Elis
+Author-email: open@elis.cc
+License: GPL 3.0
+Keywords: sanic,routes,api,schema,json
+Platform: UNKNOWN
+Requires-Dist: sanic
+
+Generate routes and validate parameters from a JSON schema.
+
+
