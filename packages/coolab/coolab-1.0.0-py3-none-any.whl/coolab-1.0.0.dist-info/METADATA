@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: coolab
+Version: 1.0.0
+Summary: Instantly working cool apps you can use on Google Colab!
+Home-page: https://github.com/songlinhou/coolab
+Author: Ray Hou
+Author-email: songlinhou1993@gmail.com
+License: MIT
+Keywords: colab,vscode,python
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyngrok
+Requires-Dist: pylint
+
+# Coolab
+*Instantly working cool apps you can use on Google Colab!*
+
