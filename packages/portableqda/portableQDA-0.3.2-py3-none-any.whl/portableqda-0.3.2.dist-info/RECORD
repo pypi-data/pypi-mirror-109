@@ -1,0 +1,14 @@
+portableqda/__init__.py,sha256=f1mgO-I9QkxDn3ncjbdAjrwryetL7xL4YvuM1E84tEE,2334
+portableqda/__main__.py,sha256=x19vc4Ah4ThA3Y53nnaXphfRkh76JPaJ_Fv9d-bZIvQ,1141
+portableqda/refi_qda.py,sha256=NJ9B9e1NKiPDlbKJQ3CKgrm3McVo-kDi5Bck_OERb3Y,39619
+tests/REFI-QDA-1-5.qdc,sha256=c-f5qwhKQSkualJ8Jnk0b6wcWggr7kjCaqtgAN9C-Jc,1519
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/portableQDA_Atlasti.qdc,sha256=qK8EBMQDROIb32HcfHsJtxSrwERafaLjya9SR-tH4Mc,1216
+tests/portableQDA_test_compare_Diff_destAtlas.qdc,sha256=Zth4xtGtD_1DhYVvJRKDv75ElRUQUgVIRLu2Wkcodvg,907
+tests/test_portableqda.py,sha256=IRzsWtArdrndaI8r7KaGXwXcOLTUd8yTkyTucR_Oqtc,92
+tests/test_refi_qda.py,sha256=WO_RhCEOd3WD8hnDKLHQsvVKNAqpomYMfMj46SpMCog,9317
+portableqda-0.3.2.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+portableqda-0.3.2.dist-info/LICENSE.md,sha256=0CDkWrwJhFwDMXgBGzvnr2l7OeTCzNv6LNB-OgyvYq8,7663
+portableqda-0.3.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+portableqda-0.3.2.dist-info/METADATA,sha256=qg01iuhRKkGNjbwRAO-fub3g2dbDI6JeSF03eTdHWng,5649
+portableqda-0.3.2.dist-info/RECORD,,
