@@ -1,0 +1,4 @@
+nbformat
+pyyaml
+toml
+markdown-it-py[plugins]~=1.0
