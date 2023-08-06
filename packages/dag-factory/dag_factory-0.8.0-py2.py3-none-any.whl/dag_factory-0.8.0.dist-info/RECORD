@@ -1,0 +1,10 @@
+dagfactory/__init__.py,sha256=1G3_2HhDAMig0ijzMNDrp7jnBYpvw25X8zbyjJCB7Ts,89
+dagfactory/__version__.py,sha256=Sy6A0HDvbdG2FfafAZOBxs1W2x4iM9zB9OeKAj3akjg,71
+dagfactory/dagbuilder.py,sha256=sR4-D1B99UcKaKlINABdrrNPhQGX6FYBuOeaLECI9Dc,17800
+dagfactory/dagfactory.py,sha256=5YcDwYP9OeQJmRgHuZHqWLgCGuavoykOdL4U9_jM5JQ,5393
+dagfactory/utils.py,sha256=SMrQT3uCqrOU00zpgWEHwXvt9PFav4SmkWhZlowjtvU,5067
+dag_factory-0.8.0.dist-info/LICENSE,sha256=DpL5NhKlMbzngB3nk8AmMI9S-JDgfQhHu3z9RwPtb0I,1080
+dag_factory-0.8.0.dist-info/METADATA,sha256=xC6gVj2CAdjkA0V0po4KZqPkTnG9zRlfuhWQKH2ygd8,3833
+dag_factory-0.8.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+dag_factory-0.8.0.dist-info/top_level.txt,sha256=QXr4xlN8x6LcjoLbiiYjvNSEOY6VlT81zbVZWf4ScIE,11
+dag_factory-0.8.0.dist-info/RECORD,,
