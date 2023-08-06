@@ -1,0 +1,6 @@
+[console_scripts]
+py-office-sheet = pyOfficeSheet.__main__:main
+
+[gui_scripts]
+py-office-sheet = pyOfficeSheet.__main__:main
+
