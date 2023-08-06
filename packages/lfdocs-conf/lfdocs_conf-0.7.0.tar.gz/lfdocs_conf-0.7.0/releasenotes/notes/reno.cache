@@ -1,0 +1,71 @@
+---
+file-contents:
+  releasenotes/notes/conventional_commit-5cbbd021edc324c2.yaml:
+    other:
+    - "Conventional Commit message subject lines are now enforced. This affects\n\
+      CI. Additionally, if developers want to protect themselves from CI failing\n\
+      on this please make sure of the following\n\n* you have pre-commit installed\n\
+      * that you have run\n  pre-commit install --hook-type commit-msg\n"
+  releasenotes/notes/remove-pytest-dep-8a0d427bfcd1f5c3.yaml:
+    fixes:
+    - 'Pytest is no longer pulled in as a dependency of docs-conf.
+
+      '
+  releasenotes/notes/sphinx-3.2-8e24c17b03786cfd.yaml:
+    upgrade:
+    - 'Sphinx has been upgraded to 3.2.x.
+
+      '
+  releasenotes/notes/sphinx-update-6b451b2462799591.yaml:
+    upgrade:
+    - 'Sphinx version is updated from ~1.7.9 to ~1.8.5 which may or may not affect
+
+      project docs build. Refer to upstream release note as necessary.
+
+      https://www.sphinx-doc.org/en/master/changes.html
+
+      '
+  releasenotes/notes/support-sphinx-tabs-7a9e3e9ed2a7795a.yaml:
+    features:
+    - 'Add support for sphinx-tabs (https://github.com/djungelorm/sphinx-tabs).
+
+      '
+  releasenotes/notes/unpin-more-itertools-5dff9b6955769e99.yaml:
+    upgrade:
+    - 'If using Python 3.4 or newer, more-itertools is no longer pinned to the 5.x
+
+      release.
+
+      '
+  releasenotes/notes/update-sphinx-3.0.4-c023706bfba48a52.yaml:
+    upgrade:
+    - 'Updates Sphinx from ~2.3.1 to ~3.0.4 which may or may not affect
+
+      project docs build. Refer to upstream release note as necessary.
+
+      https://www.sphinx-doc.org/en/master/changes.html
+
+      '
+notes:
+- files:
+  - - releasenotes/notes/conventional_commit-5cbbd021edc324c2.yaml
+    - 2b9411e8831f17cfc0ad46a91886df4dcfdf04ad
+  version: v0.7.0
+- files:
+  - - releasenotes/notes/remove-pytest-dep-8a0d427bfcd1f5c3.yaml
+    - caa0ac6dd799b3f782d6958001cbf8394a29e4f8
+  - - releasenotes/notes/sphinx-3.2-8e24c17b03786cfd.yaml
+    - a9582a78dc4fc483205ccb1cda4a58a21f690bca
+  - - releasenotes/notes/unpin-more-itertools-5dff9b6955769e99.yaml
+    - de2a88d3f717d49863d524a2a6be4fe189bae2fb
+  version: v0.6.0
+- files:
+  - - releasenotes/notes/support-sphinx-tabs-7a9e3e9ed2a7795a.yaml
+    - eb1f1edbd595c8fdbe25e9b693030e95fec38816
+  - - releasenotes/notes/update-sphinx-3.0.4-c023706bfba48a52.yaml
+    - d3cc1c40f6d0827686d34387d99f0d450ff4b84d
+  version: v0.5.0
+- files:
+  - - releasenotes/notes/sphinx-update-6b451b2462799591.yaml
+    - c86baade9f3d38e9664bb617b9ea80ca01ac895e
+  version: v0.3.0
