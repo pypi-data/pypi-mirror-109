@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: harshit
+Version: 0.0.1
+Summary: It squares the number
+Home-page: https://github.com/shadow-python/pip-package
+Author: Harshit Mehra
+Author-email: harshitmeh111@gmail.com
+License: MIT
+Description: # Harshit Square
+        It takes an integer as an input and prints it square.
+        
+        ## Installation
+        ```pip install harshit```
+        
+        ## How to use it?
+        ```python
+        from harshit import harshit
+        harshit.square()
+        ```
+        **OR** <br>
+        
+        Open terminal and type ```python harshit.py```
+        
+        ## License
+        
+        Â© 2021 Harshit Mehra
+        
+        This repository is licensed under the MIT license. See LICENSE for details.
+        "# harshit" 
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
