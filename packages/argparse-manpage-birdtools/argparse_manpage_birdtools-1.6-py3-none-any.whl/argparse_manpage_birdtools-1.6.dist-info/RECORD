@@ -1,0 +1,14 @@
+argparse_manpage_birdtools-1.6.data/data/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+argparse_manpage_birdtools-1.6.data/data/README.md,sha256=nCm8CaArO1PLiOP5zZ5qwT4CBZjczu7jJQwR00-cS6M,683
+build_manpages/__init__.py,sha256=3Nhr00z9WE2u3V8WcA0-whWJ1MnePqOVUAjJZnU7_CE,20
+build_manpages/build_manpage.py,sha256=fLqxYfc6PorqS_XKugzV12Bb-eCUxNDZPsflKCj4Mrc,8906
+build_manpages/build_manpages.py,sha256=t8LOmMXpLhBWJbtx7H8UgmCjjUNA31q2BvEEkIFnX7k,3172
+build_manpages/manpage.py,sha256=BQ739mZ7aPer3GkCGCRFyDYLTF2Pm4tbozVRI4VOxvA,9181
+build_manpages/cli/__init__.py,sha256=H0RlyZYHZ1b1Ruz7OEXKelputKAwnZkXzYIbVn_pZz8,1770
+build_manpages/cli/hack.py,sha256=F3mleZ25wy80_eU0ZV2IfL5zQlRASBCmOkd6461UiNw,1301
+argparse_manpage_birdtools-1.6.dist-info/AUTHORS,sha256=WRcrVbdDgWD3lTSrMspgcBEZijWU0S65323o6bQNCDA,181
+argparse_manpage_birdtools-1.6.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+argparse_manpage_birdtools-1.6.dist-info/METADATA,sha256=MLdwngW36crKzgzKQKehXWSCBVmKSl0SI0C4RNS2hoY,1197
+argparse_manpage_birdtools-1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+argparse_manpage_birdtools-1.6.dist-info/top_level.txt,sha256=ZVG_wNT8D6EvyQNBpVFln83Qh4eMN2nBD7YIIx0g7tU,15
+argparse_manpage_birdtools-1.6.dist-info/RECORD,,
