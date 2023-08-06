@@ -1,0 +1,6 @@
+README.md
+setup.py
+rediscover.egg-info/PKG-INFO
+rediscover.egg-info/SOURCES.txt
+rediscover.egg-info/dependency_links.txt
+rediscover.egg-info/top_level.txt

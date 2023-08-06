@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: rediscover
+Version: 0.0.1
+Summary: Discovering Redis
+Home-page: UNKNOWN
+Author: Varun Chopra
+Author-email: pypi@varunchopra.vc
+License: UNKNOWN
+Description: Discovering Redis
+Keywords: redis
+Platform: UNKNOWN
