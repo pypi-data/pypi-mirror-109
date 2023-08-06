@@ -1,0 +1,6 @@
+google-api-core[grpc]<2.0.0dev,>=1.22.2
+google-cloud-appengine-logging<1.0.0dev,>=0.1.0
+google-cloud-audit-log<1.0.0dev,>=0.1.0
+google-cloud-core<2.0dev,>=1.4.1
+proto-plus>=1.11.0
+packaging>=14.3
