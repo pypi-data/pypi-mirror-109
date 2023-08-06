@@ -1,0 +1,6 @@
+include data_steps/VERSION
+include requirements.txt
+include README.md
+include HISTORY.md
+global-exclude .ipynb_checkpoints/*
+global-exclude *.py[cod]
