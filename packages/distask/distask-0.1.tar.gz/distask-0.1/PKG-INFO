@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: distask
+Version: 0.1
+Summary: a distribute task scheduler 
+Home-page: UNKNOWN
+Author: tickbh
+Author-email: tickdream125@hotmail.com
+License: MIT Licence
+Description: file: README.rst
+Keywords: distribute scheduling cron
+Platform: any
+Requires-Python: >=3.6
