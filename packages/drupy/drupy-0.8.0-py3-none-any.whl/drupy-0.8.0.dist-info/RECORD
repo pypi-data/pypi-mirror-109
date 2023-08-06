@@ -1,0 +1,12 @@
+drupy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drupy/objects.py,sha256=lSANDZfWNytFHJqQBPKK3veBnwfwxuvFipqcbMVAwUA,17322
+drupy/resolver.py,sha256=Y-pkxriK1f13rlc75Ve-BRmr_GdrK-_JaDQbURbcDDs,2844
+drupy/runner.py,sha256=oU1gLf5QliEXhVFzVZHD-EL3X7CzCMJ6CSolH6Iu1rM,13104
+drupy/targets.py,sha256=FYSrGZGBw0yVTlhbw969KNmNX33jJzN4n8rsXA0eqhk,8267
+drupy/utils.py,sha256=HuaV1cDj069xax55ODS_22utk-HzXvJwc0Og3gyOvrU,703
+drupy-0.8.0.dist-info/LICENSE,sha256=4cCtcomD2KVzNeUs8QZPGv_R1FQXPYzr0-2LSnK0hwQ,35121
+drupy-0.8.0.dist-info/METADATA,sha256=SZgkT2R6RhMLCPhHOlVEYUXGn-GLHaajWj4_T6eigWU,793
+drupy-0.8.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+drupy-0.8.0.dist-info/entry_points.txt,sha256=U3WJTzfAY68HHTIH_Azc28AXNnGzKC_DfKx1A6J26Qw,45
+drupy-0.8.0.dist-info/top_level.txt,sha256=3QdR54ICMJLpmb2ksjPjF3XcuSdWhO5-zo2YZBQ27ss,6
+drupy-0.8.0.dist-info/RECORD,,
