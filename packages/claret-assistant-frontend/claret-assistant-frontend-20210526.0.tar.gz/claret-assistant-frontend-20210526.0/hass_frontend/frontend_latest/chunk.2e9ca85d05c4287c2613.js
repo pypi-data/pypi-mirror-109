@@ -1,0 +1,1 @@
+(self.webpackChunkclaret_assistant_frontend=self.webpackChunkclaret_assistant_frontend||[]).push([[7628],{17628:(s,t,a)=>{"use strict";a.r(t),a.d(t,{dump:()=>e.$w});var e=a(98595)}}]);
