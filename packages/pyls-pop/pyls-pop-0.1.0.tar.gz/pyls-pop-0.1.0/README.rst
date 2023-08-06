@@ -1,0 +1,124 @@
+========
+pyls-pop
+========
+
+.. image:: https://img.shields.io/badge/made%20with-pop-teal
+   :alt: Made with pop, a Python implementation of Plugin Oriented Programming
+   :target: https://pop.readthedocs.io/
+
+.. image:: https://img.shields.io/badge/made%20with-python-yellow
+   :alt: Made with Python
+   :target: https://www.python.org/
+
+python-lsp-server plugin for pop namespace compatibility
+
+About
+=====
+
+`python-lsp-server <https://pypi.org/project/python-lsp-server/>`__ is a python implementation of Microsoft's Language Server Protocol.
+This plugin is designed to give functionality to the LSP server for python pop projects.
+
+What is POP?
+------------
+
+This project is built for `pop <https://pop.readthedocs.io/>`__, a Python-based
+implementation of *Plugin Oriented Programming (POP)*. POP seeks to bring
+together concepts and wisdom from the history of computing in new ways to solve
+modern computing problems.
+
+For more information:
+
+* `Intro to Plugin Oriented Programming (POP) <https://pop-book.readthedocs.io/en/latest/>`__
+* `pop-awesome <https://gitlab.com/saltstack/pop/pop-awesome>`__
+* `pop-create <https://gitlab.com/saltstack/pop/pop-create/>`__
+
+Getting Started
+===============
+
+Prerequisites
+-------------
+
+* Python 3.6+
+* git *(if installing from source, or contributing to the project)*
+
+Installation
+------------
+
+.. note::
+
+   If wanting to contribute to the project, and setup your local development
+   environment, see the ``CONTRIBUTING.rst`` document in the source repository
+   for this project.
+
+If wanting to use ``pyls-pop``, you can do so by either
+installing from PyPI or from source.
+
+Install from PyPI
++++++++++++++++++
+
+.. code-block:: bash
+
+    pip install pyls-pop
+
+
+Install from source
++++++++++++++++++++
+
+.. code-block:: bash
+
+   # clone repo
+   git clone git@gitlab.com:saltstack/pop/pyls-pop.git
+   cd pyls-pop
+
+   # Setup venv
+   python3 -m venv .venv
+   source .venv/bin/activate
+   pip install -e .
+
+Usage
+=====
+
+For your convenience, here is where you can find more information on running python-lsp-server in popular IDEs
+
+CLI
+---
+After installing `pyls-pop`, the pylsp command will be available (from the python-lsp-server project).
+Run with "--help" to see other options available while running this command.
+
+.. code-block:: bash
+
+    pylsp
+
+vim
+---
+
+Follow the instructions for installing the `vim-lsp <https://github.com/prabirshrestha/vim-lsp>`__ plugin.
+Then register the "pylsp" command as a language server.
+`vim-lsp-settings <https://github.com/mattn/vim-lsp-settings>`__ can be used to automate some parts of the process.
+
+PyCharm
+-------
+
+Install the `Language Server Protocol plugin <https://github.com/gtache/intellij-lsp>`__ from the IntelliJ marketplace.
+Navigate to Pycharm Settings > Language Server Protocol > Server Definitions.
+Add a new server definition of type "Executable" (The first drop-down menu in the server definition).
+For the "Extension" use "py".
+Add the full path to the "pylsp" command you want to use.
+Ideally, a version of the command that is in the same python environment as the your source project's source code.
+
+VSCode
+------
+
+You might have to run pylsp with the "--tcp" and port flags.
+`This <https://code.visualstudio.com/api/language-extensions/language-server-extension-guide>`__ is all we have at the moment on implementing in VSCode
+
+Roadmap
+=======
+
+Reference the `open issues <https://gitlab.com/saltstack/pop/pyls-pop/issues>`__ for a list of
+proposed features (and known issues).
+
+Acknowledgements
+================
+
+* `Img Shields <https://shields.io>`__ for making repository badges easy.

@@ -1,0 +1,5 @@
+filelock
+pop>=17.0
+pop-tree
+rend
+python-lsp-server
