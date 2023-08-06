@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: undr
+Version: 0.0.6
+Summary: Download and process Neuromorphic datasets
+Home-page: https://github.com/neuromorphicsystems/undr
+Author: Alexandre Marcireau
+Author-email: alexandre.marcireau@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/neuromorphicsystems/undr/main/undr.png" width="256">
+</p>
+
+# Unified Neuromorphic Datasets Repository
+
+- [Python package](#python-package)
+- [Dataset format specification](#dataset-format-specification)
+- [Dataset mirrors](#dataset-mirrors)
+
+## Python package
+
+```sh
+pip3 install undr
+```
+
+## Dataset format specification
+
+## Dataset mirrors
+
+## Publish
+
+1. Bump the version number in *setup.py*.
+
+2. Install twine
+```
+pip3 install twine
+```
+
+3. Upload the source code to PyPI:
+```
+rm -rf dist
+python3 setup.py sdist
+python3 -m twine upload dist/*
+```
+
+
