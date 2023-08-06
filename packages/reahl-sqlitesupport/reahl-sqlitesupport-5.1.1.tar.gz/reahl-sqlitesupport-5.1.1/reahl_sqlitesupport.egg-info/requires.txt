@@ -1,0 +1,2 @@
+reahl-component<5.2,>=5.1
+reahl-commands<5.2,>=5.1
