@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: mrdevtools
+Version: 0.1.0
+Summary: mrdevtools - Python Library with tools to help developers.
+Home-page: https://anatas_ch.gitlab.io/pyl_mrdevtools/
+Author: Michael Rippstein
+Author-email: info@anatas.ch
+License: AGPL-3.0
+Project-URL: Documentation, https://mrdevtools.readthedocs.io/
+Project-URL: Bug Tracker, https://gitlab.com/anatas_ch/pyl_mrdevtools/-/issues
+Project-URL: Source Code, https://gitlab.com/anatas_ch/pyl_mrdevtools
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+mrdevtools - helper tools
+=========================
+
+Hilfsmittel beim Entwickeln von Python Programmen.
+
+Usage
+-----
+
+
+
+License
+-------
+
+GNU AFFERO GENERAL PUBLIC LICENSE Version 3
+
+Developer guide
+---------------
+
+Upgrade your setup tools and pip.
+They are needed for development and testing only:
+
+.. code:: bash
+
+   pip install --upgrade setuptools pip wheel
+
+Development steps for code changes
+
+.. code:: bash
+
+   git clone https://gitlab.com/anatas_ch/pyl_mrdevtools.git
+   cd pyl_mrdevtools
+   pip install -e .
+
+Then install relevant development requirements:
+
+.. code:: bash
+
+   pip install -r requirements_rnd.txt
+
+`docs` folder contains theme's own documentantion.
+
+.. code:: bash
+
+   cd docs
+   make clean; make html
+
+Once you have finished your changes, please provide test case(s) and relevant documentation.
+
+

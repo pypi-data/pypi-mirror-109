@@ -1,0 +1,44 @@
+[flake8]
+max-line-length = 111
+
+ignore = ANN101, W503
+# flake8
+#   W503	Line break occurred before a binary operator
+# flake8-annotations
+#   ANN101	Missing type annotation for self in method
+
+count = True
+
+exclude =
+    .git,
+    __pycache__,
+    docs/conf.py,
+    setup.py,
+    venv,
+    build,
+    py38,
+    py39,
+    version.py
+
+max-complexity = 10
+
+doctests = True
+
+# flake8-docstrings
+docstring-convention=numpy
+
+# flake8-rst-docstrings
+rst-roles =
+    class,
+    func,
+    ref,
+    mod,
+
+# flake8-rst-docstrings
+rst-directives =
+    moduleauthor,
+    # sphinx.ext.doctest
+    testsetup,
+    doctest,
+    # sphinx.ext.todo
+    todo,
