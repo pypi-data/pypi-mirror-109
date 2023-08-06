@@ -1,0 +1,16 @@
+contextual_encoders/__init__.py,sha256=Q6-f-dPr25-zgcXgL7KWNexPuDr9Rd6jXFpWwNuykd8,1030
+contextual_encoders/aggregator.py,sha256=ulbUDLYPwgyv9FiYVPGvA6mWc5hdBoSnGpc9SPCc2l0,5278
+contextual_encoders/computer.py,sha256=1dUYg28g6Wy91zliRoHoTypOnoKPmw9dehA3QN50ibU,2265
+contextual_encoders/context.py,sha256=7D__cKZMfN9mD9tgOUK9PbyuTvHyABSdB0RYc__FpXQ,5561
+contextual_encoders/data_utils.py,sha256=vMen1Qy6kHXFYiuVsUKMt3Ef13f9AsEZFmITiOL_SrY,1288
+contextual_encoders/encoder.py,sha256=lXrAQK4QjrfnS_AMXzZ6r6Dw5Ic8JQh2ut6LgVcFjHg,5034
+contextual_encoders/gatherer.py,sha256=bRT9iA6eaSrMedXGujGQgtRANQoGhD4TlS9jTNgOD80,4983
+contextual_encoders/google_comparer.py,sha256=I4fJxihEIlAwXjLWeEdmpbDw4d8IUNIe_4gPlxtWL_I,1918
+contextual_encoders/inverter.py,sha256=q9aaHyVr8SwRa5xpkhlJXBnP38naZnkS2JSc7o2QCYM,2189
+contextual_encoders/measure.py,sha256=TwXyIo8O5Dfmv_1C4AEAcYVLu1A-YSdajBAyUAii1aY,5582
+contextual_encoders/reducer.py,sha256=o7l8X7YyLQJiCBAfzO4AKwWvegeuQFGKuTV8Zf2MDuI,1425
+LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+contextual_encoders-0.1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+contextual_encoders-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+contextual_encoders-0.1.0.dist-info/METADATA,sha256=TbMfsLLK3Az3GALfP1zwj8zEWIGzd-Vkq-y_hvaMW7Y,5664
+contextual_encoders-0.1.0.dist-info/RECORD,,
