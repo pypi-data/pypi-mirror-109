@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: IsraeliQueue
+Version: 0.3
+Summary: A Python module that allows the usage of Israeli Queue
+Home-page: https://github.com/YonLiud/Israeli-Queue
+Author: Yon Liud
+Author-email: ejliud@gmail.com
+License: MIT
+Description: # Israeli-Queue
+        Israeli Queues are a variation of Priority Queues where instead of associating priority with the element to be enqueued, the priority is implicitly derived using the "friend" element and it joins right at the back end of the group that the friend belongs to.
+        
+Keywords: Israel,IsraeliQueue,Tools,Queue
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
