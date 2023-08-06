@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: progressbar-easy
+Version: 1.0.4
+Summary: A simple progressbar to track progress with built in-timer that estimates remaining time
+Home-page: UNKNOWN
+Author: Braxton Brown
+Author-email: braxton.brown@outlook.com
+License: MIT
+Description: UNKNOWN
+Keywords: progressbar,progress bar,progressbar_easy,easy progressbar,easy progress bar
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
