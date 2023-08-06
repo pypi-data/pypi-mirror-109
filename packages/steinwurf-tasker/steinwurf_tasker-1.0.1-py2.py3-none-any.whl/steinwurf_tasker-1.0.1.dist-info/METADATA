@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: steinwurf-tasker
+Version: 1.0.1
+Summary: A tool for handling automated tasks in Steinwurf.
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: invoke
+Requires-Dist: fabric
+Requires-Dist: invocations
+Requires-Dist: giturlparse
+Requires-Dist: semver
+
+================
+Steinwurf Tasker
+================
+
+In Steinwurf we have a few general tasks that every developer in Steinwurf needs
+to carry out once in a while.
+
+For example, Releasing a new version of a project.
+
+Steinwurf Tasker is the tool for automating such tasks.
+
+Installation
+------------
+
+1. Install the ``steinwurf-tasker`` tool using ``pip``::
+
+      python -m pip install steinwurf-tasker
+
+
