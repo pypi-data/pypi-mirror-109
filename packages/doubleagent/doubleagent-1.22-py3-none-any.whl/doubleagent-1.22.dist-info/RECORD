@@ -1,0 +1,12 @@
+doubleagent/__init__.py,sha256=h3k6xSb3IGyO14jWZvB0ZJrc0cIRY0StdHD6RsRLu2M,222
+doubleagent/alpacomposite.py,sha256=5EhMgvPj3k1hKliUOvYii6zARFwoQMYYMXhLeaLdz6g,375
+doubleagent/listsplit.py,sha256=ZS-VuRJSPPUxnOsGnbae_jfCPZuixAPbXfMFuYsws8c,80
+doubleagent/ll2l.py,sha256=iZB-VA1DUdrxNI8wBPnTbPTY3sDnRJzxKACfXqUV5R4,174
+doubleagent/report.py,sha256=fa_psGzD8RdFGXPx8lwSPVekB6N2zUxycY52uEHoCzI,109
+doubleagent/rightreplace.py,sha256=1Mk9qmJ4U2BdfTsB6J-00rLcseGMsdDcsW-2B_Vg084,710
+doubleagent/s2l.py,sha256=sUJn9nV2oFFJKKPopz81zY6Kjr0G0P6vfqILIMLs0dk,56
+doubleagent/txt2crop.py,sha256=_KjQRpdeLbvvtUd_iPxNTEAfeWd1cmqYov0tmsze46A,2085
+doubleagent-1.22.dist-info/METADATA,sha256=zWJrlZV33yr1XU7Ty4tFISNB5dJE_QX9aIfsxAkaP_c,213
+doubleagent-1.22.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+doubleagent-1.22.dist-info/top_level.txt,sha256=r_XXLXxr5bGLUROU5tnFtR956Ns5kUSjD6BOai4mY1Q,46
+doubleagent-1.22.dist-info/RECORD,,
