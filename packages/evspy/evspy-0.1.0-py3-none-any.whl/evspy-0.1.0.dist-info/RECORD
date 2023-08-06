@@ -1,0 +1,9 @@
+evspy/__init__.py,sha256=F4tgiG5jiTkDLrMPu3QPU9w4Sz0QraGZ1Rqy3rgy0K4,87
+evspy/creep_swelling_model.py,sha256=iQr6ddQ-LkC9vSEd_UaXsyOGwgOtN0ca4Y5XmICZ7y4,15253
+evspy/loading_empirical_data.py,sha256=hyNxQoBDfpUPKitgCCc30TD7c1EiLkyykUrbj64hI50,6102
+evspy/model_run.py,sha256=VLndvIyYgkfWBfT6Io5VX1yakK6TVHS55q_SLIPCYIQ,3006
+evspy-0.1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+evspy-0.1.0.dist-info/METADATA,sha256=Fpdu7gBrC0BueSCCfRPP1xjwH2WWsesN-lug5oBCSZo,283
+evspy-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+evspy-0.1.0.dist-info/top_level.txt,sha256=V2t24UxNVDLZ6ytW_WU4EeS1GNiVg6C48vnB5OcwnlI,6
+evspy-0.1.0.dist-info/RECORD,,
