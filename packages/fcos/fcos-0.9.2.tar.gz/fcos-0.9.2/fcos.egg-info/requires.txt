@@ -1,0 +1,7 @@
+acrv_datasets
+numpy
+opencv-python
+pycocotools
+torch
+torchvision
+yacs
