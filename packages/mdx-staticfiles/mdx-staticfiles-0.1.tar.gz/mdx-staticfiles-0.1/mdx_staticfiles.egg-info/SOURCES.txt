@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.rst
+conftest.py
+mdx_staticfiles.py
+requirements-dev.txt
+requirements.txt
+setup.cfg
+setup.py
+tests.py
+.github/workflows/tests.yml
+mdx_staticfiles.egg-info/PKG-INFO
+mdx_staticfiles.egg-info/SOURCES.txt
+mdx_staticfiles.egg-info/dependency_links.txt
+mdx_staticfiles.egg-info/requires.txt
+mdx_staticfiles.egg-info/top_level.txt
