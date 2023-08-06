@@ -1,0 +1,13 @@
+MANIFEST.in
+README.txt
+setup.py
+src/HelloWorld/HelloWorldKeywords.py
+src/HelloWorld/__init__.py
+src/STL_helloworld_library.egg-info/PKG-INFO
+src/STL_helloworld_library.egg-info/SOURCES.txt
+src/STL_helloworld_library.egg-info/dependency_links.txt
+src/STL_helloworld_library.egg-info/top_level.txt
+src/stl_helloworld_library.egg-info/PKG-INFO
+src/stl_helloworld_library.egg-info/SOURCES.txt
+src/stl_helloworld_library.egg-info/dependency_links.txt
+src/stl_helloworld_library.egg-info/top_level.txt
