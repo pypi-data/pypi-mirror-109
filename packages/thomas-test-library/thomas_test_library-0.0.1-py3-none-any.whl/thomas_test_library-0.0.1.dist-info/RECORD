@@ -1,0 +1,7 @@
+packages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packages/thomas-test-package.py,sha256=W5s0LP5L9H7nfhWNlvuFPSmtZ8Z10SwEuPulugPaR44,77
+thomas_test_library-0.0.1.dist-info/LICENSE,sha256=GJsa-V1mEVHgVM6hDJGz11Tk3k0_7PsHTB-ylHb3Fns,18431
+thomas_test_library-0.0.1.dist-info/METADATA,sha256=JkECi4vJtTqk4li81F3hM-khYWSI6dDl49IflCB3wq8,463
+thomas_test_library-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+thomas_test_library-0.0.1.dist-info/top_level.txt,sha256=KlHxfoENEXdJ6vF3m8uvAis67kLBNoPQkFKHOFVIVlM,9
+thomas_test_library-0.0.1.dist-info/RECORD,,
