@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+DialogEval.egg-info/PKG-INFO
+DialogEval.egg-info/SOURCES.txt
+DialogEval.egg-info/dependency_links.txt
+DialogEval.egg-info/top_level.txt
