@@ -1,0 +1,3 @@
+[console_scripts]
+pyuvp = pyuvp.cli:main
+
