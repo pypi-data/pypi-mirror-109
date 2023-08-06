@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: quakeio
+Version: 0.0.1
+Summary: quakeio
+Home-page: https://github.com/claudioperez/quakeio
+Author: Claudio M. Perez
+Author-email: claudio_perez@berkeley.edu
+License: UNKNOWN
+Keywords: seismic,earthquake,parser
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.19)
+Requires-Dist: scipy
+Requires-Dist: pyyaml
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: jaraco.packaging (>=8.2) ; extra == 'docs'
+Requires-Dist: rst.linker (>=1.9) ; extra == 'docs'
+Provides-Extra: plots
+Requires-Dist: matplotlib ; extra == 'plots'
+Provides-Extra: testing
+Requires-Dist: pytest (>=4.6) ; extra == 'testing'
+Requires-Dist: pytest-checkdocs (>=2.4) ; extra == 'testing'
+Requires-Dist: pytest-flake8 ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: pytest-enabler (>=1.0.1) ; extra == 'testing'
+Requires-Dist: pandas ; extra == 'testing'
+Requires-Dist: pytest-black (>=0.3.7) ; (platform_python_implementation != "PyPy" and python_version < "3.10") and extra == 'testing'
+Requires-Dist: pytest-mypy ; (platform_python_implementation != "PyPy" and python_version < "3.10") and extra == 'testing'
+
+# quake-io
+
+[![PyPI Version][pypi-v-image]][pypi-v-link]
+![Build status][build-img]
+[![Commits since latest release][gh-image]][gh-link]
+
+## Formats
+
+- [x] CSMIP
+- [x] PEER NGA
+- [ ] plain.tsv
+- [ ] plain.csv
+- [ ] mdof
+- [ ] SimCenter Event
+
+## Examples
+
+### Command line
+
+
+```bash
+$ quakeio -a rot:30 chan001.v2 -t html
+```
+
+Rotate and calculate Husid series.
+```bash
+$ quakeio -c 'rot:30;husid;' chan001.v2 
+```
+
+```bash
+$ cat chan001.v2 | quakeio -a rot:30 -f csmip.v2 -t html | pandoc -f html -t pdf
+```
+
+```bash
+$ cat chan001.v2 \
+    | quakeio -a rot:30 -f csmip.v2 -t html -x [*].data \
+    | pandoc -f html -t pdf
+```
+
+
+### Library
+
+```python
+import quakeio
+
+csmip_event = quakeio.read("event.zip")
+csmip_event["channel-01"].accel.plot()
+```
+
+```python
+csmip_event["chan001"].plot()
+```
+
+
+```python
+csmip_event["chan001"].plot_spect()
+```
+
+## Command Line Interface
+
+```
+usage: quakeio [OPTIONS] [FILE]
+Options:
+-c/--calculate COMMAND
+
+-a/--apply  
+
+-t/--to FORMAT
+
+-x/--exclude FIELD
+
+-M/--metadata=KEY[:VALUE]
+
+Commands:
+  husid;
+  scale:SCALE;
+  rotate:cs=ANGLE;
+  filter:<freq>;
+  spect;
+
+Formats:
+  html
+  csmip[.v1,.v2,.v3]
+  nga
+```
+
+<!-- Badge links -->
+[pypi-v-image]: https://img.shields.io/pypi/v/quakeio.img
+[pypi-v-link]: https://pypi.org/project/quakeio
+[build-img]: https://
+[gh-link]: https://github.com/claudioperez/quakeio/compare/0.0.0...master
+[gh-image]: https://img.shields.io/github/commits-since/claudioperez/quakeio/0.0.0?style=social
+
+
+
