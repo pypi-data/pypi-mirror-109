@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+veracore_api_client/__init__.py
+veracore_api_client/__version__.py
+veracore_api_client/api.py
+veracore_api_client/constants.py
+veracore_api_client/exceptions.py
+veracore_api_client.egg-info/PKG-INFO
+veracore_api_client.egg-info/SOURCES.txt
+veracore_api_client.egg-info/dependency_links.txt
+veracore_api_client.egg-info/requires.txt
+veracore_api_client.egg-info/top_level.txt
