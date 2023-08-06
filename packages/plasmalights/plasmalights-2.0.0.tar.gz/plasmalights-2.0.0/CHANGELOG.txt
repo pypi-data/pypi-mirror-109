@@ -1,0 +1,21 @@
+2.0.0
+-----
+
+* Port to Python >=3.7, drop Python 2.7 support
+* Significant refactoring and restructuring
+* Config file support for configuring LED types/relationships
+* WS382X support
+* Chip-Select support for APA102
+* PlasmaMatrix to combine multiple output devices
+
+1.0.0
+-----
+
+* API refactor, use plasma.legacy for old API
+* USB support for Picade Player X
+
+0.0.1
+-----
+
+* Initial Release
+
