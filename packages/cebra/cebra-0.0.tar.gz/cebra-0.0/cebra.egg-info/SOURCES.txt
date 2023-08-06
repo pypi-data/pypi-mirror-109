@@ -1,0 +1,7 @@
+README.rst
+setup.py
+cebra/__init__.py
+cebra.egg-info/PKG-INFO
+cebra.egg-info/SOURCES.txt
+cebra.egg-info/dependency_links.txt
+cebra.egg-info/top_level.txt
