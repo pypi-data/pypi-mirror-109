@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+undr/__init__.py
+undr/_index_schema.json
+undr/undr_schema.json
+undr/undr.egg-info/PKG-INFO
+undr/undr.egg-info/SOURCES.txt
+undr/undr.egg-info/dependency_links.txt
+undr/undr.egg-info/requires.txt
+undr/undr.egg-info/top_level.txt
