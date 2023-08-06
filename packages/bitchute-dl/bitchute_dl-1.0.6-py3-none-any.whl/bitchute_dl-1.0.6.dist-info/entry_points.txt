@@ -1,0 +1,3 @@
+[console_scripts]
+bitchute-dl = bitchute_dl.__main__:main
+
