@@ -1,0 +1,13 @@
+oxlang/__init__.py,sha256=BY1dW8yMjiKCZJyWROr1gMRVWQVvFiT_I-oOQw81VNs,213
+oxlang/__version__.py,sha256=cpWcoit_fbNfiwt7dVSYJIm3S40B6YdBWWbNS2ArzR0,39
+oxlang/_scorpion.py,sha256=gOasmmgrpYICdHS4QR6dHX6fAJqCSHb9qN2ntEW9mXQ,2588
+oxlang/ast_.py,sha256=dhAtdJVvnhrTCrlmrnBO4u_gGmJ3xI3ZL02FH7hcoZg,3552
+oxlang/exceptions.py,sha256=99K3Yl1eAu4FzsCCQp6V902eqMZT6Wn653axmsXEclY,91
+oxlang/repl.py,sha256=3QZ42cAB4P5VgKCJ42lvqNdXa1Jcx_er71HGXR-8YoU,1504
+oxlang/runtime.py,sha256=rt3R64NVVFMjrKCnw2lTjTZTE5Pqx-6QsRsFBAbjDI0,8584
+oxlang/syntax.py,sha256=CRqh4FMoNEnOpWEjcoKDtI7W_v8-5lXgh6r9kFIvK9I,11431
+oxlang/stdlib/math.ox,sha256=887CU4KeVfpxvruiUtPwoowf8Erl4RBcqq6pzIcnjh4,2411
+oxlang-0.0.1a0.dist-info/entry_points.txt,sha256=4E5HqtMX2eBQ1qZrv1FCalPBlIeaVHflutV2ic-kF-k,39
+oxlang-0.0.1a0.dist-info/WHEEL,sha256=o-Q2E8s7BKkCJ1EC2uQdaymZVVu2aUt1e8uTTFpzHVs,81
+oxlang-0.0.1a0.dist-info/METADATA,sha256=b8awRZARR3cefxQLNcy4FbqTZi9cYb2FK4mIJxChxbw,3556
+oxlang-0.0.1a0.dist-info/RECORD,,

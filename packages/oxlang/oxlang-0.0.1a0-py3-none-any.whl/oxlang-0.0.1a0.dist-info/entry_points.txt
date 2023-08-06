@@ -1,0 +1,3 @@
+[console_scripts]
+ox=oxlang.repl:main
+
