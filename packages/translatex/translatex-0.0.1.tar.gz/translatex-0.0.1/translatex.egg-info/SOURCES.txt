@@ -1,0 +1,7 @@
+setup.py
+translatex/__init__.py
+translatex/conjson.py
+translatex.egg-info/PKG-INFO
+translatex.egg-info/SOURCES.txt
+translatex.egg-info/dependency_links.txt
+translatex.egg-info/top_level.txt
