@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/helloworld.py
+src/gpravada_helloworld.egg-info/PKG-INFO
+src/gpravada_helloworld.egg-info/SOURCES.txt
+src/gpravada_helloworld.egg-info/dependency_links.txt
+src/gpravada_helloworld.egg-info/requires.txt
+src/gpravada_helloworld.egg-info/top_level.txt
