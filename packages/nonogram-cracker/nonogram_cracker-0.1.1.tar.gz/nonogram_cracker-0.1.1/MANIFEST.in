@@ -1,0 +1,5 @@
+exclude .vscode
+exclude puzzles
+exclude docs
+exclude requirements
+recursive-exclude src test_*.py
