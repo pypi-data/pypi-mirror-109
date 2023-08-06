@@ -1,0 +1,17 @@
+openpyxl==3.0.7
+pandas==1.2.4
+px-django-lingua==0.1.0
+px-django-postgres==0.1.0
+px-django-tree==0.1.1
+px-settings==0.1.2
+requests==2.25.1
+xlrd==2.0.1
+
+[dev]
+django-environ==0.4.5
+django-stubs
+django<4,>=2.2
+pytest-django<5.0,>=4.3
+pytest-watch<5.0,>=4.2
+pytest<7.0,>=6.0
+twine
