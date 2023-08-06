@@ -1,0 +1,15 @@
+pybotters/__init__.py,sha256=hRPOHRzPEuBsDUVGqlsdJrMOLeY557N7M-EUyB7AdaQ,3882
+pybotters/auth.py,sha256=NAVpuoz91zcqTqwRPWzunn_oFB55E3x6D8t-pjSfcL8,12339
+pybotters/client.py,sha256=a_bAe9FSZRzR0nVBYvurGDnzpMwy2Bng-nZ1jqoFi7U,4992
+pybotters/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybotters/models/binance.py,sha256=GhSxc6wfY1CzMjrAX-vuO9R1_9jIwh40JW2KzgdiAd8,8955
+pybotters/models/btcmex.py,sha256=IOTQuhvP_sg5yjeS0P_D_zvfXqL59hKXsWV2G2PiRR4,2578
+pybotters/models/bybit.py,sha256=M7H4F58jAOjEi8Eyq9OCV5dWXb0gwnXHV0OJoGJRkXc,10954
+pybotters/models/ftx.py,sha256=b78_3IGu_e7-QyIXWEaK5BM1hBAZix9XLc74S9mwWRo,5569
+pybotters/request.py,sha256=63Wg7uisR49XlHuEflH9GuHS1neJ-Yk-hNBX1_o1RWg,1116
+pybotters/store.py,sha256=viLz98ueeYj4bencztFzHhyYVEzy5TlwkJjdoj-RZ3Q,5912
+pybotters/typedefs.py,sha256=WJdoHVjds-VlWx5HqMAiPii2Iold_7SNYDfhljKubfc,325
+pybotters/ws.py,sha256=7HFp84VFKN5NucpRjJpzQnhTAhZryqL3kGmm9Vteiuc,10049
+pybotters-0.4.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+pybotters-0.4.0.dist-info/METADATA,sha256=PsyekxpMlehYa9Z6x5Egh_DQy8Elmqr_0bIaAWl1Sio,4434
+pybotters-0.4.0.dist-info/RECORD,,
