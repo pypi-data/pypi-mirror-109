@@ -1,0 +1,147 @@
+flask==1.1.4
+werkzeug==1.0.1
+flask-login
+flask-admin
+flask-security-too==3.4.5
+flask-static-digest
+blinker
+bcrypt
+Flask-Caching
+pyyaml
+flask-gravatar
+flask-ckeditor
+stripe
+pyqrcode
+
+[all]
+flask==1.1.4
+werkzeug==1.0.1
+flask-login
+flask-admin
+flask-security-too==3.4.5
+flask-static-digest
+blinker
+bcrypt
+Flask-Caching
+pyyaml
+flask-gravatar
+flask-ckeditor
+stripe
+pyqrcode
+flask-AdminLTE3@ git+https://gitlab.com/flaskless/Flask-AdminLTE3.git
+inline-editor@ git+https://gitlab.com/flaskless/flask-inline-editor.git
+flask-auth0@ git+https://gitlab.com/flaskless/flask-auth0.git
+sqlalchemy-cloudsqlite@ git+https://gitlab.com/flaskless/sqlite-serverless.git#egg=sqlalchemy-cloudsqlite
+flask-wire
+flask-config-override@ git+https://gitlab.com/flaskless/flask-config-override.git
+pytest
+xdoctest
+pytest-html
+pytest-cov
+pytest-flask
+mkdocs==1.1.2
+pymdown-extensions
+mkdocs-material
+mkdocstrings
+mkdocs-macros-plugin
+mkdocs-git-revision-date-plugin
+interrogate
+mkdocs-click
+mkdocs-include-markdown-plugin
+mkdocs-minify-plugin
+lightgallery
+mkdocs-diagrams
+keepachangelog
+changelog-cli@ git+https://github.com/flaskless/changelog-cli
+adr-viewer
+isort
+black
+flask-debugtoolbar
+flask-shell-ipython
+SQLAlchemy==1.3.23
+arrow
+flask-sqlalchemy
+flask-migrate
+auth0-python==3.13.0
+authlib
+wiki2@ git+https://gitlab.com/flaskless/wiki.git
+sqlite-web@ git+https://gitlab.com/flaskless/sqlite-web.git
+flaskcode@ git+https://gitlab.com/flaskless/flaskcode.git
+eralchemy@ git+https://github.com/flaskless/eralchemy.git
+flask-openapi-editor@ git+https://gitlab.com/flaskless/flask-openapi-editor.git
+flaskfilemanager@ git+https://gitlab.com/flaskless/flask-file-manager.git
+python-buddy@ git+https://gitlab.com/flaskless/PythonBuddy.git
+cogapp
+python-box
+prance[osv]
+ruamel.yaml
+pathspec
+projeny@ git+https://gitlab.com/projeny/projeny.git
+openapi-spec-validator
+
+[docs]
+mkdocs==1.1.2
+pymdown-extensions
+mkdocs-material
+mkdocstrings
+mkdocs-macros-plugin
+mkdocs-git-revision-date-plugin
+interrogate
+mkdocs-click
+mkdocs-include-markdown-plugin
+mkdocs-minify-plugin
+lightgallery
+mkdocs-diagrams
+keepachangelog
+changelog-cli@ git+https://github.com/flaskless/changelog-cli
+adr-viewer
+
+[examples]
+wiki2@ git+https://gitlab.com/flaskless/wiki.git
+sqlite-web@ git+https://gitlab.com/flaskless/sqlite-web.git
+flaskcode@ git+https://gitlab.com/flaskless/flaskcode.git
+eralchemy@ git+https://github.com/flaskless/eralchemy.git
+flask-openapi-editor@ git+https://gitlab.com/flaskless/flask-openapi-editor.git
+flaskfilemanager@ git+https://gitlab.com/flaskless/flask-file-manager.git
+python-buddy@ git+https://gitlab.com/flaskless/PythonBuddy.git
+
+[main]
+flask-AdminLTE3@ git+https://gitlab.com/flaskless/Flask-AdminLTE3.git
+inline-editor@ git+https://gitlab.com/flaskless/flask-inline-editor.git
+flask-auth0@ git+https://gitlab.com/flaskless/flask-auth0.git
+sqlalchemy-cloudsqlite@ git+https://gitlab.com/flaskless/sqlite-serverless.git#egg=sqlalchemy-cloudsqlite
+flask-wire
+flask-config-override@ git+https://gitlab.com/flaskless/flask-config-override.git
+SQLAlchemy==1.3.23
+arrow
+flask-sqlalchemy
+flask-migrate
+auth0-python==3.13.0
+authlib
+wiki2@ git+https://gitlab.com/flaskless/wiki.git
+sqlite-web@ git+https://gitlab.com/flaskless/sqlite-web.git
+flaskcode@ git+https://gitlab.com/flaskless/flaskcode.git
+eralchemy@ git+https://github.com/flaskless/eralchemy.git
+flask-openapi-editor@ git+https://gitlab.com/flaskless/flask-openapi-editor.git
+flaskfilemanager@ git+https://gitlab.com/flaskless/flask-file-manager.git
+python-buddy@ git+https://gitlab.com/flaskless/PythonBuddy.git
+cogapp
+python-box
+prance[osv]
+ruamel.yaml
+pathspec
+projeny@ git+https://gitlab.com/projeny/projeny.git
+openapi-spec-validator
+
+[sqla]
+SQLAlchemy==1.3.23
+arrow
+flask-sqlalchemy
+flask-migrate
+
+[test]
+pytest
+xdoctest
+pytest-html
+pytest-cov
+pytest-flask
