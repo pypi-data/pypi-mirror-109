@@ -1,0 +1,2 @@
+class EnsembleException(Exception):
+    pass
