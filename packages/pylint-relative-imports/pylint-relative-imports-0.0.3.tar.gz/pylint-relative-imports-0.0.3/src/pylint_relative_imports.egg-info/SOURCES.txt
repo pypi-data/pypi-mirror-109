@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/pylint_relative_imports/__init__.py
+src/pylint_relative_imports/relative_imports_checker.py
+src/pylint_relative_imports/utils.py
+src/pylint_relative_imports.egg-info/PKG-INFO
+src/pylint_relative_imports.egg-info/SOURCES.txt
+src/pylint_relative_imports.egg-info/dependency_links.txt
+src/pylint_relative_imports.egg-info/requires.txt
+src/pylint_relative_imports.egg-info/top_level.txt
