@@ -1,0 +1,3 @@
+[console_scripts]
+cli_color = color_palette_cli.color_palette_cli.ColorPaletteCLI:get_color_palette
+
