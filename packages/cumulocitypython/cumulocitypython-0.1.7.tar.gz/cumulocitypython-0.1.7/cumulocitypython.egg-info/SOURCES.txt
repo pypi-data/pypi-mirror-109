@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+cumulocitypython/__init__.py
+cumulocitypython/connection.py
+cumulocitypython.egg-info/PKG-INFO
+cumulocitypython.egg-info/SOURCES.txt
+cumulocitypython.egg-info/dependency_links.txt
+cumulocitypython.egg-info/requires.txt
+cumulocitypython.egg-info/top_level.txt
