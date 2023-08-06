@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/application_skeleton/__init__.py
+src/application_skeleton/app.py
+src/application_skeleton_pkg_Novixel.egg-info/PKG-INFO
+src/application_skeleton_pkg_Novixel.egg-info/SOURCES.txt
+src/application_skeleton_pkg_Novixel.egg-info/dependency_links.txt
+src/application_skeleton_pkg_Novixel.egg-info/top_level.txt

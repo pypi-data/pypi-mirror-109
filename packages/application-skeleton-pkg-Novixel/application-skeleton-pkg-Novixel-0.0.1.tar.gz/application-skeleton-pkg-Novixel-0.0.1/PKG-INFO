@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: application-skeleton-pkg-Novixel
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/Novixel/ApplicationSkeleton
+Author: Novixel
+Author-email: Novixel@hotmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Novixel/ApplicationSkeleton/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Application Skeleton
+
+This is a simple application skeleton. You can use!
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
