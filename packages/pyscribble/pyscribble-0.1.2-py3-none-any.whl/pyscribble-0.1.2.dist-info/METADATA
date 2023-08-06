@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyscribble
+Version: 0.1.2
+Summary: A scribbletune-like library for Python3
+Home-page: https://github.com/blakeanedved/pyscribble
+Author: Blake Nedved
+Author-email: blakeanedved@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: midiutil
+Requires-Dist: pygame
+
+UNKNOWN
+
+
