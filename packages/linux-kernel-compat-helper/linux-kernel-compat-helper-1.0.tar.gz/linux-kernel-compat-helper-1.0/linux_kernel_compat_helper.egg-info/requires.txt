@@ -1,0 +1,14 @@
+PyGithub
+
+[dev]
+flake8
+coverage
+mypy
+black>=20.8b0
+types-pyyaml
+types-requests
+types-jinja2
+
+[docs]
+sphinx
+sphinx_rtd_theme
