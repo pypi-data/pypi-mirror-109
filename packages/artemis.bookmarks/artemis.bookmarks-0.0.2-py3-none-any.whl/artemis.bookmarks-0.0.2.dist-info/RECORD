@@ -1,0 +1,12 @@
+bookmarks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bookmarks/app.py,sha256=Rwo8Z5AduTOhn6Z7BUBeK9kVfpW3Xen2gkOZaZjKOFI,148
+bookmarks/cli.py,sha256=lXFi-PHXx_UrVanvO7Jh0uglluE4PAAGRdXFUzZfOus,103
+bookmarks/config.py,sha256=gsOEvUrB_SwWJd2d4WqPK6LsS6E7Wu9Fz_uZq_JSAiQ,578
+bookmarks/core.py,sha256=CInI7ZEsxOgqsT5x0ZV3F5OJ0-gMrmSw9ItUB2TvssY,315
+bookmarks/db.py,sha256=lucEK_IC1JzehbJbmeYpxOoR5PvlLX5cYI8Y4mHw2qY,1336
+bookmarks/web.py,sha256=B2MA-TVmLO9jQ-B98jvCET_nhfeRF7nIdYdTXOiTYT4,174
+artemis.bookmarks-0.0.2.dist-info/LICENSE,sha256=yRtSHzVfeh85Rg3gx90HSM1tSpbgga2uSEsgcOc6mo0,29942
+artemis.bookmarks-0.0.2.dist-info/METADATA,sha256=B6B72-L8sDd_Zaie2qax8JifUUj_xIuDyjYktgUcTKU,1395
+artemis.bookmarks-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+artemis.bookmarks-0.0.2.dist-info/top_level.txt,sha256=ywdN4Xk7IQf0DsM8f6FxDJr6tU_ycM9Tv2ihSnDnazI,10
+artemis.bookmarks-0.0.2.dist-info/RECORD,,
