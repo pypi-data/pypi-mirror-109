@@ -1,0 +1,11 @@
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+skipper_lib/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+skipper_lib/__main__.py,sha256=_Ch60-tfh_8fxsvcGHpmpelEvnWK2mcxKwvx_ndvk-I,83
+skipper_lib/events/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skipper_lib/events/event_producer.py,sha256=cPM9654bTlX6fU3NjJOomN9q_p-9Doi8RUBw3TY_o3g,1437
+skipper_lib/events/event_receiver.py,sha256=kHEJHhmw2Vp_smheymEWbfFhSWPyh6PR49zmk-As76s,1293
+skipper_lib-1.0.0.dist-info/entry_points.txt,sha256=JFofLQEqYmJ3I10HG6_8K235wmXd7D80XRsWyQVal_8,48
+skipper_lib-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+skipper_lib-1.0.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+skipper_lib-1.0.0.dist-info/METADATA,sha256=hAGblCAxAaxk16SrIm8GYhPVPxnZrW1okQV_SgwFL94,2484
+skipper_lib-1.0.0.dist-info/RECORD,,
