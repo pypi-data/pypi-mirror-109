@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/my_util_lib/__init__.py
+src/my_util_lib/utils.py
+src/my_util_lib.egg-info/PKG-INFO
+src/my_util_lib.egg-info/SOURCES.txt
+src/my_util_lib.egg-info/dependency_links.txt
+src/my_util_lib.egg-info/requires.txt
+src/my_util_lib.egg-info/top_level.txt
