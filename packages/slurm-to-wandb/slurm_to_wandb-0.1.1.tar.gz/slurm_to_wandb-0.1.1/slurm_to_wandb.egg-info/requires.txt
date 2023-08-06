@@ -1,0 +1,4 @@
+pandas>=1.2
+wandb>=0.10
+numpy>=1.19
+humanfriendly==9.1
