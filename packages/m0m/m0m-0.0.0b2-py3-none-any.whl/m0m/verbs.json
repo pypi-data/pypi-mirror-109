@@ -1,0 +1,122 @@
+{
+    "be": [
+        "am", "'m", "is", "are", "'re", "'s"
+    ],
+    "go": [
+        "go", "go", "goes"
+    ],
+    "make": [
+        "make", "make", "makes"
+    ],
+    "have": [
+        "have", "have", "has", "'ve"
+    ],
+    "accept": [
+        "accept", "accept", "accepts"
+    ],
+    "achieve": [
+        "achieve", "achieve", "achieves"
+    ],
+    "admit": [
+        "admit", "admit", "admits"
+    ],
+    "affect": [
+        "affect", "affect", "affects"
+    ],
+    "afford": [
+        "afford", "afford", "affords"
+    ],
+    "agree": [
+        "agree", "agree", "agrees"
+    ],
+    "allow": [
+        "allow", "allow", "allows"
+    ],
+    "answer": [
+        "answer", "answer", "answers"
+    ],
+    "apply": [
+        "apply", "apply", "applies"
+    ],
+    "argue": [
+        "argue", "argue", "argues"
+    ],
+    "arrange": [
+        "arrange", "arrange", "arranges"
+    ],
+    "arrive": [
+        "arrive", "arrive", "arrives"
+    ],
+    "ask": [
+        "ask", "ask", "asks"
+    ],
+    "avoid": [
+        "avoid", "avoid", "avoids"
+    ],
+    "become": [
+        "become", "become", "becomes"
+    ],
+    "begin": [
+        "begin", "begin", "begins"
+    ],
+    "believe": [
+        "believe", "believe", "believes"
+    ],
+    "build": [
+        "build", "build", "builds"
+    ],
+    "buy": [
+        "buy", "buy", "buys"
+    ],
+    "call": [
+        "call", "call", "calls"
+    ],
+    "care": [
+        "care", "care", "cares"
+    ],
+    "carry": [
+        "carry", "carry", "carries"
+    ],
+    "catch": [
+        "catch", "catch", "catches"
+    ],
+    "cause": [
+        "cause", "cause", "causes"
+    ],
+    "change": [
+        "change", "change", "changes"
+    ],
+    "check": [
+        "check", "check", "checks"
+    ],
+    "choose": [
+        "choose", "choose", "chooses"
+    ],
+    "clear": [
+        "clear", "clear", "clears"
+    ],
+    "clean": [
+        "clean", "clean", "cleans"
+    ],
+    "collect": [
+        "collect", "collect", "collects"
+    ],
+    "cum": [
+        "cum", "cum", "cums"
+    ],
+    "come": [
+        "come", "come", "comes"
+    ],
+    "complain": [
+        "complain", "complain", "complains"
+    ],
+    "complete": [
+        "complete", "complete", "completes"
+    ],
+    "consist": [
+        "consist", "consist", "consists"
+    ],
+    "survive": [
+        "survie", "survive", "survives"
+    ]
+}
