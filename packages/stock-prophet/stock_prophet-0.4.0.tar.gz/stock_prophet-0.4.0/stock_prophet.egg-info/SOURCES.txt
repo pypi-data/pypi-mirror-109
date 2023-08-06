@@ -1,0 +1,10 @@
+README.md
+setup.py
+stock_prophet/__init__.py
+stock_prophet.egg-info/PKG-INFO
+stock_prophet.egg-info/SOURCES.txt
+stock_prophet.egg-info/dependency_links.txt
+stock_prophet.egg-info/requires.txt
+stock_prophet.egg-info/top_level.txt
+stock_prophet/model/__init__.py
+stock_prophet/model/btc_model.py
