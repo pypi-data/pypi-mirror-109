@@ -1,0 +1,20 @@
+[project]
+name = "soie"
+version = "0.0.0"
+description = ""
+dependencies = []
+requires-python = ">=3.7"
+dynamic = [ "classifiers",]
+[[project.authors]]
+name = "Elliot"
+email = "hack00mind@gmail.com"
+
+[build-system]
+requires = [ "pdm-pep517",]
+build-backend = "pdm.pep517.api"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://elliot00.com"
