@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+xmind2json/__init__.py
+xmind2json/main.py
+xmind2json/xreader.py
+xmind2json/zenreader.py
+xmind2json.egg-info/PKG-INFO
+xmind2json.egg-info/SOURCES.txt
+xmind2json.egg-info/dependency_links.txt
+xmind2json.egg-info/entry_points.txt
+xmind2json.egg-info/not-zip-safe
+xmind2json.egg-info/top_level.txt
