@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: startpage-ggg
+Version: 1.0.0
+Summary: parsing search results from startpage search engine (based on google.com results)
+Home-page: https://github.com/mhmh55516/ggg
+License: GPL-3.0 License
+Description: hi
+Platform: UNKNOWN
+Requires-Python: >=3.6
