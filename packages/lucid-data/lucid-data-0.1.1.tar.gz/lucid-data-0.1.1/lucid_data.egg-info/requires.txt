@@ -1,0 +1,4 @@
+bokeh
+boto3
+pandas
+requests
