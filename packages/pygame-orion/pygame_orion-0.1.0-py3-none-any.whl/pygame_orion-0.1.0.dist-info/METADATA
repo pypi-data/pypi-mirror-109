@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pygame-orion
+Version: 0.1.0
+Summary: A game design framework for Pygame 2
+License: MIT
+Author: krummja
+Author-email: crumja@uga.edu
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pygame (==2.0.0)
+Requires-Dist: pygame-gui (==0.5.7)
