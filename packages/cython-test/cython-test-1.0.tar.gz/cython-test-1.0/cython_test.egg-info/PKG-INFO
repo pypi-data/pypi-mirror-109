@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cython-test
+Version: 1.0
+Summary: python and cython testing
+Home-page: https://github.com/xReflake/cython-test
+Author: xReflake
+Author-email: xreflake@mail.ru
+License: MIT
+Description: # Cython and python testing
+        This program allows you to compare the performance of Cython and Python.
+        # Installing
+        pip install cython-test
+        # How to use
+        # Example
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

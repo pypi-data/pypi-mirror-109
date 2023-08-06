@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+cython-test/PythonTest.py
+cython-test/__init__.py
+cython_test.egg-info/PKG-INFO
+cython_test.egg-info/SOURCES.txt
+cython_test.egg-info/dependency_links.txt
+cython_test.egg-info/top_level.txt
