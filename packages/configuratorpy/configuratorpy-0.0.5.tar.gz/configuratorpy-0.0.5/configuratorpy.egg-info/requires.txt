@@ -1,0 +1,5 @@
+jinja2
+pytoml
+python-dotenv
+python-benedict
+dpath
