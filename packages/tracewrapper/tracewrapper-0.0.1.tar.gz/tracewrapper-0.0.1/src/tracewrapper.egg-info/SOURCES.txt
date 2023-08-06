@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tracer_pkg/__init__.py
+src/tracer_pkg/tracer.py
+src/tracewrapper.egg-info/PKG-INFO
+src/tracewrapper.egg-info/SOURCES.txt
+src/tracewrapper.egg-info/dependency_links.txt
+src/tracewrapper.egg-info/top_level.txt
