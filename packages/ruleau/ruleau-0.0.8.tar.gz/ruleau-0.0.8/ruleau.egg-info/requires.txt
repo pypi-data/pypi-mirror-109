@@ -1,0 +1,4 @@
+Jinja2==2.11.3
+requests==2.25.1
+flatdict==4.0.1
+jsonpath-ng==1.5.2
