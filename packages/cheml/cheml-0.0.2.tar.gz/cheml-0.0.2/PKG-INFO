@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cheml
+Version: 0.0.2
+Summary: A cheminformatics package designed to translate chemical information into formats that can be fed directly into machine learning models
+Home-page: https://https://github.com/ZackStrater/cheML
+Author: Zack Strater
+Author-email: zack.m.strater@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://https://github.com/ZackStrater/cheML/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cheML
+cheminformatics platform for converting chemical representations into formats that can be fed directly to ML models
+
+
