@@ -1,0 +1,2 @@
+(this.webpackJsonpkwac=this.webpackJsonpkwac||[]).push([[0],{222:function(t,e,n){"use strict";n.r(e);n(0);var s=n(55),a=n.n(s),c=n(220),i=n(221),o=n(219);const r={maxPerPage:50,singleServer:document.location.toString().split("/admin/")[0]};a.a.render(Object(o.jsx)(c.a,{settings:r,plugins:[i]}),document.getElementById("root"))}},[[222,1,2]]]);
+//# sourceMappingURL=main.597cd754.chunk.js.map
