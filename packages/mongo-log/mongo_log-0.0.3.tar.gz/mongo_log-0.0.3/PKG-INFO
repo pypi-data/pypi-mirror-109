@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mongo_log
+Version: 0.0.3
+Summary: use mongo db to log
+Home-page: https://github.com/StevenLianaL/mongo_log
+Author: Steven Wang
+Author-email: brightstar8284@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# flow
+1. use mongoengine connect
+2. then log
+
