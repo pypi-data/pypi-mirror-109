@@ -1,0 +1,2 @@
+Click<8,>=7
+llvm_diagnostics>=0<1
