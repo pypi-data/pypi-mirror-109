@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/salesforce_bulk_python/__init__.py
+src/salesforce_bulk_python/bulk.py
+src/salesforce_bulk_python.egg-info/PKG-INFO
+src/salesforce_bulk_python.egg-info/SOURCES.txt
+src/salesforce_bulk_python.egg-info/dependency_links.txt
+src/salesforce_bulk_python.egg-info/requires.txt
+src/salesforce_bulk_python.egg-info/top_level.txt
