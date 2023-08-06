@@ -1,0 +1,10 @@
+README.md
+setup.py
+str_srch/__init__.py
+str_srch/search.py
+str_srch.egg-info/PKG-INFO
+str_srch.egg-info/SOURCES.txt
+str_srch.egg-info/dependency_links.txt
+str_srch.egg-info/top_level.txt
+tests/__init__.py
+tests/test_srch.py
