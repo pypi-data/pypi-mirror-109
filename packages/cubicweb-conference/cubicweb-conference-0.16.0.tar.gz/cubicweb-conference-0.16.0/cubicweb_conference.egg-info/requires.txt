@@ -1,0 +1,7 @@
+cubicweb-addressbook
+cubicweb-card>=1.1.0
+cubicweb-comment
+cubicweb-file
+cubicweb-seo>=0.3.0
+cubicweb-tag
+cubicweb<3.30,>=3.29
