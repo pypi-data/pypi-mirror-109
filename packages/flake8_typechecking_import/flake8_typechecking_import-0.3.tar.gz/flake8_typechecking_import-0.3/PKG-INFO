@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: flake8_typechecking_import
+Version: 0.3
+Summary: A flake plugin that checks for typing.TYPE_CHECKING-able imports
+Home-page: https://github.com/ingolemo/flake8-typechecking_import
+Author: Adrian Room
+Author-email: ingolemo@gmail.com
