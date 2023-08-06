@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: octoparse-api-client
+Version: 0.1.1
+Summary: client for OctoParse
+Home-page: https://gitlab.com/rwconequip/octoparse-api-client
+Author: R W
+Author-email: rob.w@conequip.com
+License: UNKNOWN
+Keywords: octoparse_api_client
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+License-File: AUTHORS.rst
+Requires-Dist: requests
+
+====================
+OctoParse Api Client
+====================
+
+ client for OctoParse
+
+
+Development
+-----------
+
+install dependencies
+::
+
+    pip install -r requirements_dev.txt
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2021-03-02)
+------------------
+
+* First release on PyPI.
+
+
