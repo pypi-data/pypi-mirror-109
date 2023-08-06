@@ -1,0 +1,10 @@
+swag/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swag/colors.py,sha256=OXWVliYhm8689xeQq9j3kT0VmhbTGUpJmB8IskryQ60,3062
+swag/createFolders.py,sha256=lLhY0WBDuS5pvQLAMUW5RLYbuYlgZEG_nL26gfM99_c,646
+swag/setPermission.py,sha256=_YJXuRsPsaVf0gJfR_03Qa8-9Okz52LRb3K_P21jOaE,93
+swag/swag.py,sha256=agC-EaOjjBOUjUqmYu0zYbmHLf37_2IjzsnPOjNm9FA,2613
+swag/swagprinter.py,sha256=-JY-EJZLvhRNKYr2bw1-jKosRmDse9JJ2XnLNFrsXrY,1624
+swag-1.6.1.dist-info/LICENSE.txt,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+swag-1.6.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+swag-1.6.1.dist-info/METADATA,sha256=6-XR9gH2Ho6Kl8K6v-VdUHKy_7R7qJ54uHuKtFaPE7E,547
+swag-1.6.1.dist-info/RECORD,,
