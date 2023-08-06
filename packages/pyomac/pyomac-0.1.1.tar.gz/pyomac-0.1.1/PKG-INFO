@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: pyomac
+Version: 0.1.1
+Summary: Tools for Operational Modal Analysis (OMA)
+Home-page: https://github.com/ajansen-tub/pyomac
+Author: Andreas Jansen, Patrick Simon
+Author-email: andreas.jansen@tu-berlin.de
+License: MIT
+Download-URL: https://github.com/ajansen-tub/pyomac/v_01.tar.gz
+Description: Toolbox for operational modal analysis in python.
+        
+        # ToDo:
+        
+        + [ ] add comments and function descriptions to code
+        + [ ] write faster implementation of ssi_cov
+        + [ ] publish on pypi
+        + [ ] description of example
+        + [ ] ...
+        
+        
+        
+        
+Keywords: Operational Modal Analysis,Structural Dynamics,Frequency Domain Decomposition,Stochastic Subspace Identification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
