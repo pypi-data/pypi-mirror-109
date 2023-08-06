@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        fineocr=fineocr.__main__:main
+    

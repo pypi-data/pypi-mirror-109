@@ -1,0 +1,11 @@
+fineocr/__init__.py,sha256=5ZgQeJUL0cpO3iWTyzNzW-7mYgu9Pu95VETkbj6UvnU,42
+fineocr/__main__.py,sha256=M4gmKOO2aUFwvLqtaaBnqKVQYn218DTLZI_7bedrhIU,5120
+fineocr/doc.py,sha256=qzwb5zhrfaral6PRfuHtvvPjCsXHREuWk3j_J6Q9CWM,4713
+fineocr/finescanner.py,sha256=punfnKdcx3sWY31TVFVHB1oPChXHtBUMM7SY50QVfIE,10168
+fineocr/spinner.py,sha256=_lLJiXSrufm2YsTlDyp6BxR1UuSwJ0u5cGO3TGUee9c,4407
+fineocr/urlreader.py,sha256=r0FiR_fYIWXlaF3JM4Qkl3O2xRsDVKbIIv0JD_zzgzQ,2784
+fineocr-0.1.dist-info/METADATA,sha256=Y5ZIZlF07TMkdEaSF_H5HlrqGlV3S7Ru_jsSepxETIk,775
+fineocr-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fineocr-0.1.dist-info/entry_points.txt,sha256=ZigtdKPJ9C099hZ2JvYJ5vEp70UBJdi_SxtNg-OSeIM,69
+fineocr-0.1.dist-info/top_level.txt,sha256=9dSlABbUXa0ryr7jgeYTCvI6RMTzkd7Vby4E8Cou_E4,8
+fineocr-0.1.dist-info/RECORD,,
