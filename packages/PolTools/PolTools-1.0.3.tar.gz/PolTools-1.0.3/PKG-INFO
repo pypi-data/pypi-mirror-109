@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: PolTools
+Version: 1.0.3
+Summary: UNKNOWN
+Home-page: https://geoffscollins.github.io/PolTools/index.html
+Author: Geoff Collins
+License: UNKNOWN
+Project-URL: Documentation, https://geoffscollins.github.io/PolTools/index.html
+Project-URL: Source Code, https://github.com/GeoffSCollins/PolTools
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
