@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: excel-base
+Version: 1.0.0
+Summary: Excel Base
+Home-page: https://github.com/Brightcells/excel-base
+Author: Hackathon
+Author-email: kimi.huang@brightcells.com
+License: UNKNOWN
+Description: ==========
+        excel-base
+        ==========
+        
+        Excel Base
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install excel-base
+        
+        
+        Usage
+        =====
+        
+        ::
+        
+            from excel_base import as_xls, as_csv
+        
+        
+Keywords: Excel Base
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.5
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
