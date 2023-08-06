@@ -1,0 +1,13 @@
+bulk_api_client/__init__.py,sha256=n1a3Kb0AuwuRKgeO4SxjcghLAK7UxlLxKIBjBZJuWzU,86
+bulk_api_client/app.py,sha256=aGfQHb624ZeJxJ7sejhtNjHOISeLAxoKQ69Z1nk3g1o,1630
+bulk_api_client/client.py,sha256=krgitN_98tzh18_mPTeejKFkDPxR9A3ae26zra6cis4,6498
+bulk_api_client/data-warehouse.pivot.pem,sha256=eWPI0iIqCKE2LDSmwg4-guWchcbtkYjCWReAdK86gUo,12650
+bulk_api_client/env_client.py,sha256=HrmWMU86QIzmJH3GFp5LosFCdz_WkPndoSz4evfc1fs,469
+bulk_api_client/exceptions.py,sha256=mVpCW5qKuRVeTvSlCRvHHDqcxLEfNnzxeJEqM7lJ3xE,129
+bulk_api_client/model.py,sha256=gN2bLvwuRbDwgjlDpxlWNr351GwAQt53QSyPKzvWlGo,21144
+bulk_api_client/models.py,sha256=V8aAk8vSeWCV6Enck0pAWdhAl7TomdTm-ZMIkiR7eD0,1741
+bulk_api_client/query_helpers.py,sha256=dBbCj7IBkVC--w3LD2fvXoMOPYZd8HPwRULpU9QIavo,4775
+bulk_api_client-3.4.1.dist-info/METADATA,sha256=lom6gmpFJKE2WxdR-ItgRsNhUJUYpsCsj1th0xVyBUY,844
+bulk_api_client-3.4.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+bulk_api_client-3.4.1.dist-info/top_level.txt,sha256=TMrDkgkXZPuHLgSe1rrTlftIKRIRxBNPqazPrWUY-yw,16
+bulk_api_client-3.4.1.dist-info/RECORD,,

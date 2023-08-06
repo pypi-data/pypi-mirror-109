@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bulk-api-client
+Version: 3.4.1
+Summary: UNKNOWN
+Home-page: https://github.com/pivotbio/bulk-api-python-client
+Author: Mikela Clemmons & Donnell Muse
+Author-email: infra@pivotbio.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas (>=0.25.2)
+Requires-Dist: requests (<2.25,>=2.22)
+Requires-Dist: requests-cache (~=0.6.4)
+Requires-Dist: PyYAML (~=5.4.1)
+Provides-Extra: dev
+Requires-Dist: pytest (==6.1.1) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.10.1) ; extra == 'dev'
+Requires-Dist: flake8 (==3.8.4) ; extra == 'dev'
+Requires-Dist: pytest-randomly (==3.4.1) ; extra == 'dev'
+Requires-Dist: pytest-repeat (==0.8.0) ; extra == 'dev'
+Requires-Dist: pytest-vcr (~=1.0.2) ; extra == 'dev'
+Requires-Dist: pdoc3 (<0.10.0,>=0.6.2) ; extra == 'dev'
+Requires-Dist: black (~=19.10b0) ; extra == 'dev'
+
+UNKNOWN
+
