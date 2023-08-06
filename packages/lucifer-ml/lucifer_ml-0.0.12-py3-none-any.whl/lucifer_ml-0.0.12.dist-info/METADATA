@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lucifer-ml
+Version: 0.0.12
+Summary: Automated ML by d4rk-lucif3r
+Home-page: https://github.com/d4rk-lucif3r/LuciferML
+Author: Arsh Anwar
+Author-email: lucifer78908@gmail.com
+License: MIT
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: imblearn
+Requires-Dist: xgboost
+Requires-Dist: tensorflow
+
+# LuciferML a Semi-Automated Machine Learning Library by d4rk-lucif3r
+
+
