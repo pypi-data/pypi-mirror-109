@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: pytest-qatouch
+Version: 0.1.0
+Summary: Pytest plugin for uploading test results to your QA Touch Testrun.
+Home-page: https://github.com/MohamedRaslan/pytest-qatouch
+Author: Mohamed Raslan
+Author-email: MohamedRaslanG@gmail.com
+License: MIT License
+Project-URL: Issue Tracker, https://github.com/MohamedRaslan/pytest-qatouch/issues
+Keywords: qatouch,pytest,pytest-qatouch,pytest-pyqatouch
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Environment :: Plugins
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest (>=6.2.0)
+Requires-Dist: requests (>=2.25.1)
+
+# pytest-qatouch
+
+Pytest plugin for uploading test results to your QA Touch Testrun.
+
+## Features
+
+- It only will upload the test results to the specified testrun in your Qatouch portal
+
+pytest-plugin testrail pytest-pytestrail
+
+## Installation
+
+You can install "pytest-qatouch" via **[pip](https://pypi.org/project/pip/)** from **[PyPI](https://pypi.org/project/pytest-qatouch/)**::
+
+```shell
+pip install pytest-pytestrail
+```
+
+## Usage
+
+```python
+from pytest_qatouch import qatouch
+
+
+@qatouch.TR(10)
+def test_for_testcase_number0010():
+    assert True
+
+@qatouch.TR(9)
+def test_for_testcase_number0009():
+    assert False
+```
+
+And If you want to use it with a parameterized tests , you can do as the example below.
+
+```python
+import pytest
+from pytest_qatouch import qatouch
+
+@pytest.mark.parametrize(
+    "num1,num2",
+    [
+        (9, 8),
+        pytest.param(8, 10, marks=qatouch.TR(2)),
+        pytest.param(0, 10, marks=qatouch.TR(10)),
+        pytest.param(1, 4, marks=qatouch.TR(9)),
+    ],
+)
+def test_six(num1, num2):
+    assert num1+num2 >= 10
+```
+
+### Configuration
+
+You can use a **config file** or pass it to `pytest` as **command line options**.
+
+#### Config file
+
+`pytest.ini` or `setup.cfg` **[pytest configuration](https://docs.pytest.org/en/latest/customize.html)**
+
+```ini
+[pytest]
+qatouch (string):                        Enable the qatouch plugin (Set it to 'True' to enable it)
+qatouch-subdomain (string):              Your qatouch submodule name (i.e <your_subdomain>.qatouch.com)
+qatouch-api-token (string):              Your qatouch API token
+qatouch-project-key (string):            The qatouch project key
+qatouch-testrun-key (string):            The testrun key in qatouch project
+```
+
+#### Command line options
+
+```bash
+--qatouch                        Enable the qatouch plugin (Set it to 'True' to enable it)
+--qatouch-subdomain              Your qatouch submodule name (i.e <your_subdomain>.qatouch.com)
+--qatouch-api-token              Your qatouch API token
+--qatouch-project-key            The qatouch project key
+--qatouch-testrun-key            The testrun key in qatouch project
+```
+
+## Issues
+
+If you encounter any problems, please **[file an issue](https://github.com/MohamedRaslan/pytest-qatouch/issues)** along with a detailed description.
+
+## Contributing
+
+Contributions are very welcome.
+
+

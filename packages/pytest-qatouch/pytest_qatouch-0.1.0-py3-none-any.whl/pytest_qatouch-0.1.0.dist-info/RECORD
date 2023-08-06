@@ -1,0 +1,10 @@
+pytest_qatouch/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+pytest_qatouch/plugin.py,sha256=oh7GwtibUiSvZQzBUAgqIlpAw_D74q6UYiV0oKdBOhQ,3497
+pytest_qatouch/qatouch.py,sha256=diAUkzrjcXHrw6Qp2TRNC87rcJhT-gjtzkfCUeCjVcE,2268
+pytest_qatouch/utils.py,sha256=vkCQy6_U-mxGlMbYcSOrOLN-4ioM0cjzlSeGFQNNtAY,719
+pytest_qatouch-0.1.0.dist-info/LICENSE,sha256=KDEyKKw5v5_UUZNMmziLT1BmLg2ctkYzRaeYjLuvNX4,1104
+pytest_qatouch-0.1.0.dist-info/METADATA,sha256=dvt2rF09jiql_vOYiQwfWwVhjirr1SU0KQbV-vF0law,3777
+pytest_qatouch-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytest_qatouch-0.1.0.dist-info/entry_points.txt,sha256=jP1W-CICCoPAs8AqGij2hOKzipMJKvwKgUZ0UAdDvYs,46
+pytest_qatouch-0.1.0.dist-info/top_level.txt,sha256=qNQuP5G2PY-G0fEs_dQdQMGHfksM-hvtpCjC4u-SBto,32
+pytest_qatouch-0.1.0.dist-info/RECORD,,
