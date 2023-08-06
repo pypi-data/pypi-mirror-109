@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+src/robustGMM/__init__.py
+src/robustGMM/generator.py
+src/robustGMM/robustGMM.py
+src/robustGMM.egg-info/PKG-INFO
+src/robustGMM.egg-info/SOURCES.txt
+src/robustGMM.egg-info/dependency_links.txt
+src/robustGMM.egg-info/requires.txt
+src/robustGMM.egg-info/top_level.txt
+src/robustgmm.egg-info/PKG-INFO
+src/robustgmm.egg-info/SOURCES.txt
+src/robustgmm.egg-info/dependency_links.txt
+src/robustgmm.egg-info/requires.txt
+src/robustgmm.egg-info/top_level.txt
