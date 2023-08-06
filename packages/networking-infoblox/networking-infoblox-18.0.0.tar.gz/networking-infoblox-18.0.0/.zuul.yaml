@@ -1,0 +1,4 @@
+- project:
+    templates:
+      - openstack-python36-jobs-neutron
+      - publish-to-pypi
