@@ -1,0 +1,11 @@
+pdf_compressor/__init__.py,sha256=-cpXfvVAPPJzQcDEhVxp8c3DWZ0gZr6iOZF59p32zNI,100
+pdf_compressor/env.py,sha256=illbq1zfTefCOlotQRJSiWrXFGOjAPmBdltERZag05Y,110
+pdf_compressor/ilovepdf.py,sha256=PiVcZ4bccG2KJhk3r9M2LtXiUsOILg4EwLkZN3hXC_U,8796
+pdf_compressor/main.py,sha256=w0r_zd0eR8eff_LnJSSF2-zwuj52iV6IRrfGrhO_WS4,4144
+pdf_compressor/utils.py,sha256=kWSdL6GxqAQvWSTqRhurX_T7LJCp_tywzfqP0jd81HY,499
+pdf_compressor-0.1.1.dist-info/METADATA,sha256=hLAfjK3PGfj6PoDMihRXmHtYOPFa5sklLJrUv5tSXYE,2551
+pdf_compressor-0.1.1.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+pdf_compressor-0.1.1.dist-info/entry_points.txt,sha256=NBm8E3C6mvAg1TwP6B3v73m_DoHJEZ5ZPM6fEL6whHE,56
+pdf_compressor-0.1.1.dist-info/license,sha256=04dPap-0nK27UEOCkJ1Va9A7iVIybuQfHfNPfZ7z2LQ,1072
+pdf_compressor-0.1.1.dist-info/top_level.txt,sha256=06mKqczyFT7D3p3ZhfvR4wRFglo3E3ycL4n-V2ychbA,15
+pdf_compressor-0.1.1.dist-info/RECORD,,
