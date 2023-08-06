@@ -1,0 +1,13 @@
+matplotlib
+numpy
+scipy
+tifffile==2021.4.8
+numba
+tqdm
+jupyter
+pandas
+seaborn
+scikit-image
+colorspacious
+itkwidgets
+pytest
