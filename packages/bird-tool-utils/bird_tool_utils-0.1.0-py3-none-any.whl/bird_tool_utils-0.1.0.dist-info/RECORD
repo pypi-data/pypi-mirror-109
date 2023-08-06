@@ -1,0 +1,11 @@
+bird_tool_utils/__init__.py,sha256=Zbd8n31bGzKOpbUX_qJYdVQVtqLYwcC7mGmpdNlDDMo,1187
+bird_tool_utils/argparsing.py,sha256=dBX26dUvRaWzJpSOH4bmp9oamO7xcbnk-1hfvkm9MOg,9197
+bird_tool_utils/people.py,sha256=_HIMQwY1f6H2uJgzea0Mi_nH9uQjTMJAgB9ELqLgS4s,273
+bird_tool_utils/version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+bird_tool_utils-0.1.0.data/data/LICENCE.txt,sha256=CuBIWlvTemPmNgNZZBfk6w5lMzT6bH-TLKOg6F1K8ic,35148
+bird_tool_utils-0.1.0.data/data/README.md,sha256=bi6YGeFyqZ5Iv5yjyvD-W9yl9VACvvvnpKMiVUBdhQo,494
+bird_tool_utils-0.1.0.dist-info/LICENCE.txt,sha256=CuBIWlvTemPmNgNZZBfk6w5lMzT6bH-TLKOg6F1K8ic,35148
+bird_tool_utils-0.1.0.dist-info/METADATA,sha256=WHGXt4pkwekUi_qLCdpJ7F04SIl61Tf8QDNa3Gnr8Gs,988
+bird_tool_utils-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+bird_tool_utils-0.1.0.dist-info/top_level.txt,sha256=g_uPhChXXnRYqlm4v2MbSbCNzJVCGqpMwbZCw1Wt1h0,16
+bird_tool_utils-0.1.0.dist-info/RECORD,,
