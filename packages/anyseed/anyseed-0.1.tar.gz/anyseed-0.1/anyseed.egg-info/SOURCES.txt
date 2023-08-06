@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+anyseed/__init__.py
+anyseed/anyseed.py
+anyseed/electrum.py
+anyseed/old_mnemonic.py
+anyseed/wordlist.py
+anyseed.egg-info/PKG-INFO
+anyseed.egg-info/SOURCES.txt
+anyseed.egg-info/dependency_links.txt
+anyseed.egg-info/not-zip-safe
+anyseed.egg-info/top_level.txt
