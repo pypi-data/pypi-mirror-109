@@ -1,0 +1,13 @@
+scikit_na/__init__.py,sha256=8wB4X0tpUUIgNsnauFJbphHeYYCEticKAeJXAWW5fxc,152
+scikit_na/_report.py,sha256=swaQaHOPMaA390tWsK0dx-cLIuLT0_gURR62-22-6uM,10706
+scikit_na/_stats.py,sha256=1mYN8rcxEfNpIw9I5nRUsY2ELK54pGo3YswH1CQI9WQ,11803
+scikit_na/altair/__init__.py,sha256=D4FGenRVOdbALo8dJ0Se_hM6I9BPM8yZb1XWOhxffqw,43
+scikit_na/altair/_altair.py,sha256=iiLPw_GVfM42fzpCRc1MzhUTCuHnLjbNYuYtcZAzlYo,19676
+scikit_na/mpl/__init__.py,sha256=f7fQcEJX-NF6jpwzwvALHqVPOhB-FzZeFTegUOZSLoM,20
+scikit_na/mpl/_mpl.py,sha256=oKACHsCML--2mLwU79Wp8dmG2kR-zUu0xPG522FsRyw,12975
+scikit_na-0.0.1.dist-info/LICENSE,sha256=I_IRKHVivbEugynHcrvABY6sjbgnZxfrs_fEpBGqOJs,1075
+scikit_na-0.0.1.dist-info/METADATA,sha256=NZzgnKZ54x7CazPriJFDQhfTymHOlXkrCycNKPcfTvo,8879
+scikit_na-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+scikit_na-0.0.1.dist-info/top_level.txt,sha256=SL95xQMie022CrBd7l_9O2TeY_aOi5w6v4XuMsdVYtI,10
+scikit_na-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+scikit_na-0.0.1.dist-info/RECORD,,
