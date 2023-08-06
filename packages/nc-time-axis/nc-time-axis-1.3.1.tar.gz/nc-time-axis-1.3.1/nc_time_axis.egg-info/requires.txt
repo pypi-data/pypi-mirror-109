@@ -1,0 +1,14 @@
+cftime>=1.5
+matplotlib
+numpy
+
+[all]
+pre-commit
+codecov
+pytest>=6.0
+pytest-cov
+
+[test]
+codecov
+pytest>=6.0
+pytest-cov
