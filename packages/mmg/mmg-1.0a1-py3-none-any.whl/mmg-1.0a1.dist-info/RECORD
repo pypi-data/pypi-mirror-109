@@ -1,0 +1,11 @@
+mmg-1.0a1.data/scripts/mmg,sha256=8I7OJxbY7yLMxeWwZq9AliUifsZdVTzTyAIb2hVBWbE,118
+mmgcli/__init__.py,sha256=DY5hEX-dfMMp1gytHY_J5MiBv_qdqSRJ7D2KUa4gydA,94
+mmgcli/__main__.py,sha256=M6iPaS6fbNnskHCpLITecukyFb3GWZ7Xe27qI8szDS4,237
+mmgcli/base_parser.py,sha256=QjZahiLkxuzrRlByzCPO1xtgUd8-q-QZLEKxiT8RoJ4,9933
+mmgcli/cli.py,sha256=zUkts5RIyw8F4lxHp27XSaiKACXkBmMszsCwq8t2q1A,4326
+mmgcli/single_gen.py,sha256=gu1TDokoTC0LOsMQdfwAUP4fD2H1ooreGw4uemwOp6g,3846
+mmg-1.0a1.dist-info/LICENSE,sha256=aVZygwW_Jh6ZeEgWEMFnDPMBI-wVM7QSSq-NfTP9XPg,1072
+mmg-1.0a1.dist-info/METADATA,sha256=bvIujaY2bBbf2Zt9v44hwioRY_16KhyMPCWwKBo2wPg,11959
+mmg-1.0a1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mmg-1.0a1.dist-info/top_level.txt,sha256=pWShBYE9b6vziqQGWEDpYOBRVf4A4EuVQem4Jsnz9GM,7
+mmg-1.0a1.dist-info/RECORD,,
