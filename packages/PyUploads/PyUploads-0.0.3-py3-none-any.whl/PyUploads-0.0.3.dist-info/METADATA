@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: PyUploads
+Version: 0.0.3
+Summary: Wrapper for websites such as Throwbin.io
+Home-page: UNKNOWN
+Author: Gowixx
+Author-email: <notgowixxmen@protonmail.ch>
+License: UNKNOWN
+Keywords: python,throwbin,pythrowbin,python throwbin,throwbin.io,python uploads,pyuploads
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+
+# PyUploads
+A python wrapper for uploading information to websites such as `throwbin.io`
+
+## Installation
+You can either install the module via PyPi or directly from the GitHub Repository. If you want to download via `pip` / `PyPi` execute the following command:
+```bash
+pip[3] install PyUploads
+```
+
+## Example Usage
+```bash
+import PyUploads
+
+try:
+    print(
+        PyUploads.Throwbin.Create(
+            'Paste Title', 
+            'Paste Content'
+        )
+    )
+except PyUploads.CreationError:
+    print('Failed to Upload')
+```
+
