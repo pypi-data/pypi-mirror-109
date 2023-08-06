@@ -1,0 +1,7 @@
+build:
+  carnapy: 0.1.0
+  carna: 3.3.0
+
+package:
+  carna: 3.3.0
+
