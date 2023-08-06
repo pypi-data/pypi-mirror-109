@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: boggle_solver
+Version: 0.8
+Summary: A package for auto-generating the possible combinations of a boggle grid.
+Home-page: https://github.com/euanacampbell/boggle_solver
+Author: Euan Campbell
+Author-email: dev@euan.app
+License: MIT
+Download-URL: https://github.com/euanacampbell/boggle_solver/archive/refs/heads/master.tar.gz
+Description: UNKNOWN
+Keywords: boggle,puzzle,recursive
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
