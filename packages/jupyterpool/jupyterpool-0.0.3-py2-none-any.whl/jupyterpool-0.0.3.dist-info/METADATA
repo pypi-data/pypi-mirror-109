@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: jupyterpool
+Version: 0.0.3
+Summary: Jupyterpool
+Home-page: https://github.com/datalayer/jupyterpool
+License: MIT
+Project-URL: Documentation, https://jupyterpool.readthedocs.io
+Keywords: datalayer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+Requires-Dist: typing
+Provides-Extra: code_style
+Requires-Dist: flake8 (<3.8.0,>=3.7.0) ; extra == 'code_style'
+Requires-Dist: black ; extra == 'code_style'
+Requires-Dist: pre-commit (==1.17.0) ; extra == 'code_style'
+Provides-Extra: rtd
+Requires-Dist: myst-parser ; extra == 'rtd'
+Requires-Dist: pyyaml ; extra == 'rtd'
+Requires-Dist: docutils (>=0.15) ; extra == 'rtd'
+Requires-Dist: sphinx ; extra == 'rtd'
+Requires-Dist: sphinxcontrib-bibtex ; extra == 'rtd'
+Requires-Dist: ipython ; extra == 'rtd'
+Requires-Dist: sphinx-book-theme ; extra == 'rtd'
+Requires-Dist: sphinx-tabs ; extra == 'rtd'
+Provides-Extra: sphinx
+Provides-Extra: testing
+Requires-Dist: coverage ; extra == 'testing'
+Requires-Dist: pytest (<4,>=3.6) ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: pytest-regressions ; extra == 'testing'
+Requires-Dist: beautifulsoup4 ; extra == 'testing'
+
+[![Datalayer](https://raw.githubusercontent.com/datalayer/datalayer/main/res/logo/datalayer-25.svg?sanitize=true)](https://datalayer.io)
+
+# 🏊 Jupyterpool
+
+> Jupyterpool, instant Jupyter Kernels and Servers.
+
+Jupyterpool maintains a pool of remote Jupyter kernels and servers living on a [Kubernetes](https://kubernetes.io) cluster.
+
+This allows to remove the `cold-start` issue user face having when launching a notebook on [Binder](https://mybinder.org) or [JupyterHub](https://github.com/jupyterhub). While requesting a Kernel (python, julia, dask...), a user will also request datasets to be mounted.
+
+We are building Jupyterpool on top of the [upcoming Kernel Enviroment Provisioning](https://github.com/jupyter/jupyter_client/issues/608).
+
+```bash
+# Setup your development environment.
+conda deactivate && \
+  make env-rm # If you want to reset your env.
+make env && \
+  conda activate jupyterpool
+```
+
+```bash
+# Clean, install and build.
+make clean
+make install
+make build
+```
+
+```bash
+# Start the storybook.
+echo open http://localhost:9001
+make storybook
+```
+
+
