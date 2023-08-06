@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: expiring-cache
+Version: 1.0.0
+Summary: A simple Python dict with TTL support for auto-expiring caches with support for case-insensitive keys.
+Home-page: https://github.com/ItsArtemiz/expiring-cache
+Author: ItsArtemiz
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# expiring-cache
+
+A simple Python dict with TTL support for auto-expiring caches with support for case-insensitive keys.
+
+## Installation
+
+```python
+pip install expiring-cache
+```
+
+## Features
+
+- TTL support for auto-caching
+- Case-insensitive keys support
+
+## Usage
+
+Example 1:
+
+```python
+import time
+from cache import ExpiringCache
+
+cache = ExpiringCache(2) # Keys will exist for 2 seconds.
+
+cache['ABC'] = 'Example value'
+print(cache['ABC']) # Prints the 'Example Value'
+time.sleep(2)
+print(cache['ABC']) # Raises KeyError
+```
+
+Example 2: (shows case-insensitive feature)
+
+```python
+import time
+from cache import ExpiringCache
+
+cache = ExpiringCache(2, case_insensitive=True)
+
+cache['ABC'] = 'Example value'
+print(cache['ABC'])
+print(cache['abc'])
+# Both print statements above print the exact same 'Example Value'
+
+time.sleep(2)
+print(cache['ABC'])
+print(cache['abc'])
+# Both the print statements above raise KeyError
+```
+
+
