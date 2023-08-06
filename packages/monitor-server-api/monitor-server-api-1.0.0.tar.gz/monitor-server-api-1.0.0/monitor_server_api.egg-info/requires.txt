@@ -1,0 +1,10 @@
+sqlalchemy
+uwsgi
+pyyaml
+flask<2.0.0
+pandas
+wheel
+flask-restx
+werkzeug<2.0.0
+requests
+flask-sqlalchemy
