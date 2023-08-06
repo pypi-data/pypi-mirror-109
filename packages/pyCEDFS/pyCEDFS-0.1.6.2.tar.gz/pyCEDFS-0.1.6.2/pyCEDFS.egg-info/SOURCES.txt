@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pyCEDFS/CFSConverter.py
+pyCEDFS/__init__.py
+pyCEDFS/pyCEDFS.py
+pyCEDFS.egg-info/PKG-INFO
+pyCEDFS.egg-info/SOURCES.txt
+pyCEDFS.egg-info/dependency_links.txt
+pyCEDFS.egg-info/requires.txt
+pyCEDFS.egg-info/top_level.txt
