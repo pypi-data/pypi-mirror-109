@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+acmepy.egg-info/PKG-INFO
+acmepy.egg-info/SOURCES.txt
+acmepy.egg-info/dependency_links.txt
+acmepy.egg-info/requires.txt
+acmepy.egg-info/top_level.txt
