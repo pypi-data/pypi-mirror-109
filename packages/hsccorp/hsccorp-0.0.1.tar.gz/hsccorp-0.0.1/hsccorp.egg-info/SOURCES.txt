@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+hsccorp.egg-info/PKG-INFO
+hsccorp.egg-info/SOURCES.txt
+hsccorp.egg-info/dependency_links.txt
+hsccorp.egg-info/top_level.txt
