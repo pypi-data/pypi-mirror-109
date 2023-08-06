@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+magic_metrics/__init__.py
+magic_metrics/classification_metrics.py
+magic_metrics/regression_metrics.py
+magic_metrics.egg-info/PKG-INFO
+magic_metrics.egg-info/SOURCES.txt
+magic_metrics.egg-info/dependency_links.txt
+magic_metrics.egg-info/top_level.txt
