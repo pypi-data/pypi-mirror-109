@@ -1,0 +1,3 @@
+[console_scripts]
+madflow = madflow.scripts.madflow_exec:main
+
