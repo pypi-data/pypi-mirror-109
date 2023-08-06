@@ -1,0 +1,7 @@
+numpy
+pandas
+eth_utils
+eth_tester==0.5.0b4
+eth-hash==0.3.1
+eth-hash[pycryptodome]
+py-evm==0.4.0a4
