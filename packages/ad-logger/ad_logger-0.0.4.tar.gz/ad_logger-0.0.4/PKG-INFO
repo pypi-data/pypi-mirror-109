@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ad_logger
+Version: 0.0.4
+Summary: Python Logging library wrapper
+Home-page: http://power_dev.adalytyx.ai/
+Author: Daqian
+Author-email: daqian.zhang@g42.ai
+License: Group 42 Licence
+Description: logger with kafka handler
+Keywords: logging,wrap
+Platform: any
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown

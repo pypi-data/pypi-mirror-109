@@ -1,0 +1,11 @@
+README.md
+setup.py
+ad_logger/__init__.py
+ad_logger/__version__.py
+ad_logger/kafka_handler.py
+ad_logger.egg-info/PKG-INFO
+ad_logger.egg-info/SOURCES.txt
+ad_logger.egg-info/dependency_links.txt
+ad_logger.egg-info/not-zip-safe
+ad_logger.egg-info/requires.txt
+ad_logger.egg-info/top_level.txt
