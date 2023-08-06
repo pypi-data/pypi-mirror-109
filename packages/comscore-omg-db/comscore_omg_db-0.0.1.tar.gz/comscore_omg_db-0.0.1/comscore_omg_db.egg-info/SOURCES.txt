@@ -1,0 +1,9 @@
+README.md
+setup.py
+comscore_omg/__init__.py
+comscore_omg/comscore_omg.py
+comscore_omg_db.egg-info/PKG-INFO
+comscore_omg_db.egg-info/SOURCES.txt
+comscore_omg_db.egg-info/dependency_links.txt
+comscore_omg_db.egg-info/requires.txt
+comscore_omg_db.egg-info/top_level.txt
