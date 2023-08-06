@@ -1,0 +1,14 @@
+userprovided/__init__.py,sha256=Z3pHAGXfOR9sVxcYeYSb_HUIzDosp3DWvHot0nWcWDQ,573
+userprovided/_version.py,sha256=DiI9MZunzxBwinEVhu7mGP_pVq9AY90bprheDxlAGkk,168
+userprovided/date.py,sha256=Bmc2IkY8LQeq0y4AzGPFFPgUyBoOKGR84djYZELdiQs,4314
+userprovided/hash.py,sha256=SCTz0fUIqMU7as9a-O7mKA_Iz3fIVeHpoQX3smwGeHQ,1314
+userprovided/hashing.py,sha256=Uocbca-ZxWQEmK-ipvRDyhkTgSGn0nh2zoKEXUl-YnI,3143
+userprovided/mail.py,sha256=fryRji8G-cD6-xDEwZ7nYKHNnGeuUGzFS-TDzBXfHPU,833
+userprovided/parameters.py,sha256=UlcbHEXsBmnNlUMhsEmbI0L8Hc5f--7I6HB8Y4nnmRA,9948
+userprovided/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+userprovided/url.py,sha256=WWWmvUyVLVA-RFLfMafmPEWhbFoI95DLmA8phE8X10c,7882
+userprovided-0.9.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+userprovided-0.9.1.dist-info/METADATA,sha256=JsMEWW9_2dLQFpzwEj2Xud3JfBy_S776MGjrjO4PmtE,8157
+userprovided-0.9.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+userprovided-0.9.1.dist-info/top_level.txt,sha256=KXz92EurHrEit5H6d4SDhfy_fCCGb8wGSSt0qPYiQZU,13
+userprovided-0.9.1.dist-info/RECORD,,
