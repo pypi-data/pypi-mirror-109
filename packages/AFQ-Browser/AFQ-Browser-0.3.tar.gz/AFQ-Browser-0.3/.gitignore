@@ -1,0 +1,4 @@
+afqbrowser/version.py
+*.pyc
+./doc/_build
+.DS_Store
