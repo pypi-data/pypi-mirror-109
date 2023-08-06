@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+SpinFa.egg-info/PKG-INFO
+SpinFa.egg-info/SOURCES.txt
+SpinFa.egg-info/dependency_links.txt
+SpinFa.egg-info/top_level.txt
