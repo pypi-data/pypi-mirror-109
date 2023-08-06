@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+performance_logger/__init__.py
+performance_logger/logger.py
+performance_logger/main.py
+performance_logger/test.py
+performance_logger.egg-info/PKG-INFO
+performance_logger.egg-info/SOURCES.txt
+performance_logger.egg-info/dependency_links.txt
+performance_logger.egg-info/not-zip-safe
+performance_logger.egg-info/requires.txt
+performance_logger.egg-info/top_level.txt
