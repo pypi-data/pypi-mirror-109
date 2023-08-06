@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+Krave.egg-info/PKG-INFO
+Krave.egg-info/SOURCES.txt
+Krave.egg-info/dependency_links.txt
+Krave.egg-info/top_level.txt
