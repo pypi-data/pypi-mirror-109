@@ -1,0 +1,11 @@
+decorata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+decorata/augmentations.py,sha256=wTZOf1E7YdZFXbUPWNMYPVI-vGY6AKzTtN577tRwU_c,1989
+decorata/data.py,sha256=d4tkf9KQbH28jAUkHVAUGoJu1G-gMmA305wf0UPNwvg,8221
+decorata/transforms.py,sha256=npCugSoLfPTHDVwK6TFi8qwjsAfMplei0KrLiJT-d1Q,1001
+decorata/utils/__init__.py,sha256=5LOTXKPs7kr0ZnKuEkGDfGEGWEckK7wn0eUJPn5R02M,185
+decorata/utils/chart.py,sha256=LJFsgrIqvXP3FSvfEJcvxPJN-yUAfsLumbgrqkSXq6k,647
+decorata-0.0.1a1.dist-info/LICENSE,sha256=yZ3-8GzjWYnyMZfnBzi-5tbkCwr_sga2ajtTwn9Ae-Y,1065
+decorata-0.0.1a1.dist-info/METADATA,sha256=QmnpO8csZgy_yB85Z7xQ2Z2fzVBu9vk6_WiUJcM8mbE,2725
+decorata-0.0.1a1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+decorata-0.0.1a1.dist-info/top_level.txt,sha256=VWNZRzkhsMqMTKxev94ZLjPEE47u7jrKAjqNm2rKrYQ,9
+decorata-0.0.1a1.dist-info/RECORD,,
