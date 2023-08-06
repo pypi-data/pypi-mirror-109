@@ -1,0 +1,3 @@
+[console_scripts]
+barenames=barenames.__main__:main
+
