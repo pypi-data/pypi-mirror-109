@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+src/covid19/__init__.py
+src/covid19/covid_data.py
+src/covid19/lk_data.py
+src/covid19_nuuuwan.egg-info/PKG-INFO
+src/covid19_nuuuwan.egg-info/SOURCES.txt
+src/covid19_nuuuwan.egg-info/dependency_links.txt
+src/covid19_nuuuwan.egg-info/top_level.txt

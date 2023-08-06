@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: covid19-nuuuwan
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/nuuuwan/covid19
+Author: Nuwan I. Senaratna
+Author-email: nuuuwan@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/nuuuwan/covid19/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# covid19
+
+## Setup and Install
+
+To install a stable version:
+
+```
+pip install covid19-nuuuwan
+```
+
+To install a pre-release (which might have more features, but also be
+less stable):
+
+```
+pip install -i https://test.pypi.org/simple/ covid19-nuuuwan
+```
+
+## Release History
+
+### 1.0.0 Initial Release
+
+* Load data from the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University.
+* Load data from the Health Promotion Bureau of Sri Lanka
+* See https://nuwans.medium.com/analyzing-covid19-in-sri-lanka-with-python-caea03296381 for some examples
+
+
