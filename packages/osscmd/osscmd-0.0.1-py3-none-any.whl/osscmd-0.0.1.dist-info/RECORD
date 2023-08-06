@@ -1,0 +1,13 @@
+osscmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osscmd/__main__.py,sha256=eaRFjWhidrAOrYup2wDjw5PxtKDE2HiCKFBCNyrybdE,1323
+osscmd/args.py,sha256=Iutj7IttAaLJceNKU1bYH6yVvX2UrE0QynABJVyzPQ0,987
+osscmd/conf.py,sha256=ir61aVcMXIex0VbM_wYOSAqUqF8YnjxyN3qkjm4KU6g,354
+osscmd/log_util.py,sha256=UgHPIuVY7NTFslhTmLbgF8gB5Rt8V9D-OR2SFt-Mrig,46
+osscmd/oss_ops.py,sha256=_xcEMOK2mW_nreoOwehhbLGDw8S7sj4o_nK_ga3s_Ck,4254
+osscmd/package_info.py,sha256=NNg4MadojY64V6L8-IxOsMt_aHxfWdBg0Zgrp7ajA-Q,132
+osscmd/path_util.py,sha256=4khzMcQobdeQU6ZySdWQDxt_M27I-melN7h1GnELIcc,670
+osscmd-0.0.1.dist-info/METADATA,sha256=ZGm4qy8CVup6bcKd5nuXKtbl-BYEqQ8oZTmweIDOtlI,233
+osscmd-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+osscmd-0.0.1.dist-info/entry_points.txt,sha256=ifviKSMkOkjZ3NbAp8_GWNrUdiu96gpeuGwwq8m4NCw,49
+osscmd-0.0.1.dist-info/top_level.txt,sha256=fKdikPxp7fSztUCc4KqgCzWOEeDweeGxdFwee7Kzx4E,7
+osscmd-0.0.1.dist-info/RECORD,,
