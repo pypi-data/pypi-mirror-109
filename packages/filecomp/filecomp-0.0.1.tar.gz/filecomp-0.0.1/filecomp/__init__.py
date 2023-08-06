@@ -1,0 +1,1 @@
+from filecomp_root_directory.filecomp.filecomp import fcomp
