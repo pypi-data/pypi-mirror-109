@@ -1,0 +1,11 @@
+satflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+satflow/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+satflow/data/datasets.py,sha256=9A9GI_HOyez5c7e5bLNIoHIuRhEJwYeZuGSgethiqP4,8860
+satflow/data/utils.py,sha256=loSWF7M5oTlIcODHdI7kDlVyMh7nWFvQ6VD64McAjhs,2688
+satflow/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+satflow/models/metnet.py,sha256=R55yXPIhwHpv7JBj3inFpDkBqiF8bN-ZQ51qeq-udUY,134
+satflow-0.0.1.dist-info/LICENSE,sha256=apuQBDvX5oNtuaWBJcgRQaTuS4pTiqvjP23FGA7P8J8,1073
+satflow-0.0.1.dist-info/METADATA,sha256=wwspbTb3zU8HrZ9Gzn6tsMRviHbwqDoRlcJgn0OYvv0,267
+satflow-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+satflow-0.0.1.dist-info/top_level.txt,sha256=FuHi-wCDamPjt9yQLoGtsBXy6YecM0pshk7eqF4_x7I,8
+satflow-0.0.1.dist-info/RECORD,,
