@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: BIpy
+Version: 0.1.0
+Summary: py for BI
+Home-page: UNKNOWN
+Author: Self
+Author-email: UNKNOWN
+License: BSD 3-Clause License
+Platform: UNKNOWN
+Requires-Dist: numpy (==1.20.3)
+Requires-Dist: pylsl (==1.14.0)
+
+UNKNOWN
+
+
