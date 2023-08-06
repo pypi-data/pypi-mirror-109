@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: traductorkq
+Version: 0.1.1
+Summary: 
+Home-page: https://github.com/Kevinq181/translatorkq.git
+License: MIT
+Keywords: Traductor
+Author: Kevin
+Author-email: kevin.kjqm@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: translate (>=3.5.0,<4.0.0)
+Project-URL: Repository, https://github.com/Kevinq181/translatorkq.git
+Description-Content-Type: text/markdown
+
+# Traductor
+
+Programa para traducir palabras de Ingles a Espanol
+
+## Instalacion
+
+pip install traductorkq
+
+## Forma de uso
+
+traductorkq "hello"
+
+hello -> hola
