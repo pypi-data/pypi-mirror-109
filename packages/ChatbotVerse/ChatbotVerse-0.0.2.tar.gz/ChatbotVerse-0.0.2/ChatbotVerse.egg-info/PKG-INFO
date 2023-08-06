@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ChatbotVerse
+Version: 0.0.2
+Summary: A very simple package for creating amazing neural-network-based chatbots without any hassle.
+Home-page: UNKNOWN
+Author: FORTFANOP (Joel John Mathew)
+Author-email: <thetechnologicalelectronicguy@gmail.com>
+License: UNKNOWN
+Keywords: python,neural networks,machine learning,chatbots,chat,artificial intelligence,virtual assistant,ChatbotVerse
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE.txt
+
+Create amazing chat bots with just an intents.json file. Check out Github for examples -- Github: https://github.com/FORTFANOP/ChatbotVerse
+
