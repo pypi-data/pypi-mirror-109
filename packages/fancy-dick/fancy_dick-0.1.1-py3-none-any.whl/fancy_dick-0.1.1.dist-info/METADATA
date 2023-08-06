@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: fancy-dick
+Version: 0.1.1
+Summary: Leverage the sets filling tool!
+Home-page: https://github.com/regnerischerbuerger/testnet_001
+License: MIT
+Keywords: set
+Author: Ruslan Nikitin
+Author-email: basilstansfield@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Repository, https://github.com/regnerischerbuerger/testnet_001
+Description-Content-Type: text/markdown
+
+# Testnet_001
+_regnerischerbuerger's project_
+
+Проект тестовый, но уже предлагает бесполезную функцию!
+
+Ну, например, используя функцию `update_a_set` вы можете обновить множество Python. 
+Будто бы нам обычного метода не хватало... Ну, зато множество ошибок может быть исключено...
