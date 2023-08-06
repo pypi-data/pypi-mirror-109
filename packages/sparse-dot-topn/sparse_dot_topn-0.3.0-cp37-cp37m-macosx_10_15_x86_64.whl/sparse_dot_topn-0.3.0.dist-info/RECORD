@@ -1,0 +1,16 @@
+sparse_dot_topn/__init__.py,sha256=NrYnwL3BWrW9NQMvkQit7hPiEkFfMbc9ETglbrGiwTA,189
+sparse_dot_topn/array_wrappers.cpython-37m-darwin.so,sha256=ZinOuiGG6c4C0n3swYH2E8CRWSCyjYmz1Pzk1BJcb8Q,85848
+sparse_dot_topn/array_wrappers.pxd,sha256=kFgz8BpAuTsINI8ixnTidLUG9BAAwSNRg9NBNpMbWrk,532
+sparse_dot_topn/array_wrappers.pyx,sha256=jvPiHMvM4CooAaNE-j_UbrEOZ_O6a2R2SlpuAr8TpW0,2927
+sparse_dot_topn/awesome_cossim_topn.py,sha256=CA-fuSD0yTSe59nxtF23e_Dkb6hbyhPpxou73qHUHWw,4768
+sparse_dot_topn/sparse_dot_topn.cpython-37m-darwin.so,sha256=CqF4ixVIsYPaC8HKjCGrJiDcAeZMnGgwxahHK8dXCdE,143160
+sparse_dot_topn/sparse_dot_topn.pyx,sha256=DpHXDC613nbxkEHmKqavaCwnxGmHLlRNVnfDMaP_0cE,7062
+sparse_dot_topn/sparse_dot_topn_parallel.h,sha256=CDVrhkPe-XMiey_jYI5owxFWFi7vAGDYZ_BZ9jtG4gY,1725
+sparse_dot_topn/sparse_dot_topn_source.h,sha256=ieR-1Poh7KrpMQRicyv0OuJjsImbQzU2GXXGBy9VVkM,1891
+sparse_dot_topn/sparse_dot_topn_threaded.cpython-37m-darwin.so,sha256=fRcmv47cnYZkx5lvR221bn_4Sxy0b4GjLxAKoAaIT1w,171056
+sparse_dot_topn/sparse_dot_topn_threaded.pyx,sha256=amDFTgK6UOw2CfTCHb0i6mFwldMInntpH0ol5BwddWU,4610
+sparse_dot_topn-0.3.0.dist-info/LICENSE,sha256=YjUMpko6gSoWuX5Q1VvRej9abh7IPmjoIjUa1cQcf-4,11375
+sparse_dot_topn-0.3.0.dist-info/METADATA,sha256=zCzJcm9dnzIaHV33EAjW8QqimVGDhfm0WuPH9E_sXB8,2326
+sparse_dot_topn-0.3.0.dist-info/WHEEL,sha256=zjhvVxjD6g7O3ejxlonIResSLzKh91a-Z9sfR3zAQ80,111
+sparse_dot_topn-0.3.0.dist-info/top_level.txt,sha256=1Qjv4Rbm7ZEr6nv2x3sUpVNnWAjAPW_U7PNsQLaibWE,16
+sparse_dot_topn-0.3.0.dist-info/RECORD,,
