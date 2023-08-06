@@ -1,0 +1,11 @@
+swmtools/__init__.py,sha256=iGfr2e16ULd1RYR9KdgU5nQup4sppm4KubMzrKsPhTw,97
+swmtools/manytools.py,sha256=-NLiHJkIXibwCyrqKm8HkmIIexnIFDzP4RISgPGR_1E,2927
+swmtools/readmanyfiles.py,sha256=JfrKLd_bNmcHoflkwTcK77eCkvzKPad0SPbUnN5yfkE,2482
+swmtools/ssl.py,sha256=xdfkwjr1a4xEvvBY5p4ePzhlffu3I3nRA2QHNl7tHDo,2876
+swmtools/timeformat.py,sha256=4QfbWBaJ0H0dSezkmkIgaRZ7sB58IIZlezWx4Z1W1jw,3275
+swmtools/logger/__init__.py,sha256=IX8j3p6S5yvpOqHjDVvxC0SGEFKS4NawgAy33jhYLFQ,30
+swmtools/logger/logger.py,sha256=xxtReIoSFykO6BK0aaTffyYRthNu7QqocZXtuM0cxtA,3376
+swmtools-3.0.1.dist-info/METADATA,sha256=c9_BYeaCuHFWkI_mya8PlFcNwATvHRoDCjssCuL8nPg,2447
+swmtools-3.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+swmtools-3.0.1.dist-info/top_level.txt,sha256=AJiykv88JNZJn5yYxWQBDZgmx_EL283bLDJX8ASpAUM,9
+swmtools-3.0.1.dist-info/RECORD,,
