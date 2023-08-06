@@ -1,0 +1,6 @@
+MathFunctions.cpp
+setup.py
+MathFunctions.egg-info/PKG-INFO
+MathFunctions.egg-info/SOURCES.txt
+MathFunctions.egg-info/dependency_links.txt
+MathFunctions.egg-info/top_level.txt
