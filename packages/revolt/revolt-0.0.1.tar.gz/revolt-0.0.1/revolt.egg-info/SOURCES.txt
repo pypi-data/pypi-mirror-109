@@ -1,0 +1,7 @@
+README.md
+setup.py
+revolt/__init__.py
+revolt.egg-info/PKG-INFO
+revolt.egg-info/SOURCES.txt
+revolt.egg-info/dependency_links.txt
+revolt.egg-info/top_level.txt
