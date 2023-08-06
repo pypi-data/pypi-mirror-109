@@ -1,0 +1,12 @@
+selectolax/parser.cpython-39-i386-linux-gnu.so,sha256=5wvHbYi7H11TiWFQBZSMolZfTmAsaLDFQkXtyR2ZCdc,5107880
+selectolax/selector.pxi,sha256=wcHJAhR_Bmaqh90XwFP72TQ_iKs5Pe7HRlM4rrVcxiQ,2328
+selectolax/__init__.py,sha256=ggtcgHlRYb1xs9VXZmDFjyZ3l17IOdAj3bzTmt735Ao,111
+selectolax/node.pxi,sha256=jVnoVkyGpztWZd_LvcRntvYwYokcbX26tnzIzghfW4Y,24832
+selectolax/parser.pyx,sha256=2uEJKfaYvHQOQ8L0NsgZMYWdfq3g3-4UzPnvtG6y5xQ,8027
+selectolax/parser.c,sha256=GezN5bPB5m8Xzi8QGy8Xl69L7Yf9_XsfHlpKXQUvinA,1027751
+selectolax/parser.pxd,sha256=HLS6-b6tZSgp9WvHjmJW5uN88v6E9HVBSvzNb9oIZUA,23932
+selectolax-0.2.12.dist-info/RECORD,,
+selectolax-0.2.12.dist-info/METADATA,sha256=C007i0_lk1-xDy0Q5oO22xW5yPMSIRP9OYz4ilaTpbA,3961
+selectolax-0.2.12.dist-info/top_level.txt,sha256=e5MuEM2PrQzoDlWetkFli9uXSlxa_ktW5jJEihhaI1c,11
+selectolax-0.2.12.dist-info/WHEEL,sha256=_WxAU8k-TvmDMHvdQ1inW5pL6P5qcwjIOO06tw6P1D4,209
+selectolax-0.2.12.dist-info/LICENSE,sha256=O3G1wjFuMmVSi42qtxjf2qcLOOIn9pMYnRBou0C970k,1078
