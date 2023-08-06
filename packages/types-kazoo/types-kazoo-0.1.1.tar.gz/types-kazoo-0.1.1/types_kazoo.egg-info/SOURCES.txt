@@ -1,0 +1,11 @@
+setup.py
+kazoo-stubs/METADATA.toml
+kazoo-stubs/__init__.pyi
+kazoo-stubs/client.pyi
+kazoo-stubs/exceptions.pyi
+kazoo-stubs/recipe/__init__.pyi
+kazoo-stubs/recipe/watchers.pyi
+types_kazoo.egg-info/PKG-INFO
+types_kazoo.egg-info/SOURCES.txt
+types_kazoo.egg-info/dependency_links.txt
+types_kazoo.egg-info/top_level.txt
