@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: animality-py
+Version: 0.1.3
+Summary: A python API wrapper for https://animality.xyz
+Home-page: https://github.com/animality-xyz/animality-py
+Author: vierofernando
+Author-email: vierofernando9@gmail.com
+License: MIT
+Download-URL: https://github.com/animality-xyz/animality-py/archive/0.1.3.tar.gz
+Description: # animality-py
+        Python Wrapper for https://animality.xyz<br>
+        Discord Server: https://discord.gg/ESPMP7BEeJ<br>
+        Made for burber. (Hamburger#0001)<br>
+        ## Installation
+        ```bash
+        $ pip install animality-py
+        ```
+        
+        ## Simple Usage
+        ```py
+        import animality
+        from asyncio import get_event_loop
+        
+        async def run():
+            animal = await animality.get("dog")
+            print(animal.name, animal.image, animal.fact)
+            random = await animality.random()
+            print(random.name, random.image, random.fact)
+        
+        get_event_loop().run_until_complete(run())
+        ```
+        
+        ## Using a session
+        ```py
+        from animality import AnimalityClient
+        from asyncio import get_event_loop
+        
+        async def run():
+            animality = AnimalityClient()
+            animal = await animality.get("dog")
+            print(animal.name, animal.image, animal.fact)
+            random = await animality.random()
+            print(random.name, random.image, random.fact)
+        
+        get_event_loop().run_until_complete(run())
+        ```
+        
+        ## Using the CLI
+        Get an animal.
+        ```bash
+        $ animality cat
+        ```
+        
+        Get a random animal.
+        ```bash
+        $ animality random
+        ```
+        
+        Get multiple animals. (up to 15)
+        ```bash
+        $ animality cat dog panda bunny
+        ```
+Keywords: Animals,API,Hamburger,Pats,Headpats,API Wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
