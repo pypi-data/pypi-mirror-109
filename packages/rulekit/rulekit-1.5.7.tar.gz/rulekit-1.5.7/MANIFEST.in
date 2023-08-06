@@ -1,0 +1,2 @@
+recursive-include rulekit/jar mockito*
+recursive-exclude * doc
