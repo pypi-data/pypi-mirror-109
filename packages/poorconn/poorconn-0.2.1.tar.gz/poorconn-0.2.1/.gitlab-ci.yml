@@ -1,0 +1,136 @@
+# Copyright (C) 2020  Hong Xu <hong@topbug.net>
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Lesser General Public License for more details.
+
+# You should have received a copy of the GNU Lesser General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+include:
+  - template: 'Workflows/MergeRequest-Pipelines.gitlab-ci.yml'
+
+lint:
+  image: "python:3.9"
+  script:
+    - pip install -U tox
+    - tox -vv -e lint
+  interruptible: true
+
+dev:
+  image: "python:3.7"
+  script:
+    - pip install -U tox
+    - tox -vv -e dev
+    - . .tox/dev/bin/activate
+  interruptible: true
+
+.docs:
+  # Use Python 3.9+ because of https://github.com/sphinx-doc/sphinx/issues/8606#issuecomment-752095215
+  image: "python:3.9"
+  script:
+    - pip install -U tox
+    - tox -vv -e docs
+    - mv .tox/docs/_build/html/ public
+  artifacts:
+    paths:
+    - public
+  interruptible: true
+
+docs:
+  extends: ".docs"
+  except:
+    - master
+
+pages:
+  extends: ".docs"
+  stage: deploy
+  only:
+    - master
+
+.runtime:
+  image: "${PYTHON_IMAGE_PREFIX}${PYTHON_VERSION_MINOR}"
+  script:
+    - python -V
+    - pip install -U tox
+    - export TOXENV=${PYTHON_TOX_PREFIX}${PYTHON_VERSION_MINOR}; echo TOXENV=$TOXENV
+    - tox -vv
+    - export TOXENV=${PYTHON_TOX_PREFIX}${PYTHON_VERSION_MINOR}-sanity; echo TOXENV=$TOXENV
+    - tox -vv
+  interruptible: true
+  # Upload coverage data
+  artifacts:
+    reports:
+      cobertura: .tox/${PYTHON_TOX_PREFIX}${PYTHON_VERSION_MINOR}/coverage.xml
+
+.runtime-cpython:
+  extends: ".runtime"
+  variables:
+    PYTHON_IMAGE_PREFIX: "python:3."
+    PYTHON_TOX_PREFIX: "py3"
+
+.runtime-pypy:
+  extends: ".runtime"
+  variables:
+    PYTHON_IMAGE_PREFIX: "pypy:3."
+    PYTHON_TOX_PREFIX: "pypy3"
+
+runtime-cpython-3.7:
+  extends: ".runtime-cpython"
+  variables:
+    PYTHON_VERSION_MINOR: "7"
+
+runtime-cpython-3.8:
+  extends: ".runtime-cpython"
+  variables:
+    PYTHON_VERSION_MINOR: "8"
+
+runtime-cpython-3.9:
+  extends: ".runtime-cpython"
+  variables:
+    PYTHON_VERSION_MINOR: "9"
+
+runtime-pypy-3.7:
+  extends: ".runtime-pypy"
+  variables:
+    PYTHON_VERSION_MINOR: "7"
+
+.docker-test:
+  services:
+    - docker:stable-dind
+  image: docker
+  script:
+    - docker version
+    - docker build . -t poorconn
+    # Create a Docker test-net so we can connect to the poorconn container from another container
+    - docker network create test-net
+    - docker run --rm --expose 8000 --network test-net -d --name poorconn poorconn delay_before_sending_upon_acceptance --t=1 --length=4096
+    - docker ps
+    # Leave some time for the poorconn container to start running
+    - sleep 20
+    # We don't use wget on the "host" because we are not running on a host -- we are running as a sibling of the
+    # poorconn container
+    - docker run --rm --network test-net busybox wget -t 1 http://poorconn:8000
+    - docker stop poorconn
+  interruptible: true
+
+docker-test:
+  extends: ".docker-test"
+  except:
+    - master
+
+docker-deploy:
+  extends: ".docker-test"
+  stage: deploy
+  after_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker tag poorconn $CI_REGISTRY_IMAGE:latest
+    - docker push $CI_REGISTRY_IMAGE:latest
+  only:
+    - master
