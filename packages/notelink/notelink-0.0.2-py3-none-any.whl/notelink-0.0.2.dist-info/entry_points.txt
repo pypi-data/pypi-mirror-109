@@ -1,0 +1,3 @@
+[console_scripts]
+notelink = src.main:cli
+
