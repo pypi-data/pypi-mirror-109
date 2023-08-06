@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: mkdocs-material-relative-language-selector
+Version: 1.0.0
+Summary: Relative access between translations using mkdocs-material theme.
+Home-page: https://github.com/mondeja/mkdocs-material-relative-language-selector
+Author: Álvaro Mondéjar Rubio
+Author-email: mondejar1994@gmail.com
+License: BSD-3-Clause
+Description: # mkdocs-material-relative-language-selector
+        
+        Edit the builtin [mkdocs-material site selector][mkdocs-material-ss-link] to
+        make the links between languages relative.
+        
+        - If you have in Github Pages the URL `https://foo.github.io/bar/es/config/`,
+         you can access it from the URL `https://foo.github.io/bar/config/` selecting
+         Spanish in the language selector.
+        - The current language being displayed will be removed from the language
+         selector, so you will only capable to access to other languages than the
+         current.
+        
+        ## Installation
+        
+        ```
+        pip install mkdocs-material-relative-language-selector
+        ```
+        
+        ## Example configuration
+        
+        ### With [mkdocs-mdpo-plugin][mkdocs-mdpo-plugin-link]
+        
+        ```yaml
+        
+        theme:
+          name: material
+          language: en
+        
+        plugins:
+          - search
+          - material-relative-language-selector
+          - mdpo
+        
+        extra:
+          alternate:
+            - name: English
+              lang: en
+            - name: Español
+              link: es
+              lang: es
+        
+        ```
+        
+        ## Projects using it
+        
+        - [mkdocs-mdpo-plugin][mkdocs-mdpo-plugin-link]
+        
+        
+        [mkdocs-material-ss-link]: https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language-selector
+        [mkdocs-mdpo-plugin-link]: https://mondeja.github.io/mkdocs-mdpo-plugin/
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Documentation
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
