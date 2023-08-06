@@ -1,0 +1,7 @@
+ansible_specdoc/__init__.py,sha256=TOvzsSi8PTlgP4yJIM8ZN5SrhFu_bZViu47Tp7506Js,38
+ansible_specdoc/cli.py,sha256=-Im0slQ4ik1J4-aWWv8hsaVAH2yKPAKEqR9iqkcjrG0,9975
+ansible_specdoc-0.0.5.dist-info/METADATA,sha256=FW5BuKBsmCVLr2wmKNoFP557Qpa1OSNZpvslQiMIMXY,462
+ansible_specdoc-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ansible_specdoc-0.0.5.dist-info/entry_points.txt,sha256=u-6F-3qG1cOqjjOBud0jv5ilzw7vSDPqSvDJ24wCCFw,130
+ansible_specdoc-0.0.5.dist-info/top_level.txt,sha256=2cCEWzdb9nm5ns3BDkEgM6QhkgsIAzedGA9-reDohgE,16
+ansible_specdoc-0.0.5.dist-info/RECORD,,
