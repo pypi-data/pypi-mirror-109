@@ -1,0 +1,5 @@
+jsonpath-ng
+prometheus-client
+protobuf
+starlette
+werkzeug
