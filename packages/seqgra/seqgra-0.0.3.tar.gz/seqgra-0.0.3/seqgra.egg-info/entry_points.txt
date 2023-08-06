@@ -1,0 +1,6 @@
+[console_scripts]
+seqgra = seqgra.seqgra:main
+seqgraa = seqgra.seqgraa:main
+seqgrae = seqgra.seqgrae:main
+seqgras = seqgra.seqgras:main
+
