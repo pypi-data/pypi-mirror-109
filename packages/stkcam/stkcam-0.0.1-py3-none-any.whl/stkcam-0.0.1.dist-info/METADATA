@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: stkcam
+Version: 0.0.1
+Summary: simple tinkerboard camera module
+Home-page: https://github.com/harryliou/stkcam
+Author: Harry Liou
+Author-email: harry_liou@asus.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/harryliou/stkcam/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
