@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: jupyter_federation
+Version: 0.0.3
+Summary: Jupyter Federation
+Home-page: https://github.com/datalayer/jupyter-federation
+License: MIT
+Project-URL: Documentation, https://jupyter-federation.readthedocs.io
+Description: [![Datalayer](https://raw.githubusercontent.com/datalayer/datalayer/main/res/logo/datalayer-25.svg?sanitize=true)](https://datalayer.io)
+        
+        # Jupyter Federation
+        
+        > Jupyter Federation
+        
+Keywords: datalayer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: rtd
+Provides-Extra: code_style
+Provides-Extra: sphinx
+Provides-Extra: testing
