@@ -1,0 +1,7 @@
+python-hcl2>=2.0.0
+networkx>=2.0
+jinja2>=3.0.0
+aiofile>=3.0.0
+
+[docker]
+docker>=5.0.0
