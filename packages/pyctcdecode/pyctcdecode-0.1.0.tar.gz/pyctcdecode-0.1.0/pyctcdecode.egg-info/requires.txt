@@ -1,0 +1,16 @@
+numpy<2.0.0,>=0.16.0
+pygtrie<3.0,>=2.1
+
+[dev]
+bandit
+black
+codecov
+flake8
+jupyter
+mypy
+nbconvert
+nbformat
+pydocstyle
+pylint
+pytest
+pytest-cov
