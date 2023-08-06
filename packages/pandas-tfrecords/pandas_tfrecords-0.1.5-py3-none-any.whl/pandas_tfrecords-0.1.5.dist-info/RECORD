@@ -1,0 +1,8 @@
+pandas_tfrecords/__init__.py,sha256=IMZQ0PzB7uTonI1r6VbILkwlslnBCtoyZpLtxPw-16g,259
+pandas_tfrecords/from_tfrecords.py,sha256=B5D7_nBwoOCsFzN923ci73A4B24rrqTfsoXPpZ2syEc,4643
+pandas_tfrecords/to_tfrecords.py,sha256=nnM2UJhm0Vj7aRjp_ZGEdwz5ObPWx2Hgn014z3gtDmw,3812
+pandas_tfrecords-0.1.5.dist-info/LICENSE,sha256=fQAGhbKOzRlCIHdPe_qYY2jKxpwBfqMqp0SL9dM2-ZU,1063
+pandas_tfrecords-0.1.5.dist-info/METADATA,sha256=qQjNmekHRpOOkKQH8ZHRp5ean5UIlTfzS9VFcAiksiM,5007
+pandas_tfrecords-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pandas_tfrecords-0.1.5.dist-info/top_level.txt,sha256=rq-ms_QhuKvHP5elZzQoDAOyr7FsJo1JRX4ic3P2Jic,17
+pandas_tfrecords-0.1.5.dist-info/RECORD,,
