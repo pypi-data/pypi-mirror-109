@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Face_rec/FaceClass.py
+Face_rec/__init__.py
+Face_rec.egg-info/PKG-INFO
+Face_rec.egg-info/SOURCES.txt
+Face_rec.egg-info/dependency_links.txt
+Face_rec.egg-info/requires.txt
+Face_rec.egg-info/top_level.txt

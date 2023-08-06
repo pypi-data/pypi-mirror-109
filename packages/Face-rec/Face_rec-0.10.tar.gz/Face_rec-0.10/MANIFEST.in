@@ -1,0 +1,4 @@
+include *.pickle
+include *.h5
+include *.prototxt
+include *.caffemodel
