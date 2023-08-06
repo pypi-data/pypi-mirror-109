@@ -1,0 +1,7 @@
+setup.py
+sleepystuffey/__init__.py
+sleepystuffey/sleep.py
+sleepystuffey.egg-info/PKG-INFO
+sleepystuffey.egg-info/SOURCES.txt
+sleepystuffey.egg-info/dependency_links.txt
+sleepystuffey.egg-info/top_level.txt

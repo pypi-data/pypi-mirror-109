@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sleepystuffey
+Version: 0.0.1
+Summary: Automated Reddit to Instagram
+Home-page: UNKNOWN
+Author: Sarah Feucht
+Author-email: <feuchtesari@gmail.com>
+License: UNKNOWN
+Description: A package for automated Reddit subforum scraping and uploading to Instagram.
+Keywords: python,sleep
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
