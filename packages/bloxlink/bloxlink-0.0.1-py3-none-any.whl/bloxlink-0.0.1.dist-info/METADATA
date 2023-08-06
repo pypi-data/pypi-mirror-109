@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bloxlink
+Version: 0.0.1
+Summary: Package for Bloxlink
+Home-page: https://github.com/bloxlink/roblox
+Author: tigerism
+Author-email: admin@blox.link
+License: MIT
+Keywords: async,roblox,bloxlink
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# bloxlink
+
+docs coming soon
+
