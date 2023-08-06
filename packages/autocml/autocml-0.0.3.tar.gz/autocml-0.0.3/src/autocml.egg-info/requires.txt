@@ -1,0 +1,4 @@
+pyyaml
+netmiko
+ntc_templates
+virl2_client
