@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: brunodb
+Version: 0.1.3
+Summary: Useful wrapper for SQLite
+Home-page: https://github.com/dave31415/brunodb
+Author: David Johnston
+Author-email: dave31415@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/brunodb/
+Keywords: SQLite
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pytest
+
+# brunodb
+Lightweight but useful python interface for sqlite
+
+There are no real dependencies besides sqlite3 which is a standard library module and pytest for running tests
+
+To install
+
+pip install brunodb
+
+See these for examples of how to use
+
+https://github.com/dave31415/brunodb/blob/master/brunodb/cars_example.py
+
+
+https://github.com/dave31415/brunodb/blob/master/test/test_cars.py
+
+
+
+
+
+
+
+
+First version April 30, 2020
+
+Make block=False the default for loading
+version='0.1.3'
+
+

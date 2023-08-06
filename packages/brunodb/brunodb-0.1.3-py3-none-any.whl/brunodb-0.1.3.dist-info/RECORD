@@ -1,0 +1,11 @@
+brunodb/__init__.py,sha256=MsJNmELurjqKZpdWm6zvEV02dEM9ZcWlECLvj3Dc1EI,53
+brunodb/cars_example.py,sha256=Fatejvs1_sNtYRBusbiZXTGWCw8a0brusHX6n_1wtv0,897
+brunodb/database.py,sha256=h5Tb_tXUIk0f8h4T6uhkzlhxUP2WF4qMUCgn4LqJufM,2328
+brunodb/perf_test.py,sha256=xoUZDhUlOt4MFsSJ-ogLJkzY1T4NDtvokgGVnh3vnxo,2221
+brunodb/sqlite_utils.py,sha256=9gUNAyVbajUL0BOGXldUWsxSQxU9PHqlIY59SyuR3tE,4558
+brunodb/table.py,sha256=mN1995bI8wIvcToNcj6QeeVvlKSGU_ITR0NaYOI4hBM,4785
+brunodb-0.1.3.dist-info/LICENSE.txt,sha256=OW50HvUHkoPzfF-h2Ppn132X03-AaAjjROKhrBPNJSI,1063
+brunodb-0.1.3.dist-info/METADATA,sha256=Y7DqDvH0un5ozt7f4lIe9m45xMkMUIThEKw3SaMxy3o,860
+brunodb-0.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+brunodb-0.1.3.dist-info/top_level.txt,sha256=VKud4XIMVbwRHVMLZJ8jhyXdtmnEZuowTosC9XB5Lbk,8
+brunodb-0.1.3.dist-info/RECORD,,
