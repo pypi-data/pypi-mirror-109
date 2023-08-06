@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cryptrooper/__init__.py
+src/cryptrooper.egg-info/PKG-INFO
+src/cryptrooper.egg-info/SOURCES.txt
+src/cryptrooper.egg-info/dependency_links.txt
+src/cryptrooper.egg-info/top_level.txt
