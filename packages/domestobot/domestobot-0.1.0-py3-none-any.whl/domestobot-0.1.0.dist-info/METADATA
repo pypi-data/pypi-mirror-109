@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: domestobot
+Version: 0.1.0
+Summary: Your own trusty housekeeper
+Home-page: https://github.com/AliGhahraei/domestobot
+Author: Ali Ghahraei Figueroa
+Author-email: aligf94@gmail.com
+License: GPLv3+
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: typer[all]
+Requires-Dist: tomlkit
+Requires-Dist: pydantic
+Requires-Dist: xdg
+
+https://github.com/AliGhahraei/domestobot
+
