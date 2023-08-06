@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: classicdata
+Version: 0.1.0a1
+Summary: Loaders for classic datasets commonly used in Machine Learning
+Home-page: https://github.com/jangop/classicdata
+Author: Jan Philip Göpfert
+Author-email: janphilip@gopfert.eu
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/jangop/classicdata/issues
+Project-URL: Source, https://github.com/jangop/classicdata
+Keywords: machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: appdirs
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: black ; extra == 'test'
+Requires-Dist: pylint ; extra == 'test'
+
+# Classic Datasets
+
+Loaders for classic datasets commonly used in Machine Learning.
+
+## Installation
+
+```
+pip install git+git://github.com/jangop/classicdata
+```
+
+## Usage
+
+```
+from classicdata import Ionosphere
+
+ionosphere = Ionosphere()
+
+# Use ionosphere.points and ionosphere.labels...
+```
+
