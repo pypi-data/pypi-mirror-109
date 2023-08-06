@@ -1,0 +1,11 @@
+pandas
+click>=7.1.2
+requests
+beautifulsoup4
+pyfiglet
+tqdm
+mechanize
+
+[dev]
+pytest
+pytest-cov
