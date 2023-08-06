@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Docco
+Version: 0.0.1
+Summary: Work in progress - Docco
+Home-page: https://github.com/docco/docco-package
+Author: Docco-Labs
+Author-email: 
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/docco/docco-package/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+WIP
+

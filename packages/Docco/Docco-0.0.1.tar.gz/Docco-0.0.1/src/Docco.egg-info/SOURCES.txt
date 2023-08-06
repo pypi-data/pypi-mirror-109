@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/Docco.egg-info/PKG-INFO
+src/Docco.egg-info/SOURCES.txt
+src/Docco.egg-info/dependency_links.txt
+src/Docco.egg-info/top_level.txt
+src/docco/__init__.py
