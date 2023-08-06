@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: spexm8p
+Version: 0.0.4
+Summary: spexm8p: String pattern expressions prototype that can be logically operated
+Home-page: https://github.com/j5c8k6m8/spex-m8p-py
+Author: j5c8k6m8
+Author-email: j5c8k6m8@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+# spex-m8p-py
+
+String pattern expressions prototype that can be logically operated
+
+# Documentation
+
+[論理演算可能な正規表現エンジンを作ろう | Zenn](https://zenn.dev/j5c8k6m8/books/spex-prototype)
+
+
