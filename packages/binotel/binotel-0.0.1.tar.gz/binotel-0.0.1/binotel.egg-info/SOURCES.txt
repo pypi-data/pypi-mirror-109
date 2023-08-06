@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+binotel/__init__.py
+binotel/app.py
+binotel.egg-info/PKG-INFO
+binotel.egg-info/SOURCES.txt
+binotel.egg-info/dependency_links.txt
+binotel.egg-info/top_level.txt
+tests/__init__.py
