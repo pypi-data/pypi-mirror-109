@@ -1,0 +1,6 @@
+setuptools
+dill
+tqdm
+easy-parallel-py3
+atom3-py3
+click
