@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/fundalytica_utils/__init__.py
+src/fundalytica_utils/data.py
+src/fundalytica_utils/mailer.py
+src/fundalytica_utils/stock.py
+src/fundalytica_utils/utils.py
+src/fundalytica_utils.egg-info/PKG-INFO
+src/fundalytica_utils.egg-info/SOURCES.txt
+src/fundalytica_utils.egg-info/dependency_links.txt
+src/fundalytica_utils.egg-info/top_level.txt
