@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+yaxmldiff.py
+yaxmldiff.egg-info/PKG-INFO
+yaxmldiff.egg-info/SOURCES.txt
+yaxmldiff.egg-info/dependency_links.txt
+yaxmldiff.egg-info/requires.txt
+yaxmldiff.egg-info/top_level.txt
