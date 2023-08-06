@@ -1,0 +1,11 @@
+scraper/__init__.py,sha256=R9xOYoYrWKcfO5zvTeGC3m_eDNOvxMd8CocQs2tLufo,22
+scraper/__main__.py,sha256=ifQeKmBHs6f21Pe9HZSrah-iWF6mJlcO7llOeB8qMGs,648
+scraper/scrape_book.py,sha256=0HlFrFaFBSKrUdD5EDb4uxfmO9zoDJVWwp1IhymHRYc,3421
+scraper/shelf.py,sha256=b37ueJTOBVCcXK7CCut86wIFSBxYeNDwJRBmlJyib7w,3666
+goodreads_user_scraper-0.0.7.dist-info/AUTHORS,sha256=vWXvph75fUYIrrW0hNX3Pl6UOeOF6CYXLvUivI_ddDM,12
+goodreads_user_scraper-0.0.7.dist-info/LICENSE.md,sha256=vmwSpFT3JHtEfpUTp0gWm6tq8OHAOjCmn0GD5xIhMTs,1068
+goodreads_user_scraper-0.0.7.dist-info/METADATA,sha256=axc3tGM-ES22yh6rf60hLxqkdlEanA80oOyDLZllif0,2892
+goodreads_user_scraper-0.0.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+goodreads_user_scraper-0.0.7.dist-info/entry_points.txt,sha256=UGj--ZsqBvYpQ3BXTq1fNZtbz-Wip_Sql4UfXqgtIw0,66
+goodreads_user_scraper-0.0.7.dist-info/top_level.txt,sha256=7mMSfNnJkw1ZNz9GtP5MR6Hh0DYR7LY7dqAaNJATf4c,8
+goodreads_user_scraper-0.0.7.dist-info/RECORD,,
