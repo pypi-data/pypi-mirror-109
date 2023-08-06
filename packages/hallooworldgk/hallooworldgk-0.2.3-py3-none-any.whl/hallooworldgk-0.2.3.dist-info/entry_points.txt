@@ -1,0 +1,4 @@
+[console_scripts]
+halloo = libname:helloworld
+jahman = libname:jah
+
