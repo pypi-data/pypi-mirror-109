@@ -1,0 +1,3 @@
+[console_scripts]
+sited_py = sited_py.bin:main
+
