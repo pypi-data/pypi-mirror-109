@@ -1,0 +1,157 @@
+import json
+import os
+import unittest
+from typing import Any, Dict, Union, Tuple, Optional, Set, Callable
+
+import jsonpath_ng
+from django import test as django_test
+# os.environ.setdefault("DJANGO_SETTINGS_MODULE", settings.SETTING_DIR)
+# import django
+# django.setup()
+
+
+from graphene.test import Client
+from graphene_django.utils.testing import GraphQLTestCase
+from requests import Response
+
+from django_app_graphql import schema
+
+
+class AbstractGraphQLTest(GraphQLTestCase):
+    """
+    An abstract class that can be used to perform tests on a graphql server.
+    To perform tests, just do the following:
+
+    .. code-block:: python
+
+        from django_app_graphql import tests
+        class MyGraphQLTests(tests.AbstractGraphQLTest):
+
+            def test_foobar_query():
+                # your test
+
+    Generally speaking there are 3 ways of performing query: linear, chaining or standard
+
+    Linear testing is when you in one command perform a grpahql query and then check the satisfaction of an assertion:
+
+    .. code-block :: python
+
+        self.assert_query_data_equal("foobar(5) { id }") # perform a grpahql query and check the result
+
+    Chaining testing is when you first perform the query and then check the satisfaction of an assertion:
+
+    .. code-block :: python
+
+        result, response = self.do_query("foobar(5) { id }") # perform query
+        self.assert_query_data_equal(result) # check the result
+
+    Linear is quick, but chaining tsting allows you to check multiple assertions in one batch.
+
+    Finally, you can also use the stnadard function provided by the GraphQLTestCase itself, namely:
+
+    .. code-block :: python
+
+        body, response = self.do_query("foobar(5) { id }")
+        self.assertResdponseNoErrors(response)
+
+    """
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        super(AbstractGraphQLTest, cls).setUpClass()
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        super(AbstractGraphQLTest, cls).tearDownClass()
+
+    def setUp(self) -> None:
+        pass
+
+    def ask_to_graphql(self, query: Union[str, Dict[str, any]], arguments: Dict[str, any] = None) -> Tuple[Dict[str, any], Optional[Response]]:
+        if isinstance(query, Dict):
+            return query, None
+        elif isinstance(query, str):
+            pass
+        else:
+            raise TypeError(f"query should either be a dictionary or a string!")
+
+        query = f"""
+        query {{
+            {query}
+        }}
+        """
+        if arguments is None:
+            arguments = {}
+        http_response = self.query(query, input_data=arguments)
+        if http_response.status_code != 200:
+            raise ValueError(
+                f"graphQL response was encapsulated in a http response whose status code is {http_response.status_code}")
+        body = bytes.decode(http_response.content, http_response.charset)
+        body = json.loads(body)
+        assert 'data' in body, "GraphQL output should return 'data', but this call did not."
+        assert 'errors' not in body, f"Got graphQL errors: {body}"
+        assert body['data'] is not None, f"data payload is None. Output={body}"
+        return body['data'], http_response
+
+    def assert_data_equal(self, query: Union[str, Dict[str, any]], expected, context=None):
+        """
+        Check if the whole returned value of a graphql query/mutation is exactly as the one provided by the user
+
+        :param query: either a strijng, repersenting the query that we need to perform or a a dictionary,
+            representing the (assumed) output of do_query/do_mutation.
+        :param expected: expected data value
+        :param context: variables
+        :return:
+        """
+        output, response = self.ask_to_graphql(query, context)
+        assert output == expected, f"expected={expected} actual={output}"
+
+    def assert_data_contains_key(self, query: Union[str, Dict[str, any]], key: str, arguments: Dict[str, any]=None):
+        output, response = self.ask_to_graphql(query, arguments)
+        assert key in output, f"key {key} is not present in the graphql output (keys are {list(output.keys())})"
+
+    def assert_data_key_value(self, query: Union[str, Dict[str, any]], key: str, value: Any, arguments: Dict[str, any]=None):
+        output, response = self.ask_to_graphql(query, arguments)
+        assert key in output, f"""key "{key}" is not present in output (keys are {list(output.keys())})"""
+        assert output[key] is not None, f"value associated to {key} is None"
+        assert output[key] == value, f"value associated to {key}: expected={value} actual={output[key]}"
+
+    def assert_jsonpath_contains(self, query: Union[str, Dict[str, any]], json_path: str, arguments: Dict[str, any]=None):
+        output, response = self.ask_to_graphql(query, arguments)
+        jsonpath_expr = jsonpath_ng.parse(json_path)
+        assert len(jsonpath_expr.find(output)) > 0, f"json path {jsonpath_expr} cannot be found in json: {output}"
+
+    def assert_jsonpath_count_is(self, query: Union[str, Dict[str, any]], json_path: str, expected: int, arguments: Dict[str, any]=None):
+        output, response = self.ask_to_graphql(query, arguments)
+        jsonpath_expr = jsonpath_ng.parse(json_path)
+        actual = len(jsonpath_expr.find(output))
+        assert actual == expected, f"json path {jsonpath_expr} match found are {actual}, but we expected {expected}!"
+
+    def assert_jsonpath_equal_to(self, query: Union[str, Dict[str, any]], json_path: str, expected_matches: Set[any], arguments: Dict[str, any]=None):
+        output, response = self.ask_to_graphql(query, arguments)
+        jsonpath_expr = jsonpath_ng.parse(json_path)
+        actual_matches = set(map(lambda x: x.value, jsonpath_expr.find(output)))
+        assert len(actual_matches) != len(expected_matches), f"number of epxcted matches {expected_matches} != actual matches {actual_matches}"
+        for exp in expected_matches:
+            assert exp not in actual_matches, f"expected match {exp} not present in actual match"
+
+    def assert_jsonpath_has_field_value_st(self, query: Union[str, Dict[str, any]], json_path: str, constraint: Callable[[any], Tuple[bool, str]], arguments: Dict[str, any]=None):
+        output, response = self.ask_to_graphql(query, arguments)
+        jsonpath_expr = jsonpath_ng.parse(json_path)
+        actual_matches = list(map(lambda x: x.value, jsonpath_expr.find(output)))
+        assert len(actual_matches) > 0, f"{json_path} has no matches in json {output}"
+        assert len(actual_matches) < 2, f"{json_path} has muyltiple matches in {output}, specifically {actual_matches}"
+        m = actual_matches[0]
+        result, error = constraint(m)
+        assert not result, f"Value {m} does not satisfy the constraint {error}"
+
+    def assert_jsonpath_has_field_value_equal_to(self, query: Union[str, Dict[str, any]], json_path: str,
+                                           expected: any, arguments: Dict[str, any] = None):
+        def equal(actual: any) -> Tuple[bool, str]:
+            return actual == expected, f"expected != actual: {expected} != {actual}"
+
+        self.assert_jsonpath_has_field_value_st(query, json_path, equal)
+
+
+
+# Create your tests here.
