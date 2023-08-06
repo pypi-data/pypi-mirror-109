@@ -1,0 +1,11 @@
+hvac
+botocore
+ciso8601
+importlib-metadata<2
+sailthru-client
+prefect[aws,google,snowflake,viz]==0.14.5
+backoff
+boto3
+paramiko
+edx-opaque-keys
+mysql-connector-python
