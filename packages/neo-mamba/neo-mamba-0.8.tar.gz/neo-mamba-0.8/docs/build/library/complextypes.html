@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complex data types &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Core" href="core/index.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="core/index.html" title="Core"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">The neo-mamba Library</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Complex data types</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="complex-data-types">
+<span id="library-complextypes"></span><h1>Complex data types<a class="headerlink" href="#complex-data-types" title="Permalink to this headline">¶</a></h1>
+<p>The NEO 3.x system makes heavy use of a small handful of complex data types which are good to be aware off. Because of their heavy usage throughout the whole system, and especially in the virtual machine, it is encouraged to use these types instead of the close looking Python native types like bytes or int. The devil is in the details.</p>
+<dl class="py data">
+<dt id="UInt160">
+<code class="sig-name descname"><span class="pre">UInt160</span></code><a class="headerlink" href="#UInt160" title="Permalink to this definition">¶</a></dt>
+<dd><p>A 20-byte data structure commonly used to uniquely identify smart contracts and signing authorities (i.e. Consensus nodes and Transaction owners). See <a class="reference internal" href="core/uint.html#neo3.core.types.uint.UInt160" title="neo3.core.types.uint.UInt160"><code class="xref py py-mod docutils literal notranslate"><span class="pre">UInt160</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="UInt256">
+<code class="sig-name descname"><span class="pre">UInt256</span></code><a class="headerlink" href="#UInt256" title="Permalink to this definition">¶</a></dt>
+<dd><p>A 32-byte data structure commonly used for storing hashes that can uniquely identify Blocks and Transactions among other objects. See <a class="reference internal" href="core/uint.html#neo3.core.types.uint.UInt256" title="neo3.core.types.uint.UInt256"><code class="xref py py-mod docutils literal notranslate"><span class="pre">UInt256</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="BigInteger">
+<code class="sig-name descname"><span class="pre">BigInteger</span></code><a class="headerlink" href="#BigInteger" title="Permalink to this definition">¶</a></dt>
+<dd><p>A full port of the C# reference implementation implemented as a C-extension. See <a class="reference internal" href="vm/biginteger.html#library-vm-biginteger"><span class="std std-ref">BigInteger</span></a>.</p>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="introduction.html"
+                        title="previous chapter">Introduction</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="core/index.html"
+                        title="next chapter">Core</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/library/complextypes.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="core/index.html" title="Core"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >The neo-mamba Library</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Complex data types</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

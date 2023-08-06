@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>verification — Validation of objects and smart contract invokers &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="version — Node handshake data" href="version.html" />
+    <link rel="prev" title="transaction — All things Transaction related" href="transaction.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="version.html" title="version — Node handshake data"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="transaction.html" title="transaction — All things Transaction related"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" >Network</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="index.html" accesskey="U">Payloads</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">verification</span></code> — Validation of objects and smart contract invokers</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="verification-validation-of-objects-and-smart-contract-invokers">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">verification</span></code> — Validation of objects and smart contract invokers<a class="headerlink" href="#verification-validation-of-objects-and-smart-contract-invokers" title="Permalink to this headline">¶</a></h1>
+<p>This module describes two validation forms found in the NEO chain.</p>
+<p>First we have validation of three verifiable objects, namely: <a class="reference internal" href="block.html#neo3.network.payloads.block.Block" title="neo3.network.payloads.block.Block"><code class="xref py py-class docutils literal notranslate"><span class="pre">Block</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ConsensusPayload</span></code> and <a class="reference internal" href="transaction.html#neo3.network.payloads.transaction.Transaction" title="neo3.network.payloads.transaction.Transaction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Transaction</span></code></a>. These are digitally signed using ECDSA. Validation of these objects is done using a so called witness.</p>
+<p>A <a class="reference internal" href="#neo3.network.payloads.verification.Witness" title="neo3.network.payloads.verification.Witness"><code class="xref py py-class docutils literal notranslate"><span class="pre">Witness</span></code></a> is a verification script executed by the virtual machine to validate the verifiable object. Validation failure prevents for example that a transaction is included in a block and broad casted to the network. Taking the transaction example further, the witness carries a set of virtual machine opcodes (in its <a class="reference internal" href="#neo3.network.payloads.verification.Witness.invocation_script" title="neo3.network.payloads.verification.Witness.invocation_script"><code class="xref py py-attr docutils literal notranslate"><span class="pre">invocation_script</span></code></a>) that load the transaction signatures into the internal data structures of the VM. Next, the <a class="reference internal" href="#neo3.network.payloads.verification.Witness.verification_script" title="neo3.network.payloads.verification.Witness.verification_script"><code class="xref py py-attr docutils literal notranslate"><span class="pre">verification_script</span></code></a>, which are also virtual machine opcodes, performs the actual verification and operates on the data previously setup by the invocation script.</p>
+<p>A second form of validation can be performed inside a smart contract using the <a class="reference external" href="https://docs.neo.org/tutorial/en-us/9-smartContract/cgas/6_signature_and_verification.html#checkwitness-and-additional-witness">CheckWitness()</a> system call. This can be used to limit certain smart contract functions to a specific user, other smart contract or group.</p>
+<p>To give this fine grained control NEO created so called <cite>signers</cite> and a set of verification scopes. Signers are attached to a transaction in its aptly named <a class="reference internal" href="transaction.html#neo3.network.payloads.transaction.Transaction.signers" title="neo3.network.payloads.transaction.Transaction.signers"><code class="xref py py-attr docutils literal notranslate"><span class="pre">signers</span></code></a> attribute and are matched according to the rules set by the verification scope. The various verification scopes can be configured using a <a class="reference internal" href="#neo3.network.payloads.verification.WitnessScope" title="neo3.network.payloads.verification.WitnessScope"><code class="xref py py-class docutils literal notranslate"><span class="pre">WitnessScope</span></code></a> and are set in the <a class="reference internal" href="#neo3.network.payloads.verification.Signer.scope" title="neo3.network.payloads.verification.Signer.scope"><code class="xref py py-attr docutils literal notranslate"><span class="pre">scope</span></code></a> attribute of a signer.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While multiple signer’s can be attached to a transaction and thus multiple scopes can be set, only the first signer is looked at to determine the scope to use for <code class="xref py py-func docutils literal notranslate"><span class="pre">CheckWitness()</span></code>.</p>
+</div>
+<dl class="py class">
+<dt id="neo3.network.payloads.verification.Witness">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.payloads.verification.</span></code><code class="sig-name descname"><span class="pre">Witness</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">invocation_script</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verification_script</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Witness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.ISerializable" title="neo3.core.serialization.ISerializable"><code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.serialization.ISerializable</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.IJson</span></code></p>
+<p>An executable verification script that validates a verifiable object like a transaction.</p>
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.Witness.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Witness.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.Witness.deserialize_from_bytes">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">deserialize_from_bytes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Witness.deserialize_from_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse data into an object instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a>]) – hex escaped bytes.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>~ISerializable_T</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a deserialized instance of the class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.Witness.from_json">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_json</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Witness.from_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create object from JSON</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.Witness.script_hash">
+<code class="sig-name descname"><span class="pre">script_hash</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Witness.script_hash" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the script hash based on the verification script.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../../core/uint.html#neo3.core.types.uint.UInt160" title="neo3.core.types.uint.UInt160"><code class="xref py py-class docutils literal notranslate"><span class="pre">UInt160</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.Witness.serialize">
+<code class="sig-name descname"><span class="pre">serialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Witness.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.Witness.to_array">
+<code class="sig-name descname"><span class="pre">to_array</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Witness.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a bytearray.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.Witness.to_json">
+<code class="sig-name descname"><span class="pre">to_json</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Witness.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert object into json</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.verification.Witness.invocation_script">
+<code class="sig-name descname"><span class="pre">invocation_script</span></code><a class="headerlink" href="#neo3.network.payloads.verification.Witness.invocation_script" title="Permalink to this definition">¶</a></dt>
+<dd><p>A set of VM instructions to setup the stack for verification.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.verification.Witness.verification_script">
+<code class="sig-name descname"><span class="pre">verification_script</span></code><a class="headerlink" href="#neo3.network.payloads.verification.Witness.verification_script" title="Permalink to this definition">¶</a></dt>
+<dd><p>A set of VM instructions that does the actual verification.
+It is expected to set the result stack to a boolean True if validation passed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="neo3.network.payloads.verification.WitnessScope">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.payloads.verification.</span></code><code class="sig-name descname"><span class="pre">WitnessScope</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.WitnessScope" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntFlag" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntFlag</span></code></a></p>
+<p>Determine the rules for a smart contract <code class="xref py py-func docutils literal notranslate"><span class="pre">CheckWitness()</span></code> sys call.</p>
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.WitnessScope.from_chsarp_name">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_chsarp_name</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">csharp_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.WitnessScope.from_chsarp_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal helper to parse from C# convention</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.WitnessScope.to_csharp_name">
+<code class="sig-name descname"><span class="pre">to_csharp_name</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.WitnessScope.to_csharp_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal helper to match C# convention</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.verification.WitnessScope.CALLED_BY_ENTRY">
+<code class="sig-name descname"><span class="pre">CALLED_BY_ENTRY</span></code><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#neo3.network.payloads.verification.WitnessScope.CALLED_BY_ENTRY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow the witness if the current calling script hash equals the entry script hash into the virtual machine.
+Using this prevents passing <code class="xref py py-func docutils literal notranslate"><span class="pre">CheckWitness()</span></code> in a smart contract called via another smart contract.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.verification.WitnessScope.CUSTOM_CONTRACTS">
+<code class="sig-name descname"><span class="pre">CUSTOM_CONTRACTS</span></code><em class="property"> <span class="pre">=</span> <span class="pre">16</span></em><a class="headerlink" href="#neo3.network.payloads.verification.WitnessScope.CUSTOM_CONTRACTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow the witness if called from a smart contract that is whitelisted in the signer
+<a class="reference internal" href="#neo3.network.payloads.verification.Signer.allowed_contracts" title="neo3.network.payloads.verification.Signer.allowed_contracts"><code class="xref py py-attr docutils literal notranslate"><span class="pre">allowed_contracts</span></code></a> attribute.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.verification.WitnessScope.CUSTOM_GROUPS">
+<code class="sig-name descname"><span class="pre">CUSTOM_GROUPS</span></code><em class="property"> <span class="pre">=</span> <span class="pre">32</span></em><a class="headerlink" href="#neo3.network.payloads.verification.WitnessScope.CUSTOM_GROUPS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow the witness if any public key is in the signer
+<a class="reference internal" href="#neo3.network.payloads.verification.Signer.allowed_groups" title="neo3.network.payloads.verification.Signer.allowed_groups"><code class="xref py py-attr docutils literal notranslate"><span class="pre">allowed_groups</span></code></a> attribute is whitelisted in the contracts
+manifest.groups array.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.verification.WitnessScope.GLOBAL">
+<code class="sig-name descname"><span class="pre">GLOBAL</span></code><em class="property"> <span class="pre">=</span> <span class="pre">128</span></em><a class="headerlink" href="#neo3.network.payloads.verification.WitnessScope.GLOBAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow the witness in all context. Equal to NEO 2.x’s default behaviour.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.verification.WitnessScope.NONE">
+<code class="sig-name descname"><span class="pre">NONE</span></code><em class="property"> <span class="pre">=</span> <span class="pre">0</span></em><a class="headerlink" href="#neo3.network.payloads.verification.WitnessScope.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>No Contract was witnessed. Only sign the transaction.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="neo3.network.payloads.verification.Signer">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.payloads.verification.</span></code><code class="sig-name descname"><span class="pre">Signer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">account</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scope</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowed_contracts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowed_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Signer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.ISerializable" title="neo3.core.serialization.ISerializable"><code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.serialization.ISerializable</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.IJson</span></code></p>
+<p>A class that specifies who can pass CheckWitness() verifications in a smart contract.</p>
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.Signer.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Signer.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.Signer.deserialize_from_bytes">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">deserialize_from_bytes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Signer.deserialize_from_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse data into an object instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a>]) – hex escaped bytes.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>~ISerializable_T</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a deserialized instance of the class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.Signer.from_json">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_json</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Signer.from_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create object from JSON</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.Signer.serialize">
+<code class="sig-name descname"><span class="pre">serialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Signer.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.Signer.to_array">
+<code class="sig-name descname"><span class="pre">to_array</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Signer.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a bytearray.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.verification.Signer.to_json">
+<code class="sig-name descname"><span class="pre">to_json</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.verification.Signer.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert object into json</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.verification.Signer.MAX_SUB_ITEMS">
+<code class="sig-name descname"><span class="pre">MAX_SUB_ITEMS</span></code><em class="property"> <span class="pre">=</span> <span class="pre">16</span></em><a class="headerlink" href="#neo3.network.payloads.verification.Signer.MAX_SUB_ITEMS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum number of allowed_contracts or allowed_groups</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.verification.Signer.account">
+<code class="sig-name descname"><span class="pre">account</span></code><a class="headerlink" href="#neo3.network.payloads.verification.Signer.account" title="Permalink to this definition">¶</a></dt>
+<dd><p>The TX sender.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.verification.Signer.allowed_contracts">
+<code class="sig-name descname"><span class="pre">allowed_contracts</span></code><a class="headerlink" href="#neo3.network.payloads.verification.Signer.allowed_contracts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whitelist of contract script hashes if used with
+<a class="reference internal" href="#neo3.network.payloads.verification.WitnessScope.CUSTOM_CONTRACTS" title="neo3.network.payloads.verification.WitnessScope.CUSTOM_CONTRACTS"><code class="xref py py-const docutils literal notranslate"><span class="pre">CUSTOM_CONTRACTS</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>List[types.UInt160]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.verification.Signer.allowed_groups">
+<code class="sig-name descname"><span class="pre">allowed_groups</span></code><a class="headerlink" href="#neo3.network.payloads.verification.Signer.allowed_groups" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whitelist of public keys if used with
+<a class="reference internal" href="#neo3.network.payloads.verification.WitnessScope.CUSTOM_GROUPS" title="neo3.network.payloads.verification.WitnessScope.CUSTOM_GROUPS"><code class="xref py py-const docutils literal notranslate"><span class="pre">CUSTOM_GROUPS</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>List[cryptography.ECPoint]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.verification.Signer.scope">
+<code class="sig-name descname"><span class="pre">scope</span></code><a class="headerlink" href="#neo3.network.payloads.verification.Signer.scope" title="Permalink to this definition">¶</a></dt>
+<dd><p>The configured validation scope.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>payloads.WitnessScope</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="transaction.html"
+                        title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">transaction</span></code> — All things Transaction related</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="version.html"
+                        title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">version</span></code> — Node handshake data</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/library/network/payloads/verification.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="version.html" title="version — Node handshake data"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="transaction.html" title="transaction — All things Transaction related"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" >Network</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="index.html" >Payloads</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">verification</span></code> — Validation of objects and smart contract invokers</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

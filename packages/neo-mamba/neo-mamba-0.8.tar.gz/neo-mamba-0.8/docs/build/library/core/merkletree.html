@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>merkletree — A NEO specific Merkle Patricia Tree implementation &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="serialization — Binary stream helper classes" href="serialization.html" />
+    <link rel="prev" title="ecc — ECDSA implementation supporting secp256r1" href="ecc.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="serialization.html" title="serialization — Binary stream helper classes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ecc.html" title="ecc — ECDSA implementation supporting secp256r1"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Core</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">merkletree</span></code> — A NEO specific Merkle Patricia Tree implementation</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="merkletree-a-neo-specific-merkle-patricia-tree-implementation">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">merkletree</span></code> — A NEO specific Merkle Patricia Tree implementation<a class="headerlink" href="#merkletree-a-neo-specific-merkle-patricia-tree-implementation" title="Permalink to this headline">¶</a></h1>
+<p>This is a pure python implementation of a Merkle Patricia Tree that works on and returns hashes using NEOs <code class="xref py py-class docutils literal notranslate"><span class="pre">UInt256</span></code> types.</p>
+<p>For more information on the usage within the NEO system see <a class="reference external" href="https://docs.neo.org/developerguide/en/articles/cryptography/merkle_tree.html">their website</a>.</p>
+<dl class="py class">
+<dt id="neo3.core.cryptography.merkletree.MerkleTree">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.core.cryptography.merkletree.</span></code><code class="sig-name descname"><span class="pre">MerkleTree</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hashes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.cryptography.merkletree.MerkleTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>hashes</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="uint.html#neo3.core.types.uint.UInt256" title="neo3.core.types.uint.UInt256"><code class="xref py py-class docutils literal notranslate"><span class="pre">UInt256</span></code></a>]) – the list of hashes to build the tree from.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – if the <cite>hashes</cite> list is empty.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="neo3.core.cryptography.merkletree.MerkleTree.compute_root">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">compute_root</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hashes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.cryptography.merkletree.MerkleTree.compute_root" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the Merkle root hash from a list of hashes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>hashes</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="uint.html#neo3.core.types.uint.UInt256" title="neo3.core.types.uint.UInt256"><code class="xref py py-class docutils literal notranslate"><span class="pre">UInt256</span></code></a>]) – </p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – if the <cite>hashes</cite> list is empty.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="uint.html#neo3.core.types.uint.UInt256" title="neo3.core.types.uint.UInt256"><code class="xref py py-class docutils literal notranslate"><span class="pre">UInt256</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.cryptography.merkletree.MerkleTree.to_hash_array">
+<code class="sig-name descname"><span class="pre">to_hash_array</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.cryptography.merkletree.MerkleTree.to_hash_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of hashes the Merkle tree is build up from.</p>
+<p>Note: does not include the Merkle root hash.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="uint.html#neo3.core.types.uint.UInt256" title="neo3.core.types.uint.UInt256"><code class="xref py py-class docutils literal notranslate"><span class="pre">UInt256</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ecc.html"
+                        title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ecc</span></code> — ECDSA implementation supporting secp256r1</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="serialization.html"
+                        title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">serialization</span></code> — Binary stream helper classes</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/library/core/merkletree.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="serialization.html" title="serialization — Binary stream helper classes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="ecc.html" title="ecc — ECDSA implementation supporting secp256r1"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >Core</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">merkletree</span></code> — A NEO specific Merkle Patricia Tree implementation</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

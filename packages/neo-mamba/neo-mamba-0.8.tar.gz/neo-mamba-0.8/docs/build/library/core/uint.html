@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uint — UInt160 and UInt256 data structures &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Network" href="../network/index.html" />
+    <link rel="prev" title="serialization — Binary stream helper classes" href="serialization.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../network/index.html" title="Network"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="serialization.html" title="serialization — Binary stream helper classes"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Core</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">uint</span></code> — UInt160 and UInt256 data structures</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="uint-uint160-and-uint256-data-structures">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">uint</span></code> — UInt160 and UInt256 data structures<a class="headerlink" href="#uint-uint160-and-uint256-data-structures" title="Permalink to this headline">¶</a></h1>
+<p>The UInt classes are bytearray like classes heavily used through the NEO system. See <a class="reference internal" href="../complextypes.html#library-complextypes"><span class="std std-ref">Complex data types</span></a>.</p>
+<span class="target" id="module-neo3.core.types.uint"></span><dl class="py class">
+<dt id="neo3.core.types.uint.UInt160">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.core.types.uint.</span></code><code class="sig-name descname"><span class="pre">UInt160</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.types.uint.UInt160" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.types.uint._UIntBase</span></code></p>
+<p>Initialize an instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>) – hex escaped bytearray.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="neo3.core.types.uint.UInt160.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.types.uint.UInt160.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.types.uint.UInt160.deserialize_from_bytes">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">deserialize_from_bytes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.types.uint.UInt160.deserialize_from_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse data into an object instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>) – hex escaped bytes.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – if the length of the supplied bytearray is insufficient for the type.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#neo3.core.types.uint.UInt160" title="neo3.core.types.uint.UInt160"><code class="xref py py-class docutils literal notranslate"><span class="pre">UInt160</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.types.uint.UInt160.from_string">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_string</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.types.uint.UInt160.from_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Try to parse a string into an instance.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>NEO’s string representation is in reverse byte order from the internal bytearray.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – accepts the same input as <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray.fromhex" title="(in Python v3.9)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">bytearray.fromhex()</span></code></a>.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – if the length of the supplied string does not match.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#neo3.core.types.uint.UInt160" title="neo3.core.types.uint.UInt160"><code class="xref py py-class docutils literal notranslate"><span class="pre">UInt160</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.types.uint.UInt160.serialize">
+<code class="sig-name descname"><span class="pre">serialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.types.uint.UInt160.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.types.uint.UInt160.to_array">
+<code class="sig-name descname"><span class="pre">to_array</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.types.uint.UInt160.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an array of bytes representing the UInt</p>
+<p>Returns:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.types.uint.UInt160.zero">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">zero</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.types.uint.UInt160.zero" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#neo3.core.types.uint.UInt160" title="neo3.core.types.uint.UInt160"><code class="xref py py-class docutils literal notranslate"><span class="pre">UInt160</span></code></a></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An instance initialized to zero.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="neo3.core.types.uint.UInt256">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.core.types.uint.</span></code><code class="sig-name descname"><span class="pre">UInt256</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.types.uint.UInt256" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.types.uint._UIntBase</span></code></p>
+<p>Initialize an instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>) – hex escaped bytearray.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="neo3.core.types.uint.UInt256.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.types.uint.UInt256.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.types.uint.UInt256.deserialize_from_bytes">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">deserialize_from_bytes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.types.uint.UInt256.deserialize_from_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse data into an object instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>) – hex escaped bytes.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – if the length of the supplied bytearray is insufficient for the type.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#neo3.core.types.uint.UInt256" title="neo3.core.types.uint.UInt256"><code class="xref py py-class docutils literal notranslate"><span class="pre">UInt256</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.types.uint.UInt256.from_string">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_string</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.types.uint.UInt256.from_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Try to parse a string into an instance.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>NEO’s string representation is in reverse byte order from the internal bytearray.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – accepts the same input as <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray.fromhex" title="(in Python v3.9)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">bytearray.fromhex()</span></code></a>.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – if the length of the supplied string does not match.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#neo3.core.types.uint.UInt256" title="neo3.core.types.uint.UInt256"><code class="xref py py-class docutils literal notranslate"><span class="pre">UInt256</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.types.uint.UInt256.serialize">
+<code class="sig-name descname"><span class="pre">serialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.types.uint.UInt256.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.types.uint.UInt256.to_array">
+<code class="sig-name descname"><span class="pre">to_array</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.types.uint.UInt256.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an array of bytes representing the UInt</p>
+<p>Returns:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.types.uint.UInt256.zero">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">zero</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.types.uint.UInt256.zero" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#neo3.core.types.uint.UInt256" title="neo3.core.types.uint.UInt256"><code class="xref py py-class docutils literal notranslate"><span class="pre">UInt256</span></code></a></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An instance initialized to zero.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="serialization.html"
+                        title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">serialization</span></code> — Binary stream helper classes</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../network/index.html"
+                        title="next chapter">Network</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/library/core/uint.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../network/index.html" title="Network"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="serialization.html" title="serialization — Binary stream helper classes"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >Core</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">uint</span></code> — UInt160 and UInt256 data structures</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

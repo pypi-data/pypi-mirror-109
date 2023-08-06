@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Complex data types" href="complextypes.html" />
+    <link rel="prev" title="The neo-mamba Library" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="complextypes.html" title="Complex data types"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="The neo-mamba Library"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">The neo-mamba Library</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Introduction</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="introduction">
+<span id="library-intro"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>The neo-mamba library contains a collection of modules to help work with the <a class="reference external" href="https://neo.org/">NEO3</a> blockchain.</p>
+<p>It can be considered the successor of <a class="reference external" href="https://github.com/CityOfZion/neo-python">neo-python</a>. The former targets the NEO 2.x blockchain, whereas this library targets NEO 3.x. It is rewritten from scratch with the vision of being an SDK first with node support second. Its goal is to lower the entry barrier for working with the NEO3 blockchain by providing the primary building blocks with full and concise documentation. Convenience modules and functionality to support full node capabilities will selectively be present. An example of such convenience functionality is the SyncManager, with its accompanying NodeManager, which take away the burden of syncing the blockchain and staying in sync, allowing the user to focus on post processing of the incoming data instead of retrieving it.</p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>A high level overview of the library can be seen in the diagram below. Solid lines indicate currently present, dashed lines indicate envisioned. Not all of the envisioned components will directly end up in this library. The library is intended to be build on top of, not to be all encompasing. The community is encouraged to build and maintain some of the envisioned components. Interfaces, such as for the virtual machine, can be expected to become part of the core library to ensure interoperablity, whereas specific implementations based on these interfaces may live in a separate repository/package.</p>
+<img alt="../_images/SDK_overview.png" class="align-center" src="../_images/SDK_overview.png" />
+<p>Big effort is made to document and correctly type all modules. However, not everything can be typed as strictly as hoped for or is sane todo. One such case is the format of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#typebytes" title="(in Python v3.9)"><span class="xref std std-ref">bytes</span></a> and <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#typebytearray" title="(in Python v3.9)"><span class="xref std std-ref">bytearray</span></a> types. Whenever a function accepts such objects it <strong>always</strong> expects its sequence to be hex-escaped unless explicitely mentioned otherwise.</p>
+<p>Yes:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x01\x02\x03</span><span class="s1">&#39;</span>
+</pre></div>
+</div>
+<p>No:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sa">b</span><span class="s1">&#39;010203&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="final-words">
+<h2>Final words<a class="headerlink" href="#final-words" title="Permalink to this headline">¶</a></h2>
+<p>Enjoy and please report issues on Github!</p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#final-words">Final words</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">The neo-mamba Library</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="complextypes.html"
+                        title="next chapter">Complex data types</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/library/introduction.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="complextypes.html" title="Complex data types"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="The neo-mamba Library"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >The neo-mamba Library</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Introduction</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

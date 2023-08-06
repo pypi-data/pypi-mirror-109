@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What’s New in neo-mamba 0.4 &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="What’s New in neo-mamba 0.5" href="0.5.html" />
+    <link rel="prev" title="What’s New in neo-mamba 0.3" href="0.3.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="0.5.html" title="What’s New in neo-mamba 0.5"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="0.3.html" title="What’s New in neo-mamba 0.3"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">What’s New in neo-mamba</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">What’s New in neo-mamba 0.4</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="what-s-new-in-neo-mamba-0-4">
+<span id="whatsnew-v04"></span><h1>What’s New in neo-mamba 0.4<a class="headerlink" href="#what-s-new-in-neo-mamba-0-4" title="Permalink to this headline">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Erik van den Brink</p>
+</dd>
+</dl>
+<div class="section" id="smart-contracts-and-node-capabilities">
+<h2>Smart contracts and Node capabilities<a class="headerlink" href="#smart-contracts-and-node-capabilities" title="Permalink to this headline">¶</a></h2>
+<p>This is a huge release adding the interoperability layer, which in combination with the virtual machine allows for processing smart contracts on the blockchain.
+Together with the expanded Blockchain class one can now run a basic node. See <cite>basic_node.py</cite> in the <cite>examples</cite> folder.</p>
+<p>There is one small part of the interoperability layer that was not implemented, which are the “callback” syscalls.
+This feature was expected to not yet be used and Testnet showed it isn’t. It will be added to the Preview 4 compatible release.</p>
+</div>
+<div class="section" id="audit-results">
+<h2>Audit results<a class="headerlink" href="#audit-results" title="Permalink to this headline">¶</a></h2>
+<p>Now that we can tie together the core, storage, network and smart contract layers we have the possibility to audit <cite>neo-mamba</cite>,
+and so we did. The audit has been performed using the Preview 3 testnet made available by NEO. The audit validated the
+processing of every block and transaction looking at the system fees, network fees, virtual machine gas consumption,
+final execution state per transaction, result stack contents and every single storage modification made.</p>
+<p>We’re proud to say
+that for all 562380 blocks available at the time of performing the audit we produce identical results as the official client.</p>
+</div>
+<div class="section" id="no-external-documentation-updates">
+<h2>No external documentation updates<a class="headerlink" href="#no-external-documentation-updates" title="Permalink to this headline">¶</a></h2>
+<p>As we are catching up to a moving target we have to spend our limited resources wisely. The decision has been made to currently
+not expand the external available documentation (available <a class="reference external" href="https://docs.coz.io/neo3/mamba/index.html">here</a>) and update them once
+the code has been updated to be Preview 4 compatible. Preview 4 should be close to a MainNet release and thus fewer big core changes
+are expected from that point forward. Have no fear, we still added doc strings and typing to the code, you just have to
+look a bit closer :-)</p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">What’s New in neo-mamba 0.4</a><ul>
+<li><a class="reference internal" href="#smart-contracts-and-node-capabilities">Smart contracts and Node capabilities</a></li>
+<li><a class="reference internal" href="#audit-results">Audit results</a></li>
+<li><a class="reference internal" href="#no-external-documentation-updates">No external documentation updates</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="0.3.html"
+                        title="previous chapter">What’s New in neo-mamba 0.3</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="0.5.html"
+                        title="next chapter">What’s New in neo-mamba 0.5</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/whatsnew/0.4.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="0.5.html" title="What’s New in neo-mamba 0.5"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="0.3.html" title="What’s New in neo-mamba 0.3"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >What’s New in neo-mamba</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">What’s New in neo-mamba 0.4</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

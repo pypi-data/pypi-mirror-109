@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>capabilities — Node services &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="ipfilter — IP filtering via black and whitelists" href="ipfilter.html" />
+    <link rel="prev" title="Network" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="ipfilter.html" title="ipfilter — IP filtering via black and whitelists"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Network"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Network</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">capabilities</span></code> — Node services</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="capabilities-node-services">
+<span id="library-network-capabilities"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">capabilities</span></code> — Node services<a class="headerlink" href="#capabilities-node-services" title="Permalink to this headline">¶</a></h1>
+<p>This module describes the services supported by a node.</p>
+<p>A node can provide a variety of services such as a Websocket server or TCP/IPv4 server. These capabilities are shared with a remote node through a <a class="reference internal" href="payloads/version.html#neo3.network.payloads.version.VersionPayload" title="neo3.network.payloads.version.VersionPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">VersionPayload</span></code></a> during the handshake sequence when setting up a connection. Over time additional services are expected to be added by the NEO Core team.</p>
+<p>The <a class="reference internal" href="#neo3.network.capabilities.ServerCapability" title="neo3.network.capabilities.ServerCapability"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServerCapability</span></code></a> tells a node which communication layers (TCP or Websocket) are support for exchanging NEO specific messages. For more information on what information can be requested and how refer to the <a class="reference internal" href="message.html#message-type-purpose"><span class="std std-ref">message</span></a> module.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This SDK only supports communicating at the TCP transport layer, not on the higher level Websocket application layer.</p>
+</div>
+<p>Where <cite>ServerCapability</cite> shares the details where the general information can be retrieved from, the <a class="reference internal" href="#neo3.network.capabilities.FullNodeCapability" title="neo3.network.capabilities.FullNodeCapability"><code class="xref py py-class docutils literal notranslate"><span class="pre">FullNodeCapability</span></code></a> indicates that the endpoint maintains full blockchain data and support relaying of data.</p>
+<dl class="py class">
+<dt id="neo3.network.capabilities.NodeCapability">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.capabilities.</span></code><code class="sig-name descname"><span class="pre">NodeCapability</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.NodeCapability" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../core/serialization.html#neo3.core.serialization.ISerializable" title="neo3.core.serialization.ISerializable"><code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.serialization.ISerializable</span></code></a></p>
+<p>Capability base class.</p>
+<dl class="py method">
+<dt id="neo3.network.capabilities.NodeCapability.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.NodeCapability.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="../core/serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.NodeCapability.deserialize_from">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">deserialize_from</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.NodeCapability.deserialize_from" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#neo3.network.capabilities.NodeCapability" title="neo3.network.capabilities.NodeCapability"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeCapability</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.NodeCapability.deserialize_from_bytes">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">deserialize_from_bytes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.NodeCapability.deserialize_from_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse data into an object instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a>]) – hex escaped bytes.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>~ISerializable_T</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a deserialized instance of the class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.NodeCapability.deserialize_without_type">
+<em class="property"><span class="pre">abstract</span> </em><code class="sig-name descname"><span class="pre">deserialize_without_type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.NodeCapability.deserialize_without_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize from a buffer without reading the <cite>type</cite> member.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.NodeCapability.serialize">
+<code class="sig-name descname"><span class="pre">serialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.NodeCapability.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="../core/serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.NodeCapability.serialize_without_type">
+<em class="property"><span class="pre">abstract</span> </em><code class="sig-name descname"><span class="pre">serialize_without_type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.NodeCapability.serialize_without_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize into a buffer without including the <cite>type</cite> member.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.NodeCapability.to_array">
+<code class="sig-name descname"><span class="pre">to_array</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.NodeCapability.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a bytearray.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="neo3.network.capabilities.ServerCapability">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.capabilities.</span></code><code class="sig-name descname"><span class="pre">ServerCapability</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.ServerCapability" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neo3.network.capabilities.NodeCapability" title="neo3.network.capabilities.NodeCapability"><code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.network.capabilities.NodeCapability</span></code></a></p>
+<p>A capability expressing node support for TCP or Websocket services.</p>
+<dl class="py method">
+<dt id="neo3.network.capabilities.ServerCapability.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.ServerCapability.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="../core/serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.ServerCapability.deserialize_from">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">deserialize_from</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.ServerCapability.deserialize_from" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#neo3.network.capabilities.NodeCapability" title="neo3.network.capabilities.NodeCapability"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeCapability</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.ServerCapability.deserialize_from_bytes">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">deserialize_from_bytes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.ServerCapability.deserialize_from_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse data into an object instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a>]) – hex escaped bytes.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>~ISerializable_T</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a deserialized instance of the class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.ServerCapability.deserialize_without_type">
+<code class="sig-name descname"><span class="pre">deserialize_without_type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.ServerCapability.deserialize_without_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream without deserializing the base class <cite>type</cite> property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="../core/serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.ServerCapability.serialize">
+<code class="sig-name descname"><span class="pre">serialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.ServerCapability.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="../core/serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.ServerCapability.serialize_without_type">
+<code class="sig-name descname"><span class="pre">serialize_without_type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.ServerCapability.serialize_without_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream without serializing the base class <cite>type</cite> property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="../core/serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.ServerCapability.to_array">
+<code class="sig-name descname"><span class="pre">to_array</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.ServerCapability.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a bytearray.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="neo3.network.capabilities.FullNodeCapability">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.capabilities.</span></code><code class="sig-name descname"><span class="pre">FullNodeCapability</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.FullNodeCapability" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#neo3.network.capabilities.NodeCapability" title="neo3.network.capabilities.NodeCapability"><code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.network.capabilities.NodeCapability</span></code></a></p>
+<p>A capability expressing the node has full blockchain data and accepts relaying.</p>
+<dl class="py method">
+<dt id="neo3.network.capabilities.FullNodeCapability.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.FullNodeCapability.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="../core/serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.FullNodeCapability.deserialize_from">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">deserialize_from</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.FullNodeCapability.deserialize_from" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#neo3.network.capabilities.NodeCapability" title="neo3.network.capabilities.NodeCapability"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeCapability</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.FullNodeCapability.deserialize_from_bytes">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">deserialize_from_bytes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.FullNodeCapability.deserialize_from_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse data into an object instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a>]) – hex escaped bytes.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>~ISerializable_T</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a deserialized instance of the class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.FullNodeCapability.deserialize_without_type">
+<code class="sig-name descname"><span class="pre">deserialize_without_type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.FullNodeCapability.deserialize_without_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream without deserializing the base class <cite>type</cite> property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="../core/serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.FullNodeCapability.serialize">
+<code class="sig-name descname"><span class="pre">serialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.FullNodeCapability.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="../core/serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.FullNodeCapability.serialize_without_type">
+<code class="sig-name descname"><span class="pre">serialize_without_type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.FullNodeCapability.serialize_without_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream without serializing the base class <cite>type</cite> property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="../core/serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.capabilities.FullNodeCapability.to_array">
+<code class="sig-name descname"><span class="pre">to_array</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.FullNodeCapability.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a bytearray.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="neo3.network.capabilities.NodeCapabilityType">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.capabilities.</span></code><code class="sig-name descname"><span class="pre">NodeCapabilityType</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.capabilities.NodeCapabilityType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt id="neo3.network.capabilities.NodeCapabilityType.FULLNODE">
+<code class="sig-name descname"><span class="pre">FULLNODE</span></code><em class="property"> <span class="pre">=</span> <span class="pre">16</span></em><a class="headerlink" href="#neo3.network.capabilities.NodeCapabilityType.FULLNODE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Server has full chain data</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.capabilities.NodeCapabilityType.TCPSERVER">
+<code class="sig-name descname"><span class="pre">TCPSERVER</span></code><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#neo3.network.capabilities.NodeCapabilityType.TCPSERVER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Server has TCP listening capabilities</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.capabilities.NodeCapabilityType.WSSERVER">
+<code class="sig-name descname"><span class="pre">WSSERVER</span></code><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#neo3.network.capabilities.NodeCapabilityType.WSSERVER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Server has WebSocket listening capabilities</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Network</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ipfilter.html"
+                        title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ipfilter</span></code> — IP filtering via black and whitelists</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/library/network/capabilities.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="ipfilter.html" title="ipfilter — IP filtering via black and whitelists"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Network"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >Network</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">capabilities</span></code> — Node services</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

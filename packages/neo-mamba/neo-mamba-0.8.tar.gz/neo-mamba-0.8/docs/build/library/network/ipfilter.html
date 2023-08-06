@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ipfilter — IP filtering via black and whitelists &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="message — P2P network packets" href="message.html" />
+    <link rel="prev" title="capabilities — Node services" href="capabilities.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="message.html" title="message — P2P network packets"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="capabilities.html" title="capabilities — Node services"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Network</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">ipfilter</span></code> — IP filtering via black and whitelists</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ipfilter-ip-filtering-via-black-and-whitelists">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">ipfilter</span></code> — IP filtering via black and whitelists<a class="headerlink" href="#ipfilter-ip-filtering-via-black-and-whitelists" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-neo3.network.ipfilter"></span><p>A module for filtering IPs via black and whitelists.</p>
+<p>A global instance <code class="docutils literal notranslate"><span class="pre">ipfilter</span></code> can be imported directly from the module and is taken into account by default in the
+NeoNode class when connections are established.</p>
+<p>Filtering rules</p>
+<ul class="simple">
+<li><p>The whitelist has precedence over the blacklist settings.</p></li>
+<li><p>Host masks can be applied.</p></li>
+<li><p>When using host masks do not set host bits (leave them to 0) or an exception will occur.</p></li>
+</ul>
+<p class="rubric" id="ipfilter-examples">Examples</p>
+<p>The following are <cite>configuration</cite> examples for common scenario’s.</p>
+<p>1. Accept only specific trusted IPs</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;blacklist&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">&#39;0.0.0.0/0&#39;</span>
+    <span class="p">],</span>
+    <span class="s1">&#39;whitelist&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">&#39;10.10.10.10&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;15.15.15.15&#39;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>2. Accept only a range of trusted IPs</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># accepts any IP in the range of 10.10.10.0 - 10.10.10.255</span>
+<span class="p">{</span>
+    <span class="s1">&#39;blacklist&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">&#39;0.0.0.0/0&#39;</span>
+    <span class="p">],</span>
+    <span class="s1">&#39;whitelist&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">&#39;10.10.10.0/24&#39;</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>3. Accept all except specific IPs</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># can be used for banning bad actors</span>
+<span class="p">{</span>
+    <span class="s1">&#39;blacklist&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">&#39;12.12.12.12&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;13.13.13.13&#39;</span>
+    <span class="p">],</span>
+    <span class="s1">&#39;whitelist&#39;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt id="neo3.network.ipfilter.IPFilter">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.ipfilter.</span></code><code class="sig-name descname"><span class="pre">IPFilter</span></code><a class="headerlink" href="#neo3.network.ipfilter.IPFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="neo3.network.ipfilter.IPFilter.blacklist_add">
+<code class="sig-name descname"><span class="pre">blacklist_add</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.ipfilter.IPFilter.blacklist_add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an address that will not pass restriction checks.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>address</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – an IPv4 address as defined in the <a class="reference external" href="https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv4Network" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">standard</span> <span class="pre">library</span></code></a>.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.ipfilter.IPFilter.blacklist_remove">
+<code class="sig-name descname"><span class="pre">blacklist_remove</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.ipfilter.IPFilter.blacklist_remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove an address from the blacklist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>address</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – an IPv4 address as defined in the <a class="reference external" href="https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv4Network" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">standard</span> <span class="pre">library</span></code></a>.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.ipfilter.IPFilter.is_allowed">
+<code class="sig-name descname"><span class="pre">is_allowed</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.ipfilter.IPFilter.is_allowed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test if a given address passes the configured restrictions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>address</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – an IPv4 address as defined in the <a class="reference external" href="https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv4Network" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">standard</span> <span class="pre">library</span></code></a>.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.ipfilter.IPFilter.load_config">
+<code class="sig-name descname"><span class="pre">load_config</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.ipfilter.IPFilter.load_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load filtering rules from a configuration object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>config</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]) – a _dictionary holding 2 keys, <cite>blacklist</cite> &amp; <cite>whitelist</cite>, each  having a
+<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a> type value holding <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> type <code class="docutils literal notranslate"><span class="pre">address</span></code> es.
+See <a class="reference internal" href="#ipfilter-examples"><span class="std std-ref">Examples</span></a>. For <code class="docutils literal notranslate"><span class="pre">address</span></code> format refer to the
+<a class="reference external" href="https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv4Network" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">standard</span> <span class="pre">library</span></code></a>.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – if the required config keys are not found.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.ipfilter.IPFilter.reset">
+<code class="sig-name descname"><span class="pre">reset</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.ipfilter.IPFilter.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear the filter rules.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.ipfilter.IPFilter.whitelist_add">
+<code class="sig-name descname"><span class="pre">whitelist_add</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.ipfilter.IPFilter.whitelist_add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an address that will pass restriction checks.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>address</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – an IPv4 address as defined in the <a class="reference external" href="https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv4Network" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">standard</span> <span class="pre">library</span></code></a>.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.ipfilter.IPFilter.whitelist_remove">
+<code class="sig-name descname"><span class="pre">whitelist_remove</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.ipfilter.IPFilter.whitelist_remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove an address from the whitelist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>address</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – an IPv4 address as defined in the <a class="reference external" href="https://docs.python.org/3/library/ipaddress.html#ipaddress.IPv4Network" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">standard</span> <span class="pre">library</span></code></a>.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.ipfilter.IPFilter.default_config">
+<code class="sig-name descname"><span class="pre">default_config</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><span class="pre">dict</span></a></em><em class="property"> <span class="pre">=</span> <span class="pre">{'blacklist':</span> <span class="pre">[],</span> <span class="pre">'whitelist':</span> <span class="pre">[]}</span></em><a class="headerlink" href="#neo3.network.ipfilter.IPFilter.default_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="capabilities.html"
+                        title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">capabilities</span></code> — Node services</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="message.html"
+                        title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">message</span></code> — P2P network packets</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/library/network/ipfilter.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="message.html" title="message — P2P network packets"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="capabilities.html" title="capabilities — Node services"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >Network</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">ipfilter</span></code> — IP filtering via black and whitelists</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

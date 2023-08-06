@@ -1,0 +1,519 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>message — P2P network packets &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="node — NEO network node" href="node.html" />
+    <link rel="prev" title="ipfilter — IP filtering via black and whitelists" href="ipfilter.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="node.html" title="node — NEO network node"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ipfilter.html" title="ipfilter — IP filtering via black and whitelists"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Network</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">message</span></code> — P2P network packets</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="message-p2p-network-packets">
+<span id="library-network-message"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">message</span></code> — P2P network packets<a class="headerlink" href="#message-p2p-network-packets" title="Permalink to this headline">¶</a></h1>
+<p>This chapter describes the network packet format as well as the protocol for communicating with nodes.</p>
+<p id="message-type-purpose">The following section describes the purpose of each message type as well as the expected responses to such messages. See the <a class="reference internal" href="#message-classes"><span class="std std-ref">classes</span></a> section for the description of the message format.</p>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="message-usage-filteradd"></span><dl class="py data">
+<dt id="FILTERADD">
+<code class="sig-name descname"><span class="pre">FILTERADD</span></code><a class="headerlink" href="#FILTERADD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update a configured bloomfilter.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#message-usage-filterload"><span class="std std-ref">filterload</span></a></p>
+</div>
+<p><strong>Payload</strong>: <a class="reference internal" href="payloads/filter.html#neo3.network.payloads.filter.FilterAddPayload" title="neo3.network.payloads.filter.FilterAddPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">FilterAddPayload</span></code></a></p>
+<p><strong>Response type</strong>: None</p>
+<p><strong>Response payload</strong>: None</p>
+</dd></dl>
+
+<span class="target" id="message-usage-filterclear"></span><dl class="py data">
+<dt id="FILTERCLEAR">
+<code class="sig-name descname"><span class="pre">FILTERCLEAR</span></code><a class="headerlink" href="#FILTERCLEAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear a configured bloomfilter.</p>
+<p><strong>Payload</strong>: None</p>
+<p><strong>Response type</strong>: None</p>
+<p><strong>Response payload</strong>: None</p>
+</dd></dl>
+
+<span class="target" id="message-usage-filterload"></span><dl class="py data">
+<dt id="FILTERLOAD">
+<code class="sig-name descname"><span class="pre">FILTERLOAD</span></code><a class="headerlink" href="#FILTERLOAD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configure a bloomfilter on the remote node.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#message-usage-filteradd"><span class="std std-ref">filteradd</span></a></p>
+</div>
+<p><strong>Payload</strong>: <a class="reference internal" href="payloads/filter.html#neo3.network.payloads.filter.FilterLoadPayload" title="neo3.network.payloads.filter.FilterLoadPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">FilterLoadPayload</span></code></a></p>
+<p><strong>Response type</strong>: None</p>
+<p><strong>Response payload</strong>: None</p>
+</dd></dl>
+
+<span class="target" id="message-usage-getaddr"></span><dl class="py data">
+<dt id="GETADDR">
+<code class="sig-name descname"><span class="pre">GETADDR</span></code><a class="headerlink" href="#GETADDR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Request a list of known network addresses.</p>
+<p><strong>Payload</strong>: <a class="reference internal" href="payloads/address.html#neo3.network.payloads.AddrPayload" title="neo3.network.payloads.AddrPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">AddrPayload</span></code></a></p>
+<p><strong>Response type</strong>: <a class="reference internal" href="#neo3.network.message.MessageType.ADDR" title="neo3.network.message.MessageType.ADDR"><code class="xref py py-const docutils literal notranslate"><span class="pre">ADDR</span></code></a></p>
+<p><strong>Response payload</strong>: <a class="reference internal" href="payloads/address.html#neo3.network.payloads.AddrPayload" title="neo3.network.payloads.AddrPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">AddrPayload</span></code></a></p>
+</dd></dl>
+
+<span class="target" id="message-usage-getdata"></span><dl class="py data">
+<dt id="GETDATA">
+<code class="sig-name descname"><span class="pre">GETDATA</span></code><a class="headerlink" href="#GETDATA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Request inventory types based on a list of hashes.</p>
+<p><strong>Payload</strong>: <code class="xref py py-class docutils literal notranslate"><span class="pre">InventoryPayload</span></code></p>
+<p><strong>Response type</strong>: Depending on the type indicated in the request payload the response will be one of <a class="reference internal" href="#neo3.network.message.MessageType.BLOCK" title="neo3.network.message.MessageType.BLOCK"><code class="xref py py-const docutils literal notranslate"><span class="pre">BLOCK</span></code></a>, <a class="reference internal" href="#neo3.network.message.MessageType.CONSENSUS" title="neo3.network.message.MessageType.CONSENSUS"><code class="xref py py-const docutils literal notranslate"><span class="pre">CONSENSUS</span></code></a>, <a class="reference internal" href="#neo3.network.message.MessageType.TRANSACTION" title="neo3.network.message.MessageType.TRANSACTION"><code class="xref py py-const docutils literal notranslate"><span class="pre">TRANSACTION</span></code></a> or <a class="reference internal" href="#neo3.network.message.MessageType.MERKLEBLOCK" title="neo3.network.message.MessageType.MERKLEBLOCK"><code class="xref py py-const docutils literal notranslate"><span class="pre">MERKLEBLOCK</span></code></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A <a class="reference internal" href="#neo3.network.message.MessageType.MERKLEBLOCK" title="neo3.network.message.MessageType.MERKLEBLOCK"><code class="xref py py-const docutils literal notranslate"><span class="pre">MERKLEBLOCK</span></code></a> response is given when the inventory type is set to <a class="reference internal" href="payloads/inventory.html#neo3.network.payloads.inventory.InventoryType.BLOCK" title="neo3.network.payloads.inventory.InventoryType.BLOCK"><code class="xref py py-const docutils literal notranslate"><span class="pre">BLOCK</span></code></a> while a bloomfilter is configured on the remote node.</p>
+</div>
+<p><strong>Response payload</strong>: Depending on the type indicated in the request payload one of <code class="xref py py-class docutils literal notranslate"><span class="pre">Block</span></code>, <a class="reference internal" href="payloads/inventory.html#neo3.network.payloads.inventory.InventoryType" title="neo3.network.payloads.inventory.InventoryType"><code class="xref py py-class docutils literal notranslate"><span class="pre">InventoryType</span></code></a>, <a class="reference internal" href="payloads/transaction.html#neo3.network.payloads.transaction.Transaction" title="neo3.network.payloads.transaction.Transaction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Transaction</span></code></a> or <a class="reference internal" href="payloads/block.html#neo3.network.payloads.block.MerkleBlockPayload" title="neo3.network.payloads.block.MerkleBlockPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">MerkleBlockPayload</span></code></a>.</p>
+</dd></dl>
+
+<span class="target" id="message-usage-getheaders"></span><dl class="py data">
+<dt id="GETHEADERS">
+<code class="sig-name descname"><span class="pre">GETHEADERS</span></code><a class="headerlink" href="#GETHEADERS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Request Header objects (can be used for syncing).</p>
+<p><strong>Payload</strong>: <a class="reference internal" href="payloads/block.html#neo3.network.payloads.block.GetBlockByIndexPayload" title="neo3.network.payloads.block.GetBlockByIndexPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">GetBlockByIndexPayload</span></code></a></p>
+<p><strong>Response type</strong>: <a class="reference internal" href="#neo3.network.message.MessageType.HEADERS" title="neo3.network.message.MessageType.HEADERS"><code class="xref py py-const docutils literal notranslate"><span class="pre">HEADERS</span></code></a></p>
+<p><strong>Response payload</strong>: <a class="reference internal" href="payloads/block.html#neo3.network.payloads.block.HeadersPayload" title="neo3.network.payloads.block.HeadersPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">HeadersPayload</span></code></a></p>
+</dd></dl>
+
+<span class="target" id="message-usage-getblocks"></span><dl class="py data">
+<dt id="GETBLOCKS">
+<code class="sig-name descname"><span class="pre">GETBLOCKS</span></code><a class="headerlink" href="#GETBLOCKS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Request block hashes (can be used for syncing).</p>
+<p><strong>Payload</strong>: <a class="reference internal" href="payloads/block.html#neo3.network.payloads.block.GetBlocksPayload" title="neo3.network.payloads.block.GetBlocksPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">GetBlocksPayload</span></code></a></p>
+<p><strong>Response type</strong>: <a class="reference internal" href="#neo3.network.message.MessageType.INV" title="neo3.network.message.MessageType.INV"><code class="xref py py-const docutils literal notranslate"><span class="pre">INV</span></code></a></p>
+<p><strong>Response payload</strong>: <a class="reference internal" href="payloads/inventory.html#neo3.network.payloads.inventory.InventoryPayload" title="neo3.network.payloads.inventory.InventoryPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">InventoryPayload</span></code></a> with type set to <a class="reference internal" href="payloads/inventory.html#neo3.network.payloads.inventory.InventoryType.BLOCK" title="neo3.network.payloads.inventory.InventoryType.BLOCK"><code class="xref py py-const docutils literal notranslate"><span class="pre">BLOCK</span></code></a></p>
+</dd></dl>
+
+<span class="target" id="message-usage-getblockbyindex"></span><dl class="py data">
+<dt id="GETBLOCKBYINDEX">
+<code class="sig-name descname"><span class="pre">GETBLOCKBYINDEX</span></code><a class="headerlink" href="#GETBLOCKBYINDEX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Request block objects.</p>
+<p><strong>Payload</strong>: <a class="reference internal" href="payloads/block.html#neo3.network.payloads.block.GetBlockByIndexPayload" title="neo3.network.payloads.block.GetBlockByIndexPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">GetBlockByIndexPayload</span></code></a></p>
+<p><strong>Response type</strong>: <a class="reference internal" href="#neo3.network.message.MessageType.BLOCK" title="neo3.network.message.MessageType.BLOCK"><code class="xref py py-const docutils literal notranslate"><span class="pre">BLOCK</span></code></a> or <a class="reference internal" href="#neo3.network.message.MessageType.MERKLEBLOCK" title="neo3.network.message.MessageType.MERKLEBLOCK"><code class="xref py py-const docutils literal notranslate"><span class="pre">MERKLEBLOCK</span></code></a>.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A <a class="reference internal" href="#neo3.network.message.MessageType.MERKLEBLOCK" title="neo3.network.message.MessageType.MERKLEBLOCK"><code class="xref py py-const docutils literal notranslate"><span class="pre">MERKLEBLOCK</span></code></a> response is given when a bloomfilter is configured on the remote node.</p>
+</div>
+</div></blockquote>
+<p><strong>Response payload</strong>: <a class="reference internal" href="payloads/block.html#neo3.network.payloads.block.Block" title="neo3.network.payloads.block.Block"><code class="xref py py-class docutils literal notranslate"><span class="pre">Block</span></code></a> or <a class="reference internal" href="payloads/block.html#neo3.network.payloads.block.MerkleBlockPayload" title="neo3.network.payloads.block.MerkleBlockPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">MerkleBlockPayload</span></code></a></p>
+</dd></dl>
+
+<span class="target" id="message-usage-mempool"></span><dl class="py data">
+<dt id="MEMPOOL">
+<code class="sig-name descname"><span class="pre">MEMPOOL</span></code><a class="headerlink" href="#MEMPOOL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Request a list of hashes currently in the mempool.</p>
+<p><strong>Payload</strong>: None</p>
+<p><strong>Response type</strong>: <a class="reference internal" href="#neo3.network.message.MessageType.INV" title="neo3.network.message.MessageType.INV"><code class="xref py py-const docutils literal notranslate"><span class="pre">INV</span></code></a></p>
+<p><strong>Response payload</strong>: <a class="reference internal" href="payloads/inventory.html#neo3.network.payloads.inventory.InventoryPayload" title="neo3.network.payloads.inventory.InventoryPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">InventoryPayload</span></code></a> with type set to <a class="reference internal" href="payloads/inventory.html#neo3.network.payloads.inventory.InventoryType.TX" title="neo3.network.payloads.inventory.InventoryType.TX"><code class="xref py py-const docutils literal notranslate"><span class="pre">TX</span></code></a></p>
+</dd></dl>
+
+<span class="target" id="message-usage-ping"></span><dl class="py data">
+<dt id="PING">
+<code class="sig-name descname"><span class="pre">PING</span></code><a class="headerlink" href="#PING" title="Permalink to this definition">¶</a></dt>
+<dd><p>Request node chain height update, send own chain height.</p>
+<p><strong>Payload</strong>: <a class="reference internal" href="payloads/ping.html#neo3.network.payloads.ping.PingPayload" title="neo3.network.payloads.ping.PingPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">PingPayload</span></code></a></p>
+<p><strong>Response type</strong>: <a class="reference internal" href="#neo3.network.message.MessageType.PONG" title="neo3.network.message.MessageType.PONG"><code class="xref py py-const docutils literal notranslate"><span class="pre">PONG</span></code></a></p>
+<p><strong>Response payload</strong>: <a class="reference internal" href="payloads/ping.html#neo3.network.payloads.ping.PingPayload" title="neo3.network.payloads.ping.PingPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">PingPayload</span></code></a></p>
+</dd></dl>
+
+<span class="target" id="message-usage-reject"></span><dl class="py data">
+<dt id="REJECT">
+<code class="sig-name descname"><span class="pre">REJECT</span></code><a class="headerlink" href="#REJECT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inform a remote node why its connection is rejected.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Is expected to return a new RejectPayload once <a class="reference external" href="https://github.com/neo-project/neo/pull/1154">this PR</a> is merged.</p>
+</div>
+<p><strong>Payload</strong>: None</p>
+<p><strong>Response type</strong>: None</p>
+<p><strong>Response payload</strong>: None</p>
+</dd></dl>
+
+<span class="target" id="message-usage-notfound"></span><dl class="py data">
+<dt id="NOTFOUND">
+<code class="sig-name descname"><span class="pre">NOTFOUND</span></code><a class="headerlink" href="#NOTFOUND" title="Permalink to this definition">¶</a></dt>
+<dd><p>Not used.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="classes">
+<span id="message-classes"></span><h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<p>The Message class encapsulates network payloads for sending and receiving over the TCP/IP network.</p>
+<p>There are various types of messages supported as indicated by the <a class="reference internal" href="#neo3.network.message.Message.type" title="neo3.network.message.Message.type"><code class="xref py py-attr docutils literal notranslate"><span class="pre">type</span></code></a> attribute of the Message class.</p>
+<dl class="py class">
+<dt id="neo3.network.message.Message">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.message.</span></code><code class="sig-name descname"><span class="pre">Message</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">payload</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.message.Message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../core/serialization.html#neo3.core.serialization.ISerializable" title="neo3.core.serialization.ISerializable"><code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.serialization.ISerializable</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg_type</strong> (<a class="reference internal" href="#neo3.network.message.MessageType" title="neo3.network.message.MessageType"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageType</span></code></a>) – message object configuration.</p></li>
+<li><p><strong>payload</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[~ISerializable_T]) – an identifier specifying the purpose of the message.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="neo3.network.message.Message.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.message.Message.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="../core/serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.message.Message.deserialize_from_bytes">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">deserialize_from_bytes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.message.Message.deserialize_from_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse data into an object instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a>]) – hex escaped bytes.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>~ISerializable_T</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a deserialized instance of the class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.message.Message.serialize">
+<code class="sig-name descname"><span class="pre">serialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.message.Message.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="../core/serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.message.Message.to_array">
+<code class="sig-name descname"><span class="pre">to_array</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.message.Message.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a bytearray.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.Message.COMPRESSION_MIN_SIZE">
+<code class="sig-name descname"><span class="pre">COMPRESSION_MIN_SIZE</span></code><em class="property"> <span class="pre">=</span> <span class="pre">128</span></em><a class="headerlink" href="#neo3.network.message.Message.COMPRESSION_MIN_SIZE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.Message.COMPRESSION_THRESHOLD">
+<code class="sig-name descname"><span class="pre">COMPRESSION_THRESHOLD</span></code><em class="property"> <span class="pre">=</span> <span class="pre">64</span></em><a class="headerlink" href="#neo3.network.message.Message.COMPRESSION_THRESHOLD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.Message.PAYLOAD_MAX_SIZE">
+<code class="sig-name descname"><span class="pre">PAYLOAD_MAX_SIZE</span></code><em class="property"> <span class="pre">=</span> <span class="pre">33554432</span></em><a class="headerlink" href="#neo3.network.message.Message.PAYLOAD_MAX_SIZE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.Message.config">
+<code class="sig-name descname"><span class="pre">config</span></code><a class="headerlink" href="#neo3.network.message.Message.config" title="Permalink to this definition">¶</a></dt>
+<dd><p>message object configuration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#neo3.network.message.MessageConfig" title="neo3.network.message.MessageConfig">MessageConfig</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.Message.type">
+<code class="sig-name descname"><span class="pre">type</span></code><em class="property"><span class="pre">:</span> <a class="reference internal" href="#neo3.network.message.MessageType" title="neo3.network.message.MessageType"><span class="pre">neo3.network.message.MessageType</span></a></em><a class="headerlink" href="#neo3.network.message.Message.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>an identifier specifying the purpose of the message.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#neo3.network.message.MessageType" title="neo3.network.message.MessageType">MessageType</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="neo3.network.message.MessageType">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.message.</span></code><code class="sig-name descname"><span class="pre">MessageType</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.message.MessageType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.ADDR">
+<code class="sig-name descname"><span class="pre">ADDR</span></code><em class="property"> <span class="pre">=</span> <span class="pre">17</span></em><a class="headerlink" href="#neo3.network.message.MessageType.ADDR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.ALERT">
+<code class="sig-name descname"><span class="pre">ALERT</span></code><em class="property"> <span class="pre">=</span> <span class="pre">64</span></em><a class="headerlink" href="#neo3.network.message.MessageType.ALERT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.BLOCK">
+<code class="sig-name descname"><span class="pre">BLOCK</span></code><em class="property"> <span class="pre">=</span> <span class="pre">44</span></em><a class="headerlink" href="#neo3.network.message.MessageType.BLOCK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.CONSENSUS">
+<code class="sig-name descname"><span class="pre">CONSENSUS</span></code><em class="property"> <span class="pre">=</span> <span class="pre">45</span></em><a class="headerlink" href="#neo3.network.message.MessageType.CONSENSUS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.DEFAULT">
+<code class="sig-name descname"><span class="pre">DEFAULT</span></code><em class="property"> <span class="pre">=</span> <span class="pre">255</span></em><a class="headerlink" href="#neo3.network.message.MessageType.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.EXTENSIBLE">
+<code class="sig-name descname"><span class="pre">EXTENSIBLE</span></code><em class="property"> <span class="pre">=</span> <span class="pre">46</span></em><a class="headerlink" href="#neo3.network.message.MessageType.EXTENSIBLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.FILTERADD">
+<code class="sig-name descname"><span class="pre">FILTERADD</span></code><em class="property"> <span class="pre">=</span> <span class="pre">49</span></em><a class="headerlink" href="#neo3.network.message.MessageType.FILTERADD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.FILTERCLEAR">
+<code class="sig-name descname"><span class="pre">FILTERCLEAR</span></code><em class="property"> <span class="pre">=</span> <span class="pre">50</span></em><a class="headerlink" href="#neo3.network.message.MessageType.FILTERCLEAR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.FILTERLOAD">
+<code class="sig-name descname"><span class="pre">FILTERLOAD</span></code><em class="property"> <span class="pre">=</span> <span class="pre">48</span></em><a class="headerlink" href="#neo3.network.message.MessageType.FILTERLOAD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.GETADDR">
+<code class="sig-name descname"><span class="pre">GETADDR</span></code><em class="property"> <span class="pre">=</span> <span class="pre">16</span></em><a class="headerlink" href="#neo3.network.message.MessageType.GETADDR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.GETBLOCKBYINDEX">
+<code class="sig-name descname"><span class="pre">GETBLOCKBYINDEX</span></code><em class="property"> <span class="pre">=</span> <span class="pre">41</span></em><a class="headerlink" href="#neo3.network.message.MessageType.GETBLOCKBYINDEX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.GETBLOCKS">
+<code class="sig-name descname"><span class="pre">GETBLOCKS</span></code><em class="property"> <span class="pre">=</span> <span class="pre">36</span></em><a class="headerlink" href="#neo3.network.message.MessageType.GETBLOCKS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.GETDATA">
+<code class="sig-name descname"><span class="pre">GETDATA</span></code><em class="property"> <span class="pre">=</span> <span class="pre">40</span></em><a class="headerlink" href="#neo3.network.message.MessageType.GETDATA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.GETHEADERS">
+<code class="sig-name descname"><span class="pre">GETHEADERS</span></code><em class="property"> <span class="pre">=</span> <span class="pre">32</span></em><a class="headerlink" href="#neo3.network.message.MessageType.GETHEADERS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.HEADERS">
+<code class="sig-name descname"><span class="pre">HEADERS</span></code><em class="property"> <span class="pre">=</span> <span class="pre">33</span></em><a class="headerlink" href="#neo3.network.message.MessageType.HEADERS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.INV">
+<code class="sig-name descname"><span class="pre">INV</span></code><em class="property"> <span class="pre">=</span> <span class="pre">39</span></em><a class="headerlink" href="#neo3.network.message.MessageType.INV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.MEMPOOL">
+<code class="sig-name descname"><span class="pre">MEMPOOL</span></code><em class="property"> <span class="pre">=</span> <span class="pre">37</span></em><a class="headerlink" href="#neo3.network.message.MessageType.MEMPOOL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.MERKLEBLOCK">
+<code class="sig-name descname"><span class="pre">MERKLEBLOCK</span></code><em class="property"> <span class="pre">=</span> <span class="pre">56</span></em><a class="headerlink" href="#neo3.network.message.MessageType.MERKLEBLOCK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.NOTFOUND">
+<code class="sig-name descname"><span class="pre">NOTFOUND</span></code><em class="property"> <span class="pre">=</span> <span class="pre">42</span></em><a class="headerlink" href="#neo3.network.message.MessageType.NOTFOUND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.PING">
+<code class="sig-name descname"><span class="pre">PING</span></code><em class="property"> <span class="pre">=</span> <span class="pre">24</span></em><a class="headerlink" href="#neo3.network.message.MessageType.PING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.PONG">
+<code class="sig-name descname"><span class="pre">PONG</span></code><em class="property"> <span class="pre">=</span> <span class="pre">25</span></em><a class="headerlink" href="#neo3.network.message.MessageType.PONG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.REJECT">
+<code class="sig-name descname"><span class="pre">REJECT</span></code><em class="property"> <span class="pre">=</span> <span class="pre">47</span></em><a class="headerlink" href="#neo3.network.message.MessageType.REJECT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.TRANSACTION">
+<code class="sig-name descname"><span class="pre">TRANSACTION</span></code><em class="property"> <span class="pre">=</span> <span class="pre">43</span></em><a class="headerlink" href="#neo3.network.message.MessageType.TRANSACTION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.VERACK">
+<code class="sig-name descname"><span class="pre">VERACK</span></code><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#neo3.network.message.MessageType.VERACK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageType.VERSION">
+<code class="sig-name descname"><span class="pre">VERSION</span></code><em class="property"> <span class="pre">=</span> <span class="pre">0</span></em><a class="headerlink" href="#neo3.network.message.MessageType.VERSION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="neo3.network.message.MessageConfig">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.message.</span></code><code class="sig-name descname"><span class="pre">MessageConfig</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.message.MessageConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntFlag" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntFlag</span></code></a></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageConfig.COMPRESSED">
+<code class="sig-name descname"><span class="pre">COMPRESSED</span></code><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#neo3.network.message.MessageConfig.COMPRESSED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that the payload data is compressed using LZ4</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.message.MessageConfig.NONE">
+<code class="sig-name descname"><span class="pre">NONE</span></code><em class="property"> <span class="pre">=</span> <span class="pre">0</span></em><a class="headerlink" href="#neo3.network.message.MessageConfig.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that the payload data is not compressed</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h3><a href="../../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">message</span></code> — P2P network packets</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ipfilter.html"
+                        title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ipfilter</span></code> — IP filtering via black and whitelists</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="node.html"
+                        title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">node</span></code> — NEO network node</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/library/network/message.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="node.html" title="node — NEO network node"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="ipfilter.html" title="ipfilter — IP filtering via black and whitelists"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >Network</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">message</span></code> — P2P network packets</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

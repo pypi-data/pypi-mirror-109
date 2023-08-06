@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transaction — All things Transaction related &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="verification — Validation of objects and smart contract invokers" href="verification.html" />
+    <link rel="prev" title="ping — Share chain status" href="ping.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="verification.html" title="verification — Validation of objects and smart contract invokers"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ping.html" title="ping — Share chain status"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" >Network</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="index.html" accesskey="U">Payloads</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">transaction</span></code> — All things Transaction related</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="transaction-all-things-transaction-related">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">transaction</span></code> — All things Transaction related<a class="headerlink" href="#transaction-all-things-transaction-related" title="Permalink to this headline">¶</a></h1>
+<p>This module contains the famous Transaction class.</p>
+<p>At its core is a byte array holding the instructions to be executed by the NEO virtual machine. Such instructions can include token balance updates or general smart contract execution.</p>
+<p>Auxiliary attributes are included for validation purposes and validity constraints (think; only valid until a certain block) among other reasons.</p>
+<dl class="py class">
+<dt id="neo3.network.payloads.transaction.Transaction">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.payloads.transaction.</span></code><code class="sig-name descname"><span class="pre">Transaction</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">version</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nonce</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">system_fee</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">network_fee</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_until_block</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attributes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">script</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">witnesses</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">protocol_magic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="inventory.html#neo3.network.payloads.inventory.IInventory" title="neo3.network.payloads.inventory.IInventory"><code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.network.payloads.inventory.IInventory</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.IInteroperable</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.IJson</span></code></p>
+<p>Data to be executed by the NEO virtual machine.</p>
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.deserialize_from_bytes">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">deserialize_from_bytes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.deserialize_from_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse data into an object instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a>]) – hex escaped bytes.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>~ISerializable_T</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a deserialized instance of the class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.deserialize_special">
+<code class="sig-name descname"><span class="pre">deserialize_special</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.deserialize_special" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal use only - deserialize the data from the stream into a TX that includes the unofficial fields</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.deserialize_unsigned">
+<code class="sig-name descname"><span class="pre">deserialize_unsigned</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.deserialize_unsigned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the unsigned data part of the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – The version is not zero.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – If the system of network fee is negative.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – If there is no script</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.fee_per_byte">
+<code class="sig-name descname"><span class="pre">fee_per_byte</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.fee_per_byte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the network fee per byte.</p>
+<p>Fee per byte = the TX’s networkfee / TX’s size</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Should only be called once the transaction is completely build and will no longer be modified.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.from_json">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_json</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">procotol_magic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.from_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create object from JSON</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.from_replica">
+<code class="sig-name descname"><span class="pre">from_replica</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">replica</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.from_replica" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shallow copy attributes from a reference object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.from_stack_item">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_stack_item</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stack_item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.from_stack_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a stack item into an object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>~T</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.get_hash_data">
+<code class="sig-name descname"><span class="pre">get_hash_data</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protocol_magic</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.get_hash_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the unsigned data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>protocol_magic</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – network protocol number (NEO MainNet = 5195086, Testnet = 1951352142, private net = ??)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.get_script_hashes_for_verifying">
+<code class="sig-name descname"><span class="pre">get_script_hashes_for_verifying</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.get_script_hashes_for_verifying" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper method to get the data used in verifying the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../core/uint.html#neo3.core.types.uint.UInt160" title="neo3.core.types.uint.UInt160"><code class="xref py py-class docutils literal notranslate"><span class="pre">UInt160</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.hash">
+<code class="sig-name descname"><span class="pre">hash</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.hash" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a unique block identifier based on the unsigned data portion of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../../core/uint.html#neo3.core.types.uint.UInt256" title="neo3.core.types.uint.UInt256"><code class="xref py py-class docutils literal notranslate"><span class="pre">UInt256</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.serialize">
+<code class="sig-name descname"><span class="pre">serialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.serialize_special">
+<code class="sig-name descname"><span class="pre">serialize_special</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.serialize_special" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal use only - serialize the TX includes its unofficial fields</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.serialize_unsigned">
+<code class="sig-name descname"><span class="pre">serialize_unsigned</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.serialize_unsigned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the unsigned part of the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.to_array">
+<code class="sig-name descname"><span class="pre">to_array</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a bytearray.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.to_json">
+<code class="sig-name descname"><span class="pre">to_json</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert object into json</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.to_stack_item">
+<code class="sig-name descname"><span class="pre">to_stack_item</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reference_counter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.to_stack_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert self to a VM stack item.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reference_counter</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">ReferenceCounter</span></code>) – ExecutionEngine reference counter</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">StackItem</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.try_get_attribute">
+<code class="sig-name descname"><span class="pre">try_get_attribute</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">needle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.try_get_attribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper method for finding an attribute of a specific type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>needle</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Type" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Type</span></code></a>[~TransactionAttribute_T]) – the type to search for</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[~TransactionAttribute_T]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The attribute matching the type if found. None otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.Transaction.MAX_TRANSACTION_ATTRIBUTES">
+<code class="sig-name descname"><span class="pre">MAX_TRANSACTION_ATTRIBUTES</span></code><em class="property"> <span class="pre">=</span> <span class="pre">16</span></em><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.MAX_TRANSACTION_ATTRIBUTES" title="Permalink to this definition">¶</a></dt>
+<dd><p>the maximum number of transaction attributes for a single transaction</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.Transaction.MAX_TRANSACTION_SIZE">
+<code class="sig-name descname"><span class="pre">MAX_TRANSACTION_SIZE</span></code><em class="property"> <span class="pre">=</span> <span class="pre">102400</span></em><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.MAX_TRANSACTION_SIZE" title="Permalink to this definition">¶</a></dt>
+<dd><p>the maximum number of bytes a single transaction may consists of</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.Transaction.MAX_VALID_UNTIL_BLOCK_INCREMENT">
+<code class="sig-name descname"><span class="pre">MAX_VALID_UNTIL_BLOCK_INCREMENT</span></code><em class="property"> <span class="pre">=</span> <span class="pre">5760</span></em><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.MAX_VALID_UNTIL_BLOCK_INCREMENT" title="Permalink to this definition">¶</a></dt>
+<dd><p>the maximum time a transaction will be valid from height of creation plus this value. Default is 24h</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.Transaction.block_height">
+<code class="sig-name descname"><span class="pre">block_height</span></code><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.block_height" title="Permalink to this definition">¶</a></dt>
+<dd><p>The block height in which the transaction is included.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.inventory_type">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">inventory_type</span></code><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.inventory_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inventory type identifier.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="inventory.html#neo3.network.payloads.inventory.InventoryType" title="neo3.network.payloads.inventory.InventoryType"><code class="xref py py-class docutils literal notranslate"><span class="pre">InventoryType</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.Transaction.network_fee">
+<code class="sig-name descname"><span class="pre">network_fee</span></code><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.network_fee" title="Permalink to this definition">¶</a></dt>
+<dd><p>The cost of validation and inclusion in a block by the consensus node.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.Transaction.nonce">
+<code class="sig-name descname"><span class="pre">nonce</span></code><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.nonce" title="Permalink to this definition">¶</a></dt>
+<dd><p>Random number</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.Transaction.script">
+<code class="sig-name descname"><span class="pre">script</span></code><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.script" title="Permalink to this definition">¶</a></dt>
+<dd><p>The array of instructions to be executed on the chain by the virtual machine.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.Transaction.sender">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">sender</span></code><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.sender" title="Permalink to this definition">¶</a></dt>
+<dd><p>The hash of the account who has send the transaction to the network</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../../core/uint.html#neo3.core.types.uint.UInt160" title="neo3.core.types.uint.UInt160"><code class="xref py py-class docutils literal notranslate"><span class="pre">UInt160</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.Transaction.signers">
+<code class="sig-name descname"><span class="pre">signers</span></code><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.signers" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of authorities used by the <code class="xref py py-func docutils literal notranslate"><span class="pre">ChecKWitness()</span></code> smart contract system call.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.Transaction.system_fee">
+<code class="sig-name descname"><span class="pre">system_fee</span></code><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.system_fee" title="Permalink to this definition">¶</a></dt>
+<dd><p>The cost of executing the <cite>script</cite>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.Transaction.valid_until_block">
+<code class="sig-name descname"><span class="pre">valid_until_block</span></code><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.valid_until_block" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional attributes</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><code class="xref py py-class docutils literal notranslate"><span class="pre">HighPriorityAttribute</span></code>.
+<code class="xref py py-class docutils literal notranslate"><span class="pre">OracleResponse</span></code>.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.Transaction.version">
+<code class="sig-name descname"><span class="pre">version</span></code><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transaction data structure version - for internal use</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.Transaction.vm_state">
+<code class="sig-name descname"><span class="pre">vm_state</span></code><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.vm_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>The virtual machine result of executing the <cite>script</cite>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.Transaction.witnesses">
+<code class="sig-name descname"><span class="pre">witnesses</span></code><em class="property"><span class="pre">:</span> <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Witness</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#neo3.network.payloads.transaction.Transaction.witnesses" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of signing authorities used to validate the transaction.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="neo3.network.payloads.transaction.TransactionAttribute">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.payloads.transaction.</span></code><code class="sig-name descname"><span class="pre">TransactionAttribute</span></code><a class="headerlink" href="#neo3.network.payloads.transaction.TransactionAttribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.ISerializable" title="neo3.core.serialization.ISerializable"><code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.serialization.ISerializable</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.IJson</span></code></p>
+<p>Attributes that can be attached to a Transaction.</p>
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.TransactionAttribute.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.TransactionAttribute.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.TransactionAttribute.deserialize_from">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">deserialize_from</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.TransactionAttribute.deserialize_from" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize from a binary stream into a new TransactionAttribute</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#neo3.network.payloads.transaction.TransactionAttribute" title="neo3.network.payloads.transaction.TransactionAttribute"><code class="xref py py-class docutils literal notranslate"><span class="pre">TransactionAttribute</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.TransactionAttribute.deserialize_from_bytes">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">deserialize_from_bytes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.TransactionAttribute.deserialize_from_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse data into an object instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a>]) – hex escaped bytes.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>~ISerializable_T</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a deserialized instance of the class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.TransactionAttribute.from_json">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_json</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.TransactionAttribute.from_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create object from JSON</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.TransactionAttribute.serialize">
+<code class="sig-name descname"><span class="pre">serialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.TransactionAttribute.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.TransactionAttribute.to_array">
+<code class="sig-name descname"><span class="pre">to_array</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.TransactionAttribute.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a bytearray.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.TransactionAttribute.to_json">
+<code class="sig-name descname"><span class="pre">to_json</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.TransactionAttribute.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert object into json</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.TransactionAttribute.verify">
+<code class="sig-name descname"><span class="pre">verify</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">snapshot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.TransactionAttribute.verify" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="neo3.network.payloads.transaction.TransactionAttributeType">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.payloads.transaction.</span></code><code class="sig-name descname"><span class="pre">TransactionAttributeType</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.TransactionAttributeType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></a></p>
+<p>An enumeration.</p>
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.TransactionAttributeType.from_csharp_name">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_csharp_name</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.TransactionAttributeType.from_csharp_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal helper to parse from C# convention</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.transaction.TransactionAttributeType.to_csharp_name">
+<code class="sig-name descname"><span class="pre">to_csharp_name</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.transaction.TransactionAttributeType.to_csharp_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal helper to match C# convention</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.TransactionAttributeType.HIGH_PRIORITY">
+<code class="sig-name descname"><span class="pre">HIGH_PRIORITY</span></code><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#neo3.network.payloads.transaction.TransactionAttributeType.HIGH_PRIORITY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.transaction.TransactionAttributeType.ORACLE_RESPONSE">
+<code class="sig-name descname"><span class="pre">ORACLE_RESPONSE</span></code><em class="property"> <span class="pre">=</span> <span class="pre">17</span></em><a class="headerlink" href="#neo3.network.payloads.transaction.TransactionAttributeType.ORACLE_RESPONSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ping.html"
+                        title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ping</span></code> — Share chain status</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="verification.html"
+                        title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">verification</span></code> — Validation of objects and smart contract invokers</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/library/network/payloads/transaction.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="verification.html" title="verification — Validation of objects and smart contract invokers"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="ping.html" title="ping — Share chain status"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" >Network</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="index.html" >Payloads</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">transaction</span></code> — All things Transaction related</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

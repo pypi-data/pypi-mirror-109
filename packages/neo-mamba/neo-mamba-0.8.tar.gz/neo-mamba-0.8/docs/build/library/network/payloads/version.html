@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>version — Node handshake data &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Convenient syncing" href="../convenience.html" />
+    <link rel="prev" title="verification — Validation of objects and smart contract invokers" href="verification.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../convenience.html" title="Convenient syncing"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="verification.html" title="verification — Validation of objects and smart contract invokers"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" >Network</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="index.html" accesskey="U">Payloads</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">version</span></code> — Node handshake data</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="version-node-handshake-data">
+<span id="library-network-payloads-version"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">version</span></code> — Node handshake data<a class="headerlink" href="#version-node-handshake-data" title="Permalink to this headline">¶</a></h1>
+<p>Version information is exchanged with the remote node upon first connection. It is part of the handshake sequence.</p>
+<p>The VersionPayload contains attributes that uniquely identify the node, ensures the node is intended to work on the same network (think Mainnet vs Testnet) and make its <a class="reference internal" href="../capabilities.html#library-network-capabilities"><span class="std std-ref">capabilities</span></a> known to the remote node.</p>
+<dl class="py class">
+<dt id="neo3.network.payloads.version.VersionPayload">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.payloads.version.</span></code><code class="sig-name descname"><span class="pre">VersionPayload</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nonce</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_agent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capabilities</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.version.VersionPayload" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.ISerializable" title="neo3.core.serialization.ISerializable"><code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.serialization.ISerializable</span></code></a></p>
+<p>A payload carrying node handshake data.</p>
+<p>Create payload.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nonce</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – unique number which identifies the node instance.</p></li>
+<li><p><strong>user_agent</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – node user agent description. e.g. “NEO3-PYTHON-V001”. Max 1024 bytes.</p></li>
+<li><p><strong>capabilities</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../capabilities.html#neo3.network.capabilities.NodeCapability" title="neo3.network.capabilities.NodeCapability"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeCapability</span></code></a>]) – a list of services a node offers.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="neo3.network.payloads.version.VersionPayload.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.version.VersionPayload.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.version.VersionPayload.deserialize_from_bytes">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">deserialize_from_bytes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.version.VersionPayload.deserialize_from_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse data into an object instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a>]) – hex escaped bytes.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>~ISerializable_T</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a deserialized instance of the class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.version.VersionPayload.serialize">
+<code class="sig-name descname"><span class="pre">serialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.version.VersionPayload.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.version.VersionPayload.to_array">
+<code class="sig-name descname"><span class="pre">to_array</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.version.VersionPayload.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a bytearray.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.version.VersionPayload.MAX_CAPABILITIES">
+<code class="sig-name descname"><span class="pre">MAX_CAPABILITIES</span></code><em class="property"> <span class="pre">=</span> <span class="pre">32</span></em><a class="headerlink" href="#neo3.network.payloads.version.VersionPayload.MAX_CAPABILITIES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.version.VersionPayload.capabilities">
+<code class="sig-name descname"><span class="pre">capabilities</span></code><a class="headerlink" href="#neo3.network.payloads.version.VersionPayload.capabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of services a node offers. See <a class="reference internal" href="../capabilities.html#library-network-capabilities"><span class="std std-ref">capabilities</span></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.version.VersionPayload.magic">
+<code class="sig-name descname"><span class="pre">magic</span></code><a class="headerlink" href="#neo3.network.payloads.version.VersionPayload.magic" title="Permalink to this definition">¶</a></dt>
+<dd><p>A network id. Differs for NEO’s Mainnet (use 5195086) and Testnet (use 1951352142).</p>
+<p>Reference nodes will disconnect if the value doesn’t match with their local settings.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.version.VersionPayload.nonce">
+<code class="sig-name descname"><span class="pre">nonce</span></code><a class="headerlink" href="#neo3.network.payloads.version.VersionPayload.nonce" title="Permalink to this definition">¶</a></dt>
+<dd><p>A unique identifier for the node.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.version.VersionPayload.timestamp">
+<code class="sig-name descname"><span class="pre">timestamp</span></code><a class="headerlink" href="#neo3.network.payloads.version.VersionPayload.timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>The UTC time when the node connected</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.version.VersionPayload.user_agent">
+<code class="sig-name descname"><span class="pre">user_agent</span></code><a class="headerlink" href="#neo3.network.payloads.version.VersionPayload.user_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>A node client description i.e. “NEO-MAMBA-V001”</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.version.VersionPayload.version">
+<code class="sig-name descname"><span class="pre">version</span></code><a class="headerlink" href="#neo3.network.payloads.version.VersionPayload.version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Protocol version of the node</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="verification.html"
+                        title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">verification</span></code> — Validation of objects and smart contract invokers</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../convenience.html"
+                        title="next chapter">Convenient syncing</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/library/network/payloads/version.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../convenience.html" title="Convenient syncing"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="verification.html" title="verification — Validation of objects and smart contract invokers"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" >Network</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="index.html" >Payloads</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">version</span></code> — Node handshake data</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

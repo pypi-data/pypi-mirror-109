@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ecc — ECDSA implementation supporting secp256r1 &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="merkletree — A NEO specific Merkle Patricia Tree implementation" href="merkletree.html" />
+    <link rel="prev" title="bloomfilter — A NEO specific bloomfilter implementation" href="bloomfilter.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="merkletree.html" title="merkletree — A NEO specific Merkle Patricia Tree implementation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="bloomfilter.html" title="bloomfilter — A NEO specific bloomfilter implementation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Core</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">ecc</span></code> — ECDSA implementation supporting secp256r1</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ecc-ecdsa-implementation-supporting-secp256r1">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">ecc</span></code> — ECDSA implementation supporting secp256r1<a class="headerlink" href="#ecc-ecdsa-implementation-supporting-secp256r1" title="Permalink to this headline">¶</a></h1>
+<p>This is a native C implementation with wrappers for Python. It supports the SECP256R1 curve as used by NEO
+This is pure python implementation of ECDSA with secp256r1 curve support as used by NEO.</p>
+<dl class="py class">
+<dt id="neo3.core.cryptography.ecc.ECCCurve">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.core.cryptography.ecc.</span></code><code class="sig-name descname"><span class="pre">ECCCurve</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">neo3crypto.ECCCurve</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="headerlink" href="#neo3.core.cryptography.ecc.ECCCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pybind11_builtins.pybind11_object</span></code></p>
+<p>Members:</p>
+<p>SECP256R1</p>
+<p>SECP256K1</p>
+<dl class="py attribute">
+<dt id="neo3.core.cryptography.ecc.ECCCurve.SECP256K1">
+<code class="sig-name descname"><span class="pre">SECP256K1</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;ECCCurve.SECP256K1:</span> <span class="pre">1&gt;</span></em><a class="headerlink" href="#neo3.core.cryptography.ecc.ECCCurve.SECP256K1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.core.cryptography.ecc.ECCCurve.SECP256R1">
+<code class="sig-name descname"><span class="pre">SECP256R1</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;ECCCurve.SECP256R1:</span> <span class="pre">0&gt;</span></em><a class="headerlink" href="#neo3.core.cryptography.ecc.ECCCurve.SECP256R1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.cryptography.ecc.ECCCurve.name">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#neo3.core.cryptography.ecc.ECCCurve.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="neo3.core.cryptography.ecc.ECPoint">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.core.cryptography.ecc.</span></code><code class="sig-name descname"><span class="pre">ECPoint</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.cryptography.ecc.ECPoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">neo3crypto.ECPoint</span></code>, <a class="reference internal" href="serialization.html#neo3.core.serialization.ISerializable" title="neo3.core.serialization.ISerializable"><code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.serialization.ISerializable</span></code></a></p>
+<p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>__init__(self: neo3crypto.ECPoint, public_key: bytes, curve: neo3crypto.ECCCurve, validate: bool) -&gt; None</p></li>
+<li><p>__init__(self: neo3crypto.ECPoint, private_key: bytes, curve: neo3crypto.ECCCurve) -&gt; None</p></li>
+</ol>
+<dl class="py method">
+<dt id="neo3.core.cryptography.ecc.ECPoint.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">reader</span></em>, <em class="sig-param"><span class="pre">curve=&lt;ECCCurve.SECP256R1:</span> <span class="pre">0&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.cryptography.ecc.ECPoint.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.cryptography.ecc.ECPoint.deserialize_from_bytes">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">deserialize_from_bytes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">data</span></em>, <em class="sig-param"><span class="pre">curve=&lt;ECCCurve.SECP256R1:</span> <span class="pre">0&gt;</span></em>, <em class="sig-param"><span class="pre">validate=True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.cryptography.ecc.ECPoint.deserialize_from_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse data into an object instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a>]) – ECPoint in hex escaped bytes format.</p></li>
+<li><p><strong>curve</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">ECCCurve</span></code>) – the curve type to decompress</p></li>
+<li><p><strong>validate</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – validate if the point valid point on the specified curve</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>~ISerializable_T</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a deserialized instance of the class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.cryptography.ecc.ECPoint.is_zero">
+<code class="sig-name descname"><span class="pre">is_zero</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.cryptography.ecc.ECPoint.is_zero" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="neo3.core.cryptography.ecc.ECPoint.serialize">
+<code class="sig-name descname"><span class="pre">serialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compress</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.core.cryptography.ecc.ECPoint.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="bloomfilter.html"
+                        title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">bloomfilter</span></code> — A NEO specific bloomfilter implementation</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="merkletree.html"
+                        title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">merkletree</span></code> — A NEO specific Merkle Patricia Tree implementation</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/library/core/ecc.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="merkletree.html" title="merkletree — A NEO specific Merkle Patricia Tree implementation"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="bloomfilter.html" title="bloomfilter — A NEO specific bloomfilter implementation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >Core</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">ecc</span></code> — ECDSA implementation supporting secp256r1</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What’s New in neo-mamba 0.1 &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="What’s New in neo-mamba 0.2" href="0.2.html" />
+    <link rel="prev" title="What’s New in neo-mamba" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="0.2.html" title="What’s New in neo-mamba 0.2"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="What’s New in neo-mamba"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">What’s New in neo-mamba</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">What’s New in neo-mamba 0.1</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="what-s-new-in-neo-mamba-0-1">
+<span id="whatsnew-v01"></span><h1>What’s New in neo-mamba 0.1<a class="headerlink" href="#what-s-new-in-neo-mamba-0-1" title="Permalink to this headline">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Erik van den Brink</p>
+</dd>
+</dl>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Hooray! The first release is out. This release brings the initial building blocks for working with the NEO3 platform to the Python ecosystem.</p>
+<p>This release covers 3 major areas being Core, Storage and Networking. Other components such as the Virtual Machine and Smart Contract support will be adde over time.</p>
+</div>
+<div class="section" id="core">
+<h2>core<a class="headerlink" href="#core" title="Permalink to this headline">¶</a></h2>
+<p>The core package provides a collection of tools and reference implementations to work with NEO blockchain specific data.</p>
+<p>You will find</p>
+<ul class="simple">
+<li><p>NEO specific complex data types such as UInt160, UInt256 and a BigInteger <a class="footnote-reference brackets" href="#f1" id="id1">1</a> class</p></li>
+<li><p>A varierty of encryption, hash and secure data structures modules used in NEO3 such as ECDSA, Merkle Patricia Tree and a bloomfilter</p></li>
+<li><p>BinaryReader and BinaryWriter utility classes for data serialization <a class="footnote-reference brackets" href="#f2" id="id2">2</a></p></li>
+</ul>
+</div>
+<div class="section" id="network">
+<h2>network<a class="headerlink" href="#network" title="Permalink to this headline">¶</a></h2>
+<p>The Network package gives access to the P2P layer of the NEO Network over TCP IPv4. Websockets are currently not supported, which should be a very minor impact as 99% of the nodes in the network communicate via the basic TCP stream.</p>
+<p>Here you will find all network payloads <a class="footnote-reference brackets" href="#f3" id="id3">3</a>, the network Message and a Node implementation to help you quickly connect to the network. With these 3 in hands you can start participating in the network as you please. Convenience classes are provided in the form of a NodeManager and a SyncManager. These are there to help you setup long running services for syncing the chain and keeping it in sync.</p>
+<p>A special mention is in place for the Block and Transaction classes that are part of the network payloads.</p>
+</div>
+<div class="section" id="storage">
+<h2>storage<a class="headerlink" href="#storage" title="Permalink to this headline">¶</a></h2>
+<p>This package provides two backend implementations as well as a set of interfaces for implementating your backend. The backends are an In-Memory backend and LevelDB. LevelDB is expected to be replaced over time by RocksDB once a decent Python wrapper becomes available. The main advantage of RocksDB over LevelDB is the support for multi process access to the database which can become useful if wish to keep your chain up to date while also running queries on the same database.</p>
+<p class="rubric">Footnotes</p>
+<dl class="footnote brackets">
+<dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>While Python by default supports infinite size integers there are important differences when it comes to the C# BigInteger class as used in the NEO reference implementation. The BigInteger class is used heavily in relationship to the Virtual Machine and Smart Contracts and we thus have to ensure similar behaviour.</p>
+</dd>
+<dt class="label" id="f2"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>A number of data structures in the NEO platform have variable length types. Support for easy (de)serialization are part of the BinaryReader/Writer classes.</p>
+</dd>
+<dt class="label" id="f3"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><p>the Consensus payload related data structures are only partially implemented. The effort to add support at this moment does not outweigh the small expected number of required use-cases. A future version is expected to also implement full support for this.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">What’s New in neo-mamba 0.1</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#core">core</a></li>
+<li><a class="reference internal" href="#network">network</a></li>
+<li><a class="reference internal" href="#storage">storage</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">What’s New in neo-mamba</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="0.2.html"
+                        title="next chapter">What’s New in neo-mamba 0.2</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/whatsnew/0.1.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="0.2.html" title="What’s New in neo-mamba 0.2"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="What’s New in neo-mamba"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >What’s New in neo-mamba</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">What’s New in neo-mamba 0.1</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>address — Network address classes &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="block — All things Block related" href="block.html" />
+    <link rel="prev" title="Payloads" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="block.html" title="block — All things Block related"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Payloads"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" >Network</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="index.html" accesskey="U">Payloads</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">address</span></code> — Network address classes</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="address-network-address-classes">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">address</span></code> — Network address classes<a class="headerlink" href="#address-network-address-classes" title="Permalink to this headline">¶</a></h1>
+<p>This module contains several classes for working with network addresses.</p>
+<p>The <a class="reference internal" href="#neo3.network.payloads.AddrPayload" title="neo3.network.payloads.AddrPayload"><code class="xref py py-class docutils literal notranslate"><span class="pre">AddrPayload</span></code></a> is used to share <a class="reference internal" href="#neo3.network.payloads.NetworkAddress" title="neo3.network.payloads.NetworkAddress"><code class="xref py py-class docutils literal notranslate"><span class="pre">NetworkAddress</span></code></a>es with other nodes. A <cite>NetworkAddress</cite> is not just a wrapper around a hostname and port but also holds attributes for labelling its performance using the <a class="reference internal" href="#neo3.network.payloads.AddressState" title="neo3.network.payloads.AddressState"><code class="xref py py-class docutils literal notranslate"><span class="pre">AddressState</span></code></a> enum and a list of capabilities it has (more next).</p>
+<p>Not all nodes in the network have similar performance when it comes to responding to network requests. There are many reasons for this such as geographical location and hardware (disk/cpu/memory) in relationship to the amount of connected nodes. In processes like chain syncing one might want to track a node’s performance to ensure the best response times. The network convenience classes do exactly this.</p>
+<p>The node listening on a particular address can run a variety of services such as an RPC server, Websocket server or TCP/IPv4 server. This information is shared during the initial handshake with a node (see <a class="reference internal" href="version.html#library-network-payloads-version"><span class="std std-ref">version</span></a>), included in the network address state and shared with other nodes asking for addresses (see <a class="reference internal" href="../message.html#message-usage-getaddr"><span class="std std-ref">requesting address list</span></a>). This allows one to filter addresses based on the specific services it offers.</p>
+<dl class="py class">
+<dt id="neo3.network.payloads.AddrPayload">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.payloads.</span></code><code class="sig-name descname"><span class="pre">AddrPayload</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">addresses</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.AddrPayload" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.ISerializable" title="neo3.core.serialization.ISerializable"><code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.serialization.ISerializable</span></code></a></p>
+<dl class="py method">
+<dt id="neo3.network.payloads.AddrPayload.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.AddrPayload.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.AddrPayload.deserialize_from_bytes">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">deserialize_from_bytes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.AddrPayload.deserialize_from_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse data into an object instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.9)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a>]) – hex escaped bytes.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>~ISerializable_T</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a deserialized instance of the class.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.AddrPayload.serialize">
+<code class="sig-name descname"><span class="pre">serialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.AddrPayload.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.AddrPayload.to_array">
+<code class="sig-name descname"><span class="pre">to_array</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.AddrPayload.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a bytearray.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="neo3.network.payloads.NetworkAddress">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.payloads.</span></code><code class="sig-name descname"><span class="pre">NetworkAddress</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">address</span></em>, <em class="sig-param"><span class="pre">capabilities=None</span></em>, <em class="sig-param"><span class="pre">timestamp=None</span></em>, <em class="sig-param"><span class="pre">state=&lt;AddressState.NEW:</span> <span class="pre">0&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.NetworkAddress" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.ISerializable" title="neo3.core.serialization.ISerializable"><code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.core.serialization.ISerializable</span></code></a></p>
+<p>Create an instance.</p>
+<dl class="py method">
+<dt id="neo3.network.payloads.NetworkAddress.deserialize">
+<code class="sig-name descname"><span class="pre">deserialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.NetworkAddress.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserialize the object from a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reader</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryReader" title="neo3.core.serialization.BinaryReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryReader</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.NetworkAddress.serialize">
+<code class="sig-name descname"><span class="pre">serialize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.NetworkAddress.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize the object into a binary stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="../../core/serialization.html#neo3.core.serialization.BinaryWriter" title="neo3.core.serialization.BinaryWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">BinaryWriter</span></code></a>) – instance.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.NetworkAddress.set_state_connected">
+<code class="sig-name descname"><span class="pre">set_state_connected</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.NetworkAddress.set_state_connected" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.NetworkAddress.set_state_dead">
+<code class="sig-name descname"><span class="pre">set_state_dead</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.NetworkAddress.set_state_dead" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.NetworkAddress.set_state_new">
+<code class="sig-name descname"><span class="pre">set_state_new</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.NetworkAddress.set_state_new" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.NetworkAddress.set_state_poor">
+<code class="sig-name descname"><span class="pre">set_state_poor</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.NetworkAddress.set_state_poor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.NetworkAddress.ip">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">ip</span></code><a class="headerlink" href="#neo3.network.payloads.NetworkAddress.ip" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.NetworkAddress.is_state_connected">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">is_state_connected</span></code><a class="headerlink" href="#neo3.network.payloads.NetworkAddress.is_state_connected" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.NetworkAddress.is_state_dead">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">is_state_dead</span></code><a class="headerlink" href="#neo3.network.payloads.NetworkAddress.is_state_dead" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.NetworkAddress.is_state_new">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">is_state_new</span></code><a class="headerlink" href="#neo3.network.payloads.NetworkAddress.is_state_new" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.NetworkAddress.is_state_poor">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">is_state_poor</span></code><a class="headerlink" href="#neo3.network.payloads.NetworkAddress.is_state_poor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.payloads.NetworkAddress.port">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">port</span></code><a class="headerlink" href="#neo3.network.payloads.NetworkAddress.port" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="neo3.network.payloads.DisconnectReason">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.payloads.</span></code><code class="sig-name descname"><span class="pre">DisconnectReason</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.DisconnectReason" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a></p>
+<p>Reason for disconnecting a node.</p>
+<p>Will also be broadcasted back to the node when <a class="reference external" href="https://github.com/neo-project/neo/pull/1154">this PR</a> is merged.
+For now only used internally with logging.</p>
+<dl class="py attribute">
+<dt id="neo3.network.payloads.DisconnectReason.HANDSHAKE_VERACK_ERROR">
+<code class="sig-name descname"><span class="pre">HANDSHAKE_VERACK_ERROR</span></code><em class="property"> <span class="pre">=</span> <span class="pre">5</span></em><a class="headerlink" href="#neo3.network.payloads.DisconnectReason.HANDSHAKE_VERACK_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.DisconnectReason.HANDSHAKE_VERSION_ERROR">
+<code class="sig-name descname"><span class="pre">HANDSHAKE_VERSION_ERROR</span></code><em class="property"> <span class="pre">=</span> <span class="pre">4</span></em><a class="headerlink" href="#neo3.network.payloads.DisconnectReason.HANDSHAKE_VERSION_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.DisconnectReason.IPFILTER_NOT_ALLOWED">
+<code class="sig-name descname"><span class="pre">IPFILTER_NOT_ALLOWED</span></code><em class="property"> <span class="pre">=</span> <span class="pre">3</span></em><a class="headerlink" href="#neo3.network.payloads.DisconnectReason.IPFILTER_NOT_ALLOWED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.DisconnectReason.MAX_CONNECTIONS_REACHED">
+<code class="sig-name descname"><span class="pre">MAX_CONNECTIONS_REACHED</span></code><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#neo3.network.payloads.DisconnectReason.MAX_CONNECTIONS_REACHED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.DisconnectReason.POOR_PERFORMANCE">
+<code class="sig-name descname"><span class="pre">POOR_PERFORMANCE</span></code><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#neo3.network.payloads.DisconnectReason.POOR_PERFORMANCE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.DisconnectReason.SHUTTING_DOWN">
+<code class="sig-name descname"><span class="pre">SHUTTING_DOWN</span></code><em class="property"> <span class="pre">=</span> <span class="pre">6</span></em><a class="headerlink" href="#neo3.network.payloads.DisconnectReason.SHUTTING_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.DisconnectReason.UNKNOWN">
+<code class="sig-name descname"><span class="pre">UNKNOWN</span></code><em class="property"> <span class="pre">=</span> <span class="pre">0</span></em><a class="headerlink" href="#neo3.network.payloads.DisconnectReason.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="neo3.network.payloads.AddressState">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.payloads.</span></code><code class="sig-name descname"><span class="pre">AddressState</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.payloads.AddressState" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a></p>
+<p>Node state</p>
+<p>Used for tracking remote address state.</p>
+<dl class="py attribute">
+<dt id="neo3.network.payloads.AddressState.CONNECTED">
+<code class="sig-name descname"><span class="pre">CONNECTED</span></code><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#neo3.network.payloads.AddressState.CONNECTED" title="Permalink to this definition">¶</a></dt>
+<dd><p>an address that is associated with a live node and performing OK.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.AddressState.DEAD">
+<code class="sig-name descname"><span class="pre">DEAD</span></code><em class="property"> <span class="pre">=</span> <span class="pre">3</span></em><a class="headerlink" href="#neo3.network.payloads.AddressState.DEAD" title="Permalink to this definition">¶</a></dt>
+<dd><p>an address that could not be resolved or connected to due to a timeout.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.AddressState.NEW">
+<code class="sig-name descname"><span class="pre">NEW</span></code><em class="property"> <span class="pre">=</span> <span class="pre">0</span></em><a class="headerlink" href="#neo3.network.payloads.AddressState.NEW" title="Permalink to this definition">¶</a></dt>
+<dd><p>an address that has not been used before in the current connection cycle.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.payloads.AddressState.POOR">
+<code class="sig-name descname"><span class="pre">POOR</span></code><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#neo3.network.payloads.AddressState.POOR" title="Permalink to this definition">¶</a></dt>
+<dd><p>an address from a node that has been disconnected from due to</p>
+<ul class="simple">
+<li><p>bad performance</p></li>
+<li><p>malformed data or protocol responses</p></li>
+<li><p>or max connections reached reasons.</p></li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Payloads</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="block.html"
+                        title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">block</span></code> — All things Block related</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/library/network/payloads/address.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="block.html" title="block — All things Block related"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Payloads"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" >Network</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="index.html" >Payloads</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">address</span></code> — Network address classes</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

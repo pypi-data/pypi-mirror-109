@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The neo-mamba Library" href="../library/index.html" />
+    <link rel="prev" title="What’s New in neo-mamba 0.7" href="../whatsnew/0.7.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../library/index.html" title="The neo-mamba Library"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../whatsnew/0.7.html" title="What’s New in neo-mamba 0.7"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">neo-mamba  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Tutorial</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="tutorial">
+<span id="tutorial-index"></span><h1>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h1>
+<p>After a quick introduction and environment setup we’ll create a small program that syncs the blockchain and shows some block information on a webpage as the blocks flow in.</p>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>This SDK intends to provide building blocks for Python developers to interact with the NEO blockchain as a means to lower the entry barrier. It is a work in progress and thus you can expect that not all parts of the blockchain are supported. What is present should be functioning correctly unless explicitly mentioned (e.g. because they depend on structures not yet available). Please report any issues on <a class="reference external" href="https://github.com/CityOfZion/neo-mamba/issues">Github</a> or submit ideas how to improve the SDK.</p>
+<p>Have a look at the <a class="reference internal" href="../whatsnew/index.html#whatsnew-index"><span class="std std-ref">What’s new</span></a> pages to get a feel what you can expect.</p>
+</div>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>There is one system dependency, namely <a class="reference external" href="https://www.python.org/downloads/release/python-374/">Python 3.7</a> or above. The other dependencies are covered by <code class="docutils literal notranslate"><span class="pre">pip</span></code>.</p>
+<p>It is recommended to put all project dependencies into its own virtual environment, this way we don’t pollute the global installation which could lead to version conflicts.</p>
+<ol class="arabic simple">
+<li><p>Install from Github:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">CityOfZion</span><span class="o">/</span><span class="n">neo</span><span class="o">-</span><span class="n">mamba</span><span class="o">.</span><span class="n">git</span>
+<span class="n">cd</span> <span class="n">neo</span><span class="o">-</span><span class="n">mamba</span>
+
+<span class="c1"># create virtual environment using Python 3.7 and activate</span>
+<span class="n">python3</span><span class="o">.</span><span class="mi">7</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="n">venv</span>
+<span class="n">source</span> <span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+
+<span class="c1"># install the package in an editable form</span>
+<span class="p">(</span><span class="n">venv</span><span class="p">)</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">wheel</span> <span class="o">-</span><span class="n">e</span> <span class="o">.</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Install from PyPi</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># create project dir</span>
+<span class="n">mkdir</span> <span class="n">myproject</span>
+<span class="n">cd</span> <span class="n">myproject</span>
+
+<span class="c1"># create virtual environment using Python 3.7 and activate</span>
+<span class="n">python3</span><span class="o">.</span><span class="mi">7</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="n">venv</span>
+<span class="n">source</span> <span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+
+<span class="p">(</span><span class="n">venv</span><span class="p">)</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">wheel</span> <span class="n">neo</span><span class="o">-</span><span class="n">mamba</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>If you intend the use LevelDB as backend (as opposed to the In-Memory solution), then you’ll also have to install that system dependency.</p>
+<p>On OSX <code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">leveldb</span></code>, on Ubuntu/Debian <code class="docutils literal notranslate"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">libleveldb-dev</span></code>. Finally, install the LevelDB Python wrapper <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">plyvel</span></code>.</p>
+</div>
+<div class="section" id="example-program">
+<h2>Example program<a class="headerlink" href="#example-program" title="Permalink to this headline">¶</a></h2>
+<p>We will use <a class="reference external" href="https://github.com/pgjones/quart">quart</a> as micro web framework which is a Flask superset and very straight forward to understand. Start by installing it</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">quart</span>
+</pre></div>
+</div>
+<p>Next, the full program is listed first and we’ll break down the individual parts. On a high level a web server is started serving our page and a websocket. Secondly, we start the block syncing process, listen to incoming block events and send the results via the websocket to the page.</p>
+<p>Let’s get to it!</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="kn">import</span> <span class="nn">asyncio</span>
+
+ <span class="c1"># web specific imports</span>
+ <span class="kn">from</span> <span class="nn">quart</span> <span class="kn">import</span> <span class="n">Quart</span><span class="p">,</span> <span class="n">websocket</span>
+
+ <span class="c1"># neo3 specific imports</span>
+ <span class="kn">from</span> <span class="nn">neo3</span> <span class="kn">import</span> <span class="n">settings</span>
+ <span class="kn">from</span> <span class="nn">neo3.network</span> <span class="kn">import</span> <span class="n">convenience</span><span class="p">,</span> <span class="n">payloads</span>
+ <span class="kn">from</span> <span class="nn">neo3.core</span> <span class="kn">import</span> <span class="n">msgrouter</span>
+
+ <span class="n">msg_queue</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
+
+ <span class="c1"># web specific part</span>
+ <span class="n">app</span> <span class="o">=</span> <span class="n">Quart</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+ <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./index.html&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+     <span class="n">html_page</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+ <span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+ <span class="k">async</span> <span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+     <span class="k">return</span> <span class="n">html_page</span>
+
+ <span class="nd">@app</span><span class="o">.</span><span class="n">websocket</span><span class="p">(</span><span class="s1">&#39;/ws&#39;</span><span class="p">)</span>
+ <span class="k">async</span> <span class="k">def</span> <span class="nf">ws</span><span class="p">():</span>
+     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+         <span class="n">msg</span> <span class="o">=</span> <span class="k">await</span> <span class="n">msg_queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+         <span class="k">await</span> <span class="n">websocket</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+ <span class="c1"># neo specific part</span>
+ <span class="k">def</span> <span class="nf">connection_done</span><span class="p">(</span><span class="n">node_client</span><span class="p">,</span> <span class="n">failure</span><span class="p">):</span>
+     <span class="k">if</span> <span class="n">failure</span><span class="p">:</span>
+         <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span>
+             <span class="n">msg_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to connect to </span><span class="si">{</span><span class="n">failure</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2"> reason: </span><span class="si">{</span><span class="n">failure</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">))</span>
+     <span class="k">else</span><span class="p">:</span>
+         <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span>
+             <span class="n">msg_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Connected to node </span><span class="si">{</span><span class="n">node_client</span><span class="o">.</span><span class="n">version</span><span class="o">.</span><span class="n">user_agent</span><span class="si">}</span><span class="s2"> @ </span><span class="si">{</span><span class="n">node_client</span><span class="o">.</span><span class="n">address</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">))</span>
+
+ <span class="k">def</span> <span class="nf">block_received</span><span class="p">(</span><span class="n">from_nodeid</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">block</span><span class="p">:</span> <span class="n">payloads</span><span class="o">.</span><span class="n">Block</span><span class="p">):</span>
+     <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="n">msg_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Received block with height </span><span class="si">{</span><span class="n">block</span><span class="o">.</span><span class="n">index</span><span class="si">}</span><span class="s2"> and hash </span><span class="si">{</span><span class="n">block</span><span class="o">.</span><span class="n">hash</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">))</span>
+
+ <span class="k">async</span> <span class="k">def</span> <span class="nf">run_neo</span><span class="p">():</span>
+     <span class="c1"># set network magic to NEO TestNet</span>
+     <span class="n">settings</span><span class="o">.</span><span class="n">network</span><span class="o">.</span><span class="n">magic</span> <span class="o">=</span> <span class="mi">1951352142</span>
+
+     <span class="c1"># add a node to test against</span>
+     <span class="n">settings</span><span class="o">.</span><span class="n">network</span><span class="o">.</span><span class="n">seedlist</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;seed1t.neo.org:20333&#39;</span><span class="p">]</span>
+
+     <span class="c1"># listen to the connection events broad casted by the node manager</span>
+     <span class="n">msgrouter</span><span class="o">.</span><span class="n">on_client_connect_done</span> <span class="o">+=</span> <span class="n">connection_done</span>
+
+     <span class="c1"># listen to block received events</span>
+     <span class="n">msgrouter</span><span class="o">.</span><span class="n">on_block</span> <span class="o">+=</span> <span class="n">block_received</span>
+
+     <span class="n">node_mgr</span> <span class="o">=</span> <span class="n">convenience</span><span class="o">.</span><span class="n">NodeManager</span><span class="p">()</span>
+     <span class="n">node_mgr</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+     <span class="n">sync_mgr</span> <span class="o">=</span> <span class="n">convenience</span><span class="o">.</span><span class="n">SyncManager</span><span class="p">()</span>
+     <span class="k">await</span> <span class="n">sync_mgr</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+ <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+     <span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
+     <span class="n">loop</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="n">run_neo</span><span class="p">())</span>
+     <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">loop</span><span class="o">=</span><span class="n">loop</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>Copy the following in a file name <code class="docutils literal notranslate"><span class="pre">index.html</span></code> and place it in the same folder as the example Python program.</p>
+<div class="highlight-html notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Title<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="kd">let</span> <span class="nx">socket</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WebSocket</span><span class="p">(</span><span class="s2">&quot;ws://127.0.0.1:5000/ws&quot;</span><span class="p">);</span>
+
+        <span class="nx">socket</span><span class="p">.</span><span class="nx">onmessage</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">blocks</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;blocks&quot;</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">blocks</span><span class="p">.</span><span class="nx">childElementCount</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">blocks</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">blocks</span><span class="p">.</span><span class="nx">firstChild</span><span class="p">)</span>
+            <span class="p">}</span>
+            <span class="kd">var</span> <span class="nx">child</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">)</span>
+            <span class="nx">child</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="sb">`</span><span class="si">${</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+            <span class="nx">blocks</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">child</span><span class="p">);</span>
+        <span class="p">};</span>
+    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;blocks&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<p>Let’s start with the webservice</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</pre></div></td><td class="code"><div class="highlight"><pre><span></span>     <span class="n">msg_queue</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Queue</span><span class="p">()</span>
+
+     <span class="c1"># web specific part</span>
+     <span class="n">app</span> <span class="o">=</span> <span class="n">Quart</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./index.html&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+         <span class="n">html_page</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+     <span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+     <span class="k">async</span> <span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+         <span class="k">return</span> <span class="n">html_page</span>
+
+     <span class="nd">@app</span><span class="o">.</span><span class="n">websocket</span><span class="p">(</span><span class="s1">&#39;/ws&#39;</span><span class="p">)</span>
+     <span class="k">async</span> <span class="k">def</span> <span class="nf">ws</span><span class="p">():</span>
+         <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+             <span class="n">msg</span> <span class="o">=</span> <span class="k">await</span> <span class="n">msg_queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+             <span class="k">await</span> <span class="n">websocket</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>Lines <code class="docutils literal notranslate"><span class="pre">19-21</span></code> create an endpoint to which we can browse with a webbrowser at the server address we will learn about later. This is the landing page for the web browser and it returns a standard HTML page for which we read the source at lines <code class="docutils literal notranslate"><span class="pre">16-17</span></code> to keep the code small. The source code for this HTML page can be found <a class="reference download internal" download="" href="../_downloads/43436a66f68ce39a1554f94c14624cd6/index.html"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>. Place it in the same folder as the sample code.</p>
+<p>The HTML page connects to the websocket server started at lines <code class="docutils literal notranslate"><span class="pre">23-27</span></code>. This endpoint reads messages from the <code class="docutils literal notranslate"><span class="pre">msg_queue</span></code> (Line <code class="docutils literal notranslate"><span class="pre">11</span></code>) and forwards them to the HTML page to be displayed. We’ll see how this message queue is filled once we discuss the blockchain syncing code.</p>
+<p>At line <code class="docutils literal notranslate"><span class="pre">63</span></code> we call <code class="code docutils literal notranslate"><span class="pre">app.run(loop=loop)</span></code> which starts the webservice and greets you with the address we can point the webbrowser to.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Running</span> <span class="n">on</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">5000</span> <span class="p">(</span><span class="n">CTRL</span> <span class="o">+</span> <span class="n">C</span> <span class="n">to</span> <span class="n">quit</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Next, we’ll discuss the the blockchain syncing part that comes from the SDK. You can read more about the inner details of that process in the <a class="reference internal" href="../library/network/convenience.html#library-network-convenience"><span class="std std-ref">convenience syncing</span></a> chapter. The code discussed here is actually a slightly modified version of the <a class="reference internal" href="../library/network/convenience.html#library-convenience-full-usage-example"><span class="std std-ref">example code</span></a> used in that chapter.</p>
+<p>The <code class="code docutils literal notranslate"><span class="pre">run_neo()</span></code> function should be self-explanatory.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>41
+42
+43
+44
+45
+46</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span> <span class="nf">run_neo</span><span class="p">():</span>
+   <span class="c1"># set network magic to NEO TestNet</span>
+   <span class="n">settings</span><span class="o">.</span><span class="n">network</span><span class="o">.</span><span class="n">magic</span> <span class="o">=</span> <span class="mi">1951352142</span>
+
+   <span class="c1"># add a node to test against</span>
+   <span class="n">settings</span><span class="o">.</span><span class="n">network</span><span class="o">.</span><span class="n">seedlist</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;seed1t.neo.org:20333&#39;</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<p>We start by configuring the network magic. This is a special number identifying the Main network, test network or even a privat network. It is shared and validated during the first connection to the network and will disconnect nodes if there is a mismatch. The seedlist is consulted by the node manager as the first entry point to connect to the network by the code.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>54
+55</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="n">node_mgr</span> <span class="o">=</span> <span class="n">convenience</span><span class="o">.</span><span class="n">NodeManager</span><span class="p">()</span>
+ <span class="n">node_mgr</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<p>Next, we start the sync manager which takes care of retrieving the blocks from the network. It broadcasts events that we listen to.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>57
+58</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">sync_mgr</span> <span class="o">=</span> <span class="n">convenience</span><span class="o">.</span><span class="n">SyncManager</span><span class="p">()</span>
+<span class="k">await</span> <span class="n">sync_mgr</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>51
+52</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># listen to block received events</span>
+<span class="n">msgrouter</span><span class="o">.</span><span class="n">on_block</span> <span class="o">+=</span> <span class="n">block_received</span>
+</pre></div>
+</td></tr></table></div>
+<p>Every time a block is received on the network we call our event handler at <code class="docutils literal notranslate"><span class="pre">block_received()</span></code>. This handler puts a
+message into the <code class="docutils literal notranslate"><span class="pre">msg_queue</span></code> that our websocket server reads from once a web client has connected to the websocket.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>38
+39</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">block_received</span><span class="p">(</span><span class="n">from_nodeid</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">block</span><span class="p">:</span> <span class="n">payloads</span><span class="o">.</span><span class="n">Block</span><span class="p">):</span>
+   <span class="n">asyncio</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="n">msg_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Received block with height </span><span class="si">{</span><span class="n">block</span><span class="o">.</span><span class="n">index</span><span class="si">}</span><span class="s2"> and hash </span><span class="si">{</span><span class="n">block</span><span class="o">.</span><span class="n">hash</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<p>The sample HTML file does connects to this sockets and displays the blocks as flowing in as they are retrieved from the
+network as shown below. With that the circle is complete.</p>
+<img alt="../_images/sync.gif" class="align-center" src="../_images/sync.gif" />
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Tutorial</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#setup">Setup</a></li>
+<li><a class="reference internal" href="#example-program">Example program</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../whatsnew/0.7.html"
+                        title="previous chapter">What’s New in neo-mamba 0.7</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../library/index.html"
+                        title="next chapter">The neo-mamba Library</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/tutorial/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../library/index.html" title="The neo-mamba Library"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../whatsnew/0.7.html" title="What’s New in neo-mamba 0.7"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">neo-mamba  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Tutorial</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

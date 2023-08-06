@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>biginteger — A C# like BigInteger implementation &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="HOWTOs" href="../../howto/index.html" />
+    <link rel="prev" title="Virtual Machine" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../../howto/index.html" title="HOWTOs"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Virtual Machine"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Virtual Machine</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">biginteger</span></code> — A C# like BigInteger implementation</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="biginteger-a-c-like-biginteger-implementation">
+<span id="library-vm-biginteger"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">biginteger</span></code> — A C# like BigInteger implementation<a class="headerlink" href="#biginteger-a-c-like-biginteger-implementation" title="Permalink to this headline">¶</a></h1>
+<p>While Python natively supports infinite numbers through its build in <a class="reference external" href="https://docs.python.org/3/library/functions.html#int">int</a> type, the BigInteger class of the C# reference implementation exhibits different behaviour in certain areas. By using this class we can prevent any discrepancies in price calculations, virtual machine execution path and more.</p>
+<p>In particular the following differences in behaviour can be expected when using this class.</p>
+<ul class="simple">
+<li><p>Negative bitwise shifting is supported.</p>
+<ul>
+<li><p>A negative left shift becomes a positive right shift.</p></li>
+<li><p>A negative right shift becomes a positive left shift.</p></li>
+</ul>
+</li>
+<li><p>Increased modulo rounding precision.</p></li>
+<li><p>Use modulo truncated division instead of floored division.</p></li>
+<li><p>Serialization of negative numbers can in certain cases return an extra byte.</p></li>
+<li><p>Integer division instead of floating point division.</p></li>
+</ul>
+<dl class="py class">
+<dt id="neo3.vm.BigInteger">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.vm.</span></code><code class="sig-name descname"><span class="pre">BigInteger</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.vm.BigInteger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pybind11_builtins.pybind11_object</span></code></p>
+<p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>__init__(self: pybiginteger.BigInteger, value: <a class="reference external" href="https://docs.python.org/3/library/functions.html#int">int</a>) -&gt; None</p></li>
+<li><p>__init__(self: pybiginteger.BigInteger, value: buffer) -&gt; None</p></li>
+</ol>
+<dl class="py method">
+<dt id="neo3.vm.BigInteger.is_even">
+<code class="sig-name descname"><span class="pre">is_even</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pybiginteger.BigInteger</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a><a class="headerlink" href="#neo3.vm.BigInteger.is_even" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="neo3.vm.BigInteger.is_power_of_two">
+<code class="sig-name descname"><span class="pre">is_power_of_two</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pybiginteger.BigInteger</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a><a class="headerlink" href="#neo3.vm.BigInteger.is_power_of_two" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="neo3.vm.BigInteger.log">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">log</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.vm.BigInteger.log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>log(value: pybiginteger.BigInteger) -&gt; float</p></li>
+<li><p>log(value: <a class="reference external" href="https://docs.python.org/3/library/functions.html#int">int</a>) -&gt; float</p></li>
+<li><p>log(value: pybiginteger.BigInteger, base_value: float) -&gt; float</p></li>
+<li><p>log(value: <a class="reference external" href="https://docs.python.org/3/library/functions.html#int">int</a>, base_value: float) -&gt; float</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.vm.BigInteger.log10">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">log10</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.vm.BigInteger.log10" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>log10(value: pybiginteger.BigInteger) -&gt; float</p></li>
+<li><p>log10(value: <a class="reference external" href="https://docs.python.org/3/library/functions.html#int">int</a>) -&gt; float</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.vm.BigInteger.minus_one">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">minus_one</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">pybiginteger.BigInteger</span><a class="headerlink" href="#neo3.vm.BigInteger.minus_one" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="neo3.vm.BigInteger.one">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">one</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">pybiginteger.BigInteger</span><a class="headerlink" href="#neo3.vm.BigInteger.one" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="neo3.vm.BigInteger.to_array">
+<code class="sig-name descname"><span class="pre">to_array</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pybiginteger.BigInteger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_unsigned</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_bigendian</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)"><span class="pre">bytes</span></a><a class="headerlink" href="#neo3.vm.BigInteger.to_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value of the BigInteger.
+For more information on the options see:
+<a class="reference external" href="https://docs.microsoft.com/en-us/dotnet/api/system.numerics.biginteger.tobytearray?view=netcore-3.1#System_Numerics_BigInteger_ToByteArray_System_Boolean_System_Boolean_">https://docs.microsoft.com/en-us/dotnet/api/system.numerics.biginteger.tobytearray?view=netcore-3.1#System_Numerics_BigInteger_ToByteArray_System_Boolean_System_Boolean_</a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.vm.BigInteger.zero">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">zero</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">pybiginteger.BigInteger</span><a class="headerlink" href="#neo3.vm.BigInteger.zero" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="neo3.vm.BigInteger.sign">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">sign</span></code><a class="headerlink" href="#neo3.vm.BigInteger.sign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Virtual Machine</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../../howto/index.html"
+                        title="next chapter">HOWTOs</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/library/vm/biginteger.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../../howto/index.html" title="HOWTOs"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Virtual Machine"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >Virtual Machine</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">biginteger</span></code> — A C# like BigInteger implementation</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>

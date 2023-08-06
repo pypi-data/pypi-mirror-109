@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convenient syncing &#8212; neo-mamba  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/neo3.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Storage" href="../storage/index.html" />
+    <link rel="prev" title="version — Node handshake data" href="payloads/version.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../storage/index.html" title="Storage"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="payloads/version.html" title="version — Node handshake data"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Network</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Convenient syncing</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="convenient-syncing">
+<span id="library-network-convenience"></span><h1>Convenient syncing<a class="headerlink" href="#convenient-syncing" title="Permalink to this headline">¶</a></h1>
+<p>Syncing blockchain data at first sight sounds simple but is actually a very complex task. A network client operates in a constantly changing environment where other nodes join and leave the network, are in different geographical locations, have a variety of hardware resources, have varying loads depending on the number of clients and their requests, have varying available bandwidth and possibly even face adversiary actors. In such an environment you want a process that can handle and recover from unexpected behaviour (be it invalid requests, no responses etc). The two classes discussed next do exactly that and allow the user to focus on post processing the Blocks instead of retrieval.</p>
+<p>Introducing <a class="reference internal" href="#neo3.network.convenience.nodemanager.NodeManager" title="neo3.network.convenience.nodemanager.NodeManager"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeManager</span></code></a> and <a class="reference internal" href="#neo3.network.convenience.syncmanager.SyncManager" title="neo3.network.convenience.syncmanager.SyncManager"><code class="xref py py-class docutils literal notranslate"><span class="pre">SyncManager</span></code></a>.</p>
+<p class="rubric">Node manager</p>
+<p>The node manager is responsible for establishing and maintaining and pool of active connections to healthy NEO nodes.</p>
+<p>When started it begins by connecting to a seedlist obtained from the global settings object. It runs three services on an interval.</p>
+<ol class="arabic simple">
+<li><p>a connection pool monitor to ensure it meets the configured mininum and maximum client settings and attempt to fill any open spots .</p></li>
+<li><p>an address list filler which asks for new addresses from connected nodes to ensure it always has a new node to connect to.</p></li>
+<li><p>a connection pool monitor to ensure that the remote nodes local blockchain height keeps advancing. If they are stuck they’ll be replaced by a new node and tagged for poor performance.</p></li>
+</ol>
+<p>In the unlikely event that all nodes fail and there are no more new addresses to connect to, the node manager will recycle all addresses that it historically was able to connect to. This means addresses that it failed to connect to are not retried. Be aware that estbalishing a connection can take time and so recovery is not instantaneous. The recovery times can be tweaked by adjusting the <a class="reference internal" href="#neo3.network.convenience.nodemanager.NodeManager.MAX_NODE_POOL_ERROR" title="neo3.network.convenience.nodemanager.NodeManager.MAX_NODE_POOL_ERROR"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MAX_NODE_POOL_ERROR</span></code></a> and <a class="reference internal" href="#neo3.network.convenience.nodemanager.NodeManager.POOL_CHECK_INTERVAL" title="neo3.network.convenience.nodemanager.NodeManager.POOL_CHECK_INTERVAL"><code class="xref py py-attr docutils literal notranslate"><span class="pre">POOL_CHECK_INTERVAL</span></code></a> class attributes.</p>
+<p>A minimal usage example for individual use is</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="kn">from</span> <span class="nn">neo3</span> <span class="kn">import</span> <span class="n">settings</span>
+<span class="kn">from</span> <span class="nn">neo3.network</span> <span class="kn">import</span> <span class="n">convenience</span>
+<span class="kn">from</span> <span class="nn">neo3.core</span> <span class="kn">import</span> <span class="n">msgrouter</span>
+
+
+<span class="k">def</span> <span class="nf">connection_done</span><span class="p">(</span><span class="n">node_client</span><span class="p">,</span> <span class="n">failure</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">failure</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to connect to </span><span class="si">{</span><span class="n">failure</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2"> reason: </span><span class="si">{</span><span class="n">failure</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Connected to node </span><span class="si">{</span><span class="n">node_client</span><span class="o">.</span><span class="n">version</span><span class="o">.</span><span class="n">user_agent</span><span class="si">}</span><span class="s2"> @ </span><span class="si">{</span><span class="n">node_client</span><span class="o">.</span><span class="n">address</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># set network magic to NEO MainNet</span>
+    <span class="n">settings</span><span class="o">.</span><span class="n">network</span><span class="o">.</span><span class="n">magic</span> <span class="o">=</span> <span class="mi">5195086</span>
+
+    <span class="c1"># add a local node to the seedlist for the first connection</span>
+    <span class="n">settings</span><span class="o">.</span><span class="n">network</span><span class="o">.</span><span class="n">seedlist</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;127.0.0.1:40333&#39;</span><span class="p">]</span>
+
+    <span class="c1"># listen to the connection event broad casted by the node manager</span>
+    <span class="n">msgrouter</span><span class="o">.</span><span class="n">on_client_connect_done</span> <span class="o">+=</span> <span class="n">connection_done</span>
+
+    <span class="n">node_mgr</span> <span class="o">=</span> <span class="n">convenience</span><span class="o">.</span><span class="n">NodeManager</span><span class="p">()</span>
+    <span class="n">node_mgr</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+    <span class="c1"># keep alive</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>If you want the full syncing experience take a look at the <a class="reference internal" href="#library-convenience-full-usage-example"><span class="std std-ref">example</span></a> below.</p>
+<dl class="py class">
+<dt id="neo3.network.convenience.nodemanager.NodeManager">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.convenience.nodemanager.</span></code><code class="sig-name descname"><span class="pre">NodeManager</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.convenience.nodemanager.NodeManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.network.convenience.singleton._Singleton</span></code></p>
+<p>This class is a convenience class that helps establish and maintain a pool of active connections to NEO nodes.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>This class is singleton.</p>
+</div>
+<dl class="py method">
+<dt id="neo3.network.convenience.nodemanager.NodeManager.shutdown">
+<em class="property"><span class="pre">async</span> </em><code class="sig-name descname"><span class="pre">shutdown</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.convenience.nodemanager.NodeManager.shutdown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gracefully shutdown the node manager.</p>
+<p>Disconnects all active nodes and stops service tasks.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This dependents on asyncio’s Task canceling logic. It waits for all tasks to be cancelled and/or stopped
+before returning.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.convenience.nodemanager.NodeManager.start">
+<code class="sig-name descname"><span class="pre">start</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.convenience.nodemanager.NodeManager.start" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start the node manager services. This does 2 things</p>
+<ol class="arabic simple">
+<li><p>Connect to the seed list addresses provided in the configuration</p></li>
+<li><p>Try to maintain a pool of connected nodes according to the <cite>min/max clients</cite> configuration settings and
+monitor that they don’t get stuck.</p></li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.convenience.nodemanager.NodeManager.ADDR_QUERY_INTERVAL">
+<code class="sig-name descname"><span class="pre">ADDR_QUERY_INTERVAL</span></code><em class="property"> <span class="pre">=</span> <span class="pre">15</span></em><a class="headerlink" href="#neo3.network.convenience.nodemanager.NodeManager.ADDR_QUERY_INTERVAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time interval in seconds for asking nodes for their address list.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.convenience.nodemanager.NodeManager.MAX_NODE_ERROR_COUNT">
+<code class="sig-name descname"><span class="pre">MAX_NODE_ERROR_COUNT</span></code><em class="property"> <span class="pre">=</span> <span class="pre">5</span></em><a class="headerlink" href="#neo3.network.convenience.nodemanager.NodeManager.MAX_NODE_ERROR_COUNT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum number of times adding a block or header may fail before the node is disconnected.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.convenience.nodemanager.NodeManager.MAX_NODE_POOL_ERROR">
+<code class="sig-name descname"><span class="pre">MAX_NODE_POOL_ERROR</span></code><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#neo3.network.convenience.nodemanager.NodeManager.MAX_NODE_POOL_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum number of time the minimum connected client setting may be violated by the open connect checker.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.convenience.nodemanager.NodeManager.MAX_NODE_TIMEOUT_COUNT">
+<code class="sig-name descname"><span class="pre">MAX_NODE_TIMEOUT_COUNT</span></code><em class="property"> <span class="pre">=</span> <span class="pre">15</span></em><a class="headerlink" href="#neo3.network.convenience.nodemanager.NodeManager.MAX_NODE_TIMEOUT_COUNT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum number of times a timeout threshold may be exceeded before the node is disconnected.
+Requires calling <code class="xref py py-meth docutils literal notranslate"><span class="pre">increase_node_timeout_count()</span></code> which is
+done automatically by the <a class="reference internal" href="#neo3.network.convenience.syncmanager.SyncManager" title="neo3.network.convenience.syncmanager.SyncManager"><code class="xref py py-class docutils literal notranslate"><span class="pre">SyncManager</span></code></a> if used.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.convenience.nodemanager.NodeManager.MONITOR_HEIGHT_INTERVAL">
+<code class="sig-name descname"><span class="pre">MONITOR_HEIGHT_INTERVAL</span></code><em class="property"> <span class="pre">=</span> <span class="pre">30</span></em><a class="headerlink" href="#neo3.network.convenience.nodemanager.NodeManager.MONITOR_HEIGHT_INTERVAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time interval in seconds for calling the height monitoring check.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.convenience.nodemanager.NodeManager.PING_INTERVAL">
+<code class="sig-name descname"><span class="pre">PING_INTERVAL</span></code><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#neo3.network.convenience.nodemanager.NodeManager.PING_INTERVAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time interval in seconds for pinging remote nodes. Ping (and the Pong) response informs each other about chain
+heights</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.convenience.nodemanager.NodeManager.POOL_CHECK_INTERVAL">
+<code class="sig-name descname"><span class="pre">POOL_CHECK_INTERVAL</span></code><em class="property"> <span class="pre">=</span> <span class="pre">10</span></em><a class="headerlink" href="#neo3.network.convenience.nodemanager.NodeManager.POOL_CHECK_INTERVAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time interval in seconds to check the connection pool for open spots.</p>
+</dd></dl>
+
+</dd></dl>
+
+<p class="rubric">Sync manager</p>
+<p>The sync manager is responsible for bringing the local blockchain in sync with the global blockchain and keeping it in sync.</p>
+<p>The sync manager depends on <a class="reference internal" href="#neo3.network.convenience.nodemanager.NodeManager" title="neo3.network.convenience.nodemanager.NodeManager"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeManager</span></code></a> for providing it with healty nodes to request data from. This means it requires the node manager to be started ahead of the sync manager.</p>
+<p>A full usage example is</p>
+<div class="highlight-python notranslate" id="library-convenience-full-usage-example"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="kn">from</span> <span class="nn">neo3</span> <span class="kn">import</span> <span class="n">settings</span>
+<span class="kn">from</span> <span class="nn">neo3.network</span> <span class="kn">import</span> <span class="n">convenience</span><span class="p">,</span> <span class="n">payloads</span>
+<span class="kn">from</span> <span class="nn">neo3.core</span> <span class="kn">import</span> <span class="n">msgrouter</span>
+
+<span class="k">def</span> <span class="nf">connection_done</span><span class="p">(</span><span class="n">node_client</span><span class="p">,</span> <span class="n">failure</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">failure</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to connect to </span><span class="si">{</span><span class="n">failure</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2"> reason: </span><span class="si">{</span><span class="n">failure</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Connected to node </span><span class="si">{</span><span class="n">node_client</span><span class="o">.</span><span class="n">version</span><span class="o">.</span><span class="n">user_agent</span><span class="si">}</span><span class="s2"> @ </span><span class="si">{</span><span class="n">node_client</span><span class="o">.</span><span class="n">address</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">block_received</span><span class="p">(</span><span class="n">from_nodeid</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">block</span><span class="p">:</span> <span class="n">payloads</span><span class="o">.</span><span class="n">Block</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Received block with height </span><span class="si">{</span><span class="n">block</span><span class="o">.</span><span class="n">index</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># set network magic to NEO MainNet</span>
+    <span class="n">settings</span><span class="o">.</span><span class="n">network</span><span class="o">.</span><span class="n">magic</span> <span class="o">=</span> <span class="mi">195086</span>
+
+    <span class="c1"># add a local node to test against</span>
+    <span class="n">settings</span><span class="o">.</span><span class="n">network</span><span class="o">.</span><span class="n">seedlist</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;127.0.0.1:40333&#39;</span><span class="p">]</span>
+
+    <span class="c1"># listen to the connection events broadcasted by the node manager</span>
+    <span class="n">msgrouter</span><span class="o">.</span><span class="n">on_client_connect_done</span> <span class="o">+=</span> <span class="n">connection_done</span>
+
+    <span class="c1"># listen to block received events</span>
+    <span class="n">msgrouter</span><span class="o">.</span><span class="n">on_block</span> <span class="o">+=</span> <span class="n">block_received</span>
+
+    <span class="n">node_mgr</span> <span class="o">=</span> <span class="n">convenience</span><span class="o">.</span><span class="n">NodeManager</span><span class="p">()</span>
+    <span class="n">node_mgr</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+    <span class="n">sync_mgr</span> <span class="o">=</span> <span class="n">convenience</span><span class="o">.</span><span class="n">SyncManager</span><span class="p">()</span>
+    <span class="k">await</span> <span class="n">sync_mgr</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+    <span class="c1"># keep alive</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Enable logging if you’re interested to see the internals in action.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">logging</span>
+
+<span class="n">stdio_handler</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">()</span>
+<span class="n">stdio_handler</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+<span class="n">stdio_handler</span><span class="o">.</span><span class="n">setFormatter</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">Formatter</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%(asctime)s</span><span class="s2"> </span><span class="si">%(levelname)s</span><span class="s2"> - </span><span class="si">%(module)s</span><span class="s2">:</span><span class="si">%(lineno)s</span><span class="s2"> </span><span class="si">%(message)s</span><span class="s2">&quot;</span><span class="p">))</span>
+
+<span class="n">network_logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s1">&#39;neo3.network&#39;</span><span class="p">)</span>
+<span class="n">network_logger</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">stdio_handler</span><span class="p">)</span>
+<span class="n">network_logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt id="neo3.network.convenience.syncmanager.SyncManager">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">neo3.network.convenience.syncmanager.</span></code><code class="sig-name descname"><span class="pre">SyncManager</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.convenience.syncmanager.SyncManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">neo3.network.convenience.singleton._Singleton</span></code></p>
+<dl class="py method">
+<dt id="neo3.network.convenience.syncmanager.SyncManager.shutdown">
+<em class="property"><span class="pre">async</span> </em><code class="sig-name descname"><span class="pre">shutdown</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.convenience.syncmanager.SyncManager.shutdown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gracefully shutdown the sync manager.</p>
+<p>Stops block persisting and all service tasks.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This dependents on asyncio’s Task canceling logic. It waits for all tasks to be cancelled and/or stopped
+before returning.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neo3.network.convenience.syncmanager.SyncManager.start">
+<em class="property"><span class="pre">async</span> </em><code class="sig-name descname"><span class="pre">start</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neo3.network.convenience.syncmanager.SyncManager.start" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start the block syncing service. Requires a started node manager.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>timeout</strong> – time in seconds to wait for finding a started node manager.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><strong>Exception</strong></a> – if no started Nodemanager is found within <cite>timeout</cite> seconds.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.convenience.syncmanager.SyncManager.BLOCK_MAX_CACHE_SIZE">
+<code class="sig-name descname"><span class="pre">BLOCK_MAX_CACHE_SIZE</span></code><em class="property"> <span class="pre">=</span> <span class="pre">500</span></em><a class="headerlink" href="#neo3.network.convenience.syncmanager.SyncManager.BLOCK_MAX_CACHE_SIZE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum number of Blocks to cache in memory. Block persisting empties the cache allowing new blocks to be
+requested.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.convenience.syncmanager.SyncManager.BLOCK_NETWORK_REQ_LIMIT">
+<code class="sig-name descname"><span class="pre">BLOCK_NETWORK_REQ_LIMIT</span></code><em class="property"> <span class="pre">=</span> <span class="pre">500</span></em><a class="headerlink" href="#neo3.network.convenience.syncmanager.SyncManager.BLOCK_NETWORK_REQ_LIMIT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum number of blocks to ask per request. Cannot exceed
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">MAX_BLOCKS_COUNT</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="neo3.network.convenience.syncmanager.SyncManager.BLOCK_REQUEST_TIMEOUT">
+<code class="sig-name descname"><span class="pre">BLOCK_REQUEST_TIMEOUT</span></code><em class="property"> <span class="pre">=</span> <span class="pre">5</span></em><a class="headerlink" href="#neo3.network.convenience.syncmanager.SyncManager.BLOCK_REQUEST_TIMEOUT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum time in seconds that a node may take to respond to a data request before it is tagged and eventually
+replaced.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="payloads/version.html"
+                        title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">version</span></code> — Node handshake data</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../storage/index.html"
+                        title="next chapter">Storage</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/library/network/convenience.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../storage/index.html" title="Storage"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="payloads/version.html" title="version — Node handshake data"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">neo-mamba  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >The neo-mamba Library</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >Network</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Convenient syncing</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019-2021, COZ - Erik van den Brink.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
+    </div>
+  </body>
+</html>
