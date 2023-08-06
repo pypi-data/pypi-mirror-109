@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+PolyMars.egg-info/PKG-INFO
+PolyMars.egg-info/SOURCES.txt
+PolyMars.egg-info/dependency_links.txt
+PolyMars.egg-info/top_level.txt
