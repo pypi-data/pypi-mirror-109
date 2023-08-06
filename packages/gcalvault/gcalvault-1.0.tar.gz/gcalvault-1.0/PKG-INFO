@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: gcalvault
+Version: 1.0
+Summary: Command-line utility which exports all of a user's Google Calendars to iCal/ICS format for backup (or portability)
+Home-page: http://github.com/rtomac/gcalvault
+Author: Ryan Tomac
+Author-email: rtomac@gmail.com
+License: MIT
+Keywords: Google Calendar,gcal,backup,export,iCal,ICS,CalDav
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: System :: Archiving :: Backup
+Requires-Python: >=3.6
+Provides-Extra: test
+Provides-Extra: publish
+License-File: LICENSE
+
+UNKNOWN
+
