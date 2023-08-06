@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: aiodiskdb
+Version: 0.1
+Summary: Embeddable minimal asynchronous on disk DB
+Home-page: https://github.com/mempoolco/aiodiskdb/
+Author: Guido Dassori
+Author-email: guido.dassori@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
