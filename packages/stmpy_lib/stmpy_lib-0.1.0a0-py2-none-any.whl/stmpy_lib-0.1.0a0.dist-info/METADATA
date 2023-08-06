@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: stmpy-lib
+Version: 0.1.0a0
+Summary: Python lib for the STM network
+Home-page: https://github.com/stm-open/stmpy.git
+Author: stm-open
+Author-email: open@labs.stream
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: ecdsa (>=0.10)
+Requires-Dist: six (>=1.5.2)
+Requires-Dist: websocket-client (==0.15.0)
+
+UNKNOWN
+
+
