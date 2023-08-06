@@ -1,0 +1,6 @@
+reahl-component<5.2,>=5.1
+reahl-sqlalchemysupport<5.2,>=5.1
+reahl-web<5.2,>=5.1
+reahl-web-declarative<5.2,>=5.1
+reahl-domain<5.2,>=5.1
+setuptools>=32.3.1
