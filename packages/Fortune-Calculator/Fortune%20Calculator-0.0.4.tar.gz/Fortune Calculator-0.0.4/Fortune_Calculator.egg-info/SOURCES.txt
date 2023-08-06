@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+README.rst
+__init__.py
+setup.cfg
+setup.py
+FortuneCalculator/FortuneCalculator.py
+FortuneCalculator/__init__.py
+Fortune_Calculator.egg-info/PKG-INFO
+Fortune_Calculator.egg-info/SOURCES.txt
+Fortune_Calculator.egg-info/dependency_links.txt
+Fortune_Calculator.egg-info/top_level.txt
