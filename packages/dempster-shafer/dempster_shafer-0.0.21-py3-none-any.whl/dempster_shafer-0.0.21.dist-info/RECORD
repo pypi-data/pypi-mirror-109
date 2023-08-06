@@ -1,0 +1,10 @@
+dempster_shafer/__init__.py,sha256=TQpNmeOV0pDDQc2tJDPwdE3DnDTPslpi6L-SUPSHFLQ,348
+dempster_shafer/fod.py,sha256=9bGWMRGpmBtFK_W4UFGuZ9EclMePOgrugVJbSukFxjQ,6130
+dempster_shafer/fs.py,sha256=1xUTAgxIaWhG2QeAmrqTmd0zU4xsPuzNmN-YiwHcLRo,5192
+dempster_shafer/lattice.py,sha256=BjpWrut_2DOfeyRwAx6z3VdRjrmbcKRAs6QAH6sqh-E,11405
+dempster_shafer/prueba.py,sha256=VTVmged1G4590HY65rN4LpwaJki6eGVfygtXV8VqFig,675
+dempster_shafer-0.0.21.dist-info/LICENSE,sha256=wbMcWatHiMNIC74tFgRcG6KQvt2rUl4dgQiu1HqCExA,30
+dempster_shafer-0.0.21.dist-info/METADATA,sha256=mGY0bZ-i3YzXtQAD8XQ5bnMLFLyFcVUJLWPSGD0_gLQ,632
+dempster_shafer-0.0.21.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dempster_shafer-0.0.21.dist-info/top_level.txt,sha256=qaarFGyO3ihJABFMPrqBwR3AbGwDKzd1rUozRFV0bV8,16
+dempster_shafer-0.0.21.dist-info/RECORD,,
