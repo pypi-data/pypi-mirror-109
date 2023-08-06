@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+ElectroBOOM.egg-info/PKG-INFO
+ElectroBOOM.egg-info/SOURCES.txt
+ElectroBOOM.egg-info/dependency_links.txt
+ElectroBOOM.egg-info/top_level.txt
