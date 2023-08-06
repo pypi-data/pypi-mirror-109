@@ -1,0 +1,9 @@
+dbus
+jinja2
+notify-py
+pillow
+pyperclip
+pyxdg
+qrcode
+requests
+tkinter
