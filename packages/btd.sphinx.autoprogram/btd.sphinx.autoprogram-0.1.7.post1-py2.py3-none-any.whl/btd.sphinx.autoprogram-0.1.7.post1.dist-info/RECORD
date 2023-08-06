@@ -1,0 +1,16 @@
+btd/sphinx/__init__.py,sha256=Dx56zKkj96Fn_xmkr6L8Dk0PzsObqvlhbYslD82YHD4,359
+btd/sphinx/autoprogram.py,sha256=Q1b8qbM2y7NXZqVGbUw2eCL8tWVFlqhPAZ8_nDmM6NU,19503
+doc/Makefile,sha256=TrwOUcqrYGF2sB7HoYbwo_zoRRKSYCyEVSByMvUiFsY,6838
+doc/changelog.rst,sha256=HS3ZEC2pufYuj1FOEwA3DjtH961HYsOuFtt3optp0Qw,2740
+doc/cli.py,sha256=pLBb6ef7vHQGUGWuW7kj4Uot8V_kzaWR5XxOHTki_vs,665
+doc/cli_with_groups.py,sha256=57LuUSCqcDduis2D8B8Eqz8G-w_uxuZm2rhJ9CuCrPA,687
+doc/conf.py,sha256=8F65qh_HJIr-aeJruhMjaElv_CPdvn3NCR_XuJ4Goi0,9548
+doc/index.rst,sha256=362CufnFRK0pCHl6TltKOGcdk0kgl1zwKnbr9UFet-g,5250
+doc/make.bat,sha256=3mQvUQhut05VKl-k5rZ39yf5R_pqVQFPt3q1d3luJPs,6739
+doc/rtd-requires.txt,sha256=rXoP93oiPZguBpFMcCzxFFE4bGSjePGqeO9acWgNER8,65
+doc/subcmds.py,sha256=bk5lU0JNKzA-Y525jp_bbdAF1S_kNtzMmpOfMQmC_Cc,722
+btd.sphinx.autoprogram-0.1.7.post1.dist-info/LICENSE,sha256=vRV_gZyMeI7TcgXLtJMplMrBpr2UyeZZ06no44uVP0w,1561
+btd.sphinx.autoprogram-0.1.7.post1.dist-info/METADATA,sha256=YFNiDjx894mDJmriRvVYh2i67mtNbQYWsEQMShp1_44,5102
+btd.sphinx.autoprogram-0.1.7.post1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+btd.sphinx.autoprogram-0.1.7.post1.dist-info/top_level.txt,sha256=AwkiHLdkb3tmhVEMUlpEuyM8H_yUwkMempBfG91YSaY,8
+btd.sphinx.autoprogram-0.1.7.post1.dist-info/RECORD,,
