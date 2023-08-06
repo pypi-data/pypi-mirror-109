@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/asyncnewsapi/__init__.py
+src/asyncnewsapi/auth.py
+src/asyncnewsapi/session.py
+src/asyncnewsapi/stream.py
+src/asyncnewsapi.egg-info/PKG-INFO
+src/asyncnewsapi.egg-info/SOURCES.txt
+src/asyncnewsapi.egg-info/dependency_links.txt
+src/asyncnewsapi.egg-info/requires.txt
+src/asyncnewsapi.egg-info/top_level.txt
