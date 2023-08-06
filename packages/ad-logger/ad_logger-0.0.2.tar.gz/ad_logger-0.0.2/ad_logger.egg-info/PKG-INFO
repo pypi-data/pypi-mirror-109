@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ad-logger
+Version: 0.0.2
+Summary: Python Logging library wrapper
+Home-page: http://power_dev.adalytyx.ai/
+Author: Daqian
+Author-email: daqian.zhang@g42.ai
+License: Group 42 Licence
+Description: # AD-Logger
+        
+        ### Example
+        ```python
+        from ad_logger import logger,KafkaHandler
+        
+        kafka_producer = {
+            'bootstrap_servers': ["localhost:9094"],
+            # 'sasl_plain_username': USERNAME,
+            # 'sasl_plain_password': PASSWORD,
+        }
+        
+        logger.add(KafkaHandler('ad_logger', 'log_center.dev', use_queue=False, kafka_producer=kafka_producer),
+                   format="{message}", level="INFO")
+        
+        
+        def test_logger():
+            logger.debug("this is debug")
+            logger.info("this is info")
+        ```
+Keywords: logging,wrap
+Platform: any
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
