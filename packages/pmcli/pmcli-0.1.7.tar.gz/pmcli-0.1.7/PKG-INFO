@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: pmcli
+Version: 0.1.7
+Summary: A Command Line Interface to encrypt, decrypt and save passwords dor windows
+Home-page: https://github.com/AvanindraC/PMCLI
+License: MIT
+Keywords: PMCLI
+Author: Avanindra Chakraborty
+Author-email: avanindra.d2.chakraborty@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: cryptocode (>=0.1,<0.2)
+Project-URL: Repository, https://github.com/AvanindraC/PMCLI
+Description-Content-Type: text/markdown
+
+# PMCLI
+
+## A password encrypter and decrypter
+
+## Install
+
+#### Windows
+
+pip install pmcli 
+
+### How to use
+
+#### Windows
+Open powershell and type pm
+
+Encrypting 
+
+Open Powershell and type pm. 
+Then type pm encrypt
+Then it will ask for a directory. 
+Give the directory with the file.txt
+Note: You don't have to make a file it makes on itself
+It will add the file with the encrypted file
+
+Decrypting
+Open Powershell and type pm. 
+Then type pm decrypt
+Then it will ask for a directory. 
+Give the directory with the file.txt
+Then it will display the decrypted text
+
+
+### Softwares used
+
+Visual Studio Code - https://github.com/Microsoft/vscode
+
+Python 3.9.1
+
+
