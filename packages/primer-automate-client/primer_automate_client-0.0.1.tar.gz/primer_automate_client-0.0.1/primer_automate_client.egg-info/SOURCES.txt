@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+primer_automate_client/__init__.py
+primer_automate_client/__version__.py
+primer_automate_client/automate_client.py
+primer_automate_client.egg-info/PKG-INFO
+primer_automate_client.egg-info/SOURCES.txt
+primer_automate_client.egg-info/dependency_links.txt
+primer_automate_client.egg-info/requires.txt
+primer_automate_client.egg-info/top_level.txt
