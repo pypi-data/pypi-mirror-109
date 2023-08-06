@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dryptopy/__init__.py
+src/dryptopy/dryptopy.py
+src/dryptopy.egg-info/PKG-INFO
+src/dryptopy.egg-info/SOURCES.txt
+src/dryptopy.egg-info/dependency_links.txt
+src/dryptopy.egg-info/top_level.txt
