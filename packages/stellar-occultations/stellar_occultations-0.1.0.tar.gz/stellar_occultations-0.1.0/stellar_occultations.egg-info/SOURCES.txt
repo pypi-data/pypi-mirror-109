@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+stellar_occultations/__init__.py
+stellar_occultations/stellar_occultations.py
+stellar_occultations.egg-info/PKG-INFO
+stellar_occultations.egg-info/SOURCES.txt
+stellar_occultations.egg-info/dependency_links.txt
+stellar_occultations.egg-info/requires.txt
+stellar_occultations.egg-info/top_level.txt
