@@ -1,0 +1,13 @@
+amd/__init__.py,sha256=B-vomPsI8p39ACNCR2yeNcP_E33Ze-fnMt5Ddem_u_M,203
+amd/calculate.py,sha256=Om17IE54YxP3i7SaxLLQdvT39TrBTCey3gIBx5b0cTY,3272
+amd/compare.py,sha256=Vz34LrSQm_K4oLbbBTXA2NzUXOT9XS5gM_ZSvhfF55s,3197
+amd/io.py,sha256=_nZcqnblHBwXlx0YeMI047Ftnm3MsCK9IXSK6tlnidk,11199
+amd/core/PeriodicSet.py,sha256=-bF_j45seZdco-xZNYYjWgusHh61MNKGvMQ-mIxVDqI,1188
+amd/core/Wasserstein.py,sha256=7CMI1uJd7YnLuqHcmnnBtQUO7wgHzrgyzhumdzL4BaY,17511
+amd/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amd/core/core.py,sha256=QAx7PTiieotwjwBW0X-m3TnhVqk2GVIyyNJibI0DKgY,5133
+average_minimum_distance-1.0.6.dist-info/LICENSE,sha256=WPF-d_Hvbreu3Bej42qgh4hXX6upheMVVDHZqgcBAEY,1092
+average_minimum_distance-1.0.6.dist-info/METADATA,sha256=FjVu8Tcpp-rvTuDz9F9tKzNMQoa9rWRxcBQ-i1SgunM,6779
+average_minimum_distance-1.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+average_minimum_distance-1.0.6.dist-info/top_level.txt,sha256=WTbupo3iitBZ-1qY8AqLpPc8YnH6wn2XZhZpYjbnKlo,4
+average_minimum_distance-1.0.6.dist-info/RECORD,,
