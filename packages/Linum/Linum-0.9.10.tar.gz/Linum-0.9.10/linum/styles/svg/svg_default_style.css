@@ -1,0 +1,75 @@
+
+.text {
+    dominant-baseline: mathematical;
+    text-anchor: middle;
+    font-family: Roboto Condensed;
+    fill: #000000;
+    opacity: 0.87;
+}
+
+
+/* Header */
+
+.cell.header.background {
+    fill: #FFFFFF;
+}
+
+.cell.header.day.text {
+    dominant-baseline: mathematical;
+    font-size: 12px;
+    opacity: 0.87;
+}
+
+.cell.header.weekday.text {
+    dominant-baseline: middle;
+    font-size: 11px;
+    opacity: 0.6;
+}
+
+.cell.header.month.text {
+    opacity: 0.38;
+    font-weight: bold;
+}
+
+
+/* Layers */
+
+.layer.background {
+    fill: #FFFFFF;
+}
+
+
+
+/* Borders */
+
+.border {
+    stroke: #000000;
+    stroke-opacity: 0.12;
+}
+
+
+/* Tasks */
+
+.cell.task {
+    text-anchor: start;
+    dominant-baseline: middle;
+}
+
+.cell.task.border {
+    stroke: #000000;
+    stroke-width: 1px;
+    stroke-opacity: 0.12;
+}
+
+.cell.task.text {
+    font-size: 14px;
+}
+
+
+/* Days-off */
+
+.day-off {
+    fill: #000000;
+    opacity: 0.12;
+}
+
