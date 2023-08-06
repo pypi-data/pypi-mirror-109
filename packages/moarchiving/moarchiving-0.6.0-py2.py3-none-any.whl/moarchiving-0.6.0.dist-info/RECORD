@@ -1,0 +1,10 @@
+moarchiving/LICENSE,sha256=xQEZIPGJFJ4SdmfvF2CLYzzRRze6xGQL_LF1jK7xwIc,1298
+moarchiving/__init__.py,sha256=UHLVqm-cTifL3EF9rhHD5ey3HuO5LsEXhHXY3XK7N_Q,509
+moarchiving/__main__.py,sha256=c39d-rsh4ig4OA3XtkMS3MQx2WycrsGyLKT7bzhGqKE,110
+moarchiving/moarchiving.py,sha256=K9UHVKIZ0-3gavp_Yn4_zJvgN3l1Po4MThf8z9nl4mg,40309
+moarchiving/test.py,sha256=b7v_fXT91fnJXuI4CFW0L0BNa6KRxuE2X1tDIhO1iqg,541
+moarchiving-0.6.0.dist-info/LICENSE,sha256=xQEZIPGJFJ4SdmfvF2CLYzzRRze6xGQL_LF1jK7xwIc,1298
+moarchiving-0.6.0.dist-info/METADATA,sha256=fCvpbvag1O35gHIJdhWVqlZANEKX4gSyuP2zb3XqVqU,2076
+moarchiving-0.6.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+moarchiving-0.6.0.dist-info/top_level.txt,sha256=iPcWp8dPKTA6-oQb5Y3HBzChhSnKn2XIsxIIGq4-mzY,12
+moarchiving-0.6.0.dist-info/RECORD,,
