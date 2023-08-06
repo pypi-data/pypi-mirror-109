@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: kh-common
+Version: 0.4.3
+Summary: common libraries for kheina.com
+Home-page: https://github.com/kheina-com/kh-common
+Author: kheina
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools (>=40.3.0)
+Requires-Dist: pika (>=1.1.0)
+Requires-Dist: ujson (>=3.0.0)
+Requires-Dist: cryptography (>=3.0)
+Requires-Dist: google-cloud-logging (>=1.12.1)
+Requires-Dist: requests (>=2.23.0)
+Requires-Dist: aiohttp (>=3.7.3)
+Requires-Dist: fastapi (>=0.61.2)
+Provides-Extra: scoring
+Requires-Dist: scipy (>=1.5.2) ; extra == 'scoring'
+
+## installation
+pip install -e git+https://github.com/kheina-com/kh-common.git#egg=kh_common
+
