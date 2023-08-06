@@ -1,0 +1,28 @@
+[flake8]
+max-line-length = 88
+extend-ignore = E203, S101
+docstring-style = sphinx
+
+rst-roles =
+    attr,
+    class,
+    func,
+    meth,
+    mod,
+    obj,
+    ref,
+    term
+
+rst-directives =
+    autosummary,
+    currentmodule,
+    data,
+    deprecated,
+    envvar,
+    exception,
+    glossary,
+    moduleauthor,
+    plot,
+    testcode,
+    versionadded,
+    versionchanged

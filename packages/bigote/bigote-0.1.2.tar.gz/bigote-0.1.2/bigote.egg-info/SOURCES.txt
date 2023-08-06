@@ -1,0 +1,15 @@
+.coveragerc
+.flake8
+.gitignore
+Untitled-1.ipynb
+bigote.py
+requirements.in
+requirements.txt
+setup.py
+test_units.py
+.github/workflows/python-app.yml
+.vscode/settings.json
+bigote.egg-info/PKG-INFO
+bigote.egg-info/SOURCES.txt
+bigote.egg-info/dependency_links.txt
+bigote.egg-info/top_level.txt
