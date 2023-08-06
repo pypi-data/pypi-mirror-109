@@ -1,0 +1,201 @@
+#include <stdio.h>
+#include <limits.h>
+#include <Python.h>
+
+/*
+ // commented out because these are gcc specific
+#define min(a,b) \
+   ({ __typeof__ (a) _a = (a); \
+      __typeof__ (b) _b = (b); \
+     _a < _b ? _a : _b; })
+#define max(a,b) \
+   ({ __typeof__ (a) _a = (a); \
+      __typeof__ (b) _b = (b); \
+     _a > _b ? _a : _b; })
+*/
+#define MAX(x, y) (((x) > (y)) ? (x) : (y))
+#define MIN(x, y) (((x) < (y)) ? (x) : (y))
+
+
+#define VAL_1X     -128
+#define VAL_2X     VAL_1X,  VAL_1X
+#define VAL_4X     VAL_2X,  VAL_2X
+#define VAL_8X     VAL_4X,  VAL_4X
+#define VAL_16X    VAL_8X,  VAL_8X
+#define VAL_32X    VAL_16X, VAL_16X
+#define VAL_64X    VAL_32X, VAL_32X
+#define VAL_128X   VAL_64X, VAL_64X
+static const char nuc_table[256] = { VAL_64X, VAL_32X, 0, VAL_1X, 1, VAL_1X, VAL_2X, 2, VAL_4X, VAL_8X, 3, VAL_4X, VAL_8X, VAL_128X };
+
+/*
+static const int8_t nuc_table[UCHAR_MAX+1] = {
+    [0 ... 255] = BAD_NUC,  // ranges are a GNU extension
+    // last init takes precedence  https://gcc.gnu.org/onlinedocs/gcc/Designated-Inits.html
+    ['a'] = 0,
+    ['c'] = 1,
+    ['g'] = 2,
+    ['t'] = 3,
+};
+*/
+
+unsigned char aa_table[129] = "KNKNTTTTRSRSIIMIQHQHPPPPRRRRLLLLEDEDAAAAGGGGVVVV#Y+YSSSS*CWCLFLFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+
+unsigned char get_int(const unsigned char *dna, unsigned int i) {
+    // unsigned char* so high-ASCII -> 128..255, not negative,
+    // and works as an index into a 256 entry table
+    unsigned char idx = nuc_table[dna[i]];
+    idx = idx*4 + nuc_table[dna[i+1]];
+    idx = idx*4 + nuc_table[dna[i+2]];
+	//printf("i:%i c:%c%c%c idx: %i aa: %c\n", i, dna[i], dna[i+1], dna[i+2], idx, aa_table[idx]);
+    return aa_table[idx];
+}
+typedef struct {
+	PyObject_HEAD
+	const unsigned char* dna;
+	unsigned int len;
+	unsigned int i;
+	//unsigned short nucl_freq[4] = {0};
+} windows_Iterator;
+
+PyObject* windows_Iterator_iter(PyObject *self){
+	Py_INCREF(self);
+	return self;
+}
+
+PyObject* windows_Iterator_iternext(PyObject *self){
+	windows_Iterator *p = (windows_Iterator *)self;
+	char aa[90] = {0};
+	unsigned int i, j, k, t;
+	float total;
+
+	if( p->i < p->len-2 ){
+		t = 0;
+		//j =    (p->i > 56)       ? p->i-57  : p->i%3;
+		//k = (p->i+60 > p->len-2) ? p->len-2 : p->i+60;
+		j = MAX( p->i  ,  57 + p->i % 3) - 57;
+		k = MIN( p->len-2 , p->i + 60);
+		for (i = j; i < k; i += 3){
+			//printf("%c", get_int(p->dna, i) );
+			aa[get_int(p->dna, i)]++;
+			t++;
+		}
+		total = (float) t;
+		//printf("\n");
+
+		//PyObect* list = PyList_New(20);
+		//PyList_SetItem(list, 0, Py_BuildValue("i", aa['A']));
+		PyObject *aa_list = PyList_New(0);
+		//PyList_Append(aa_list, Py_BuildValue("i", aa['#'] / total));
+		//PyList_Append(aa_list, Py_BuildValue("i", aa['*'] / total));
+		//PyList_Append(aa_list, Py_BuildValue("i", aa['+'] / total));
+		//PyList_Append(aa_list, Py_BuildValue("i", p->i   ));
+		//PyList_Append(aa_list, Py_BuildValue("i", j      ));
+		//PyList_Append(aa_list, Py_BuildValue("i", k      ));
+		//PyList_Append(aa_list, Py_BuildValue("c", p->dna[p->i]   ));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['A'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['C'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['D'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['E'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['F'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['G'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['H'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['I'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['K'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['L'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['M'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['N'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['P'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['Q'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['R'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['S'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['T'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['V'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['W'] / total));
+		PyList_Append(aa_list, Py_BuildValue("f", aa['Y'] / total));
+		(p->i)++;
+		return aa_list;
+	}else{
+		PyErr_SetNone(PyExc_StopIteration);
+		return NULL;
+	}
+}
+
+static void Iter_dealloc(windows_Iterator *self){ PyObject_Del(self); }
+
+static PyTypeObject IterableType = {
+	PyVarObject_HEAD_INIT(NULL, 0)
+	.tp_name = "Iter",
+	.tp_doc = "Custom objects",
+	.tp_basicsize = sizeof(windows_Iterator),
+	.tp_itemsize = 0,
+	.tp_flags = Py_TPFLAGS_DEFAULT | Py_TPFLAGS_BASETYPE,
+	.tp_dealloc = (destructor) Iter_dealloc,
+	.tp_iter	  = windows_Iterator_iter,
+	.tp_iternext  = windows_Iterator_iternext
+};
+
+static PyObject * get_windows(PyObject *self, PyObject *args){
+	windows_Iterator *p;
+	p = PyObject_New(windows_Iterator, &IterableType);
+	if (!p) return NULL;
+
+	if (!PyArg_ParseTuple(args, "s", &p->dna)) {
+		return NULL;
+	}
+	p->i = 0;
+	p->len = strlen( (const char*) p->dna);
+
+	/* I'm not sure if it's strictly necessary. */
+	if (!PyObject_Init((PyObject *)p, &IterableType)) {
+		Py_DECREF(p);
+		return NULL;
+	}
+
+	return (PyObject *)p;
+}
+
+// Module method definitions
+static PyObject* no_args(PyObject *self, PyObject *args) {
+	Py_RETURN_NONE;
+}
+
+/*
+static PyObject* get_windows(PyObject *self, PyObject *args) {
+	const char* name;
+	if (!PyArg_ParseTuple(args, "s", &name)) {
+		return NULL;
+	}
+	printf("%s!\n", name);
+	Py_RETURN_NONE;
+}
+*/
+
+// Method definition object for this extension, these argumens mean:
+static PyMethodDef windows_methods[] = { 
+	{"get_windows",    get_windows, METH_VARARGS, "Gets the aminoacid frequency windows."},  
+	{"no_args",            no_args, METH_NOARGS,  "Empty for now."},  
+	{NULL, NULL, 0, NULL}
+};
+
+// Module definition
+static struct PyModuleDef windows_definition = { 
+	PyModuleDef_HEAD_INIT,
+	"windows",
+	"A Python module that get aminoacid windows.",
+	-1, 
+	windows_methods
+};
+
+// Module initialization
+// Python calls this function when importing your extension. It is important
+// that this function is named PyInit_[[your_module_name]] exactly, and matches
+// the name keyword argument in setup.py's setup() call.
+PyMODINIT_FUNC PyInit_windows(void) {
+	//Py_Initialize();
+	return PyModule_Create(&windows_definition);
+}
+
+
+
+
+
