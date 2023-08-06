@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: py-telegram-bot-api-framework
+Version: 0.0.2
+Summary: Telegram bot framework over py-telegram-bot-api
+Home-page: https://github.com/Angel777d/py-telegram-bot-api-framework
+Author: Angelovich
+Author-email: angel777da@gmail.com
+License: MIT
+Description: # py-telegram-bot-api-framework
+        Telegram bot framework over py-telegram-bot-api 
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
