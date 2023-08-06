@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: query-ec2-metadata
+Version: 0.1.0
+Summary: Allows querying EC2 instance metadata
+Author: HMRC WebOps
+Requires-Python: >=3.6.2,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.25.1,<3.0.0)
