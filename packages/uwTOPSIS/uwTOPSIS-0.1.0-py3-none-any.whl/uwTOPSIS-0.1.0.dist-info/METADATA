@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: uwTOPSIS
+Version: 0.1.0
+Summary: Unweighted TOPSIS method
+Home-page: UNKNOWN
+Author: Aaron Lopez-Garcia
+Author-email: aaron.lopez@uv.es
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: numpy (>=1.19)
+Requires-Dist: pandas (>=1.2.4)
+Requires-Dist: scipy (>=1.6.3)
+
+UNKNOWN
+
+
