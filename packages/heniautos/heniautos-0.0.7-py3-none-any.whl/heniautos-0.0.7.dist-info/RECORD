@@ -1,0 +1,14 @@
+heniautos/__init__.py,sha256=npxJzp26MJvyA8Ncg3hDK_AV6eOhHKvhO5mS0mK4YAw,56
+heniautos/__main__.py,sha256=YJs8i6OXXs2Nhn76aC5mEFMhgynK2I6F3FDOwaM9cGQ,79
+heniautos/__version__.py,sha256=PQiLY8JfSln9HgkEx-w6QMaagwjH1iO7rmOUrDYap8o,63
+heniautos/calendar_equation.py,sha256=2qVmCna3hPa1CQSkvavFitoMhuYxbMfWTghLMz3EsQE,9681
+heniautos/command_line.py,sha256=Tp5ENeHM1Bf0LZsiQpgtrMA-ud2NXBOiO6dlLtmTa6s,11151
+heniautos/heniautos.py,sha256=FykRVEzy1SYxjh4LgpLOJ_B72UsPNMH1UmA6_PBrZzM,43283
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_heniautos.py,sha256=uYahYANJbHVBEPYCFvun9lbFCpPF48Qv74_E4mqvq98,55990
+heniautos-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+heniautos-0.0.7.dist-info/METADATA,sha256=mJivgWlOt4ijYYG2YEt18mapC7LKlrq1eHPIO-QF6jE,13094
+heniautos-0.0.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+heniautos-0.0.7.dist-info/entry_points.txt,sha256=t1j-1irf_OktsAlKL9D2C8GLxUBjl3ZnfxrDofAC0IA,112
+heniautos-0.0.7.dist-info/top_level.txt,sha256=_kX5-vX0L-IBdNY-6PvIgWsfbyx2YZaT2Bclwll1G6U,16
+heniautos-0.0.7.dist-info/RECORD,,
