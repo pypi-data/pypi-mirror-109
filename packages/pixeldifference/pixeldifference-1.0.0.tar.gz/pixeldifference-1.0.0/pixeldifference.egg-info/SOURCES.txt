@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pixeldifference/__init__.py
+pixeldifference/pixeldifference.py
+pixeldifference.egg-info/PKG-INFO
+pixeldifference.egg-info/SOURCES.txt
+pixeldifference.egg-info/dependency_links.txt
+pixeldifference.egg-info/requires.txt
+pixeldifference.egg-info/top_level.txt
