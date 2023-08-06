@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pycamera
+Version: 0.1
+Summary: An easier solution to simple computer vision
+Home-page: https://github.com/IsmaeelAkram/pycamera
+Author: Ismaeel Akram
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+
+UNKNOWN
+
