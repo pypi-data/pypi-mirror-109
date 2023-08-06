@@ -1,0 +1,7 @@
+pytest_split/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_split/plugin.py,sha256=U2RGHO_efMQUnBBT2IyYytgTafC7Qyu-zNMuCDbzaf0,8495
+pytest_split/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_split-0.2.3.dist-info/entry_points.txt,sha256=4MK4HFw3-9Qpr1X3_eaBFbbRc3oR2YeLJZIuC0BkcSc,45
+pytest_split-0.2.3.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pytest_split-0.2.3.dist-info/METADATA,sha256=yW8NYOnUioNyD4Kt7pF9Xbl6qIopNTD_2Y1RTpwr3LE,3551
+pytest_split-0.2.3.dist-info/RECORD,,
