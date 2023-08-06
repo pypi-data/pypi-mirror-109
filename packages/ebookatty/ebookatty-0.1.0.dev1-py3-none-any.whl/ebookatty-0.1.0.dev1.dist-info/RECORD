@@ -1,0 +1,13 @@
+ebookatty/__init__.py,sha256=fGvdI26fiJGY4COgrftKLn12Wgr-6Q2gHmI8kRAXEcs,1198
+ebookatty/__main__.py,sha256=u1PCwZSEKUPIQqKMq410xU1NFy9heRxqjnJ38Ghcoco,1236
+ebookatty/atty.py,sha256=3NRXE1eRyKm4QSdhg9XUEkh0XGB54cccLv-4k7BpID4,4039
+ebookatty/epubmeta.py,sha256=cxMQm_FvfqdWNasArUaI5-fBKc7WeeFhg8EGawPCvVE,5026
+ebookatty/kindlemeta.py,sha256=XDY5LaUBYs3jrdkhzUAg4Ep-XSIOzyx-DgywJ05VuwI,3699
+ebookatty/mobimeta.py,sha256=R6Lk3BYX_hPaEYAgYEfrzX1o7rYR7tSGKyycmdp22ZQ,3888
+ebookatty/standards.py,sha256=SOuSOzICkcoBFY33iw1XnT_LW7yHZZCsNk88tEr3ep8,15403
+ebookatty/utils.py,sha256=f93VrP7A1sHJaDRIFvVYROq0RFXSffL4Y22iKMcKGrk,6841
+ebookatty-0.1.0.dev1.dist-info/LICENSE,sha256=DvGXv4GUO8Amqn0xMpJXLcL9eBkuPsY8mXzJ7NY4T7s,7650
+ebookatty-0.1.0.dev1.dist-info/METADATA,sha256=wOgr2MQ--ma_5cQGVsA6SJy7XnTJzXsWMy1HwvRmXUg,2579
+ebookatty-0.1.0.dev1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ebookatty-0.1.0.dev1.dist-info/top_level.txt,sha256=gY69zkUBbzpq-yhs38phM_MAWrxM4CkKuavjFsZMBeo,10
+ebookatty-0.1.0.dev1.dist-info/RECORD,,
