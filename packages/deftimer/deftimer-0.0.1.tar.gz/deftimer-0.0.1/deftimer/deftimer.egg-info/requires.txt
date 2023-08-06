@@ -1,0 +1,6 @@
+pathlib==1.0.1
+
+[dev]
+
+[test]
+flake8
