@@ -1,0 +1,9 @@
+sphinx_xml2rfc/__init__.py,sha256=2GM0lGbEhZfr2TcirqlefwnYztAwmD-_d1AkD-Jd7_c,1520
+sphinx_xml2rfc/autogen.py,sha256=erF1OIrtMzS72lWgDBcIHcWCzft3rYjus6X6ZSP65so,10448
+sphinx_xml2rfc/domain.py,sha256=aa2doeOKxT3VEAT33Lo-N8Qtr2Zj4dSU2KjBFtfM9ME,10601
+sphinx_xml2rfc/utils.py,sha256=BGhdv3VBNT9sSbGjkNbtomchksn84CkitsmotjYCQ9k,969
+sphinx_xml2rfc-0.1.0rc2.dist-info/LICENSE,sha256=YeUkPG4pmp3viIm7CfZXYvWhlxuGvy6jU3fr_uVu-Uw,1069
+sphinx_xml2rfc-0.1.0rc2.dist-info/METADATA,sha256=8fPZSVNkE5HncDMyLBxWelN-vdO9zjbWVXAyls5lSGk,5220
+sphinx_xml2rfc-0.1.0rc2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sphinx_xml2rfc-0.1.0rc2.dist-info/top_level.txt,sha256=XICaFMK7SV2arFP-V6ZyPFvQsGtg3oJUJf5YVUZVfBU,15
+sphinx_xml2rfc-0.1.0rc2.dist-info/RECORD,,
