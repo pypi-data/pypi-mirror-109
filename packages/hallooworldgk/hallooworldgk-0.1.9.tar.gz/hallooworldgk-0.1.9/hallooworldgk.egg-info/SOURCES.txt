@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+hallooworldgk.egg-info/PKG-INFO
+hallooworldgk.egg-info/SOURCES.txt
+hallooworldgk.egg-info/dependency_links.txt
+hallooworldgk.egg-info/entry_points.txt
+hallooworldgk.egg-info/requires.txt
+hallooworldgk.egg-info/top_level.txt
+libname/__init__.py
+libname/hello.py
