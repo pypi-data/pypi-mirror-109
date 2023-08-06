@@ -1,0 +1,3 @@
+[console_scripts]
+PolTools = PolTools.cli:main
+

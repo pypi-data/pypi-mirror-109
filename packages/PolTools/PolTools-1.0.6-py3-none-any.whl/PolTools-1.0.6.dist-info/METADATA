@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PolTools
+Version: 1.0.6
+Summary: UNKNOWN
+Home-page: https://geoffscollins.github.io/PolTools/index.html
+Author: Geoff Collins
+License: UNKNOWN
+Project-URL: Documentation, https://geoffscollins.github.io/PolTools/index.html
+Project-URL: Source Code, https://github.com/GeoffSCollins/PolTools
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: setuptools (~=40.4.2)
+Requires-Dist: Pillow (~=8.2.0)
+Requires-Dist: biopython (~=1.76)
+
+UNKNOWN
+
+
