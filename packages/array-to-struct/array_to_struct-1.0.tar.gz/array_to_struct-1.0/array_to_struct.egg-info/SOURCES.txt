@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+array_to_struct.egg-info/PKG-INFO
+array_to_struct.egg-info/SOURCES.txt
+array_to_struct.egg-info/dependency_links.txt
+array_to_struct.egg-info/not-zip-safe
+array_to_struct.egg-info/top_level.txt
+transp_solution/__init__.py
+transp_solution/transposition.py
