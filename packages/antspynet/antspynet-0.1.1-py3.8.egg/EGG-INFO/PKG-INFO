@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: antspynet
+Version: 0.1.1
+Summary: A collection of deep learning architectures ported to the python language and tools for basic medical image processing.
+Home-page: http://github.com/ntustison/antspynet
+Author: Nicholas J. Tustison and Brian B. Avants and Nick Cullen
+Author-email: ntustison@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
