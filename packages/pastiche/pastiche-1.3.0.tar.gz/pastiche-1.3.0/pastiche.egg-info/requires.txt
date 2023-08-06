@@ -1,0 +1,8 @@
+h5py
+numpy
+pillow
+torch
+torchvision
+
+[dev]
+kmeans1d
