@@ -1,0 +1,109 @@
+resume_after: None
+multiprocess: True
+models:
+  -  initialize_landuse
+  -  initialize_households
+  -  compute_accessibility
+  -  initialize_los
+  -  initialize_tvpb
+  -  school_location
+  -  workplace_location
+  -  auto_ownership_simulate
+  -  free_parking
+  -  cdap_simulate
+  -  mandatory_tour_frequency
+  -  mandatory_tour_scheduling
+  -  joint_tour_frequency
+  -  joint_tour_composition
+  -  joint_tour_participation
+  -  joint_tour_destination
+  -  joint_tour_scheduling
+  -  non_mandatory_tour_frequency
+  -  non_mandatory_tour_destination
+  -  non_mandatory_tour_scheduling
+  -  tour_mode_choice_simulate
+  -  atwork_subtour_frequency
+  -  atwork_subtour_destination
+  -  atwork_subtour_scheduling
+  -  atwork_subtour_mode_choice
+  -  stop_frequency
+  -  trip_purpose
+  -  trip_destination
+  -  trip_purpose_and_destination
+  -  trip_scheduling
+  -  trip_mode_choice
+  -  write_data_dictionary
+  -  track_skim_usage
+  -  write_trip_matrices
+  -  write_tables
+
+multiprocess_steps:
+  step: mp_initialize
+    name: mp_initialize
+    begin: initialize_landuse
+    step_num: 0
+    num_processes: 1
+    chunk_size: 0
+    last_checkpoint_in_previous_multiprocess_step: None
+    models:
+       - initialize_landuse
+       - initialize_households
+       - compute_accessibility
+       - initialize_los
+  step: mp_tvpb
+    name: mp_tvpb
+    begin: initialize_tvpb
+    chunk_size: 0
+    slice: {'tables': ['attribute_combinations']}
+    step_num: 1
+    num_processes: 2
+    last_checkpoint_in_previous_multiprocess_step: mp_initialize
+    models:
+       - initialize_tvpb
+  step: mp_models
+    name: mp_models
+    begin: school_location
+    slice: {'tables': ['households', 'persons']}
+    step_num: 2
+    num_processes: 2
+    chunk_size: 0
+    last_checkpoint_in_previous_multiprocess_step: mp_tvpb
+    models:
+       - school_location
+       - workplace_location
+       - auto_ownership_simulate
+       - free_parking
+       - cdap_simulate
+       - mandatory_tour_frequency
+       - mandatory_tour_scheduling
+       - joint_tour_frequency
+       - joint_tour_composition
+       - joint_tour_participation
+       - joint_tour_destination
+       - joint_tour_scheduling
+       - non_mandatory_tour_frequency
+       - non_mandatory_tour_destination
+       - non_mandatory_tour_scheduling
+       - tour_mode_choice_simulate
+       - atwork_subtour_frequency
+       - atwork_subtour_destination
+       - atwork_subtour_scheduling
+       - atwork_subtour_mode_choice
+       - stop_frequency
+       - trip_purpose
+       - trip_destination
+       - trip_purpose_and_destination
+       - trip_scheduling
+       - trip_mode_choice
+  step: mp_summarize
+    name: mp_summarize
+    begin: write_data_dictionary
+    step_num: 3
+    num_processes: 1
+    chunk_size: 0
+    last_checkpoint_in_previous_multiprocess_step: mp_models
+    models:
+       - write_data_dictionary
+       - track_skim_usage
+       - write_trip_matrices
+       - write_tables

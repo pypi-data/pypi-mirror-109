@@ -1,0 +1,161 @@
+NONE,0
+orig_col_name,origin
+dest_col_name,destination
+costPerMile,18.29
+costShareSr2,1.75
+costShareSr3,2.5
+waitThresh,10.0
+walkThresh,1.0
+shortWalk,0.333
+longWalk,0.667
+walkSpeed,3.0
+bikeThresh,6.0
+bikeSpeed,12.0
+I_MODE_MAP,"{'DRIVEALONEFREE': 1, 'DRIVEALONEPAY': 2, 'SHARED2FREE': 3, 'SHARED2PAY': 4, 'SHARED3FREE': 5, 'SHARED3PAY': 6, 'WALK': 7, 'BIKE': 8, 'WALK_LOC': 9, 'WALK_LRF': 10, 'WALK_EXP': 11, 'WALK_HVY': 12, 'WALK_COM': 13, 'DRIVE_LOC': 14, 'DRIVE_LRF': 15, 'DRIVE_EXP': 16, 'DRIVE_HVY': 17, 'DRIVE_COM': 18, 'TAXI': 19, 'TNC_SINGLE': 20, 'TNC_SHARED': 21}"
+I_SOV_MODES,"[1, 2]"
+I_SR2_MODES,"[3, 4]"
+I_SR3P_MODES,"[5, 6]"
+I_AUTO_MODES,"[1, 2, 3, 4, 5, 6]"
+I_WALK_MODE,7
+I_BIKE_MODE,8
+I_WALK_TRANSIT_MODES,"[9, 10, 11, 12, 13]"
+I_DRIVE_TRANSIT_MODES,"[14, 15, 16, 17, 18]"
+I_RIDE_HAIL_MODES,"[19, 20, 21]"
+Taxi_baseFare,2.2
+Taxi_costPerMile,2.3
+Taxi_costPerMinute,0.1
+Taxi_waitTime_mean,"{1: 5.5, 2: 9.5, 3: 13.3, 4: 17.3, 5: 26.5}"
+Taxi_waitTime_sd,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0}"
+TNC_single_baseFare,2.2
+TNC_single_costPerMile,1.33
+TNC_single_costPerMinute,0.24
+TNC_single_costMinimum,7.2
+TNC_single_waitTime_mean,"{1: 3.0, 2: 6.3, 3: 8.4, 4: 8.5, 5: 10.3}"
+TNC_single_waitTime_sd,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0}"
+TNC_shared_baseFare,2.2
+TNC_shared_costPerMile,0.53
+TNC_shared_costPerMinute,0.1
+TNC_shared_costMinimum,3.0
+TNC_shared_IVTFactor,1.5
+TNC_shared_waitTime_mean,"{1: 5.0, 2: 8.0, 3: 11.0, 4: 15.0, 5: 15.0}"
+TNC_shared_waitTime_sd,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0}"
+min_waitTime,0
+max_waitTime,50
+ivt_cost_multiplier,0.6
+topology_bike_multiplier,20
+topology_trn_multiplier,2.2
+topology_walk_multiplier,15
+ridehail_wait_time_multiplier,1.5
+walktimelong_multiplier,5
+biketimelong_multiplier,5
+xfers_wlk_multiplier,5
+xfers_drv_multiplier,15
+dacc_ratio_multiplier,0
+density_index_multiplier,-5
+origin_density_index_multiplier,-15
+origin_density_index_max,-15
+ivt_com_multiplier,0.8
+ivt_exp_multiplier,-0.0175
+ivt_hvy_multiplier,0.8
+ORIGIN,origin
+DESTINATION,destination
+coef_one,1.0
+coef_nest_root,1.0
+coef_nest_AUTO,0.72
+coef_nest_AUTO_DRIVEALONE,0.35
+coef_nest_AUTO_SHAREDRIDE2,0.35
+coef_nest_AUTO_SHAREDRIDE3,0.35
+coef_nest_NONMOTORIZED,0.72
+coef_nest_TRANSIT,0.72
+coef_nest_TRANSIT_WALKACCESS,0.5
+coef_nest_TRANSIT_DRIVEACCESS,0.5
+coef_nest_RIDEHAIL,0.36
+coef_ivt,-0.022
+coef_age1619_da,0.0
+coef_age010_trn,0.0
+coef_age16p_sr,0.0
+coef_hhsize1_sr,-0.7346
+coef_hhsize2_sr,0.0
+coef_ivt_lrt_multiplier,0.9
+coef_ivt_ferry_multiplier,0.8
+coef_short_iwait_multiplier,2.0
+coef_long_iwait_multiplier,1.0
+coef_wacc_multiplier,2.0
+coef_wegr_multiplier,2.0
+coef_waux_multiplier,2.0
+coef_dtim_multiplier,2.0
+coef_xwait_multiplier,2.0
+coef_walktimeshort_multiplier,2.0
+coef_biketimeshort_multiplier,4.0
+sov_ASC_sr2,-999.0
+sov_ASC_sr3p,-999.0
+sov_ASC_walk,-0.8398
+sov_ASC_rh,-7.0
+sr2_ASC_sr2,0.0149
+sr2_ASC_sr3p,-999.0
+sr2_ASC_walk,0.126
+sr2_ASC_rh,-7.0
+sr3p_ASC_sr2,-1.1956
+sr3p_ASC_sr3p,-0.1836
+sr3p_ASC_walk,0.2171
+sr3p_ASC_rh,-71.9177
+walk_ASC_rh,-7.0
+bike_ASC_walk,-1.8333
+bike_ASC_rh,-7.0
+walk_transit_ASC_lightrail,0.4621
+walk_transit_ASC_ferry,0.5277
+walk_transit_ASC_express,-0.3554
+walk_transit_ASC_heavyrail,0.3538
+walk_transit_ASC_commuter,0.4012
+walk_transit_ASC_sr2,-3.6631
+walk_transit_ASC_sr3p,-4.1314
+walk_transit_ASC_walk,0.4432
+walk_transit_ASC_rh,-3.7408
+drive_transit_ASC_lightrail,0.4621
+drive_transit_ASC_ferry,0.5277
+drive_transit_ASC_express,-0.3554
+drive_transit_ASC_heavyrail,0.3538
+drive_transit_ASC_commuter,0.4012
+drive_transit_ASC_rh,-4.25
+ride_hail_ASC_sr2,-6.108
+ride_hail_ASC_sr3p,-7.0
+ride_hail_ASC_walk,0.2858
+ride_hail_ASC_walk_transit,0.0
+ride_hail_ASC_taxi,-2.385
+ride_hail_ASC_tnc_single,0.735
+ride_hail_ASC_tnc_shared,0.0
+joint_auto_ASC_sr2,0.0
+joint_auto_ASC_sr3p,0.0
+joint_auto_ASC_walk,0.0
+joint_auto_ASC_rh,0.0
+joint_walk_ASC_rh,0.0
+joint_bike_ASC_walk,0.0
+joint_bike_ASC_rh,0.0
+joint_walk_transit_ASC_lightrail,0.0
+joint_walk_transit_ASC_ferry,0.0
+joint_walk_transit_ASC_express,0.0
+joint_walk_transit_ASC_heavyrail,0.0
+joint_walk_transit_ASC_commuter,0.0
+joint_walk_transit_ASC_sr2,0.0
+joint_walk_transit_ASC_sr3p,0.0
+joint_walk_transit_ASC_walk,0.0
+joint_walk_transit_ASC_rh,0.0
+joint_drive_transit_ASC_lightrail,0.0
+joint_drive_transit_ASC_ferry,0.0
+joint_drive_transit_ASC_express,0.0
+joint_drive_transit_ASC_heavyrail,0.0
+joint_drive_transit_ASC_commuter,0.0
+joint_drive_transit_ASC_rh,0.0
+joint_ride_hail_ASC_sr2,0.0
+joint_ride_hail_ASC_sr3p,0.0
+joint_ride_hail_ASC_walk,0.0
+joint_ride_hail_ASC_walk_transit,0.0
+joint_ride_hail_ASC_taxi,0.0
+joint_ride_hail_ASC_tnc_single,0.0
+joint_ride_hail_ASC_tnc_shared,0.0
+walk_express_penalty,10.0
+adjust_tnc_shared,30.0
+origin_density_applied,0.0
+odt_skims,<activitysim.core.skim_dictionary.Skim3dWrapper object at 0x000002135CAEAFA0>
+dot_skims,<activitysim.core.skim_dictionary.Skim3dWrapper object at 0x000002135B9E9DF0>
+od_skims,<activitysim.core.skim_dictionary.SkimWrapper object at 0x000002135B946910>

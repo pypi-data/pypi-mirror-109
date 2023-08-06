@@ -1,0 +1,34 @@
+expression,value_1,value_2
+alt_dest,12,13
+prob,0.29942747950553894,0.5082562565803528
+pick_count,2,4
+mode_choice_logsum,7.357198245783597,7.32059374069455
+size_term,3002.7643634399997,2578.2760394399997
+shadow_price_size_term_adjustment,1,1
+shadow_price_utility_adjustment,0,0
+home_zone_id,16,16
+school_segment,3,3
+household_id,982875,982875
+_DIST@skims['DIST'],0.6700000166893005,0.46000000834465027
+"@_DIST.clip(0,1)",0.6700000166893005,0.46000000834465027
+"partial utility (coefficient = -3.2451000213623047) for @_DIST.clip(0,1)",-2.1742169857025146,-1.4927459955215454
+"@(_DIST-1).clip(0,1)",0.0,0.0
+"partial utility (coefficient = -2.7011001110076904) for @(_DIST-1).clip(0,1)",-0.0,-0.0
+"@(_DIST-2).clip(0,3)",0.0,0.0
+"partial utility (coefficient = -0.5706999897956848) for @(_DIST-2).clip(0,3)",-0.0,-0.0
+"@(_DIST-5).clip(0,10)",0.0,0.0
+"partial utility (coefficient = -0.5001999735832214) for @(_DIST-5).clip(0,10)",-0.0,-0.0
+@(_DIST-15.0).clip(0),0.0,0.0
+partial utility (coefficient = -0.0729999989271164) for @(_DIST-15.0).clip(0),-0.0,-0.0
+@(df['size_term'] * df['shadow_price_size_term_adjustment']).apply(np.log1p),8.007621568875283,7.855264033670534
+partial utility (coefficient = 1.0) for @(df['size_term'] * df['shadow_price_size_term_adjustment']).apply(np.log1p),8.007621568875283,7.855264033670534
+@df['shadow_price_utility_adjustment'],0,0
+partial utility (coefficient = 1.0) for @df['shadow_price_utility_adjustment'],0.0,0.0
+@df['size_term']==0,False,False
+partial utility (coefficient = -999.0) for @df['size_term']==0,-0.0,-0.0
+mode_choice_logsum,7.357198245783597,7.32059374069455
+partial utility (coefficient = 0.5357999801635742) for mode_choice_logsum,3.9419866741503347,3.9223739810497253
+"@np.minimum(np.log(df.pick_count/df.prob), 60)",1.899030209852629,2.063063877624376
+"partial utility (coefficient = 1.0) for @np.minimum(np.log(df.pick_count/df.prob), 60)",1.899030209852629,2.063063877624376
+total utility,11.674421467175733,12.347955896823091
+person_id,1875722,1875722

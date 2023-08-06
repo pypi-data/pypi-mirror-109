@@ -1,0 +1,100 @@
+10/06/2021 07:52:24 - INFO - activitysim - Read logging configuration from: C:\projects\development\activitysim\activitysim\examples\example_mtc\configs_mp\logging.yaml
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - coalesce_pipelines to: pipeline.h5
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - loading table accessibility accessibility/mp_households
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - loading table land_use land_use/mp_households
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - loading table person_windows person_windows/non_mandatory_tour_scheduling
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - loading table households households/joint_tour_frequency
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - loading table persons persons/non_mandatory_tour_frequency
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - loading table school_destination_size school_destination_size/mp_households
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - loading table workplace_destination_size workplace_destination_size/mp_households
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - loading table school_modeled_size school_modeled_size/school_location
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - loading table workplace_modeled_size workplace_modeled_size/workplace_location
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - loading table tours tours/stop_frequency
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - loading table joint_tour_participants joint_tour_participants/joint_tour_participation
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - loading table trips trips/trip_mode_choice
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - ### table_name: households slice_rules: {'slice_by': 'primary'}
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - ### table_name: persons slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - ### table_name: person_windows slice_rules: {'slice_by': 'index', 'source': 'persons'}
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - ### table_name: tours slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - ### table_name: joint_tour_participants slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - ### table_name: trips slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - ### slicer_ref_cols: OrderedDict([('households', 'household_id'), ('persons', 'person_id'), ('person_windows', 'person_id'), ('tours', 'tour_id'), ('joint_tour_participants', 'participant_id'), ('trips', 'trip_id')])
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - coalesce_pipelines to: pipeline.h5
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - mirrored_table_names: ['accessibility', 'land_use', 'school_destination_size', 'workplace_destination_size', 'school_modeled_size', 'workplace_modeled_size']
+10/06/2021 07:52:24 - DEBUG - activitysim.core.mp_tasks - omnibus_keys: {'person_windows': 'person_windows/non_mandatory_tour_scheduling', 'households': 'households/joint_tour_frequency', 'persons': 'persons/non_mandatory_tour_frequency', 'tours': 'tours/stop_frequency', 'joint_tour_participants': 'joint_tour_participants/joint_tour_participation', 'trips': 'trips/trip_mode_choice'}
+10/06/2021 07:52:24 - INFO - activitysim.core.mp_tasks - coalesce pipeline C:\projects\development\activitysim\activitysim\examples\example_mtc\test\output\mp_households_0-pipeline.h5
+10/06/2021 07:52:24 - INFO - activitysim.core.mp_tasks - coalesce pipeline C:\projects\development\activitysim\activitysim\examples\example_mtc\test\output\mp_households_1-pipeline.h5
+10/06/2021 07:52:24 - DEBUG - activitysim.core.random - Set random seed base to 0
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - open_pipeline - open existing pipeline
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - opened pipeline_store C:\projects\development\activitysim\activitysim\examples\example_mtc\test\output\pipeline.h5
+10/06/2021 07:52:24 - INFO - activitysim.core.pipeline - load_checkpoint _
+10/06/2021 07:52:24 - INFO - activitysim.core.pipeline - loading checkpoint 'mp_accessibility'
+10/06/2021 07:52:24 - INFO - activitysim.core.pipeline - load_checkpoint mp_accessibility timestamp 2021-06-10 07:49:34.300170
+10/06/2021 07:52:24 - INFO - activitysim.core.pipeline - load_checkpoint table accessibility (25, 10)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table accessibility inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.pipeline - load_checkpoint table land_use (25, 28)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table land_use inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.pipeline - load_checkpoint table person_windows (28, 21)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table person_windows inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.pipeline - load_checkpoint table households (10, 24)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table households inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.pipeline - load_checkpoint table persons (28, 30)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table persons inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.pipeline - load_checkpoint table school_destination_size (25, 3)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table school_destination_size inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.pipeline - load_checkpoint table workplace_destination_size (25, 4)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table workplace_destination_size inplace=False
+10/06/2021 07:52:24 - DEBUG - activitysim.core.tracing - register_traceable_table households
+10/06/2021 07:52:24 - DEBUG - activitysim.core.tracing - adding table households.household_id to traceable_table_indexes
+10/06/2021 07:52:24 - INFO - activitysim.core.tracing - tracing household id 982875 in 10 households
+10/06/2021 07:52:24 - DEBUG - activitysim.core.tracing - register households: added 1 new ids to 0 existing trace ids
+10/06/2021 07:52:24 - DEBUG - activitysim.core.tracing - register households: tracing new ids [982875] in households
+10/06/2021 07:52:24 - DEBUG - activitysim.core.tracing - register_traceable_table persons
+10/06/2021 07:52:24 - DEBUG - activitysim.core.tracing - adding table persons.person_id to traceable_table_indexes
+10/06/2021 07:52:24 - DEBUG - activitysim.core.tracing - register persons: added 2 new ids to 0 existing trace ids
+10/06/2021 07:52:24 - DEBUG - activitysim.core.tracing - register persons: tracing new ids [1875721, 1875722] in persons
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - loading random channels ['households', 'persons', 'tours', 'joint_tour_participants', 'trips']
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - adding channel households
+10/06/2021 07:52:24 - DEBUG - activitysim.core.random - Adding channel 'households' 10 ids
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - adding channel persons
+10/06/2021 07:52:24 - DEBUG - activitysim.core.random - Adding channel 'persons' 28 ids
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - open_pipeline complete
+10/06/2021 07:52:24 - INFO - activitysim.core.mp_tasks - adding mirrored table accessibility (25, 10)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table accessibility inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.mp_tasks - adding mirrored table land_use (25, 28)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table land_use inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.mp_tasks - adding mirrored table school_destination_size (25, 3)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table school_destination_size inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.mp_tasks - adding mirrored table workplace_destination_size (25, 4)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table workplace_destination_size inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.mp_tasks - adding mirrored table school_modeled_size (25, 3)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table school_modeled_size inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.mp_tasks - adding mirrored table workplace_modeled_size (25, 4)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table workplace_modeled_size inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.mp_tasks - adding omnibus table person_windows (28, 21)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table person_windows inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.mp_tasks - adding omnibus table households (10, 34)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table households inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.mp_tasks - adding omnibus table persons (28, 63)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table persons inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.mp_tasks - adding omnibus table tours (33, 23)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table tours inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.mp_tasks - adding omnibus table joint_tour_participants (0, 4)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table joint_tour_participants inplace=False
+10/06/2021 07:52:24 - INFO - activitysim.core.mp_tasks - adding omnibus table trips (79, 14)
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - rewrap table trips inplace=False
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - add_checkpoint mp_households timestamp 2021-06-10 07:52:24.889427
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - add_checkpoint 'mp_households' table 'accessibility' (25, 10) 2.2 KB
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - add_checkpoint 'mp_households' table 'land_use' (25, 28) 5.6 KB
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - add_checkpoint 'mp_households' table 'school_destination_size' (25, 3) 800 B
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - add_checkpoint 'mp_households' table 'workplace_destination_size' (25, 4) 1000 B
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - add_checkpoint 'mp_households' table 'school_modeled_size' (25, 3) 800 B
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - add_checkpoint 'mp_households' table 'workplace_modeled_size' (25, 4) 1000 B
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - add_checkpoint 'mp_households' table 'person_windows' (28, 21) 812 B
+10/06/2021 07:52:24 - DEBUG - activitysim.core.pipeline - add_checkpoint 'mp_households' table 'households' (10, 34) 1.3 KB
+10/06/2021 07:52:25 - DEBUG - activitysim.core.pipeline - add_checkpoint 'mp_households' table 'persons' (28, 63) 5.4 KB
+10/06/2021 07:52:25 - DEBUG - activitysim.core.pipeline - add_checkpoint 'mp_households' table 'tours' (33, 23) 6.3 KB
+10/06/2021 07:52:25 - DEBUG - activitysim.core.pipeline - add_checkpoint 'mp_households' table 'joint_tour_participants' (0, 4) 0 B
+10/06/2021 07:52:25 - DEBUG - activitysim.core.pipeline - add_checkpoint 'mp_households' table 'trips' (79, 14) 8.9 KB
+10/06/2021 07:52:25 - DEBUG - activitysim.core.tracing - initialize_traceable_tables resetting table_ids for ['households', 'persons']
+10/06/2021 07:52:25 - DEBUG - activitysim.core.pipeline - close_pipeline

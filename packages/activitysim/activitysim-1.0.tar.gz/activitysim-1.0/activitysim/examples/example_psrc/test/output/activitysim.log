@@ -1,0 +1,844 @@
+10/06/2021 07:52:47 - INFO - activitysim - Read logging configuration from: C:\projects\development\activitysim\activitysim\examples\example_psrc\configs\logging.yaml
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - SETTING configs_dir: ['C:\\projects\\development\\activitysim\\activitysim\\examples\\example_psrc\\test\\configs', 'C:\\projects\\development\\activitysim\\activitysim\\examples\\example_psrc\\configs']
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - SETTING settings_file_name: settings.yaml
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - SETTING data_dir: ['C:\\projects\\development\\activitysim\\activitysim\\examples\\example_psrc\\data']
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - SETTING output_dir: C:\projects\development\activitysim\activitysim\examples\example_psrc\test\output
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - SETTING households_sample_size: 10
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - SETTING chunk_size: 0
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - SETTING chunk_method: None
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - SETTING chunk_training_mode: None
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - SETTING multiprocess: None
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - SETTING num_processes: None
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - SETTING resume_after: None
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - SETTING trace_hh_id: None
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - ENV MKL_NUM_THREADS: None
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - ENV OMP_NUM_THREADS: None
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - ENV OPENBLAS_NUM_THREADS: None
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - NUMPY blas_info libraries: ['cblas', 'blas', 'cblas', 'blas', 'cblas', 'blas']
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - NUMPY blas_opt_info libraries: ['cblas', 'blas', 'cblas', 'blas', 'cblas', 'blas']
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - NUMPY lapack_info libraries: ['lapack', 'blas', 'lapack', 'blas']
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - NUMPY lapack_opt_info libraries: ['lapack', 'blas', 'lapack', 'blas', 'cblas', 'blas', 'cblas', 'blas', 'cblas', 'blas']
+10/06/2021 07:52:47 - INFO - activitysim.cli.run - run single process simulation
+10/06/2021 07:52:47 - INFO - activitysim.core.tracing - Time to execute open_pipeline : 0.022 seconds (0.0 minutes)
+10/06/2021 07:52:47 - INFO - activitysim.abm.models.initialize - preload_injectables
+10/06/2021 07:52:47 - INFO - activitysim.core.tracing - Time to execute preload_injectables : 0.016 seconds (0.0 minutes)
+10/06/2021 07:52:47 - INFO - activitysim.core.pipeline - #run_model running step initialize_landuse
+10/06/2021 07:52:47 - INFO - activitysim.core.input - Reading CSV file C:\projects\development\activitysim\activitysim\examples\example_psrc\data\land_use.csv
+10/06/2021 07:52:47 - INFO - activitysim.abm.tables.landuse - loaded land_use (487, 25)
+10/06/2021 07:52:47 - INFO - activitysim.abm.models.initialize - initialize_landuse.annotate_tables - annotating land_use SPEC annotate_landuse
+10/06/2021 07:52:47 - INFO - activitysim.core.los - Network_LOS using skim_dict_factory: NumpyArraySkimFactory
+10/06/2021 07:52:48 - INFO - activitysim.core.skim_dict_factory - allocate_skim_buffer shared False taz shape (826, 27, 27) total size: 2_408_616 (2.4 MB)
+10/06/2021 07:52:48 - INFO - activitysim.core.skim_dict_factory - reading skim cache taz (826, 27, 27) from C:\projects\development\activitysim\activitysim\examples\example_psrc\test\output\cache\cached_taz.mmap
+10/06/2021 07:52:48 - INFO - activitysim.core.skim_dict_factory - get_skim_data taz SkimData shape (826, 27, 27)
+10/06/2021 07:52:48 - INFO - activitysim.core.skim_dictionary - SkimDict init taz
+10/06/2021 07:52:48 - INFO - activitysim.core.skim_dictionary - SkimDict.build_3d_skim_block_offset_table registered 167 3d keys
+10/06/2021 07:52:48 - INFO - activitysim.core.skim_dictionary - SkimDict init maz
+10/06/2021 07:52:48 - INFO - activitysim.core.skim_dictionary - SkimDict.build_3d_skim_block_offset_table registered 167 3d keys
+10/06/2021 07:52:48 - INFO - activitysim.core.pipeline - #run_model running step initialize_households
+10/06/2021 07:52:48 - INFO - activitysim.core.input - Reading CSV file C:\projects\development\activitysim\activitysim\examples\example_psrc\data\households.csv
+10/06/2021 07:52:48 - INFO - activitysim.abm.tables.households - full household list contains 14871 households
+10/06/2021 07:52:48 - INFO - activitysim.abm.tables.households - sampling 10 of 14871 households
+10/06/2021 07:52:48 - INFO - activitysim.abm.tables.households - loaded households (10, 7)
+10/06/2021 07:52:48 - INFO - activitysim.core.input - Reading CSV file C:\projects\development\activitysim\activitysim\examples\example_psrc\data\persons.csv
+10/06/2021 07:52:48 - INFO - activitysim.abm.tables.persons - loaded persons (17, 7)
+10/06/2021 07:52:48 - INFO - activitysim.abm.models.initialize - initialize_households.annotate_tables - annotating persons SPEC annotate_persons
+10/06/2021 07:52:48 - INFO - activitysim.abm.models.initialize - initialize_households.annotate_tables - annotating households SPEC annotate_households
+10/06/2021 07:52:49 - INFO - activitysim.abm.models.initialize - initialize_households.annotate_tables - annotating persons SPEC annotate_persons_after_hh
+10/06/2021 07:52:49 - INFO - activitysim.core.pipeline - #run_model running step compute_accessibility
+10/06/2021 07:52:49 - INFO - activitysim.abm.models.accessibility - Running compute_accessibility with 487 orig zones 487 dest zones
+10/06/2021 07:52:49 - INFO - activitysim.core.chunk - compute_accessibility Running adaptive_chunked_choosers with 487 choosers
+10/06/2021 07:52:49 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 487 of 487 choosers
+10/06/2021 07:52:49 - INFO - activitysim.abm.models.accessibility - Running compute_accessibility with 487 orig zones 487 dest zones
+10/06/2021 07:52:52 - INFO - activitysim.abm.models.accessibility - compute_accessibility computed accessibilities (487, 10)
+10/06/2021 07:52:52 - INFO - activitysim.core.pipeline - #run_model running step school_location
+10/06/2021 07:52:52 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.sample.university location_presample with 2 persons
+10/06/2021 07:52:52 - INFO - activitysim.abm.models.location_choice - school_location.i1.sample.university.presample location_presample
+10/06/2021 07:52:52 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.sample.university.presample with 2 persons
+10/06/2021 07:52:52 - INFO - activitysim.core.chunk - school_location.i1.sample.university.presample.interaction_sample Running adaptive_chunked_choosers with 2 choosers
+10/06/2021 07:52:52 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 2 of 2 choosers
+10/06/2021 07:52:52 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 2 rows
+10/06/2021 07:52:53 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.logsums.university with 2 rows
+10/06/2021 07:52:53 - INFO - activitysim.core.chunk - school_location.i1.logsums.university.compute_logsums Running adaptive_chunked_choosers with 2 choosers
+10/06/2021 07:52:54 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 2 of 2 choosers
+10/06/2021 07:52:57 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.simulate.university with 2 persons
+10/06/2021 07:52:57 - INFO - activitysim.core.chunk - school_location.i1.simulate.university.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 2 choosers and 2 alternatives
+10/06/2021 07:52:57 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 2 of 2 choosers
+10/06/2021 07:52:57 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 2 rows
+10/06/2021 07:52:58 - INFO - activitysim.abm.models.location_choice - school_location.i1 skipping segment highschool: no choosers
+10/06/2021 07:52:58 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.sample.gradeschool location_presample with 1 persons
+10/06/2021 07:52:58 - INFO - activitysim.abm.models.location_choice - school_location.i1.sample.gradeschool.presample location_presample
+10/06/2021 07:52:58 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.sample.gradeschool.presample with 1 persons
+10/06/2021 07:52:58 - INFO - activitysim.core.chunk - school_location.i1.sample.gradeschool.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:52:58 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:52:58 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 27 rows
+10/06/2021 07:52:59 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.logsums.gradeschool with 27 rows
+10/06/2021 07:52:59 - INFO - activitysim.core.chunk - school_location.i1.logsums.gradeschool.compute_logsums Running adaptive_chunked_choosers with 27 choosers
+10/06/2021 07:53:00 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 27 of 27 choosers
+10/06/2021 07:53:03 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.simulate.gradeschool with 1 persons
+10/06/2021 07:53:03 - INFO - activitysim.core.chunk - school_location.i1.simulate.gradeschool.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 27 alternatives
+10/06/2021 07:53:03 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:53:03 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 27 rows
+10/06/2021 07:53:04 - INFO - activitysim.abm.tables.shadow_pricing - write_trace_files iteration 1
+10/06/2021 07:53:04 - INFO - activitysim.core.tracing - school_location_logsum top 10 value counts:
+7.252394    1
+0.728168    1
+9.391121    1
+Name: logsum, dtype: int64
+10/06/2021 07:53:04 - INFO - activitysim.core.pipeline - #run_model running step workplace_location
+10/06/2021 07:53:04 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.sample.work_low location_presample with 1 persons
+10/06/2021 07:53:04 - INFO - activitysim.abm.models.location_choice - workplace_location.i1.sample.work_low.presample location_presample
+10/06/2021 07:53:04 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.sample.work_low.presample with 1 persons
+10/06/2021 07:53:04 - INFO - activitysim.core.chunk - workplace_location.i1.sample.work_low.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:53:04 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:53:04 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 25 rows
+10/06/2021 07:53:05 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.logsums.work_low with 14 rows
+10/06/2021 07:53:06 - INFO - activitysim.core.chunk - workplace_location.i1.logsums.work_low.compute_logsums Running adaptive_chunked_choosers with 14 choosers
+10/06/2021 07:53:06 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 14 of 14 choosers
+10/06/2021 07:53:09 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.simulate.work_low with 1 persons
+10/06/2021 07:53:09 - INFO - activitysim.core.chunk - workplace_location.i1.simulate.work_low.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 14 alternatives
+10/06/2021 07:53:09 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:53:09 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 14 rows
+10/06/2021 07:53:10 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.sample.work_med location_presample with 1 persons
+10/06/2021 07:53:10 - INFO - activitysim.abm.models.location_choice - workplace_location.i1.sample.work_med.presample location_presample
+10/06/2021 07:53:10 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.sample.work_med.presample with 1 persons
+10/06/2021 07:53:10 - INFO - activitysim.core.chunk - workplace_location.i1.sample.work_med.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:53:10 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:53:10 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 25 rows
+10/06/2021 07:53:11 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.logsums.work_med with 17 rows
+10/06/2021 07:53:12 - INFO - activitysim.core.chunk - workplace_location.i1.logsums.work_med.compute_logsums Running adaptive_chunked_choosers with 17 choosers
+10/06/2021 07:53:12 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 17 of 17 choosers
+10/06/2021 07:53:15 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.simulate.work_med with 1 persons
+10/06/2021 07:53:15 - INFO - activitysim.core.chunk - workplace_location.i1.simulate.work_med.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 17 alternatives
+10/06/2021 07:53:15 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:53:15 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 17 rows
+10/06/2021 07:53:16 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.sample.work_high location_presample with 2 persons
+10/06/2021 07:53:16 - INFO - activitysim.abm.models.location_choice - workplace_location.i1.sample.work_high.presample location_presample
+10/06/2021 07:53:16 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.sample.work_high.presample with 2 persons
+10/06/2021 07:53:16 - INFO - activitysim.core.chunk - workplace_location.i1.sample.work_high.presample.interaction_sample Running adaptive_chunked_choosers with 2 choosers
+10/06/2021 07:53:16 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 2 of 2 choosers
+10/06/2021 07:53:16 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 50 rows
+10/06/2021 07:53:17 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.logsums.work_high with 34 rows
+10/06/2021 07:53:18 - INFO - activitysim.core.chunk - workplace_location.i1.logsums.work_high.compute_logsums Running adaptive_chunked_choosers with 34 choosers
+10/06/2021 07:53:18 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 34 of 34 choosers
+10/06/2021 07:53:21 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.simulate.work_high with 2 persons
+10/06/2021 07:53:21 - INFO - activitysim.core.chunk - workplace_location.i1.simulate.work_high.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 2 choosers and 34 alternatives
+10/06/2021 07:53:21 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 2 of 2 choosers
+10/06/2021 07:53:21 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 34 rows
+10/06/2021 07:53:22 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.sample.work_veryhigh location_presample with 9 persons
+10/06/2021 07:53:22 - INFO - activitysim.abm.models.location_choice - workplace_location.i1.sample.work_veryhigh.presample location_presample
+10/06/2021 07:53:22 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.sample.work_veryhigh.presample with 9 persons
+10/06/2021 07:53:22 - INFO - activitysim.core.chunk - workplace_location.i1.sample.work_veryhigh.presample.interaction_sample Running adaptive_chunked_choosers with 9 choosers
+10/06/2021 07:53:22 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 9 of 9 choosers
+10/06/2021 07:53:22 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 225 rows
+10/06/2021 07:53:23 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.logsums.work_veryhigh with 150 rows
+10/06/2021 07:53:24 - INFO - activitysim.core.chunk - workplace_location.i1.logsums.work_veryhigh.compute_logsums Running adaptive_chunked_choosers with 150 choosers
+10/06/2021 07:53:24 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 150 of 150 choosers
+10/06/2021 07:53:27 - INFO - activitysim.abm.models.location_choice - Running workplace_location.i1.simulate.work_veryhigh with 9 persons
+10/06/2021 07:53:27 - INFO - activitysim.core.chunk - workplace_location.i1.simulate.work_veryhigh.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 9 choosers and 150 alternatives
+10/06/2021 07:53:27 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 9 of 9 choosers
+10/06/2021 07:53:27 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 150 rows
+10/06/2021 07:53:28 - INFO - activitysim.abm.tables.shadow_pricing - write_trace_files iteration 1
+10/06/2021 07:53:28 - INFO - activitysim.core.tracing - workplace_location_logsum top 10 value counts:
+9.502965     1
+10.222168    1
+9.843187     1
+9.400809     1
+9.752326     1
+9.934513     1
+9.882581     1
+10.101763    1
+9.684581     1
+10.185260    1
+Name: logsum, dtype: int64
+10/06/2021 07:53:28 - INFO - activitysim.core.pipeline - #run_model running step auto_ownership_simulate
+10/06/2021 07:53:28 - INFO - activitysim.abm.models.auto_ownership - Running auto_ownership_simulate with 10 households
+10/06/2021 07:53:28 - INFO - activitysim.core.chunk - auto_ownership_simulate.simple_simulate Running adaptive_chunked_choosers with 10 choosers
+10/06/2021 07:53:29 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 10 of 10 choosers
+10/06/2021 07:53:29 - INFO - activitysim.core.tracing - auto_ownership top 10 value counts:
+2    6
+1    3
+4    1
+Name: auto_ownership, dtype: int64
+10/06/2021 07:53:29 - INFO - activitysim.core.pipeline - #run_model running step free_parking
+10/06/2021 07:53:29 - INFO - activitysim.abm.models.free_parking - Running free_parking with 13 persons
+10/06/2021 07:53:29 - INFO - activitysim.core.chunk - free_parking.simple_simulate Running adaptive_chunked_choosers with 13 choosers
+10/06/2021 07:53:29 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 13 of 13 choosers
+10/06/2021 07:53:29 - INFO - activitysim.core.tracing - free_parking top 10 value counts:
+False    16
+True      1
+Name: free_parking_at_work, dtype: int64
+10/06/2021 07:53:30 - INFO - activitysim.core.pipeline - #run_model running step cdap_simulate
+10/06/2021 07:53:30 - INFO - activitysim.abm.models.cdap - Pre-building cdap specs
+10/06/2021 07:53:30 - INFO - activitysim.core.tracing - Time to execute build_cdap_spec hh_size 2 : 0.202 seconds (0.0 minutes)
+10/06/2021 07:53:31 - INFO - activitysim.core.tracing - Time to execute build_cdap_spec hh_size 3 : 0.703 seconds (0.0 minutes)
+10/06/2021 07:53:32 - INFO - activitysim.core.tracing - Time to execute build_cdap_spec hh_size 4 : 1.601 seconds (0.0 minutes)
+10/06/2021 07:53:36 - INFO - activitysim.core.tracing - Time to execute build_cdap_spec hh_size 5 : 3.924 seconds (0.1 minutes)
+10/06/2021 07:53:36 - INFO - activitysim.abm.models.cdap - Running cdap_simulate with 17 persons
+10/06/2021 07:53:36 - INFO - activitysim.core.chunk - cdap.cdap Running chunk 1 of 1 with 10 of 10 choosers
+10/06/2021 07:53:42 - INFO - activitysim.core.tracing - cdap_activity top 10 value counts:
+M    11
+H     3
+N     3
+Name: cdap_activity, dtype: int64
+10/06/2021 07:53:42 - INFO - activitysim.abm.models.cdap - cdap crosstabs:
+cdap_activity  H   M  N  All
+ptype                       
+1              2   7  0    9
+2              0   2  2    4
+3              1   1  0    2
+4              0   0  1    1
+7              0   1  0    1
+All            3  11  3   17
+10/06/2021 07:53:43 - INFO - activitysim.core.pipeline - #run_model running step mandatory_tour_frequency
+10/06/2021 07:53:43 - INFO - activitysim.abm.models.mandatory_tour_frequency - Running mandatory_tour_frequency with 11 persons
+10/06/2021 07:53:43 - INFO - activitysim.core.chunk - mandatory_tour_frequency.simple_simulate Running adaptive_chunked_choosers with 11 choosers
+10/06/2021 07:53:43 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 11 of 11 choosers
+10/06/2021 07:53:44 - INFO - activitysim.core.tracing - mandatory_tour_frequency top 10 value counts:
+work1      7
+           6
+work2      2
+school1    2
+Name: mandatory_tour_frequency, dtype: int64
+10/06/2021 07:53:44 - INFO - activitysim.core.pipeline - #run_model running step mandatory_tour_scheduling
+10/06/2021 07:53:44 - DEBUG - root - @inject timetable
+10/06/2021 07:53:44 - INFO - activitysim.abm.models.util.tour_scheduling - Running mandatory_tour_scheduling with 13 tours
+10/06/2021 07:53:44 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.work schedule_tours running 9 tour choices
+10/06/2021 07:53:44 - INFO - activitysim.core.chunk - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.work Running adaptive_chunked_choosers with 9 choosers
+10/06/2021 07:53:44 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 9 of 9 choosers
+10/06/2021 07:53:44 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.work schedule_tours running 9 tour choices
+10/06/2021 07:53:45 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - tdd_alt_segments specified for representative logsums
+10/06/2021 07:53:45 - WARNING - activitysim.abm.models.util.vectorize_tour_scheduling - No tdd_alt_segments for representative logsums so fallback to deduping tdd_alts by time_period and duration
+10/06/2021 07:53:45 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.work.compute_logsums compute_logsums deduped_alt_tdds reduced number of rows by 55.26% from 1710 to 765 compared to USE_BRUTE_FORCE_TO_COMPUTE_LOGSUMS
+10/06/2021 07:53:45 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.work.compute_logsums.logsums compute_logsums for 765 choosers 765 alts
+10/06/2021 07:53:46 - INFO - activitysim.core.chunk - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.work.compute_logsums.logsums Running adaptive_chunked_choosers with 765 choosers
+10/06/2021 07:53:46 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 765 of 765 choosers
+10/06/2021 07:53:50 - INFO - activitysim.core.chunk - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.work.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 9 choosers and 1710 alternatives
+10/06/2021 07:53:50 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 9 of 9 choosers
+10/06/2021 07:53:50 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 1710 rows
+10/06/2021 07:53:51 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.school schedule_tours running 1 tour choices
+10/06/2021 07:53:51 - INFO - activitysim.core.chunk - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.school Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:53:52 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:53:52 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.school schedule_tours running 1 tour choices
+10/06/2021 07:53:52 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - tdd_alt_segments specified for representative logsums
+10/06/2021 07:53:52 - WARNING - activitysim.abm.models.util.vectorize_tour_scheduling - No tdd_alt_segments for representative logsums so fallback to deduping tdd_alts by time_period and duration
+10/06/2021 07:53:52 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.school.compute_logsums compute_logsums deduped_alt_tdds reduced number of rows by 55.26% from 190 to 85 compared to USE_BRUTE_FORCE_TO_COMPUTE_LOGSUMS
+10/06/2021 07:53:52 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.school.compute_logsums.logsums compute_logsums for 85 choosers 85 alts
+10/06/2021 07:53:53 - INFO - activitysim.core.chunk - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.school.compute_logsums.logsums Running adaptive_chunked_choosers with 85 choosers
+10/06/2021 07:53:53 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 85 of 85 choosers
+10/06/2021 07:53:57 - INFO - activitysim.core.chunk - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.school.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 190 alternatives
+10/06/2021 07:53:57 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:53:57 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 190 rows
+10/06/2021 07:53:58 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.univ schedule_tours running 1 tour choices
+10/06/2021 07:53:58 - INFO - activitysim.core.chunk - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.univ Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:53:58 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:53:58 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.univ schedule_tours running 1 tour choices
+10/06/2021 07:53:59 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - tdd_alt_segments specified for representative logsums
+10/06/2021 07:53:59 - WARNING - activitysim.abm.models.util.vectorize_tour_scheduling - No tdd_alt_segments for representative logsums so fallback to deduping tdd_alts by time_period and duration
+10/06/2021 07:53:59 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.univ.compute_logsums compute_logsums deduped_alt_tdds reduced number of rows by 55.26% from 190 to 85 compared to USE_BRUTE_FORCE_TO_COMPUTE_LOGSUMS
+10/06/2021 07:53:59 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.univ.compute_logsums.logsums compute_logsums for 85 choosers 85 alts
+10/06/2021 07:54:00 - INFO - activitysim.core.chunk - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.univ.compute_logsums.logsums Running adaptive_chunked_choosers with 85 choosers
+10/06/2021 07:54:00 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 85 of 85 choosers
+10/06/2021 07:54:04 - INFO - activitysim.core.chunk - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.univ.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 190 alternatives
+10/06/2021 07:54:04 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:04 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 190 rows
+10/06/2021 07:54:05 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_2.work schedule_tours running 2 tour choices
+10/06/2021 07:54:05 - INFO - activitysim.core.chunk - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_2.work Running adaptive_chunked_choosers with 2 choosers
+10/06/2021 07:54:05 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 2 of 2 choosers
+10/06/2021 07:54:05 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_2.work schedule_tours running 2 tour choices
+10/06/2021 07:54:06 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - tdd_alt_segments specified for representative logsums
+10/06/2021 07:54:06 - WARNING - activitysim.abm.models.util.vectorize_tour_scheduling - No tdd_alt_segments for representative logsums so fallback to deduping tdd_alts by time_period and duration
+10/06/2021 07:54:06 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_2.work.compute_logsums compute_logsums deduped_alt_tdds reduced number of rows by 50.92% from 163 to 80 compared to USE_BRUTE_FORCE_TO_COMPUTE_LOGSUMS
+10/06/2021 07:54:06 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_2.work.compute_logsums.logsums compute_logsums for 80 choosers 80 alts
+10/06/2021 07:54:07 - INFO - activitysim.core.chunk - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_2.work.compute_logsums.logsums Running adaptive_chunked_choosers with 80 choosers
+10/06/2021 07:54:07 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 80 of 80 choosers
+10/06/2021 07:54:11 - INFO - activitysim.core.chunk - mandatory_tour_scheduling.vectorize_tour_scheduling.tour_2.work.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 2 choosers and 163 alternatives
+10/06/2021 07:54:11 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 2 of 2 choosers
+10/06/2021 07:54:11 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 163 rows
+10/06/2021 07:54:12 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - skipping empty segment school
+10/06/2021 07:54:12 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - skipping empty segment univ
+10/06/2021 07:54:12 - INFO - activitysim.core.pipeline - #run_model running step joint_tour_frequency
+10/06/2021 07:54:12 - INFO - activitysim.abm.models.joint_tour_frequency - Running joint_tour_frequency with 5 multi-person households
+10/06/2021 07:54:12 - DEBUG - root - @inject timetable
+10/06/2021 07:54:13 - INFO - activitysim.core.chunk - joint_tour_frequency.simple_simulate Running adaptive_chunked_choosers with 5 choosers
+10/06/2021 07:54:13 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 5 of 5 choosers
+10/06/2021 07:54:13 - INFO - activitysim.core.tracing - joint_tour_frequency top 10 value counts:
+0_tours    9
+1_Main     1
+Name: joint_tour_frequency, dtype: int64
+10/06/2021 07:54:14 - INFO - activitysim.core.pipeline - #run_model running step joint_tour_composition
+10/06/2021 07:54:14 - INFO - activitysim.abm.models.joint_tour_composition - Running joint_tour_composition with 1 joint tours
+10/06/2021 07:54:14 - DEBUG - root - @inject timetable
+10/06/2021 07:54:14 - INFO - activitysim.core.chunk - joint_tour_composition.simple_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:54:14 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:14 - INFO - activitysim.core.tracing - joint_tour_composition top 10 value counts:
+mixed    1
+Name: composition, dtype: int64
+10/06/2021 07:54:14 - INFO - activitysim.core.pipeline - #run_model running step joint_tour_participation
+10/06/2021 07:54:14 - INFO - activitysim.abm.models.joint_tour_participation - Running joint_tours_participation with 2 potential participants (candidates)
+10/06/2021 07:54:14 - DEBUG - root - @inject timetable
+10/06/2021 07:54:15 - INFO - activitysim.core.chunk - joint_tour_participation Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:15 - INFO - activitysim.abm.models.joint_tour_participation - joint_tour_participation.eval_mnl.participants_chooser 1 joint tours to satisfy.
+10/06/2021 07:54:15 - INFO - activitysim.abm.models.joint_tour_participation - joint_tour_participation.eval_mnl.participants_chooser 1 iterations to satisfy all joint tours.
+10/06/2021 07:54:16 - INFO - activitysim.core.pipeline - #run_model running step joint_tour_destination
+10/06/2021 07:54:16 - INFO - activitysim.abm.models.util.tour_destination - joint_tour_destination skipping segment shopping: no choosers
+10/06/2021 07:54:16 - INFO - activitysim.abm.models.util.tour_destination - Running joint_tour_destination.othmaint.sample destination_presample with 1 tours
+10/06/2021 07:54:16 - INFO - activitysim.abm.models.util.tour_destination - joint_tour_destination.othmaint.sample.presample location_presample
+10/06/2021 07:54:16 - INFO - activitysim.abm.models.util.tour_destination - running joint_tour_destination.othmaint.sample.presample with 1 tours
+10/06/2021 07:54:16 - INFO - activitysim.core.chunk - joint_tour_destination.othmaint.sample.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:54:16 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:16 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 25 rows
+10/06/2021 07:54:17 - INFO - activitysim.abm.models.util.tour_destination - Running joint_tour_destination.othmaint.logsums with 11 rows
+10/06/2021 07:54:18 - INFO - activitysim.core.chunk - joint_tour_destination.othmaint.logsums.compute_logsums Running adaptive_chunked_choosers with 11 choosers
+10/06/2021 07:54:18 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 11 of 11 choosers
+10/06/2021 07:54:21 - INFO - activitysim.abm.models.util.tour_destination - Running tour_destination_simulate with 1 persons
+10/06/2021 07:54:21 - INFO - activitysim.core.chunk - joint_tour_destination.othmaint.simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 11 alternatives
+10/06/2021 07:54:21 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:21 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 11 rows
+10/06/2021 07:54:22 - INFO - activitysim.abm.models.util.tour_destination - joint_tour_destination skipping segment othdiscr: no choosers
+10/06/2021 07:54:22 - INFO - activitysim.abm.models.util.tour_destination - joint_tour_destination skipping segment eatout: no choosers
+10/06/2021 07:54:22 - INFO - activitysim.abm.models.util.tour_destination - joint_tour_destination skipping segment social: no choosers
+10/06/2021 07:54:22 - INFO - activitysim.abm.models.util.tour_destination - joint_tour_destination skipping segment escort: no choosers
+10/06/2021 07:54:22 - INFO - activitysim.core.tracing - destination summary:
+count        1.0
+mean     20981.0
+std          NaN
+min      20981.0
+25%      20981.0
+50%      20981.0
+75%      20981.0
+max      20981.0
+Name: destination, dtype: float64
+10/06/2021 07:54:22 - INFO - activitysim.core.pipeline - #run_model running step joint_tour_scheduling
+10/06/2021 07:54:22 - INFO - activitysim.abm.models.joint_tour_scheduling - Running joint_tour_scheduling with 1 joint tours
+10/06/2021 07:54:22 - DEBUG - root - @inject timetable
+10/06/2021 07:54:22 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - joint_tour_scheduling.vectorize_joint_tour_scheduling.tour_1 schedule_tours running 1 tour choices
+10/06/2021 07:54:22 - INFO - activitysim.core.chunk - joint_tour_scheduling.vectorize_joint_tour_scheduling.tour_1 Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:54:22 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:22 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - joint_tour_scheduling.vectorize_joint_tour_scheduling.tour_1 schedule_tours running 1 tour choices
+10/06/2021 07:54:23 - INFO - activitysim.core.chunk - joint_tour_scheduling.vectorize_joint_tour_scheduling.tour_1.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 34 alternatives
+10/06/2021 07:54:23 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:23 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 34 rows
+10/06/2021 07:54:25 - INFO - activitysim.core.pipeline - #run_model running step non_mandatory_tour_frequency
+10/06/2021 07:54:25 - DEBUG - root - @inject timetable
+10/06/2021 07:54:25 - INFO - activitysim.abm.models.non_mandatory_tour_frequency - Running non_mandatory_tour_frequency with 14 persons
+10/06/2021 07:54:25 - INFO - activitysim.abm.models.non_mandatory_tour_frequency - Running segment 'PTYPE_FULL' of size 7
+10/06/2021 07:54:25 - INFO - activitysim.core.chunk - non_mandatory_tour_frequency.PTYPE_FULL.interaction_simulate Running adaptive_chunked_choosers with 7 choosers
+10/06/2021 07:54:25 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 7 of 7 choosers
+10/06/2021 07:54:26 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 672 rows
+10/06/2021 07:54:27 - INFO - activitysim.abm.models.non_mandatory_tour_frequency - Running segment 'PTYPE_PART' of size 4
+10/06/2021 07:54:27 - INFO - activitysim.core.chunk - non_mandatory_tour_frequency.PTYPE_PART.interaction_simulate Running adaptive_chunked_choosers with 4 choosers
+10/06/2021 07:54:27 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 4 of 4 choosers
+10/06/2021 07:54:27 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 384 rows
+10/06/2021 07:54:29 - INFO - activitysim.abm.models.non_mandatory_tour_frequency - Running segment 'PTYPE_UNIVERSITY' of size 1
+10/06/2021 07:54:29 - INFO - activitysim.core.chunk - non_mandatory_tour_frequency.PTYPE_UNIVERSITY.interaction_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:54:29 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:29 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 96 rows
+10/06/2021 07:54:31 - INFO - activitysim.abm.models.non_mandatory_tour_frequency - Running segment 'PTYPE_NONWORK' of size 1
+10/06/2021 07:54:31 - INFO - activitysim.core.chunk - non_mandatory_tour_frequency.PTYPE_NONWORK.interaction_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:54:31 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:31 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 96 rows
+10/06/2021 07:54:33 - INFO - activitysim.abm.models.non_mandatory_tour_frequency - Running segment 'PTYPE_RETIRED' of size 0
+10/06/2021 07:54:33 - INFO - activitysim.abm.models.non_mandatory_tour_frequency - Running segment 'PTYPE_DRIVING' of size 0
+10/06/2021 07:54:33 - INFO - activitysim.abm.models.non_mandatory_tour_frequency - Running segment 'PTYPE_SCHOOL' of size 1
+10/06/2021 07:54:33 - INFO - activitysim.core.chunk - non_mandatory_tour_frequency.PTYPE_SCHOOL.interaction_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:54:33 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:33 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 96 rows
+10/06/2021 07:54:34 - INFO - activitysim.abm.models.non_mandatory_tour_frequency - Running segment 'PTYPE_PRESCHOOL' of size 0
+10/06/2021 07:54:34 - INFO - activitysim.abm.models.non_mandatory_tour_frequency - extend_tour_counts increased tour count by 0 from 4 to 4
+10/06/2021 07:54:34 - INFO - activitysim.core.tracing - non_mandatory_tour_frequency top 10 value counts:
+0     14
+4      1
+32     1
+24     1
+Name: non_mandatory_tour_frequency, dtype: int64
+10/06/2021 07:54:34 - INFO - activitysim.core.pipeline - #run_model running step non_mandatory_tour_destination
+10/06/2021 07:54:34 - INFO - activitysim.abm.models.util.tour_destination - Running non_mandatory_tour_destination.shopping.sample destination_presample with 1 tours
+10/06/2021 07:54:34 - INFO - activitysim.abm.models.util.tour_destination - non_mandatory_tour_destination.shopping.sample.presample location_presample
+10/06/2021 07:54:34 - INFO - activitysim.abm.models.util.tour_destination - running non_mandatory_tour_destination.shopping.sample.presample with 1 tours
+10/06/2021 07:54:34 - INFO - activitysim.core.chunk - non_mandatory_tour_destination.shopping.sample.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:54:35 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:35 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 22 rows
+10/06/2021 07:54:35 - INFO - activitysim.abm.models.util.tour_destination - Running non_mandatory_tour_destination.shopping.logsums with 16 rows
+10/06/2021 07:54:36 - INFO - activitysim.core.chunk - non_mandatory_tour_destination.shopping.logsums.compute_logsums Running adaptive_chunked_choosers with 16 choosers
+10/06/2021 07:54:36 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 16 of 16 choosers
+10/06/2021 07:54:40 - INFO - activitysim.abm.models.util.tour_destination - Running tour_destination_simulate with 1 persons
+10/06/2021 07:54:40 - INFO - activitysim.core.chunk - non_mandatory_tour_destination.shopping.simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 16 alternatives
+10/06/2021 07:54:40 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:40 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 16 rows
+10/06/2021 07:54:40 - INFO - activitysim.abm.models.util.tour_destination - Running non_mandatory_tour_destination.othmaint.sample destination_presample with 1 tours
+10/06/2021 07:54:40 - INFO - activitysim.abm.models.util.tour_destination - non_mandatory_tour_destination.othmaint.sample.presample location_presample
+10/06/2021 07:54:41 - INFO - activitysim.abm.models.util.tour_destination - running non_mandatory_tour_destination.othmaint.sample.presample with 1 tours
+10/06/2021 07:54:41 - INFO - activitysim.core.chunk - non_mandatory_tour_destination.othmaint.sample.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:54:41 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:41 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 25 rows
+10/06/2021 07:54:42 - INFO - activitysim.abm.models.util.tour_destination - Running non_mandatory_tour_destination.othmaint.logsums with 10 rows
+10/06/2021 07:54:42 - INFO - activitysim.core.chunk - non_mandatory_tour_destination.othmaint.logsums.compute_logsums Running adaptive_chunked_choosers with 10 choosers
+10/06/2021 07:54:42 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 10 of 10 choosers
+10/06/2021 07:54:46 - INFO - activitysim.abm.models.util.tour_destination - Running tour_destination_simulate with 1 persons
+10/06/2021 07:54:46 - INFO - activitysim.core.chunk - non_mandatory_tour_destination.othmaint.simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 10 alternatives
+10/06/2021 07:54:46 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:46 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 10 rows
+10/06/2021 07:54:47 - INFO - activitysim.abm.models.util.tour_destination - non_mandatory_tour_destination skipping segment othdiscr: no choosers
+10/06/2021 07:54:47 - INFO - activitysim.abm.models.util.tour_destination - Running non_mandatory_tour_destination.eatout.sample destination_presample with 1 tours
+10/06/2021 07:54:47 - INFO - activitysim.abm.models.util.tour_destination - non_mandatory_tour_destination.eatout.sample.presample location_presample
+10/06/2021 07:54:47 - INFO - activitysim.abm.models.util.tour_destination - running non_mandatory_tour_destination.eatout.sample.presample with 1 tours
+10/06/2021 07:54:47 - INFO - activitysim.core.chunk - non_mandatory_tour_destination.eatout.sample.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:54:47 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:47 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 25 rows
+10/06/2021 07:54:48 - INFO - activitysim.abm.models.util.tour_destination - Running non_mandatory_tour_destination.eatout.logsums with 12 rows
+10/06/2021 07:54:48 - INFO - activitysim.core.chunk - non_mandatory_tour_destination.eatout.logsums.compute_logsums Running adaptive_chunked_choosers with 12 choosers
+10/06/2021 07:54:48 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 12 of 12 choosers
+10/06/2021 07:54:52 - INFO - activitysim.abm.models.util.tour_destination - Running tour_destination_simulate with 1 persons
+10/06/2021 07:54:52 - INFO - activitysim.core.chunk - non_mandatory_tour_destination.eatout.simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 12 alternatives
+10/06/2021 07:54:52 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:52 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 12 rows
+10/06/2021 07:54:53 - INFO - activitysim.abm.models.util.tour_destination - non_mandatory_tour_destination skipping segment social: no choosers
+10/06/2021 07:54:53 - INFO - activitysim.abm.models.util.tour_destination - Running non_mandatory_tour_destination.escort.sample destination_presample with 1 tours
+10/06/2021 07:54:53 - INFO - activitysim.abm.models.util.tour_destination - non_mandatory_tour_destination.escort.sample.presample location_presample
+10/06/2021 07:54:53 - INFO - activitysim.abm.models.util.tour_destination - running non_mandatory_tour_destination.escort.sample.presample with 1 tours
+10/06/2021 07:54:53 - INFO - activitysim.core.chunk - non_mandatory_tour_destination.escort.sample.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:54:53 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:53 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 27 rows
+10/06/2021 07:54:54 - INFO - activitysim.abm.models.util.tour_destination - Running non_mandatory_tour_destination.escort.logsums with 24 rows
+10/06/2021 07:54:54 - INFO - activitysim.core.chunk - non_mandatory_tour_destination.escort.logsums.compute_logsums Running adaptive_chunked_choosers with 24 choosers
+10/06/2021 07:54:55 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 24 of 24 choosers
+10/06/2021 07:54:58 - INFO - activitysim.abm.models.util.tour_destination - Running tour_destination_simulate with 1 persons
+10/06/2021 07:54:58 - INFO - activitysim.core.chunk - non_mandatory_tour_destination.escort.simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 24 alternatives
+10/06/2021 07:54:58 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:54:58 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 24 rows
+10/06/2021 07:54:59 - INFO - activitysim.core.pipeline - #run_model running step non_mandatory_tour_scheduling
+10/06/2021 07:54:59 - DEBUG - root - @inject timetable
+10/06/2021 07:54:59 - INFO - activitysim.abm.models.util.tour_scheduling - Running non_mandatory_tour_scheduling with 4 tours
+10/06/2021 07:54:59 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - non_mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1 schedule_tours running 3 tour choices
+10/06/2021 07:54:59 - INFO - activitysim.core.chunk - non_mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1 Running adaptive_chunked_choosers with 3 choosers
+10/06/2021 07:54:59 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 3 of 3 choosers
+10/06/2021 07:54:59 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - non_mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1 schedule_tours running 3 tour choices
+10/06/2021 07:54:59 - INFO - activitysim.core.chunk - non_mandatory_tour_scheduling.vectorize_tour_scheduling.tour_1.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 3 choosers and 570 alternatives
+10/06/2021 07:54:59 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 3 of 3 choosers
+10/06/2021 07:54:59 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 570 rows
+10/06/2021 07:55:02 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - non_mandatory_tour_scheduling.vectorize_tour_scheduling.tour_2 schedule_tours running 1 tour choices
+10/06/2021 07:55:02 - INFO - activitysim.core.chunk - non_mandatory_tour_scheduling.vectorize_tour_scheduling.tour_2 Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:02 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:02 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - non_mandatory_tour_scheduling.vectorize_tour_scheduling.tour_2 schedule_tours running 1 tour choices
+10/06/2021 07:55:02 - INFO - activitysim.core.chunk - non_mandatory_tour_scheduling.vectorize_tour_scheduling.tour_2.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 64 alternatives
+10/06/2021 07:55:02 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:02 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 64 rows
+10/06/2021 07:55:04 - INFO - activitysim.core.pipeline - #run_model running step tour_mode_choice_simulate
+10/06/2021 07:55:04 - INFO - activitysim.abm.models.tour_mode_choice - Running tour_mode_choice with 18 tours
+10/06/2021 07:55:04 - INFO - activitysim.core.tracing - tour_types top 10 value counts:
+work        11
+school       2
+othmaint     2
+shopping     1
+eatout       1
+escort       1
+Name: tour_type, dtype: int64
+10/06/2021 07:55:04 - INFO - activitysim.abm.models.tour_mode_choice - tour_mode_choice_simulate tour_type 'eatout' (1 tours)
+10/06/2021 07:55:05 - INFO - activitysim.core.chunk - tour_mode_choice.eatout.simple_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:05 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:09 - INFO - activitysim.core.tracing - tour_mode_choice_simulate eatout choices_df top 10 value counts:
+WALK    1
+Name: tour_mode, dtype: int64
+10/06/2021 07:55:09 - INFO - activitysim.abm.models.tour_mode_choice - tour_mode_choice_simulate tour_type 'escort' (1 tours)
+10/06/2021 07:55:10 - INFO - activitysim.core.chunk - tour_mode_choice.escort.simple_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:10 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:14 - INFO - activitysim.core.tracing - tour_mode_choice_simulate escort choices_df top 10 value counts:
+TAXI    1
+Name: tour_mode, dtype: int64
+10/06/2021 07:55:14 - INFO - activitysim.abm.models.tour_mode_choice - tour_mode_choice_simulate tour_type 'othmaint' (2 tours)
+10/06/2021 07:55:15 - INFO - activitysim.core.chunk - tour_mode_choice.othmaint.simple_simulate Running adaptive_chunked_choosers with 2 choosers
+10/06/2021 07:55:15 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 2 of 2 choosers
+10/06/2021 07:55:18 - INFO - activitysim.core.tracing - tour_mode_choice_simulate othmaint choices_df top 10 value counts:
+SHARED2FREE    2
+Name: tour_mode, dtype: int64
+10/06/2021 07:55:18 - INFO - activitysim.abm.models.tour_mode_choice - tour_mode_choice_simulate tour_type 'school' (1 tours)
+10/06/2021 07:55:19 - INFO - activitysim.core.chunk - tour_mode_choice.school.simple_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:19 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:23 - INFO - activitysim.core.tracing - tour_mode_choice_simulate school choices_df top 10 value counts:
+SHARED2FREE    1
+Name: tour_mode, dtype: int64
+10/06/2021 07:55:23 - INFO - activitysim.abm.models.tour_mode_choice - tour_mode_choice_simulate tour_type 'shopping' (1 tours)
+10/06/2021 07:55:24 - INFO - activitysim.core.chunk - tour_mode_choice.shopping.simple_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:24 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:28 - INFO - activitysim.core.tracing - tour_mode_choice_simulate shopping choices_df top 10 value counts:
+DRIVEALONEFREE    1
+Name: tour_mode, dtype: int64
+10/06/2021 07:55:28 - INFO - activitysim.abm.models.tour_mode_choice - tour_mode_choice_simulate tour_type 'univ' (1 tours)
+10/06/2021 07:55:29 - INFO - activitysim.core.chunk - tour_mode_choice.univ.simple_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:29 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:32 - INFO - activitysim.core.tracing - tour_mode_choice_simulate univ choices_df top 10 value counts:
+TNC_SINGLE    1
+Name: tour_mode, dtype: int64
+10/06/2021 07:55:32 - INFO - activitysim.abm.models.tour_mode_choice - tour_mode_choice_simulate tour_type 'work' (11 tours)
+10/06/2021 07:55:33 - INFO - activitysim.core.chunk - tour_mode_choice.work.simple_simulate Running adaptive_chunked_choosers with 11 choosers
+10/06/2021 07:55:33 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 11 of 11 choosers
+10/06/2021 07:55:37 - INFO - activitysim.core.tracing - tour_mode_choice_simulate work choices_df top 10 value counts:
+DRIVEALONEFREE    4
+WALK              3
+BIKE              2
+SHARED3FREE       1
+SHARED2FREE       1
+Name: tour_mode, dtype: int64
+10/06/2021 07:55:37 - INFO - activitysim.core.tracing - tour_mode_choice_simulate all tour type choices top 10 value counts:
+DRIVEALONEFREE    5
+WALK              4
+SHARED2FREE       4
+BIKE              2
+SHARED3FREE       1
+TAXI              1
+TNC_SINGLE        1
+Name: tour_mode, dtype: int64
+10/06/2021 07:55:37 - INFO - activitysim.core.pipeline - #run_model running step atwork_subtour_frequency
+10/06/2021 07:55:37 - INFO - activitysim.abm.models.atwork_subtour_frequency - Running atwork_subtour_frequency with 11 work tours
+10/06/2021 07:55:37 - INFO - activitysim.core.chunk - atwork_subtour_frequency.simple_simulate Running adaptive_chunked_choosers with 11 choosers
+10/06/2021 07:55:38 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 11 of 11 choosers
+10/06/2021 07:55:38 - INFO - activitysim.core.tracing - atwork_subtour_frequency top 10 value counts:
+no_subtours    10
+                8
+eat             1
+Name: atwork_subtour_frequency, dtype: int64
+10/06/2021 07:55:38 - INFO - activitysim.core.pipeline - #run_model running step atwork_subtour_destination
+10/06/2021 07:55:38 - INFO - activitysim.abm.models.util.tour_destination - Running atwork_subtour_destination.atwork.sample destination_presample with 1 tours
+10/06/2021 07:55:38 - INFO - activitysim.abm.models.util.tour_destination - atwork_subtour_destination.atwork.sample.presample location_presample
+10/06/2021 07:55:38 - INFO - activitysim.abm.models.util.tour_destination - running atwork_subtour_destination.atwork.sample.presample with 1 tours
+10/06/2021 07:55:38 - INFO - activitysim.core.chunk - atwork_subtour_destination.atwork.sample.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:38 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:38 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 25 rows
+10/06/2021 07:55:39 - INFO - activitysim.abm.models.util.tour_destination - Running atwork_subtour_destination.atwork.logsums with 10 rows
+10/06/2021 07:55:40 - INFO - activitysim.core.chunk - atwork_subtour_destination.atwork.logsums.compute_logsums Running adaptive_chunked_choosers with 10 choosers
+10/06/2021 07:55:40 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 10 of 10 choosers
+10/06/2021 07:55:44 - INFO - activitysim.abm.models.util.tour_destination - Running tour_destination_simulate with 1 persons
+10/06/2021 07:55:44 - INFO - activitysim.core.chunk - atwork_subtour_destination.atwork.simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 10 alternatives
+10/06/2021 07:55:44 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:44 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 10 rows
+10/06/2021 07:55:44 - INFO - activitysim.core.tracing - destination summary:
+count        1.0
+mean     11062.0
+std          NaN
+min      11062.0
+25%      11062.0
+50%      11062.0
+75%      11062.0
+max      11062.0
+Name: destination, dtype: float64
+10/06/2021 07:55:44 - INFO - activitysim.core.pipeline - #run_model running step atwork_subtour_scheduling
+10/06/2021 07:55:44 - INFO - activitysim.abm.models.atwork_subtour_scheduling - Running atwork_subtour_scheduling with 1 tours
+10/06/2021 07:55:45 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - atwork_subtour_scheduling.tour_1 schedule_tours running 1 tour choices
+10/06/2021 07:55:45 - INFO - activitysim.core.chunk - atwork_subtour_scheduling.tour_1 Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:45 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:45 - INFO - activitysim.abm.models.util.vectorize_tour_scheduling - atwork_subtour_scheduling.tour_1 schedule_tours running 1 tour choices
+10/06/2021 07:55:45 - INFO - activitysim.core.chunk - atwork_subtour_scheduling.tour_1.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 91 alternatives
+10/06/2021 07:55:45 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:45 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 91 rows
+10/06/2021 07:55:46 - INFO - activitysim.core.pipeline - #run_model running step atwork_subtour_mode_choice
+10/06/2021 07:55:46 - INFO - activitysim.abm.models.atwork_subtour_mode_choice - Running atwork_subtour_mode_choice with 1 subtours
+10/06/2021 07:55:46 - INFO - activitysim.core.tracing - atwork_subtour_mode_choice tour_type top 10 value counts:
+eat    1
+Name: tour_type, dtype: int64
+10/06/2021 07:55:47 - INFO - activitysim.core.chunk - atwork_subtour_mode_choice.simple_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:47 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:51 - INFO - activitysim.core.tracing - atwork_subtour_mode_choice choices top 10 value counts:
+WALK    1
+Name: tour_mode, dtype: int64
+10/06/2021 07:55:51 - INFO - activitysim.core.pipeline - #run_model running step stop_frequency
+10/06/2021 07:55:52 - INFO - activitysim.core.tracing - stop_frequency segments top 10 value counts:
+work        11
+othmaint     2
+school       1
+eatout       1
+atwork       1
+shopping     1
+univ         1
+escort       1
+Name: primary_purpose, dtype: int64
+10/06/2021 07:55:52 - INFO - root - stop_frequency running segment work with 11 chooser rows
+10/06/2021 07:55:52 - INFO - activitysim.core.chunk - stop_frequency.work.simple_simulate Running adaptive_chunked_choosers with 11 choosers
+10/06/2021 07:55:52 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 11 of 11 choosers
+10/06/2021 07:55:52 - INFO - root - stop_frequency running segment school with 1 chooser rows
+10/06/2021 07:55:52 - INFO - activitysim.core.chunk - stop_frequency.school.simple_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:52 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:53 - INFO - root - stop_frequency running segment univ with 1 chooser rows
+10/06/2021 07:55:53 - INFO - activitysim.core.chunk - stop_frequency.univ.simple_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:53 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:53 - INFO - root - stop_frequency skipping empty segment social
+10/06/2021 07:55:53 - INFO - root - stop_frequency running segment shopping with 1 chooser rows
+10/06/2021 07:55:53 - INFO - activitysim.core.chunk - stop_frequency.shopping.simple_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:54 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:54 - INFO - root - stop_frequency running segment eatout with 1 chooser rows
+10/06/2021 07:55:54 - INFO - activitysim.core.chunk - stop_frequency.eatout.simple_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:54 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:55 - INFO - root - stop_frequency running segment escort with 1 chooser rows
+10/06/2021 07:55:55 - INFO - activitysim.core.chunk - stop_frequency.escort.simple_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:55 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:55 - INFO - root - stop_frequency running segment othmaint with 2 chooser rows
+10/06/2021 07:55:55 - INFO - activitysim.core.chunk - stop_frequency.othmaint.simple_simulate Running adaptive_chunked_choosers with 2 choosers
+10/06/2021 07:55:55 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 2 of 2 choosers
+10/06/2021 07:55:56 - INFO - root - stop_frequency skipping empty segment othdiscr
+10/06/2021 07:55:56 - INFO - root - stop_frequency running segment atwork with 1 chooser rows
+10/06/2021 07:55:56 - INFO - activitysim.core.chunk - stop_frequency.atwork.simple_simulate Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:56 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:56 - INFO - activitysim.core.tracing - stop_frequency top 10 value counts:
+0out_0in    13
+0out_2in     3
+0out_1in     2
+0out_3in     1
+dtype: int64
+10/06/2021 07:55:57 - INFO - activitysim.core.pipeline - #run_model running step trip_purpose
+10/06/2021 07:55:57 - INFO - activitysim.abm.models.trip_purpose - assign purpose to 19 last outbound trips
+10/06/2021 07:55:57 - INFO - activitysim.abm.models.trip_purpose - assign purpose to 19 last inbound trips
+10/06/2021 07:55:57 - INFO - activitysim.abm.models.trip_purpose - assign purpose to 11 intermediate trips
+10/06/2021 07:55:57 - INFO - activitysim.core.chunk - trip_purpose Running adaptive_chunked_choosers with 11 choosers
+10/06/2021 07:55:57 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 11 of 11 choosers
+10/06/2021 07:55:57 - INFO - activitysim.core.pipeline - #run_model running step trip_destination
+10/06/2021 07:55:57 - INFO - activitysim.abm.models.trip_destination - Running trip_destination with 49 trips
+10/06/2021 07:55:57 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_1 with 6 trips
+10/06/2021 07:55:57 - INFO - activitysim.abm.models.trip_destination - choose_trip_destination trip_destination.trip_num_1.atwork with 1 trips
+10/06/2021 07:55:57 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_1.atwork.sample trip_destination_presample with 1 trips
+10/06/2021 07:55:57 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.atwork.sample.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:55:57 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:55:57 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 27 rows
+10/06/2021 07:55:58 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_1.atwork.trip_destination_sample : 1.064 seconds (0.0 minutes)
+10/06/2021 07:55:58 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_1.atwork.compute_logsums with 16 samples
+10/06/2021 07:55:59 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.atwork.compute_logsums.od Running adaptive_chunked_choosers with 16 choosers
+10/06/2021 07:55:59 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 16 of 16 choosers
+10/06/2021 07:56:02 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.atwork.compute_logsums.dp Running adaptive_chunked_choosers with 16 choosers
+10/06/2021 07:56:02 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 16 of 16 choosers
+10/06/2021 07:56:05 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_1.atwork.compute_logsums : 6.717 seconds (0.1 minutes)
+10/06/2021 07:56:05 - INFO - activitysim.abm.models.trip_destination - Running trip_destination_simulate with 1 trips
+10/06/2021 07:56:05 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.atwork.trip_dest_simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 16 alternatives
+10/06/2021 07:56:05 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:56:05 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 16 rows
+10/06/2021 07:56:06 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_1.atwork.trip_destination_simulate : 0.82 seconds (0.0 minutes)
+10/06/2021 07:56:06 - INFO - activitysim.abm.models.trip_destination - choose_trip_destination trip_destination.trip_num_1.escort with 1 trips
+10/06/2021 07:56:06 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_1.escort.sample trip_destination_presample with 1 trips
+10/06/2021 07:56:06 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.escort.sample.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:56:06 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:56:06 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 27 rows
+10/06/2021 07:56:07 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_1.escort.trip_destination_sample : 1.053 seconds (0.0 minutes)
+10/06/2021 07:56:07 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_1.escort.compute_logsums with 11 samples
+10/06/2021 07:56:07 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.escort.compute_logsums.od Running adaptive_chunked_choosers with 11 choosers
+10/06/2021 07:56:07 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 11 of 11 choosers
+10/06/2021 07:56:11 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.escort.compute_logsums.dp Running adaptive_chunked_choosers with 11 choosers
+10/06/2021 07:56:11 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 11 of 11 choosers
+10/06/2021 07:56:13 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_1.escort.compute_logsums : 6.633 seconds (0.1 minutes)
+10/06/2021 07:56:13 - INFO - activitysim.abm.models.trip_destination - Running trip_destination_simulate with 1 trips
+10/06/2021 07:56:13 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.escort.trip_dest_simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 11 alternatives
+10/06/2021 07:56:14 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:56:14 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 11 rows
+10/06/2021 07:56:14 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_1.escort.trip_destination_simulate : 0.855 seconds (0.0 minutes)
+10/06/2021 07:56:14 - INFO - activitysim.abm.models.trip_destination - choose_trip_destination trip_destination.trip_num_1.school with 1 trips
+10/06/2021 07:56:14 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_1.school.sample trip_destination_presample with 1 trips
+10/06/2021 07:56:14 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.school.sample.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:56:14 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:56:14 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 27 rows
+10/06/2021 07:56:15 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_1.school.trip_destination_sample : 1.065 seconds (0.0 minutes)
+10/06/2021 07:56:15 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_1.school.compute_logsums with 15 samples
+10/06/2021 07:56:16 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.school.compute_logsums.od Running adaptive_chunked_choosers with 15 choosers
+10/06/2021 07:56:16 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 15 of 15 choosers
+10/06/2021 07:56:19 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.school.compute_logsums.dp Running adaptive_chunked_choosers with 15 choosers
+10/06/2021 07:56:19 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 15 of 15 choosers
+10/06/2021 07:56:22 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_1.school.compute_logsums : 6.67 seconds (0.1 minutes)
+10/06/2021 07:56:22 - INFO - activitysim.abm.models.trip_destination - Running trip_destination_simulate with 1 trips
+10/06/2021 07:56:22 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.school.trip_dest_simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 15 alternatives
+10/06/2021 07:56:22 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:56:22 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 15 rows
+10/06/2021 07:56:23 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_1.school.trip_destination_simulate : 0.817 seconds (0.0 minutes)
+10/06/2021 07:56:23 - INFO - activitysim.abm.models.trip_destination - choose_trip_destination trip_destination.trip_num_1.work with 3 trips
+10/06/2021 07:56:23 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_1.work.sample trip_destination_presample with 3 trips
+10/06/2021 07:56:23 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.work.sample.presample.interaction_sample Running adaptive_chunked_choosers with 3 choosers
+10/06/2021 07:56:23 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 3 of 3 choosers
+10/06/2021 07:56:23 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 81 rows
+10/06/2021 07:56:24 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_1.work.trip_destination_sample : 1.072 seconds (0.0 minutes)
+10/06/2021 07:56:24 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_1.work.compute_logsums with 54 samples
+10/06/2021 07:56:25 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.work.compute_logsums.od Running adaptive_chunked_choosers with 54 choosers
+10/06/2021 07:56:25 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 54 of 54 choosers
+10/06/2021 07:56:28 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.work.compute_logsums.dp Running adaptive_chunked_choosers with 54 choosers
+10/06/2021 07:56:28 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 54 of 54 choosers
+10/06/2021 07:56:31 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_1.work.compute_logsums : 6.648 seconds (0.1 minutes)
+10/06/2021 07:56:31 - INFO - activitysim.abm.models.trip_destination - Running trip_destination_simulate with 3 trips
+10/06/2021 07:56:31 - INFO - activitysim.core.chunk - trip_destination.trip_num_1.work.trip_dest_simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 3 choosers and 54 alternatives
+10/06/2021 07:56:31 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 3 of 3 choosers
+10/06/2021 07:56:31 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 54 rows
+10/06/2021 07:56:31 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_1.work.trip_destination_simulate : 0.87 seconds (0.0 minutes)
+10/06/2021 07:56:32 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_2 with 4 trips
+10/06/2021 07:56:32 - INFO - activitysim.abm.models.trip_destination - choose_trip_destination trip_destination.trip_num_2.atwork with 1 trips
+10/06/2021 07:56:32 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_2.atwork.sample trip_destination_presample with 1 trips
+10/06/2021 07:56:32 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.atwork.sample.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:56:32 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:56:32 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 27 rows
+10/06/2021 07:56:33 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_2.atwork.trip_destination_sample : 1.072 seconds (0.0 minutes)
+10/06/2021 07:56:33 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_2.atwork.compute_logsums with 27 samples
+10/06/2021 07:56:33 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.atwork.compute_logsums.od Running adaptive_chunked_choosers with 27 choosers
+10/06/2021 07:56:33 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 27 of 27 choosers
+10/06/2021 07:56:36 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.atwork.compute_logsums.dp Running adaptive_chunked_choosers with 27 choosers
+10/06/2021 07:56:36 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 27 of 27 choosers
+10/06/2021 07:56:39 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_2.atwork.compute_logsums : 6.83 seconds (0.1 minutes)
+10/06/2021 07:56:39 - INFO - activitysim.abm.models.trip_destination - Running trip_destination_simulate with 1 trips
+10/06/2021 07:56:39 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.atwork.trip_dest_simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 27 alternatives
+10/06/2021 07:56:40 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:56:40 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 27 rows
+10/06/2021 07:56:40 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_2.atwork.trip_destination_simulate : 0.82 seconds (0.0 minutes)
+10/06/2021 07:56:40 - INFO - activitysim.abm.models.trip_destination - choose_trip_destination trip_destination.trip_num_2.escort with 1 trips
+10/06/2021 07:56:40 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_2.escort.sample trip_destination_presample with 1 trips
+10/06/2021 07:56:40 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.escort.sample.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:56:40 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:56:40 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 27 rows
+10/06/2021 07:56:41 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_2.escort.trip_destination_sample : 1.092 seconds (0.0 minutes)
+10/06/2021 07:56:41 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_2.escort.compute_logsums with 13 samples
+10/06/2021 07:56:42 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.escort.compute_logsums.od Running adaptive_chunked_choosers with 13 choosers
+10/06/2021 07:56:42 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 13 of 13 choosers
+10/06/2021 07:56:45 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.escort.compute_logsums.dp Running adaptive_chunked_choosers with 13 choosers
+10/06/2021 07:56:45 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 13 of 13 choosers
+10/06/2021 07:56:48 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_2.escort.compute_logsums : 6.604 seconds (0.1 minutes)
+10/06/2021 07:56:48 - INFO - activitysim.abm.models.trip_destination - Running trip_destination_simulate with 1 trips
+10/06/2021 07:56:48 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.escort.trip_dest_simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 13 alternatives
+10/06/2021 07:56:48 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:56:48 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 13 rows
+10/06/2021 07:56:49 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_2.escort.trip_destination_simulate : 0.834 seconds (0.0 minutes)
+10/06/2021 07:56:49 - INFO - activitysim.abm.models.trip_destination - choose_trip_destination trip_destination.trip_num_2.school with 1 trips
+10/06/2021 07:56:49 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_2.school.sample trip_destination_presample with 1 trips
+10/06/2021 07:56:49 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.school.sample.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:56:49 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:56:49 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 27 rows
+10/06/2021 07:56:50 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_2.school.trip_destination_sample : 1.073 seconds (0.0 minutes)
+10/06/2021 07:56:50 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_2.school.compute_logsums with 26 samples
+10/06/2021 07:56:50 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.school.compute_logsums.od Running adaptive_chunked_choosers with 26 choosers
+10/06/2021 07:56:50 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 26 of 26 choosers
+10/06/2021 07:56:54 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.school.compute_logsums.dp Running adaptive_chunked_choosers with 26 choosers
+10/06/2021 07:56:54 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 26 of 26 choosers
+10/06/2021 07:56:56 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_2.school.compute_logsums : 6.615 seconds (0.1 minutes)
+10/06/2021 07:56:56 - INFO - activitysim.abm.models.trip_destination - Running trip_destination_simulate with 1 trips
+10/06/2021 07:56:56 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.school.trip_dest_simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 26 alternatives
+10/06/2021 07:56:57 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:56:57 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 26 rows
+10/06/2021 07:56:57 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_2.school.trip_destination_simulate : 0.82 seconds (0.0 minutes)
+10/06/2021 07:56:57 - INFO - activitysim.abm.models.trip_destination - choose_trip_destination trip_destination.trip_num_2.work with 1 trips
+10/06/2021 07:56:57 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_2.work.sample trip_destination_presample with 1 trips
+10/06/2021 07:56:57 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.work.sample.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:56:57 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:56:57 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 27 rows
+10/06/2021 07:56:58 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_2.work.trip_destination_sample : 1.085 seconds (0.0 minutes)
+10/06/2021 07:56:58 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_2.work.compute_logsums with 20 samples
+10/06/2021 07:56:59 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.work.compute_logsums.od Running adaptive_chunked_choosers with 20 choosers
+10/06/2021 07:56:59 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 20 of 20 choosers
+10/06/2021 07:57:02 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.work.compute_logsums.dp Running adaptive_chunked_choosers with 20 choosers
+10/06/2021 07:57:02 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 20 of 20 choosers
+10/06/2021 07:57:05 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_2.work.compute_logsums : 6.654 seconds (0.1 minutes)
+10/06/2021 07:57:05 - INFO - activitysim.abm.models.trip_destination - Running trip_destination_simulate with 1 trips
+10/06/2021 07:57:05 - INFO - activitysim.core.chunk - trip_destination.trip_num_2.work.trip_dest_simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 20 alternatives
+10/06/2021 07:57:05 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:57:05 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 20 rows
+10/06/2021 07:57:06 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_2.work.trip_destination_simulate : 0.865 seconds (0.0 minutes)
+10/06/2021 07:57:06 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_3 with 1 trips
+10/06/2021 07:57:06 - INFO - activitysim.abm.models.trip_destination - choose_trip_destination trip_destination.trip_num_3.work with 1 trips
+10/06/2021 07:57:06 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_3.work.sample trip_destination_presample with 1 trips
+10/06/2021 07:57:06 - INFO - activitysim.core.chunk - trip_destination.trip_num_3.work.sample.presample.interaction_sample Running adaptive_chunked_choosers with 1 choosers
+10/06/2021 07:57:06 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:57:06 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 27 rows
+10/06/2021 07:57:07 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_3.work.trip_destination_sample : 1.089 seconds (0.0 minutes)
+10/06/2021 07:57:07 - INFO - activitysim.abm.models.trip_destination - Running trip_destination.trip_num_3.work.compute_logsums with 22 samples
+10/06/2021 07:57:08 - INFO - activitysim.core.chunk - trip_destination.trip_num_3.work.compute_logsums.od Running adaptive_chunked_choosers with 22 choosers
+10/06/2021 07:57:08 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 22 of 22 choosers
+10/06/2021 07:57:11 - INFO - activitysim.core.chunk - trip_destination.trip_num_3.work.compute_logsums.dp Running adaptive_chunked_choosers with 22 choosers
+10/06/2021 07:57:11 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 22 of 22 choosers
+10/06/2021 07:57:14 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_3.work.compute_logsums : 6.714 seconds (0.1 minutes)
+10/06/2021 07:57:14 - INFO - activitysim.abm.models.trip_destination - Running trip_destination_simulate with 1 trips
+10/06/2021 07:57:14 - INFO - activitysim.core.chunk - trip_destination.trip_num_3.work.trip_dest_simulate.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 1 choosers and 22 alternatives
+10/06/2021 07:57:14 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 1 of 1 choosers
+10/06/2021 07:57:14 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 22 rows
+10/06/2021 07:57:15 - INFO - activitysim.core.tracing - Time to execute trip_destination.trip_num_3.work.trip_destination_simulate : 0.865 seconds (0.0 minutes)
+10/06/2021 07:57:15 - INFO - activitysim.core.pipeline - #run_model running step trip_purpose_and_destination
+10/06/2021 07:57:15 - INFO - activitysim.abm.models.trip_purpose_and_destination - trip_purpose_and_destination - no failed trips from prior model run.
+10/06/2021 07:57:15 - INFO - activitysim.core.pipeline - #run_model running step trip_scheduling
+10/06/2021 07:57:15 - INFO - activitysim.abm.models.trip_scheduling - trip_scheduling.i1 scheduling 49 trips
+10/06/2021 07:57:15 - INFO - activitysim.core.chunk - trip_scheduling.i1 Running chunk 1 of 1 with 19 of 19 choosers
+10/06/2021 07:57:16 - INFO - activitysim.abm.models.trip_scheduling - trip_scheduling.i1 2 failed
+10/06/2021 07:57:16 - INFO - activitysim.abm.models.trip_scheduling - trip_scheduling.i2 scheduling 7 trips
+10/06/2021 07:57:16 - INFO - activitysim.core.chunk - trip_scheduling.i2 Running chunk 1 of 1 with 13 of 13 choosers
+10/06/2021 07:57:17 - INFO - activitysim.abm.models.trip_scheduling - trip_scheduling.i2 2 failed
+10/06/2021 07:57:17 - INFO - activitysim.abm.models.trip_scheduling - trip_scheduling.i3 scheduling 7 trips
+10/06/2021 07:57:17 - INFO - activitysim.core.chunk - trip_scheduling.i3 Running chunk 1 of 1 with 13 of 13 choosers
+10/06/2021 07:57:19 - INFO - activitysim.abm.models.trip_scheduling - trip_scheduling.i3 1 failed
+10/06/2021 07:57:19 - INFO - activitysim.abm.models.trip_scheduling - trip_scheduling.i4 scheduling 3 trips
+10/06/2021 07:57:19 - INFO - activitysim.core.chunk - trip_scheduling.i4 Running chunk 1 of 1 with 13 of 13 choosers
+10/06/2021 07:57:19 - INFO - activitysim.abm.models.trip_scheduling - trip_scheduling.i4 0 failed
+10/06/2021 07:57:20 - INFO - activitysim.core.pipeline - #run_model running step trip_mode_choice
+10/06/2021 07:57:20 - INFO - activitysim.abm.models.trip_mode_choice - Running trip_mode_choice with 49 trips
+10/06/2021 07:57:20 - INFO - activitysim.core.tracing - primary_purpose top 10 value counts:
+work        27
+school       4
+atwork       4
+othmaint     4
+escort       4
+eatout       2
+shopping     2
+univ         2
+Name: primary_purpose, dtype: int64
+10/06/2021 07:57:20 - INFO - activitysim.abm.models.trip_mode_choice - trip_mode_choice tour_type 'atwork' (4 trips)
+10/06/2021 07:57:20 - INFO - activitysim.core.chunk - trip_mode_choice.atwork.simple_simulate Running adaptive_chunked_choosers with 4 choosers
+10/06/2021 07:57:20 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 4 of 4 choosers
+10/06/2021 07:57:23 - INFO - activitysim.abm.models.trip_mode_choice - trip_mode_choice tour_type 'eatout' (2 trips)
+10/06/2021 07:57:24 - INFO - activitysim.core.chunk - trip_mode_choice.eatout.simple_simulate Running adaptive_chunked_choosers with 2 choosers
+10/06/2021 07:57:24 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 2 of 2 choosers
+10/06/2021 07:57:27 - INFO - activitysim.abm.models.trip_mode_choice - trip_mode_choice tour_type 'escort' (4 trips)
+10/06/2021 07:57:27 - INFO - activitysim.core.chunk - trip_mode_choice.escort.simple_simulate Running adaptive_chunked_choosers with 4 choosers
+10/06/2021 07:57:27 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 4 of 4 choosers
+10/06/2021 07:57:30 - INFO - activitysim.abm.models.trip_mode_choice - trip_mode_choice tour_type 'othmaint' (4 trips)
+10/06/2021 07:57:30 - INFO - activitysim.core.chunk - trip_mode_choice.othmaint.simple_simulate Running adaptive_chunked_choosers with 4 choosers
+10/06/2021 07:57:31 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 4 of 4 choosers
+10/06/2021 07:57:33 - INFO - activitysim.abm.models.trip_mode_choice - trip_mode_choice tour_type 'school' (4 trips)
+10/06/2021 07:57:34 - INFO - activitysim.core.chunk - trip_mode_choice.school.simple_simulate Running adaptive_chunked_choosers with 4 choosers
+10/06/2021 07:57:34 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 4 of 4 choosers
+10/06/2021 07:57:37 - INFO - activitysim.abm.models.trip_mode_choice - trip_mode_choice tour_type 'shopping' (2 trips)
+10/06/2021 07:57:37 - INFO - activitysim.core.chunk - trip_mode_choice.shopping.simple_simulate Running adaptive_chunked_choosers with 2 choosers
+10/06/2021 07:57:37 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 2 of 2 choosers
+10/06/2021 07:57:40 - INFO - activitysim.abm.models.trip_mode_choice - trip_mode_choice tour_type 'univ' (2 trips)
+10/06/2021 07:57:41 - INFO - activitysim.core.chunk - trip_mode_choice.univ.simple_simulate Running adaptive_chunked_choosers with 2 choosers
+10/06/2021 07:57:41 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 2 of 2 choosers
+10/06/2021 07:57:44 - INFO - activitysim.abm.models.trip_mode_choice - trip_mode_choice tour_type 'work' (27 trips)
+10/06/2021 07:57:44 - INFO - activitysim.core.chunk - trip_mode_choice.work.simple_simulate Running adaptive_chunked_choosers with 27 choosers
+10/06/2021 07:57:44 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 27 of 27 choosers
+10/06/2021 07:57:47 - INFO - activitysim.core.tracing - trip_modes top 10 value counts:
+DRIVEALONEFREE    13
+WALK              13
+SHARED2FREE       10
+BIKE               5
+TAXI               4
+SHARED3FREE        2
+TNC_SINGLE         2
+Name: tour_mode, dtype: int64
+10/06/2021 07:57:47 - INFO - activitysim.core.tracing - trip_mode_choice choices top 10 value counts:
+WALK              20
+DRIVEALONEFREE    12
+BIKE               5
+SHARED2FREE        4
+TNC_SINGLE         4
+TNC_SHARED         3
+SHARED3FREE        1
+Name: trip_mode, dtype: int64
+10/06/2021 07:57:47 - INFO - activitysim.core.pipeline - #run_model running step write_data_dictionary
+10/06/2021 07:57:48 - INFO - activitysim.core.pipeline - #run_model running step track_skim_usage
+10/06/2021 07:57:48 - INFO - activitysim.core.pipeline - #run_model running step write_trip_matrices
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - adding 'sample_rate' from households to trips table
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - aggregating trips two zone...
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - opening C:\projects\development\activitysim\activitysim\examples\example_psrc\test\output\trips_ea.omx
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - adding TAZ mapping for 27 zones to trips_ea.omx
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - closing C:\projects\development\activitysim\activitysim\examples\example_psrc\test\output\trips_ea.omx
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - opening C:\projects\development\activitysim\activitysim\examples\example_psrc\test\output\trips_am.omx
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - adding TAZ mapping for 27 zones to trips_am.omx
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - closing C:\projects\development\activitysim\activitysim\examples\example_psrc\test\output\trips_am.omx
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - opening C:\projects\development\activitysim\activitysim\examples\example_psrc\test\output\trips_md.omx
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - adding TAZ mapping for 27 zones to trips_md.omx
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - closing C:\projects\development\activitysim\activitysim\examples\example_psrc\test\output\trips_md.omx
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - opening C:\projects\development\activitysim\activitysim\examples\example_psrc\test\output\trips_pm.omx
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - adding TAZ mapping for 27 zones to trips_pm.omx
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - closing C:\projects\development\activitysim\activitysim\examples\example_psrc\test\output\trips_pm.omx
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - opening C:\projects\development\activitysim\activitysim\examples\example_psrc\test\output\trips_ev.omx
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - adding TAZ mapping for 27 zones to trips_ev.omx
+10/06/2021 07:57:49 - INFO - activitysim.abm.models.trip_matrices - closing C:\projects\development\activitysim\activitysim\examples\example_psrc\test\output\trips_ev.omx
+10/06/2021 07:57:49 - INFO - activitysim.core.pipeline - #run_model running step write_tables
+10/06/2021 07:57:49 - INFO - activitysim.core.tracing - Time to execute run_model (33 models) : 302.18 seconds (5.0 minutes)
+10/06/2021 07:57:49 - INFO - activitysim.core.mem - MainProcess high water mark rss: 186_085_376 (186.1 MB) timestamp: 10/06/2021 07:52:51 label:compute_accessibility.add.variables
+10/06/2021 07:57:49 - INFO - activitysim.core.mem - MainProcess high water mark uss: 146_231_296 (146.2 MB) timestamp: 10/06/2021 07:52:51 label:compute_accessibility.add.temps
+10/06/2021 07:57:49 - INFO - activitysim.core.mem - MainProcess high water mark bytes: 90_361_389 (90.4 MB) timestamp: 10/06/2021 07:52:51 label:compute_accessibility.add.variables
+10/06/2021 07:57:49 - INFO - activitysim.core.tracing - Time to execute all models : 302.273 seconds (5.0 minutes)

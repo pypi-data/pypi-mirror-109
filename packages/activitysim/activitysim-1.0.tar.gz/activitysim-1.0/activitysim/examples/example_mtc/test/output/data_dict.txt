@@ -1,0 +1,225 @@
+###
+### land_use (25, 28)
+###
+
+column_name                          dtype     checkpoint             
+zone_id                              int64     initialize_landuse     
+DISTRICT                             int64     initialize_landuse     
+SD                                   int64     initialize_landuse     
+county_id                            int64     initialize_landuse     
+TOTHH                                int64     initialize_landuse     
+TOTPOP                               int64     initialize_landuse     
+TOTACRE                              float64   initialize_landuse     
+RESACRE                              float64   initialize_landuse     
+CIACRE                               float64   initialize_landuse     
+TOTEMP                               int64     initialize_landuse     
+AGE0519                              int64     initialize_landuse     
+RETEMPN                              int64     initialize_landuse     
+FPSEMPN                              int64     initialize_landuse     
+HEREMPN                              int64     initialize_landuse     
+OTHEMPN                              int64     initialize_landuse     
+AGREMPN                              int64     initialize_landuse     
+MWTEMPN                              int64     initialize_landuse     
+PRKCST                               float64   initialize_landuse     
+OPRKCST                              float64   initialize_landuse     
+area_type                            int64     initialize_landuse     
+HSENROLL                             float64   initialize_landuse     
+COLLFTE                              float64   initialize_landuse     
+COLLPTE                              float64   initialize_landuse     
+TOPOLOGY                             int64     initialize_landuse     
+TERMINAL                             float64   initialize_landuse     
+household_density                    float64   initialize_landuse     
+employment_density                   float64   initialize_landuse     
+density_index                        float64   initialize_landuse     
+is_cbd                               bool      initialize_landuse     
+
+###
+### accessibility (25, 10)
+###
+
+column_name                          dtype     checkpoint             
+zone_id                              int64     initialize_landuse     
+auPkRetail                           float64   mp_accessibility       
+auPkTotal                            float64   mp_accessibility       
+auOpRetail                           float64   mp_accessibility       
+auOpTotal                            float64   mp_accessibility       
+trPkRetail                           float64   mp_accessibility       
+trPkTotal                            float64   mp_accessibility       
+trOpRetail                           float64   mp_accessibility       
+trOpTotal                            float64   mp_accessibility       
+nmRetail                             float64   mp_accessibility       
+nmTotal                              float64   mp_accessibility       
+
+###
+### households (10, 34)
+###
+
+column_name                          dtype     checkpoint             
+household_id                         int64     initialize_households  
+home_zone_id                         int64     initialize_households  
+income                               int64     initialize_households  
+hhsize                               int64     initialize_households  
+HHT                                  int64     initialize_households  
+auto_ownership                       int64     initialize_households  
+num_workers                          int64     initialize_households  
+sample_rate                          float64   initialize_households  
+income_in_thousands                  float64   initialize_households  
+income_segment                       int32     initialize_households  
+median_value_of_time                 float64   initialize_households  
+hh_value_of_time                     float64   initialize_households  
+num_non_workers                      int64     initialize_households  
+num_drivers                          int8      initialize_households  
+num_adults                           int8      initialize_households  
+num_children                         int8      initialize_households  
+num_young_children                   int8      initialize_households  
+num_children_5_to_15                 int8      initialize_households  
+num_children_16_to_17                int8      initialize_households  
+num_college_age                      int8      initialize_households  
+num_young_adults                     int8      initialize_households  
+non_family                           bool      initialize_households  
+family                               bool      initialize_households  
+home_is_urban                        bool      initialize_households  
+home_is_rural                        bool      initialize_households  
+hh_work_auto_savings_ratio           float32   mp_households          
+num_under16_not_at_school            int8      mp_households          
+num_travel_active                    int8      mp_households          
+num_travel_active_adults             int8      mp_households          
+num_travel_active_preschoolers       int8      mp_households          
+num_travel_active_children           int8      mp_households          
+num_travel_active_non_preschoolers   int8      mp_households          
+participates_in_jtf_model            bool      mp_households          
+joint_tour_frequency                 object    mp_households          
+num_hh_joint_tours                   int8      mp_households          
+
+###
+### persons (28, 63)
+###
+
+column_name                          dtype     checkpoint             
+person_id                            int64     initialize_households  
+household_id                         int64     initialize_households  
+age                                  int64     initialize_households  
+PNUM                                 int64     initialize_households  
+sex                                  int64     initialize_households  
+pemploy                              int64     initialize_households  
+pstudent                             int64     initialize_households  
+ptype                                int64     initialize_households  
+age_16_to_19                         bool      initialize_households  
+age_16_p                             bool      initialize_households  
+adult                                bool      initialize_households  
+male                                 bool      initialize_households  
+female                               bool      initialize_households  
+has_non_worker                       bool      initialize_households  
+has_retiree                          bool      initialize_households  
+has_preschool_kid                    bool      initialize_households  
+has_driving_kid                      bool      initialize_households  
+has_school_kid                       bool      initialize_households  
+has_full_time                        bool      initialize_households  
+has_part_time                        bool      initialize_households  
+has_university                       bool      initialize_households  
+student_is_employed                  bool      initialize_households  
+nonstudent_to_school                 bool      initialize_households  
+is_student                           bool      initialize_households  
+is_gradeschool                       bool      initialize_households  
+is_highschool                        bool      initialize_households  
+is_university                        bool      initialize_households  
+school_segment                       int8      initialize_households  
+is_worker                            bool      initialize_households  
+home_zone_id                         int64     initialize_households  
+value_of_time                        float64   initialize_households  
+school_zone_id                       int32     mp_households          
+school_location_logsum               float64   mp_households          
+distance_to_school                   float32   mp_households          
+roundtrip_auto_time_to_school        float32   mp_households          
+workplace_zone_id                    int32     mp_households          
+workplace_location_logsum            float64   mp_households          
+distance_to_work                     float32   mp_households          
+workplace_in_cbd                     bool      mp_households          
+work_zone_area_type                  float64   mp_households          
+roundtrip_auto_time_to_work          float32   mp_households          
+work_auto_savings                    float32   mp_households          
+work_auto_savings_ratio              float32   mp_households          
+free_parking_at_work                 bool      mp_households          
+cdap_activity                        object    mp_households          
+travel_active                        bool      mp_households          
+under16_not_at_school                bool      mp_households          
+has_preschool_kid_at_home            bool      mp_households          
+has_school_kid_at_home               bool      mp_households          
+mandatory_tour_frequency             object    mp_households          
+work_and_school_and_worker           bool      mp_households          
+work_and_school_and_student          bool      mp_households          
+num_mand                             int8      mp_households          
+num_work_tours                       int8      mp_households          
+num_joint_tours                      int8      mp_households          
+non_mandatory_tour_frequency         int8      mp_households          
+num_non_mand                         int8      mp_households          
+num_escort_tours                     int8      mp_households          
+num_eatout_tours                     int8      mp_households          
+num_shop_tours                       int8      mp_households          
+num_maint_tours                      int8      mp_households          
+num_discr_tours                      int8      mp_households          
+num_social_tours                     int8      mp_households          
+num_non_escort_tours                 int8      mp_households          
+
+###
+### tours (33, 23)
+###
+
+column_name                          dtype     checkpoint             
+tour_id                              int64     mp_households          
+person_id                            int64     mp_households          
+tour_type                            object    mp_households          
+tour_type_count                      int64     mp_households          
+tour_type_num                        int64     mp_households          
+tour_num                             int64     mp_households          
+tour_count                           int64     mp_households          
+tour_category                        object    mp_households          
+number_of_participants               int64     mp_households          
+destination                          float64   mp_households          
+origin                               float64   mp_households          
+household_id                         int64     mp_households          
+tdd                                  float64   mp_households          
+start                                float64   mp_households          
+end                                  float64   mp_households          
+duration                             float64   mp_households          
+composition                          object    mp_households          
+destination_logsum                   float64   mp_households          
+tour_mode                            object    mp_households          
+mode_choice_logsum                   float64   mp_households          
+atwork_subtour_frequency             object    mp_households          
+parent_tour_id                       float64   mp_households          
+stop_frequency                       object    mp_households          
+primary_purpose                      object    mp_households          
+
+###
+### trips (79, 14)
+###
+
+column_name                          dtype     checkpoint             
+trip_id                              int64     mp_households          
+person_id                            int64     mp_households          
+household_id                         int64     mp_households          
+tour_id                              int64     mp_households          
+primary_purpose                      object    mp_households          
+trip_num                             int64     mp_households          
+outbound                             bool      mp_households          
+trip_count                           int64     mp_households          
+purpose                              object    mp_households          
+destination                          int64     mp_households          
+origin                               int64     mp_households          
+destination_logsum                   float64   mp_households          
+depart                               int64     mp_households          
+trip_mode                            object    mp_households          
+mode_choice_logsum                   float64   mp_households          
+
+###
+### joint_tour_participants (0, 4)
+###
+
+column_name                          dtype     checkpoint             
+participant_id                       object    mp_households          
+tour_id                              object    mp_households          
+household_id                         object    mp_households          
+person_id                            object    mp_households          
+participant_num                      object    mp_households          
+

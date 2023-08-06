@@ -1,0 +1,4 @@
+,0
+_JOINT_TOURS,"Empty DataFrame
+Columns: [person_id, tour_type, tour_type_count, tour_type_num, tour_num, tour_count, tour_category, number_of_participants, destination, origin, household_id, tdd, start, end, duration, composition]
+Index: []"

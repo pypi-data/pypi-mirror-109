@@ -1,0 +1,49 @@
+10/06/2021 07:49:25 - INFO - activitysim - Read logging configuration from: C:\projects\development\activitysim\activitysim\examples\example_mtc\configs_mp\logging.yaml
+10/06/2021 07:49:25 - DEBUG - activitysim.core.random - Set random seed base to 0
+10/06/2021 07:49:25 - DEBUG - activitysim.core.pipeline - open_pipeline - open existing pipeline
+10/06/2021 07:49:25 - DEBUG - activitysim.core.pipeline - opened pipeline_store C:\projects\development\activitysim\activitysim\examples\example_mtc\test\output\pipeline.h5
+10/06/2021 07:49:25 - INFO - activitysim.core.pipeline - load_checkpoint mp_initialize
+10/06/2021 07:49:25 - INFO - activitysim.core.pipeline - load_checkpoint mp_initialize timestamp 2021-06-10 07:49:23.491065
+10/06/2021 07:49:25 - INFO - activitysim.core.pipeline - load_checkpoint table accessibility (25, 0)
+10/06/2021 07:49:25 - DEBUG - activitysim.core.pipeline - rewrap table accessibility inplace=False
+10/06/2021 07:49:25 - INFO - activitysim.core.pipeline - load_checkpoint table land_use (25, 28)
+10/06/2021 07:49:25 - DEBUG - activitysim.core.pipeline - rewrap table land_use inplace=False
+10/06/2021 07:49:25 - INFO - activitysim.core.pipeline - load_checkpoint table person_windows (28, 21)
+10/06/2021 07:49:25 - DEBUG - activitysim.core.pipeline - rewrap table person_windows inplace=False
+10/06/2021 07:49:26 - INFO - activitysim.core.pipeline - load_checkpoint table households (10, 24)
+10/06/2021 07:49:26 - DEBUG - activitysim.core.pipeline - rewrap table households inplace=False
+10/06/2021 07:49:26 - INFO - activitysim.core.pipeline - load_checkpoint table persons (28, 30)
+10/06/2021 07:49:26 - DEBUG - activitysim.core.pipeline - rewrap table persons inplace=False
+10/06/2021 07:49:26 - INFO - activitysim.core.pipeline - load_checkpoint table school_destination_size (25, 3)
+10/06/2021 07:49:26 - DEBUG - activitysim.core.pipeline - rewrap table school_destination_size inplace=False
+10/06/2021 07:49:26 - INFO - activitysim.core.pipeline - load_checkpoint table workplace_destination_size (25, 4)
+10/06/2021 07:49:26 - DEBUG - activitysim.core.pipeline - rewrap table workplace_destination_size inplace=False
+10/06/2021 07:49:26 - DEBUG - activitysim.core.tracing - register_traceable_table households
+10/06/2021 07:49:26 - DEBUG - activitysim.core.tracing - adding table households.household_id to traceable_table_indexes
+10/06/2021 07:49:26 - INFO - activitysim.core.tracing - tracing household id 982875 in 10 households
+10/06/2021 07:49:26 - DEBUG - activitysim.core.tracing - register households: added 1 new ids to 0 existing trace ids
+10/06/2021 07:49:26 - DEBUG - activitysim.core.tracing - register households: tracing new ids [982875] in households
+10/06/2021 07:49:26 - DEBUG - activitysim.core.tracing - register_traceable_table persons
+10/06/2021 07:49:26 - DEBUG - activitysim.core.tracing - adding table persons.person_id to traceable_table_indexes
+10/06/2021 07:49:26 - DEBUG - activitysim.core.tracing - register persons: added 2 new ids to 0 existing trace ids
+10/06/2021 07:49:26 - DEBUG - activitysim.core.tracing - register persons: tracing new ids [1875721, 1875722] in persons
+10/06/2021 07:49:26 - DEBUG - activitysim.core.pipeline - loading random channels ['households', 'persons', 'tours', 'joint_tour_participants', 'trips']
+10/06/2021 07:49:26 - DEBUG - activitysim.core.pipeline - adding channel households
+10/06/2021 07:49:26 - DEBUG - activitysim.core.random - Adding channel 'households' 10 ids
+10/06/2021 07:49:26 - DEBUG - activitysim.core.pipeline - adding channel persons
+10/06/2021 07:49:26 - DEBUG - activitysim.core.random - Adding channel 'persons' 28 ids
+10/06/2021 07:49:26 - DEBUG - activitysim.core.pipeline - open_pipeline complete
+10/06/2021 07:49:26 - DEBUG - activitysim.core.mp_tasks - loaded table accessibility (25, 0)
+10/06/2021 07:49:26 - DEBUG - activitysim.core.mp_tasks - loaded table land_use (25, 28)
+10/06/2021 07:49:26 - DEBUG - activitysim.core.mp_tasks - loaded table person_windows (28, 21)
+10/06/2021 07:49:26 - DEBUG - activitysim.core.mp_tasks - loaded table households (10, 24)
+10/06/2021 07:49:26 - DEBUG - activitysim.core.mp_tasks - loaded table persons (28, 30)
+10/06/2021 07:49:26 - DEBUG - activitysim.core.mp_tasks - loaded table school_destination_size (25, 3)
+10/06/2021 07:49:26 - DEBUG - activitysim.core.mp_tasks - loaded table workplace_destination_size (25, 4)
+10/06/2021 07:49:26 - DEBUG - activitysim.core.tracing - initialize_traceable_tables resetting table_ids for ['households', 'persons']
+10/06/2021 07:49:26 - DEBUG - activitysim.core.pipeline - close_pipeline
+10/06/2021 07:49:26 - DEBUG - activitysim.core.mp_tasks - slice.except wildcard (True): excluding all tables not explicitly listed in slice.tables
+10/06/2021 07:49:26 - DEBUG - activitysim.core.mp_tasks - ### table_name: accessibility slice_rules: {'slice_by': 'primary'}
+10/06/2021 07:49:26 - DEBUG - activitysim.core.mp_tasks - ### slicer_ref_cols: OrderedDict([('accessibility', 'zone_id')])
+10/06/2021 07:49:26 - DEBUG - activitysim.core.mp_tasks - writing checkpoints ((1, 9)) to checkpoints in C:\projects\development\activitysim\activitysim\examples\example_mtc\test\output\mp_accessibility_0-pipeline.h5
+10/06/2021 07:49:26 - DEBUG - activitysim.core.mp_tasks - writing checkpoints ((1, 9)) to checkpoints in C:\projects\development\activitysim\activitysim\examples\example_mtc\test\output\mp_accessibility_1-pipeline.h5

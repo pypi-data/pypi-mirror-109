@@ -1,0 +1,26 @@
+Expression,Label,0
+(income_in_thousands>19999) & (income_in_thousands<50000),util_middle_to_low_income_hh_,0.0
+(income_in_thousands>=50000) & (income_in_thousands<100000),util_mid_to_high_income_hh,0.0
+(income_in_thousands>=100000),util_high_income_hh,0.0
+hhsize,util_number_of_hh_persons,-0.6200000047683716
+num_student,util_number_of_students_in_hh,0.0
+(num_age_0_4 > 0),util_presence_of_kids_between_0_and_4_including_years_old,0.0
+~is_joint & female,util_dummy_for_female,0.0
+tour_mode_is_transit,util_dummy_for_all_stops_made_by_transit,-0.0
+tour_mode_is_non_motorized,util_dummy_for_walking_to_all_stops,-1.4328999519348145
+~is_joint * num_work_tours,util_number_of_work_tours_undertaken_by_the_person,-0.36399999260902405
+~is_joint * num_univ_tours,util_number_of_university_tours_tours_undertaken_by_the_person,-0.0
+~is_joint * num_school_tours,util_number_of_shool_tours_tours_undertaken_by_the_person,-0.0
+~is_joint * num_shop_tours,util_number_of_shop_tours_undertaken_by_the_person,-0.0
+num_hh_maint_tours,util_number_of_maintenace_tours_undertaken_by_the_houshold,-0.0
+is_joint * number_of_participants # (2),util_number_of_persons_participating_in_the_tour_return_stops_interaction,0.0
+(duration > 8),util_dummy_for_the_duration_of_the_tour_being_equal_or_greater_than_or_equal_to_9_hours_,0.0
+(distance_in_miles < 20),util_dummy_for_distance_less_than_20_miles_,-0.40799999237060547
+distance_in_miles,util_dummy_for_distance_in_miles,0.02538900037264824
+tour_mode_is_drive_transit,util_no_stops_if_tour_mode_is_drivetransit,-0.0
+~is_joint,util_alternative_specific_constant_for_outbound_stops,-5.426000118255615
+~is_joint # (2),util_alternative_specific_constant_for_return_stops,-0.5849999785423279
+~is_joint # (3),util_alternative_specific_constant_for_the_total_number_of_stops,0.414000004529953
+is_joint,util_alternative_specific_constant_for_outbound_stops_on_joint_tours,-0.0
+is_joint # (2),util_alternative_specific_constant_for_return_stops_on_joint_tours,-0.0
+is_joint # (3),util_alternative_specific_constant_for_the_total_number_of_stops_on_joint_tours,0.0

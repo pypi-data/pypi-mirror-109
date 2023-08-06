@@ -1,0 +1,2 @@
+trip_id,person_id,household_id,tour_id,primary_purpose,trip_num,outbound,trip_count,purpose,destination,origin,failed
+106617061,325052,257341,13327132,atwork,1,False,2,shopping,-1,16,True

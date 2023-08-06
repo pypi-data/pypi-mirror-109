@@ -1,0 +1,11 @@
+process_name,model_name,seconds,minutes
+MainProcess,initialize_landuse,0.3,0.0
+MainProcess,initialize_households,2.2,0.0
+MainProcess,initialize_tours,0.4,0.0
+MainProcess,initialize_los,0.1,0.0
+MainProcess,initialize_tvpb,50.1,0.8
+MainProcess,tour_mode_choice_simulate,13.1,0.2
+MainProcess,write_data_dictionary,0.3,0.0
+MainProcess,track_skim_usage,0.1,0.0
+MainProcess,write_tables,0.1,0.0
+MainProcess,write_summaries,0.1,0.0

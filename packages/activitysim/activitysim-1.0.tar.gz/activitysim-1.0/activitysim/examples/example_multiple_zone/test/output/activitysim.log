@@ -1,0 +1,26 @@
+10/06/2021 07:52:44 - INFO - activitysim - Read logging configuration from: C:\projects\development\activitysim\activitysim\examples\example_mtc\configs\logging.yaml
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - SETTING configs_dir: ['C:\\projects\\development\\activitysim\\activitysim\\examples\\example_multiple_zone\\test\\configs_3_zone', 'C:\\projects\\development\\activitysim\\activitysim\\examples\\example_multiple_zone\\configs_3_zone', 'C:\\projects\\development\\activitysim\\activitysim\\examples\\example_mtc\\configs']
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - SETTING settings_file_name: settings_mp
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - SETTING data_dir: ['C:\\projects\\development\\activitysim\\activitysim\\examples\\example_multiple_zone\\data_3']
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - SETTING output_dir: C:\projects\development\activitysim\activitysim\examples\example_multiple_zone\test\output
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - SETTING households_sample_size: 25
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - SETTING chunk_size: 0
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - SETTING chunk_method: hybrid_uss
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - SETTING chunk_training_mode: training
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - SETTING multiprocess: True
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - SETTING num_processes: 2
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - SETTING resume_after: None
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - SETTING trace_hh_id: 982875
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - ENV MKL_NUM_THREADS: None
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - ENV OMP_NUM_THREADS: None
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - ENV OPENBLAS_NUM_THREADS: None
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - NUMPY blas_info libraries: ['cblas', 'blas', 'cblas', 'blas', 'cblas', 'blas']
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - NUMPY blas_opt_info libraries: ['cblas', 'blas', 'cblas', 'blas', 'cblas', 'blas']
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - NUMPY lapack_info libraries: ['lapack', 'blas', 'lapack', 'blas']
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - NUMPY lapack_opt_info libraries: ['lapack', 'blas', 'lapack', 'blas', 'cblas', 'blas', 'cblas', 'blas', 'cblas', 'blas']
+10/06/2021 07:52:44 - INFO - activitysim.cli.run - run multiprocess simulation
+10/06/2021 07:52:44 - INFO - activitysim.core.mp_tasks - Setting num_processes = 0 for step mp_tvpb
+10/06/2021 07:52:44 - INFO - activitysim.core.mp_tasks - Setting num_processes = 0 for step mp_models
+10/06/2021 07:52:44 - INFO - activitysim.core.mp_tasks - run_multiprocess fail_fast: True
+10/06/2021 07:52:44 - INFO - activitysim.core.mp_tasks - allocate_shared_skim_buffer
+10/06/2021 07:52:44 - INFO - activitysim.core.los - Network_LOS using skim_dict_factory: NumpyArraySkimFactory

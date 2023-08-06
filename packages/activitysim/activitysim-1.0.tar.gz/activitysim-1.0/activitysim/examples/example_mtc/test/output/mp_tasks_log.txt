@@ -1,0 +1,184 @@
+mp_tasks - MainProcess - Setting num_processes = 0 for step mp_accessibility
+mp_tasks - MainProcess - Setting num_processes = 0 for step mp_households
+mp_tasks - MainProcess - run_multiprocess fail_fast: True
+mp_tasks - MainProcess - allocate_shared_skim_buffer
+mp_tasks - MainProcess - allocate_shared_shadow_pricing_buffers
+mp_tasks - MainProcess - #run_model running sub_process mp_setup_skims
+mp_tasks - mp_setup_skims - mp_setup_skims
+mp_tasks - MainProcess - run_sub_simulations step mp_initialize models resume_after None
+mp_tasks - MainProcess - start process mp_initialize
+mp_tasks - mp_initialize - mp_run_simulation mp_initialize locutor=True 
+mp_tasks - MainProcess - mp_initialize initialize_landuse : 0.684 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_initialize initialize_households : 1.001 seconds (0.0 minutes)
+mp_tasks - MainProcess - process mp_initialize completed
+mp_tasks - MainProcess - Process mp_initialize completed with exitcode 0
+mp_tasks - MainProcess - #run_model running sub_process mp_accessibility_apportion
+mp_tasks - mp_accessibility_apportion - loaded table accessibility (25, 0)
+mp_tasks - mp_accessibility_apportion - loaded table land_use (25, 28)
+mp_tasks - mp_accessibility_apportion - loaded table person_windows (28, 21)
+mp_tasks - mp_accessibility_apportion - loaded table households (10, 24)
+mp_tasks - mp_accessibility_apportion - loaded table persons (28, 30)
+mp_tasks - mp_accessibility_apportion - loaded table school_destination_size (25, 3)
+mp_tasks - mp_accessibility_apportion - loaded table workplace_destination_size (25, 4)
+mp_tasks - mp_accessibility_apportion - slice.except wildcard (True): excluding all tables not explicitly listed in slice.tables
+mp_tasks - mp_accessibility_apportion - ### table_name: accessibility slice_rules: {'slice_by': 'primary'}
+mp_tasks - mp_accessibility_apportion - ### slicer_ref_cols: OrderedDict([('accessibility', 'zone_id')])
+mp_tasks - mp_accessibility_apportion - writing checkpoints ((1, 9)) to checkpoints in C:\projects\development\activitysim\activitysim\examples\example_mtc\test\output\mp_accessibility_0-pipeline.h5
+mp_tasks - mp_accessibility_apportion - writing checkpoints ((1, 9)) to checkpoints in C:\projects\development\activitysim\activitysim\examples\example_mtc\test\output\mp_accessibility_1-pipeline.h5
+mp_tasks - MainProcess - run_sub_simulations step mp_accessibility models resume_after None
+mp_tasks - MainProcess - start process mp_accessibility_0
+mp_tasks - MainProcess - start process mp_accessibility_1
+mp_tasks - mp_accessibility_0 - mp_run_simulation mp_accessibility locutor=True 
+mp_tasks - mp_accessibility_0 - resume_after _
+mp_tasks - mp_accessibility_1 - mp_run_simulation mp_accessibility locutor=False 
+mp_tasks - mp_accessibility_1 - resume_after _
+mp_tasks - MainProcess - mp_accessibility_0 compute_accessibility : 0.855 seconds (0.0 minutes)
+mp_tasks - MainProcess - process mp_accessibility_0 completed
+mp_tasks - MainProcess - mp_accessibility_1 compute_accessibility : 0.739 seconds (0.0 minutes)
+mp_tasks - MainProcess - process mp_accessibility_1 completed
+mp_tasks - MainProcess - Process mp_accessibility_0 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_accessibility_1 completed with exitcode 0
+mp_tasks - MainProcess - #run_model running sub_process mp_accessibility_coalesce
+mp_tasks - mp_accessibility_coalesce - coalesce_pipelines to: pipeline.h5
+mp_tasks - mp_accessibility_coalesce - loading table accessibility accessibility/compute_accessibility
+mp_tasks - mp_accessibility_coalesce - loading table land_use land_use/mp_accessibility
+mp_tasks - mp_accessibility_coalesce - loading table person_windows person_windows/mp_accessibility
+mp_tasks - mp_accessibility_coalesce - loading table households households/mp_accessibility
+mp_tasks - mp_accessibility_coalesce - loading table persons persons/mp_accessibility
+mp_tasks - mp_accessibility_coalesce - loading table school_destination_size school_destination_size/mp_accessibility
+mp_tasks - mp_accessibility_coalesce - loading table workplace_destination_size workplace_destination_size/mp_accessibility
+mp_tasks - mp_accessibility_coalesce - slice.except wildcard (True): excluding all tables not explicitly listed in slice.tables
+mp_tasks - mp_accessibility_coalesce - ### table_name: accessibility slice_rules: {'slice_by': 'primary'}
+mp_tasks - mp_accessibility_coalesce - ### slicer_ref_cols: OrderedDict([('accessibility', 'zone_id')])
+mp_tasks - mp_accessibility_coalesce - coalesce_pipelines to: pipeline.h5
+mp_tasks - mp_accessibility_coalesce - mirrored_table_names: ['land_use', 'person_windows', 'households', 'persons', 'school_destination_size', 'workplace_destination_size']
+mp_tasks - mp_accessibility_coalesce - omnibus_keys: {'accessibility': 'accessibility/compute_accessibility'}
+mp_tasks - mp_accessibility_coalesce - adding mirrored table land_use (25, 28)
+mp_tasks - mp_accessibility_coalesce - adding mirrored table person_windows (28, 21)
+mp_tasks - mp_accessibility_coalesce - adding mirrored table households (10, 24)
+mp_tasks - mp_accessibility_coalesce - adding mirrored table persons (28, 30)
+mp_tasks - mp_accessibility_coalesce - adding mirrored table school_destination_size (25, 3)
+mp_tasks - mp_accessibility_coalesce - adding mirrored table workplace_destination_size (25, 4)
+mp_tasks - mp_accessibility_coalesce - adding omnibus table accessibility (25, 10)
+mp_tasks - MainProcess - #run_model running sub_process mp_households_apportion
+mp_tasks - mp_households_apportion - loaded table accessibility (25, 10)
+mp_tasks - mp_households_apportion - loaded table land_use (25, 28)
+mp_tasks - mp_households_apportion - loaded table person_windows (28, 21)
+mp_tasks - mp_households_apportion - loaded table households (10, 24)
+mp_tasks - mp_households_apportion - loaded table persons (28, 30)
+mp_tasks - mp_households_apportion - loaded table school_destination_size (25, 3)
+mp_tasks - mp_households_apportion - loaded table workplace_destination_size (25, 4)
+mp_tasks - mp_households_apportion - ### table_name: households slice_rules: {'slice_by': 'primary'}
+mp_tasks - mp_households_apportion - ### table_name: persons slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+mp_tasks - mp_households_apportion - ### table_name: person_windows slice_rules: {'slice_by': 'index', 'source': 'persons'}
+mp_tasks - mp_households_apportion - ### slicer_ref_cols: OrderedDict([('households', 'household_id'), ('persons', 'person_id'), ('person_windows', 'person_id')])
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in C:\projects\development\activitysim\activitysim\examples\example_mtc\test\output\mp_households_0-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in C:\projects\development\activitysim\activitysim\examples\example_mtc\test\output\mp_households_1-pipeline.h5
+mp_tasks - MainProcess - run_sub_simulations step mp_households models resume_after None
+mp_tasks - MainProcess - start process mp_households_0
+mp_tasks - MainProcess - start process mp_households_1
+mp_tasks - mp_households_0 - mp_run_simulation mp_households locutor=True 
+mp_tasks - mp_households_0 - resume_after _
+mp_tasks - mp_households_1 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_1 - resume_after _
+mp_tasks - MainProcess - mp_households_0 school_location : 12.524 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_1 school_location : 10.571 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_0 workplace_location : 10.603 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_0 auto_ownership_simulate : 0.733 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_1 workplace_location : 10.845 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_1 auto_ownership_simulate : 0.624 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 free_parking : 0.708 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_1 free_parking : 0.649 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 cdap_simulate : 12.302 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_1 cdap_simulate : 11.954 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_1 mandatory_tour_frequency : 1.403 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 mandatory_tour_frequency : 1.535 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_1 mandatory_tour_scheduling : 14.884 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_0 mandatory_tour_scheduling : 15.46 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_1 joint_tour_frequency : 1.21 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_1 joint_tour_composition : 0.098 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_1 joint_tour_participation : 0.169 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_1 joint_tour_destination : 0.116 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_1 joint_tour_scheduling : 0.116 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 joint_tour_frequency : 1.452 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 joint_tour_composition : 0.109 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 joint_tour_participation : 0.188 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 joint_tour_destination : 0.122 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 joint_tour_scheduling : 0.1 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 non_mandatory_tour_frequency : 8.632 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_1 non_mandatory_tour_frequency : 9.786 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_1 non_mandatory_tour_destination : 15.837 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_0 non_mandatory_tour_destination : 20.183 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_1 non_mandatory_tour_scheduling : 7.959 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_0 non_mandatory_tour_scheduling : 8.04 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_1 tour_mode_choice_simulate : 15.079 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_1 atwork_subtour_frequency : 0.856 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_1 atwork_subtour_destination : 4.143 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_1 atwork_subtour_scheduling : 2.096 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 tour_mode_choice_simulate : 18.296 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_0 atwork_subtour_frequency : 0.96 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 atwork_subtour_destination : 0.116 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 atwork_subtour_scheduling : 0.1 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 atwork_subtour_mode_choice : 0.147 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_1 atwork_subtour_mode_choice : 2.658 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 stop_frequency : 6.159 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_0 trip_purpose : 0.452 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_1 stop_frequency : 5.784 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_1 trip_purpose : 0.442 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 trip_destination : 12.457 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_0 trip_purpose_and_destination : 0.158 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 trip_scheduling : 1.487 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_1 trip_destination : 28.125 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_1 trip_purpose_and_destination : 0.154 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_households_0 trip_mode_choice : 15.789 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_1 trip_scheduling : 2.288 seconds (0.0 minutes)
+mp_tasks - MainProcess - process mp_households_0 completed
+mp_tasks - MainProcess - mp_households_1 trip_mode_choice : 11.467 seconds (0.2 minutes)
+mp_tasks - MainProcess - process mp_households_1 completed
+mp_tasks - MainProcess - Process mp_households_0 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_1 completed with exitcode 0
+mp_tasks - MainProcess - #run_model running sub_process mp_households_coalesce
+mp_tasks - mp_households_coalesce - coalesce_pipelines to: pipeline.h5
+mp_tasks - mp_households_coalesce - loading table accessibility accessibility/mp_households
+mp_tasks - mp_households_coalesce - loading table land_use land_use/mp_households
+mp_tasks - mp_households_coalesce - loading table person_windows person_windows/non_mandatory_tour_scheduling
+mp_tasks - mp_households_coalesce - loading table households households/joint_tour_frequency
+mp_tasks - mp_households_coalesce - loading table persons persons/non_mandatory_tour_frequency
+mp_tasks - mp_households_coalesce - loading table school_destination_size school_destination_size/mp_households
+mp_tasks - mp_households_coalesce - loading table workplace_destination_size workplace_destination_size/mp_households
+mp_tasks - mp_households_coalesce - loading table school_modeled_size school_modeled_size/school_location
+mp_tasks - mp_households_coalesce - loading table workplace_modeled_size workplace_modeled_size/workplace_location
+mp_tasks - mp_households_coalesce - loading table tours tours/stop_frequency
+mp_tasks - mp_households_coalesce - loading table joint_tour_participants joint_tour_participants/joint_tour_participation
+mp_tasks - mp_households_coalesce - loading table trips trips/trip_mode_choice
+mp_tasks - mp_households_coalesce - ### table_name: households slice_rules: {'slice_by': 'primary'}
+mp_tasks - mp_households_coalesce - ### table_name: persons slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+mp_tasks - mp_households_coalesce - ### table_name: person_windows slice_rules: {'slice_by': 'index', 'source': 'persons'}
+mp_tasks - mp_households_coalesce - ### table_name: tours slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+mp_tasks - mp_households_coalesce - ### table_name: joint_tour_participants slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+mp_tasks - mp_households_coalesce - ### table_name: trips slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+mp_tasks - mp_households_coalesce - ### slicer_ref_cols: OrderedDict([('households', 'household_id'), ('persons', 'person_id'), ('person_windows', 'person_id'), ('tours', 'tour_id'), ('joint_tour_participants', 'participant_id'), ('trips', 'trip_id')])
+mp_tasks - mp_households_coalesce - coalesce_pipelines to: pipeline.h5
+mp_tasks - mp_households_coalesce - mirrored_table_names: ['accessibility', 'land_use', 'school_destination_size', 'workplace_destination_size', 'school_modeled_size', 'workplace_modeled_size']
+mp_tasks - mp_households_coalesce - omnibus_keys: {'person_windows': 'person_windows/non_mandatory_tour_scheduling', 'households': 'households/joint_tour_frequency', 'persons': 'persons/non_mandatory_tour_frequency', 'tours': 'tours/stop_frequency', 'joint_tour_participants': 'joint_tour_participants/joint_tour_participation', 'trips': 'trips/trip_mode_choice'}
+mp_tasks - mp_households_coalesce - adding mirrored table accessibility (25, 10)
+mp_tasks - mp_households_coalesce - adding mirrored table land_use (25, 28)
+mp_tasks - mp_households_coalesce - adding mirrored table school_destination_size (25, 3)
+mp_tasks - mp_households_coalesce - adding mirrored table workplace_destination_size (25, 4)
+mp_tasks - mp_households_coalesce - adding mirrored table school_modeled_size (25, 3)
+mp_tasks - mp_households_coalesce - adding mirrored table workplace_modeled_size (25, 4)
+mp_tasks - mp_households_coalesce - adding omnibus table person_windows (28, 21)
+mp_tasks - mp_households_coalesce - adding omnibus table households (10, 34)
+mp_tasks - mp_households_coalesce - adding omnibus table persons (28, 63)
+mp_tasks - mp_households_coalesce - adding omnibus table tours (33, 23)
+mp_tasks - mp_households_coalesce - adding omnibus table joint_tour_participants (0, 4)
+mp_tasks - mp_households_coalesce - adding omnibus table trips (79, 14)
+mp_tasks - MainProcess - run_sub_simulations step mp_summarize models resume_after None
+mp_tasks - MainProcess - start process mp_summarize
+mp_tasks - mp_summarize - mp_run_simulation mp_summarize locutor=True 
+mp_tasks - mp_summarize - resume_after _
+mp_tasks - MainProcess - mp_summarize write_data_dictionary : 0.267 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_summarize write_trip_matrices : 0.936 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_summarize write_tables : 0.078 seconds (0.0 minutes)
+mp_tasks - MainProcess - process mp_summarize completed
+mp_tasks - MainProcess - Process mp_summarize completed with exitcode 0

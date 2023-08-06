@@ -1,0 +1,18 @@
+
+### tours.tour_mode type: object rows: 2 (0 empty)
+
+
+WALK    2
+Name: tour_mode, dtype: int64
+
+### tours.od_path_set type: object rows: 2 (2 empty)
+
+
+    2
+Name: od_path_set, dtype: int64
+
+### tours.do_path_set type: object rows: 2 (2 empty)
+
+
+    2
+Name: do_path_set, dtype: int64

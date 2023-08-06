@@ -1,0 +1,17 @@
+label,value
+trip_id,106617061
+person_id,325052
+household_id,257341
+tour_id,13327132
+primary_purpose,atwork
+trip_num,1
+outbound,False
+trip_count,2
+purpose,work
+next_trip_id,106617062
+destination,2
+origin,16
+failed,False
+tour_mode,WALK
+trip_period,MD
+is_joint,False

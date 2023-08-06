@@ -1,0 +1,36 @@
+process,pid,rss,full_rss,uss,event,children,time
+mp_initialize,35160,116_113_408,116_113_408,78_802_944,pipeline.run_model initialize_landuse start,0,2021/06/10 07:49:21.821335
+mp_initialize,35160,116_408_320,116_408_320,78_823_424,initialize_landuse.chunk_log.log_rss,0,2021/06/10 07:49:21.888881
+mp_initialize,35160,116_420_608,116_420_608,78_835_712,initialize_landuse.chunk_log.log_rss,0,2021/06/10 07:49:21.888881
+mp_initialize,35160,116_445_184,116_445_184,78_860_288,initialize_landuse.annotate_tables.log_rss,0,2021/06/10 07:49:21.904506
+mp_initialize,35160,116_449_280,116_449_280,78_864_384,initialize_landuse.annotate_tables.pre-get_table.land_use.log_rss,0,2021/06/10 07:49:21.920131
+mp_initialize,35160,117_198_848,117_198_848,79_187_968,initialize_landuse.annotate_tables.add.land_use,0,2021/06/10 07:49:21.957905
+mp_initialize,35160,126_894_080,126_894_080,89_153_536,initialize_landuse.annotate_tables.add.land_use,0,2021/06/10 07:49:22.342397
+mp_initialize,35160,127_373_312,127_373_312,89_157_632,initialize_landuse.annotate_tables.del.land_use,0,2021/06/10 07:49:22.358035
+mp_initialize,35160,127_373_312,127_373_312,89_157_632,initialize_landuse.add.accessibility,0,2021/06/10 07:49:22.373702
+mp_initialize,35160,127_381_504,127_381_504,89_157_632,initialize_landuse.chunk_log.log_rss,0,2021/06/10 07:49:22.420537
+mp_initialize,35160,127_414_272,127_414_272,89_141_248,pipeline.run_model initialize_landuse finished,0,2021/06/10 07:49:22.442673
+mp_initialize,35160,128_499_712,128_499_712,90_214_400,pipeline.run_model initialize_households start,0,2021/06/10 07:49:22.505184
+mp_initialize,35160,128_528_384,128_528_384,90_238_976,initialize_households.chunk_log.log_rss,0,2021/06/10 07:49:22.589858
+mp_initialize,35160,128_532_480,128_532_480,90_243_072,initialize_households.chunk_log.log_rss,0,2021/06/10 07:49:22.589858
+mp_initialize,35160,128_532_480,128_532_480,90_243_072,initialize_households.inside-yield.log_rss,0,2021/06/10 07:49:22.605490
+mp_initialize,35160,132_907_008,132_907_008,94_543_872,initialize_households.add.households,0,2021/06/10 07:49:22.674619
+mp_initialize,35160,132_911_104,132_911_104,94_543_872,initialize_households.del.households,0,2021/06/10 07:49:22.690210
+mp_initialize,35160,133_513_216,133_513_216,95_145_984,initialize_households.add.persons,0,2021/06/10 07:49:22.743591
+mp_initialize,35160,133_513_216,133_513_216,95_145_984,initialize_households.del.persons,0,2021/06/10 07:49:22.759227
+mp_initialize,35160,133_513_216,133_513_216,95_145_984,initialize_households.annotate_tables.log_rss,0,2021/06/10 07:49:22.774895
+mp_initialize,35160,133_513_216,133_513_216,95_145_984,initialize_households.annotate_tables.pre-get_table.persons.log_rss,0,2021/06/10 07:49:22.790533
+mp_initialize,35160,133_513_216,133_513_216,95_145_984,initialize_households.annotate_tables.add.persons,0,2021/06/10 07:49:22.806156
+mp_initialize,35160,133_668_864,133_668_864,95_166_464,initialize_households.annotate_tables.add.persons,0,2021/06/10 07:49:22.943860
+mp_initialize,35160,133_668_864,133_668_864,95_166_464,initialize_households.annotate_tables.del.persons,0,2021/06/10 07:49:22.959500
+mp_initialize,35160,133_668_864,133_668_864,95_166_464,initialize_households.annotate_tables.pre-get_table.households.log_rss,0,2021/06/10 07:49:22.975172
+mp_initialize,35160,133_668_864,133_668_864,95_166_464,initialize_households.annotate_tables.add.households,0,2021/06/10 07:49:22.990746
+mp_initialize,35160,133_939_200,133_939_200,95_223_808,initialize_households.annotate_tables.add.households,0,2021/06/10 07:49:23.106296
+mp_initialize,35160,133_939_200,133_939_200,95_223_808,initialize_households.annotate_tables.del.households,0,2021/06/10 07:49:23.138693
+mp_initialize,35160,133_939_200,133_939_200,95_223_808,initialize_households.annotate_tables.pre-get_table.persons.log_rss,0,2021/06/10 07:49:23.143738
+mp_initialize,35160,133_939_200,133_939_200,95_223_808,initialize_households.annotate_tables.add.persons,0,2021/06/10 07:49:23.175003
+mp_initialize,35160,133_939_200,133_939_200,95_223_808,initialize_households.annotate_tables.add.persons,0,2021/06/10 07:49:23.235777
+mp_initialize,35160,133_939_200,133_939_200,95_223_808,initialize_households.annotate_tables.del.persons,0,2021/06/10 07:49:23.243789
+mp_initialize,35160,134_148_096,134_148_096,95_252_480,initialize_households.add.person_windows,0,2021/06/10 07:49:23.321975
+mp_initialize,35160,134_148_096,134_148_096,95_252_480,initialize_households.chunk_log.log_rss,0,2021/06/10 07:49:23.391025
+mp_initialize,35160,134_123_520,134_123_520,95_227_904,pipeline.run_model initialize_households finished,0,2021/06/10 07:49:23.406675

@@ -1,0 +1,18 @@
+Expression,Label,0
+tour_mode_is_transit,util_dummy_for_all_stops_made_by_transit,-0.0
+tour_mode_is_non_motorized,util_dummy_for_walking_to_all_stops,-2.4577999114990234
+~is_joint * num_work_tours,util_number_of_work_tours_undertaken_by_the_person,-0.0
+~is_joint * num_school_tours,util_number_of_shool_tours_tours_undertaken_by_the_person,-0.0
+~is_joint * num_shop_tours,util_number_of_shop_tours_undertaken_by_the_person,-0.0
+~is_joint * num_maint_tours,util_number_of_maintenace_tours_tours_undertaken_by_the_person,-0.0
+(end > 16),util_arrival_later_than_17_00_,-0.6383000016212463
+(duration > 8),util_dummy_for_the_duration_of_the_tour_being_equal_or_greater_than_or_equal_to_9_hours_,0.0
+(distance_in_miles < 10),util_dummy_for_distance_less_than_10_miles_,0.37560001015663147
+distance_in_miles,util_dummy_for_distance_in_miles,-0.007425000590085995
+tour_mode_is_drive_transit,util_no_stops_if_tour_mode_is_drivetransit,-0.0
+~is_joint,util_alternative_specific_constant_for_outbound_stops,0.0
+~is_joint # (2),util_alternative_specific_constant_for_return_stops,-0.0
+~is_joint # (3),util_alternative_specific_constant_for_the_total_number_of_stops,0.0
+is_joint,util_alternative_specific_constant_for_outbound_stops_on_joint_tours,0.0
+is_joint # (2),util_alternative_specific_constant_for_return_stops_on_joint_tours,-1.3289999961853027
+is_joint # (3),util_alternative_specific_constant_for_the_total_number_of_stops_on_joint_tours,0.0

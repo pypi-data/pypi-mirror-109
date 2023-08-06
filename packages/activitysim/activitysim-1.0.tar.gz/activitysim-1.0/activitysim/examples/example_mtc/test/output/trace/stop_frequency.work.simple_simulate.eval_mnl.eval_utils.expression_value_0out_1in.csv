@@ -1,0 +1,29 @@
+Expression,Label,0
+(income_in_thousands>19999) & (income_in_thousands<50000),util_middle_to_low_income_hh,0.0
+(income_in_thousands>=50000) & (income_in_thousands<100000),util_mid_to_high_income_hh,0.0
+(income_in_thousands>=100000),util_high_income_hh,0.0
+hhsize,util_number_of_hh_persons,-0.6200000047683716
+num_student,util_number_of_students_in_hh,0.20999999344348907
+(num_age_0_4 > 0),util_presence_of_kids_between_0_and_4_including_years_old,0.0
+num_age_5_15,util_num_kids_between_5_and_15_including_years_old,0.0
+(num_age_5_15 > 0),util_presence_of_kids_between_5_and_15_including_years_old,0.0
+num_adult,util_number_of_adults_16_years_old_,0.05999999865889549
+more_cars_than_workers,util_number_of_cars_number_of_workers,0.1599999964237213
+female,util_dummy_for_female,0.0
+tour_mode_is_transit,util_dummy_for_all_stops_made_by_transit,-0.699999988079071
+tour_mode_is_non_motorized,util_dummy_for_walking_to_all_stops,-0.0
+num_work_tours,util_number_of_work_tours_undertaken_by_the_person,-0.15000000596046448
+num_univ_tours,util_number_of_university_tours_tours_undertaken_by_the_person,-0.0
+num_school_tours,util_number_of_school_tours_tours_undertaken_by_the_person,-0.0
+num_escort_tours,util_number_of_escort_tours_tours_undertaken_by_the_person,0.0
+num_hh_shop_tours,util_number_of_shop_tours_undertaken_by_the_houshold,-0.0
+(start>5) & (start<8),util_am_peak_departure_between_6am_and_7_am_including_interacted_with_outbound_tours,-0.0
+(end > 18),util_evening_arrival_19_00_interacted_with_return_tours,0.0
+(duration > 10),util_dummy_for_the_duration_of_the_tour_being_equal_or_greater_than_or_equal_to_11_hours,0.0
+(distance_in_miles < 20),util_dummy_for_distance_less_than_20_miles,-0.2199999988079071
+distance_in_miles,util_dummy_for_distance_in_miles,0.0160999997831881
+tour_mode_is_drive_transit,util_no_stops_if_tour_mode_is_drivetransit,-0.0
+1,util_alternative_specific_constant_for_outbound_stops,0.0
+1 # (2),util_alternative_specific_constant_for_return_stops,-0.4449999928474426
+1 # (3),util_alternative_specific_constant_for_the_total_number_of_stops,0.0
+num_atwork_subtours,util_number_of_subtours_in_the_tour,0.0

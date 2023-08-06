@@ -1,0 +1,9 @@
+label,value_1,value_2,value_3,value_4,value_5
+trip_id,615236801,615236805,615236865,615236866,615236869
+person_id,1875721,1875721,1875722,1875722,1875722
+household_id,982875,982875,982875,982875,982875
+tour_id,76904600,76904600,76904608,76904608,76904608
+primary_purpose,work,work,eatout,eatout,eatout
+trip_num,1,1,1,2,1
+outbound,True,False,True,True,False
+trip_count,1,1,2,2,1

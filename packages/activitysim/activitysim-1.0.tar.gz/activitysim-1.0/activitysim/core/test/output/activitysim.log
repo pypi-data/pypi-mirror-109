@@ -1,0 +1,2 @@
+INFO - activitysim - Read logging configuration from: C:\projects\development\activitysim\activitysim\core\test\configs\logging.yaml
+ERROR - activitysim.core.tracing - write_csv object for file_name 'baddie.csv' of unexpected type: <class 'str'>

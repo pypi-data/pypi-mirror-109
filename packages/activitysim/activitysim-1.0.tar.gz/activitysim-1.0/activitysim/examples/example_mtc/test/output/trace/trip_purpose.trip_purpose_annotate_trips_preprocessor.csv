@@ -1,0 +1,12 @@
+label,value
+trip_id,615236865
+person_id,1875722
+household_id,982875
+tour_id,76904608
+primary_purpose,eatout
+trip_num,1
+outbound,True
+trip_count,2
+ptype,3
+person_type,PTYPE_UNIVERSITY
+start,10

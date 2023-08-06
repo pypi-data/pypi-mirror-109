@@ -1,0 +1,24 @@
+10/06/2021 07:20:48 - INFO - activitysim - Read logging configuration from: C:\projects\development\activitysim\activitysim\examples\example_mtc\configs\logging.yaml
+10/06/2021 07:20:48 - INFO - activitysim.core.los - Network_LOS using skim_dict_factory: NumpyArraySkimFactory
+10/06/2021 07:20:48 - INFO - activitysim.core.skim_dict_factory - allocate_skim_buffer shared False taz shape (826, 25, 25) total size: 2_065_000 (2.1 MB)
+10/06/2021 07:20:48 - INFO - activitysim.core.skim_dict_factory - _read_skims_from_omx C:\projects\development\activitysim\activitysim\examples\example_mtc\data\skims.omx
+10/06/2021 07:20:49 - INFO - activitysim.core.skim_dict_factory - _read_skims_from_omx loaded 826 skims from C:\projects\development\activitysim\activitysim\examples\example_mtc\data\skims.omx
+10/06/2021 07:20:49 - INFO - activitysim.core.skim_dict_factory - writing skim cache taz (826, 25, 25) to C:\projects\development\activitysim\activitysim\abm\test\test_misc\output\cache\cached_taz.mmap
+10/06/2021 07:20:49 - INFO - activitysim.core.skim_dict_factory - load_skims_to_buffer taz shape (826, 25, 25)
+10/06/2021 07:20:49 - INFO - activitysim.core.skim_dict_factory - get_skim_data taz SkimData shape (826, 25, 25)
+10/06/2021 07:20:49 - INFO - activitysim.core.skim_dictionary - SkimDict init taz
+10/06/2021 07:20:49 - INFO - activitysim.core.skim_dictionary - SkimDict.build_3d_skim_block_offset_table registered 167 3d keys
+10/06/2021 07:20:49 - INFO - activitysim.core.chunk - PyTest Trip Scheduling.interaction_sample_simulate Running adaptive_chunked_choosers with 5 choosers
+10/06/2021 07:20:50 - WARNING - activitysim.core.chunk - Not enough memory for minimum chunk_size without exceeding specified chunk_size. available_headroom: -114_421_758 min_chunk_size: 0 base_chunk_size: 2
+10/06/2021 07:20:50 - WARNING - activitysim.core.chunk - out_of_chunk_memory: uss: 114450432 chunk_size: 2 PyTest Trip Scheduling.interaction_sample_simulate.log_rss
+10/06/2021 07:20:50 - INFO - activitysim.core.chunk - Running chunk 1 of ? with 5 of 5 choosers
+10/06/2021 07:20:50 - WARNING - activitysim.core.chunk - out_of_chunk_memory: bytes: 33925 headroom: 0 chunk_size: 2 PyTest Trip Scheduling.interaction_sample_simulate.add.interaction_df
+10/06/2021 07:20:50 - WARNING - activitysim.core.chunk - out_of_chunk_memory: uss: 114454528 chunk_size: 2 PyTest Trip Scheduling.interaction_sample_simulate.add.interaction_df
+10/06/2021 07:20:50 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 295 rows
+10/06/2021 07:20:50 - WARNING - activitysim.core.chunk - Not enough memory for minimum chunk_size without exceeding specified chunk_size. available_headroom: -114_454_526 min_chunk_size: 0 base_chunk_size: 2
+10/06/2021 07:20:50 - WARNING - activitysim.core.chunk - out_of_chunk_memory: uss: 114462720 chunk_size: 2 PyTest Trip Scheduling.interaction_sample_simulate.eval_interaction_utils.chunk_log.log_rss
+10/06/2021 07:20:50 - WARNING - activitysim.core.chunk - out_of_chunk_memory: uss: 114462720 chunk_size: 2 PyTest Trip Scheduling.interaction_sample_simulate.eval_interaction_utils.chunk_log.log_rss
+10/06/2021 07:20:50 - WARNING - activitysim.core.chunk - out_of_chunk_memory: bytes: 38645 headroom: 0 chunk_size: 2 PyTest Trip Scheduling.interaction_sample_simulate.eval_interaction_utils.add.eval.utilities
+10/06/2021 07:20:50 - WARNING - activitysim.core.chunk - out_of_chunk_memory: bytes: 38645 headroom: 0 chunk_size: 2 PyTest Trip Scheduling.interaction_sample_simulate.eval_interaction_utils.add.eval.utilities
+10/06/2021 07:20:50 - WARNING - activitysim.core.chunk - Not enough memory for minimum chunk_size without exceeding specified chunk_size. available_headroom: -114_462_718 min_chunk_size: 0 base_chunk_size: 2
+10/06/2021 07:20:51 - WARNING - activitysim.core.chunk - Not enough memory for minimum chunk_size without exceeding specified chunk_size. available_headroom: -114_462_718 min_chunk_size: 0 base_chunk_size: 2

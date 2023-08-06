@@ -1,0 +1,12 @@
+label,value
+trip_id,106617061
+person_id,325052
+household_id,257341
+tour_id,13327132
+primary_purpose,atwork
+trip_num,1
+outbound,False
+trip_count,2
+ptype,1
+person_type,PTYPE_FULL
+start,10

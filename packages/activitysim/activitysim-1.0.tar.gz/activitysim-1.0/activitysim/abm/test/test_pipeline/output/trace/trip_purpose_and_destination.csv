@@ -1,0 +1,12 @@
+label,value_1,value_2,value_3,value_4,value_5,value_6,value_7,value_8,value_9,value_10,value_11,value_12,value_13
+trip_id,106616849,106616853,106617041,106617045,106617049,106617053,106617057,106617061,106617062,106617281,106617285,106617369,106617373
+person_id,325051,325051,325051,325051,325051,325051,325052,325052,325052,325052,325052,325052,325052
+household_id,257341,257341,257341,257341,257341,257341,257341,257341,257341,257341,257341,257341,257341
+tour_id,13327106,13327106,13327130,13327130,13327131,13327131,13327132,13327132,13327132,13327160,13327160,13327171,13327171
+primary_purpose,othdiscr,othdiscr,work,work,work,work,atwork,atwork,atwork,othmaint,othmaint,work,work
+trip_num,1,1,1,1,1,1,1,1,2,1,1,1,1
+outbound,True,False,True,False,True,False,True,False,False,True,False,True,False
+trip_count,1,1,1,1,1,1,1,2,2,1,1,1,1
+purpose,othdiscr,Home,work,Home,work,Home,atwork,work,Work,othmaint,Home,work,Home
+destination,14,16,1,16,1,16,16,25,2,5,16,2,16
+origin,16,14,16,1,16,1,2,16,25,16,5,16,2

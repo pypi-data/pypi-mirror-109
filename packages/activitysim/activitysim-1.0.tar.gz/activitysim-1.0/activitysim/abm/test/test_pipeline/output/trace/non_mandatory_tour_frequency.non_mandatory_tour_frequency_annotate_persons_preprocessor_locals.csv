@@ -1,0 +1,16 @@
+,0
+_JOINT_TOURS,"          person_id tour_type  tour_type_count  tour_type_num  tour_num  \
+tour_id                                                                   
+13327106     325051  othdiscr                1              1         1   
+
+          tour_count tour_category  number_of_participants  destination  \
+tour_id                                                                   
+13327106           1         joint                       2         14.0   
+
+          origin  household_id    tdd  start   end  duration composition  \
+tour_id                                                                    
+13327106      16        257341  155.0   16.0  17.0       1.0      adults   
+
+          destination_logsum  
+tour_id                       
+13327106           14.703056  "

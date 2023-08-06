@@ -1,0 +1,12 @@
+process,pid,rss,full_rss,uss,event,children,time
+mp_accessibility_1,40936,120_340_480,120_340_480,82_661_376,pipeline.run_model compute_accessibility start,0,2021/06/10 07:49:30.436552
+mp_accessibility_1,40936,132_747_264,132_747_264,94_605_312,compute_accessibility.log_rss,0,2021/06/10 07:49:30.876904
+mp_accessibility_1,40936,132_751_360,132_751_360,94_609_408,compute_accessibility.log_rss,0,2021/06/10 07:49:30.876904
+mp_accessibility_1,40936,132_911_104,132_911_104,94_633_984,compute_accessibility.add.od_df,0,2021/06/10 07:49:30.892543
+mp_accessibility_1,40936,133_087_232,133_087_232,94_642_176,compute_accessibility.add.temps,0,2021/06/10 07:49:30.959599
+mp_accessibility_1,40936,133_087_232,133_087_232,94_642_176,compute_accessibility.add.variables,0,2021/06/10 07:49:30.975238
+mp_accessibility_1,40936,133_087_232,133_087_232,94_642_176,compute_accessibility.del.temps,0,2021/06/10 07:49:30.990864
+mp_accessibility_1,40936,133_087_232,133_087_232,94_642_176,compute_accessibility.del.variables,0,2021/06/10 07:49:31.006488
+mp_accessibility_1,40936,133_087_232,133_087_232,94_642_176,compute_accessibility.add.results,0,2021/06/10 07:49:31.037784
+mp_accessibility_1,40936,133_115_904,133_115_904,94_642_176,compute_accessibility.log_rss,0,2021/06/10 07:49:31.106813
+mp_accessibility_1,40936,133_128_192,133_128_192,94_621_696,pipeline.run_model compute_accessibility finished,0,2021/06/10 07:49:31.138057

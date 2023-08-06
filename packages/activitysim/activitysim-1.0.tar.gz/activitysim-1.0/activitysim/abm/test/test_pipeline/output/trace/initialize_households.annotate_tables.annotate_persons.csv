@@ -1,0 +1,38 @@
+label,value_1,value_2
+person_id,325051,325052
+household_id,257341,257341
+age,49,56
+PNUM,1,2
+sex,2,1
+pemploy,2,1
+pstudent,3,3
+ptype,2,1
+age_16_to_19,False,False
+age_16_p,True,True
+adult,True,True
+male,False,True
+female,True,False
+has_non_worker,False,False
+has_retiree,False,False
+has_preschool_kid,False,False
+has_driving_kid,False,False
+has_school_kid,False,False
+has_full_time,True,False
+has_part_time,False,True
+has_university,False,False
+student_is_employed,False,False
+nonstudent_to_school,False,False
+pstudent,3,3
+pstudent (2),3,3
+pstudent (3),3,3
+is_student,False,False
+is_student (2),False,False
+pstudent (4),3,3
+is_gradeschool,False,False
+is_highschool,False,False
+is_university,False,False
+school_segment,0,0
+school_segment (2),0,0
+school_segment (3),0,0
+is_worker,True,True
+home_zone_id,16,16

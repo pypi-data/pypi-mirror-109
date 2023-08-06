@@ -1,0 +1,113 @@
+10/06/2021 07:49:29 - INFO - activitysim - Read logging configuration from: C:\projects\development\activitysim\activitysim\examples\example_mtc\configs_mp\logging.yaml
+10/06/2021 07:49:29 - DEBUG - activitysim.core.mp_tasks - mp_run_simulation mp_accessibility locutor=True 
+10/06/2021 07:49:29 - DEBUG - activitysim.core.mp_tasks - injecting pipeline_file_prefix 'mp_accessibility_0'
+10/06/2021 07:49:29 - INFO - activitysim.core.mp_tasks - resume_after _
+10/06/2021 07:49:29 - DEBUG - activitysim.core.random - Set random seed base to 0
+10/06/2021 07:49:29 - DEBUG - activitysim.core.pipeline - open_pipeline - open existing pipeline
+10/06/2021 07:49:29 - DEBUG - activitysim.core.pipeline - opened pipeline_store C:\projects\development\activitysim\activitysim\examples\example_mtc\test\output\mp_accessibility_0-pipeline.h5
+10/06/2021 07:49:29 - INFO - activitysim.core.pipeline - load_checkpoint _
+10/06/2021 07:49:29 - INFO - activitysim.core.pipeline - loading checkpoint 'mp_initialize'
+10/06/2021 07:49:29 - INFO - activitysim.core.pipeline - load_checkpoint mp_initialize timestamp 2021-06-10 07:49:23.491065
+10/06/2021 07:49:29 - INFO - activitysim.core.pipeline - load_checkpoint table accessibility (13, 0)
+10/06/2021 07:49:29 - DEBUG - activitysim.core.pipeline - rewrap table accessibility inplace=False
+10/06/2021 07:49:29 - INFO - activitysim.core.pipeline - load_checkpoint table land_use (25, 28)
+10/06/2021 07:49:29 - DEBUG - activitysim.core.pipeline - rewrap table land_use inplace=False
+10/06/2021 07:49:29 - INFO - activitysim.core.pipeline - load_checkpoint table person_windows (28, 21)
+10/06/2021 07:49:29 - DEBUG - activitysim.core.pipeline - rewrap table person_windows inplace=False
+10/06/2021 07:49:29 - INFO - activitysim.core.pipeline - load_checkpoint table households (10, 24)
+10/06/2021 07:49:29 - DEBUG - activitysim.core.pipeline - rewrap table households inplace=False
+10/06/2021 07:49:29 - INFO - activitysim.core.pipeline - load_checkpoint table persons (28, 30)
+10/06/2021 07:49:29 - DEBUG - activitysim.core.pipeline - rewrap table persons inplace=False
+10/06/2021 07:49:29 - INFO - activitysim.core.pipeline - load_checkpoint table school_destination_size (25, 3)
+10/06/2021 07:49:29 - DEBUG - activitysim.core.pipeline - rewrap table school_destination_size inplace=False
+10/06/2021 07:49:29 - INFO - activitysim.core.pipeline - load_checkpoint table workplace_destination_size (25, 4)
+10/06/2021 07:49:29 - DEBUG - activitysim.core.pipeline - rewrap table workplace_destination_size inplace=False
+10/06/2021 07:49:29 - DEBUG - activitysim.core.tracing - register_traceable_table households
+10/06/2021 07:49:29 - DEBUG - activitysim.core.tracing - adding table households.household_id to traceable_table_indexes
+10/06/2021 07:49:29 - INFO - activitysim.core.tracing - tracing household id 982875 in 10 households
+10/06/2021 07:49:29 - DEBUG - activitysim.core.tracing - register households: added 1 new ids to 0 existing trace ids
+10/06/2021 07:49:29 - DEBUG - activitysim.core.tracing - register households: tracing new ids [982875] in households
+10/06/2021 07:49:29 - DEBUG - activitysim.core.tracing - register_traceable_table persons
+10/06/2021 07:49:29 - DEBUG - activitysim.core.tracing - adding table persons.person_id to traceable_table_indexes
+10/06/2021 07:49:29 - DEBUG - activitysim.core.tracing - register persons: added 2 new ids to 0 existing trace ids
+10/06/2021 07:49:29 - DEBUG - activitysim.core.tracing - register persons: tracing new ids [1875721, 1875722] in persons
+10/06/2021 07:49:29 - DEBUG - activitysim.core.pipeline - loading random channels ['households', 'persons', 'tours', 'joint_tour_participants', 'trips']
+10/06/2021 07:49:29 - DEBUG - activitysim.core.pipeline - adding channel households
+10/06/2021 07:49:29 - DEBUG - activitysim.core.random - Adding channel 'households' 10 ids
+10/06/2021 07:49:29 - DEBUG - activitysim.core.pipeline - adding channel persons
+10/06/2021 07:49:29 - DEBUG - activitysim.core.random - Adding channel 'persons' 28 ids
+10/06/2021 07:49:29 - DEBUG - activitysim.core.pipeline - open_pipeline complete
+10/06/2021 07:49:29 - INFO - activitysim.abm.models.initialize - preload_injectables
+10/06/2021 07:49:29 - INFO - activitysim.core.pipeline - #run_model running step compute_accessibility
+10/06/2021 07:49:29 - DEBUG - activitysim.abm.tables.skims - loading network_los_without_data_loaded injectable
+10/06/2021 07:49:29 - INFO - activitysim.core.los - Network_LOS using skim_dict_factory: NumpyArraySkimFactory
+10/06/2021 07:49:29 - DEBUG - activitysim.core.skim_dict_factory - load_skim_info taz reading C:\projects\development\activitysim\activitysim\examples\example_mtc\data\skims.omx
+10/06/2021 07:49:29 - DEBUG - activitysim.abm.tables.skims - loading network_los injectable
+10/06/2021 07:49:29 - INFO - activitysim.core.skim_dict_factory - get_skim_data taz using existing shared skim_buffers for skims
+10/06/2021 07:49:29 - INFO - activitysim.core.skim_dict_factory - get_skim_data taz SkimData shape (826, 25, 25)
+10/06/2021 07:49:29 - INFO - activitysim.core.skim_dictionary - SkimDict init taz
+10/06/2021 07:49:29 - INFO - activitysim.core.skim_dictionary - SkimDict.build_3d_skim_block_offset_table registered 167 3d keys
+10/06/2021 07:49:29 - DEBUG - activitysim.core.los - create_skim_dict taz omx_shape (25, 25)
+10/06/2021 07:49:29 - INFO - activitysim.abm.models.accessibility - Running compute_accessibility with 13 orig zones 25 dest zones
+10/06/2021 07:49:29 - INFO - activitysim.core.chunk - compute_accessibility Running adaptive_chunked_choosers with 13 choosers
+10/06/2021 07:49:29 - DEBUG - activitysim.core.chunk - compute_accessibility.initial_rows_per_chunk - rows_per_chunk: 13 headroom: 0.0 initial_row_size: 0 
+10/06/2021 07:49:29 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 13 of 13 choosers
+10/06/2021 07:49:29 - INFO - activitysim.abm.models.accessibility - Running compute_accessibility with 13 orig zones 25 dest zones
+10/06/2021 07:49:29 - DEBUG - activitysim.core.chunk - log_df delta_bytes:       13_000 od_df (325, 4) compute_accessibility
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _auPkTime = skim_od[('SOVTOLL_TIME', 'AM')] + skim_do[('SOVTOLL_TIME', 'PM')]
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _decay = exp(_auPkTime * dispersion_parameter_automobile)
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables auPkRetail = df.RETEMPN * _decay
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables auPkTotal = df.TOTEMP * _decay
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _auOpTime = skim_od[('SOVTOLL_TIME', 'MD')] + skim_do[('SOVTOLL_TIME', 'MD')]
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _decay = exp(_auOpTime * dispersion_parameter_automobile)
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables auOpRetail = df.RETEMPN * _decay
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables auOpTotal = df.TOTEMP * _decay
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _inVehicleTime = skim_od[('WLK_TRN_WLK_IVT', 'AM')]
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _outOfVehicleTime = skim_od[('WLK_TRN_WLK_IWAIT', 'AM')] + skim_od[('WLK_TRN_WLK_XWAIT', 'AM')] + skim_od[('WLK_TRN_WLK_WACC', 'AM')] + skim_od[('WLK_TRN_WLK_WAUX', 'AM')] + skim_od[('WLK_TRN_WLK_WEGR', 'AM')]
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _trPkTime_od = (_inVehicleTime + out_of_vehicle_time_weight * _outOfVehicleTime) / 100.0
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _inVehicleTime = skim_do[('WLK_TRN_WLK_IVT', 'PM')]
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _outOfVehicleTime = skim_do[('WLK_TRN_WLK_IWAIT', 'PM')] + skim_do[('WLK_TRN_WLK_XWAIT', 'PM')] + skim_do[('WLK_TRN_WLK_WACC', 'PM')] + skim_do[('WLK_TRN_WLK_WAUX', 'PM')] + skim_do[('WLK_TRN_WLK_WEGR', 'PM')]
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _trPkTime_do = (_inVehicleTime + out_of_vehicle_time_weight * _outOfVehicleTime) / 100.0
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _trPkTime = _trPkTime_od + _trPkTime_do
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _rt_available = (_trPkTime_od > 0) & (_trPkTime_do > 0)
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _decay = _rt_available * exp(_trPkTime * dispersion_parameter_transit)
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables trPkRetail = df.RETEMPN * _decay
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables trPkTotal = df.TOTEMP * _decay
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _inVehicleTime = skim_od[('WLK_TRN_WLK_IVT', 'MD')]
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _outOfVehicleTime = skim_od[('WLK_TRN_WLK_IWAIT', 'MD')] + skim_od[('WLK_TRN_WLK_XWAIT', 'MD')] + skim_od[('WLK_TRN_WLK_WACC', 'MD')] + skim_od[('WLK_TRN_WLK_WAUX', 'MD')] + skim_od[('WLK_TRN_WLK_WEGR', 'MD')]
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _trOpTime_od = (_inVehicleTime + out_of_vehicle_time_weight * _outOfVehicleTime) / 100.0
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _inVehicleTime = skim_do[('WLK_TRN_WLK_IVT', 'MD')]
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _outOfVehicleTime = skim_do[('WLK_TRN_WLK_IWAIT', 'MD')] + skim_do[('WLK_TRN_WLK_XWAIT', 'MD')] + skim_do[('WLK_TRN_WLK_WACC', 'MD')] + skim_do[('WLK_TRN_WLK_WAUX', 'MD')] + skim_do[('WLK_TRN_WLK_WEGR', 'MD')]
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _trOpTime_do = (_inVehicleTime + out_of_vehicle_time_weight * _outOfVehicleTime) / 100.0
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _trOpTime = _trOpTime_od + _trOpTime_do
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _rt_available = (_trOpTime_od > 0) & (_trOpTime_do > 0)
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _decay = _rt_available * exp(_trOpTime * dispersion_parameter_transit)
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables trOpRetail = df.RETEMPN * _decay
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables trOpTotal = df.TOTEMP * _decay
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _nmDist = skim_od['DISTWALK'] + skim_do['DISTWALK']
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _rt_available = _nmDist <= maximum_walk_distance
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables _decay = _rt_available * exp(_nmDist * dispersion_parameter_walk)
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables nmRetail = df.RETEMPN * _decay
+10/06/2021 07:49:29 - DEBUG - activitysim.core.assign - compute_accessibility.assign_variables nmTotal = df.TOTEMP * _decay
+10/06/2021 07:49:29 - DEBUG - activitysim.core.chunk - log_df delta_bytes:       49_725 temps dict([(325,), (325,), (325,), (325,), (325,), (325,), (325,), (325,), (325,), (325,), (325,), (325,), (325,)]) compute_accessibility
+10/06/2021 07:49:29 - DEBUG - activitysim.core.chunk - log_df delta_bytes:       52_000 variables dict([(325,), (325,), (325,), (325,), (325,), (325,), (325,), (325,), (325,), (325,)]) compute_accessibility
+10/06/2021 07:49:29 - DEBUG - activitysim.core.chunk - log_df delta_bytes:      -49_725 temps None compute_accessibility
+10/06/2021 07:49:29 - DEBUG - activitysim.core.chunk - log_df delta_bytes:      -52_000 variables None compute_accessibility
+10/06/2021 07:49:29 - DEBUG - activitysim.core.chunk - log_df delta_bytes:       28_600 results (325, 10) compute_accessibility
+10/06/2021 07:49:30 - DEBUG - activitysim.core.chunk - compute_accessibility waiting for mem_monitor thread to terminate
+10/06/2021 07:49:30 - DEBUG - activitysim.core.chunk - ChunkLedger.close trace_label: compute_accessibility
+10/06/2021 07:49:30 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_bytes: 114725 bytes: 114.7 KB rss: 133.2 MB uss: 94.7 MB base_chunk_size: 0 B op: compute_accessibility.add.variables
+10/06/2021 07:49:30 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_rss 133246976 rss: 133.2 MB uss: 94.8 MB base_chunk_size: 0 B op: compute_accessibility.log_rss
+10/06/2021 07:49:30 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_uss 94773248 bytes: 41.6 KB rss: 133.2 MB uss: 94.8 MB base_chunk_size: 0 B op: compute_accessibility.add.results
+10/06/2021 07:49:30 - INFO - activitysim.abm.models.accessibility - compute_accessibility computed accessibilities (13, 10)
+10/06/2021 07:49:30 - DEBUG - activitysim.core.pipeline - rewrap table accessibility inplace=False
+10/06/2021 07:49:30 - DEBUG - activitysim.core.tracing - Time to execute #run_model completed step 'compute_accessibility' : 0.786 seconds (0.0 minutes)
+10/06/2021 07:49:30 - DEBUG - activitysim.core.pipeline - add_checkpoint compute_accessibility timestamp 2021-06-10 07:49:30.035302
+10/06/2021 07:49:30 - DEBUG - activitysim.core.pipeline - add_checkpoint 'compute_accessibility' table 'accessibility' (13, 10) 1.1 KB
+10/06/2021 07:49:30 - INFO - activitysim.core.tracing - Time to execute run (1 models) : 0.855 seconds (0.0 minutes)
+10/06/2021 07:49:30 - DEBUG - activitysim.core.pipeline - add_checkpoint mp_accessibility timestamp 2021-06-10 07:49:30.073121
+10/06/2021 07:49:30 - DEBUG - activitysim.core.tracing - initialize_traceable_tables resetting table_ids for ['households', 'persons']
+10/06/2021 07:49:30 - DEBUG - activitysim.core.pipeline - close_pipeline
+10/06/2021 07:49:30 - INFO - activitysim.core.mem - mp_accessibility_0 high water mark rss: 133_255_168 (133.3 MB) timestamp: 10/06/2021 07:49:30 label:pipeline.run_model compute_accessibility finished
+10/06/2021 07:49:30 - INFO - activitysim.core.mem - mp_accessibility_0 high water mark uss: 94_773_248 (94.8 MB) timestamp: 10/06/2021 07:49:29 label:compute_accessibility.add.results
+10/06/2021 07:49:30 - INFO - activitysim.core.mem - mp_accessibility_0 high water mark bytes: 114_725 (114.7 KB) timestamp: 10/06/2021 07:49:29 label:compute_accessibility.add.variables

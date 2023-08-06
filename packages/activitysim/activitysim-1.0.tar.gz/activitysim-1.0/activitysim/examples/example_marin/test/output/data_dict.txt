@@ -1,0 +1,126 @@
+###
+### land_use (110, 12)
+###
+
+column_name           dtype     checkpoint                 
+zone_id               int64     initialize_landuse         
+TAZ                   int64     initialize_landuse         
+DistID                int64     initialize_landuse         
+ACRES                 float64   initialize_landuse         
+POP                   int64     initialize_landuse         
+emp_total             int64     initialize_landuse         
+hparkcost             float64   initialize_landuse         
+TERMINALTIME          int64     initialize_landuse         
+county_id             int64     initialize_landuse         
+TotInt                int64     initialize_landuse         
+EmpDen                float64   initialize_landuse         
+RetEmpDen             float64   initialize_landuse         
+DUDen                 float64   initialize_landuse         
+
+###
+### accessibility (110, 0)
+###
+
+column_name           dtype     checkpoint                 
+zone_id               int64     initialize_landuse         
+
+###
+### person_windows (13, 21)
+###
+
+column_name           dtype     checkpoint                 
+person_id             int64     initialize_households      
+4                     int8      initialize_households      
+5                     int8      initialize_households      
+6                     int8      initialize_households      
+7                     int8      initialize_households      
+8                     int8      initialize_households      
+9                     int8      initialize_households      
+10                    int8      initialize_households      
+11                    int8      initialize_households      
+12                    int8      initialize_households      
+13                    int8      initialize_households      
+14                    int8      initialize_households      
+15                    int8      initialize_households      
+16                    int8      initialize_households      
+17                    int8      initialize_households      
+18                    int8      initialize_households      
+19                    int8      initialize_households      
+20                    int8      initialize_households      
+21                    int8      initialize_households      
+22                    int8      initialize_households      
+23                    int8      initialize_households      
+24                    int8      initialize_households      
+
+###
+### persons (13, 8)
+###
+
+column_name           dtype     checkpoint                 
+person_id             int64     initialize_households      
+AGEP                  int64     initialize_households      
+household_id          int64     initialize_households      
+type                  object    initialize_households      
+value_of_time         float64   initialize_households      
+fp_choice             int64     initialize_households      
+SEX                   int64     initialize_households      
+is_university         bool      initialize_households      
+is_male               bool      initialize_households      
+
+###
+### households (10, 7)
+###
+
+column_name           dtype     checkpoint                 
+household_id          int64     initialize_households      
+home_zone_id          int64     initialize_households      
+HHINCADJ              float64   initialize_households      
+NWRKRS_ESR            int64     initialize_households      
+VEH                   int64     initialize_households      
+NP                    int64     initialize_households      
+sample_rate           float64   initialize_households      
+num_persons           int8      initialize_households      
+
+###
+### attribute_combinations (20, 3)
+###
+
+column_name           dtype     checkpoint                 
+offset                int64     initialize_los             
+demographic_segment   int64     initialize_los             
+tod                   object    initialize_los             
+access_mode           object    initialize_los             
+
+###
+### tours (2, 26)
+###
+
+column_name           dtype     checkpoint                 
+tour_id               int64     initialize_tours           
+person_id             int64     initialize_tours           
+household_id          int64     initialize_tours           
+tour_category         object    initialize_tours           
+tour_purpose          object    initialize_tours           
+orig_mgra             int64     initialize_tours           
+dest_mgra             int64     initialize_tours           
+start                 int64     initialize_tours           
+end                   int64     initialize_tours           
+tm2_tour_id           int64     initialize_tours           
+tm2_tour_mode         int64     initialize_tours           
+tm2_out_btap          float64   initialize_tours           
+tm2_out_atap          float64   initialize_tours           
+tm2_in_btap           float64   initialize_tours           
+tm2_in_atap           float64   initialize_tours           
+tm2_out_set           float64   initialize_tours           
+tm2_in_set            float64   initialize_tours           
+tour_type             object    initialize_tours           
+destination           int64     initialize_tours           
+tour_mode             object    tour_mode_choice_simulate  
+mode_choice_logsum    float64   tour_mode_choice_simulate  
+od_atap               float64   tour_mode_choice_simulate  
+od_btap               float64   tour_mode_choice_simulate  
+od_path_set           object    tour_mode_choice_simulate  
+do_atap               float64   tour_mode_choice_simulate  
+do_btap               float64   tour_mode_choice_simulate  
+do_path_set           object    tour_mode_choice_simulate  
+

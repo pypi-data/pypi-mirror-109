@@ -1,0 +1,7 @@
+tour_id,person_id,tour_type,tour_type_count,tour_type_num,tour_num,tour_count,tour_category,number_of_participants,destination,origin,household_id,tdd,start,end,duration,composition,destination_logsum,tour_mode,mode_choice_logsum,atwork_subtour_frequency,parent_tour_id,stop_frequency,primary_purpose
+13327130,325051,work,2,1,1,2,mandatory,1,1.0,16.0,257341,7.0,5.0,12.0,7.0,,,WALK,1.603946463179854,no_subtours,,0out_0in,work
+13327131,325051,work,2,2,2,2,mandatory,1,1.0,16.0,257341,112.0,12.0,12.0,0.0,,,SHARED3FREE,1.7936820702382896,no_subtours,,0out_0in,work
+13327171,325052,work,1,1,1,1,mandatory,1,2.0,16.0,257341,77.0,9.0,16.0,7.0,,,WALK_LOC,1.8178001346161778,business1,,0out_0in,work
+13327106,325051,othdiscr,1,1,1,1,joint,2,14.0,16.0,257341,155.0,16.0,17.0,1.0,adults,14.703055524128636,WALK,-2.4662001450803137,,,0out_0in,othdiscr
+13327160,325052,othmaint,1,1,1,1,non_mandatory,1,5.0,16.0,257341,19.0,6.0,6.0,0.0,,14.303749351597355,WALK,0.59087589386261,,,0out_0in,othmaint
+13327132,325052,business,1,1,1,1,atwork,1,16.0,2.0,257341,87.0,10.0,12.0,2.0,,13.130022710738102,WALK,-0.21794879142708581,,13327171.0,0out_1in,atwork
