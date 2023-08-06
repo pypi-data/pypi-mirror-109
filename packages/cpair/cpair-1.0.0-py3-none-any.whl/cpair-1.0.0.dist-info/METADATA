@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cpair
+Version: 1.0.0
+Summary: Find the minimum distance between a set of points in linear time.
+License: MIT
+Author: Kian Cross
+Author-email: kian@kiancross.co.uk
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
