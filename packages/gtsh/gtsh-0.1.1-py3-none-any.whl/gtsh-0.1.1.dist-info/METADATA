@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: gtsh
+Version: 0.1.1
+Summary: A toolbox for code janitors handle git operations withing world of git
+Home-page: https://github.com/tovrleaf/git-utils
+Author: Niko Kivela
+Author-email: niko@tovrleaf.com
+License: UNKNOWN
+Keywords: git development source
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Version Control :: Git
+License-File: LICENSE.txt
+Requires-Dist: click (==8.0.1)
+
+#########################
+Git Utils, in short: gtsh
+#########################
+
+A toolbox for code janitors handle git operations within world of git.
+
+**********
+Background
+**********
+
+Git Utils combines most of boring and sickening commands that you need to do
+with git. 
+
+Definition
+==========
+gittish: Having the characteristics or likeness of a git. Something sickening.
+Hence the name ``gtsh`` (gittish).
+
+Run gtsh
+--------
+``gtsh`` is a python wrapper for `Git <https://git-scm.com/>`__ to run tasks
+that require obscure magic. Tool documents itself.
+
+Installation
+============
+
+``pip3 install gtsh``
+
+Documentation
+-------------
+- `Command Reference <docs/COMMANDS.rst>`__
+- `Contributing <CONTRIBUTING.rst>`__
+
