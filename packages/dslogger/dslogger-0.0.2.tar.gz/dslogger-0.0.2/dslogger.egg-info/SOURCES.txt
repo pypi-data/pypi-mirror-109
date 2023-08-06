@@ -1,0 +1,6 @@
+setup.py
+dslogger.egg-info/PKG-INFO
+dslogger.egg-info/SOURCES.txt
+dslogger.egg-info/dependency_links.txt
+dslogger.egg-info/requires.txt
+dslogger.egg-info/top_level.txt
