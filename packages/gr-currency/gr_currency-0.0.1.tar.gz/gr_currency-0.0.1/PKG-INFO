@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gr_currency
+Version: 0.0.1
+Summary: Real Time currency converter, Internet connection required
+Home-page: https://github.com/greatRaksin/gr_currency
+Author: Great Raksin
+Author-email: greatRaksin@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+## CurrencyConverter GUI Library
+

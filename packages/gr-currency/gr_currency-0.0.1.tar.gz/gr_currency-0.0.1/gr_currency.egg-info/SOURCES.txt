@@ -1,0 +1,9 @@
+README.md
+setup.py
+converter/__init__.py
+converter/currency.py
+gr_currency.egg-info/PKG-INFO
+gr_currency.egg-info/SOURCES.txt
+gr_currency.egg-info/dependency_links.txt
+gr_currency.egg-info/requires.txt
+gr_currency.egg-info/top_level.txt
