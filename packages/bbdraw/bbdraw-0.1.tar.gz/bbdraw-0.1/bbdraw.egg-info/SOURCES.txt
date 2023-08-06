@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+bbdraw/__init__.py
+bbdraw/bbdraw.py
+bbdraw/color.py
+bbdraw/polygon.py
+bbdraw/text.py
+bbdraw.egg-info/PKG-INFO
+bbdraw.egg-info/SOURCES.txt
+bbdraw.egg-info/dependency_links.txt
+bbdraw.egg-info/requires.txt
+bbdraw.egg-info/top_level.txt
