@@ -1,0 +1,3 @@
+[console_scripts]
+jpipe = jpipe:jpipe_main
+
