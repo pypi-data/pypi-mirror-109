@@ -1,0 +1,9 @@
+numpy
+
+[dev]
+sphinx
+
+[laz]
+
+[laz:platform_system != "Windows"]
+lazperf
