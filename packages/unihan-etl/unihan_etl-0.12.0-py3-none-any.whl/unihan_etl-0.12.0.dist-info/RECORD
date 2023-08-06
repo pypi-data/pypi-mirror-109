@@ -1,0 +1,14 @@
+unihan_etl/__about__.py,sha256=HPcBy6oCaezqD33rB4YAcN3gb7eWzHeOQzjTi-2prlY,529
+unihan_etl/__init__.py,sha256=ExS-7xKL8Zc5ogZQkfuRtd7eS83f2WdMApWh4Z9ssvQ,35
+unihan_etl/__main__.py,sha256=zE60oRV1vu53AkaD3Dw-1lwaRemqUi1y1S8WOSy8eYk,377
+unihan_etl/_compat.py,sha256=_2HosGGaOzB1dIT0XF9a-nszVtHCxtS21nDzT3kubL0,789
+unihan_etl/constants.py,sha256=Zd02KDtvjrrS0HvYqoxMmQgt-9OPUONOGaftfZk93v8,4532
+unihan_etl/expansion.py,sha256=A9YPtTOo4a3rdnyKiQSDtnqfVEOpLyEMCxbtPOats0c,9809
+unihan_etl/process.py,sha256=9r_uG8jackCxYx3hRvqMaSEbEc0gC5lXVjYsBqokoDs,16230
+unihan_etl/test.py,sha256=Try4UoClGFTufUQ-DBbmZt9H8fg_4ue2pJDVHzgF7Lo,495
+unihan_etl/util.py,sha256=iQen88HwQtKSfbpH1pfzCwcoecGrWA8m95WHFyU56Rc,3030
+unihan_etl-0.12.0.dist-info/entry_points.txt,sha256=I6zqt8vduHjUjgNWyO-DKVj3YhuNZ_d1gtNGzcD0DgU,54
+unihan_etl-0.12.0.dist-info/LICENSE,sha256=wkdbbj851fxu6xaBpG1Kch-jZb9hrWIeut1GMN4fVKw,1094
+unihan_etl-0.12.0.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+unihan_etl-0.12.0.dist-info/METADATA,sha256=ulmE4UjpgQXmFrFervpvTCOuOviBV-IPNJjl24QgNUE,11731
+unihan_etl-0.12.0.dist-info/RECORD,,
