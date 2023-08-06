@@ -1,0 +1,12 @@
+README.md
+bitmex_websocket.py
+main.py
+setup.py
+bitmex_ws_alpha.egg-info/PKG-INFO
+bitmex_ws_alpha.egg-info/SOURCES.txt
+bitmex_ws_alpha.egg-info/dependency_links.txt
+bitmex_ws_alpha.egg-info/requires.txt
+bitmex_ws_alpha.egg-info/top_level.txt
+util/__init__.py
+util/api_key.py
+util/subscriptions.py
