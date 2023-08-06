@@ -1,0 +1,13 @@
+txtbcGen/Model.py,sha256=53yavQpJd7xx6Yfivy4rPuSwygxA17ouc51uVR6xDx4,7999
+txtbcGen/__init__.py,sha256=oR5ifxE4TsckXEwLNM4kK4Y2YyRMguM9khyKxl0K8hI,24
+txtbcGen/reactions/Degradation.py,sha256=NAJwH4M18Tua1u0sstxjya0enx2GAAmtfv_-SpkeLmk,1710
+txtbcGen/reactions/MassAction.py,sha256=l4MJjMm3__AH4B2ZDprU_GKVx_OG8qHZz6ROF1s7weQ,1375
+txtbcGen/reactions/MichaelisMenten.py,sha256=7ECJXF7p8fVGMWjSS_bj6zLvvdaLaHTZyzXnLxA3dkQ,1357
+txtbcGen/reactions/MichaelisMentenGeneral.py,sha256=lvUrrd0haQFa7OrR71d6Th_9FMVS69ufOP05WzQQbHo,6189
+txtbcGen/reactions/Reactions.py,sha256=KVVGw3Mahb1pjBrin7IlSOV3GPEFpkQA3YuMJ4_2Vqg,913
+txtbcGen/reactions/Synthesis.py,sha256=Oadop649lBPUlqzxWlwLoXNbiz-x-BQjx4z1Bu8Nu9A,587
+txtbcGen/reactions/__init__.py,sha256=zA4K8WLJzFh-SuX9U3UD1mr0S7rt3vchv9o6GK1rkDs,246
+txtbcGen-0.0.4.dist-info/METADATA,sha256=OnN50V0kXp9VFgpSSKabloaz9IxEKMNXs6FjP68hjMI,581
+txtbcGen-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+txtbcGen-0.0.4.dist-info/top_level.txt,sha256=8gdwWPyhwTbVtG4cuBdyAM8CrxC7wrAmbAHKIkNB6zA,9
+txtbcGen-0.0.4.dist-info/RECORD,,
