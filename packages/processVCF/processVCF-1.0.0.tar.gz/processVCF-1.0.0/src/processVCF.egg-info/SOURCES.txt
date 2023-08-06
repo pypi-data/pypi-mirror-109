@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/processVCF.egg-info/PKG-INFO
+src/processVCF.egg-info/SOURCES.txt
+src/processVCF.egg-info/dependency_links.txt
+src/processVCF.egg-info/top_level.txt
+src/processvcf/Process_VCF.py
+src/processvcf/__init__.py
