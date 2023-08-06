@@ -1,0 +1,6 @@
+setup.py
+awesomeTaskPy/__init__.py
+awesomeTaskPy.egg-info/PKG-INFO
+awesomeTaskPy.egg-info/SOURCES.txt
+awesomeTaskPy.egg-info/dependency_links.txt
+awesomeTaskPy.egg-info/top_level.txt
