@@ -1,0 +1,16 @@
+COPYING
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pyfastani/__init__.py
+pyfastani/_fastani.pyx
+pyfastani/_utils.cpp
+pyfastani.egg-info/PKG-INFO
+pyfastani.egg-info/SOURCES.txt
+pyfastani.egg-info/dependency_links.txt
+pyfastani.egg-info/not-zip-safe
+pyfastani.egg-info/top_level.txt
+pyfastani/tests/__init__.py
+pyfastani/tests/minifasta.py
+pyfastani/tests/test_mapper.py
