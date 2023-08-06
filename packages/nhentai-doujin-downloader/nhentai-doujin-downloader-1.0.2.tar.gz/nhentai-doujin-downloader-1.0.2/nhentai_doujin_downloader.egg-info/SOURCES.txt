@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+nHentaiDoujinDownloader/__init__.py
+nhentai_doujin_downloader.egg-info/PKG-INFO
+nhentai_doujin_downloader.egg-info/SOURCES.txt
+nhentai_doujin_downloader.egg-info/dependency_links.txt
+nhentai_doujin_downloader.egg-info/requires.txt
+nhentai_doujin_downloader.egg-info/top_level.txt

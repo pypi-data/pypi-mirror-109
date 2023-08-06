@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: nhentai-doujin-downloader
+Version: 1.0.2
+Summary: A program that downloads Doujins from nHentai as JPEG files
+Home-page: UNKNOWN
+Author: Kazuto Kirito Kirigaya
+Author-email: kirito_kazuto_kirigaya@protonmail.com
+License: MIT
+Description: This is a simple program that allows you to download Doujins from nHentai. It will save the Doujins as JPEG files, and will store them in the current directory. It will log to the console the page numbers that have been downloaded whilst the process is running, with a final message once the process has terminated successfully.
+        
+        
+        Change Log
+        ==========
+        
+        1.0.1 (16/06/2021)
+        -------------------
+        - Initial release. Hope you like it!
+Keywords: downloader
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
