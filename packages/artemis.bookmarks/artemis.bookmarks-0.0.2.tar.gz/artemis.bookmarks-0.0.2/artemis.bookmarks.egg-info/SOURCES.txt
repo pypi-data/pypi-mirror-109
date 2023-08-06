@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+artemis.bookmarks.egg-info/PKG-INFO
+artemis.bookmarks.egg-info/SOURCES.txt
+artemis.bookmarks.egg-info/dependency_links.txt
+artemis.bookmarks.egg-info/requires.txt
+artemis.bookmarks.egg-info/top_level.txt
+bookmarks/__init__.py
+bookmarks/app.py
+bookmarks/cli.py
+bookmarks/config.py
+bookmarks/core.py
+bookmarks/db.py
+bookmarks/web.py

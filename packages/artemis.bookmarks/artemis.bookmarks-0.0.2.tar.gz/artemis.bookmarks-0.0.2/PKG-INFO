@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: artemis.bookmarks
+Version: 0.0.2
+Summary: a small bookmark api
+Home-page: https://git.artemix.space/?p=bookmarks;a=summary
+Author: root
+Author-email: pypi@artemix.org
+License: CNPLv6
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bookmarks
+
+![trans rights!](https://awoo.systems/trans_rights_badge.svg)
+
+a small bookmark api
+
+## Quickstart
+
+```
+$ python -m pip install artemis.bookmarks
+$ export FLASK_APP=bookmarks.app
+$ python -m flask db:init
+$ python -m flask run
+```
+
+## Configuration
+
+By default, the DB is configured to stay in RAM, so it simply won't work.
+
+The configuration file's name is `bookmarks.toml`, and it can reside in the following paths.
+
+- `./bookmarks.toml`
+- `~/.config/bookmarks/bookmarks.toml`
+- `~/.config/bookmarks.toml`
+- `/etc/bookmarks/bookmarks.toml`
+- `/etc/bookmarks.toml`
+
+### Example configuration
+
+```toml
+SQLALCHEMY_DATABASE_URI='sqlite:////usr/share/bookmarks.db'
+SERVER_NAME='bookmarks.example.com'
+```
+
+You need to check your WSGI runner's configuration to configure its listen interface.
+
+

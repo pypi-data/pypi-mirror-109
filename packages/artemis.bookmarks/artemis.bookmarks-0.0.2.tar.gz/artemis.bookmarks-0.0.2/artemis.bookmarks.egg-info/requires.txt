@@ -1,0 +1,4 @@
+python-slugify
+Flask
+flask_sqlalchemy
+toml
