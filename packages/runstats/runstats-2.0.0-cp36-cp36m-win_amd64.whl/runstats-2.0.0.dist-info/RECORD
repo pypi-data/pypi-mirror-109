@@ -1,0 +1,9 @@
+runstats/__init__.py,sha256=d0mEbVBikWAVGtn1_7Dqt1qheHXnlp7ZQt5NMFUohiA,491
+runstats/_core.cp36-win_amd64.pyd,sha256=DC8r9aeeAOunSVxWr3Ctc20Gjb3zcFHVBvAQnLH-dkg,177664
+runstats/_core.py,sha256=RrlUGLdfINycCrdQ-LpEOiQgJlRNFR4yH8WKxfRK8Kk,16798
+runstats/core.py,sha256=RrlUGLdfINycCrdQ-LpEOiQgJlRNFR4yH8WKxfRK8Kk,16798
+runstats-2.0.0.dist-info/LICENSE,sha256=Wg0eqMY3DEBmkzC7QP6gi4L_zW49nlPV83vas7b_6RA,571
+runstats-2.0.0.dist-info/METADATA,sha256=hbYVvndhc_cnwqzOObyFTlvzzgh_LeLbVHG7WVDUAFg,11876
+runstats-2.0.0.dist-info/WHEEL,sha256=epucrC2yyYTysDCMzXuz8eGMTMKryzRfNOvMGdslbjc,101
+runstats-2.0.0.dist-info/top_level.txt,sha256=XlbOiIriFU1IHQjSps6CrnnHWDNqa-PTFmymrMrTTxc,9
+runstats-2.0.0.dist-info/RECORD,,
