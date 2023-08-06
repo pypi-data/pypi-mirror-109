@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sphinx-hyperhelp
+Version: 0.1.0
+Summary: Builder for Sphinx documentation, to the HyperHelp format, for Sublime Text reading
+License: BSD-3-Clause
+Author: Guillaume Wenzek
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Sphinx (>=4.0.2,<5.0.0)
+Requires-Dist: sphinxcontrib-websupport (>=1.2.4,<2.0.0)
