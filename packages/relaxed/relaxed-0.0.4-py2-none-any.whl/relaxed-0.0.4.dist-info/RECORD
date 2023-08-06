@@ -1,0 +1,15 @@
+relaxed/__init__.py,sha256=ystdmbLyPmOJeVs92ARotUZMdE-f9aXOrfUQAKy9u8k,111
+relaxed/_types.py,sha256=O6RgMPHjxXkcb4X2IJ0APGtOQpHA7vpg10_M4xfd-A4,580
+relaxed/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+relaxed/fit/__init__.py,sha256=nOVDC7IKwe5W6ru3rtbXGyWXYcVhVR6v-1G4jT1sZOg,72
+relaxed/fit/constrained.py,sha256=RDKOCBTeyzDWTSSMtRAiUVgAL7UjCrOBepDxF7Cw9MY,3636
+relaxed/fit/minuit_transforms.py,sha256=94FAy1NWI96gMQSzEUYq9MInhMI5CDIe_MSu-ZSJ13Y,1148
+relaxed/infer/__init__.py,sha256=NA_nZ9fefHKCnOLom5TmSZW7d-VV2Fwv3tseBpeHPRI,65
+relaxed/infer/hypotest.py,sha256=ff_LEU_GzOeM3uQOSzKHp-N8freODrxRvV3KgqPnemE,2844
+relaxed/ops/__init__.py,sha256=oFgSA4n9aopjYbFHNXs1FLZ7JugsAOpDtCh4-WxCD9k,57
+relaxed/ops/histograms.py,sha256=gPGTxBgDsMEfHXit3eMO-rj8CPXLjEgPqjOjPmvhpO4,2259
+relaxed-0.0.4.dist-info/LICENSE,sha256=KPpalWEXnrqJW0wxDDJydLE-Dm9dD12qESynLpWFUgA,1524
+relaxed-0.0.4.dist-info/METADATA,sha256=GPnJEinp9oGS-eTQmgm25Nw9mhZKoH3HrI6H15GPV38,3925
+relaxed-0.0.4.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+relaxed-0.0.4.dist-info/top_level.txt,sha256=j7N3cparpryrK4t48wacBEHeqyd-j3NtZB97hY726TA,8
+relaxed-0.0.4.dist-info/RECORD,,
