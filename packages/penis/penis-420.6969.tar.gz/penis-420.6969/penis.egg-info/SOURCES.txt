@@ -1,0 +1,5 @@
+setup.py
+penis.egg-info/PKG-INFO
+penis.egg-info/SOURCES.txt
+penis.egg-info/dependency_links.txt
+penis.egg-info/top_level.txt
