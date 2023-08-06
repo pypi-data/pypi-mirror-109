@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+fuzzy_toolbox/__init__.py
+fuzzy_toolbox.egg-info/PKG-INFO
+fuzzy_toolbox.egg-info/SOURCES.txt
+fuzzy_toolbox.egg-info/dependency_links.txt
+fuzzy_toolbox.egg-info/requires.txt
+fuzzy_toolbox.egg-info/top_level.txt
+fuzzy_toolbox/mamdani/__init__.py
+fuzzy_toolbox/mamdani/mamdani.py
+fuzzy_toolbox/mamdani/mf.py
+fuzzy_toolbox/mamdani/rule.py
+fuzzy_toolbox/mamdani/variable.py
+fuzzy_toolbox/sugeno/__init__.py
+fuzzy_toolbox/sugeno/sugeno.py
