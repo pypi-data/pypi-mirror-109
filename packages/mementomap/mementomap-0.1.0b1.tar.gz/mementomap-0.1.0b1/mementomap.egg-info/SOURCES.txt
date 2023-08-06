@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+mementomap/__init__.py
+mementomap/__main__.py
+mementomap/cli.py
+mementomap.egg-info/PKG-INFO
+mementomap.egg-info/SOURCES.txt
+mementomap.egg-info/dependency_links.txt
+mementomap.egg-info/entry_points.txt
+mementomap.egg-info/top_level.txt
