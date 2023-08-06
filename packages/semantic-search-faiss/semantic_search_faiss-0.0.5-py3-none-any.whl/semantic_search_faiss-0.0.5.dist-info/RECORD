@@ -1,0 +1,10 @@
+semanticsearch/__init__.py,sha256=v0zqRembIW__d7HVDd71J2eoXGtALnzdY8JdBVk-BPY,21
+semanticsearch/config.py,sha256=nbskSNjSxM7oaqRywvY96ZB1ReOvpgAE2Qtb-3JwZyA,233
+semanticsearch/pretrained.py,sha256=ww9uF_QA_llWhw9Lcep2-VRxSz4B6fNluTVTTKMuJXA,1576
+semanticsearch/search.py,sha256=aM0oay_euCcFt3c93KR6hRp_JZg7dxwTrkndjt7s35U,1560
+semanticsearch/utils.py,sha256=wqpF7O7hMu8kt2A2IBeW2FjiDlSms9j7rApLY8zZHIs,1553
+semantic_search_faiss-0.0.5.dist-info/LICENSE,sha256=l1iKiT1ZbNK2h7zMttZUdOl6pJhBoVE8P0LQKIGVEhM,1063
+semantic_search_faiss-0.0.5.dist-info/METADATA,sha256=m21aYUatabw22tJAmRqq-YL8goIp1JW2c5MUZzleYgw,4219
+semantic_search_faiss-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+semantic_search_faiss-0.0.5.dist-info/top_level.txt,sha256=4YTPYD_z9RjqIeRILp1EvqE6oJqolOofIsXXNUzHNSA,15
+semantic_search_faiss-0.0.5.dist-info/RECORD,,
