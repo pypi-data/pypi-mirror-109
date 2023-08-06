@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+dango.egg-info/PKG-INFO
+dango.egg-info/SOURCES.txt
+dango.egg-info/dependency_links.txt
+dango.egg-info/top_level.txt
