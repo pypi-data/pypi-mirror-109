@@ -1,0 +1,10 @@
+mp_nerf/__init__.py,sha256=BE92SFGS9luzW8BijX56YOy_3WqxymanJpGvHzPRZ1w,67
+mp_nerf/kb_proteins.py,sha256=JTtxMlhq-uiBRMCmjtA-oXYdsJQvwjeVQy61ycEKSmQ,47487
+mp_nerf/massive_pnerf.py,sha256=FhuP3JBpYcWZnp-MNucDCoOHQmRbA4na5uiikPtwtHg,2825
+mp_nerf/proteins.py,sha256=fxUQJepLf0qWm359zRgbDWBHt0xVJZerJLq4cSe69VM,17025
+mp_nerf/utils.py,sha256=neSvYPohs2A-xEFJsIyT6H4ZkovJshSZusDWd3O8ero,4961
+mp_nerf-0.1.11.dist-info/LICENSE,sha256=Wh38TnmuuuwlGxijk-6pUHFUIHfuViDf4ds06kr-UWs,1555
+mp_nerf-0.1.11.dist-info/METADATA,sha256=taapdRMdaJLIQ8MaHO5jBKtpFSiLgEOtD9OboYl6CU4,677
+mp_nerf-0.1.11.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mp_nerf-0.1.11.dist-info/top_level.txt,sha256=z49q8RV1Egmpy5OATeTazWd2voxp9p_r1mm8cNObLtQ,8
+mp_nerf-0.1.11.dist-info/RECORD,,
