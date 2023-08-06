@@ -1,0 +1,7 @@
+LICENSE
+README.rst
+setup.py
+szw_test.egg-info/PKG-INFO
+szw_test.egg-info/SOURCES.txt
+szw_test.egg-info/dependency_links.txt
+szw_test.egg-info/top_level.txt
