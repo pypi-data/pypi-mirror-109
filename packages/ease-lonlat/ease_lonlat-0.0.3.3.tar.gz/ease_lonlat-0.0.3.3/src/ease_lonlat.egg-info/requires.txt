@@ -1,0 +1,5 @@
+pyproj
+
+[testing]
+pytest
+numpy
