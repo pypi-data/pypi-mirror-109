@@ -1,0 +1,8 @@
+README.md
+setup.py
+aiohttp_extracts/__init__.py
+aiohttp_extracts.egg-info/PKG-INFO
+aiohttp_extracts.egg-info/SOURCES.txt
+aiohttp_extracts.egg-info/dependency_links.txt
+aiohttp_extracts.egg-info/requires.txt
+aiohttp_extracts.egg-info/top_level.txt
