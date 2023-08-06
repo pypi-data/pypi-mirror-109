@@ -1,0 +1,6 @@
+requests
+cryptography
+pyjwt==1.7.1
+colorama
+sseclient-py
+six
