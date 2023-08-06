@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: txtbcGen
+Version: 0.0.2
+Summary: The first upload of the txtbcGen package
+Home-page: UNKNOWN
+Author: Yunduo Lan
+Author-email: l810577993@gmail.com
+License: UNKNOWN
+Keywords: python,txtbc
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+The first upload of the txtbcGen package which generates .txtbc files to feed into MATLAB IQM ODE modelling
+
+
