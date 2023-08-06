@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/andrewfoo/__init__.py
+src/andrewfoo/list_ports.py
+src/andrewfoo.egg-info/PKG-INFO
+src/andrewfoo.egg-info/SOURCES.txt
+src/andrewfoo.egg-info/dependency_links.txt
+src/andrewfoo.egg-info/requires.txt
+src/andrewfoo.egg-info/top_level.txt
