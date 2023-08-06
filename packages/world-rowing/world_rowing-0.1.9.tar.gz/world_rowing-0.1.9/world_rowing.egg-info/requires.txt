@@ -1,0 +1,6 @@
+numpy
+scipy
+pandas
+matplotlib
+requests
+cmd2>=2.0.0
