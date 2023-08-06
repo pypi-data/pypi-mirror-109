@@ -1,0 +1,9 @@
+README.md
+setup.py
+micro_core/__init__.py
+micro_core.egg-info/PKG-INFO
+micro_core.egg-info/SOURCES.txt
+micro_core.egg-info/dependency_links.txt
+micro_core.egg-info/entry_points.txt
+micro_core.egg-info/requires.txt
+micro_core.egg-info/top_level.txt
