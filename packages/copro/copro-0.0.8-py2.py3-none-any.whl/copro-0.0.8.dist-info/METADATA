@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: copro
+Version: 0.0.8
+Summary: modelling interplay between conflict and climate
+Home-page: https://github.com/JannisHoch/copro
+Author: Jannis M. Hoch
+Author-email: j.m.hoch@uu.nl
+License: MIT
+Keywords: conflict,climate,machine learning,projections
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: Click (>=7.0)
+Requires-Dist: xarray (==0.15.1)
+Requires-Dist: pandas (==1.0.3)
+Requires-Dist: rasterio (>=1.1.0)
+Requires-Dist: rioxarray (>=0.0.26)
+Requires-Dist: rasterstats (>=0.14)
+Requires-Dist: geopandas (>=0.8.0)
+Requires-Dist: numpy (==1.18.1)
+Requires-Dist: scikit-learn (>=0.22.1)
+Requires-Dist: seaborn (>=0.11)
+
+Python-model build on scikit-learn functions, designed to facilitate the set-up, execution, and evaluation of machine-learning models for the study of the climate-conflict nexus
+
