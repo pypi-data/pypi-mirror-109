@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: serverless-tools
+Version: 0.0.1
+Summary: Useful tools for serverless AWS and Azure functions
+Home-page: https://github.com/dherls/serverless-tools
+Author: Dan Herlihy
+Author-email: python@danherlihy.me
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Serverless Tools for Python
+
+A collection of useful decorators that make developing serverless applications in AWS and Azure easier.
+
+

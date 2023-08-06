@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/serverless_tools/__init__.py
+src/serverless_tools.egg-info/PKG-INFO
+src/serverless_tools.egg-info/SOURCES.txt
+src/serverless_tools.egg-info/dependency_links.txt
+src/serverless_tools.egg-info/top_level.txt
