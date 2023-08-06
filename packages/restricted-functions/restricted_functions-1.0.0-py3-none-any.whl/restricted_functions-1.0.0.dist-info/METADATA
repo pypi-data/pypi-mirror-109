@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: restricted-functions
+Version: 1.0.0
+Summary: Restricted-functions is a package for Python that allows you to deny dangerous functions.
+Home-page: https://github.com/donno2048/restricted-functions
+Author: Elisha Hollander, Alexander Bina
+License: MIT
+Project-URL: Documentation, https://github.com/donno2048/restricted-functions#readme
+Project-URL: Bug Reports, https://github.com/donno2048/restricted-functions/issues
+Project-URL: Source Code, https://github.com/donno2048/restricted-functions
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# Restricted-functions
+Restricted-functions is a package for Python that allows you to deny dangerous functions.<br>
+By default, restricted functions prevents Python code from deleting directories or changing file permissions. 
+
+
