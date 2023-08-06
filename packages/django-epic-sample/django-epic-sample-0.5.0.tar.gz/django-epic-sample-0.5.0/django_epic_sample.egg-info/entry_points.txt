@@ -1,0 +1,4 @@
+[console_scripts]
+epic-bom = epic_sample.scripts.epic_bom:main
+epic-footprints = epic_sample.scripts.epic_footprints:main
+
