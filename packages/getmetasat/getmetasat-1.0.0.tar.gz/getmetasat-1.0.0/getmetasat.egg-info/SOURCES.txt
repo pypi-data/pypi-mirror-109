@@ -1,0 +1,14 @@
+README.md
+setup.py
+getmetasat/__init__.py
+getmetasat/autenticacion.py
+getmetasat/descargamasiva.py
+getmetasat/fiel.py
+getmetasat/solicitadescarga.py
+getmetasat/validacioncfdi.py
+getmetasat/verificasolicituddescarga.py
+getmetasat.egg-info/PKG-INFO
+getmetasat.egg-info/SOURCES.txt
+getmetasat.egg-info/dependency_links.txt
+getmetasat.egg-info/requires.txt
+getmetasat.egg-info/top_level.txt
