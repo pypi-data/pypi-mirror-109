@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/__init__.py
+src/vk_api_for_groups.py
+src/vk_api_for_groups.egg-info/PKG-INFO
+src/vk_api_for_groups.egg-info/SOURCES.txt
+src/vk_api_for_groups.egg-info/dependency_links.txt
+src/vk_api_for_groups.egg-info/requires.txt
+src/vk_api_for_groups.egg-info/top_level.txt
