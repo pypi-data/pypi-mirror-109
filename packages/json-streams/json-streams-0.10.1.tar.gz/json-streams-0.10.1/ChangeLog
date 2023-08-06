@@ -1,0 +1,197 @@
+CHANGES
+=======
+
+v0.10.1
+-------
+
+* Bump version: 0.10.0 → 0.10.1
+* style: use different Pathlike on different python
+* style: supress pylint false warning
+* fix: remove ujson
+
+v0.10.0
+-------
+
+* Bump version: 0.9.0 → 0.10.0
+* Bump version: 0.8.0 → 0.9.0
+* Bump version: 0.7.2 → 0.8.0
+* feat: use pathlike from types
+* test: use utility instead
+* refactor: move utils
+* ci: change name
+* style: ignore types for ijson
+* Create codeql-analysis.yml
+* ci: checkout all history in publish
+
+v0.7.2
+------
+
+* Bump version: 0.7.1 → 0.7.2
+* refactor: remove type stubs
+* docs: remove travis badge
+
+v0.7.1
+------
+
+* Bump version: 0.7.0 → 0.7.1
+* ci: disable ujson backend
+* test: update facit for test
+* refactor: use dumps in dump
+* ci: remove travis
+* refactor: fix mypy and pylint issues
+* build: add types-orjson
+* style: supress pylint
+* ci: disable ujson
+* build: add mypy
+* test: clean tests
+* ci: fix typo in workflows
+* ci: don't fail on lint errors
+* build: add target for finding refactorings
+* style: fix pylint issues
+* test: ignore untyped pytest
+* ci: refactor workflows
+* build: refactor targets
+* Bump version: 0.6.0 → 0.7.0
+* feat: add type stubs
+* build: add mypy
+* test: clean tests
+* ci: fix typo in workflows
+* ci: don't fail on lint errors
+* build: add target for finding refactorings
+* style: fix pylint issues
+* test: ignore untyped pytest
+* ci: refactor workflows
+* build: refactor targets
+
+v0.7.0
+------
+
+* Bump version: 0.6.0 → 0.7.0
+* feat: add type stubs
+* fix: work
+* ci: disable ujson
+* feat: separate backends
+
+v0.6.0
+------
+
+* Bump version: 0.5.1 → 0.6.0
+
+v0.5.1
+------
+
+* Bump version: 0.5.0 → 0.5.1
+* feat: rename stdout
+
+v0.5.0
+------
+
+* Bump version: 0.4.2 → 0.5.0
+* feat: allow to default stdin/stdout
+
+v0.4.2
+------
+
+* Bump version: 0.4.1 → 0.4.2
+* ci: add tests for python 3.9
+
+v0.4.1
+------
+
+* Bump version: 0.4.0 → 0.4.1
+* test: rewrite test
+
+v0.4.0
+------
+
+* Bump version: 0.3.1 → 0.4.0
+* feat add sinks
+* feat: add top-level sink
+* test: simplify sink tests
+* docs: add info about deployment
+* fix: correct typo
+* feat: sink work
+* feat: add stubs for array\_sink
+* feat: broken
+* test: add sink test
+
+v0.3.1
+------
+
+* Bump version: 0.3.0 → 0.3.1
+* ci: upgrade pip inside venv in github actions
+
+v0.3.0
+------
+
+* Bump version: 0.2.6 → 0.3.0
+* build: update bumpversion config
+* feat: use Path for file\_names
+* refactor: remove unused imports
+* docs: add docstrings
+
+v0.2.6
+------
+
+* Bump version: 0.2.5 → 0.2.6
+* fix typo
+
+v0.2.5
+------
+
+* Bump version: 0.2.4 → 0.2.5
+* update travis
+* update travis
+* update travis
+* update travis
+
+v0.2.4
+------
+
+* Bump version: 0.2.3 → 0.2.4
+* update travis and codecov links
+
+v0.2.3
+------
+
+* Bump version: 0.2.2 → 0.2.3
+* update github actions badge
+
+v0.2.2
+------
+
+* Bump version: 0.2.1 → 0.2.2
+* update readme
+
+v0.2.1
+------
+
+* Bump version: 0.2.0 → 0.2.1
+* adjust publish step
+
+v0.2.0
+------
+
+* Bump version: 0.1.1 → 0.2.0
+* lint with pylint in github actions
+* add bump2version
+* use simplejson
+* disable windows build
+* fix remove invariants in jsonlibs
+* always use binary file
+* load orjson, ujson or json
+* update ci config
+* fix errors
+* use orjson
+* add dumps stub
+* test dump\_to\_file
+
+v0.1.1
+------
+
+* enable publish
+* add test
+* rename test file
+* comment out publish job
+* fix tests
+* initial commit
