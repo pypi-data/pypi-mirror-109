@@ -1,0 +1,6 @@
+[
+  "pkg/discover.py::pkg.discover.auto_discover",
+  "pkg/licensing/__init__.py::pkg.licensing._License",
+  "pkg/licensing/__init__.py::pkg.licensing.get_license",
+  "pkg/listing.py::pkg.listing.get_distribution"
+]
