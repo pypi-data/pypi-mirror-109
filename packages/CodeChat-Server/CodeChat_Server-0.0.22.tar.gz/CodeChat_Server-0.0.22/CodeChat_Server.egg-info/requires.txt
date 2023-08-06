@@ -1,0 +1,13 @@
+CodeChat
+Flask
+markdown
+Sphinx
+strictyaml
+Thrift
+websockets
+
+[test]
+mypy
+pytest
+requests
+tox
