@@ -1,0 +1,9 @@
+boggle_solver/__init__.py,sha256=gXFXI4Vv9YljDde7S6GTQQh3EJ1L2PfCWaMOBV73hV8,35
+boggle_solver/grid.py,sha256=Gs6UtexE53GNPaxrrftOV9rHyvzdcnKDrcQhTg4UMHY,6501
+boggle_solver/letter.py,sha256=oxPWUL8DF-2i1ltaBw-8qeGuxY2-TdePc9J5YTydjgk,524
+boggle_solver/main.py,sha256=FLU5AHrkWIKKG1uxu2-at97QxlKTz9_e1tiK4ED5slc,836
+boggle_solver/words.txt,sha256=fYUMoZtAkFT2voCeqVJA-mydJtZvWUIiLA6wdHlW0Ro,542695
+boggle_solver-1.0.dist-info/METADATA,sha256=6_5afkS0FRJownk4xmk9LqdPlSk_IgCWaVqy9kpKy_8,2028
+boggle_solver-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+boggle_solver-1.0.dist-info/top_level.txt,sha256=sfQ_7lEZUwhWzX53811wZIHqV4_d6q39_RtRs8bgUxI,14
+boggle_solver-1.0.dist-info/RECORD,,
