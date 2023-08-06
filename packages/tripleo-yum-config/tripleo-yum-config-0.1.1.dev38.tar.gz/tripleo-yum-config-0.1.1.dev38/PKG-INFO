@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tripleo-yum-config
+Version: 0.1.1.dev38
+Summary: Updates yum configuration files (repo, modules, global configuration).
+Home-page: https://opendev.org/openstack/tripleo-repos/src/branch/master/tripleo-yum-config
+Author: Douglas Viroel
+Author-email: dviroel@redhat.com
+License: Apache-2.0
+Project-URL: Bug Tracker, https://launchpad.net/tripleo
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Updates yum configuration files (repo, modules, global configuration).
+
