@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+hastrofunc/hastrofunc.egg-info/PKG-INFO
+hastrofunc/hastrofunc.egg-info/SOURCES.txt
+hastrofunc/hastrofunc.egg-info/dependency_links.txt
+hastrofunc/hastrofunc.egg-info/top_level.txt
