@@ -1,0 +1,14 @@
+LICENSE
+LICENSE.rst
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+django_loader.egg-info/PKG-INFO
+django_loader.egg-info/SOURCES.txt
+django_loader.egg-info/dependency_links.txt
+django_loader.egg-info/requires.txt
+django_loader.egg-info/top_level.txt
+loader/__init__.py
+loader/loader.py
