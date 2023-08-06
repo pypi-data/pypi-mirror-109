@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: chrisCliTool
+Version: 1.0.0
+Summary: s3 push
+Home-page: https://test.com
+Author: Chris
+Author-email: huangyf0991@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#multiUpload: -p multi -s3 s3_name
+#singleUpload: --in file_name -s3 s3_name
+
