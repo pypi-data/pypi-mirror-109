@@ -1,0 +1,11 @@
+pyquotes/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+pyquotes/cli.py,sha256=7NorDAKRlahqvOgQe2lA6RZRNY8Xea9qgPSXFnzHh88,4440
+pyquotes/quotes.py,sha256=-9jwypTtQsAt_TjPzDeoe9yiL4GCuqYfGbIcfx76ESQ,3934
+pyquotes/settings.py,sha256=Z41k9D1Kttxz8uuBuPFKEUUwXSw284IXSKckNNdzt5k,6801
+pyquotes/transform.py,sha256=Y2DsPBqt4ysQUdeKNNUAaXqKEAeqw7j28SlFMw-tiBA,1849
+pyquotes-1.0.0.dist-info/LICENSE,sha256=uUS4V7Kf1xBBs9eOkqfCguc5O15t4SxAafqj0Hd4clg,1059
+pyquotes-1.0.0.dist-info/METADATA,sha256=9_Tu_0IgccfXgjbpGjIXU706WbH3XO7W2AGVRx607pA,4714
+pyquotes-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyquotes-1.0.0.dist-info/entry_points.txt,sha256=ai0JkaGhmpFNXtEURiSszJk-KV6hpwZXQB4JH_ZmCj0,48
+pyquotes-1.0.0.dist-info/top_level.txt,sha256=5QPg-gJ74VV0NR57ERjhTE324pViHVzkYUga0d7DDdA,9
+pyquotes-1.0.0.dist-info/RECORD,,
