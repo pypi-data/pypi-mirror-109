@@ -1,0 +1,6 @@
+Change Log
+==========
+
+1.0.1 (16/06/2021)
+-------------------
+- Initial release. Hope you like it!
