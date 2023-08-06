@@ -1,0 +1,3 @@
+[console_scripts]
+lk-get-tag = lk_compat_helper.commit_to_tag:main
+
