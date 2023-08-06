@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/MultiTable/__init__.py
+src/MultiTable/main.py
+src/MultiTable.egg-info/PKG-INFO
+src/MultiTable.egg-info/SOURCES.txt
+src/MultiTable.egg-info/dependency_links.txt
+src/MultiTable.egg-info/top_level.txt
