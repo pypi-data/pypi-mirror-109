@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+faslr.egg-info/PKG-INFO
+faslr.egg-info/SOURCES.txt
+faslr.egg-info/dependency_links.txt
+faslr.egg-info/requires.txt
+faslr.egg-info/top_level.txt
