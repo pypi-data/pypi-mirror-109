@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.coverage]
+
+  [tool.coverage.run]
+  branch = true
+  source = ['domestobot']
+  omit = ['*/__main__.py']
+
+  [tool.coverage.report]
+  exclude_lines = [
+      'pragma: no cover',
+      'pass',
+      'if TYPE_CHECKING.*',
+  ]
+  fail_under = 100
+  show_missing = true
