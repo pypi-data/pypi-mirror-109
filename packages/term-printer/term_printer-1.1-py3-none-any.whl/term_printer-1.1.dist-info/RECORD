@@ -1,0 +1,13 @@
+term_printer/__init__.py,sha256=uHEF18ztJdvwUxaS_OFBTH3xpvmPB2zLbPrWdsnA-SQ,1608
+term_printer/consts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+term_printer/consts/color.py,sha256=3gXRnhiVpQeY8E8jfzjpX75f_GzQt0eCNGha0F1Rw2Q,2157
+term_printer/consts/format.py,sha256=IyryUCFGEFiUT0xXPw5Mj6D_9HY6JTiE7CQAufsdWUY,742
+term_printer/objects/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+term_printer/objects/std_text.py,sha256=VeI03QgOy0CqA2_Y-oMPgTywK4W-CTJamYZ-PCcOOR4,1270
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_print.py,sha256=o84FvBrjLHEGhSdqt1U8cRKSbqTSZlp1PtjNQ6c5lX8,4341
+term_printer-1.1.dist-info/LICENSE,sha256=NzCG-RvWKJbiiLvRui8Mw7s-6FR1rsDEed56A1PsX08,11338
+term_printer-1.1.dist-info/METADATA,sha256=tax8PthS7SVQ-1Ol5pNCdahYzDs9OfmhW_WbOmLUDJc,6198
+term_printer-1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+term_printer-1.1.dist-info/top_level.txt,sha256=Tg1lqhqTjY-1DhcQ_nLZK46_KAf5Rfy-wH4RVYQW2Q4,19
+term_printer-1.1.dist-info/RECORD,,
