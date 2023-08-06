@@ -1,0 +1,8 @@
+pytest_logdog/__init__.py,sha256=Zn8tfVhCIpqNGyqISVzJcfUEkB_kVQZZHXzN7JP9UQU,163
+pytest_logdog/plugin.py,sha256=dKFL2PUH79HdVfcmISnAieOfd4nDyYDs5mLElEcYJq4,6012
+pytest_logdog-0.1.0.dist-info/LICENSE,sha256=bJ0mBWZYUhteDftgCyBA2iliYmgdZ-0xNjeeL5Qz4aQ,1071
+pytest_logdog-0.1.0.dist-info/METADATA,sha256=Sg8DU_tLU3j5_lfDEQqWp8KcXcXjMUfravedrkopvl0,1194
+pytest_logdog-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytest_logdog-0.1.0.dist-info/entry_points.txt,sha256=n_TtIb84x-1vLxehm0-GFZr4J85cY9_WT-HJHQzualo,42
+pytest_logdog-0.1.0.dist-info/top_level.txt,sha256=II0_NCGUTbNCx7vPKDN3c6gfwWI-bmNESAkxJpFzemg,14
+pytest_logdog-0.1.0.dist-info/RECORD,,
