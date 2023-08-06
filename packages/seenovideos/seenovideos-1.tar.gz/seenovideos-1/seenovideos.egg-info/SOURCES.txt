@@ -1,0 +1,16 @@
+.gitignore
+README.md
+demo.ipynb
+pusher.sh
+seenovideo.py
+setup.py
+.ipynb_checkpoints/demo-checkpoint.ipynb
+seenovideos.egg-info/PKG-INFO
+seenovideos.egg-info/SOURCES.txt
+seenovideos.egg-info/dependency_links.txt
+seenovideos.egg-info/top_level.txt
+src/__init__.py
+src/backbone.py
+src/helpers.py
+testVideos/movDemo.txt
+testVideos/song.mp3
