@@ -1,0 +1,8 @@
+README.md
+setup.py
+FBot/__init__.py
+FBot.egg-info/PKG-INFO
+FBot.egg-info/SOURCES.txt
+FBot.egg-info/dependency_links.txt
+FBot.egg-info/requires.txt
+FBot.egg-info/top_level.txt
