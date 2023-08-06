@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: primer-analyze-client
+Version: 0.0.3
+Summary: A client for interacting with Analyze
+Home-page: UNKNOWN
+Author: Connor Jennings
+Author-email: connor.jennings@primer.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: idna (==2.10)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: urllib3 (==1.26.5)
+
+UNKNOWN
+
+
