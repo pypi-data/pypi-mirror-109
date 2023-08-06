@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/qutil.egg-info/PKG-INFO
+src/qutil.egg-info/SOURCES.txt
+src/qutil.egg-info/dependency_links.txt
+src/qutil.egg-info/requires.txt
+src/qutil.egg-info/top_level.txt
