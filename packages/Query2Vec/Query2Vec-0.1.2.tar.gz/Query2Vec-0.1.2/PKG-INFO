@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Query2Vec
+Version: 0.1.2
+Summary: Query2Vec package using word2vec and tfidf
+Home-page: UNKNOWN
+Author: Maede Ashofteh Barabadi
+License: MIT
+Description: ‫در این پروژه با یک مدل query2vec ساخته ایم. این مدل، از یک پیکره متنی مدل word2vec را آموزش میدهد و همچنین idf کلمات را استخراج میکند.
+        ‫سپس با استفاده از خروجی مدل word2vec و استفاده از idf کلمات به عنوان وزنها، برای کوئری یک بردار میسازیم.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
