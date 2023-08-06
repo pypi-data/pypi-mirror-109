@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tiger_pkg
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/hongi1974/tiger_pkg
+Author: jh.lim
+Author-email: avein74@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+long_description
+

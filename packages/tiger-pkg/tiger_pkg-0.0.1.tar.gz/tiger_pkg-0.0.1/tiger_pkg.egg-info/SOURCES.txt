@@ -1,0 +1,6 @@
+setup.py
+tiger_pkg/__init__.py
+tiger_pkg.egg-info/PKG-INFO
+tiger_pkg.egg-info/SOURCES.txt
+tiger_pkg.egg-info/dependency_links.txt
+tiger_pkg.egg-info/top_level.txt
