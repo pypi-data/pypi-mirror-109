@@ -1,0 +1,13 @@
+pylsd2/__init__.py,sha256=TwwoS13Npar6tnloGe_XvRj5UZJ5EGhKuiUe-METlpc,255
+pylsd2/wrapper.py,sha256=5ARvO-5XKuGL4O4eEVHUxLOqHcGacZpm6cKeWaO0lS8,3791
+pylsd2/bindings/__init__.py,sha256=3t2yterAslpYr797_VfEH9A2LmAGPTBevONHARdR6oY,306
+pylsd2/bindings/fn_types.py,sha256=Q05_xC7VKVECa_1fWEt302rGtVViOuA5SoHlulHl41Q,1791
+pylsd2/bindings/lsd_ctypes.py,sha256=_d6Ks_8eJvlqZaRS7AxlyBKNB-tBcgJFJJXOA7cIOCw,1529
+pylsd2/lib/linux/liblsd.so,sha256=paXZPSgeKzt0eFftpVcBON6rzHqSZxlyAkShyEH_HVQ,44152
+pylsd2/lib/win32/x64/lsd.dll,sha256=VQwaekkpV5p44kp1TXB2cPWJa6W8dGvM-9_usyiOvEc,39424
+pylsd2/lib/win32/x86/lsd.dll,sha256=dBb7bKz7tAmb96kOEyxp499GCJs6lM5BejtmmKfpSiE,29696
+pylsd2-0.0.1.dist-info/LICENSE,sha256=472Qz98yXBiC4-UOZzUCMDo5sqCVs0yk5ZoUj2Gugkc,1325
+pylsd2-0.0.1.dist-info/METADATA,sha256=PaV-P_gCObLunlx4o557Fxb4tVO8lrdnq1xrBGSgdUg,309
+pylsd2-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pylsd2-0.0.1.dist-info/top_level.txt,sha256=kRMpHKY9W8vRoLXHLEctC-OvYSQfE4HlqHXpBAbbwSk,7
+pylsd2-0.0.1.dist-info/RECORD,,
