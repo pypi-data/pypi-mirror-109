@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "sumadora"
+version = "0.0.12"
+description = "Sumador básico"
+authors = ["Santiago Quiñones"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/lsantiago/DemoPackage"
+repository = "https://github.com/lsantiago/DemoPackage"
+keywords = ["calculadora", "sumadora"]
+
+
+[tool.poetry.scripts]
+sumadora = 'sumadora.__main__:cli'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.0.1"
+
+[tool.poetry.dev-dependencies]
+bump2version = "^1.0.1"
+isort = "^5.8.0"
+pytest = "^6.2.4"
+black = {version = "^21.6b0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
