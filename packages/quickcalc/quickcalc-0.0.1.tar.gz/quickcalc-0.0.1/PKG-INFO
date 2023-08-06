@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: quickcalc
+Version: 0.0.1
+Summary: This Package will help you calculate quickly
+Home-page: https://github.com/Kunal767/quickcalc
+Author: Kunal Gupta A.K.A Macstock Tech
+Author-email: kunalgupta8122@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Kunal767/quickcalc/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Quick Calc
+
+This package will help you Calculate Numbers Quickly.
+
+## How to Install it?
+
+## On Windows
+
+```
+pip install quickcalc
+```
+
+## On Linux:
+
+```
+sudo pip3 install quickcalc
+```
+
+## How to use it?
+
+### Initializing Package
+```
+from quickcalc import QuickCalc
+
+num_1 = 8
+num_2 = 1
+
+calc = QuickCalc(num_1, num_2)
+```
+
+### Adding Numbers
+```
+calc.addition()
+```
+
+### Substracting Numbers
+```
+calc.substraction()
+```
+
+### Multiplying Numbers
+```
+calc.multiplication()
+```
+
+### Dividing Numbers
+```
+calc.division()
+```
+
