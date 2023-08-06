@@ -1,0 +1,2 @@
+[console_scripts]
+searchdocs = searchdocs.__main__:main
