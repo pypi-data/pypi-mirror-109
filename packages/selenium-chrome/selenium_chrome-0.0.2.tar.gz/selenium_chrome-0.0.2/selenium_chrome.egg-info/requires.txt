@@ -1,0 +1,7 @@
+geckodriver-autoinstaller>=0.1.0
+kproxy>=0.0.2
+noraise>=0.0.26
+selenium>=3.141.0
+selenium-browser>=0.0.21
+undetected-chromedriver>=3.0.1
+xpath-utils>=0.0.2
