@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+py_admetric/__init__.py
+py_admetric/py_admetric.py
+py_admetric/utils.py
+py_admetric.egg-info/PKG-INFO
+py_admetric.egg-info/SOURCES.txt
+py_admetric.egg-info/dependency_links.txt
+py_admetric.egg-info/top_level.txt
