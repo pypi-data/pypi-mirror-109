@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: graphql-stitch
+Version: 0.1
+Summary: Edits a GraphQL schema to resolve false errors when passed into a schema linter.
+Home-page: https://github.com/Silidos/stitch
+Author: silidos
+Author-email: psnsilidos@gmail.com
+License: MIT
+Download-URL: https://github.com/Silidos/stitch/archive/refs/tags/v_01.tar.gz
+Description: UNKNOWN
+Keywords: GraphQL
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
