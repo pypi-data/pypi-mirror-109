@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+example_python_package_mate/__init__.py
+example_python_package_mate/accum.py
+example_python_package_mate/core.py
+example_python_package_mate.egg-info/PKG-INFO
+example_python_package_mate.egg-info/SOURCES.txt
+example_python_package_mate.egg-info/dependency_links.txt
+example_python_package_mate.egg-info/top_level.txt
+test/test_accum.py
+test/test_multi.py
+test/test_name.py
