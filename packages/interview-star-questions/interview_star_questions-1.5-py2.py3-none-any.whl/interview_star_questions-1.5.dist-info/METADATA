@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: interview-star-questions
+Version: 1.5
+Summary: Command Line Program that allows you to add, edit, and delete interview questions
+                and add related answers, notes and tips.
+Home-page: https://github.com/datapointchris/interview_questions
+Author: Chris Birch
+Author-email: datapointchris@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8.2
+
+long_description
+
+
