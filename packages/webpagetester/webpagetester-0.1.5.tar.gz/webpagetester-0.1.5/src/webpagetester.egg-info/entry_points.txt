@@ -1,0 +1,4 @@
+[console_scripts]
+links = webpagetester.scripts.link_comparator:compare_links
+webpagetester = webpagetester.scripts.webtester:console_testing
+
