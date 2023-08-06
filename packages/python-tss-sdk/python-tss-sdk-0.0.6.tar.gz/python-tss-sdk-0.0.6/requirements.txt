@@ -1,0 +1,9 @@
+certifi==2019.11.28
+chardet==3.0.4
+idna==2.8
+requests==2.22.0
+urllib3==1.25.8
+dataclasses==0.8
+tox==3.23.1
+pytest==6.2.4
+flit
