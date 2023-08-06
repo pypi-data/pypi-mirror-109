@@ -1,0 +1,14 @@
+[2021-06-11 22:06:39] [root:171 DEBUG] _________________New log started__________________
+[2021-06-11 22:06:39] [root:172 DEBUG] Log config file: D:\pycharm_projects\logger_tt\logger_tt\log_config.json
+[2021-06-11 22:06:39] [root:120 DEBUG] Logging queue listener started!
+[2021-06-11 22:06:39] [root:34 ERROR] Uncaught exception in Thread-3:
+Traceback (most recent call last):
+  File "D:\pycharm_projects\logger_tt\logger_tt\__init__.py", line 51, in thread_run_with_exception_logging
+    self._target(*self._args, **self._kwargs)
+
+  File "D:\pycharm_projects\logger_tt\tests\exception_thread.py", line 9, in faulty_func
+    c = a/b
+     |-> a = 1
+     |-> b = 0
+ZeroDivisionError: division by zero
+[2021-06-11 22:06:39] [__main__:20 DEBUG] The thread has finished
