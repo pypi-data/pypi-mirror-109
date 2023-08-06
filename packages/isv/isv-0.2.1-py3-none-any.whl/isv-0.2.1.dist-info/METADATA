@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: isv
+Version: 0.2.1
+Summary: Automated Interpretation of Structural Copy Number Variants
+Home-page: UNKNOWN
+Author: Tomas Sladecek
+Author-email: tomas.sladecek@geneton.sk
+License: UNKNOWN
+Keywords: python,machine learning,copy number variation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy (>=1.20.0)
+Requires-Dist: xgboost (>=1.4.0)
+Requires-Dist: pandas (>=1.2.0)
+Requires-Dist: shap (>=0.39.0)
+Requires-Dist: sklearn-json (>=0.1.0)
+
+# ISV package
+
+Python package for easy prediction of pathogenicity of annotated Copy Number Variants (CNVs)
+
+The package contains two functions:
+
+### 1. isv.predict(X_raw, cnv_type)
+- returns an array of probabilities
+
+### 2. shap_values(X_raw, cnv_type)
+- calculates shap values for given CNVs
+
+---
+Both functions assume that input dataframes contain counts of following genomic elements:
+```     
+[
+    'gencode_genes',
+    'protein_coding',
+    'pseudogenes',
+    'mirna',
+    'lncrna',
+    'rrna',
+    'snrna',
+    'morbid_genes',
+    'disease_associated_genes',
+    'hi_genes',  # ONLY FOR LOSSES
+    'regions_HI',  # ONLY FOR LOSSES
+    'regions_TS',  # ONLY FOR GAINS
+    'regulatory',
+    'regulatory_enhancer',
+    'regulatory_open_chromatin_region',
+    'regulatory_promoter',
+    'regulatory_promoter_flanking_region',
+    'regulatory_ctcf_binding_site',
+    'regulatory_tf_binding_site',
+    'regulatory_curated'
+]
+```
+
