@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+dcord/__init__.py
+dcord.egg-info/PKG-INFO
+dcord.egg-info/SOURCES.txt
+dcord.egg-info/dependency_links.txt
+dcord.egg-info/not-zip-safe
+dcord.egg-info/top_level.txt
