@@ -1,0 +1,9 @@
+[console_scripts]
+cml-add-users = autocml.bin.add_users:main
+cml-bulk-lab = autocml.bin.bulk_lab:main
+cml-dump-cfgs = autocml.bin.dump_cfg:main
+cml-dump-pings = autocml.bin.dump_pings:main
+cml-pcap = autocml.bin.pcap:main
+cml-start-session = autocml.bin.start_session:main
+cml-verify-ints = autocml.bin.verify_ints:main
+

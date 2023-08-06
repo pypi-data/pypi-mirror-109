@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/autocml/__init__.py
+src/autocml/argparse.py
+src/autocml/auth.py
+src/autocml/connections.py
+src/autocml/parallel.py
+src/autocml.egg-info/PKG-INFO
+src/autocml.egg-info/SOURCES.txt
+src/autocml.egg-info/dependency_links.txt
+src/autocml.egg-info/entry_points.txt
+src/autocml.egg-info/requires.txt
+src/autocml.egg-info/top_level.txt
