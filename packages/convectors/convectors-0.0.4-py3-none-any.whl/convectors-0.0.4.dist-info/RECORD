@@ -1,0 +1,14 @@
+convectors/__init__.py,sha256=VLUtqzi9FODWQ4Y_FYmjbfV_Adv25Vk9bkSyRHCk8Rw,6764
+convectors/layers.py,sha256=2u4ik8O4-G13vkH_m2zZejzNCwSQuKW74AoX3LOjEV8,433
+convectors/utils.py,sha256=9MQTFdzzWrk6KROOZbxbWtNdMdydVAbTvTV_QemQHws,744
+convectors/classifier/__init__.py,sha256=vsnOeYRHA9MuIm4n-jGF4pQqSuLh84WQNsa6DEYpgL8,3598
+convectors/embedding/__init__.py,sha256=NczHqfpwaxyIisHCYWhMEyXkegM4gST9UXln0aw1K-I,8790
+convectors/linguistics/__init__.py,sha256=72T6YQf735xivRixHAZOgWM4rmfgmcVCRDbOsZDeqxs,7032
+convectors/linguistics/stopwords.py,sha256=NrI4Vh5DxFnJCiJcUMxqbMy789JRQplfMG_ZPeiOy-I,14256
+convectors/linguistics/utils.py,sha256=NfMza83TFN4VAxT8FQ7buvh-w1qDSUVuRaaZfK-QM_8,92
+convectors/reduction/__init__.py,sha256=ki8dPzGGjbw-5E3PJGZOfwyvIAdOooKbdeCJpkvh51E,2214
+convectors/task/__init__.py,sha256=txdMEsDETQbX2OWqZxpTY-r1q9VB5_6XDOYSZwfGzzk,508
+convectors-0.0.4.dist-info/METADATA,sha256=TJ8KSocyoC-NP2nZgh6LZUqwtKvZILCmLw8NPhGSdmU,3292
+convectors-0.0.4.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+convectors-0.0.4.dist-info/top_level.txt,sha256=-NAZAq5yrImZHDoMdlyst1IfbA7iHzE-qYaVf4n3to0,11
+convectors-0.0.4.dist-info/RECORD,,
