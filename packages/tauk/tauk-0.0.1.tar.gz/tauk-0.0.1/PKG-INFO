@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tauk
+Version: 0.0.1
+Summary: Helper package to facilitate reporting for webdriver-based tests on Tauk
+Home-page: https://github.com/thetauk/tauk-webdriver-python
+Author: Nathan Krishnan
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/thetauk/tauk-webdriver-python/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Tauk Python Package for WebDriver-based Tests
+The Tauk Python Package allows you to easily report and monitor your Appium automation tests on the Tauk platform.
+
+## Installation
+TBD
+
+## Usage
+TBD
+
