@@ -1,0 +1,7 @@
+types_botocore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_botocore/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_botocore-1.0.1.dist-info/LICENSE,sha256=AdqcMqux3zs2UHnwLqZPG4nIvQYZAqOLnrmkBhB5kts,1071
+types_botocore-1.0.1.dist-info/METADATA,sha256=Sxnc3vk7CtgnBBEuusR8airDudrKSbuGwDlkPfXqIyA,9034
+types_botocore-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+types_botocore-1.0.1.dist-info/top_level.txt,sha256=KhjDkn8iUh1Cjy8jiJo-vEdCcz5jUnV7npKjuWYZ_ng,15
+types_botocore-1.0.1.dist-info/RECORD,,
