@@ -1,0 +1,5 @@
+balexand_server.egg-info/PKG-INFO
+balexand_server.egg-info/SOURCES.txt
+balexand_server.egg-info/dependency_links.txt
+balexand_server.egg-info/requires.txt
+balexand_server.egg-info/top_level.txt
