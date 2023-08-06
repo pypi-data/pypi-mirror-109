@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+DanTDM.egg-info/PKG-INFO
+DanTDM.egg-info/SOURCES.txt
+DanTDM.egg-info/dependency_links.txt
+DanTDM.egg-info/top_level.txt
