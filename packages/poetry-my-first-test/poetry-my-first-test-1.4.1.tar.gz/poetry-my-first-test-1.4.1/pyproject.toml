@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "poetry-my-first-test"
+version = "1.4.1"
+description = ""
+authors = ["puntonim <puntonim@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.25.1"
+click = "^8.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+# Entrypoints: executables that will be installed when installing the package.
+# Unlike Pipenv do not add here dev scripts like those to run tests. Only actual
+#  entrypoints.
+# Run in dev with: `$ poetry run my-cmd`
+# Run in prod (after a pip install) with:  `$ my-cmd`
+my-cmd = "poetry_my_first_test.cli:cli"
