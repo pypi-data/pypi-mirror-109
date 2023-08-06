@@ -1,0 +1,11 @@
+nonebot_plugin_cocdicer/__init__.py,sha256=7XAbyY1ppcpaF1E1SQiQW3jthXLGSr6hPZeNIQCrnik,3565
+nonebot_plugin_cocdicer/cards.py,sha256=trFSI52362_5RrTaUfiwR5zASAqCuxX_eglMUvc0uB8,4544
+nonebot_plugin_cocdicer/dices.py,sha256=eMKHplDLhqSqNdrUpowmPDPiGhoYQ60yukV5R7AUkdU,8457
+nonebot_plugin_cocdicer/investigator.py,sha256=IVZbWHVhb4FQFHzydo9I1My1K-vNFP5wx5bet-drS9w,5235
+nonebot_plugin_cocdicer/madness.py,sha256=Ajv949L1keZN4PZVvN_bsbQimo0MDkQGCXBZQCJkFWs,972
+nonebot_plugin_cocdicer/messages.py,sha256=oMa7yOWDFZTRexUy5UkVGheyUwkfL_oN-ciP_xnyv9s,21328
+nonebot_plugin_cocdicer/san_check.py,sha256=EadXOWDnrnhaB7x146H0qAjjLtCuKNn8Q6UQB3vBtZk,2061
+nonebot_plugin_cocdicer-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nonebot_plugin_cocdicer-0.2.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+nonebot_plugin_cocdicer-0.2.0.dist-info/METADATA,sha256=pqAJbMd3YzRyoKQsKcna5FsFkvOKGtp1o-E2QrYT-QM,4825
+nonebot_plugin_cocdicer-0.2.0.dist-info/RECORD,,
