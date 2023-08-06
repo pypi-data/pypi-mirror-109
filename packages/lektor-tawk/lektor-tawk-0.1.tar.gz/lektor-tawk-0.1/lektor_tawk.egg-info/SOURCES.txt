@@ -1,0 +1,9 @@
+README.md
+lektor_tawk.py
+setup.cfg
+setup.py
+lektor_tawk.egg-info/PKG-INFO
+lektor_tawk.egg-info/SOURCES.txt
+lektor_tawk.egg-info/dependency_links.txt
+lektor_tawk.egg-info/entry_points.txt
+lektor_tawk.egg-info/top_level.txt

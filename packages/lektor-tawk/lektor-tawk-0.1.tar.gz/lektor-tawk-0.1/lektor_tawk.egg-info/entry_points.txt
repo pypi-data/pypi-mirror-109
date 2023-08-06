@@ -1,0 +1,3 @@
+[lektor.plugins]
+tawk = lektor_tawk:TawkPlugin
+
