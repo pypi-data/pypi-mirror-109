@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: aivision
+Version: 1
+Summary: This package will help yuo to build many cv projects
+Home-page: UNKNOWN
+Author: Ace Tech Academy
+Author-email: aceteachacademy@gmail.com
+License: MIT
+Description: aivision is a computer vision package that helps you to build variety of computer vision projects. For more info see the github page https://github.com/chinmay18030/aivision
+Keywords: FaceMesh,hand tracking,pose tracking,virtual background,whole body track
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
