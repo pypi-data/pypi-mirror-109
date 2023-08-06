@@ -1,0 +1,12 @@
+newspaper3k
+beautifulsoup4
+lxml
+nltk
+requests
+tqdm
+pandas
+numpy
+tld
+spacy
+urllib3
+configparser

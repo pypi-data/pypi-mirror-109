@@ -1,0 +1,9 @@
+include NewsLookout\\conf\\newslookout.conf
+include NewsLookout\\conf\\cookies.txt
+include NewsLookout\\data\\completed_urls.db
+include NewsLookout\\plugins_contrib\\template_for_plugin.py
+include NewsLookout\\newslookout.cmd
+include NewsLookout\\newslookout.sh
+include NewsLookout\\README.md
+include NewsLookout\\LICENSE
+include NewsLookout\\requirements.txt
