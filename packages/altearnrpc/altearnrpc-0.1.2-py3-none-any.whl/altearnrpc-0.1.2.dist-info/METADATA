@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: altearnrpc
+Version: 0.1.2
+Summary: Un client Discord RPC pour Altearn
+Home-page: https://gitlab.com/Aeris1One/altearn-discord-rpc
+Author: Aeris One
+Author-email: aeris@e.email
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pypresence
+Requires-Dist: tqdm
+
+# Altearn RPC
+
+## Dépendances
+
+- Python 3.8+ 
+- PyPresence
+- TQDM
+
+PyPresence et TQDM sont installés automatiquement par pip
+
+## Installation
+`pip install altearnrpc`
+
+
+## Mise à jour
+`pip install -U altearnrpc`
+
+## Démarrage
+`python -m altearnrpc`
+
