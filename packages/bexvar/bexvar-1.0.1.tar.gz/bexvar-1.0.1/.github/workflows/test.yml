@@ -1,0 +1,30 @@
+name: Test
+on: [push]
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    #strategy:
+    #  matrix:
+    #    python-version: [3.8]
+
+    steps:
+      - uses: actions/checkout@v2
+ 
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+          # python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyYAML coveralls rst2html5 cython pystan==2.19.1.1 git+https://github.com/JohannesBuchner/stan_utility.git#egg=stan-utility
+          if [ -f conda-requirements.txt ]; then pip install -r conda-requirements.txt; fi 
+      - run: python setup.py install
+      - run: coverage run -a scripts/quick_ero.py examples/*/020_LightCurve_*.fits.gz
+      - run: coverage run -a scripts/bexvar_ero.py examples/constant/020_LightCurve_00001.fits.gz
+      - run: coverage run -a experimental/cplar_ero.py examples/red/020_LightCurve_00022.fits.gz
+      #- run: coverage run -a experimental/periodic_ero.py examples/constant/020_LightCurve_00001.fits.gz
+      - run: coveralls
+      - run: make docs
