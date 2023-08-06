@@ -1,0 +1,9 @@
+
+[attrs]
+attrs
+
+[tests]
+pytest-mock
+pytest-watch
+pytest-cov
+pdbpp
