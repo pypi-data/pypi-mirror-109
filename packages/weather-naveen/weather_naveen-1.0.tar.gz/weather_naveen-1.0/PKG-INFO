@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: weather_naveen
+Version: 1.0
+Summary: Weather Forcasting Data
+Home-page: https://www.python.org/
+Author: Naveen Kaushal
+Author-email: naveen.kaushal@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: weather_naveen,forcast,openweather
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Software Development :: Bug Tracking
