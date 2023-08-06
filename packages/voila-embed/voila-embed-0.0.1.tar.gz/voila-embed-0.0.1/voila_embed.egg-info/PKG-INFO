@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: voila-embed
+Version: 0.0.1
+Summary: A template for embedding voila into an existing site
+Home-page: https://github.com/mariobuikhuizen/voila-embed
+Author: Mario Buikhuizen, Maarten Breddels
+Author-email: mbuikhuizen@gmail.com, maartenbreddels@gmail.com
+License: BSD License
+Description: UNKNOWN
+Keywords: ipython,jupyter,widgets,voila
+Platform: UNKNOWN

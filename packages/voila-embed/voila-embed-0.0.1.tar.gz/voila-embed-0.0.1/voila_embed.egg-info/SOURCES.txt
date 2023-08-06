@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+share/jupyter/voila/templates/embed/conf.json
+share/jupyter/voila/templates/embed/index.html.j2
+voila_embed.egg-info/PKG-INFO
+voila_embed.egg-info/SOURCES.txt
+voila_embed.egg-info/dependency_links.txt
+voila_embed.egg-info/requires.txt
+voila_embed.egg-info/top_level.txt
