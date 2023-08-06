@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: colombiaHolidays
+Version: 0.0.2
+Summary: return the list of holidays existing on a determined year in Colombia
+Home-page: https://github.com/Oscarce10/colombiaHolidays
+Author: Oscar Cely
+Author-email: oscarcej@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Based on [nequibc /colombia-holidays] (https://github.com/nequibc/colombia-holidays) and adapted to use as a python module to return the list of holidays existing on a determined year in Colombia
+
