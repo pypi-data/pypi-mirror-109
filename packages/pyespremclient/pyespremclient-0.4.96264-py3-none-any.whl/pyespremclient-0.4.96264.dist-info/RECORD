@@ -1,0 +1,8 @@
+pyespremclient/__init__.py,sha256=5pUbD4vch9to-Hsu8jPsoZtu65c5V80QxWj3uRIrmLo,569
+pyespremclient/esprem_client.py,sha256=iYoiTDTecBjhO5F1qb24vrqDkp3Vi_ovXCGTB-zKHZc,1574
+pyespremclient/s_config.py,sha256=9RJQSiQi-foC6UYtGPW4zDHPw8xoHKJNRC8Wcjc1i3U,2023
+pyespremclient/s_log.py,sha256=agDRdf-8QYowdFnEC5RBCIcMvjlXRNJkghzB82ehYME,1121
+pyespremclient/s_net.py,sha256=zGczFbC8tTkzZW8EHsmcT6LCq1JnNJ4IqqYYHV5CnOk,4339
+pyespremclient-0.4.96264.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pyespremclient-0.4.96264.dist-info/METADATA,sha256=GmQmwj0w2O4IhcYk2zonzamceWkMn5n-tCkIlyV1ndM,378
+pyespremclient-0.4.96264.dist-info/RECORD,,
