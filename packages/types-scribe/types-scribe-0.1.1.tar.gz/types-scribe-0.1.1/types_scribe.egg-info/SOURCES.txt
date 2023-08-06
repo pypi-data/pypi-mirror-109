@@ -1,0 +1,10 @@
+setup.py
+scribe-stubs/METADATA.toml
+scribe-stubs/__init__.pyi
+scribe-stubs/scribe.pyi
+scribe-stubs/ttypes.pyi
+types_scribe.egg-info/PKG-INFO
+types_scribe.egg-info/SOURCES.txt
+types_scribe.egg-info/dependency_links.txt
+types_scribe.egg-info/requires.txt
+types_scribe.egg-info/top_level.txt
