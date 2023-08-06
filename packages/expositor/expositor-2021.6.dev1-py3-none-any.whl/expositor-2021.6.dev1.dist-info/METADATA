@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: expositor
+Version: 2021.6.dev1
+Summary: Shodan CLI
+Home-page: https://github.com/secretum-inc/expositor
+Author: Gerrishon Sirere.
+Author-email: secretum.inc@pm.me
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Dist: requests >=2.24.0,<3.0.0 ; extra == "all"
+Requires-Dist: quo >=2021.5.15 ; extra == "all"
+Requires-Dist: XlsxWriter ; extra == "all"
+Requires-Dist: colorama ; extra == "all"
+Project-URL: Documentation, https://expositor.rtfd.io
+Provides-Extra: all
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+# expositor
+A framework for evaluating and training AI models. 
+
