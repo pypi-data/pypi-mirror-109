@@ -1,0 +1,10 @@
+cheml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cheml/find_fragments.py,sha256=u0jJNFo5AmKc2S94oXhR2vkYe2-NfLthSQo8P-xmp5s,31846
+cheml/fragments_library.py,sha256=sixKwsl7YDPkfq4Knw16EU8Fs6wPCnMQSfYoL9u7DkY,15566
+cheml/smiles_to_structure.py,sha256=_lPMpSoI4Xd2nM5iH2XKz89-nYf7BjEfDn2Wravp4jQ,11762
+cheml/structure_to_smiles.py,sha256=bro9Kb4opHUBSE_IzxTsArCDLSzzGyXNb1tR8Tg7zuE,4145
+cheml-0.0.2.dist-info/LICENSE,sha256=KsHojQgCg6rjP6X2FqDNIYMhw0f8ujujvy8lWhBYAsc,1069
+cheml-0.0.2.dist-info/METADATA,sha256=c9jtrYo8KmQCf2hIybvglJhoPlJ3r38P4A7fGk6Pvpc,781
+cheml-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cheml-0.0.2.dist-info/top_level.txt,sha256=JEA8isi2X3nJZPr4V1W89D2r3vyEHir684nVC_42tVM,6
+cheml-0.0.2.dist-info/RECORD,,
