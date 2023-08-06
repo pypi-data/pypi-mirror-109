@@ -1,0 +1,6 @@
+sanic
+tortoise-orm
+aiofiles
+pyjwt
+captcha
+aiosmtplib
