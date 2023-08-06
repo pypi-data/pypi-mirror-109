@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: smartargs
+Version: 1.0.0
+Summary: Smart Argument command line processor
+Home-page: https://github.com/mrmessagewriter/smartargs
+Author: Sean Hummel
+Author-email: mr.message.writer@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+
+UNKNOWN
+
