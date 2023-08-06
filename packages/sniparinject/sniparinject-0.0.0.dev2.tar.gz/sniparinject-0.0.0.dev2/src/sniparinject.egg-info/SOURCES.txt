@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/sniparinject/__init__.py
+src/sniparinject/network_sniffer.py
+src/sniparinject.egg-info/PKG-INFO
+src/sniparinject.egg-info/SOURCES.txt
+src/sniparinject.egg-info/dependency_links.txt
+src/sniparinject.egg-info/requires.txt
+src/sniparinject.egg-info/top_level.txt
+src/sniparinject/core/__init__.py
+src/sniparinject/core/game.py
+src/sniparinject/core/settings.py
+src/sniparinject/core/text_style.py
+src/sniparinject/core/utility.py
