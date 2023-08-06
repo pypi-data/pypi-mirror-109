@@ -1,0 +1,11 @@
+lamdb/__init__.py,sha256=FqHybU2T8D0bYV0aEPnYKwI-tj6x4PusoSC36IuUw0Q,1719
+lamdb/__main__.py,sha256=-hxFLfGNtUzq-LFEJFROKo3qP15nYGM8yrD486J1Xko,864
+lamdb/_config.py,sha256=aaI1ZvaFzSHHKVrN7S3mMpVQz-9bXP2C-E5Emwz6aNk,247
+lamdb/cffi.py,sha256=TtZr6hMvdLSYG2hxoQ7eoniGnzphaV39d-edTbc4XxI,92274
+lamdb/cpython.cpython-36m-darwin.so,sha256=YCrQkvqnUUsxtYjK-Fly7YYO6axSIkZNu-kwMZ0roQU,168496
+lamdb/tool.py,sha256=4gN-GYriIHrZVOm7DIIglSkBO9VMh_vrUJ6oaJWy18E,19684
+lamdb-1.2.1.dist-info/LICENSE,sha256=MQ_iXIWKlRX8jI19HySmfJSW-EqR4KDkHqmXWxNx5Wk,2214
+lamdb-1.2.1.dist-info/METADATA,sha256=LTVX1Jkd3098pYzZUhlsApPLTX4NChNopXrYlHT5yF8,1041
+lamdb-1.2.1.dist-info/WHEEL,sha256=SCcPaD1xriZouD6EXl7AgcYiQmH1NgiskymVTsykSG4,110
+lamdb-1.2.1.dist-info/top_level.txt,sha256=sAGq5hHlN2Z3-umalUsCio2NLfwCHGHP5vOG-NJWHKk,14
+lamdb-1.2.1.dist-info/RECORD,,
