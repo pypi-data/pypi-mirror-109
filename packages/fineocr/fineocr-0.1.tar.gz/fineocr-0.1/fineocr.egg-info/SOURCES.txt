@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+fineocr/__init__.py
+fineocr/__main__.py
+fineocr/doc.py
+fineocr/finescanner.py
+fineocr/spinner.py
+fineocr/urlreader.py
+fineocr.egg-info/PKG-INFO
+fineocr.egg-info/SOURCES.txt
+fineocr.egg-info/dependency_links.txt
+fineocr.egg-info/entry_points.txt
+fineocr.egg-info/requires.txt
+fineocr.egg-info/top_level.txt
