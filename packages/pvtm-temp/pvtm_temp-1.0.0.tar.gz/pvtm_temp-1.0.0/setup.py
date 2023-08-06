@@ -1,0 +1,21 @@
+from setuptools import setup
+
+def readme_file_contents():
+    with open('README.rst') as readme_file:
+        data = readme_file.read()
+    return data
+
+setup(
+   name='pvtm_temp',
+   version='1.0.0',
+   description='Topic Modeling with doc2vec and Gaussian mixture clustering',
+   long_description=readme_file_contents(),
+   long_description_content_type='text/x-rst',
+   author='David Lenz',
+   author_email='david.lenz@wi.jlug.de',
+   licence='MIT',
+   packages=['pvtm'],  #same as name
+   package_data={'pvtm': ['data/*']},
+   #include_package_data=True,
+   #install_requires=['smtplib', 'email'], #external packages as dependencies
+)

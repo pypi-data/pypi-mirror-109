@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pvtm-temp
+Version: 1.0.0
+Summary: Topic Modeling with doc2vec and Gaussian mixture clustering
+Home-page: UNKNOWN
+Author: David Lenz
+Author-email: david.lenz@wi.jlug.de
+License: MIT
+Description: # pvtm
+        Paragraph Vector Topic Model
+        
+        ( temporary package for https://github.com/davidlenz/pvtm )
+        
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
