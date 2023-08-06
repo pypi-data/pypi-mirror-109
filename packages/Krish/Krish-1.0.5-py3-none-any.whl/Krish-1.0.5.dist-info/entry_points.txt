@@ -1,0 +1,3 @@
+[console_scripts]
+Krish = v1.__main__:main
+
