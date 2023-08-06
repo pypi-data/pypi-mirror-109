@@ -1,0 +1,11 @@
+model_card_generator/__init__.py,sha256=eA8uvCTH25JbcRbnEV6R5CSV49o9Y2IIT3w9wqQfJ0w,969
+model_card_generator/__main__.py,sha256=MDDeqQjxvY0TvnGklwesFpAoSVAgl41MG91nwJbRrW0,1029
+model_card_generator/env.py,sha256=Mc30qynKfjCyDYK1OazaSgEXe8EfbXkgyXoL9FfBnyU,115
+model_card_generator/json_writer.py,sha256=HQeiCcaVH4-Mi73f0JI3qJE8jbuCiidcZAso3fyQGfQ,372
+model_card_generator/model_data.py,sha256=OdY_5xHSDyh_bwZ7bIRMAnrCXp3FqMsfLF9DPjU2Kns,2611
+model_card_generator/pdf_writer.py,sha256=00Vi3nDd2l48qtjYu6Ro1sZlEyZm17UKXB1vIIyjrJM,21543
+model_card_generator/request.py,sha256=ReToroi9pSIYXoq7FkaTM469rlNwoDf0KNZFKDE3QSU,157
+model_card_generator-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+model_card_generator-0.2.0.dist-info/WHEEL,sha256=Tf_JTHRUsYmRccQnQfn1tqmNatmXkNB0OFKM-B4YyuA,87
+model_card_generator-0.2.0.dist-info/METADATA,sha256=VA7FxL3lE3711QDECMgcXXLrAhY_GogHnMDY9ge7QYU,1249
+model_card_generator-0.2.0.dist-info/RECORD,,
