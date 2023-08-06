@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: yaststool
+Version: 0.1.0
+Summary: A tool to assume AWS Roles and set environment variables accordingly
+License: MIT
+Author: William Trépanier
+Author-email: wtrepanier@coveo.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (>=1.17.96,<2.0.0)
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: dacite (>=1.6.0,<2.0.0)
