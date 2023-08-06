@@ -1,0 +1,7 @@
+setup.py
+pandas_spectroscopy/__init__.py
+pandas_spectroscopy.egg-info/PKG-INFO
+pandas_spectroscopy.egg-info/SOURCES.txt
+pandas_spectroscopy.egg-info/dependency_links.txt
+pandas_spectroscopy.egg-info/requires.txt
+pandas_spectroscopy.egg-info/top_level.txt

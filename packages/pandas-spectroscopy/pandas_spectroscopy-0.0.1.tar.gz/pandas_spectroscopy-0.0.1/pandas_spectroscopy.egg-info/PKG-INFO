@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pandas-spectroscopy
+Version: 0.0.1
+Summary: Spectroscopy tools for pandas
+Home-page: UNKNOWN
+Author: Georg Ramer
+Author-email: georg.ramer@tuwien.ac.at
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: spectroscopy pandas hyperspectral
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.7
+Provides-Extra: test
