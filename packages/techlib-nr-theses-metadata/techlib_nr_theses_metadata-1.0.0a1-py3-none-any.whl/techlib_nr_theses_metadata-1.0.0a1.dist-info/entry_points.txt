@@ -1,0 +1,9 @@
+[invenio_jsonschemas.schemas]
+nr_theses_metadata=nr_theses_metadata.jsonschemas
+
+[invenio_search.mappings]
+nr_theses_metadata=nr_theses_metadata.mappings
+
+[oarepo_mapping_includes]
+nr_theses_metadata=nr_theses_metadata.mapping_includes
+
