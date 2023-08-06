@@ -1,0 +1,10 @@
+itk>=4.13.2.post1
+lazy-import>=0.2.2
+mayavi>=4.6.2
+numpy>=1.16.1
+pandas>=0.25.0
+PyQt5-Qt5>=5.15
+scipy>=1.1.0
+scikit-image==0.17.2
+tqdm>=4.48.2
+vtk==8.1.2
