@@ -1,0 +1,15 @@
+#!/bin/bash
+checks[0]="pipenv run xenon --max-modules A --max-average A --max-absolute B flask_verify/"
+checks[1]="pipenv run mypy flask_verify"
+checks[2]="pipenv run coverage run --source=flask_verify/ -m pytest"
+for ((i = 0; i < 3; i++)); do
+    ${checks[$i]}
+    status=$?
+    if [ $status -gt 0 ]
+    then
+        echo Error occured the latest check.
+        exit 1
+    fi
+done
+coverage report
+exit
