@@ -1,0 +1,12 @@
+getmetasat/__init__.py,sha256=2JsmUDMu3_fPG1HbNi4-9RM1IPhD8OgdCqXwZkFVggw,363
+getmetasat/autenticacion.py,sha256=VRpcnX6gHzTfiFk0VdKHnRBONJ9ZholxLbg8jPWBIQ8,5835
+getmetasat/descargamasiva.py,sha256=7QZ_BBo0lQrNMxGnaT9LtHVQOQxARNvsJKwC5PZ8mc4,5199
+getmetasat/fiel.py,sha256=kg5RsQPwJSILv7IWI2agWP1ygCFyfFHKFrxlARpeFT8,1707
+getmetasat/solicitadescarga.py,sha256=TGuUSAA3cXEmQLXXM6yzsduTKVLpFL3tz6PEWwGzvrc,5603
+getmetasat/validacioncfdi.py,sha256=lPYZ5l5m4snp8ZxPR_-xe7gXbkIj3yiFt16CnSSIWC4,2849
+getmetasat/verificasolicituddescarga.py,sha256=6JGQbbfqSgBIAyWnGhTsOzdHKRS6hoFVEzeqtO78EsI,5418
+getmetasat-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+getmetasat-1.0.0.dist-info/METADATA,sha256=2Vlt_vKpVTNc3T12ObA1QirrtquGVxjGhl9X54poMFk,748
+getmetasat-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+getmetasat-1.0.0.dist-info/top_level.txt,sha256=8fUITsfoo5XGCWwjcjVlh6gibLdbQH-7pPHDzFqrK_I,11
+getmetasat-1.0.0.dist-info/RECORD,,
