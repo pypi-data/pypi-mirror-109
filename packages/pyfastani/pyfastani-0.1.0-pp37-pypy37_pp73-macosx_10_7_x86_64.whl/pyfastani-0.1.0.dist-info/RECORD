@@ -1,0 +1,13 @@
+pyfastani/__init__.py,sha256=jRO1o7r2DFBBrXGsbY5kNjPLQQ54lRD7fSJqsCrls-s,213
+pyfastani/_fastani.pypy37-pp73-darwin.so,sha256=KqH3sBI_n9jdNLbX8JNrvMW6sFf-AnvT4bUbAaqFEc4,435456
+pyfastani/_fastani.pyx,sha256=m6yWZ1cm7tElTrd7AT5CXtwSGg-gKN-8iU5EE-PhcC4,19498
+pyfastani/_utils.cpp,sha256=ZchByU5KLkBSgkZ17Gxmzn6XzlSweCpc7d5kZ3g1wkE,449
+pyfastani/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfastani/tests/minifasta.py,sha256=n1Lkf5ATtCzxK5hrSS-oYF-Rwpr2rTHtxPWb8vA6DSk,679
+pyfastani/tests/requirements.txt,sha256=Ac-sxsmkulanmvEGqydfUMVBl88PlYGBFVZeeIsEodA,94
+pyfastani/tests/test_mapper.py,sha256=1BR2c6uCjT4ViILF5XgCYRTjgi8DUyqGWVihBUbkT2o,3389
+pyfastani-0.1.0.dist-info/COPYING,sha256=BIsw-DVJ5p5UKL6ZlCVwsDiSZvXQDBS_r07hBs6WGtY,1098
+pyfastani-0.1.0.dist-info/METADATA,sha256=X1GwEUUSzbbddNSNIFziSM6sQcCVSI2JHQh_BLCCzA4,9222
+pyfastani-0.1.0.dist-info/WHEEL,sha256=A5h96qeNbjqZSP-rxYJFzrLNmHb5J5nMEDh7LGjf_Us,116
+pyfastani-0.1.0.dist-info/top_level.txt,sha256=YWxIHiK0rhm4Fc4W-MkBs03PmkmeQXD3H9CA9VUb9kE,10
+pyfastani-0.1.0.dist-info/RECORD,,
