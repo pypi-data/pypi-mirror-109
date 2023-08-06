@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+gym_pysc2/_version.py
+gym_pysc2.egg-info/PKG-INFO
+gym_pysc2.egg-info/SOURCES.txt
+gym_pysc2.egg-info/dependency_links.txt
+gym_pysc2.egg-info/requires.txt
+gym_pysc2.egg-info/top_level.txt
