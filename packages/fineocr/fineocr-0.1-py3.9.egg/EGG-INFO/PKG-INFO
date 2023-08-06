@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fineocr
+Version: 0.1
+Summary: FineScanner Mobile OCR for free
+Home-page: https://github.com/kfur/fineocr
+Author: Denis Skovpen
+Author-email: deniskovpen@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Framework :: AsyncIO
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
