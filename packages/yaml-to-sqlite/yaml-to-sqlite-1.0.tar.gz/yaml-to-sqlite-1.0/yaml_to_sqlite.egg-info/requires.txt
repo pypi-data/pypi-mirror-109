@@ -1,0 +1,6 @@
+click
+PyYAML
+sqlite-utils>=3.9.1
+
+[test]
+pytest
