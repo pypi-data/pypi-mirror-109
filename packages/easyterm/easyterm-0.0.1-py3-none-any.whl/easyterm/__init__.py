@@ -1,0 +1,1 @@
+from .colorprint import write
