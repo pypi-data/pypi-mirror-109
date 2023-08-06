@@ -1,0 +1,12 @@
+pydevts/__init__.py,sha256=ZNqKqcR-91VaFJtKD6WA4JgHh1mnADDNyoGAlf-_j3U,59
+pydevts/conn.py,sha256=PZulSLnw-VSvOU9Gzry0V58uu9U4jjmksLg-EY7I74s,1597
+pydevts/errors.py,sha256=lmf3LGii85ZYxaxRrDk3bM7SjXEzPTvU10PGqz_QCZ4,1045
+pydevts/node.py,sha256=Lct6Fnq5Hm-BcYspfOIVxHepPQFFiSrBU5vFu8shz64,4509
+pydevts/p2p.py,sha256=A0wDrj_fPvN29rw81s1RXxZvs4yGRY3YjwnNsyQdzhU,4524
+pydevts/routers/README.md,sha256=x1SXCGPeJb1WA3t-ty5OmuROsPnaBEPUuj67gZYfIX4,6166
+pydevts/routers/__init__.py,sha256=t_440qcpELgReir21pZODjz3LEReEDLBtyS_T5EQRfs,60
+pydevts/routers/_base.py,sha256=x-pLahrlzxY1w_fqax51sNb7vKvF8-dUYNQWDyCqRtQ,1231
+pydevts/routers/basic.py,sha256=u5f8pMS7dgY92BeTaJdJXEHm1LhLyG9X63K794z8Hi8,5742
+pydevts-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pydevts-0.1.0.dist-info/METADATA,sha256=1kQKLXkRc81FPl5RLdyn1zkZl6crAghf-9qDvn62hGg,3997
+pydevts-0.1.0.dist-info/RECORD,,
