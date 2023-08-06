@@ -1,0 +1,11 @@
+vegasflow
+pdfflow
+requests
+
+[amd]
+tensorflow-rocm
+
+[docs]
+sphinx_rtd_theme
+recommonmark
+sphinxcontrib-bibtex
