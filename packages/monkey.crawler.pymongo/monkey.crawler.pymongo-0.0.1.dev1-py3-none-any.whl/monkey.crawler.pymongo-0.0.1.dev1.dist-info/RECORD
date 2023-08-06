@@ -1,0 +1,9 @@
+monkey/__init__.py,sha256=oZ9fvH9Rg-hMbVPk45jhS7NyB7lLkY7OH025Em0ylIM,84
+monkey/crawler/__init__.py,sha256=oZ9fvH9Rg-hMbVPk45jhS7NyB7lLkY7OH025Em0ylIM,84
+monkey/crawler/crawlers/__init__.py,sha256=oZ9fvH9Rg-hMbVPk45jhS7NyB7lLkY7OH025Em0ylIM,84
+monkey/crawler/crawlers/mongodb.py,sha256=pL3EYiTNxjduzcf5-Hh8WkCV3DuGT5dhAajha1ES1j8,2486
+monkey.crawler.pymongo-0.0.1.dev1.dist-info/LICENSE.txt,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+monkey.crawler.pymongo-0.0.1.dev1.dist-info/METADATA,sha256=JBAEGfyubb7MVuSUQT9sXJppVxkk6XohvCFNcimHTLk,1000
+monkey.crawler.pymongo-0.0.1.dev1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+monkey.crawler.pymongo-0.0.1.dev1.dist-info/top_level.txt,sha256=Wm5IEF_qdczMxmoDgxjzmMQnYUldc4eG3IptQxeaoWo,7
+monkey.crawler.pymongo-0.0.1.dev1.dist-info/RECORD,,
