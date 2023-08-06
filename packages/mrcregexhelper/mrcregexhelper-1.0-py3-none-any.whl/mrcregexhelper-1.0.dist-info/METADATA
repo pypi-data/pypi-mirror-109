@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mrcregexhelper
+Version: 1.0
+Summary: Regex utility
+Home-page: UNKNOWN
+Author: Mr. Cooper
+Author-email: varshitha.dasari@mrcooper.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: python-Levenshtein
+Requires-Dist: fuzzywuzzy
+
+Regex utility for OCR based extraction
+
+
