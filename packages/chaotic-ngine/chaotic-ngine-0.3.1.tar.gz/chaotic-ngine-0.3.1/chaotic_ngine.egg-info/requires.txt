@@ -1,0 +1,7 @@
+pyyaml
+python-dotenv
+requests
+cloudscale-sdk
+hcloud
+python-digitalocean
+cs
