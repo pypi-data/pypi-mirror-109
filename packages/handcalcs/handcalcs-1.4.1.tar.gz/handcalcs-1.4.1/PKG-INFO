@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: handcalcs
+Version: 1.4.1
+Summary: Converts your Python calculation script into beautifully rendered Latex, 
+Home-page: https://github.com/connorferster/handcalcs
+Author: Connor Ferster
+Author-email: connorferster@gmail.com
