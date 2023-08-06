@@ -1,0 +1,13 @@
+notelink/__init__.py,sha256=yyLtGsBhynC-sSHdax-rRGvHNjH-gdWxIY68WnPVfDw,22
+notelink/configs.py,sha256=AlAJ305NFqdS7-g_NZK9xBxNCGx2ZDNwfsgffjaJf_8,181
+notelink/main.py,sha256=2zgvCL6cpoDQ8Pi_rOKU8GN9FXfwr0zs_rEVXY11fAE,2228
+notelink/core/__init__.py,sha256=WKlVrAzJ448yW4yt5nT-ukBogiRo-GSfGi4x4MfGR9o,2373
+notelink/core/helpers.py,sha256=Nm9cCAsH1cevd1T95AEZRM0Y3oxfXCsBNPLB69NFs4Y,583
+notelink/promps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notelink/promps/list.py,sha256=tICQoCTq1aiK9K8DlKe9hNukWXMazwJ7JlPTI8gkuoI,1696
+notelink/promps/search.py,sha256=rO5GJW2PkTsMWWnb3YVx9uMeTK1Kk0OV52maob4bheI,503
+notelink-0.0.3.dist-info/METADATA,sha256=fiLoINXmpasgSNZbJh4D7-IF78s6HrTFkdQkjbycbWA,1790
+notelink-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+notelink-0.0.3.dist-info/entry_points.txt,sha256=nGpjVb0zHP_JawoH4IUYmMdDyAOzo1bbgOZyEweh2TY,48
+notelink-0.0.3.dist-info/top_level.txt,sha256=n86cO4FgQ3_88g6z4jstEuZl4RNyKsl9WcXMa5q-b0g,9
+notelink-0.0.3.dist-info/RECORD,,
