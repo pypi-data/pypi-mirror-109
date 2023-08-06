@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: tlt
+Version: 0.1.0
+Summary: Token Labeling Toolbox for training image models
+Home-page: https://github.com/zihangJiang/TokenLabeling
+Author: Zihang Jiang
+Author-email: jzh0103@gmail.com
+License: Apache License 2.0
+Description: UNKNOWN
+Keywords: imagenet,attention mechanism,transformer,image classification,token labeling
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
