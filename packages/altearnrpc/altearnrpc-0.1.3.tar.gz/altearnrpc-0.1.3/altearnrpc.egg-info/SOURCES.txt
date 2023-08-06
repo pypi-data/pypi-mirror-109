@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+altearnrpc/__init__.py
+altearnrpc/__main__.py
+altearnrpc/config.py
+altearnrpc.egg-info/PKG-INFO
+altearnrpc.egg-info/SOURCES.txt
+altearnrpc.egg-info/dependency_links.txt
+altearnrpc.egg-info/entry_points.txt
+altearnrpc.egg-info/requires.txt
+altearnrpc.egg-info/top_level.txt

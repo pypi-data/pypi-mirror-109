@@ -1,0 +1,3 @@
+[console_scripts]
+altearnrpc = altearnrpc.__main__:main
+
