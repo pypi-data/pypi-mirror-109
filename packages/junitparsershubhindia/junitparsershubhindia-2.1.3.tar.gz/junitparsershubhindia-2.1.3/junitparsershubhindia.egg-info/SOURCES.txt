@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+junitparser/__init__.py
+junitparser/__main__.py
+junitparser/cli.py
+junitparser/junitparser.py
+junitparsershubhindia.egg-info/PKG-INFO
+junitparsershubhindia.egg-info/SOURCES.txt
+junitparsershubhindia.egg-info/dependency_links.txt
+junitparsershubhindia.egg-info/entry_points.txt
+junitparsershubhindia.egg-info/not-zip-safe
+junitparsershubhindia.egg-info/requires.txt
+junitparsershubhindia.egg-info/top_level.txt
