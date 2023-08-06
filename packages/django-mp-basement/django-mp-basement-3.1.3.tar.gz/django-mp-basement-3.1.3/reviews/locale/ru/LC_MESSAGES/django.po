@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-12 17:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: reviews/__init__.py:8 reviews/models.py:35
+msgid "Reviews"
+msgstr "Отзывы"
+
+#: reviews/forms.py:14
+msgid "Images"
+msgstr ""
+
+#: reviews/lib.py:10
+msgid "New review #{}"
+msgstr "Новый отзыв #{}"
+
+#: reviews/models.py:12
+msgid "Owner"
+msgstr "Автор"
+
+#: reviews/models.py:15
+msgid "Is active"
+msgstr "Активность"
+
+#: reviews/models.py:17
+#: reviews/templates/reviews/new_review_notification.html:7
+msgid "Name"
+msgstr "Имя"
+
+#: reviews/models.py:19
+#: reviews/templates/reviews/new_review_notification.html:10
+msgid "Email"
+msgstr "Эл. адрес"
+
+#: reviews/models.py:22
+#: reviews/templates/reviews/new_review_notification.html:13
+msgid "Rating"
+msgstr "Рейтинг"
+
+#: reviews/models.py:25
+msgid "Date created"
+msgstr "Дата создания"
+
+#: reviews/models.py:27 reviews/models.py:34 reviews/models.py:41
+msgid "Review"
+msgstr "Отзыв"
+
+#: reviews/models.py:44
+msgid "File"
+msgstr ""
+
+#: reviews/models.py:46
+msgid "Ordering"
+msgstr ""
+
+#: reviews/models.py:68
+msgid "Image not found"
+msgstr ""
+
+#: reviews/models.py:78
+#, fuzzy
+#| msgid "Review"
+msgid "Preview"
+msgstr "Отзыв"
+
+#: reviews/models.py:85
+#, fuzzy
+#| msgid "Review"
+msgid "Review image"
+msgstr "Отзыв"
+
+#: reviews/models.py:86
+#, fuzzy
+#| msgid "Reviews"
+msgid "Review images"
+msgstr "Отзывы"
+
+#: reviews/templates/reviews/new_review_modal.html:14
+msgid "Новий відгук"
+msgstr "Новый отзыв"
+
+#: reviews/templates/reviews/new_review_modal.html:22
+msgid "Відмінити"
+msgstr "Отменить"
+
+#: reviews/templates/reviews/new_review_modal.html:25
+msgid "Надіслати відгук"
+msgstr "Отправить отзыв"
+
+#: reviews/templates/reviews/new_review_notification.html:5
+msgid "New review #"
+msgstr "Новый отзыв #"
+
+#: reviews/templates/reviews/new_review_notification.html:16
+msgid "Text"
+msgstr "Текст"
+
+#: reviews/templates/reviews/new_review_notification.html:19
+msgid "Show on site"
+msgstr "Показать на сайте"
+
+#: reviews/views.py:66
+msgid "Review was successfully sent"
+msgstr "Отзыв успешно отправлен"
+
+#~ msgid "Photo"
+#~ msgstr "Фото"
+
+#~ msgid "Відгуки покупців"
+#~ msgstr "Отзывы покупателей"
+
+#~ msgid "Залишити відгук"
+#~ msgstr "Оставить отзыв"

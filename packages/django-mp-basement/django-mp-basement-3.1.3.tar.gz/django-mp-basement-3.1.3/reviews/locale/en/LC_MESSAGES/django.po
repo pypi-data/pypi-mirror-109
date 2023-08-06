@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-12 17:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: reviews/__init__.py:8 reviews/models.py:35
+msgid "Reviews"
+msgstr ""
+
+#: reviews/forms.py:14
+msgid "Images"
+msgstr ""
+
+#: reviews/lib.py:10
+msgid "New review #{}"
+msgstr ""
+
+#: reviews/models.py:12
+msgid "Owner"
+msgstr ""
+
+#: reviews/models.py:15
+msgid "Is active"
+msgstr ""
+
+#: reviews/models.py:17
+#: reviews/templates/reviews/new_review_notification.html:7
+msgid "Name"
+msgstr ""
+
+#: reviews/models.py:19
+#: reviews/templates/reviews/new_review_notification.html:10
+msgid "Email"
+msgstr ""
+
+#: reviews/models.py:22
+#: reviews/templates/reviews/new_review_notification.html:13
+msgid "Rating"
+msgstr ""
+
+#: reviews/models.py:25
+msgid "Date created"
+msgstr ""
+
+#: reviews/models.py:27 reviews/models.py:34 reviews/models.py:41
+msgid "Review"
+msgstr ""
+
+#: reviews/models.py:44
+msgid "File"
+msgstr ""
+
+#: reviews/models.py:46
+msgid "Ordering"
+msgstr ""
+
+#: reviews/models.py:68
+msgid "Image not found"
+msgstr ""
+
+#: reviews/models.py:78
+msgid "Preview"
+msgstr ""
+
+#: reviews/models.py:85
+msgid "Review image"
+msgstr ""
+
+#: reviews/models.py:86
+msgid "Review images"
+msgstr ""
+
+#: reviews/templates/reviews/new_review_modal.html:14
+msgid "Новий відгук"
+msgstr ""
+
+#: reviews/templates/reviews/new_review_modal.html:22
+msgid "Відмінити"
+msgstr ""
+
+#: reviews/templates/reviews/new_review_modal.html:25
+msgid "Надіслати відгук"
+msgstr ""
+
+#: reviews/templates/reviews/new_review_notification.html:5
+msgid "New review #"
+msgstr ""
+
+#: reviews/templates/reviews/new_review_notification.html:16
+msgid "Text"
+msgstr ""
+
+#: reviews/templates/reviews/new_review_notification.html:19
+msgid "Show on site"
+msgstr ""
+
+#: reviews/views.py:66
+msgid "Review was successfully sent"
+msgstr ""
