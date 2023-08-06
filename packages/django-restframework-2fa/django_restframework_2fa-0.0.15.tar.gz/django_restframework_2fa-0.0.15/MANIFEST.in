@@ -1,0 +1,7 @@
+include LICENSE
+include *.py
+recursive-include django_restframework_2fa *.py
+
+exclude django_restframework_2fa/models.py
+exclude django_restframework_2fa/tests.py
+exclude django_restframework_2fa/migrations/*
