@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+letter_frequency_languages/__init__.py
+letter_frequency_languages.egg-info/PKG-INFO
+letter_frequency_languages.egg-info/SOURCES.txt
+letter_frequency_languages.egg-info/dependency_links.txt
+letter_frequency_languages.egg-info/top_level.txt
