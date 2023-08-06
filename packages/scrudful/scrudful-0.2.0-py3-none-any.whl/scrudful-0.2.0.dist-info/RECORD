@@ -1,0 +1,10 @@
+scrudful/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+scrudful/fastapi.py,sha256=PNEerewCI_sJ6bYJc9QpSgPLE0U12lO75rqFctB3_F0,7737
+scrudful/flask.py,sha256=5xoKkA8KZ-ZoNJ6PgpZn5BDPX_ijMRq2m93tbfznMRM,66
+scrudful/handlers/LICENSE,sha256=XXYoT85Lh-uovIbMo22cFL7WXNC_FX1BWxIzzTicKHo,1551
+scrudful/handlers/fastapi.py,sha256=5LdrYgdbBB7ZivacsOLmnm134yRU1l1tiaZQGtHG_GE,8232
+scrudful/rest_framework.py,sha256=q59_5OCT3g3wnbj7Hlsa4P11cdqf2Lhs2OOaYpMb0pk,27246
+scrudful/utils.py,sha256=Sgo0WSnBo4eEZeJ-hI52ewqktPdX34Whiu3IJ43_y8o,327
+scrudful-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+scrudful-0.2.0.dist-info/METADATA,sha256=QE2xQjVAxPO09rUKcdqf0HIYrbk28QYXKoiiuvAU_Xo,347
+scrudful-0.2.0.dist-info/RECORD,,
