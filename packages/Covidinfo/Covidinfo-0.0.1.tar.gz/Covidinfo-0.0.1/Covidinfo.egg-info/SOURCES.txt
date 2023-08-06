@@ -1,0 +1,7 @@
+LICENSE
+README.txt
+setup.py
+Covidinfo.egg-info/PKG-INFO
+Covidinfo.egg-info/SOURCES.txt
+Covidinfo.egg-info/dependency_links.txt
+Covidinfo.egg-info/top_level.txt

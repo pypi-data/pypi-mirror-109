@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: Covidinfo
+Version: 0.0.1
+Summary: Covidinfo is a module to fetch data related to covid
+Home-page: UNKNOWN
+Author: Dhanush-E
+Author-email: eaglephatidhanush@gmail.com
+License: UNKNOWN
+Keywords: python,covid,covid-19,covid data,Covidinfo,corona virus
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Covidinfo
+
+## How to install
+pip install Covidinfo
+
+## How to use
+
+### import the module
+
+1.import Covidinfo
+2.import Covidinfo as ci
+
+### Functions available
+
+1.covid_intro()
+2.covid_symptoms()
+3.covid_news()
+4.covid_precautions()
+5.vaccination_effects()
+6.india_total_cases()
+7.india_active_cases()
+8.india_recovered_cases()
+9.india_death_cases()
+10.india_death_previos_day()
+11.india_test_previos_day()
+12.india_positive_previos_day()
+13.india_vaccination_count()
+14.world_vaccination_count()
+15.world_vaccination_previos_day(
+16.world_active_cases()
+17.world_death_cases()
+18.world_total_cases()
+
+### Using functions exanote:- here imported using second way1. cp.covid_intro()  - it returns a short intro regarding covid-19
+2. cp.world_total_cases() - it returns total covid-19 cases count
+ 3. cp.india_vaccination_count() - it returns total vaccination count in india
+ 4. cp.covid_news()  -it top returns news regarding covid-19
+5. cp.vaccination_effects()   -prints post vaccination effects
+
+
