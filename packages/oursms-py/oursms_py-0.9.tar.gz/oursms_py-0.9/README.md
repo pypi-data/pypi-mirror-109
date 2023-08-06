@@ -1,0 +1,55 @@
+# oursms py:
+
+a oursms Library in python
+
+## Installation:
+
+Get the project useing pip
+
+```bash
+pip3 install oursms_py
+```
+
+## Usage/Examples:
+
+First you must import the lib
+```python
+from oursms_py import *
+```
+
+then you create a client with your api credentials
+```python
+
+client = Client(<USER-ID>, <API-KEY>)
+```
+
+Then you can send messages as follows
+
+### Normal Message:
+
+```python
+
+msg=client.send_msg(<MOBILE-NUMBER, <MESSAGE-TEXT>)
+if type(msg)==nan:
+  print("cant send")
+
+#store message id to check status later if you want
+```
+
+### OTP Message:
+
+Here you send the otp as an integer and the api takes care of appending it to a message body
+```python
+msg=client.send_otp(<MOBILE-NUMBER, <OTP_NUMBER>)
+if type(msg)==nan:
+  print("cant send")
+
+```
+
+### Message Status:
+
+```python
+
+messageStatus = client.msg_status(<MESSAGE-ID>)
+#This json List typically contains only one element
+```

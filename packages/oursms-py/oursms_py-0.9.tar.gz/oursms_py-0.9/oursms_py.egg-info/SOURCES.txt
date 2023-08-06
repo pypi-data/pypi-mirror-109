@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+oursms_py/__init__.py
+oursms_py/oursms.py
+oursms_py.egg-info/PKG-INFO
+oursms_py.egg-info/SOURCES.txt
+oursms_py.egg-info/dependency_links.txt
+oursms_py.egg-info/requires.txt
+oursms_py.egg-info/top_level.txt
