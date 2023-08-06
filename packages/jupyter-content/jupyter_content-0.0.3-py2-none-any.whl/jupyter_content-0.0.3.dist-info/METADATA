@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: jupyter-content
+Version: 0.0.3
+Summary: Jupyter Content
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: google-cloud-storage
+Requires-Dist: hybridcontents
+Requires-Dist: jupyter-server
+Requires-Dist: nbformat
+Requires-Dist: notebook
+Requires-Dist: tornado
+Requires-Dist: traitlets
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pylint ; extra == 'test'
+Requires-Dist: unittest ; extra == 'test'
+
+UNKNOWN
+
+

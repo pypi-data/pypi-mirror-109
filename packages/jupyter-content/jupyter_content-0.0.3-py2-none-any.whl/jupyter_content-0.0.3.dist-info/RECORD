@@ -1,0 +1,8 @@
+jupyter_content/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyter_content/content.py,sha256=YE2tQaqwB5Km1JOT3pUL1eMI2Bvomnpu2jUKAz58wR0,31579
+jupyter_content/test_content.py,sha256=3DDt9hgjCzyIvTLah-w_7ciaHy3TjvUY_H249x_gfZM,20567
+jupyter_content/test_simple.py,sha256=VkrFP-_2PrgmcO6NQyEbQHuLq5aTlwSLPqfIVy-lv3s,580
+jupyter_content-0.0.3.dist-info/METADATA,sha256=2rrfIOAJesKnf_nbE_nmfLXcSmsANjiTSYgpjd4mv4w,528
+jupyter_content-0.0.3.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+jupyter_content-0.0.3.dist-info/top_level.txt,sha256=dVhnb9RZItEaGXmBWQXVrsQeJXkdMV71AvgkgWjoi7Q,16
+jupyter_content-0.0.3.dist-info/RECORD,,
