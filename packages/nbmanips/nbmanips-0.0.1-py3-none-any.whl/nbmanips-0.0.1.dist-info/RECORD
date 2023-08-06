@@ -1,0 +1,17 @@
+nbmanips/VERSION,sha256=axN4nkPlSFY0Uz3hamXYup00xMl1hYi2ZYBUNfgOsRU,5
+nbmanips/__init__.py,sha256=TuszdLx7NToxefeP1CYf18Sm-Q51gz-SZIvsvu2nURo,220
+nbmanips/__main__.py,sha256=NrEo8KghfuWkldN_zvWZCp6SliFz_11WYlEmL8HpqSo,240
+nbmanips/cell.py,sha256=dPBB-nTRCX7LH2MFN7-OOcGIJv4dyOuiKme27CVAn-Y,5737
+nbmanips/cell_utils.py,sha256=OXPtK1uOFk-C7KNZaonJZGLhkDBbT3V1rxFXmAQpuuE,2621
+nbmanips/color.py,sha256=EfPJfnfuG-0b1C6C5p9e9ek5afdtRRNQit_5L5y8v4o,3106
+nbmanips/notebook.py,sha256=5QtWNVgGO_6fF3j5DDJPszpH9r4WgWNDzMwTMu4KaZA,4804
+nbmanips/notebook_base.py,sha256=3TTnOzi7sNa27GG-LX1hzQOCg1re7CqishzIIz019Wg,1378
+nbmanips/notebook_mixins.py,sha256=XOmaR-85gfyJv2raBH-lQFSPo0Z6JnQhF0CZj4ylj_E,9604
+nbmanips/selector.py,sha256=YVb_HCay_M52h1ONRFnHjXn8ShwIbsua5Gp81qkcgbk,8715
+nbmanips/utils.py,sha256=zpo_ulelB8RcCuAIm8WVGa8Y98-9Pr_bIuFl2kvcCB4,630
+nbmanips-0.0.1.dist-info/LICENSE,sha256=8MgBzQPIJmkybP1yTmR9IEx9y-xwgx5OzQfSFn0XGgw,1088
+nbmanips-0.0.1.dist-info/METADATA,sha256=2PouEYo8FAll1qPC9dAXw-Ju51fqMSXXH_V3TcA1bEc,3598
+nbmanips-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nbmanips-0.0.1.dist-info/entry_points.txt,sha256=mC4aehjjEgrrOGMLQz1xfLzPvIF1SqtnPgwwuJdix7U,53
+nbmanips-0.0.1.dist-info/top_level.txt,sha256=YZknfBg-iHj8tWHyGM-XEoVdzeslicAMwm4OE-CXgyo,9
+nbmanips-0.0.1.dist-info/RECORD,,
