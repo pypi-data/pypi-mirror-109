@@ -1,0 +1,13 @@
+README.md
+setup.py
+cli_tool/__init__.py
+cli_tool/click_aws.py
+cli_tool/click_demo.py
+cli_tool/click_test.py
+devops_cli_ericli.egg-info/PKG-INFO
+devops_cli_ericli.egg-info/SOURCES.txt
+devops_cli_ericli.egg-info/dependency_links.txt
+devops_cli_ericli.egg-info/entry_points.txt
+devops_cli_ericli.egg-info/not-zip-safe
+devops_cli_ericli.egg-info/requires.txt
+devops_cli_ericli.egg-info/top_level.txt
