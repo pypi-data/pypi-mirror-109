@@ -1,0 +1,10 @@
+pyqec-0.9.0.dist-info/METADATA,sha256=mj1VniYMGX_zas4sr_nLnwsynAmHr1YfnwsPEtroq7Y,226
+pyqec-0.9.0.dist-info/WHEEL,sha256=jp_38pSJLezUpBSUhhWJAhJhYIbynOVkOOJ7BYuj2Xo,145
+pyqec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqec/classical.py,sha256=t5Py34XhVfTUtmbEnCCXrRzYUONizNlmkKbJK_kxOI4,136
+pyqec/sparse.py,sha256=XvWv72W4JPd1cgf9Qr3_SvoGSSZ7D2c7Lt3eYFUz240,2532
+pyqec/laboratory.py,sha256=59ltyamy64RxTpP3ZgkPHzG7gauLU8odlaaQ2h-2E6k,9883
+pyqec/quantum/__init__.py,sha256=mIaQ_4uDPHKFw3K5scK1CeVmJUugRcVx0xD_eeSpsHk,87
+pyqec/quantum/pauli.py,sha256=NClM-LVA4UWkI0ssq8V-JBCqfXptmFsP1SaXb90ky-Q,83
+pyqec/pyqec.abi3.so,sha256=vJoQPAbMRTivoYvUMAuzPnuEEAi3Y6xILwdXPmq5OTo,3184091
+pyqec-0.9.0.dist-info/RECORD,,
