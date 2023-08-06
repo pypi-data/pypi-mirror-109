@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+cheermeup.egg-info/PKG-INFO
+cheermeup.egg-info/SOURCES.txt
+cheermeup.egg-info/dependency_links.txt
+cheermeup.egg-info/entry_points.txt
+cheermeup.egg-info/requires.txt
+cheermeup.egg-info/top_level.txt
+src/__init__.py
+src/cheermeup.py
