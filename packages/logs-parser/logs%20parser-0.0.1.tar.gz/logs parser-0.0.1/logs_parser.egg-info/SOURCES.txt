@@ -1,0 +1,9 @@
+README.md
+setup.py
+logs_parser/__init__.py
+logs_parser/log_parser.py
+logs_parser.egg-info/PKG-INFO
+logs_parser.egg-info/SOURCES.txt
+logs_parser.egg-info/dependency_links.txt
+logs_parser.egg-info/requires.txt
+logs_parser.egg-info/top_level.txt
