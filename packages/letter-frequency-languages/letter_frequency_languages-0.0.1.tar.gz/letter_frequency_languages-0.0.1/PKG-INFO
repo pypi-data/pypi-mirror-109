@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: letter_frequency_languages
+Version: 0.0.1
+Summary: Distribution of letters in languages
+Home-page: UNKNOWN
+Author: Long Doan
+Author-email: long2000doan@gmail.com
+License: MIT
+Keywords: letter
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+Letter distribution information
+
+
+
+Change Log
+==========
+
+0.0.1 (17/06/2021)
+-------------------
+- First Release
+
+
