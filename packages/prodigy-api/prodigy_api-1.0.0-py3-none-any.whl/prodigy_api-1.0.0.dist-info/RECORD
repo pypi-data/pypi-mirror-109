@@ -1,0 +1,11 @@
+prodigy/__init__.py,sha256=tia84DvowtzF9If8UwVjHjtPDgGV3qmfvLmK3PvAk84,410
+prodigy/gameData.py,sha256=iOlHWRYNywm6btyoFdGXGWTI-wQKxox4AX_XM8YBSW4,608
+prodigy/gameStatus.py,sha256=KZ1MN-XEjQaw1OCQagF9rFNYGUGh-JJcmGIM-2RrsQY,315
+prodigy/getAsset.py,sha256=LNQLaGZfmgjVdTgcWWMAzxgiP9Qp5q6Dh3iA1RIjnA0,422
+prodigy/player.py,sha256=o10BO0QTmCmmBO5Ck-DEFGCcCi6Mxny63h7hflVMLm0,664
+prodigy/prodigy.py,sha256=9PA4Wo9TC8ZpqlbTnGqJrULLtCFArqb4MVoN5VG64rE,814
+prodigy/tokenify.py,sha256=nCexj1UIEzdUixz0YUYyFn2ZXqZcBXmbqaQIRqtcuMI,3065
+prodigy_api-1.0.0.dist-info/LICENSE,sha256=7N2kjlxU5FZL48ocZgVn0i4a-Snoo3QwZk3y7bACSMs,1088
+prodigy_api-1.0.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+prodigy_api-1.0.0.dist-info/METADATA,sha256=9tkrobuVxEQApSegjMHfDmPzjqCRscbRNm11bLdV45w,859
+prodigy_api-1.0.0.dist-info/RECORD,,
