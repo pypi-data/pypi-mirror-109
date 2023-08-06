@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: Monadvect20
+Version: 0.0.1
+Summary: Monad module
+Home-page: https://github.com/vect20/TestRep1
+Author: Fedotov D.
+Author-email: krilov03.03@mail.ru
+License: UNKNOWN
+Description: Р‘РёР±Р»РёРѕС‚РµРєР° Monad РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅР° РґР»СЏ СЂРµР°Р»РёР·Р°С†РёРё РѕСЃРЅРѕРІРЅС‹С… РјРѕРЅР°Рґ РІ Python, Р° РёРјРµРЅРЅРѕ:
+        
+        РњРѕРЅР°РґР° Maybe, РєРѕС‚РѕСЂР°СЏ РІРѕР·РІСЂРѕС‰Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ С‚РёРїР° MaybeX, РіРґРµ X - С‚РёРї Р·РЅР°С‡РµРЅРёСЏ (int,str,float), Р»РёР±Рѕ Р·РЅР°С‡РµРЅРёРµ Nothing.
+        РћР±СЂР°Р±РѕС‚РєР° Р·РЅР°С‡РµРЅРёР№ РїСЂРѕРёСЃС…РѕРґРёС‚ СЃ РїРѕРјРѕС‰СЊСЋ >> (bind):
+        
+        MaybeInt(5) >> function #РІРѕР·РІРµРґРµРЅРёРµ РІ РєРІР°РґСЂР°С‚
+        >>> 25 # С‚РёРї Р·РЅР°С‡РµРЅРёСЏ - MaybeInt, РїСЂРё РЅРµРІРѕР·РјРѕР¶РЅРѕСЃС‚Рё РѕР±СЂР°Р±РѕС‚РєРё Р·РЅР°С‡РµРЅРёР№ --
+        >>> Nothing 
+        
+        РњРѕРЅР°РґР° Either РїСЂРё РїСЂР°РІРёР»СЊРЅРѕР№ РѕР±СЂР°Р±РѕС‚РєРё Р·РЅР°С‡РµРЅРёР№ РІРѕР·РІСЂР°С‰Р°РµС‚ С‚РёРї EitherX, РїСЂРё РѕС€РёР±РєРµ - Left
+        
+        EitehInt(5) >> function
+        >>> 25 # С‚РёРї EitherInt
+        >>> 5 # С‚РёРї Left (РїСЂРё РѕС€РёР±РєРµ)
+        
+        РњРѕРЅР°РґР° Error РІРѕР·РІСЂР°С‰Р°РµС‚ С‚РёРї ErrorX РїСЂРё РѕС‚СЃСѓС‚СЃС‚РІРёРё РѕС€РёР±РєРё РёР»Рё (a, er), РіРґРµ a - Р·РЅР°С‡РµРЅРёРµ, Р° er - С‚РёРї РѕС€РёР±РєРё (С‚РёРї Failure)
+        
+        ErrorInt(5) >> function
+        >>> 25 
+        >>> (5, TypeError) # С‚РёРї Failure
+        
+        РњРѕРЅР°РґР° IO РІСЃРµРіРґР° РІРѕР·РІСЂР°С‰Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ С‚РёРї str, Р»РёР±Рѕ РѕС€РёР±РєСѓ С‚РёРїР° IO_false
+        
+        IO('5') >> fnStr # fnStr --> x + 'Test'
+        >>> '5Test'
+        >>> IO Monad Error: // С‚РёРї РѕС€РёР±РєРё // 
+        
+        РњРѕРЅР°РґР° List РІРѕР·РІР°СЂР°С‰РµС‚ Р»РёР±Рѕ РїСѓСЃС‚РѕР№ MonadoList (РїСЂРё РѕС€РёР±РєРµ), Р»РёР±Рѕ СЃ РєР°РєРёРјРё-Р»РёР±Рѕ Р·РЅР°С‡РµРЅРёСЏРјРё
+        
+        MonadoList([1,2,3]) >> function
+        >>> [1,4,9]
+        >>> [] # РїСЂРё РѕС€РёР±РєРµ
+        
+        Р¤СѓРЅРєС†РёСЏ convectM РїСЂРµРѕР±СЂР°Р·СѓРµС‚ РѕР±С‹С‡РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РЅСѓР¶РЅСѓСЋ РјРѕРЅР°РґСѓ
+        
+        convectM(obj,pClass),РіРґРµ obj - Р·РЅР°С‡РµРЅРёРµ, pClass - РјРѕРЅР°РґРёС‡РµСЃРєРёР№ РєР»Р°СЃСЃ
+        convectM(5,MaybeInt)
+        >>> 5 # С‚РёРї - MaybeInt
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown

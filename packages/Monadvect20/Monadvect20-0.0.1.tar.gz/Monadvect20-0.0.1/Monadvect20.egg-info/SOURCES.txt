@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+Monadvect20.egg-info/PKG-INFO
+Monadvect20.egg-info/SOURCES.txt
+Monadvect20.egg-info/dependency_links.txt
+Monadvect20.egg-info/top_level.txt
