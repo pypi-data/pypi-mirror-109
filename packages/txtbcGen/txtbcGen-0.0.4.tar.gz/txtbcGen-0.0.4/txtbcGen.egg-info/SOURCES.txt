@@ -1,0 +1,14 @@
+setup.py
+txtbcGen/Model.py
+txtbcGen/__init__.py
+txtbcGen.egg-info/PKG-INFO
+txtbcGen.egg-info/SOURCES.txt
+txtbcGen.egg-info/dependency_links.txt
+txtbcGen.egg-info/top_level.txt
+txtbcGen/reactions/Degradation.py
+txtbcGen/reactions/MassAction.py
+txtbcGen/reactions/MichaelisMenten.py
+txtbcGen/reactions/MichaelisMentenGeneral.py
+txtbcGen/reactions/Reactions.py
+txtbcGen/reactions/Synthesis.py
+txtbcGen/reactions/__init__.py
