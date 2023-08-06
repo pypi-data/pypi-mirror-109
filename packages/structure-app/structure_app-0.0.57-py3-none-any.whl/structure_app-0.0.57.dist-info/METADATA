@@ -1,0 +1,190 @@
+Metadata-Version: 2.1
+Name: structure-app
+Version: 0.0.57
+Summary: create skeleton for framework falcon, fastApi
+Home-page: https://gitlab.com/Luisff3rnando/code_generators/-/tree/staging/
+Author: Luis Meza
+Author-email: luis@luis.com
+License: MIT
+Platform: Any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+
+# Project description
+
+
+# Skeleton App
+
+Permite crear una estructura completamente funcional basada en los estandares de proyectos Pythagoras  este nuevo proyecto contiene una configuracion basica que permite correr la aplicacion,  aplica para los siguientes Framework:
+- Falcon
+- Fast Api
+- Flask
+- Django
+
+Next release basic orchestrator and proxies
+
+# Pythagoras Standard Projects
+
+# Fast Api
+```
+project/
+├── app
+|   ├── api
+|   ├── v1
+|   ├── core
+|   └── meta
+|
+├── config
+│   ├── __init__.py
+│   ├── celery.py
+│   ├── routers.py
+│   └── settings.py
+│
+├── docker
+├── docs
+|   └── images
+|
+├── env.example
+├── env.example.json
+├── .gitignore
+├── .gitlab-ci.yml
+├── main.py
+├── README.md
+├── requirements.txt
+├── test_main.py
+├── uvicorn.err.log
+└── uvicorn.out.log
+```
+# Falcon
+```
+project/
+├── app
+|    ├── api
+|    | └── v1
+|    │
+|    ├── core
+|    |
+|    └── meta
+|    |
+|    └── tests
+|
+├── config
+│   └── settings
+|       ├── __init__.py
+│       ├── base.py
+│       ├── local.py
+│       ├── production.py
+│       └── staging.py
+|   ├── __init__.py
+|   └── celery.py
+│
+├── docker
+|
+├── env.example
+├── env.example.json
+├── .gitignore
+├── .gitlab-ci.yml
+├── README.md
+└──requirements.txt
+```
+
+# Flask
+```
+├── app
+│   ├── __init__.py
+│   ├── routes
+│   │   └── __init__.py
+│   └── tests
+├── configs
+│   ├── config_development.py
+│   ├── config_production.py
+│   ├── config.py
+│   └── config_staging.py
+├── docker
+│   ├── local
+│   │   ├── docker-compose.yml
+│   │   └── Dockerfile
+│   ├── production
+│   │   ├── gunicorn
+│   │   │   ├── Dockerfile
+│   │   │   ├── entrypoint
+│   │   │   └── supervisord.conf
+│   │   └── nginx
+│   │       ├── config
+│   │       │   ├── mime.types
+│   │       │   ├── nginx.conf
+│   │       │   ├── servers.conf
+│   │       │   ├── status.conf
+│   │       │   └── vhost.conf
+│   │       └── Dockerfile
+│   └── staging
+│       ├── gunicorn
+│       │   ├── Dockerfile
+│       │   ├── entrypoint
+│       │   └── supervisord.conf
+│       └── nginx
+│           ├── config
+│           │   ├── mime.types
+│           │   ├── nginx.conf
+│           │   ├── servers.conf
+│           │   ├── status.conf
+│           │   └── vhost.conf
+│           └── Dockerfile
+├── instance
+├── proyect
+│   ├── api
+│   │   └──  __init__.py
+│   ├── core
+│   │   ├── constants.py
+│   │   ├── enums.py
+│   │   ├── exceptions.py
+│   │   ├── handlers.py
+│   │   ├── __init__.py
+│   │   ├── models.py
+│   │   ├── process.py
+│   │   ├── test.py
+│   │   └── utils.py
+│   ├── __init__.py
+│   ├── meta
+│   │   └── __init__.py
+│   └── tests
+│       └── test.py
+├── pytest.ini
+├── README.md
+├── release_notes.txt
+├── requirements.txt
+├── setup.py
+└── wsgi.py
+```
+
+
+# Installation
+If you're running python3 on most systems, you can install the package with the following command:
+
+    pip3 install structure_app
+
+# Commands
+    $ structure_app -h
+    usage: skeleton [-h] -f Framework -n name [-db db] [-d docker]
+
+    List the content of a folder
+
+    required arguments:
+    -f  Framework  seleccione Framework [falcon, fastapi]
+    -n  name       nombre del proyecto
+
+    optional arguments:
+    -h, --help     show this help message and exit
+    -db DB         seleccione DB [mongo, mysql]
+    -d  Docker     Yes - No
+
+# Usage
+
+    structure_app -f framework -db  -n name_proyect
+
+

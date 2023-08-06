@@ -1,0 +1,3 @@
+[console_scripts]
+structure_app = structure_app.__main__:main
+
