@@ -1,0 +1,4 @@
+pygame
+python-vlc
+ffmpeg
+youtube_dl
