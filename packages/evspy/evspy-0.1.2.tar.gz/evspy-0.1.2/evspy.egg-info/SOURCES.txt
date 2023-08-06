@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+evspy/__init__.py
+evspy/creep_swelling_model.py
+evspy/loading_empirical_data.py
+evspy/model_run.py
+evspy.egg-info/PKG-INFO
+evspy.egg-info/SOURCES.txt
+evspy.egg-info/dependency_links.txt
+evspy.egg-info/not-zip-safe
+evspy.egg-info/top_level.txt
