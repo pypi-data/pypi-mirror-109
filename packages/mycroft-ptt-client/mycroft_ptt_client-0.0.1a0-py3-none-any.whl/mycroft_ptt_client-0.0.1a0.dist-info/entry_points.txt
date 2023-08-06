@@ -1,0 +1,3 @@
+[console_scripts]
+mycroft_ptt_client = mycroft_ptt_client.__main__:main
+
