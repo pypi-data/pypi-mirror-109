@@ -1,0 +1,10 @@
+asdf
+h5py
+matplotlib
+numpy
+opencv-python
+pandas
+pyserial
+rpy2
+scipy
+sounddevice
