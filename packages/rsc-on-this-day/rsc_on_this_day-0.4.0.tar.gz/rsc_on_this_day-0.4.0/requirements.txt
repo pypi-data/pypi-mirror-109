@@ -1,0 +1,5 @@
+apeye>=0.5.1
+beautifulsoup4>=4.7.1
+click>=7.1.2
+consolekit>=1.0.0
+domdf-python-tools>=2.3.0
