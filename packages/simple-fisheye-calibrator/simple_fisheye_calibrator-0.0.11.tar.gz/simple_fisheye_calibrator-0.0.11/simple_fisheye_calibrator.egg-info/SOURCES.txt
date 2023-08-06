@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+scripts/simple_capture
+scripts/simple_fisheye_calibrator
+simple_fisheye_calibrator.egg-info/PKG-INFO
+simple_fisheye_calibrator.egg-info/SOURCES.txt
+simple_fisheye_calibrator.egg-info/dependency_links.txt
+simple_fisheye_calibrator.egg-info/requires.txt
+simple_fisheye_calibrator.egg-info/top_level.txt
