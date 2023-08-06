@@ -1,0 +1,17 @@
+dante_tokenizer/__init__.py,sha256=WM3BTZJCzoQJJ2l68zBigNX18-mDynusVjZQXpN4Mu0,52
+dante_tokenizer/apps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dante_tokenizer/apps/csv_to_conllu.py,sha256=_t5ZOQGIZsGN8Wvygi83ZbEtV-BEG8jmDDffPWGjIbc,3380
+dante_tokenizer/apps/eval_tokenizers.py,sha256=ZEW99Rs1ccBivDKp_BjLWjHDsV_KBNrHCY5gTz1my3s,2470
+dante_tokenizer/apps/txt_to_conllu.py,sha256=oAa9XtbO54NkAzNOOZt8ZEzdpBSBKYtrusqsUkn7Yi0,3026
+dante_tokenizer/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dante_tokenizer/data/load.py,sha256=HeaMcjztIw9iBseu7A30swHEu15nQ7ESiiYfOMoZsuw,4299
+dante_tokenizer/data/preprocessing.py,sha256=feofZqXgP8j-jWhzQZkBS7tvQI-Qc_TihzeLQsT8HYc,4939
+dante_tokenizer/evaluate/__init__.py,sha256=FXsSvsXQ0Iq5XjfpwRfNVxvDRVeA7asgsn5MKGYJZ10,81
+dante_tokenizer/evaluate/evaluate.py,sha256=Qk2uqzBByGZzp6HcwBf-xghKKdJ_uohvFJfsodWnMD8,3875
+dante_tokenizer/tokenizer/__init__.py,sha256=q4LvLWgZkTZXBO4bVmTfZYqItaVlkBd406lgFuUo8gM,168
+dante_tokenizer/tokenizer/tokenizer.py,sha256=PKEWEdwXlf2MVrfyPahJCU-3b4m46-1UJ_HZfeWYuz0,11872
+dante_tokenizer-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dante_tokenizer-0.2.0.dist-info/METADATA,sha256=BNIfW5i_rG0b4dV_4-9mrS3lyFpJ79FYh1zg9ETKT5k,1896
+dante_tokenizer-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+dante_tokenizer-0.2.0.dist-info/top_level.txt,sha256=LvznblJCDxBmKHBykmz51JVAQJ2NRABqxARZ_nkyJRw,16
+dante_tokenizer-0.2.0.dist-info/RECORD,,
