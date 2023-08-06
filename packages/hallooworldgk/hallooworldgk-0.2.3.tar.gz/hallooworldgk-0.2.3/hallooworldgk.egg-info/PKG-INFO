@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: hallooworldgk
+Version: 0.2.3
+Summary: A basic hello package
+Home-page: https://github.com/
+Author: Hew
+Author-email: <hew92932@gmail.com
+License: GPL 3
+Description: UNKNOWN
+Keywords: hello,world
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
