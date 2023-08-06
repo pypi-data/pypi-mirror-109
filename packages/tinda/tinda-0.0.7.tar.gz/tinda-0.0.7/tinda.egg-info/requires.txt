@@ -1,0 +1,9 @@
+numpy
+pyttsx3
+pypiwin32
+pyaudio
+speedtest-cli
+pynput
+datetime
+mediapipe
+opencv-python
