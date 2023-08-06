@@ -1,0 +1,9 @@
+LICENCE
+README.txt
+setup.py
+mon_premier_packageNT0102.egg-info/PKG-INFO
+mon_premier_packageNT0102.egg-info/SOURCES.txt
+mon_premier_packageNT0102.egg-info/dependency_links.txt
+mon_premier_packageNT0102.egg-info/top_level.txt
+mon_test/__init__.py
+mon_test/mon_test_script.py
