@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: stock-prophet
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: flask
+Requires-Dist: prophet (==1.0.1)
+Requires-Dist: yfinance
+
+UNKNOWN
+
