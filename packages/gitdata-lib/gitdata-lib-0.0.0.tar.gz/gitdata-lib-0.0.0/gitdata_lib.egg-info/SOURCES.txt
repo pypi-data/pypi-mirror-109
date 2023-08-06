@@ -1,0 +1,8 @@
+README.md
+setup.py
+gitdata/__init__.py
+gitdata/__version__.py
+gitdata_lib.egg-info/PKG-INFO
+gitdata_lib.egg-info/SOURCES.txt
+gitdata_lib.egg-info/dependency_links.txt
+gitdata_lib.egg-info/top_level.txt
