@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: odan
+Version: 0.0.1
+Summary: Odoo deployment and network
+Home-page: https://github.com/vpcarlos/odan
+Author: Carlos Valdivia
+Author-email: vpcarlos97@gmail.com
+License: unlicensed
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: click (>=7.0)
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+
+# Odan  (Odoo deployment and network)
+
+CLI to help users deploy Odoo on with docker and an nginx network.
+
+
+### Developing Odan
+```bash
+$ pip install -e . [dev]
+```
+
