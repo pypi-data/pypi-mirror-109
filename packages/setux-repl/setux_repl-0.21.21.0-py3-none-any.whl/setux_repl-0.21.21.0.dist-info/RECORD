@@ -1,0 +1,13 @@
+setux/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+setux/cli/main.py,sha256=_52tFbU90-GSs1-8dyFAmK-Xm49heAdo4ufr3e6aWbI,1933
+setux/cli/usage.py,sha256=3t8nJd7xPboO0m5cRt3kYX-8nhCSpAQ_SnILKtoBLW4,469
+setux/repl/__init__.py,sha256=fzRjtkU9ojeGJIWN98vktGnVOzUlhiDPyKief_oxKaA,139
+setux/repl/commands.py,sha256=mxNqoTT_YrisnSPdyaSOcys0rNOvadPAh9NgcMpy3NE,2333
+setux/repl/helps.py,sha256=Qozi9gIoze9VeCD7QxzJDi2rbmNF0BvB-GtcuqQ0PlQ,1182
+setux/repl/repl.py,sha256=BJe_4dcVU9RSwlY8Fu3aEmm2oIIx2qQfXuMotexjyPY,1777
+setux_repl-0.21.21.0.dist-info/LICENSE,sha256=0tNHXfCacj_eX-GwlIVtBc7i881BDBotZvM9QeCIUPY,1090
+setux_repl-0.21.21.0.dist-info/METADATA,sha256=1HRHDGDa3nmbZpn1UNjdbizt6yHNjqFAsI-51737vZ8,1072
+setux_repl-0.21.21.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+setux_repl-0.21.21.0.dist-info/entry_points.txt,sha256=298Ak79FafEXHD5Kf3r3GINtwDqc0R90oKDgcVob-ZI,47
+setux_repl-0.21.21.0.dist-info/top_level.txt,sha256=kmCnG8Rj9-DTuv9TjsPUPItgUhXEAxy9VU24QddH_X4,6
+setux_repl-0.21.21.0.dist-info/RECORD,,
