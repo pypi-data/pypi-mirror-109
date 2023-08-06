@@ -1,0 +1,10 @@
+README.md
+rabbitmq_tool.py
+setup.cfg
+setup.py
+rabbitmq_tool.egg-info/PKG-INFO
+rabbitmq_tool.egg-info/SOURCES.txt
+rabbitmq_tool.egg-info/dependency_links.txt
+rabbitmq_tool.egg-info/entry_points.txt
+rabbitmq_tool.egg-info/requires.txt
+rabbitmq_tool.egg-info/top_level.txt

@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: rabbitmq-tool
+Version: 0.0.1
+Summary: A RabbitMQ CLI
+Home-page: https://github.com/nvllsvm/rabbitmq-tool
+Author: Andrew Rabert
+Author-email: ar@nullsum.net
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# rabbitmq-tool
+A RabbitMQ CLI
+
+**Features**:
+- manage bindings
+- inspect exchanges and queues
+- show all exchanges and queues
+- create and delete exchanges and queues
+
+
+## Installation
+```
+pip install rabbitmq-tool
+```
+
+## Usage Examples
+See `--help` for more information.
+
+### Create exchange
+```
+$ rabbitmq-tool --url http://localhost:15672 --username guest create-exchange myexchange
+
+```
+
+### Create queue
+```
+$ rabbitmq-tool --url http://localhost:15672 --username guest create-queue myqueue
+```
+
+### Bind exchange and queue
+```
+$ rabbitmq-tool --url http://localhost:15672 --username guest bind --exchange myexchange --queue myqueue --routing '#'
+```
+
+
