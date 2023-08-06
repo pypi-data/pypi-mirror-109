@@ -1,0 +1,10 @@
+cosg/COSG_V1.0.py,sha256=Pp1KPjtD8TnKlPWYXPgy1xyZAoLFfS4BYuJMj-9JHvw,9654
+cosg/__init__.py,sha256=Shn_hBleyTTfwbNubUR4WeVR0qIlyUZNoPWH0NYKhvA,20
+cosg/cosg.py,sha256=X1xh0ClVfDxqYwx_1X5ig2n3LXWJyPz6D62yRaS8zXU,9569
+cosg/__pycache__/__init__.cpython-36.pyc,sha256=8TxX15l9B-zHrnWhmpu8z-7k2GzSczMVpagx-19Mr08,176
+cosg/__pycache__/cosg.cpython-36.pyc,sha256=ZQIAEHX_4aLv6_-IWVCar-KODBC9WCJdYNqf9Hv0mwo,6750
+cosg-1.0.1.dist-info/LICENSE,sha256=21AyuHnmTOsAU_3NrZsnWlQ06repi2Ry_EjKr3xGS6w,1515
+cosg-1.0.1.dist-info/METADATA,sha256=bgGKP_NYDuWBuPENX-5pQHUU3daCtbiI_Fgp2BUswT0,2799
+cosg-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cosg-1.0.1.dist-info/top_level.txt,sha256=Sf53lIGNFdnqpweWYZwbJLcxgOWL5jbKHo1mQkH8M7U,5
+cosg-1.0.1.dist-info/RECORD,,
