@@ -1,0 +1,43 @@
+import click
+from haveibeenpwned_asyncio import haveIbeenPwnedAccount,\
+    haveIbeenPwnedPasswords,haveIbeenPwnedPastes
+# from haveibeenpwned_asyncio.haveibeenpwned_async_client import haveIbeenPwnedPasswords, haveIbeenPwnedPastes, haveIbeenPwnedAccount
+import asyncio
+loop = asyncio.get_event_loop()
+
+@click.group()
+def main():
+    pass
+
+@click.command()
+@click.option('--passwords', default=[], help='List of passwords or single password')
+def passwords(passwords):
+    passwords = passwords.split(",")
+    passwords_check = haveIbeenPwnedPasswords(passwords=passwords)
+    password_res = loop.run_until_complete(passwords_check.query_passwords())
+    click.echo(f"Results: {password_res}")
+
+@click.command()
+@click.option('--pastes', default=[], help='List of accounts for pastses')
+def pastes(pastes):
+    pastes = pastes.split(",")
+    pastes_check = haveIbeenPwnedPastes(pastes=pastes)
+    pastes_res = loop.run_until_complete(pastes_check.query_passwords())
+    click.echo(f"Results: {pastes_res}")
+
+@click.command()
+@click.option('--accounts', default=1, help='List of emails of potentially breached accounts')
+def accounts(accounts):
+    accounts = pastes.split(",")
+    accounts_check = haveIbeenPwnedaccounts(accounts=accounts)
+    accounts_res = loop.run_until_complete(accounts_check.query_passwords())
+    click.echo(f"Results: {accounts_res}")
+
+
+
+main.add_command(passwords)
+main.add_command(accounts)
+main.add_command(pastes)
+
+if __name__ == '__main__':
+    main()
