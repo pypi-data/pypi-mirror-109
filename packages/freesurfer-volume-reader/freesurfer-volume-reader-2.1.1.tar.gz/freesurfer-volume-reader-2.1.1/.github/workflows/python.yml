@@ -1,0 +1,166 @@
+# sync with https://github.com/fphammerle/ical2vdir/blob/master/.github/workflows/python.yml
+
+# https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions
+
+# shown in badge
+# https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow#adding-a-workflow-status-badge-to-your-repository
+name: tests
+
+on:
+  push:
+  pull_request:
+  schedule:
+  - cron: '0 20 * * 5'
+
+jobs:
+  code-format:
+    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        python-version:
+        - 3.8
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - run: pip install --upgrade pipenv==2020.8.13
+    - run: pipenv install --python "$PYTHON_VERSION" --deploy --dev
+      env:
+        PYTHON_VERSION: ${{ matrix.python-version }}
+    - run: pipenv graph
+    - run: pipenv run black --check .
+  tests:
+    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        python-version:
+        - 3.5
+        - 3.6
+        - 3.7
+        - 3.8
+        - 3.9
+        pandas-version:
+        - '' # locked version
+        - 0.21.*
+        - 0.22.*
+        - 0.23.*
+        - 0.24.*
+        - 0.25.*
+        - 1.1.* # python3.6
+        - 1.*
+        exclude:
+        # https://travis-ci.org/github/fphammerle/freesurfer-stats/jobs/683777317#L208
+        # https://github.com/pandas-dev/pandas/commit/18efcb27361478daa3118079ecb166c733691ecb#diff-2eeaed663bd0d25b7e608891384b7298R814
+        - python-version: 3.5
+          pandas-version: 1.*
+        - python-version: 3.5
+          pandas-version: 1.1.*
+        # https://github.com/pandas-dev/pandas/commit/83807088329b2a7e6422e0d0ba460870a265d3d2#diff-60f61ab7a8d1910d86d9fda2261620314edcae5894d5aaa236b821c7256badd7R768
+        - python-version: 3.6
+          pandas-version: 1.*
+        - python-version: 3.7
+          pandas-version: 0.21.*
+        - python-version: 3.7
+          pandas-version: 0.22.*
+        # > astroid.exceptions.AttributeInferenceError: '_constructor_expanddim' not found on <ClassDef.Series l.139 at 0x7f314baa6410>.
+        # https://github.com/fphammerle/freesurfer-volume-reader/runs/1937182916
+        - python-version: 3.7
+          pandas-version: 1.1.*
+        # >/tmp/pip-install-g4jx0np4/numpy/_configtest.c:6: undefined reference to `exp'
+        # https://travis-ci.org/github/fphammerle/freesurfer-stats/jobs/683704331#L437
+        - python-version: 3.8
+          pandas-version: 0.21.*
+        # https://travis-ci.org/github/fphammerle/freesurfer-stats/jobs/683704330#L437
+        - python-version: 3.8
+          pandas-version: 0.22.*
+        # no python3.8 wheels for pandas v0.24.2 & v0.23.4 available
+        # https://travis-ci.org/github/fphammerle/freesurfer-stats/builds/701952350
+        # build takes longer than 10min
+        # https://travis-ci.org/github/fphammerle/freesurfer-stats/jobs/702077404#L199
+        - python-version: 3.8
+          pandas-version: 0.23.*
+        - python-version: 3.8
+          pandas-version: 0.24.*
+        # > astroid.exceptions.AttributeInferenceError: '_constructor_expanddim' not found on <ClassDef.Series l.139 at 0x7f314baa6410>.
+        # https://github.com/fphammerle/freesurfer-volume-reader/runs/1937182916
+        - python-version: 3.8
+          pandas-version: 1.1.*
+        - python-version: 3.9
+          pandas-version: 0.21.*
+        - python-version: 3.9
+          pandas-version: 0.22.*
+        - python-version: 3.9
+          pandas-version: 0.23.*
+        - python-version: 3.9
+          pandas-version: 0.24.*
+      fail-fast: false
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - run: pip install --upgrade pipenv==2020.8.13
+    - run: pipenv install --python "$PYTHON_VERSION" --deploy --dev
+      env:
+        PYTHON_VERSION: ${{ matrix.python-version }}
+    # `pipenv install --selective-upgrade "pandas==$PANDAS_VERSION"` was not effective
+    - run: '[ -z "$PANDAS_VERSION" ] || pipenv run pip install "pandas==$PANDAS_VERSION"'
+      env:
+        PANDAS_VERSION: ${{ matrix.pandas-version }}
+    - run: pipenv graph
+    - run: pipenv run pytest --cov="$(cat *.egg-info/top_level.txt)" --cov-report=term-missing --cov-fail-under=100
+    # https://github.com/PyCQA/pylint/issues/3882
+    - run: python3 -c 'import sys; sys.exit(sys.version_info < (3, 9))'
+        || pipenv run pylint --load-plugins=pylint_import_requirements "$(cat *.egg-info/top_level.txt)"
+    # https://github.com/PyCQA/pylint/issues/352
+    # disable parse-error due to:
+    # > tests/resources/__init__.py:1:0: F0010: error while code parsing: Unable to load file tests/resources/__init__.py:
+    # > [Errno 2] No such file or directory: 'tests/resources/__init__.py' (parse-error)
+    - run: python3 -c 'import sys; sys.exit(sys.version_info < (3, 9))'
+        || pipenv run pylint --disable=parse-error tests/*
+    - run: pipenv run mypy "$(cat *.egg-info/top_level.txt)" tests
+    # >=2.1.0 to support GITHUB_TOKEN
+    # COVERALLS_REPO_TOKEN required manual configuration of secret
+    # https://github.com/TheKevJames/coveralls-python/commit/f597109b62fadaf900af79d4f08a7debee5229e2
+    - run: pip install 'coveralls>=2.1.0,<4'
+    - run: coveralls
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # https://github.com/TheKevJames/coveralls-python/issues/240#issuecomment-758336355
+        COVERALLS_SERVICE_NAME: github
+  test-examples: # sync with https://github.com/fphammerle/freesurfer-surface/blob/dev/.github/workflows/python.yml#L73
+    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        python-version:
+        - 3.5
+        - 3.6
+        - 3.7
+        - 3.8
+        - 3.9
+      fail-fast: false
+    defaults:
+      run:
+        working-directory: examples/
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - run: pip install --upgrade pipenv==2020.8.13
+    - run: pipenv install --python "$PYTHON_VERSION" --deploy --dev
+      env:
+        PYTHON_VERSION: ${{ matrix.python-version }}
+    # > RuntimeError: module compiled against API version 0xe but this version of numpy is 0xd
+    - run: python3 -c 'import sys; sys.exit(sys.version_info >= (3, 8))'
+        || pipenv run pip install --no-deps numpy==1.20.1
+    - run: pipenv graph
+    # > the default behaviour is to abort conversion [...] if one of the cells throws an error
+    - run: pipenv run jupyter nbconvert --execute --inplace *.ipynb
+    # revert line specifying version of python interpreter
+    - run: sudo apt-get update
+    - run: sudo apt-get install --yes --no-install-recommends patchutils
+    - run: git diff --unified=0 | grepdiff --output-matching=hunk '^   "version":' | patch --reverse
+    - run: git diff --unified=0 | grepdiff --output-matching=hunk 'data:image/png;base64,' | patch --reverse
+    - run: git diff --exit-code
