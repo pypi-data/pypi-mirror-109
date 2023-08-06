@@ -1,0 +1,8 @@
+curve_linear/__init__.py,sha256=8tb2N9F2qdzFqQNtylSGzmp0Bja5ntxZtVmjJ60nIQw,155
+curve_linear/logic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+curve_linear/logic/feature_transformer.py,sha256=m9dQCevqtU1omUcx5cImv2QovsbctJNmPSmWtt-RQ2w,3126
+curve_linear/logic/model.py,sha256=SxRmsBQArMREwkp6_-DU_8dycZ48lKYvIhqMfCCVb9o,1872
+curve_linear-0.0.1.dist-info/METADATA,sha256=Dl7IL_YBvSnQTbfm7XAeQOA4CV_luvGoUEygkxZ5f1g,628
+curve_linear-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+curve_linear-0.0.1.dist-info/top_level.txt,sha256=gvjw51OIgG0Rd0Z17GXayP1FY68RHjVLh7FzLJeZero,13
+curve_linear-0.0.1.dist-info/RECORD,,
