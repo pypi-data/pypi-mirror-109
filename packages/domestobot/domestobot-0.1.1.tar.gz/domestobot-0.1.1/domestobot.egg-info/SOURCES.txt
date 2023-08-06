@@ -1,0 +1,17 @@
+LICENSE
+pyproject.toml
+setup.cfg
+setup.py
+domestobot/__init__.py
+domestobot/__main__.py
+domestobot/_app.py
+domestobot/_config.py
+domestobot/_core.py
+domestobot/_steps.py
+domestobot/py.typed
+domestobot.egg-info/PKG-INFO
+domestobot.egg-info/SOURCES.txt
+domestobot.egg-info/dependency_links.txt
+domestobot.egg-info/entry_points.txt
+domestobot.egg-info/requires.txt
+domestobot.egg-info/top_level.txt
