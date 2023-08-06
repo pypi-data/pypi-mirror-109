@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dope3
+Version: 2.0.3
+Summary: Python3 Implementation of DOPE Encryption
+License: GPL-3.0-or-later
+Author: Anubhav Mattoo
+Author-email: anubhavmattoo@outlook.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: bchlib (>=0.14.0,<0.15.0)
+Requires-Dist: dill (>=0.3.3,<0.4.0)
+Requires-Dist: pycryptodome (>=3.9,<4.0)
