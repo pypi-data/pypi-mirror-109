@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: hist-loss
+Version: 0.0.8
+Summary: Package with losses for distribution learning
+Home-page: https://github.com/stat-ml/histloss
+Author: Maxim Panov and Nikita Mokrov and Roman Lisov
+Author-email: nikita.mokrov@skoltech.ru
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
