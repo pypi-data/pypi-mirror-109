@@ -1,0 +1,25 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "nchu"
+author = "Tomy Hsieh"
+author-email = "tomy0000000@gmail.com"
+home-page = "https://github.com/tomy0000000/NCHU-SDK"
+requires = [
+    "requests >=2.24.0",
+    "beautifulsoup4 >=4.9.3",
+    "pandas >=1.1.2",
+]
+description-file = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+]
+requires-python = "~=3.6"
+dist-name = "nchu-sdk"
