@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "traductorkq"
+version = "0.1.0"
+description = ""
+authors = ["Kevin <kevin.kjqm@gmail.com>"]
+keywords = ["Traductor"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/Kevinq181/translatorkq.git"
+repository = "https://github.com/Kevinq181/translatorkq.git"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.0.1"
+translate = "^3.5.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+twine = "^3.4.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
