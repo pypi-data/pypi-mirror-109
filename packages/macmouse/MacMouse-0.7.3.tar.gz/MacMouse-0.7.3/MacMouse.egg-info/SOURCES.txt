@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.py
+MacMouse.egg-info/PKG-INFO
+MacMouse.egg-info/SOURCES.txt
+MacMouse.egg-info/dependency_links.txt
+MacMouse.egg-info/requires.txt
+MacMouse.egg-info/top_level.txt
+mouse/__init__.py
+mouse/__main__.py
+mouse/_darwinmouse.py
+mouse/_generic.py
+mouse/_mouse_event.py
+mouse/_mouse_tests.py
+mouse/_nixcommon.py
+mouse/_nixmouse.py
+mouse/_winmouse.py
