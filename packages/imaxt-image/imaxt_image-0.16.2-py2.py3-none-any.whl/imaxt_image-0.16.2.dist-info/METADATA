@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: imaxt-image
+Version: 0.16.2
+Summary: IMAXT Image Utilities
+Home-page: https://gitlab.ast.cam.ac.uk/imaxt/imaxt-image
+Author: IMAXT Team
+Maintainer: Eduardo Gonzalez Solares
+Maintainer-email: eglez@ast.cam.ac.uk
+License: GNU General Public License v3
+Keywords: imaxt
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Requires-Dist: astropy
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: xmltodict
+Requires-Dist: imagecodecs
+Requires-Dist: zarr
+Requires-Dist: dask
+Requires-Dist: xarray
+Requires-Dist: scikit-image (>=0.18)
+Requires-Dist: xtiff
+
+IMAXT Image Utils
+
+
