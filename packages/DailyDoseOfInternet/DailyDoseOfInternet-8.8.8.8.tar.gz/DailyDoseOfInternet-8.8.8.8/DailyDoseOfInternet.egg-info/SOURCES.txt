@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+DailyDoseOfInternet.egg-info/PKG-INFO
+DailyDoseOfInternet.egg-info/SOURCES.txt
+DailyDoseOfInternet.egg-info/dependency_links.txt
+DailyDoseOfInternet.egg-info/top_level.txt
