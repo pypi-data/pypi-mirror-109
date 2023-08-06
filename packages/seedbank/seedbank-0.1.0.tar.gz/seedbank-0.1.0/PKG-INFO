@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: seedbank
+Version: 0.1.0
+Summary: Common infrastructure for initializing random number generators.
+Home-page: https://seedbank.lensit.org
+Author: Michael Ekstrand
+Author-email: michaelekstrand@boisestate.edu
