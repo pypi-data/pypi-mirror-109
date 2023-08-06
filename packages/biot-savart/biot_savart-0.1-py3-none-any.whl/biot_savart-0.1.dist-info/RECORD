@@ -1,0 +1,8 @@
+biot_savart/__init__.py,sha256=xpRFjNxulEEV8TQ5gvhLysKmAwHhmmufMGO7rnyeEJY,71
+biot_savart/biot_savart.py,sha256=a2pcClgAbJ5roApAwjooiXwBd0LsKK8KGeiuo4oL4UE,9382
+biot_savart/geometry.py,sha256=jMFhqMAl9jm91GGK8YAfU1XFHNGWR3o06zj6_KMr7ys,7627
+biot_savart/plotting.py,sha256=gpywYU49KKSpmuFw-rwrIlPjIU8z7ziKOmbZY9Orq38,4671
+biot_savart-0.1.dist-info/METADATA,sha256=vgSRWLZ3hxH2vQ38TRj46ZBozVhqK6BIwvp9MB6Z3uQ,10110
+biot_savart-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+biot_savart-0.1.dist-info/top_level.txt,sha256=gxhoHznfRGSveC40aUxnaicDsuUstpgyllw-20sVsJk,12
+biot_savart-0.1.dist-info/RECORD,,
