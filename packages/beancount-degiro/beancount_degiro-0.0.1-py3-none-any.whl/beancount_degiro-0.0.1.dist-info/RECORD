@@ -1,0 +1,14 @@
+beancount-degiro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beancount-degiro/degiro.py,sha256=RF7vpLZj_la6MJ-A2haxsf1DdqT7dD25HYg6pYWirSk,20370
+beancount-degiro/degiro_de.py,sha256=zp18BrA0qtQ0DwiWjSUljpAOyu0UYRFYSERkPrJFJtQ,1913
+beancount-degiro/stockutil.py,sha256=VS6vWPTkVbgRVmyZamPlK7dCJD7m3jlxnceBHNaKeyQ,2985
+beancount_degiro/__init__.py,sha256=TYoVkQPRmzRT3m1Gup6VMMoW-okOAWUkoxA5Bc3OR5k,68
+beancount_degiro/degiro.py,sha256=FEC2ZDCmehODQIKnViqaqGA8qYPKrscfXow4zx120LM,23095
+beancount_degiro/degiro_de.py,sha256=zp18BrA0qtQ0DwiWjSUljpAOyu0UYRFYSERkPrJFJtQ,1913
+beancount_degiro/degiro_lang.py,sha256=TbwTXviiJ4eFWpFoDmNRavCq3I1qGUspIv9ftiqJFV8,3943
+beancount_degiro/stockutil.py,sha256=7cA36maD8XSzarCdKGlfQyU6gj9v6JRPF0yncYQ0coA,3042
+beancount_degiro-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+beancount_degiro-0.0.1.dist-info/METADATA,sha256=4eO5XpATdiCJ7QHAmgPQqTRff2BStNdSCuPUQVV2yMQ,972
+beancount_degiro-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+beancount_degiro-0.0.1.dist-info/top_level.txt,sha256=srkimqyPXH_O2X6gzMbf2owg9ZaKZJQ-n74-6pugRyg,17
+beancount_degiro-0.0.1.dist-info/RECORD,,
