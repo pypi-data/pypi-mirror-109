@@ -1,0 +1,6 @@
+tensorflow
+keras
+gensim
+nltk
+scikit-learn
+sklearn
