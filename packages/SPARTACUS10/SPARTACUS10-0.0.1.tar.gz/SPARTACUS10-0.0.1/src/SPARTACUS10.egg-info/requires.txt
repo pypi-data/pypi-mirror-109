@@ -1,0 +1,7 @@
+numpy>=1.15.1
+scipy>=1.2.0
+scikit-learn>=0.22.0
+
+[dev]
+pytest
+pandas>=0.18.1
