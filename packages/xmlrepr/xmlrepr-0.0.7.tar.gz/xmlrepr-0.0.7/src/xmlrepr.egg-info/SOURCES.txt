@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/xmlrepr/__init__.py
+src/xmlrepr.egg-info/PKG-INFO
+src/xmlrepr.egg-info/SOURCES.txt
+src/xmlrepr.egg-info/dependency_links.txt
+src/xmlrepr.egg-info/top_level.txt
