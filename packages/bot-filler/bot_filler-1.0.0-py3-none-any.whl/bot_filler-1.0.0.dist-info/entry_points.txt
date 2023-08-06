@@ -1,0 +1,3 @@
+[console_scripts]
+bot_filler=bot_filler.cli:main
+
