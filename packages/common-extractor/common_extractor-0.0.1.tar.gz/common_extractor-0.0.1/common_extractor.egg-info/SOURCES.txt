@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+common_extractor/__init__.py
+common_extractor.egg-info/PKG-INFO
+common_extractor.egg-info/SOURCES.txt
+common_extractor.egg-info/dependency_links.txt
+common_extractor.egg-info/top_level.txt
+common_extractor/table_common_extract/__init__.py
+common_extractor/table_common_extract/base.py
+common_extractor/table_common_extract/cell.py
+common_extractor/table_common_extract/cell_iterator.py
+common_extractor/table_common_extract/extracttable.py
+common_extractor/table_common_extract/table_locator.py
+common_extractor/text_common_extract/__init__.py
+common_extractor/text_common_extract/extracttext.py
+common_extractor/text_common_extract/text_mapper.py
