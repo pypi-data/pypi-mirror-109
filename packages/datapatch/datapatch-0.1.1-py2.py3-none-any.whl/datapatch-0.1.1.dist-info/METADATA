@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: datapatch
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/pudo/datapatch
+Author: Friedrich Lindenberg
+Author-email: friedrich@pudo.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: babel (<3.0.0,>=2.9.1)
+Requires-Dist: normality (<3.0.0,>=2.1.1)
+Requires-Dist: pyyaml
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
+# datapatch
+A Python library for defining rule-based overrides on messy data
+
+

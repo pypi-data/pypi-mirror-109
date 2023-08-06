@@ -1,0 +1,11 @@
+datapatch/__init__.py,sha256=wS9-_wrKzwxYDRGRNcwHKtUBie2YdnyAl3UiPFIrX8k,142
+datapatch/exc.py,sha256=lZ5eld9wD6QhMTWBkYcjMTIXTYsnDG6bjCbulIEMjuk,444
+datapatch/lookup.py,sha256=vC76APJR6zsMx0SjJlZy5JANwTRVISgi20gJQkp8EE4,1635
+datapatch/option.py,sha256=ajbEp-ydmkCsbLGI10BFICILooBTnP3ZhUKYETmQvvU,1924
+datapatch/result.py,sha256=o__fPEyDZgAJhQy0o4B5_FhhJD2XYil_hYPTxCRpWaY,455
+datapatch-0.1.1.dist-info/LICENSE,sha256=F8S44dG5G6StrgH2f59cOU_ipt0ymQyO---E2I8uLVU,1077
+datapatch-0.1.1.dist-info/METADATA,sha256=QUtAI7JNZ-ErVdwphPSCPmeHoZfWAyQEuC82ti4MGQ0,716
+datapatch-0.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+datapatch-0.1.1.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+datapatch-0.1.1.dist-info/top_level.txt,sha256=xYvpZzH54Xd7mTFAbG1DbLccA5qAUQZtil2wfUFSc0s,10
+datapatch-0.1.1.dist-info/RECORD,,
