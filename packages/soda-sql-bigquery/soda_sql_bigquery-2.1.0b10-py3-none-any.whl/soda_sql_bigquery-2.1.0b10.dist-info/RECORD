@@ -1,0 +1,5 @@
+sodasql/dialects/bigquery_dialect.py,sha256=wiE2LuaSV3oJRmSP_pFfUHawWbTiuCT8SAFzBfm499k,5568
+soda_sql_bigquery-2.1.0b10.dist-info/METADATA,sha256=3h9b1BBKWHfwXEd_86kbXgH9Ou6M3sGuIMjo8JY8Vt4,234
+soda_sql_bigquery-2.1.0b10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+soda_sql_bigquery-2.1.0b10.dist-info/top_level.txt,sha256=iWRgaTzdfqDF5qGyrChKrnJh7tIweOrFM4J4_Lun_Xc,8
+soda_sql_bigquery-2.1.0b10.dist-info/RECORD,,
