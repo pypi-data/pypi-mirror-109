@@ -1,0 +1,11 @@
+donald/__init__.py,sha256=VCXtJLCdS4bUYarKLkxr_f-pIUs9t_pBHw8wl5FRahI,557
+donald/__main__.py,sha256=0hMhBECV6aU6-E02h0HEwoO4BilD1xHMpDqnQ0_wRns,825
+donald/core.py,sha256=GeKYmhz8mIZhAc6NvGumL5lYbKp3YNo7ndnpa3WUvk4,7856
+donald/queue.py,sha256=4EL6ezHIPV6a0RklC77x3OhEQOqKTXLAJDxQl3hjvEQ,4378
+donald/utils.py,sha256=tUDQsHmuKjadqVdXHrH40ef0-oeaJ1ZZYOQJKVaKUgY,2279
+donald/worker.py,sha256=CKc03VBujgsN3pFDaCRRGgzDR2ehSnHej5QjGoTmWo4,2957
+donald-0.8.1.dist-info/METADATA,sha256=p-yo47zmHZWkyb6GC6D-B5kac8mQQJNnGmhTUwKz3Qo,4267
+donald-0.8.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+donald-0.8.1.dist-info/entry_points.txt,sha256=J0rZTef6QMM0cFiGF2Qa4RrxtQlAWgD7GR-92TclhGo,49
+donald-0.8.1.dist-info/top_level.txt,sha256=IML3k_c4jhaPTa4bnewn5WmdlRGXCabkwLQUIFQ0QRM,7
+donald-0.8.1.dist-info/RECORD,,
