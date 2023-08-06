@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: LunarCalendar-ext
+Version: 0.0.1
+Summary: A fork from LunarCalendar.
+Home-page: https://github.com/KaixuYang/LunarCalendar-extension
+Author: KaixuYang
+Author-email: kaixuyang@gmail.com
+License: MIT
+Description: LunarCalendar-extension
+        =======================
+        
+        This repo forks the [LunarCalendar](https://github.com/wolfhong/LunarCalendar) repo and fixes some bugs.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, <4
