@@ -1,0 +1,5 @@
+click==8.0.1
+inquirer==2.7.0
+configobj==5.0.6
+Sphinx==4.0.2
+sphinx-rtd-theme==0.5.2

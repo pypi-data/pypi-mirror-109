@@ -1,0 +1,17 @@
+LICENCE
+README.md
+setup.py
+notelink.egg-info/PKG-INFO
+notelink.egg-info/SOURCES.txt
+notelink.egg-info/dependency_links.txt
+notelink.egg-info/entry_points.txt
+notelink.egg-info/requires.txt
+notelink.egg-info/top_level.txt
+src/__init__.py
+src/configs.py
+src/main.py
+src/core/__init__.py
+src/core/helpers.py
+src/promps/__init__.py
+src/promps/list.py
+src/promps/search.py
