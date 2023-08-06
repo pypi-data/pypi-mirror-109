@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+8888/__init__.py
+Technoblade.egg-info/PKG-INFO
+Technoblade.egg-info/SOURCES.txt
+Technoblade.egg-info/dependency_links.txt
+Technoblade.egg-info/top_level.txt
