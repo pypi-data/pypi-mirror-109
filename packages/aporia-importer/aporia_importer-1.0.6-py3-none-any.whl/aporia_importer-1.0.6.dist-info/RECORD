@@ -1,0 +1,10 @@
+aporia_importer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aporia_importer/config.py,sha256=DQdbvowUsZViE7PCAc0IHxD_nHCmiDFAzB_Pe-bDdKk,1614
+aporia_importer/data_loader.py,sha256=XCVNN7fjVc2WtRxgoNjCE_EPMtgzNSEX421ljWQ4Yjc,647
+aporia_importer/logging_utils.py,sha256=15mvHsTU05963Y0OQiUKlszEo8XSwV2JuLi3zwj3pNg,783
+aporia_importer/main.py,sha256=C9CEXrv5H_7XX2DjZMrflt971DmloOGAYoGEJIy3ip4,2595
+aporia_importer-1.0.6.dist-info/entry_points.txt,sha256=wsjnKI9AWmrkxH7e0PoD5aB0auD97abVryv3nkfefp8,61
+aporia_importer-1.0.6.dist-info/LICENSE,sha256=ki-6lR5ZYYd8cqg8aSUdhhI59Jj6en1m7WuKamG9Dgw,1063
+aporia_importer-1.0.6.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+aporia_importer-1.0.6.dist-info/METADATA,sha256=cJ5_CdUV5oVcBhKhtiXokfSZk5UOw3hiiK64DqQ57mw,3838
+aporia_importer-1.0.6.dist-info/RECORD,,

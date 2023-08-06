@@ -1,0 +1,3 @@
+[console_scripts]
+aporia-importer=aporia_importer.main:main
+
