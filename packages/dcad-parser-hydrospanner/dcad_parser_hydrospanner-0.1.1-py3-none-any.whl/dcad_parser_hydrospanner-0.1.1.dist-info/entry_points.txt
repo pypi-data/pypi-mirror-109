@@ -1,0 +1,3 @@
+[console_scripts]
+generate_sqlalchemy = dcad_parser.generate_sqlalchemy:main
+
