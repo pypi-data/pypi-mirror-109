@@ -1,0 +1,9 @@
+README.md
+setup.py
+stark-utilities/__init__.py
+stark-utilities/stark-utilities.py
+stark_utilities.egg-info/PKG-INFO
+stark_utilities.egg-info/SOURCES.txt
+stark_utilities.egg-info/dependency_links.txt
+stark_utilities.egg-info/requires.txt
+stark_utilities.egg-info/top_level.txt
