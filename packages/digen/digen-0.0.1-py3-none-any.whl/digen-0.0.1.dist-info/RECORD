@@ -1,0 +1,13 @@
+digen/__init__.py,sha256=vPDsly2L-H3kwhXdjE-I_KzDqD8tinWUVcSFKEcozxg,1744
+digen/benchmark.py,sha256=zIMQiSaE5GAezs8EV1jROewYgVkGZrEoIAy0gUUz_Cg,23376
+digen/chartsdata.pkl,sha256=4MzuTn3azRrjmow2yInXcLdYr3SpB-tMlm8HDXAduOQ,1207581
+digen/dataset.py,sha256=pjChokoum7H0mAo2f69ZBzXs8BulDCpDeF8n2Vjbq4Y,4958
+digen/defaults.py,sha256=EWNu1Jk5Huh6V5txigQV0taZ1mRSOZ_ZaxCxzflF_QQ,7847
+digen/profiling.py,sha256=k6HeJsdCaN9jQVAPxdy9dZRpKTSjUixBWPIs_FSzPO8,2169
+digen/stats.csv,sha256=emHFE9pWzjrg1fAiaa4vqdLICl2bW0qORrKtxe4zcLY,10139
+digen-0.0.1.dist-info/LICENSE,sha256=GXTaaBuwxr3gN1iAeX15_87bcgPPv-_XnvggLs_UOaI,1120
+digen-0.0.1.dist-info/METADATA,sha256=3Uz3pXYsllDX0H6Tm_9u3oHpulP0uHGL_gdRGpeV5JI,3811
+digen-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+digen-0.0.1.dist-info/top_level.txt,sha256=GYgiV6mROgT-rX_9g-KD9UJuGMTiG6hSSO1l2c_RqJU,6
+digen-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+digen-0.0.1.dist-info/RECORD,,
