@@ -1,0 +1,107 @@
+.gitattributes
+.gitignore
+HISTORY.md
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+ppe_match/__init__.py
+ppe_match/simulation.py
+ppe_match/strategies.py
+ppe_match.egg-info/PKG-INFO
+ppe_match.egg-info/SOURCES.txt
+ppe_match.egg-info/dependency_links.txt
+ppe_match.egg-info/requires.txt
+ppe_match.egg-info/top_level.txt
+ppe_match/data/anon_distance_matrix.csv
+ppe_match/data/anon_donors.csv
+ppe_match/data/anon_recipients.csv
+results/test 1/decisions.csv
+results/test 1/results.csv
+results/test 1/2020-04-11/decisions.csv
+results/test 1/2020-04-11/distance_matrix.csv
+results/test 1/2020-04-11/donors.csv
+results/test 1/2020-04-11/recipients.csv
+results/test 1/2020-04-12/decisions.csv
+results/test 1/2020-04-12/distance_matrix.csv
+results/test 1/2020-04-12/donors.csv
+results/test 1/2020-04-12/recipients.csv
+results/test 2/decisions.csv
+results/test 2/results.csv
+results/test 2/2020-04-09/decisions.csv
+results/test 2/2020-04-09/distance_matrix.csv
+results/test 2/2020-04-09/donors.csv
+results/test 2/2020-04-09/recipients.csv
+results/test 2/2020-04-10/decisions.csv
+results/test 2/2020-04-10/distance_matrix.csv
+results/test 2/2020-04-10/donors.csv
+results/test 2/2020-04-10/recipients.csv
+results/test 2/2020-04-11/decisions.csv
+results/test 2/2020-04-11/distance_matrix.csv
+results/test 2/2020-04-11/donors.csv
+results/test 2/2020-04-11/recipients.csv
+results/test 2/2020-04-12/decisions.csv
+results/test 2/2020-04-12/distance_matrix.csv
+results/test 2/2020-04-12/donors.csv
+results/test 2/2020-04-12/recipients.csv
+results/test 2/2020-04-13/decisions.csv
+results/test 2/2020-04-13/distance_matrix.csv
+results/test 2/2020-04-13/donors.csv
+results/test 2/2020-04-13/recipients.csv
+results/test 2/2020-04-14/decisions.csv
+results/test 2/2020-04-14/distance_matrix.csv
+results/test 2/2020-04-14/donors.csv
+results/test 2/2020-04-14/recipients.csv
+results/test 2/2020-04-15/decisions.csv
+results/test 2/2020-04-15/distance_matrix.csv
+results/test 2/2020-04-15/donors.csv
+results/test 2/2020-04-15/recipients.csv
+results/test 2/2020-04-16/decisions.csv
+results/test 2/2020-04-16/distance_matrix.csv
+results/test 2/2020-04-16/donors.csv
+results/test 2/2020-04-16/recipients.csv
+results/test 2/2020-04-17/decisions.csv
+results/test 2/2020-04-17/distance_matrix.csv
+results/test 2/2020-04-17/donors.csv
+results/test 2/2020-04-17/recipients.csv
+results/test 2/2020-04-18/decisions.csv
+results/test 2/2020-04-18/distance_matrix.csv
+results/test 2/2020-04-18/donors.csv
+results/test 2/2020-04-18/recipients.csv
+results/test 2/2020-04-19/decisions.csv
+results/test 2/2020-04-19/distance_matrix.csv
+results/test 2/2020-04-19/donors.csv
+results/test 2/2020-04-19/recipients.csv
+results/test 2/2020-04-20/decisions.csv
+results/test 2/2020-04-20/distance_matrix.csv
+results/test 2/2020-04-20/donors.csv
+results/test 2/2020-04-20/recipients.csv
+test/__init__.py
+test/test_package.py
+test data/tests solved manually.xlsx
+test data/section3_example/Table1.csv
+test data/section3_example/Table2.csv
+test data/section3_example/Table3.csv
+test data/section3_example/Table4.csv
+test data/test 1/test_decisions.csv
+test data/test 1/test_distance.csv
+test data/test 1/test_donors.csv
+test data/test 1/test_recipients.csv
+test data/test 2/test_decisions.csv
+test data/test 2/test_distance.csv
+test data/test 2/test_donors.csv
+test data/test 2/test_recipients.csv
+test/data/test_1/test_decisions.csv
+test/data/test_1/test_distance.csv
+test/data/test_1/test_donors.csv
+test/data/test_1/test_recipients.csv
+test/data/test_2/test_decisions.csv
+test/data/test_2/test_distance.csv
+test/data/test_2/test_donors.csv
+test/data/test_2/test_recipients.csv
+workspace/Code development sandbox.ipynb
+workspace/test notebook.ipynb
+workspace/test1.ipynb
+workspace/tests solved manually.xlsx
