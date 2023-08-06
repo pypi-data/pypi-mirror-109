@@ -1,0 +1,7 @@
+README.md
+setup.py
+bloxlink.egg-info/PKG-INFO
+bloxlink.egg-info/SOURCES.txt
+bloxlink.egg-info/dependency_links.txt
+bloxlink.egg-info/not-zip-safe
+bloxlink.egg-info/top_level.txt
