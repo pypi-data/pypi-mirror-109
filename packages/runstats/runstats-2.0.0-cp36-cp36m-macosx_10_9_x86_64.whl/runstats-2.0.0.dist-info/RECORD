@@ -1,0 +1,9 @@
+runstats/__init__.py,sha256=Q_TxhjVJ-BC-MDVk4RP4ut50Ds97pZLkxHJlWciHZvU,472
+runstats/_core.cpython-36m-darwin.so,sha256=BYePxXWtFn1VosxpEvBhOM2K4wavJc9L6nxkTG6h4m4,286864
+runstats/_core.py,sha256=tEWAiCLgdad0ZHk1qJMpjev88DJSuAen_tuBQYvHFYE,16223
+runstats/core.py,sha256=tEWAiCLgdad0ZHk1qJMpjev88DJSuAen_tuBQYvHFYE,16223
+runstats-2.0.0.dist-info/LICENSE,sha256=rVnUL1EtJRxRqlNURNkcumzSl7eDbfgLI4Nv9e1m-5g,559
+runstats-2.0.0.dist-info/METADATA,sha256=hbYVvndhc_cnwqzOObyFTlvzzgh_LeLbVHG7WVDUAFg,11876
+runstats-2.0.0.dist-info/WHEEL,sha256=SCcPaD1xriZouD6EXl7AgcYiQmH1NgiskymVTsykSG4,110
+runstats-2.0.0.dist-info/top_level.txt,sha256=XlbOiIriFU1IHQjSps6CrnnHWDNqa-PTFmymrMrTTxc,9
+runstats-2.0.0.dist-info/RECORD,,
