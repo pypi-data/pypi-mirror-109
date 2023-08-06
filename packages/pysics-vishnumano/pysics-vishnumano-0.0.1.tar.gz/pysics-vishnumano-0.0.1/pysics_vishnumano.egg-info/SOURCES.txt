@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+pysics-vishnumano/__init__.py
+pysics_vishnumano.egg-info/PKG-INFO
+pysics_vishnumano.egg-info/SOURCES.txt
+pysics_vishnumano.egg-info/dependency_links.txt
+pysics_vishnumano.egg-info/top_level.txt

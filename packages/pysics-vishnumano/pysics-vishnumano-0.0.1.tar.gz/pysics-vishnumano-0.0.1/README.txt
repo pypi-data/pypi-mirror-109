@@ -1,0 +1,1 @@
+This is a simple physics module for python with introductory physics equations.
