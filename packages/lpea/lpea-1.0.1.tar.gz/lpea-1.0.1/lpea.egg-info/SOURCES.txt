@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+lpea.egg-info/PKG-INFO
+lpea.egg-info/SOURCES.txt
+lpea.egg-info/dependency_links.txt
+lpea.egg-info/top_level.txt
