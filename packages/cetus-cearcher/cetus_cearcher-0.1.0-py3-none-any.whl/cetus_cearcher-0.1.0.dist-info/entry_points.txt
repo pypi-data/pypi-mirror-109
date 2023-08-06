@@ -1,0 +1,3 @@
+[console_scripts]
+cetus=cetus_cearcher.main:app
+
