@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/humsithon/__init__.py
+src/humsithon.egg-info/PKG-INFO
+src/humsithon.egg-info/SOURCES.txt
+src/humsithon.egg-info/dependency_links.txt
+src/humsithon.egg-info/top_level.txt
