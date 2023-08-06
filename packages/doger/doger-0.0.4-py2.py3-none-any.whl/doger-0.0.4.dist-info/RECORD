@@ -1,0 +1,16 @@
+doger/__init__.py,sha256=kZgXSILqhnU_Ja1QCIMfLymMY5BYMmI0-_CJSnStKkw,6606
+doger/__version__.py,sha256=zuUBiARuI9uMa4heV7zZUaziMdHNTy101yhs0Z3jXak,75
+doger/formatter.py,sha256=eF8o5T5ffZJuya0N5j3Q7Gz--k00pNJtnEmouH8Fcqg,5781
+doger/handlers.py,sha256=BlF3H5IIGgG51cZwxIStQIuA-b5Akrfzz2vWSXnAYaY,4556
+doger/output.py,sha256=K5z8t7_xAgStLPsFYbJynxuJXOvWletFjYAskmgxcdc,9754
+doger/pythonjsonlogger/__init__.py,sha256=ZID2iWOWC-wPi3tqdDyLTJNG6D0H5a-DnVtd9VexWDA,24
+doger/pythonjsonlogger/jsonlogger.py,sha256=SZfwy7gzX265HXChWbpYtckWOGdroIeEgeSmp01naeU,8717
+doger/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doger/tests/test_daiquiri.py,sha256=8otzDOPsNIX_5Sn7MTC88uwNYPsk585GkA1FJlj8Zjg,3674
+doger/tests/test_formatter.py,sha256=Tk4Jv0ZgxqwBJ8ZnSMg76aeh0sesoZSTWSot2lRXvbo,3529
+doger/tests/test_output.py,sha256=1f91ARi1zn62fqvl334T43TcUtSgF7Uxvv5pMt7uAgs,5281
+doger-0.0.4.dist-info/LICENSE,sha256=hG36cUw-8HznlKK-WR0TvN1vO5xdiqHAca3FhvX7Y7c,1081
+doger-0.0.4.dist-info/METADATA,sha256=2bLngIz4uR4eRbocfia2nEm2QTZ17EpjbW7O_hYUWZs,726
+doger-0.0.4.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+doger-0.0.4.dist-info/top_level.txt,sha256=6pM2WvV7p6uaZid-gyEu0470VaVuS1_SLVyvztqlHow,6
+doger-0.0.4.dist-info/RECORD,,
