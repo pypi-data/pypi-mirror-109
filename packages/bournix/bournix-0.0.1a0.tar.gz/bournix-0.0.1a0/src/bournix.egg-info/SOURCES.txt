@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/bournix/__init__.py
+src/bournix.egg-info/PKG-INFO
+src/bournix.egg-info/SOURCES.txt
+src/bournix.egg-info/dependency_links.txt
+src/bournix.egg-info/top_level.txt
+src/bournix/core/__init__.py
+src/bournix/core/serializer.py
