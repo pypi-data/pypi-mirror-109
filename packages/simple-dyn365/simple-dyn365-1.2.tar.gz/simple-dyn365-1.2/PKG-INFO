@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: simple-dyn365
+Version: 1.2
+Summary: A simple Dynamics 365 WebAPI implementation
+Home-page: https://github.com/adam-mah/simple-dyn365
+Author: Adam Mahameed
+Author-email: adam.mah315@gmail.com
+License: MIT
+Download-URL: https://github.com/adam-mah/simple-dyn365/archive/refs/tags/1.1.tar.gz
+Description: UNKNOWN
+Keywords: simple,dyn365,dynamics,WebAPI
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
