@@ -1,0 +1,10 @@
+mysql-connector-python==8.0.17
+pyramid<2
+invoke
+psycopg2
+rattail[auth,bouncer,db]
+rattail-fabric2
+Tailbone
+pyCOREPOS
+rattail-corepos
+tailbone-corepos
