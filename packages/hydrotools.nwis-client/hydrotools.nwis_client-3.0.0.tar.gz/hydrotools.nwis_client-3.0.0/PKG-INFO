@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hydrotools.nwis_client
+Version: 3.0.0
+Summary: A convenient interface to the USGS NWIS Instantaneous Values (IV) REST Service API
+Home-page: https://www.github.com/NOAA-OWP/hydrotools
+Author: Austin Raney
+Author-email: arthur.raney@noaa.gov
+License: USDOC
+Platform: UNKNOWN
+Provides-Extra: develop
+
+UNKNOWN
+
