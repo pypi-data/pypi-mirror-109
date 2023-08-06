@@ -1,0 +1,14 @@
+README.md
+setup.py
+approxbayescomp/__init__.py
+approxbayescomp/plot.py
+approxbayescomp/prior.py
+approxbayescomp/simulate.py
+approxbayescomp/smc.py
+approxbayescomp/wasserstein.py
+approxbayescomp/weighted.py
+approxbayescomp.egg-info/PKG-INFO
+approxbayescomp.egg-info/SOURCES.txt
+approxbayescomp.egg-info/dependency_links.txt
+approxbayescomp.egg-info/requires.txt
+approxbayescomp.egg-info/top_level.txt
