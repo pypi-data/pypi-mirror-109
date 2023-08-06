@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pip-install-name
+Version: 0.0.2
+Summary: Je teste la publication de mon package
+Home-page: https://github.com/ZoheirHADID/Pypi_publisher
+Author: Zoheir HADID
+Author-email: zoheir_hadid@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: dataframe (~=0.2.1.3)
+Requires-Dist: blessings (~=1.7)
+
+#Hello word
+blabla blabla  blabla blabla blabla blabla blabla blabla blabla blabla blabla 
+
+
+## Comment utiliser les fonctions ?
+``` python
+from HelloWord import say_hello
+say_hello()
+#'Hello, Word!'
+say_hello("zoheir")
+#'Hello, zoheir!'
+```
+
