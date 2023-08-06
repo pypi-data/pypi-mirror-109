@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: acopoweropt
+Version: 0.1.0
+Summary: Ant Colony Power Systems Optimizer
+Home-page: https://github.com/ettoreaquino/acopoweropt
+Keywords: power systems,optimization,python
+Author: Ettore Aquino
+Author-email: ettore@ettoreaquino.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cvxopt (>=1.2.6,<2.0.0)
+Requires-Dist: pandas (>=1.2.4,<2.0.0)
+Project-URL: Repository, https://github.com/ettoreaquino/acopoweropt
+Description-Content-Type: text/markdown
+
+# Ant Colony Power Systems Optimizer
+
+This library aims to provide a tool to solve an optimal dispach of Thermal Generation Units, using the Ant Colony Optimization algorithm, hence the library name acopoweropt (**A**nt **Co**lony **Power** **Opt**imizer)
+
+> This is an under development library
