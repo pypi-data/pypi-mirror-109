@@ -1,0 +1,1 @@
+jupyterlab_slash_copy_path
