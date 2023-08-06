@@ -1,0 +1,3 @@
+[console_scripts]
+archive-project = archive_project.cli:cli
+

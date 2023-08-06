@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+archive_project/__init__.py
+archive_project/cli.py
+archive_project/main.py
+archive_project.egg-info/PKG-INFO
+archive_project.egg-info/SOURCES.txt
+archive_project.egg-info/dependency_links.txt
+archive_project.egg-info/entry_points.txt
+archive_project.egg-info/requires.txt
+archive_project.egg-info/top_level.txt
