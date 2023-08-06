@@ -1,0 +1,14 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_allanvar.py,sha256=Fkj2r-Wq7yaaO_9ylm280NQQjuQSsgEzmAXAeszICz8,2134
+test/test_calibration.py,sha256=M1sQm5959pZGE4CYtW2kU6e6P_-h_9LVZtpcRdyU4eQ,2052
+tweezepy/MLE.py,sha256=rEC4kRZ2_NYCWM-6GBJsHcc_rcy770Ah9JfRd6B_-SQ,11772
+tweezepy/__init__.py,sha256=qTevxqWM1pVfdpEWbEwDS-66WftLssAh-vVseKCcVV8,255
+tweezepy/allanvar.py,sha256=8g-rw8ZMFqJFLE2Y0_CBeLMiAz-XL9vWjDuWEEg0OvQ,20357
+tweezepy/expressions.py,sha256=e3J9q0Rw5TNbc0aoiXFHWW8gyQncIXD7rbtZ275_wNE,2148
+tweezepy/simulations.py,sha256=lHzmt9fpKqYOmxB8LPmfR2Gq20Wl-felKHD_Fzwn06E,2365
+tweezepy/smmcalibration.py,sha256=QMwYRpX3I87AzRnblaROMzR9TMQavi0tRLqyy7stPj8,18020
+Tweezepy-0.9.1.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+Tweezepy-0.9.1.dist-info/METADATA,sha256=kP3wNMq_hr-26yhyTfpMlQtcknYQThizeFrxhuK1wNI,2930
+Tweezepy-0.9.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Tweezepy-0.9.1.dist-info/top_level.txt,sha256=KK8bL5tRd0o5cAway_K8cWfcP4tFfkjXgpzocW2--TE,14
+Tweezepy-0.9.1.dist-info/RECORD,,
