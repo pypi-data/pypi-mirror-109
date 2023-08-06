@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+intellihub/__init__.py
+intellihub/assertions.py
+intellihub/core.py
+intellihub/data_preprocessing.py
+intellihub/dataset_types.py
+intellihub/visualization.py
+intellihub.egg-info/PKG-INFO
+intellihub.egg-info/SOURCES.txt
+intellihub.egg-info/dependency_links.txt
+intellihub.egg-info/requires.txt
+intellihub.egg-info/top_level.txt
