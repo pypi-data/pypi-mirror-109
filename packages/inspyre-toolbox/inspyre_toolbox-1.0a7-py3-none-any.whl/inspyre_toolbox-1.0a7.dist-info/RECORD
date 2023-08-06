@@ -1,0 +1,11 @@
+inspyre_toolbox/VERSION,sha256=CklNSEgWJU4Yl6lGRZi7llD-MYUrFAA4bquIxFzksKU,79
+inspyre_toolbox/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+inspyre_toolbox/humanize/__init__.py,sha256=ycBymfKxmKvOeWfaSYIYLOGvEdw2EVUyVEfyX1hQf4o,6898
+inspyre_toolbox/live_timer/__init__.py,sha256=r9uAX9Th6gCWafMlyxlPzQ9h4BVQNkULrifjEjemGKk,4973
+inspyre_toolbox/pypi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inspyre_toolbox/pypi/packages.py,sha256=EfF2pxhViV3Hqbjz9Y_xSct1ogbS3_gUGLVTs7XxgRk,821
+inspyre_toolbox/tests/test_live_timer.py,sha256=71-3RCXIEZNeSV1ITQxyFGJLYXs87M4YBSnZ6wJyHmw,720
+inspyre_toolbox/version.py,sha256=3y5PJly_aP-QeVUHPpXRNW8YD2gkOlN5tJcuwNUGXVo,1428
+inspyre_toolbox-1.0a7.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+inspyre_toolbox-1.0a7.dist-info/METADATA,sha256=6wVLbqwUmPW135YoGCnU-GP9RAjAfAhB8u95f6c1fSY,615
+inspyre_toolbox-1.0a7.dist-info/RECORD,,
