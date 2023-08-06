@@ -1,0 +1,11 @@
+transferfile/__init__.py,sha256=M0YWi2DdPQd6JvBFu2OPmMCSt_m4lymsgLQZ5JT21WM,738
+transferfile/ftp.py,sha256=zKn0hfVzmOsV5BV3q8tjGxIpJRpZeNtVNxpxaj1R5M8,2255
+transferfile/rsync.py,sha256=5XBdHvbIYwnbGYeJDN7YeJfsRDYlMi-IdLzGG0ZKtPM,1471
+transferfile/scp.py,sha256=dBIaAERrhuXk4ludmQJ5AZN-KLBwScsQsDt2ByxUiEY,2110
+transferfile/sftp.py,sha256=RzW9HwhNhGf35lanq9X_Xdf3xt6sGfk4dM6Nr7GhglM,1938
+transferfile/transfile_interface.py,sha256=p0g1EaGxi8yq_jcUh7a6kerNnCzEkikomNYIjbay-zI,247
+transferfile-0.3.dist-info/LICENSE,sha256=0Zz6KXjM2tm9fuYwub7rXuO6ayVBCjskRqRL22dVcK0,1064
+transferfile-0.3.dist-info/METADATA,sha256=WAXkBXKzrvcbu-82hDpxl4FzbHPiNrA8hsrhPXmGwFQ,4348
+transferfile-0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+transferfile-0.3.dist-info/top_level.txt,sha256=Z1H5cQAhIGDc7hxUaxUF9INZGH8n3MQAp8OyHCBHFRs,13
+transferfile-0.3.dist-info/RECORD,,
