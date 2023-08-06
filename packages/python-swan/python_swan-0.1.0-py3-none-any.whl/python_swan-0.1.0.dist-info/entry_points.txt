@@ -1,0 +1,3 @@
+[console_scripts]
+swan = swan.app.start:launch
+
