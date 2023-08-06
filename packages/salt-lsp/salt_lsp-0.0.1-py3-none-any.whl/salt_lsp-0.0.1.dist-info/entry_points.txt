@@ -1,0 +1,4 @@
+[console_scripts]
+dump_state_name_completions=salt_lsp.cmds:dump_state_name_completions
+salt_lsp_server=salt_lsp.__main__:main
+
