@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: weaklru
+Version: 0.1.1
+Summary: Combination of weakref cache and LRU cache.
+Home-page: https://github.com/AtakamaLLC/weaklru
+License: MIT
+Author: Erik Aronesty
+Author-email: erik@q32.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Repository, https://github.com/AtakamaLLC/weaklru
+Description-Content-Type: text/markdown
+
+# weaklru
+
+Simple combination of a weakref cache and a lru cache.
+
+```
+
+class Obj:
+  pass
+
+
+l = WeakLRU(max_size=2)
+
+l.set("a", Obj())
+l.set("b", Obj())
+l.set("c", Obj())
+l.get(a)        # none
+l.get(b)        # obj
+l.get(c)        # obj
+```
+
+
+You can add objects to the cache, and they will never expire as long as they are being used.
+
+Also, a maximum number of objects will be stored in the LRU portion of the cache.
+

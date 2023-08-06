@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "weaklru"
+version = "0.1.1"
+description = "Combination of weakref cache and LRU cache."
+authors = ["Erik Aronesty <erik@q32.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/AtakamaLLC/weaklru"
+repository = "https://github.com/AtakamaLLC/weaklru"
+include = [ "LICENSE", ]
+
+[tool.poetry.dependencies]
+python = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.4"
