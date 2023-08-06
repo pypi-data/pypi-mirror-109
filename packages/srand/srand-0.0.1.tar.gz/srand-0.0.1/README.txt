@@ -1,0 +1,1 @@
+This is a library with a SRand class.If you want to use it you can just type srand.

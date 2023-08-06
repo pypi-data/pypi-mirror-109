@@ -1,0 +1,6 @@
+README.txt
+setup.py
+srand.egg-info/PKG-INFO
+srand.egg-info/SOURCES.txt
+srand.egg-info/dependency_links.txt
+srand.egg-info/top_level.txt
