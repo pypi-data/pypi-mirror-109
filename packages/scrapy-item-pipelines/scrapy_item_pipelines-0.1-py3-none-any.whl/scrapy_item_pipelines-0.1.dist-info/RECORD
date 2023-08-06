@@ -1,0 +1,6 @@
+scrapy_item_pipelines/__init__.py,sha256=2gvS6YQ3Num2baJjoPd-Es6g2H_gYh5wImWYWW-8HA4,72
+scrapy_item_pipelines/streaming.py,sha256=4TbEC80Anc0yJTXbAWxseUoBqAFC3Vew71hvd4-NnMI,3163
+scrapy_item_pipelines-0.1.dist-info/LICENSE,sha256=vRQOhz_s_11CQsVcDoEpLn4Oaip-hTQl4dLAupBCDeU,1070
+scrapy_item_pipelines-0.1.dist-info/WHEEL,sha256=o-Q2E8s7BKkCJ1EC2uQdaymZVVu2aUt1e8uTTFpzHVs,81
+scrapy_item_pipelines-0.1.dist-info/METADATA,sha256=xZFPMVajViG9urmdIA_OCMt0TYwQLGVYT7BAM6KVD6E,1889
+scrapy_item_pipelines-0.1.dist-info/RECORD,,
